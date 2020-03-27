@@ -172,21 +172,6 @@
 <v>LED_contorl\LED_control\PSoC 5LP Architecture TRM</v>
 <v>LED_contorl\LED_control\CY8C58LP Family Datasheet</v>
 <v>LED_contorl\LED_control\System Reference Guides</v>
-<v>LED_contorl\LED_control\System Reference Guides\cy_boot_v5_70</v>
-<v>LED_contorl\LED_control\cy_clock_v2_20</v>
-<v>LED_contorl\LED_control\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
-<v>LED_contorl\LED_control\cy_constant_v1_0.pdf</v>
-<v>LED_contorl\LED_control\cy_isr_v1_70</v>
-<v>LED_contorl\LED_control\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
-<v>LED_contorl\LED_control\cy_pins_v2_20</v>
-<v>LED_contorl\LED_control\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>LED_contorl\LED_control\CyControlReg_v1_80.pdf</v>
-<v>LED_contorl\LED_control\demux_v1_10.pdf</v>
-<v>LED_contorl\LED_control\SPI_Master_v2_50.pdf</v>
-<v>LED_contorl\LED_control\Timer_v2_80</v>
-<v>LED_contorl\LED_control\Timer_v2_80\Timer_v2_80.pdf</v>
-<v>LED_contorl\LED_control\ZeroTerminal</v>
-<v>LED_contorl\LED_control\ZeroTerminal\ZeroTerminal.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>LED_contorl</v>
@@ -194,21 +179,6 @@
 <v>LED_contorl\LED_control\PSoC 5LP Architecture TRM</v>
 <v>LED_contorl\LED_control\CY8C58LP Family Datasheet</v>
 <v>LED_contorl\LED_control\System Reference Guides</v>
-<v>LED_contorl\LED_control\System Reference Guides\cy_boot_v5_70</v>
-<v>LED_contorl\LED_control\cy_clock_v2_20</v>
-<v>LED_contorl\LED_control\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
-<v>LED_contorl\LED_control\cy_constant_v1_0.pdf</v>
-<v>LED_contorl\LED_control\cy_isr_v1_70</v>
-<v>LED_contorl\LED_control\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
-<v>LED_contorl\LED_control\cy_pins_v2_20</v>
-<v>LED_contorl\LED_control\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>LED_contorl\LED_control\CyControlReg_v1_80.pdf</v>
-<v>LED_contorl\LED_control\demux_v1_10.pdf</v>
-<v>LED_contorl\LED_control\SPI_Master_v2_50.pdf</v>
-<v>LED_contorl\LED_control\Timer_v2_80</v>
-<v>LED_contorl\LED_control\Timer_v2_80\Timer_v2_80.pdf</v>
-<v>LED_contorl\LED_control\ZeroTerminal</v>
-<v>LED_contorl\LED_control\ZeroTerminal\ZeroTerminal.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
