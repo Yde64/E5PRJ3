@@ -1,0 +1,6 @@
+C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\GFV\Workspace01\Design01.cydsn\Design01.cyprj|ddadc4a5-ed76-43f0-a366-bf03c449f943
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|089acc84-c187-4bd8-b726-2c495b698a1c
+C:\Users\cring\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|c2806d6a-ffda-4beb-868f-8e09516e873b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|0a53ccca-ff40-4e24-8b2a-8a5204f6e728
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|824f84a1-bf2e-4983-9c5d-29a34fb09971
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|48f7454a-d49a-4e8b-a616-1874c2a505bf
