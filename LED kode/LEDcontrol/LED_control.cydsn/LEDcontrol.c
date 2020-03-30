@@ -18,6 +18,8 @@ int pulselength_ = 0;
 int index_ = 0;
 float index2 = 1;
 int count = 0;
+int count2 = 0;
+int count3 = 0;
 
 LEDctrl *rgbLED1 = NULL;
 LEDctrl *rgbLED2 = NULL;
@@ -81,6 +83,52 @@ CY_ISR(isr_LED_pulse)
     
 }
 
+CY_ISR(isr_BlinkLED)
+{
+    if(rgbLED1->blink == 1)
+    {
+        switch (count3)
+        {
+            case 0:
+            {
+                fillcolor(rgbLED1->h, rgbLED1->s,1, rgbLED1);
+                count3++;
+            }
+            break;
+            case 1:
+            {
+                fillcolor(rgbLED1->h, rgbLED1->s,0, rgbLED1);
+                count3 = 0;
+            }
+            break;
+        }
+    }
+    if(rgbLED2->blink == 1)
+    {
+        switch (count3)
+        {
+            case 0:
+            {
+                fillcolor(rgbLED2->h, rgbLED2->s,1, rgbLED2);
+                count3++;
+            }
+            break;
+            case 1:
+            {
+                fillcolor(rgbLED2->h, rgbLED2->s,0, rgbLED2);
+                count3 = 0;
+            }
+            break;
+        }
+    }
+}
+
+CY_ISR(isr_delay)
+{
+    count2++;
+    startSeq(rgbLED1, rgbLED2);
+}
+
 void setrefreshrate(int Hz)
 {
     Hz = 1/(float)Hz*1000*10;
@@ -98,8 +146,7 @@ void addLEDstrip(int LEDlength_, LEDctrl *rgbLED_, int strip)
     
     rgbLED_->LEDlength = LEDlength_;
     rgbLED_->pin = strip;
-    rgbLED_->pulse = 0;
-    rgbLED_->ring = 0;
+    LEDOff(rgbLED_);
     
     for(int i = 0; i < rgbLED_->LEDlength; i++)
     {
@@ -112,11 +159,14 @@ void initLED(int Hz)
     isr_LED_refreshrate_StartEx(isr_refreshrate);
     isr_LED_ring_StartEx(isr_LED_ring);
     isr_LED_pulse_StartEx(isr_LED_pulse);
+    isr_BlinkLED_StartEx(isr_BlinkLED);
+    isr_delay_StartEx(isr_delay);
     
     SPIM_1_Start();
     Timer1_Start();
     Timer2_Start();
     Timer3_Start();
+    Timer4_Start();
     
     setrefreshrate(Hz);
 }
@@ -131,7 +181,7 @@ void fillcolor(double h, double s, double v, LEDctrl *rgbLED)
 
 void pulseLED(double h1, double s1, double v1, LEDctrl *rgbLED)
 {
-    rgbLED->ring = 0;
+    LEDOff(rgbLED);
     rgbLED->pulse = 1;
     
     rgbLED->h = h1;
@@ -140,17 +190,18 @@ void pulseLED(double h1, double s1, double v1, LEDctrl *rgbLED)
     fillcolor(h1,s1,v1, rgbLED);
 }
 
-void setspeed(int ms_ring, int ms_pulse)
+void setspeed(int ms_ring, int ms_pulse, int ms_blink)
 {
     Timer2_WritePeriod(ms_pulse*10);
     Timer3_WritePeriod(ms_ring*10);
+    Timer4_WritePeriod(ms_blink*10);
 }
 
 void ringLED(int pulselength, double h1, double s1, double v1, LEDctrl *rgbLED)
 {
     pulselength_ = pulselength;
+    LEDOff(rgbLED);
     rgbLED->ring = 1;
-    rgbLED->pulse = 0;
     
     for(int i = 0; i<rgbLED->LEDlength; i++)
     {
@@ -312,42 +363,113 @@ void setcolorLED(double h, double s, double v, int LED, LEDctrl *rgbLED)
 
 }
 
+void LEDOff(LEDctrl *rgbLED)
+{
+    rgbLED->ring = 0;
+    rgbLED->pulse = 0;
+    rgbLED->blink = 0;
+}
+
+void BlinkLED(double h1, double s1, double v1, LEDctrl *rgbLED)
+{
+    LEDOff(rgbLED);
+    
+    for(int i = 0; i<rgbLED->LEDlength; i++)
+    {
+        (rgbLED + i)->h = h1;
+        (rgbLED + i)->s = s1;
+        (rgbLED + i)->v = v1;
+    }
+    
+    rgbLED->blink = 1;
+}
+
 
 //Forskellige sekvenser til LED OBS ordforklaringer er i system arkitketur
-void LEDinitSeq()    //Initieringssekvens
+void LEDinitSeq(LEDctrl *rgbLED)    //Initieringssekvens
 {
+    ringLED(3, 191, 1.0, 0.5, rgbLED);
 }
 
-void idleSeq()      //Idle-sekvens
+void idleSeq(LEDctrl *rgbLED)      //Idle-sekvens
 {
+    pulseLED(307, 1.0, 0.85, rgbLED);
 }
 
-void loserSeq()     //Tabersekvens
+void loserSeq(LEDctrl *rgbLED)     //Tabersekvens
 {
+    LEDOff(rgbLED);
+    fillcolor(3, 1.0, 0.83, rgbLED);
+    
 }
 
-void zeroCalibrateSeq() //Kalibreringssekvens
+void zeroCalibrateSeq(LEDctrl *rgbLED) //Kalibreringssekvens
 {
+    pulseLED(65, 1, 1, rgbLED);
 }
 
-void checkSeq() //Tjek vægt sekvens
+void checkSeq(LEDctrl *rgbLED) //Tjek vægt sekvens
 {
+    ringLED(3, 65, 1, 1, rgbLED);
 }
 
-void weightapprovedSeq() //Vægt godkendt sekvens
+void weightapprovedSeq(LEDctrl *rgbLED) //Vægt godkendt sekvens
 {
+    LEDOff(rgbLED);
+    fillcolor(116, 1, 1.0, rgbLED);
 }
 
-void startSeq() //Start sekvens
+int startSeq(LEDctrl *rgbLED_1, LEDctrl *rgbLED_2) //Start sekvens
 {
+    LEDOff(rgbLED_1);
+    LEDOff(rgbLED_2);
+    switch (count2)
+    {
+        case 0:
+        {
+            fillcolor(3, 1.0, 0.83, rgbLED_1);
+            fillcolor(3, 1.0, 0.83, rgbLED_2);
+            Timer5_Start();
+        }
+        break;
+        case 1:
+        {
+            fillcolor(65, 1, 1, rgbLED_1);
+            fillcolor(65, 1, 1, rgbLED_2);
+        }
+        break;
+        case 2:
+        {
+            fillcolor(65, 1, 1, rgbLED_1);
+            fillcolor(65, 1, 1, rgbLED_2);
+        }
+        break;
+        case 3:
+        {
+            fillcolor(116, 1, 1.0, rgbLED_1);
+            fillcolor(116, 1, 1.0, rgbLED_2);
+        }
+        break;
+        case 4:
+        {
+            Timer5_Stop();
+            count = 0;
+            return 1;
+        }
+        break;
+    }
+    return 0;
 }
 
-void errorSeq() //Fejl sekvens
+void errorSeq(LEDctrl *rgbLED) //Fejl sekvens
 {
+    BlinkLED(3, 1.0, 0.83, rgbLED);
 }
 
-void winnerSeq()   //Vindersekvens
+void winnerSeq(LEDctrl *rgbLED)   //Vindersekvens
 {
+    LEDOff(rgbLED);
+    fillcolor(116, 1, 1.0, rgbLED);
 }
 
 

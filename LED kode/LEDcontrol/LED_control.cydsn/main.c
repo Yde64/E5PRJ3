@@ -12,7 +12,7 @@
 #include "project.h"
 #include "LEDcontrol.h"
 
-#define LEDlength 21
+#define LEDlength 20
 
 
 int main(void)
@@ -24,11 +24,14 @@ int main(void)
     addLEDstrip(LEDlength, rgbstrip2, 2);
     initLED(120);
 
-    setspeed(100, 20);
-    ringLED(4, 87, 1.0, 0.7, rgbstrip1);
-    pulseLED(200,1,1, rgbstrip2);
+    setspeed(100, 20, 300);
+    //weightapprovedSeq(rgbstrip1);
+    //idleSeq(rgbstrip1);
+    //zeroCalibrateSeq(rgbstrip1);
+    checkSeq(rgbstrip1);
     for(;;)
     {
+        //while(startSeq(rgbstrip1, rgbstrip2) == 0);
     }
 }
 

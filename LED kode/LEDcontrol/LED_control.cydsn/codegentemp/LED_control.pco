@@ -1,0 +1,72 @@
+# LED_control
+# 2020-03-27 13:56:42Z
+
+# IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 0
+# IO_1@[IOP=(1)][IoId=(1)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 1
+# IO_3@[IOP=(1)][IoId=(3)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 3
+set_location "ClockBlock" clockblockcell -1 -1 0
+set_io "LEDdata(0)" iocell 0 7
+set_io "LEDdata2(0)" iocell 0 6
+set_location "\SPIM_1:BSPIM:dpcounter_one\" 2 1 1 3
+set_location "\SPIM_1:BSPIM:tx_status_0\" 3 2 0 1
+set_location "\SPIM_1:BSPIM:tx_status_4\" 3 2 0 3
+set_location "\SPIM_1:BSPIM:rx_status_6\" 2 0 0 0
+set_location "\Timer1:TimerUDB:status_tc\" 1 0 0 0
+set_location "\Timer2:TimerUDB:status_tc\" 3 5 0 1
+set_location "\Timer3:TimerUDB:status_tc\" 2 1 1 2
+set_location "Net_348" 2 4 0 2
+set_location "Net_392" 2 4 1 0
+set_location "\Timer4:TimerUDB:status_tc\" 2 4 1 3
+set_location "\Timer5:TimerUDB:status_tc\" 3 0 0 3
+set_location "\SPIM_1:BSPIM:BitCounter\" 2 1 7
+set_location "\SPIM_1:BSPIM:TxStsReg\" 3 2 4
+set_location "\SPIM_1:BSPIM:RxStsReg\" 2 0 4
+set_location "\SPIM_1:BSPIM:sR16:Dp:u0\" 3 1 2
+set_location "\SPIM_1:BSPIM:sR16:Dp:u1\" 2 1 2
+set_location "\Timer1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 1 0 6
+set_location "\Timer1:TimerUDB:rstSts:stsreg\" 1 0 4
+set_location "\Timer1:TimerUDB:sT16:timerdp:u0\" 0 0 2
+set_location "\Timer1:TimerUDB:sT16:timerdp:u1\" 1 0 2
+set_location "isr_LED_refreshrate" interrupt -1 -1 2
+set_location "\Timer2:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 2 5 6
+set_location "\Timer2:TimerUDB:rstSts:stsreg\" 3 5 4
+set_location "\Timer2:TimerUDB:sT16:timerdp:u0\" 2 5 2
+set_location "\Timer2:TimerUDB:sT16:timerdp:u1\" 3 5 2
+set_location "isr_LED_pulse" interrupt -1 -1 1
+set_location "\Timer3:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 3 1 6
+set_location "\Timer3:TimerUDB:rstSts:stsreg\" 2 2 4
+set_location "\Timer3:TimerUDB:sT16:timerdp:u0\" 3 2 2
+set_location "\Timer3:TimerUDB:sT16:timerdp:u1\" 2 2 2
+set_location "isr_LED_ring" interrupt -1 -1 3
+set_location "\SPIMOutCtrl:Sync:ctrl_reg\" 2 4 6
+set_location "\Timer4:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 3 4 6
+set_location "\Timer4:TimerUDB:rstSts:stsreg\" 2 4 4
+set_location "\Timer4:TimerUDB:sT16:timerdp:u0\" 3 4 2
+set_location "\Timer4:TimerUDB:sT16:timerdp:u1\" 2 4 2
+set_location "isr_BlinkLED" interrupt -1 -1 0
+set_location "isr_delay" interrupt -1 -1 4
+set_location "\Timer5:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 3 0 6
+set_location "\Timer5:TimerUDB:rstSts:stsreg\" 3 0 4
+set_location "\Timer5:TimerUDB:sT16:timerdp:u0\" 2 0 2
+set_location "\Timer5:TimerUDB:sT16:timerdp:u1\" 3 0 2
+set_location "\SPIM_1:BSPIM:load_rx_data\" 2 2 1 2
+set_location "\SPIM_1:BSPIM:state_2\" 2 0 1 0
+set_location "\SPIM_1:BSPIM:state_1\" 2 1 1 1
+set_location "\SPIM_1:BSPIM:state_0\" 2 1 1 0
+set_location "Net_331" 2 4 0 1
+set_location "\SPIM_1:BSPIM:mosi_hs_reg\" 2 0 0 2
+set_location "\SPIM_1:BSPIM:mosi_pre_reg\" 2 2 0 0
+set_location "\SPIM_1:BSPIM:load_cond\" 2 4 0 0
+set_location "\SPIM_1:BSPIM:mosi_from_dp_reg\" 2 0 0 1
+set_location "\SPIM_1:BSPIM:is_spi_done\" 2 0 1 1
+set_location "\SPIM_1:BSPIM:cnt_enable\" 2 2 1 0
+set_location "\SPIM_1:BSPIM:ld_ident\" 2 2 1 1
+set_location "Net_412" 2 0 1 2
+set_location "Net_360" 1 0 1 0
+set_location "Net_369" 2 5 1 2
+set_location "Net_379" 2 1 0 3
+set_location "Net_427" 3 4 0 0
+set_location "Net_428" 3 0 0 1

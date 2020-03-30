@@ -1,0 +1,3643 @@
+Loading plugins phase: Elapsed time ==> 0s.291ms
+<CYPRESSTAG name="CyDsfit arguments...">
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\LED_control.cyprj -d CY8C5888LTI-LP097 -s C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+</CYPRESSTAG>
+<CYPRESSTAG name="Design elaboration results...">
+</CYPRESSTAG>
+Elaboration phase: Elapsed time ==> 1s.867ms
+<CYPRESSTAG name="HDL generation results...">
+</CYPRESSTAG>
+HDL generation phase: Elapsed time ==> 0s.089ms
+<CYPRESSTAG name="Synthesis results...">
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp Verilog Synthesis Compiler: Version 6.3 IR 41
+  -|               |-   Copyright (C) 1991-2001 Cypress Semiconductor
+   |_______________|
+     | | | | | | |
+
+======================================================================
+Compiling:  LED_control.v
+Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\LED_control.cyprj -dcpsoc3 LED_control.v -verilog
+======================================================================
+
+======================================================================
+Compiling:  LED_control.v
+Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\LED_control.cyprj -dcpsoc3 LED_control.v -verilog
+======================================================================
+
+======================================================================
+Compiling:  LED_control.v
+Program  :   vlogfe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\LED_control.cyprj -dcpsoc3 -verilog LED_control.v
+======================================================================
+
+vlogfe V6.3 IR 41:  Verilog parser
+Fri Mar 27 14:56:37 2020
+
+
+======================================================================
+Compiling:  LED_control.v
+Program  :   vpp
+Options  :    -yv2 -q10 LED_control.v
+======================================================================
+
+vpp V6.3 IR 41:  Verilog Pre-Processor
+Fri Mar 27 14:56:37 2020
+
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_SPI_Master_v2_50\B_SPI_Master_v2_50.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_Timer_v2_80\B_Timer_v2_80.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\demux_v1_10\demux_v1_10.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.v'
+
+vpp:  No errors.
+
+Library 'work' => directory 'lcpsoc3'
+General_symbol_table
+General_symbol_table
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Using control file 'LED_control.ctl'.
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_Timer_v2_80\B_Timer_v2_80.v (line 368, col 46):  Note: Substituting module 'cmp_vv_vv' for '='.
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_Timer_v2_80\B_Timer_v2_80.v (line 374, col 62):  Note: Substituting module 'add_vv_vv' for '+'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
+
+vlogfe:  No errors.
+
+
+======================================================================
+Compiling:  LED_control.v
+Program  :   tovif
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\LED_control.cyprj -dcpsoc3 -verilog LED_control.v
+======================================================================
+
+tovif V6.3 IR 41:  High-level synthesis
+Fri Mar 27 14:56:38 2020
+
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Linking 'C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\LED_control.ctl'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
+Linking 'C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\LED_control.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_SPI_Master_v2_50\B_SPI_Master_v2_50.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_Timer_v2_80\B_Timer_v2_80.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\demux_v1_10\demux_v1_10.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
+
+tovif:  No errors.
+
+
+======================================================================
+Compiling:  LED_control.v
+Program  :   topld
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\LED_control.cyprj -dcpsoc3 -verilog LED_control.v
+======================================================================
+
+topld V6.3 IR 41:  Synthesis and optimization
+Fri Mar 27 14:56:39 2020
+
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Linking 'C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\LED_control.ctl'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
+Linking 'C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\LED_control.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_SPI_Master_v2_50\B_SPI_Master_v2_50.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_Timer_v2_80\B_Timer_v2_80.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\demux_v1_10\demux_v1_10.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+    User names
+	\SPIM_1:BSPIM:mosi_after_ld\
+	\SPIM_1:BSPIM:mosi_cpha_0\
+	\SPIM_1:BSPIM:pre_mosi\
+	\SPIM_1:BSPIM:dpcounter_zero\
+	\SPIM_1:BSPIM:control_7\
+	\SPIM_1:BSPIM:control_6\
+	\SPIM_1:BSPIM:control_5\
+	\SPIM_1:BSPIM:control_4\
+	\SPIM_1:BSPIM:control_3\
+	\SPIM_1:BSPIM:control_2\
+	\SPIM_1:BSPIM:control_1\
+	\SPIM_1:BSPIM:control_0\
+	\SPIM_1:Net_294\
+	\Timer1:Net_260\
+	Net_352
+	\Timer1:TimerUDB:ctrl_ten\
+	\Timer1:TimerUDB:ctrl_cmode_0\
+	\Timer1:TimerUDB:ctrl_tmode_1\
+	\Timer1:TimerUDB:ctrl_tmode_0\
+	\Timer1:TimerUDB:ctrl_ic_1\
+	\Timer1:TimerUDB:ctrl_ic_0\
+	Net_356
+	\Timer1:TimerUDB:zeros_3\
+	\Timer1:TimerUDB:zeros_2\
+	\Timer1:Net_102\
+	\Timer1:Net_266\
+	\Timer2:Net_260\
+	Net_364
+	\Timer2:TimerUDB:ctrl_ten\
+	\Timer2:TimerUDB:ctrl_cmode_0\
+	\Timer2:TimerUDB:ctrl_tmode_1\
+	\Timer2:TimerUDB:ctrl_tmode_0\
+	\Timer2:TimerUDB:ctrl_ic_1\
+	\Timer2:TimerUDB:ctrl_ic_0\
+	Net_368
+	\Timer2:TimerUDB:zeros_3\
+	\Timer2:TimerUDB:zeros_2\
+	\Timer2:Net_102\
+	\Timer2:Net_266\
+	\Timer3:Net_260\
+	Net_374
+	\Timer3:TimerUDB:ctrl_ten\
+	\Timer3:TimerUDB:ctrl_cmode_0\
+	\Timer3:TimerUDB:ctrl_tmode_1\
+	\Timer3:TimerUDB:ctrl_tmode_0\
+	\Timer3:TimerUDB:ctrl_ic_1\
+	\Timer3:TimerUDB:ctrl_ic_0\
+	Net_378
+	\Timer3:TimerUDB:zeros_3\
+	\Timer3:TimerUDB:zeros_2\
+	\Timer3:Net_102\
+	\Timer3:Net_266\
+	Net_396
+	Net_397
+	Net_398
+	Net_400
+	Net_401
+	Net_402
+	Net_403
+	\Timer4:Net_260\
+	Net_419
+	\Timer4:TimerUDB:ctrl_ten\
+	\Timer4:TimerUDB:ctrl_cmode_0\
+	\Timer4:TimerUDB:ctrl_tmode_1\
+	\Timer4:TimerUDB:ctrl_tmode_0\
+	\Timer4:TimerUDB:ctrl_ic_1\
+	\Timer4:TimerUDB:ctrl_ic_0\
+	Net_423
+	\Timer4:TimerUDB:zeros_3\
+	\Timer4:TimerUDB:zeros_2\
+	\Timer4:Net_102\
+	\Timer4:Net_266\
+	\Timer5:Net_260\
+	Net_432
+	\Timer5:TimerUDB:ctrl_ten\
+	\Timer5:TimerUDB:ctrl_cmode_0\
+	\Timer5:TimerUDB:ctrl_tmode_1\
+	\Timer5:TimerUDB:ctrl_tmode_0\
+	\Timer5:TimerUDB:ctrl_ic_1\
+	\Timer5:TimerUDB:ctrl_ic_0\
+	Net_436
+	\Timer5:TimerUDB:zeros_3\
+	\Timer5:TimerUDB:zeros_2\
+	\Timer5:Net_102\
+	\Timer5:Net_266\
+
+
+Deleted 85 User equations/components.
+Deleted 0 Synthesized equations/components.
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+Aliasing zero to Net_336
+Aliasing one to tmpOE__LEDdata_net_0
+Aliasing tmpOE__LEDdata2_net_0 to tmpOE__LEDdata_net_0
+Aliasing \SPIM_1:BSPIM:pol_supprt\ to tmpOE__LEDdata_net_0
+Aliasing \SPIM_1:BSPIM:tx_status_6\ to Net_336
+Aliasing \SPIM_1:BSPIM:tx_status_5\ to Net_336
+Aliasing \SPIM_1:BSPIM:rx_status_3\ to Net_336
+Aliasing \SPIM_1:BSPIM:rx_status_2\ to Net_336
+Aliasing \SPIM_1:BSPIM:rx_status_1\ to Net_336
+Aliasing \SPIM_1:BSPIM:rx_status_0\ to Net_336
+Aliasing \SPIM_1:Net_289\ to Net_336
+Aliasing Net_12 to Net_336
+Aliasing \Timer1:TimerUDB:ctrl_cmode_1\ to Net_336
+Aliasing \Timer1:TimerUDB:trigger_enable\ to tmpOE__LEDdata_net_0
+Aliasing \Timer1:TimerUDB:status_6\ to Net_336
+Aliasing \Timer1:TimerUDB:status_5\ to Net_336
+Aliasing \Timer1:TimerUDB:status_4\ to Net_336
+Aliasing \Timer1:TimerUDB:status_0\ to \Timer1:TimerUDB:tc_i\
+Aliasing Net_363 to Net_336
+Aliasing \Timer2:TimerUDB:ctrl_cmode_1\ to Net_336
+Aliasing \Timer2:TimerUDB:trigger_enable\ to tmpOE__LEDdata_net_0
+Aliasing \Timer2:TimerUDB:status_6\ to Net_336
+Aliasing \Timer2:TimerUDB:status_5\ to Net_336
+Aliasing \Timer2:TimerUDB:status_4\ to Net_336
+Aliasing \Timer2:TimerUDB:status_0\ to \Timer2:TimerUDB:tc_i\
+Aliasing Net_373 to Net_336
+Aliasing \Timer3:TimerUDB:ctrl_cmode_1\ to Net_336
+Aliasing \Timer3:TimerUDB:trigger_enable\ to tmpOE__LEDdata_net_0
+Aliasing \Timer3:TimerUDB:status_6\ to Net_336
+Aliasing \Timer3:TimerUDB:status_5\ to Net_336
+Aliasing \Timer3:TimerUDB:status_4\ to Net_336
+Aliasing \Timer3:TimerUDB:status_0\ to \Timer3:TimerUDB:tc_i\
+Aliasing \SPIMOutCtrl:clk\ to Net_336
+Aliasing \SPIMOutCtrl:rst\ to Net_336
+Aliasing Net_418 to Net_336
+Aliasing \Timer4:TimerUDB:ctrl_cmode_1\ to Net_336
+Aliasing \Timer4:TimerUDB:trigger_enable\ to tmpOE__LEDdata_net_0
+Aliasing \Timer4:TimerUDB:status_6\ to Net_336
+Aliasing \Timer4:TimerUDB:status_5\ to Net_336
+Aliasing \Timer4:TimerUDB:status_4\ to Net_336
+Aliasing \Timer4:TimerUDB:status_0\ to \Timer4:TimerUDB:tc_i\
+Aliasing Net_431 to Net_336
+Aliasing \Timer5:TimerUDB:ctrl_cmode_1\ to Net_336
+Aliasing \Timer5:TimerUDB:trigger_enable\ to tmpOE__LEDdata_net_0
+Aliasing \Timer5:TimerUDB:status_6\ to Net_336
+Aliasing \Timer5:TimerUDB:status_5\ to Net_336
+Aliasing \Timer5:TimerUDB:status_4\ to Net_336
+Aliasing \Timer5:TimerUDB:status_0\ to \Timer5:TimerUDB:tc_i\
+Aliasing \SPIM_1:BSPIM:dpcounter_one_reg\\D\ to \SPIM_1:BSPIM:tx_status_3\
+Aliasing \Timer1:TimerUDB:capture_last\\D\ to Net_336
+Aliasing \Timer1:TimerUDB:hwEnable_reg\\D\ to \Timer1:TimerUDB:run_mode\
+Aliasing \Timer1:TimerUDB:capture_out_reg_i\\D\ to \Timer1:TimerUDB:capt_fifo_load_int\
+Aliasing \Timer2:TimerUDB:capture_last\\D\ to Net_336
+Aliasing \Timer2:TimerUDB:hwEnable_reg\\D\ to \Timer2:TimerUDB:run_mode\
+Aliasing \Timer2:TimerUDB:capture_out_reg_i\\D\ to \Timer2:TimerUDB:capt_fifo_load_int\
+Aliasing \Timer3:TimerUDB:capture_last\\D\ to Net_336
+Aliasing \Timer3:TimerUDB:hwEnable_reg\\D\ to \Timer3:TimerUDB:run_mode\
+Aliasing \Timer3:TimerUDB:capture_out_reg_i\\D\ to \Timer3:TimerUDB:capt_fifo_load_int\
+Aliasing \Timer4:TimerUDB:capture_last\\D\ to Net_336
+Aliasing \Timer4:TimerUDB:hwEnable_reg\\D\ to \Timer4:TimerUDB:run_mode\
+Aliasing \Timer4:TimerUDB:capture_out_reg_i\\D\ to \Timer4:TimerUDB:capt_fifo_load_int\
+Aliasing \Timer5:TimerUDB:capture_last\\D\ to Net_336
+Aliasing \Timer5:TimerUDB:hwEnable_reg\\D\ to \Timer5:TimerUDB:run_mode\
+Aliasing \Timer5:TimerUDB:capture_out_reg_i\\D\ to \Timer5:TimerUDB:capt_fifo_load_int\
+Removing Rhs of wire Net_348[3] = \demux_1:tmp__demux_1_0_reg\[596]
+Removing Lhs of wire zero[7] = Net_336[0]
+Removing Lhs of wire one[8] = tmpOE__LEDdata_net_0[2]
+Removing Lhs of wire tmpOE__LEDdata2_net_0[11] = tmpOE__LEDdata_net_0[2]
+Removing Rhs of wire Net_392[12] = \demux_1:tmp__demux_1_1_reg\[598]
+Removing Rhs of wire \SPIM_1:Net_276\[17] = \SPIM_1:Net_288\[18]
+Removing Rhs of wire \SPIM_1:BSPIM:load_rx_data\[22] = \SPIM_1:BSPIM:dpcounter_one_reg\[23]
+Removing Lhs of wire \SPIM_1:BSPIM:pol_supprt\[24] = tmpOE__LEDdata_net_0[2]
+Removing Lhs of wire \SPIM_1:BSPIM:miso_to_dp\[25] = \SPIM_1:Net_244\[26]
+Removing Lhs of wire \SPIM_1:Net_244\[26] = Net_336[0]
+Removing Rhs of wire Net_415[30] = \SPIM_1:BSPIM:mosi_fin\[31]
+Removing Rhs of wire Net_415[30] = \SPIM_1:BSPIM:mosi_cpha_1\[32]
+Removing Rhs of wire \SPIM_1:BSPIM:mosi_from_dp\[36] = \SPIM_1:BSPIM:mosi_from_dpL\[152]
+Removing Rhs of wire \SPIM_1:BSPIM:tx_status_1\[53] = \SPIM_1:BSPIM:dpMOSI_fifo_empty\[54]
+Removing Rhs of wire \SPIM_1:BSPIM:tx_status_2\[55] = \SPIM_1:BSPIM:dpMOSI_fifo_not_full\[56]
+Removing Lhs of wire \SPIM_1:BSPIM:tx_status_3\[57] = \SPIM_1:BSPIM:dpcounter_one\[49]
+Removing Rhs of wire \SPIM_1:BSPIM:rx_status_4\[59] = \SPIM_1:BSPIM:dpMISO_fifo_full\[60]
+Removing Rhs of wire \SPIM_1:BSPIM:rx_status_5\[61] = \SPIM_1:BSPIM:dpMISO_fifo_not_empty\[62]
+Removing Lhs of wire \SPIM_1:BSPIM:tx_status_6\[64] = Net_336[0]
+Removing Lhs of wire \SPIM_1:BSPIM:tx_status_5\[65] = Net_336[0]
+Removing Lhs of wire \SPIM_1:BSPIM:rx_status_3\[66] = Net_336[0]
+Removing Lhs of wire \SPIM_1:BSPIM:rx_status_2\[67] = Net_336[0]
+Removing Lhs of wire \SPIM_1:BSPIM:rx_status_1\[68] = Net_336[0]
+Removing Lhs of wire \SPIM_1:BSPIM:rx_status_0\[69] = Net_336[0]
+Removing Lhs of wire \SPIM_1:Net_273\[79] = Net_336[0]
+Removing Lhs of wire \SPIM_1:Net_289\[169] = Net_336[0]
+Removing Lhs of wire Net_12[172] = Net_336[0]
+Removing Rhs of wire Net_360[176] = \Timer1:Net_53\[177]
+Removing Rhs of wire Net_360[176] = \Timer1:TimerUDB:tc_reg_i\[209]
+Removing Lhs of wire \Timer1:TimerUDB:ctrl_enable\[191] = \Timer1:TimerUDB:control_7\[183]
+Removing Lhs of wire \Timer1:TimerUDB:ctrl_cmode_1\[193] = Net_336[0]
+Removing Rhs of wire \Timer1:TimerUDB:timer_enable\[202] = \Timer1:TimerUDB:runmode_enable\[214]
+Removing Rhs of wire \Timer1:TimerUDB:run_mode\[203] = \Timer1:TimerUDB:hwEnable\[204]
+Removing Lhs of wire \Timer1:TimerUDB:run_mode\[203] = \Timer1:TimerUDB:control_7\[183]
+Removing Lhs of wire \Timer1:TimerUDB:trigger_enable\[206] = tmpOE__LEDdata_net_0[2]
+Removing Lhs of wire \Timer1:TimerUDB:tc_i\[208] = \Timer1:TimerUDB:status_tc\[205]
+Removing Lhs of wire \Timer1:TimerUDB:capt_fifo_load_int\[213] = \Timer1:TimerUDB:capt_fifo_load\[201]
+Removing Lhs of wire \Timer1:TimerUDB:status_6\[216] = Net_336[0]
+Removing Lhs of wire \Timer1:TimerUDB:status_5\[217] = Net_336[0]
+Removing Lhs of wire \Timer1:TimerUDB:status_4\[218] = Net_336[0]
+Removing Lhs of wire \Timer1:TimerUDB:status_0\[219] = \Timer1:TimerUDB:status_tc\[205]
+Removing Lhs of wire \Timer1:TimerUDB:status_1\[220] = \Timer1:TimerUDB:capt_fifo_load\[201]
+Removing Rhs of wire \Timer1:TimerUDB:status_2\[221] = \Timer1:TimerUDB:fifo_full\[222]
+Removing Rhs of wire \Timer1:TimerUDB:status_3\[223] = \Timer1:TimerUDB:fifo_nempty\[224]
+Removing Lhs of wire \Timer1:TimerUDB:cs_addr_2\[226] = Net_336[0]
+Removing Lhs of wire \Timer1:TimerUDB:cs_addr_1\[227] = \Timer1:TimerUDB:trig_reg\[215]
+Removing Lhs of wire \Timer1:TimerUDB:cs_addr_0\[228] = \Timer1:TimerUDB:per_zero\[207]
+Removing Lhs of wire Net_363[314] = Net_336[0]
+Removing Rhs of wire Net_369[318] = \Timer2:Net_53\[319]
+Removing Rhs of wire Net_369[318] = \Timer2:TimerUDB:tc_reg_i\[351]
+Removing Lhs of wire \Timer2:TimerUDB:ctrl_enable\[333] = \Timer2:TimerUDB:control_7\[325]
+Removing Lhs of wire \Timer2:TimerUDB:ctrl_cmode_1\[335] = Net_336[0]
+Removing Rhs of wire \Timer2:TimerUDB:timer_enable\[344] = \Timer2:TimerUDB:runmode_enable\[356]
+Removing Rhs of wire \Timer2:TimerUDB:run_mode\[345] = \Timer2:TimerUDB:hwEnable\[346]
+Removing Lhs of wire \Timer2:TimerUDB:run_mode\[345] = \Timer2:TimerUDB:control_7\[325]
+Removing Lhs of wire \Timer2:TimerUDB:trigger_enable\[348] = tmpOE__LEDdata_net_0[2]
+Removing Lhs of wire \Timer2:TimerUDB:tc_i\[350] = \Timer2:TimerUDB:status_tc\[347]
+Removing Lhs of wire \Timer2:TimerUDB:capt_fifo_load_int\[355] = \Timer2:TimerUDB:capt_fifo_load\[343]
+Removing Lhs of wire \Timer2:TimerUDB:status_6\[358] = Net_336[0]
+Removing Lhs of wire \Timer2:TimerUDB:status_5\[359] = Net_336[0]
+Removing Lhs of wire \Timer2:TimerUDB:status_4\[360] = Net_336[0]
+Removing Lhs of wire \Timer2:TimerUDB:status_0\[361] = \Timer2:TimerUDB:status_tc\[347]
+Removing Lhs of wire \Timer2:TimerUDB:status_1\[362] = \Timer2:TimerUDB:capt_fifo_load\[343]
+Removing Rhs of wire \Timer2:TimerUDB:status_2\[363] = \Timer2:TimerUDB:fifo_full\[364]
+Removing Rhs of wire \Timer2:TimerUDB:status_3\[365] = \Timer2:TimerUDB:fifo_nempty\[366]
+Removing Lhs of wire \Timer2:TimerUDB:cs_addr_2\[368] = Net_336[0]
+Removing Lhs of wire \Timer2:TimerUDB:cs_addr_1\[369] = \Timer2:TimerUDB:trig_reg\[357]
+Removing Lhs of wire \Timer2:TimerUDB:cs_addr_0\[370] = \Timer2:TimerUDB:per_zero\[349]
+Removing Lhs of wire Net_373[456] = Net_336[0]
+Removing Rhs of wire Net_379[460] = \Timer3:Net_53\[461]
+Removing Rhs of wire Net_379[460] = \Timer3:TimerUDB:tc_reg_i\[493]
+Removing Lhs of wire \Timer3:TimerUDB:ctrl_enable\[475] = \Timer3:TimerUDB:control_7\[467]
+Removing Lhs of wire \Timer3:TimerUDB:ctrl_cmode_1\[477] = Net_336[0]
+Removing Rhs of wire \Timer3:TimerUDB:timer_enable\[486] = \Timer3:TimerUDB:runmode_enable\[498]
+Removing Rhs of wire \Timer3:TimerUDB:run_mode\[487] = \Timer3:TimerUDB:hwEnable\[488]
+Removing Lhs of wire \Timer3:TimerUDB:run_mode\[487] = \Timer3:TimerUDB:control_7\[467]
+Removing Lhs of wire \Timer3:TimerUDB:trigger_enable\[490] = tmpOE__LEDdata_net_0[2]
+Removing Lhs of wire \Timer3:TimerUDB:tc_i\[492] = \Timer3:TimerUDB:status_tc\[489]
+Removing Lhs of wire \Timer3:TimerUDB:capt_fifo_load_int\[497] = \Timer3:TimerUDB:capt_fifo_load\[485]
+Removing Lhs of wire \Timer3:TimerUDB:status_6\[500] = Net_336[0]
+Removing Lhs of wire \Timer3:TimerUDB:status_5\[501] = Net_336[0]
+Removing Lhs of wire \Timer3:TimerUDB:status_4\[502] = Net_336[0]
+Removing Lhs of wire \Timer3:TimerUDB:status_0\[503] = \Timer3:TimerUDB:status_tc\[489]
+Removing Lhs of wire \Timer3:TimerUDB:status_1\[504] = \Timer3:TimerUDB:capt_fifo_load\[485]
+Removing Rhs of wire \Timer3:TimerUDB:status_2\[505] = \Timer3:TimerUDB:fifo_full\[506]
+Removing Rhs of wire \Timer3:TimerUDB:status_3\[507] = \Timer3:TimerUDB:fifo_nempty\[508]
+Removing Lhs of wire \Timer3:TimerUDB:cs_addr_2\[510] = Net_336[0]
+Removing Lhs of wire \Timer3:TimerUDB:cs_addr_1\[511] = \Timer3:TimerUDB:trig_reg\[499]
+Removing Lhs of wire \Timer3:TimerUDB:cs_addr_0\[512] = \Timer3:TimerUDB:per_zero\[491]
+Removing Rhs of wire Net_395[597] = \SPIMOutCtrl:control_out_0\[601]
+Removing Rhs of wire Net_395[597] = \SPIMOutCtrl:control_0\[624]
+Removing Lhs of wire \SPIMOutCtrl:clk\[599] = Net_336[0]
+Removing Lhs of wire \SPIMOutCtrl:rst\[600] = Net_336[0]
+Removing Lhs of wire Net_418[627] = Net_336[0]
+Removing Rhs of wire Net_427[631] = \Timer4:Net_53\[632]
+Removing Rhs of wire Net_427[631] = \Timer4:TimerUDB:tc_reg_i\[664]
+Removing Lhs of wire \Timer4:TimerUDB:ctrl_enable\[646] = \Timer4:TimerUDB:control_7\[638]
+Removing Lhs of wire \Timer4:TimerUDB:ctrl_cmode_1\[648] = Net_336[0]
+Removing Rhs of wire \Timer4:TimerUDB:timer_enable\[657] = \Timer4:TimerUDB:runmode_enable\[669]
+Removing Rhs of wire \Timer4:TimerUDB:run_mode\[658] = \Timer4:TimerUDB:hwEnable\[659]
+Removing Lhs of wire \Timer4:TimerUDB:run_mode\[658] = \Timer4:TimerUDB:control_7\[638]
+Removing Lhs of wire \Timer4:TimerUDB:trigger_enable\[661] = tmpOE__LEDdata_net_0[2]
+Removing Lhs of wire \Timer4:TimerUDB:tc_i\[663] = \Timer4:TimerUDB:status_tc\[660]
+Removing Lhs of wire \Timer4:TimerUDB:capt_fifo_load_int\[668] = \Timer4:TimerUDB:capt_fifo_load\[656]
+Removing Lhs of wire \Timer4:TimerUDB:status_6\[671] = Net_336[0]
+Removing Lhs of wire \Timer4:TimerUDB:status_5\[672] = Net_336[0]
+Removing Lhs of wire \Timer4:TimerUDB:status_4\[673] = Net_336[0]
+Removing Lhs of wire \Timer4:TimerUDB:status_0\[674] = \Timer4:TimerUDB:status_tc\[660]
+Removing Lhs of wire \Timer4:TimerUDB:status_1\[675] = \Timer4:TimerUDB:capt_fifo_load\[656]
+Removing Rhs of wire \Timer4:TimerUDB:status_2\[676] = \Timer4:TimerUDB:fifo_full\[677]
+Removing Rhs of wire \Timer4:TimerUDB:status_3\[678] = \Timer4:TimerUDB:fifo_nempty\[679]
+Removing Lhs of wire \Timer4:TimerUDB:cs_addr_2\[681] = Net_336[0]
+Removing Lhs of wire \Timer4:TimerUDB:cs_addr_1\[682] = \Timer4:TimerUDB:trig_reg\[670]
+Removing Lhs of wire \Timer4:TimerUDB:cs_addr_0\[683] = \Timer4:TimerUDB:per_zero\[662]
+Removing Rhs of wire Net_428[768] = \Timer5:Net_53\[775]
+Removing Rhs of wire Net_428[768] = \Timer5:TimerUDB:tc_reg_i\[807]
+Removing Lhs of wire Net_431[771] = Net_336[0]
+Removing Lhs of wire \Timer5:TimerUDB:ctrl_enable\[789] = \Timer5:TimerUDB:control_7\[781]
+Removing Lhs of wire \Timer5:TimerUDB:ctrl_cmode_1\[791] = Net_336[0]
+Removing Rhs of wire \Timer5:TimerUDB:timer_enable\[800] = \Timer5:TimerUDB:runmode_enable\[812]
+Removing Rhs of wire \Timer5:TimerUDB:run_mode\[801] = \Timer5:TimerUDB:hwEnable\[802]
+Removing Lhs of wire \Timer5:TimerUDB:run_mode\[801] = \Timer5:TimerUDB:control_7\[781]
+Removing Lhs of wire \Timer5:TimerUDB:trigger_enable\[804] = tmpOE__LEDdata_net_0[2]
+Removing Lhs of wire \Timer5:TimerUDB:tc_i\[806] = \Timer5:TimerUDB:status_tc\[803]
+Removing Lhs of wire \Timer5:TimerUDB:capt_fifo_load_int\[811] = \Timer5:TimerUDB:capt_fifo_load\[799]
+Removing Lhs of wire \Timer5:TimerUDB:status_6\[814] = Net_336[0]
+Removing Lhs of wire \Timer5:TimerUDB:status_5\[815] = Net_336[0]
+Removing Lhs of wire \Timer5:TimerUDB:status_4\[816] = Net_336[0]
+Removing Lhs of wire \Timer5:TimerUDB:status_0\[817] = \Timer5:TimerUDB:status_tc\[803]
+Removing Lhs of wire \Timer5:TimerUDB:status_1\[818] = \Timer5:TimerUDB:capt_fifo_load\[799]
+Removing Rhs of wire \Timer5:TimerUDB:status_2\[819] = \Timer5:TimerUDB:fifo_full\[820]
+Removing Rhs of wire \Timer5:TimerUDB:status_3\[821] = \Timer5:TimerUDB:fifo_nempty\[822]
+Removing Lhs of wire \Timer5:TimerUDB:cs_addr_2\[824] = Net_336[0]
+Removing Lhs of wire \Timer5:TimerUDB:cs_addr_1\[825] = \Timer5:TimerUDB:trig_reg\[813]
+Removing Lhs of wire \Timer5:TimerUDB:cs_addr_0\[826] = \Timer5:TimerUDB:per_zero\[805]
+Removing Lhs of wire \SPIM_1:BSPIM:dpcounter_one_reg\\D\[909] = \SPIM_1:BSPIM:dpcounter_one\[49]
+Removing Lhs of wire \SPIM_1:BSPIM:so_send_reg\\D\[910] = \SPIM_1:BSPIM:so_send\[28]
+Removing Lhs of wire \SPIM_1:BSPIM:mosi_reg\\D\[917] = \SPIM_1:BSPIM:mosi_pre_reg\[46]
+Removing Lhs of wire \SPIM_1:BSPIM:mosi_from_dp_reg\\D\[919] = \SPIM_1:BSPIM:mosi_from_dp\[36]
+Removing Lhs of wire \Timer1:TimerUDB:capture_last\\D\[924] = Net_336[0]
+Removing Lhs of wire \Timer1:TimerUDB:tc_reg_i\\D\[925] = \Timer1:TimerUDB:status_tc\[205]
+Removing Lhs of wire \Timer1:TimerUDB:hwEnable_reg\\D\[926] = \Timer1:TimerUDB:control_7\[183]
+Removing Lhs of wire \Timer1:TimerUDB:capture_out_reg_i\\D\[927] = \Timer1:TimerUDB:capt_fifo_load\[201]
+Removing Lhs of wire \Timer2:TimerUDB:capture_last\\D\[928] = Net_336[0]
+Removing Lhs of wire \Timer2:TimerUDB:tc_reg_i\\D\[929] = \Timer2:TimerUDB:status_tc\[347]
+Removing Lhs of wire \Timer2:TimerUDB:hwEnable_reg\\D\[930] = \Timer2:TimerUDB:control_7\[325]
+Removing Lhs of wire \Timer2:TimerUDB:capture_out_reg_i\\D\[931] = \Timer2:TimerUDB:capt_fifo_load\[343]
+Removing Lhs of wire \Timer3:TimerUDB:capture_last\\D\[932] = Net_336[0]
+Removing Lhs of wire \Timer3:TimerUDB:tc_reg_i\\D\[933] = \Timer3:TimerUDB:status_tc\[489]
+Removing Lhs of wire \Timer3:TimerUDB:hwEnable_reg\\D\[934] = \Timer3:TimerUDB:control_7\[467]
+Removing Lhs of wire \Timer3:TimerUDB:capture_out_reg_i\\D\[935] = \Timer3:TimerUDB:capt_fifo_load\[485]
+Removing Lhs of wire \Timer4:TimerUDB:capture_last\\D\[936] = Net_336[0]
+Removing Lhs of wire \Timer4:TimerUDB:tc_reg_i\\D\[937] = \Timer4:TimerUDB:status_tc\[660]
+Removing Lhs of wire \Timer4:TimerUDB:hwEnable_reg\\D\[938] = \Timer4:TimerUDB:control_7\[638]
+Removing Lhs of wire \Timer4:TimerUDB:capture_out_reg_i\\D\[939] = \Timer4:TimerUDB:capt_fifo_load\[656]
+Removing Lhs of wire \Timer5:TimerUDB:capture_last\\D\[940] = Net_336[0]
+Removing Lhs of wire \Timer5:TimerUDB:tc_reg_i\\D\[941] = \Timer5:TimerUDB:status_tc\[803]
+Removing Lhs of wire \Timer5:TimerUDB:hwEnable_reg\\D\[942] = \Timer5:TimerUDB:control_7\[781]
+Removing Lhs of wire \Timer5:TimerUDB:capture_out_reg_i\\D\[943] = \Timer5:TimerUDB:capt_fifo_load\[799]
+
+------------------------------------------------------
+Aliased 0 equations, 159 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+Substituting virtuals - pass 1:
+
+Note:  Expanding virtual equation for 'Net_336' (cost = 0):
+Net_336 <=  ('0') ;
+
+Note:  Expanding virtual equation for 'tmpOE__LEDdata_net_0' (cost = 0):
+tmpOE__LEDdata_net_0 <=  ('1') ;
+
+Note:  Expanding virtual equation for 'Net_415' (cost = 2):
+Net_415 <= ((not Net_331 and \SPIM_1:BSPIM:mosi_hs_reg\));
+
+Note:  Expanding virtual equation for '\SPIM_1:BSPIM:dpcounter_one\' (cost = 1):
+\SPIM_1:BSPIM:dpcounter_one\ <= ((not \SPIM_1:BSPIM:count_4\ and not \SPIM_1:BSPIM:count_3\ and not \SPIM_1:BSPIM:count_2\ and not \SPIM_1:BSPIM:count_1\ and \SPIM_1:BSPIM:count_0\));
+
+Note:  Expanding virtual equation for '\Timer1:TimerUDB:fifo_load_polarized\' (cost = 0):
+\Timer1:TimerUDB:fifo_load_polarized\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\Timer1:TimerUDB:timer_enable\' (cost = 0):
+\Timer1:TimerUDB:timer_enable\ <= (\Timer1:TimerUDB:control_7\);
+
+Note:  Expanding virtual equation for '\Timer2:TimerUDB:fifo_load_polarized\' (cost = 0):
+\Timer2:TimerUDB:fifo_load_polarized\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\Timer2:TimerUDB:timer_enable\' (cost = 0):
+\Timer2:TimerUDB:timer_enable\ <= (\Timer2:TimerUDB:control_7\);
+
+Note:  Expanding virtual equation for '\Timer3:TimerUDB:fifo_load_polarized\' (cost = 0):
+\Timer3:TimerUDB:fifo_load_polarized\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\Timer3:TimerUDB:timer_enable\' (cost = 0):
+\Timer3:TimerUDB:timer_enable\ <= (\Timer3:TimerUDB:control_7\);
+
+Note:  Expanding virtual equation for '\Timer4:TimerUDB:fifo_load_polarized\' (cost = 0):
+\Timer4:TimerUDB:fifo_load_polarized\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\Timer4:TimerUDB:timer_enable\' (cost = 0):
+\Timer4:TimerUDB:timer_enable\ <= (\Timer4:TimerUDB:control_7\);
+
+Note:  Expanding virtual equation for '\Timer5:TimerUDB:fifo_load_polarized\' (cost = 0):
+\Timer5:TimerUDB:fifo_load_polarized\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\Timer5:TimerUDB:timer_enable\' (cost = 0):
+\Timer5:TimerUDB:timer_enable\ <= (\Timer5:TimerUDB:control_7\);
+
+
+Substituting virtuals - pass 2:
+
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 14 signals.
+	Turned 0 signals into soft nodes.
+	Maximum default expansion cost was set at 3.
+----------------------------------------------------------
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+Aliasing \Timer1:TimerUDB:capt_fifo_load\ to Net_336
+Aliasing \Timer2:TimerUDB:capt_fifo_load\ to Net_336
+Aliasing \Timer3:TimerUDB:capt_fifo_load\ to Net_336
+Aliasing \Timer4:TimerUDB:capt_fifo_load\ to Net_336
+Aliasing \Timer5:TimerUDB:capt_fifo_load\ to Net_336
+Removing Lhs of wire \Timer1:TimerUDB:capt_fifo_load\[201] = Net_336[0]
+Removing Lhs of wire \Timer1:TimerUDB:trig_reg\[215] = \Timer1:TimerUDB:control_7\[183]
+Removing Lhs of wire \Timer2:TimerUDB:capt_fifo_load\[343] = Net_336[0]
+Removing Lhs of wire \Timer2:TimerUDB:trig_reg\[357] = \Timer2:TimerUDB:control_7\[325]
+Removing Lhs of wire \Timer3:TimerUDB:capt_fifo_load\[485] = Net_336[0]
+Removing Lhs of wire \Timer3:TimerUDB:trig_reg\[499] = \Timer3:TimerUDB:control_7\[467]
+Removing Lhs of wire \Timer4:TimerUDB:capt_fifo_load\[656] = Net_336[0]
+Removing Lhs of wire \Timer4:TimerUDB:trig_reg\[670] = \Timer4:TimerUDB:control_7\[638]
+Removing Lhs of wire \Timer5:TimerUDB:capt_fifo_load\[799] = Net_336[0]
+Removing Lhs of wire \Timer5:TimerUDB:trig_reg\[813] = \Timer5:TimerUDB:control_7\[781]
+
+------------------------------------------------------
+Aliased 0 equations, 10 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+Eliminating unused logic - pass 1:
+
+
+Eliminating unused logic - pass 2:
+
+
+Substituting virtuals - pass 1:
+
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 0 signals.
+	Turned 0 signals into soft nodes.
+	Maximum default expansion cost was set at 3.
+----------------------------------------------------------
+
+topld:  No errors.
+
+CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp
+Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\LED_control.cyprj" -dcpsoc3 LED_control.v -verilog
+</CYPRESSTAG>
+Warp synthesis phase: Elapsed time ==> 1s.951ms
+<CYPRESSTAG name="Fitter results...">
+<CYPRESSTAG name="Fitter startup details...">
+cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Friday, 27 March 2020 14:56:39
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\LED_control.cyprj -d CY8C5888LTI-LP097 LED_control.v -verilog
+</CYPRESSTAG>
+<CYPRESSTAG name="Design parsing">
+Design parsing phase: Elapsed time ==> 0s.025ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Tech Mapping">
+<CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
+    Converted constant MacroCell: \Timer1:TimerUDB:capture_last\ from registered to combinatorial
+    Converted constant MacroCell: \Timer1:TimerUDB:capture_out_reg_i\ from registered to combinatorial
+    Converted constant MacroCell: \Timer2:TimerUDB:capture_last\ from registered to combinatorial
+    Converted constant MacroCell: \Timer2:TimerUDB:capture_out_reg_i\ from registered to combinatorial
+    Converted constant MacroCell: \Timer3:TimerUDB:capture_last\ from registered to combinatorial
+    Converted constant MacroCell: \Timer3:TimerUDB:capture_out_reg_i\ from registered to combinatorial
+    Converted constant MacroCell: \Timer4:TimerUDB:capture_last\ from registered to combinatorial
+    Converted constant MacroCell: \Timer4:TimerUDB:capture_out_reg_i\ from registered to combinatorial
+    Converted constant MacroCell: \Timer5:TimerUDB:capture_last\ from registered to combinatorial
+    Converted constant MacroCell: \Timer5:TimerUDB:capture_out_reg_i\ from registered to combinatorial
+<CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
+    Digital Clock 0: Automatic-assigning  clock 'SPIM_1_IntClock'. Fanout=1, Signal=\SPIM_1:Net_276\
+    Digital Clock 1: Automatic-assigning  clock 'timer_clock_2'. Fanout=2, Signal=Net_371
+    Digital Clock 2: Automatic-assigning  clock 'timer_clock_4'. Fanout=2, Signal=Net_429
+    Digital Clock 3: Automatic-assigning  clock 'timer_clock_3'. Fanout=2, Signal=Net_416
+    Digital Clock 4: Automatic-assigning  clock 'timer_clock'. Fanout=2, Signal=Net_10
+    Digital Clock 5: Automatic-assigning  clock 'timer_clock_1'. Fanout=2, Signal=Net_361
+</CYPRESSTAG>
+
+Removing unused cells resulting from optimization
+Done removing unused cells.
+<CYPRESSTAG name="UDB Clock/Enable Remapping Results">
+    UDB Clk/Enable \SPIM_1:BSPIM:ClkEn\: with output requested to be synchronous
+        ClockIn: SPIM_1_IntClock was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: SPIM_1_IntClock, EnableOut: Constant 1
+    UDB Clk/Enable \Timer1:TimerUDB:clock_enable_block\: with output requested to be synchronous
+        ClockIn: timer_clock was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: timer_clock, EnableOut: Constant 1
+    UDB Clk/Enable \Timer1:TimerUDB:sCTRLReg:SyncCtl:cy_psoc3_udb_Ctl_Clk_Sync\: with output requested to be synchronous
+        ClockIn: timer_clock was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: timer_clock, EnableOut: Constant 1
+    UDB Clk/Enable \Timer2:TimerUDB:clock_enable_block\: with output requested to be synchronous
+        ClockIn: timer_clock_1 was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: timer_clock_1, EnableOut: Constant 1
+    UDB Clk/Enable \Timer2:TimerUDB:sCTRLReg:SyncCtl:cy_psoc3_udb_Ctl_Clk_Sync\: with output requested to be synchronous
+        ClockIn: timer_clock_1 was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: timer_clock_1, EnableOut: Constant 1
+    UDB Clk/Enable \Timer3:TimerUDB:clock_enable_block\: with output requested to be synchronous
+        ClockIn: timer_clock_2 was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: timer_clock_2, EnableOut: Constant 1
+    UDB Clk/Enable \Timer3:TimerUDB:sCTRLReg:SyncCtl:cy_psoc3_udb_Ctl_Clk_Sync\: with output requested to be synchronous
+        ClockIn: timer_clock_2 was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: timer_clock_2, EnableOut: Constant 1
+    UDB Clk/Enable \Timer4:TimerUDB:clock_enable_block\: with output requested to be synchronous
+        ClockIn: timer_clock_3 was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: timer_clock_3, EnableOut: Constant 1
+    UDB Clk/Enable \Timer4:TimerUDB:sCTRLReg:SyncCtl:cy_psoc3_udb_Ctl_Clk_Sync\: with output requested to be synchronous
+        ClockIn: timer_clock_3 was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: timer_clock_3, EnableOut: Constant 1
+    UDB Clk/Enable \Timer5:TimerUDB:clock_enable_block\: with output requested to be synchronous
+        ClockIn: timer_clock_4 was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: timer_clock_4, EnableOut: Constant 1
+    UDB Clk/Enable \Timer5:TimerUDB:sCTRLReg:SyncCtl:cy_psoc3_udb_Ctl_Clk_Sync\: with output requested to be synchronous
+        ClockIn: timer_clock_4 was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: timer_clock_4, EnableOut: Constant 1
+</CYPRESSTAG>
+
+Removing unused cells resulting from optimization
+Done removing unused cells.
+<CYPRESSTAG name="Duplicate Macrocell detection">
+</CYPRESSTAG>
+</CYPRESSTAG>
+<CYPRESSTAG name="Duplicate Macrocell detection">
+</CYPRESSTAG>
+<CYPRESSTAG name="Design Equations" icon="FILE_RPT_EQUATION">
+
+------------------------------------------------------------
+Design Equations
+------------------------------------------------------------
+    <CYPRESSTAG name="Pin listing">
+
+    ------------------------------------------------------------
+    Pin listing
+    ------------------------------------------------------------
+
+    Pin : Name = LEDdata(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => LEDdata(0)__PA ,
+            pin_input => Net_348 ,
+            pad => LEDdata(0)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = LEDdata2(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => LEDdata2(0)__PA ,
+            pin_input => Net_392 ,
+            pad => LEDdata2(0)_PAD );
+        Properties:
+        {
+        }
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
+
+    ------------------------------------------------------------
+    Macrocell listing
+    ------------------------------------------------------------
+
+    MacroCell: Name=\SPIM_1:BSPIM:dpcounter_one\, Mode=(Combinatorial)
+        Total # of inputs        : 5
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              !\SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              \SPIM_1:BSPIM:count_0\
+        );
+        Output = \SPIM_1:BSPIM:dpcounter_one\ (fanout=1)
+
+    MacroCell: Name=\SPIM_1:BSPIM:tx_status_0\, Mode=(Combinatorial)
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\
+        );
+        Output = \SPIM_1:BSPIM:tx_status_0\ (fanout=1)
+
+    MacroCell: Name=\SPIM_1:BSPIM:tx_status_4\, Mode=(Combinatorial)
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\
+        );
+        Output = \SPIM_1:BSPIM:tx_status_4\ (fanout=1)
+
+    MacroCell: Name=\SPIM_1:BSPIM:rx_status_6\, Mode=(Combinatorial)
+        Total # of inputs        : 6
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              !\SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              \SPIM_1:BSPIM:count_0\ * \SPIM_1:BSPIM:rx_status_4\
+        );
+        Output = \SPIM_1:BSPIM:rx_status_6\ (fanout=1)
+
+    MacroCell: Name=\Timer1:TimerUDB:status_tc\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer1:TimerUDB:control_7\ * \Timer1:TimerUDB:per_zero\
+        );
+        Output = \Timer1:TimerUDB:status_tc\ (fanout=1)
+
+    MacroCell: Name=\Timer2:TimerUDB:status_tc\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer2:TimerUDB:control_7\ * \Timer2:TimerUDB:per_zero\
+        );
+        Output = \Timer2:TimerUDB:status_tc\ (fanout=1)
+
+    MacroCell: Name=\Timer3:TimerUDB:status_tc\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer3:TimerUDB:control_7\ * \Timer3:TimerUDB:per_zero\
+        );
+        Output = \Timer3:TimerUDB:status_tc\ (fanout=1)
+
+    MacroCell: Name=Net_348, Mode=(Combinatorial)
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !Net_331 * \SPIM_1:BSPIM:mosi_hs_reg\ * !Net_395
+        );
+        Output = Net_348 (fanout=1)
+
+    MacroCell: Name=Net_392, Mode=(Combinatorial)
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !Net_331 * \SPIM_1:BSPIM:mosi_hs_reg\ * Net_395
+        );
+        Output = Net_392 (fanout=1)
+
+    MacroCell: Name=\Timer4:TimerUDB:status_tc\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer4:TimerUDB:control_7\ * \Timer4:TimerUDB:per_zero\
+        );
+        Output = \Timer4:TimerUDB:status_tc\ (fanout=1)
+
+    MacroCell: Name=\Timer5:TimerUDB:status_tc\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer5:TimerUDB:control_7\ * \Timer5:TimerUDB:per_zero\
+        );
+        Output = \Timer5:TimerUDB:status_tc\ (fanout=1)
+
+    MacroCell: Name=\SPIM_1:BSPIM:load_rx_data\, Mode=(D-Register)
+        Total # of inputs        : 5
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              !\SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              \SPIM_1:BSPIM:count_0\
+        );
+        Output = \SPIM_1:BSPIM:load_rx_data\ (fanout=2)
+
+    MacroCell: Name=\SPIM_1:BSPIM:state_2\, Mode=(D-Register)
+        Total # of inputs        : 10
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\
+            + !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\ * !\SPIM_1:BSPIM:count_4\ * 
+              !\SPIM_1:BSPIM:count_3\ * !\SPIM_1:BSPIM:count_2\ * 
+              !\SPIM_1:BSPIM:count_1\ * \SPIM_1:BSPIM:count_0\ * 
+              \SPIM_1:BSPIM:is_spi_done\
+            + !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_0\ * 
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              \SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              !\SPIM_1:BSPIM:count_0\ * !\SPIM_1:BSPIM:tx_status_1\
+        );
+        Output = \SPIM_1:BSPIM:state_2\ (fanout=15)
+
+    MacroCell: Name=\SPIM_1:BSPIM:state_1\, Mode=(D-Register)
+        Total # of inputs        : 10
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        !(
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\
+            + !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_0\ * 
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              !\SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              \SPIM_1:BSPIM:count_0\ * \SPIM_1:BSPIM:is_spi_done\
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_0\
+            + \SPIM_1:BSPIM:state_1\ * \SPIM_1:BSPIM:state_0\ * 
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              \SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              !\SPIM_1:BSPIM:count_0\ * !\SPIM_1:BSPIM:tx_status_1\
+        );
+        Output = \SPIM_1:BSPIM:state_1\ (fanout=15)
+
+    MacroCell: Name=\SPIM_1:BSPIM:state_0\, Mode=(T-Register)
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        !(
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\ * \SPIM_1:BSPIM:tx_status_1\
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\
+        );
+        Output = \SPIM_1:BSPIM:state_0\ (fanout=15)
+
+    MacroCell: Name=Net_331, Mode=(T-Register)
+        Total # of inputs        : 4
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\ * !Net_331
+            + !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * Net_331
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * !Net_331
+        );
+        Output = Net_331 (fanout=3)
+
+    MacroCell: Name=\SPIM_1:BSPIM:mosi_hs_reg\, Mode=(D-Register)
+        Total # of inputs        : 6
+        Total # of product terms : 6
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 6 pterms
+        (
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * \SPIM_1:BSPIM:mosi_from_dp\
+            + !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * \SPIM_1:BSPIM:mosi_from_dp_reg\
+            + !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_0\ * 
+              \SPIM_1:BSPIM:mosi_hs_reg\
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\ * \SPIM_1:BSPIM:mosi_from_dp\
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_0\ * 
+              \SPIM_1:BSPIM:mosi_hs_reg\
+            + !\SPIM_1:BSPIM:state_1\ * !\SPIM_1:BSPIM:state_0\ * 
+              \SPIM_1:BSPIM:mosi_hs_reg\
+        );
+        Output = \SPIM_1:BSPIM:mosi_hs_reg\ (fanout=3)
+
+    MacroCell: Name=\SPIM_1:BSPIM:mosi_pre_reg\, Mode=(T-Register)
+        Total # of inputs        : 11
+        Total # of product terms : 8
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 8 pterms
+        !(
+              !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              !\SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              \SPIM_1:BSPIM:count_0\ * \SPIM_1:BSPIM:ld_ident\
+            + !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_0\
+            + !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:count_4\ * 
+              !\SPIM_1:BSPIM:count_3\ * !\SPIM_1:BSPIM:count_2\ * 
+              !\SPIM_1:BSPIM:count_1\ * \SPIM_1:BSPIM:count_0\ * 
+              !\SPIM_1:BSPIM:mosi_pre_reg\ * \SPIM_1:BSPIM:ld_ident\
+            + \SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\
+            + !\SPIM_1:BSPIM:state_1\ * !\SPIM_1:BSPIM:mosi_pre_reg\
+            + \SPIM_1:BSPIM:state_1\ * !\SPIM_1:BSPIM:state_0\ * 
+              \SPIM_1:BSPIM:mosi_from_dp\ * \SPIM_1:BSPIM:mosi_pre_reg\
+            + \SPIM_1:BSPIM:state_0\ * !\SPIM_1:BSPIM:mosi_pre_reg\
+            + !\SPIM_1:BSPIM:mosi_from_dp\ * !\SPIM_1:BSPIM:mosi_pre_reg\
+        );
+        Output = \SPIM_1:BSPIM:mosi_pre_reg\ (fanout=1)
+
+    MacroCell: Name=\SPIM_1:BSPIM:load_cond\, Mode=(T-Register)
+        Total # of inputs        : 9
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:count_4\ * 
+              !\SPIM_1:BSPIM:count_3\ * !\SPIM_1:BSPIM:count_2\ * 
+              !\SPIM_1:BSPIM:count_1\ * !\SPIM_1:BSPIM:count_0\ * 
+              \SPIM_1:BSPIM:load_cond\
+            + \SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\ * !\SPIM_1:BSPIM:load_cond\
+            + \SPIM_1:BSPIM:state_1\ * !\SPIM_1:BSPIM:count_4\ * 
+              !\SPIM_1:BSPIM:count_3\ * !\SPIM_1:BSPIM:count_2\ * 
+              !\SPIM_1:BSPIM:count_1\ * !\SPIM_1:BSPIM:count_0\ * 
+              \SPIM_1:BSPIM:load_cond\
+            + \SPIM_1:BSPIM:state_0\ * !\SPIM_1:BSPIM:count_4\ * 
+              !\SPIM_1:BSPIM:count_3\ * !\SPIM_1:BSPIM:count_2\ * 
+              !\SPIM_1:BSPIM:count_1\ * !\SPIM_1:BSPIM:count_0\ * 
+              \SPIM_1:BSPIM:load_cond\
+        );
+        Output = \SPIM_1:BSPIM:load_cond\ (fanout=1)
+
+    MacroCell: Name=\SPIM_1:BSPIM:mosi_from_dp_reg\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \SPIM_1:BSPIM:mosi_from_dp\
+        );
+        Output = \SPIM_1:BSPIM:mosi_from_dp_reg\ (fanout=1)
+
+    MacroCell: Name=\SPIM_1:BSPIM:is_spi_done\, Mode=(T-Register)
+        Total # of inputs        : 10
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * !\SPIM_1:BSPIM:count_4\ * 
+              !\SPIM_1:BSPIM:count_3\ * \SPIM_1:BSPIM:count_2\ * 
+              !\SPIM_1:BSPIM:count_1\ * !\SPIM_1:BSPIM:count_0\ * 
+              \SPIM_1:BSPIM:tx_status_1\ * !\SPIM_1:BSPIM:is_spi_done\
+            + \SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * \SPIM_1:BSPIM:is_spi_done\
+        );
+        Output = \SPIM_1:BSPIM:is_spi_done\ (fanout=4)
+
+    MacroCell: Name=\SPIM_1:BSPIM:cnt_enable\, Mode=(T-Register)
+        Total # of inputs        : 10
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\ * \SPIM_1:BSPIM:cnt_enable\
+            + !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * !\SPIM_1:BSPIM:cnt_enable\
+            + !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_0\ * 
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              !\SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              \SPIM_1:BSPIM:count_0\ * \SPIM_1:BSPIM:is_spi_done\ * 
+              \SPIM_1:BSPIM:cnt_enable\
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_0\ * 
+              \SPIM_1:BSPIM:cnt_enable\
+        );
+        Output = \SPIM_1:BSPIM:cnt_enable\ (fanout=2)
+
+    MacroCell: Name=\SPIM_1:BSPIM:ld_ident\, Mode=(T-Register)
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              \SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\ * !\SPIM_1:BSPIM:ld_ident\
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * \SPIM_1:BSPIM:ld_ident\
+        );
+        Output = \SPIM_1:BSPIM:ld_ident\ (fanout=2)
+
+    MacroCell: Name=Net_412, Mode=(D-Register)
+        Total # of inputs        : 4
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        !(
+              !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\
+            + !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_0\ * !Net_412
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\
+        );
+        Output = Net_412 (fanout=1)
+
+    MacroCell: Name=Net_360, Mode=(D-Register)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_10) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer1:TimerUDB:control_7\ * \Timer1:TimerUDB:per_zero\
+        );
+        Output = Net_360 (fanout=1)
+
+    MacroCell: Name=Net_369, Mode=(D-Register)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_361) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer2:TimerUDB:control_7\ * \Timer2:TimerUDB:per_zero\
+        );
+        Output = Net_369 (fanout=1)
+
+    MacroCell: Name=Net_379, Mode=(D-Register)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_371) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer3:TimerUDB:control_7\ * \Timer3:TimerUDB:per_zero\
+        );
+        Output = Net_379 (fanout=1)
+
+    MacroCell: Name=Net_427, Mode=(D-Register)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_416) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer4:TimerUDB:control_7\ * \Timer4:TimerUDB:per_zero\
+        );
+        Output = Net_427 (fanout=1)
+
+    MacroCell: Name=Net_428, Mode=(D-Register)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_429) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer5:TimerUDB:control_7\ * \Timer5:TimerUDB:per_zero\
+        );
+        Output = Net_428 (fanout=1)
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Datapath listing">
+
+    ------------------------------------------------------------
+    Datapath listing
+    ------------------------------------------------------------
+
+    datapathcell: Name =\SPIM_1:BSPIM:sR16:Dp:u0\
+        PORT MAP (
+            clock => \SPIM_1:Net_276\ ,
+            cs_addr_2 => \SPIM_1:BSPIM:state_2\ ,
+            cs_addr_1 => \SPIM_1:BSPIM:state_1\ ,
+            cs_addr_0 => \SPIM_1:BSPIM:state_0\ ,
+            f1_load => \SPIM_1:BSPIM:load_rx_data\ ,
+            chain_out => \SPIM_1:BSPIM:sR16:Dp:carry\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000000000000000000001100000000000001010000000001000100010000000000011100000000010001000000000000000101000000000000010100000011111111000000001111111111111111000000000000001000001100011100000000000000000100"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+        Next in chain : \SPIM_1:BSPIM:sR16:Dp:u1\
+
+    datapathcell: Name =\SPIM_1:BSPIM:sR16:Dp:u1\
+        PORT MAP (
+            clock => \SPIM_1:Net_276\ ,
+            cs_addr_2 => \SPIM_1:BSPIM:state_2\ ,
+            cs_addr_1 => \SPIM_1:BSPIM:state_1\ ,
+            cs_addr_0 => \SPIM_1:BSPIM:state_0\ ,
+            f1_load => \SPIM_1:BSPIM:load_rx_data\ ,
+            so_comb => \SPIM_1:BSPIM:mosi_from_dp\ ,
+            f0_bus_stat_comb => \SPIM_1:BSPIM:tx_status_2\ ,
+            f0_blk_stat_comb => \SPIM_1:BSPIM:tx_status_1\ ,
+            f1_bus_stat_comb => \SPIM_1:BSPIM:rx_status_5\ ,
+            f1_blk_stat_comb => \SPIM_1:BSPIM:rx_status_4\ ,
+            chain_in => \SPIM_1:BSPIM:sR16:Dp:carry\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000000000000000000001100000000000001010000000001000100010000000000011100000000010001000000000000000101000000000000010100000000001111000000001111111111111111000000000010001100001100101100000000000000000100"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+        Previous in chain : \SPIM_1:BSPIM:sR16:Dp:u0\
+
+    datapathcell: Name =\Timer1:TimerUDB:sT16:timerdp:u0\
+        PORT MAP (
+            clock => Net_10 ,
+            cs_addr_1 => \Timer1:TimerUDB:control_7\ ,
+            cs_addr_0 => \Timer1:TimerUDB:per_zero\ ,
+            chain_out => \Timer1:TimerUDB:sT16:timerdp:carry\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+        Next in chain : \Timer1:TimerUDB:sT16:timerdp:u1\
+
+    datapathcell: Name =\Timer1:TimerUDB:sT16:timerdp:u1\
+        PORT MAP (
+            clock => Net_10 ,
+            cs_addr_1 => \Timer1:TimerUDB:control_7\ ,
+            cs_addr_0 => \Timer1:TimerUDB:per_zero\ ,
+            z0_comb => \Timer1:TimerUDB:per_zero\ ,
+            f0_bus_stat_comb => \Timer1:TimerUDB:status_3\ ,
+            f0_blk_stat_comb => \Timer1:TimerUDB:status_2\ ,
+            chain_in => \Timer1:TimerUDB:sT16:timerdp:carry\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+        Previous in chain : \Timer1:TimerUDB:sT16:timerdp:u0\
+
+    datapathcell: Name =\Timer2:TimerUDB:sT16:timerdp:u0\
+        PORT MAP (
+            clock => Net_361 ,
+            cs_addr_1 => \Timer2:TimerUDB:control_7\ ,
+            cs_addr_0 => \Timer2:TimerUDB:per_zero\ ,
+            chain_out => \Timer2:TimerUDB:sT16:timerdp:carry\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+        Next in chain : \Timer2:TimerUDB:sT16:timerdp:u1\
+
+    datapathcell: Name =\Timer2:TimerUDB:sT16:timerdp:u1\
+        PORT MAP (
+            clock => Net_361 ,
+            cs_addr_1 => \Timer2:TimerUDB:control_7\ ,
+            cs_addr_0 => \Timer2:TimerUDB:per_zero\ ,
+            z0_comb => \Timer2:TimerUDB:per_zero\ ,
+            f0_bus_stat_comb => \Timer2:TimerUDB:status_3\ ,
+            f0_blk_stat_comb => \Timer2:TimerUDB:status_2\ ,
+            chain_in => \Timer2:TimerUDB:sT16:timerdp:carry\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+        Previous in chain : \Timer2:TimerUDB:sT16:timerdp:u0\
+
+    datapathcell: Name =\Timer3:TimerUDB:sT16:timerdp:u0\
+        PORT MAP (
+            clock => Net_371 ,
+            cs_addr_1 => \Timer3:TimerUDB:control_7\ ,
+            cs_addr_0 => \Timer3:TimerUDB:per_zero\ ,
+            chain_out => \Timer3:TimerUDB:sT16:timerdp:carry\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+        Next in chain : \Timer3:TimerUDB:sT16:timerdp:u1\
+
+    datapathcell: Name =\Timer3:TimerUDB:sT16:timerdp:u1\
+        PORT MAP (
+            clock => Net_371 ,
+            cs_addr_1 => \Timer3:TimerUDB:control_7\ ,
+            cs_addr_0 => \Timer3:TimerUDB:per_zero\ ,
+            z0_comb => \Timer3:TimerUDB:per_zero\ ,
+            f0_bus_stat_comb => \Timer3:TimerUDB:status_3\ ,
+            f0_blk_stat_comb => \Timer3:TimerUDB:status_2\ ,
+            chain_in => \Timer3:TimerUDB:sT16:timerdp:carry\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+        Previous in chain : \Timer3:TimerUDB:sT16:timerdp:u0\
+
+    datapathcell: Name =\Timer4:TimerUDB:sT16:timerdp:u0\
+        PORT MAP (
+            clock => Net_416 ,
+            cs_addr_1 => \Timer4:TimerUDB:control_7\ ,
+            cs_addr_0 => \Timer4:TimerUDB:per_zero\ ,
+            chain_out => \Timer4:TimerUDB:sT16:timerdp:carry\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+        Next in chain : \Timer4:TimerUDB:sT16:timerdp:u1\
+
+    datapathcell: Name =\Timer4:TimerUDB:sT16:timerdp:u1\
+        PORT MAP (
+            clock => Net_416 ,
+            cs_addr_1 => \Timer4:TimerUDB:control_7\ ,
+            cs_addr_0 => \Timer4:TimerUDB:per_zero\ ,
+            z0_comb => \Timer4:TimerUDB:per_zero\ ,
+            f0_bus_stat_comb => \Timer4:TimerUDB:status_3\ ,
+            f0_blk_stat_comb => \Timer4:TimerUDB:status_2\ ,
+            chain_in => \Timer4:TimerUDB:sT16:timerdp:carry\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+        Previous in chain : \Timer4:TimerUDB:sT16:timerdp:u0\
+
+    datapathcell: Name =\Timer5:TimerUDB:sT16:timerdp:u0\
+        PORT MAP (
+            clock => Net_429 ,
+            cs_addr_1 => \Timer5:TimerUDB:control_7\ ,
+            cs_addr_0 => \Timer5:TimerUDB:per_zero\ ,
+            chain_out => \Timer5:TimerUDB:sT16:timerdp:carry\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+        Next in chain : \Timer5:TimerUDB:sT16:timerdp:u1\
+
+    datapathcell: Name =\Timer5:TimerUDB:sT16:timerdp:u1\
+        PORT MAP (
+            clock => Net_429 ,
+            cs_addr_1 => \Timer5:TimerUDB:control_7\ ,
+            cs_addr_0 => \Timer5:TimerUDB:per_zero\ ,
+            z0_comb => \Timer5:TimerUDB:per_zero\ ,
+            f0_bus_stat_comb => \Timer5:TimerUDB:status_3\ ,
+            f0_blk_stat_comb => \Timer5:TimerUDB:status_2\ ,
+            chain_in => \Timer5:TimerUDB:sT16:timerdp:carry\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+        Previous in chain : \Timer5:TimerUDB:sT16:timerdp:u0\
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Status register listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="StatusI register listing">
+
+    ------------------------------------------------------------
+    StatusI register listing
+    ------------------------------------------------------------
+
+    statusicell: Name =\SPIM_1:BSPIM:TxStsReg\
+        PORT MAP (
+            clock => \SPIM_1:Net_276\ ,
+            status_4 => \SPIM_1:BSPIM:tx_status_4\ ,
+            status_3 => \SPIM_1:BSPIM:dpcounter_one\ ,
+            status_2 => \SPIM_1:BSPIM:tx_status_2\ ,
+            status_1 => \SPIM_1:BSPIM:tx_status_1\ ,
+            status_0 => \SPIM_1:BSPIM:tx_status_0\ );
+        Properties:
+        {
+            cy_force_order = 1
+            cy_int_mask = "0000000"
+            cy_md_select = "0001001"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    statusicell: Name =\SPIM_1:BSPIM:RxStsReg\
+        PORT MAP (
+            clock => \SPIM_1:Net_276\ ,
+            status_6 => \SPIM_1:BSPIM:rx_status_6\ ,
+            status_5 => \SPIM_1:BSPIM:rx_status_5\ ,
+            status_4 => \SPIM_1:BSPIM:rx_status_4\ );
+        Properties:
+        {
+            cy_force_order = 1
+            cy_int_mask = "0000000"
+            cy_md_select = "1000000"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    statusicell: Name =\Timer1:TimerUDB:rstSts:stsreg\
+        PORT MAP (
+            clock => Net_10 ,
+            status_3 => \Timer1:TimerUDB:status_3\ ,
+            status_2 => \Timer1:TimerUDB:status_2\ ,
+            status_0 => \Timer1:TimerUDB:status_tc\ );
+        Properties:
+        {
+            cy_force_order = 1
+            cy_int_mask = "1111111"
+            cy_md_select = "0000011"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    statusicell: Name =\Timer2:TimerUDB:rstSts:stsreg\
+        PORT MAP (
+            clock => Net_361 ,
+            status_3 => \Timer2:TimerUDB:status_3\ ,
+            status_2 => \Timer2:TimerUDB:status_2\ ,
+            status_0 => \Timer2:TimerUDB:status_tc\ );
+        Properties:
+        {
+            cy_force_order = 1
+            cy_int_mask = "1111111"
+            cy_md_select = "0000011"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    statusicell: Name =\Timer3:TimerUDB:rstSts:stsreg\
+        PORT MAP (
+            clock => Net_371 ,
+            status_3 => \Timer3:TimerUDB:status_3\ ,
+            status_2 => \Timer3:TimerUDB:status_2\ ,
+            status_0 => \Timer3:TimerUDB:status_tc\ );
+        Properties:
+        {
+            cy_force_order = 1
+            cy_int_mask = "1111111"
+            cy_md_select = "0000011"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    statusicell: Name =\Timer4:TimerUDB:rstSts:stsreg\
+        PORT MAP (
+            clock => Net_416 ,
+            status_3 => \Timer4:TimerUDB:status_3\ ,
+            status_2 => \Timer4:TimerUDB:status_2\ ,
+            status_0 => \Timer4:TimerUDB:status_tc\ );
+        Properties:
+        {
+            cy_force_order = 1
+            cy_int_mask = "1111111"
+            cy_md_select = "0000011"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    statusicell: Name =\Timer5:TimerUDB:rstSts:stsreg\
+        PORT MAP (
+            clock => Net_429 ,
+            status_3 => \Timer5:TimerUDB:status_3\ ,
+            status_2 => \Timer5:TimerUDB:status_2\ ,
+            status_0 => \Timer5:TimerUDB:status_tc\ );
+        Properties:
+        {
+            cy_force_order = 1
+            cy_int_mask = "1111111"
+            cy_md_select = "0000011"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Sync listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Control register listing">
+
+    ------------------------------------------------------------
+    Control register listing
+    ------------------------------------------------------------
+
+    controlcell: Name =\Timer1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+        PORT MAP (
+            clock => Net_10 ,
+            control_7 => \Timer1:TimerUDB:control_7\ ,
+            control_6 => \Timer1:TimerUDB:control_6\ ,
+            control_5 => \Timer1:TimerUDB:control_5\ ,
+            control_4 => \Timer1:TimerUDB:control_4\ ,
+            control_3 => \Timer1:TimerUDB:control_3\ ,
+            control_2 => \Timer1:TimerUDB:control_2\ ,
+            control_1 => \Timer1:TimerUDB:control_1\ ,
+            control_0 => \Timer1:TimerUDB:control_0\ );
+        Properties:
+        {
+            cy_ctrl_mode_0 = "11111111"
+            cy_ctrl_mode_1 = "00000000"
+            cy_ext_reset = 0
+            cy_force_order = 1
+            cy_init_value = "00000000"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    controlcell: Name =\Timer2:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+        PORT MAP (
+            clock => Net_361 ,
+            control_7 => \Timer2:TimerUDB:control_7\ ,
+            control_6 => \Timer2:TimerUDB:control_6\ ,
+            control_5 => \Timer2:TimerUDB:control_5\ ,
+            control_4 => \Timer2:TimerUDB:control_4\ ,
+            control_3 => \Timer2:TimerUDB:control_3\ ,
+            control_2 => \Timer2:TimerUDB:control_2\ ,
+            control_1 => \Timer2:TimerUDB:control_1\ ,
+            control_0 => \Timer2:TimerUDB:control_0\ );
+        Properties:
+        {
+            cy_ctrl_mode_0 = "11111111"
+            cy_ctrl_mode_1 = "00000000"
+            cy_ext_reset = 0
+            cy_force_order = 1
+            cy_init_value = "00000000"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    controlcell: Name =\Timer3:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+        PORT MAP (
+            clock => Net_371 ,
+            control_7 => \Timer3:TimerUDB:control_7\ ,
+            control_6 => \Timer3:TimerUDB:control_6\ ,
+            control_5 => \Timer3:TimerUDB:control_5\ ,
+            control_4 => \Timer3:TimerUDB:control_4\ ,
+            control_3 => \Timer3:TimerUDB:control_3\ ,
+            control_2 => \Timer3:TimerUDB:control_2\ ,
+            control_1 => \Timer3:TimerUDB:control_1\ ,
+            control_0 => \Timer3:TimerUDB:control_0\ );
+        Properties:
+        {
+            cy_ctrl_mode_0 = "11111111"
+            cy_ctrl_mode_1 = "00000000"
+            cy_ext_reset = 0
+            cy_force_order = 1
+            cy_init_value = "00000000"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    controlcell: Name =\SPIMOutCtrl:Sync:ctrl_reg\
+        PORT MAP (
+            control_7 => \SPIMOutCtrl:control_7\ ,
+            control_6 => \SPIMOutCtrl:control_6\ ,
+            control_5 => \SPIMOutCtrl:control_5\ ,
+            control_4 => \SPIMOutCtrl:control_4\ ,
+            control_3 => \SPIMOutCtrl:control_3\ ,
+            control_2 => \SPIMOutCtrl:control_2\ ,
+            control_1 => \SPIMOutCtrl:control_1\ ,
+            control_0 => Net_395 );
+        Properties:
+        {
+            cy_ctrl_mode_0 = "00000000"
+            cy_ctrl_mode_1 = "00000000"
+            cy_ext_reset = 0
+            cy_force_order = 1
+            cy_init_value = "00000000"
+        }
+        Clock Enable: True
+
+    controlcell: Name =\Timer4:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+        PORT MAP (
+            clock => Net_416 ,
+            control_7 => \Timer4:TimerUDB:control_7\ ,
+            control_6 => \Timer4:TimerUDB:control_6\ ,
+            control_5 => \Timer4:TimerUDB:control_5\ ,
+            control_4 => \Timer4:TimerUDB:control_4\ ,
+            control_3 => \Timer4:TimerUDB:control_3\ ,
+            control_2 => \Timer4:TimerUDB:control_2\ ,
+            control_1 => \Timer4:TimerUDB:control_1\ ,
+            control_0 => \Timer4:TimerUDB:control_0\ );
+        Properties:
+        {
+            cy_ctrl_mode_0 = "11111111"
+            cy_ctrl_mode_1 = "00000000"
+            cy_ext_reset = 0
+            cy_force_order = 1
+            cy_init_value = "00000000"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    controlcell: Name =\Timer5:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+        PORT MAP (
+            clock => Net_429 ,
+            control_7 => \Timer5:TimerUDB:control_7\ ,
+            control_6 => \Timer5:TimerUDB:control_6\ ,
+            control_5 => \Timer5:TimerUDB:control_5\ ,
+            control_4 => \Timer5:TimerUDB:control_4\ ,
+            control_3 => \Timer5:TimerUDB:control_3\ ,
+            control_2 => \Timer5:TimerUDB:control_2\ ,
+            control_1 => \Timer5:TimerUDB:control_1\ ,
+            control_0 => \Timer5:TimerUDB:control_0\ );
+        Properties:
+        {
+            cy_ctrl_mode_0 = "11111111"
+            cy_ctrl_mode_1 = "00000000"
+            cy_ext_reset = 0
+            cy_force_order = 1
+            cy_init_value = "00000000"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Count7 listing">
+
+    ------------------------------------------------------------
+    Count7 listing
+    ------------------------------------------------------------
+
+    count7cell: Name =\SPIM_1:BSPIM:BitCounter\
+        PORT MAP (
+            clock => \SPIM_1:Net_276\ ,
+            enable => \SPIM_1:BSPIM:cnt_enable\ ,
+            count_6 => \SPIM_1:BSPIM:count_6\ ,
+            count_5 => \SPIM_1:BSPIM:count_5\ ,
+            count_4 => \SPIM_1:BSPIM:count_4\ ,
+            count_3 => \SPIM_1:BSPIM:count_3\ ,
+            count_2 => \SPIM_1:BSPIM:count_2\ ,
+            count_1 => \SPIM_1:BSPIM:count_1\ ,
+            count_0 => \SPIM_1:BSPIM:count_0\ ,
+            tc => \SPIM_1:BSPIM:cnt_tc\ );
+        Properties:
+        {
+            cy_alt_mode = 0
+            cy_init_value = "0000000"
+            cy_period = "0010111"
+            cy_route_en = 1
+            cy_route_ld = 0
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+    </CYPRESSTAG>
+    <CYPRESSTAG name="DRQ listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Interrupt listing">
+
+    ------------------------------------------------------------
+    Interrupt listing
+    ------------------------------------------------------------
+
+    interrupt: Name =isr_LED_refreshrate
+        PORT MAP (
+            interrupt => Net_360 );
+        Properties:
+        {
+            int_type = "00"
+            is_nmi = 0
+        }
+
+    interrupt: Name =isr_LED_pulse
+        PORT MAP (
+            interrupt => Net_369 );
+        Properties:
+        {
+            int_type = "00"
+            is_nmi = 0
+        }
+
+    interrupt: Name =isr_LED_ring
+        PORT MAP (
+            interrupt => Net_379 );
+        Properties:
+        {
+            int_type = "00"
+            is_nmi = 0
+        }
+
+    interrupt: Name =isr_BlinkLED
+        PORT MAP (
+            interrupt => Net_427 );
+        Properties:
+        {
+            int_type = "00"
+            is_nmi = 0
+        }
+
+    interrupt: Name =isr_delay
+        PORT MAP (
+            interrupt => Net_428 );
+        Properties:
+        {
+            int_type = "00"
+            is_nmi = 0
+        }
+    </CYPRESSTAG>
+</CYPRESSTAG>
+<CYPRESSTAG name="Technology mapping summary" expanded>
+
+------------------------------------------------------------
+Technology mapping summary
+------------------------------------------------------------
+
+Resource Type                 : Used : Free :  Max :  % Used
+============================================================
+Digital Clocks                :    6 :    2 :    8 : 75.00 %
+Analog Clocks                 :    0 :    4 :    4 :  0.00 %
+CapSense Buffers              :    0 :    2 :    2 :  0.00 %
+Digital Filter Block          :    0 :    1 :    1 :  0.00 %
+Interrupts                    :    5 :   27 :   32 : 15.63 %
+IO                            :    5 :   43 :   48 : 10.42 %
+Segment LCD                   :    0 :    1 :    1 :  0.00 %
+CAN 2.0b                      :    0 :    1 :    1 :  0.00 %
+I2C                           :    0 :    1 :    1 :  0.00 %
+USB                           :    0 :    1 :    1 :  0.00 %
+DMA Channels                  :    0 :   24 :   24 :  0.00 %
+Timer                         :    0 :    4 :    4 :  0.00 %
+UDB                           :      :      :      :        
+  Macrocells                  :   29 :  163 :  192 : 15.10 %
+  Unique P-terms              :   51 :  333 :  384 : 13.28 %
+  Total P-terms               :   59 :      :      :        
+  Datapath Cells              :   12 :   12 :   24 : 50.00 %
+  Status Cells                :    8 :   16 :   24 : 33.33 %
+    StatusI Registers         :    7 :      :      :        
+    Routed Count7 Load/Enable :    1 :      :      :        
+  Control Cells               :    7 :   17 :   24 : 29.17 %
+    Control Registers         :    6 :      :      :        
+    Count7 Cells              :    1 :      :      :        
+Opamp                         :    0 :    4 :    4 :  0.00 %
+Comparator                    :    0 :    4 :    4 :  0.00 %
+Delta-Sigma ADC               :    0 :    1 :    1 :  0.00 %
+LPF                           :    0 :    2 :    2 :  0.00 %
+SAR ADC                       :    0 :    2 :    2 :  0.00 %
+Analog (SC/CT) Blocks         :    0 :    4 :    4 :  0.00 %
+DAC                           :      :      :      :        
+  VIDAC                       :    0 :    4 :    4 :  0.00 %
+</CYPRESSTAG>
+Technology Mapping: Elapsed time ==> 0s.157ms
+Tech Mapping phase: Elapsed time ==> 0s.245ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Analog Placement">
+Initial Analog Placement Results:
+IO_7@[IOP=(0)][IoId=(7)] : LEDdata(0) (fixed)
+IO_6@[IOP=(0)][IoId=(6)] : LEDdata2(0) (fixed)
+Analog Placement phase: Elapsed time ==> 0s.071ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Analog Routing">
+Analog Routing phase: Elapsed time ==> 0s.000ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Analog Code Generation">
+============ Analog Final Answer Routes ============
+Dump of CyAnalogRoutingResultsDB
+Map of net to items {
+}
+Map of item to net {
+}
+Mux Info {
+}
+Dump of CyP35AnalogRoutingResultsDB
+IsVddaHalfUsedForComp = False
+IsVddaHalfUsedForSar0 = False
+IsVddaHalfUsedForSar1 = False
+Analog Code Generation phase: Elapsed time ==> 0s.364ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Digital Placement">
+<CYPRESSTAG name="Detailed placement messages">
+I2076: Total run-time: 1.6 sec.
+
+</CYPRESSTAG>
+<CYPRESSTAG name="PLD Packing">
+<CYPRESSTAG name="PLD Packing Summary" expanded>
+
+------------------------------------------------------------
+PLD Packing Summary
+------------------------------------------------------------
+            Resource Type : Used : Free :  Max :  % Used
+    ====================================================
+                     PLDs :   15 :   33 :   48 :  31.25%
+
+<CYPRESSTAG name="PLD Statistics">
+
+        PLD Resource Type :     Average/LAB
+    =======================================
+                   Inputs :            6.07
+                   Pterms :            3.87
+               Macrocells :            1.93
+</CYPRESSTAG>
+<CYPRESSTAG name="Packed PLD Contents">
+Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
+</CYPRESSTAG>
+PLD Packing: Elapsed time ==> 0s.002ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Partitioning">
+<CYPRESSTAG name="Initial Partitioning Summary">
+Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
+<CYPRESSTAG name="Final Partitioning Summary">
+Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
+Partitioning: Elapsed time ==> 0s.049ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Final Placement Summary">
+
+------------------------------------------------------------
+Final Placement Summary
+------------------------------------------------------------
+
+       Resource Type :      Count : Avg Inputs : Avg Outputs
+    ========================================================
+                 UDB :         12 :       5.58 :       2.42
+<CYPRESSTAG name="Final Placement Details">
+<CYPRESSTAG name="Component Details">
+
+------------------------------------------------------------
+Component Placement Details
+------------------------------------------------------------
+UDB [UDB=(0,0)] contents:
+datapathcell: Name =\Timer1:TimerUDB:sT16:timerdp:u0\
+    PORT MAP (
+        clock => Net_10 ,
+        cs_addr_1 => \Timer1:TimerUDB:control_7\ ,
+        cs_addr_0 => \Timer1:TimerUDB:per_zero\ ,
+        chain_out => \Timer1:TimerUDB:sT16:timerdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Next in chain : \Timer1:TimerUDB:sT16:timerdp:u1\
+
+UDB [UDB=(0,1)] is empty.
+UDB [UDB=(0,2)] is empty.
+UDB [UDB=(0,3)] is empty.
+UDB [UDB=(0,4)] is empty.
+UDB [UDB=(0,5)] is empty.
+UDB [UDB=(1,0)] contents:
+LAB@[UDB=(1,0)][LB=0] #macrocells=1, #inputs=2, #pterms=1
+{
+    [McSlotId=0]:     MacroCell: Name=\Timer1:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(1,0)][LB=0][MC=0]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer1:TimerUDB:control_7\ * \Timer1:TimerUDB:per_zero\
+        );
+        Output = \Timer1:TimerUDB:status_tc\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(1,0)][LB=1] #macrocells=1, #inputs=2, #pterms=1
+{
+    [McSlotId=0]:     MacroCell: Name=Net_360, Mode=(D-Register) @ [UDB=(1,0)][LB=1][MC=0]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_10) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer1:TimerUDB:control_7\ * \Timer1:TimerUDB:per_zero\
+        );
+        Output = Net_360 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\Timer1:TimerUDB:sT16:timerdp:u1\
+    PORT MAP (
+        clock => Net_10 ,
+        cs_addr_1 => \Timer1:TimerUDB:control_7\ ,
+        cs_addr_0 => \Timer1:TimerUDB:per_zero\ ,
+        z0_comb => \Timer1:TimerUDB:per_zero\ ,
+        f0_bus_stat_comb => \Timer1:TimerUDB:status_3\ ,
+        f0_blk_stat_comb => \Timer1:TimerUDB:status_2\ ,
+        chain_in => \Timer1:TimerUDB:sT16:timerdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Previous in chain : \Timer1:TimerUDB:sT16:timerdp:u0\
+
+statusicell: Name =\Timer1:TimerUDB:rstSts:stsreg\
+    PORT MAP (
+        clock => Net_10 ,
+        status_3 => \Timer1:TimerUDB:status_3\ ,
+        status_2 => \Timer1:TimerUDB:status_2\ ,
+        status_0 => \Timer1:TimerUDB:status_tc\ );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "1111111"
+        cy_md_select = "0000011"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+controlcell: Name =\Timer1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+    PORT MAP (
+        clock => Net_10 ,
+        control_7 => \Timer1:TimerUDB:control_7\ ,
+        control_6 => \Timer1:TimerUDB:control_6\ ,
+        control_5 => \Timer1:TimerUDB:control_5\ ,
+        control_4 => \Timer1:TimerUDB:control_4\ ,
+        control_3 => \Timer1:TimerUDB:control_3\ ,
+        control_2 => \Timer1:TimerUDB:control_2\ ,
+        control_1 => \Timer1:TimerUDB:control_1\ ,
+        control_0 => \Timer1:TimerUDB:control_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "11111111"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(1,1)] is empty.
+UDB [UDB=(1,2)] is empty.
+UDB [UDB=(1,3)] is empty.
+UDB [UDB=(1,4)] is empty.
+UDB [UDB=(1,5)] is empty.
+UDB [UDB=(2,0)] contents:
+LAB@[UDB=(2,0)][LB=0] #macrocells=3, #inputs=12, #pterms=8
+{
+    [McSlotId=0]:     MacroCell: Name=\SPIM_1:BSPIM:rx_status_6\, Mode=(Combinatorial) @ [UDB=(2,0)][LB=0][MC=0]
+        Total # of inputs        : 6
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              !\SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              \SPIM_1:BSPIM:count_0\ * \SPIM_1:BSPIM:rx_status_4\
+        );
+        Output = \SPIM_1:BSPIM:rx_status_6\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\SPIM_1:BSPIM:mosi_from_dp_reg\, Mode=(D-Register) @ [UDB=(2,0)][LB=0][MC=1]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \SPIM_1:BSPIM:mosi_from_dp\
+        );
+        Output = \SPIM_1:BSPIM:mosi_from_dp_reg\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\SPIM_1:BSPIM:mosi_hs_reg\, Mode=(D-Register) @ [UDB=(2,0)][LB=0][MC=2]
+        Total # of inputs        : 6
+        Total # of product terms : 6
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 6 pterms
+        (
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * \SPIM_1:BSPIM:mosi_from_dp\
+            + !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * \SPIM_1:BSPIM:mosi_from_dp_reg\
+            + !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_0\ * 
+              \SPIM_1:BSPIM:mosi_hs_reg\
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\ * \SPIM_1:BSPIM:mosi_from_dp\
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_0\ * 
+              \SPIM_1:BSPIM:mosi_hs_reg\
+            + !\SPIM_1:BSPIM:state_1\ * !\SPIM_1:BSPIM:state_0\ * 
+              \SPIM_1:BSPIM:mosi_hs_reg\
+        );
+        Output = \SPIM_1:BSPIM:mosi_hs_reg\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(2,0)][LB=1] #macrocells=3, #inputs=11, #pterms=8
+{
+    [McSlotId=0]:     MacroCell: Name=\SPIM_1:BSPIM:state_2\, Mode=(D-Register) @ [UDB=(2,0)][LB=1][MC=0]
+        Total # of inputs        : 10
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\
+            + !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\ * !\SPIM_1:BSPIM:count_4\ * 
+              !\SPIM_1:BSPIM:count_3\ * !\SPIM_1:BSPIM:count_2\ * 
+              !\SPIM_1:BSPIM:count_1\ * \SPIM_1:BSPIM:count_0\ * 
+              \SPIM_1:BSPIM:is_spi_done\
+            + !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_0\ * 
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              \SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              !\SPIM_1:BSPIM:count_0\ * !\SPIM_1:BSPIM:tx_status_1\
+        );
+        Output = \SPIM_1:BSPIM:state_2\ (fanout=15)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\SPIM_1:BSPIM:is_spi_done\, Mode=(T-Register) @ [UDB=(2,0)][LB=1][MC=1]
+        Total # of inputs        : 10
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * !\SPIM_1:BSPIM:count_4\ * 
+              !\SPIM_1:BSPIM:count_3\ * \SPIM_1:BSPIM:count_2\ * 
+              !\SPIM_1:BSPIM:count_1\ * !\SPIM_1:BSPIM:count_0\ * 
+              \SPIM_1:BSPIM:tx_status_1\ * !\SPIM_1:BSPIM:is_spi_done\
+            + \SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * \SPIM_1:BSPIM:is_spi_done\
+        );
+        Output = \SPIM_1:BSPIM:is_spi_done\ (fanout=4)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=Net_412, Mode=(D-Register) @ [UDB=(2,0)][LB=1][MC=2]
+        Total # of inputs        : 4
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        !(
+              !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\
+            + !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_0\ * !Net_412
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\
+        );
+        Output = Net_412 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\Timer5:TimerUDB:sT16:timerdp:u0\
+    PORT MAP (
+        clock => Net_429 ,
+        cs_addr_1 => \Timer5:TimerUDB:control_7\ ,
+        cs_addr_0 => \Timer5:TimerUDB:per_zero\ ,
+        chain_out => \Timer5:TimerUDB:sT16:timerdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Next in chain : \Timer5:TimerUDB:sT16:timerdp:u1\
+
+statusicell: Name =\SPIM_1:BSPIM:RxStsReg\
+    PORT MAP (
+        clock => \SPIM_1:Net_276\ ,
+        status_6 => \SPIM_1:BSPIM:rx_status_6\ ,
+        status_5 => \SPIM_1:BSPIM:rx_status_5\ ,
+        status_4 => \SPIM_1:BSPIM:rx_status_4\ );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "0000000"
+        cy_md_select = "1000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(2,1)] contents:
+LAB@[UDB=(2,1)][LB=0] #macrocells=1, #inputs=2, #pterms=1
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=Net_379, Mode=(D-Register) @ [UDB=(2,1)][LB=0][MC=3]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_371) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer3:TimerUDB:control_7\ * \Timer3:TimerUDB:per_zero\
+        );
+        Output = Net_379 (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+LAB@[UDB=(2,1)][LB=1] #macrocells=4, #inputs=12, #pterms=8
+{
+    [McSlotId=0]:     MacroCell: Name=\SPIM_1:BSPIM:state_0\, Mode=(T-Register) @ [UDB=(2,1)][LB=1][MC=0]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        !(
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\ * \SPIM_1:BSPIM:tx_status_1\
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\
+        );
+        Output = \SPIM_1:BSPIM:state_0\ (fanout=15)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\SPIM_1:BSPIM:state_1\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=1]
+        Total # of inputs        : 10
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        !(
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\
+            + !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_0\ * 
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              !\SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              \SPIM_1:BSPIM:count_0\ * \SPIM_1:BSPIM:is_spi_done\
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_0\
+            + \SPIM_1:BSPIM:state_1\ * \SPIM_1:BSPIM:state_0\ * 
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              \SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              !\SPIM_1:BSPIM:count_0\ * !\SPIM_1:BSPIM:tx_status_1\
+        );
+        Output = \SPIM_1:BSPIM:state_1\ (fanout=15)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\Timer3:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(2,1)][LB=1][MC=2]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer3:TimerUDB:control_7\ * \Timer3:TimerUDB:per_zero\
+        );
+        Output = \Timer3:TimerUDB:status_tc\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\SPIM_1:BSPIM:dpcounter_one\, Mode=(Combinatorial) @ [UDB=(2,1)][LB=1][MC=3]
+        Total # of inputs        : 5
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              !\SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              \SPIM_1:BSPIM:count_0\
+        );
+        Output = \SPIM_1:BSPIM:dpcounter_one\ (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+datapathcell: Name =\SPIM_1:BSPIM:sR16:Dp:u1\
+    PORT MAP (
+        clock => \SPIM_1:Net_276\ ,
+        cs_addr_2 => \SPIM_1:BSPIM:state_2\ ,
+        cs_addr_1 => \SPIM_1:BSPIM:state_1\ ,
+        cs_addr_0 => \SPIM_1:BSPIM:state_0\ ,
+        f1_load => \SPIM_1:BSPIM:load_rx_data\ ,
+        so_comb => \SPIM_1:BSPIM:mosi_from_dp\ ,
+        f0_bus_stat_comb => \SPIM_1:BSPIM:tx_status_2\ ,
+        f0_blk_stat_comb => \SPIM_1:BSPIM:tx_status_1\ ,
+        f1_bus_stat_comb => \SPIM_1:BSPIM:rx_status_5\ ,
+        f1_blk_stat_comb => \SPIM_1:BSPIM:rx_status_4\ ,
+        chain_in => \SPIM_1:BSPIM:sR16:Dp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000000000000000000001100000000000001010000000001000100010000000000011100000000010001000000000000000101000000000000010100000000001111000000001111111111111111000000000010001100001100101100000000000000000100"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Previous in chain : \SPIM_1:BSPIM:sR16:Dp:u0\
+
+count7cell: Name =\SPIM_1:BSPIM:BitCounter\
+    PORT MAP (
+        clock => \SPIM_1:Net_276\ ,
+        enable => \SPIM_1:BSPIM:cnt_enable\ ,
+        count_6 => \SPIM_1:BSPIM:count_6\ ,
+        count_5 => \SPIM_1:BSPIM:count_5\ ,
+        count_4 => \SPIM_1:BSPIM:count_4\ ,
+        count_3 => \SPIM_1:BSPIM:count_3\ ,
+        count_2 => \SPIM_1:BSPIM:count_2\ ,
+        count_1 => \SPIM_1:BSPIM:count_1\ ,
+        count_0 => \SPIM_1:BSPIM:count_0\ ,
+        tc => \SPIM_1:BSPIM:cnt_tc\ );
+    Properties:
+    {
+        cy_alt_mode = 0
+        cy_init_value = "0000000"
+        cy_period = "0010111"
+        cy_route_en = 1
+        cy_route_ld = 0
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(2,2)] contents:
+LAB@[UDB=(2,2)][LB=0] #macrocells=1, #inputs=11, #pterms=8
+{
+    [McSlotId=0]:     MacroCell: Name=\SPIM_1:BSPIM:mosi_pre_reg\, Mode=(T-Register) @ [UDB=(2,2)][LB=0][MC=0]
+        Total # of inputs        : 11
+        Total # of product terms : 8
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 8 pterms
+        !(
+              !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              !\SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              \SPIM_1:BSPIM:count_0\ * \SPIM_1:BSPIM:ld_ident\
+            + !\SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_0\
+            + !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:count_4\ * 
+              !\SPIM_1:BSPIM:count_3\ * !\SPIM_1:BSPIM:count_2\ * 
+              !\SPIM_1:BSPIM:count_1\ * \SPIM_1:BSPIM:count_0\ * 
+              !\SPIM_1:BSPIM:mosi_pre_reg\ * \SPIM_1:BSPIM:ld_ident\
+            + \SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\
+            + !\SPIM_1:BSPIM:state_1\ * !\SPIM_1:BSPIM:mosi_pre_reg\
+            + \SPIM_1:BSPIM:state_1\ * !\SPIM_1:BSPIM:state_0\ * 
+              \SPIM_1:BSPIM:mosi_from_dp\ * \SPIM_1:BSPIM:mosi_pre_reg\
+            + \SPIM_1:BSPIM:state_0\ * !\SPIM_1:BSPIM:mosi_pre_reg\
+            + !\SPIM_1:BSPIM:mosi_from_dp\ * !\SPIM_1:BSPIM:mosi_pre_reg\
+        );
+        Output = \SPIM_1:BSPIM:mosi_pre_reg\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(2,2)][LB=1] #macrocells=3, #inputs=11, #pterms=7
+{
+    [McSlotId=0]:     MacroCell: Name=\SPIM_1:BSPIM:cnt_enable\, Mode=(T-Register) @ [UDB=(2,2)][LB=1][MC=0]
+        Total # of inputs        : 10
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\ * \SPIM_1:BSPIM:cnt_enable\
+            + !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * !\SPIM_1:BSPIM:cnt_enable\
+            + !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_0\ * 
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              !\SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              \SPIM_1:BSPIM:count_0\ * \SPIM_1:BSPIM:is_spi_done\ * 
+              \SPIM_1:BSPIM:cnt_enable\
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_0\ * 
+              \SPIM_1:BSPIM:cnt_enable\
+        );
+        Output = \SPIM_1:BSPIM:cnt_enable\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\SPIM_1:BSPIM:ld_ident\, Mode=(T-Register) @ [UDB=(2,2)][LB=1][MC=1]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              \SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\ * !\SPIM_1:BSPIM:ld_ident\
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * \SPIM_1:BSPIM:ld_ident\
+        );
+        Output = \SPIM_1:BSPIM:ld_ident\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\SPIM_1:BSPIM:load_rx_data\, Mode=(D-Register) @ [UDB=(2,2)][LB=1][MC=2]
+        Total # of inputs        : 5
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SPIM_1:BSPIM:count_4\ * !\SPIM_1:BSPIM:count_3\ * 
+              !\SPIM_1:BSPIM:count_2\ * !\SPIM_1:BSPIM:count_1\ * 
+              \SPIM_1:BSPIM:count_0\
+        );
+        Output = \SPIM_1:BSPIM:load_rx_data\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\Timer3:TimerUDB:sT16:timerdp:u1\
+    PORT MAP (
+        clock => Net_371 ,
+        cs_addr_1 => \Timer3:TimerUDB:control_7\ ,
+        cs_addr_0 => \Timer3:TimerUDB:per_zero\ ,
+        z0_comb => \Timer3:TimerUDB:per_zero\ ,
+        f0_bus_stat_comb => \Timer3:TimerUDB:status_3\ ,
+        f0_blk_stat_comb => \Timer3:TimerUDB:status_2\ ,
+        chain_in => \Timer3:TimerUDB:sT16:timerdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Previous in chain : \Timer3:TimerUDB:sT16:timerdp:u0\
+
+statusicell: Name =\Timer3:TimerUDB:rstSts:stsreg\
+    PORT MAP (
+        clock => Net_371 ,
+        status_3 => \Timer3:TimerUDB:status_3\ ,
+        status_2 => \Timer3:TimerUDB:status_2\ ,
+        status_0 => \Timer3:TimerUDB:status_tc\ );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "1111111"
+        cy_md_select = "0000011"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(2,3)] is empty.
+UDB [UDB=(2,4)] contents:
+LAB@[UDB=(2,4)][LB=0] #macrocells=3, #inputs=12, #pterms=8
+{
+    [McSlotId=0]:     MacroCell: Name=\SPIM_1:BSPIM:load_cond\, Mode=(T-Register) @ [UDB=(2,4)][LB=0][MC=0]
+        Total # of inputs        : 9
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:count_4\ * 
+              !\SPIM_1:BSPIM:count_3\ * !\SPIM_1:BSPIM:count_2\ * 
+              !\SPIM_1:BSPIM:count_1\ * !\SPIM_1:BSPIM:count_0\ * 
+              \SPIM_1:BSPIM:load_cond\
+            + \SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\ * !\SPIM_1:BSPIM:load_cond\
+            + \SPIM_1:BSPIM:state_1\ * !\SPIM_1:BSPIM:count_4\ * 
+              !\SPIM_1:BSPIM:count_3\ * !\SPIM_1:BSPIM:count_2\ * 
+              !\SPIM_1:BSPIM:count_1\ * !\SPIM_1:BSPIM:count_0\ * 
+              \SPIM_1:BSPIM:load_cond\
+            + \SPIM_1:BSPIM:state_0\ * !\SPIM_1:BSPIM:count_4\ * 
+              !\SPIM_1:BSPIM:count_3\ * !\SPIM_1:BSPIM:count_2\ * 
+              !\SPIM_1:BSPIM:count_1\ * !\SPIM_1:BSPIM:count_0\ * 
+              \SPIM_1:BSPIM:load_cond\
+        );
+        Output = \SPIM_1:BSPIM:load_cond\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=Net_331, Mode=(T-Register) @ [UDB=(2,4)][LB=0][MC=1]
+        Total # of inputs        : 4
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\SPIM_1:Net_276\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\ * !Net_331
+            + !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * Net_331
+            + \SPIM_1:BSPIM:state_2\ * \SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\ * !Net_331
+        );
+        Output = Net_331 (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=Net_348, Mode=(Combinatorial) @ [UDB=(2,4)][LB=0][MC=2]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !Net_331 * \SPIM_1:BSPIM:mosi_hs_reg\ * !Net_395
+        );
+        Output = Net_348 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(2,4)][LB=1] #macrocells=2, #inputs=5, #pterms=2
+{
+    [McSlotId=0]:     MacroCell: Name=Net_392, Mode=(Combinatorial) @ [UDB=(2,4)][LB=1][MC=0]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !Net_331 * \SPIM_1:BSPIM:mosi_hs_reg\ * Net_395
+        );
+        Output = Net_392 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\Timer4:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(2,4)][LB=1][MC=3]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer4:TimerUDB:control_7\ * \Timer4:TimerUDB:per_zero\
+        );
+        Output = \Timer4:TimerUDB:status_tc\ (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+datapathcell: Name =\Timer4:TimerUDB:sT16:timerdp:u1\
+    PORT MAP (
+        clock => Net_416 ,
+        cs_addr_1 => \Timer4:TimerUDB:control_7\ ,
+        cs_addr_0 => \Timer4:TimerUDB:per_zero\ ,
+        z0_comb => \Timer4:TimerUDB:per_zero\ ,
+        f0_bus_stat_comb => \Timer4:TimerUDB:status_3\ ,
+        f0_blk_stat_comb => \Timer4:TimerUDB:status_2\ ,
+        chain_in => \Timer4:TimerUDB:sT16:timerdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Previous in chain : \Timer4:TimerUDB:sT16:timerdp:u0\
+
+statusicell: Name =\Timer4:TimerUDB:rstSts:stsreg\
+    PORT MAP (
+        clock => Net_416 ,
+        status_3 => \Timer4:TimerUDB:status_3\ ,
+        status_2 => \Timer4:TimerUDB:status_2\ ,
+        status_0 => \Timer4:TimerUDB:status_tc\ );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "1111111"
+        cy_md_select = "0000011"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+controlcell: Name =\SPIMOutCtrl:Sync:ctrl_reg\
+    PORT MAP (
+        control_7 => \SPIMOutCtrl:control_7\ ,
+        control_6 => \SPIMOutCtrl:control_6\ ,
+        control_5 => \SPIMOutCtrl:control_5\ ,
+        control_4 => \SPIMOutCtrl:control_4\ ,
+        control_3 => \SPIMOutCtrl:control_3\ ,
+        control_2 => \SPIMOutCtrl:control_2\ ,
+        control_1 => \SPIMOutCtrl:control_1\ ,
+        control_0 => Net_395 );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "00000000"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Enable: True
+
+UDB [UDB=(2,5)] contents:
+LAB@[UDB=(2,5)][LB=1] #macrocells=1, #inputs=2, #pterms=1
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=Net_369, Mode=(D-Register) @ [UDB=(2,5)][LB=1][MC=2]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_361) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer2:TimerUDB:control_7\ * \Timer2:TimerUDB:per_zero\
+        );
+        Output = Net_369 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\Timer2:TimerUDB:sT16:timerdp:u0\
+    PORT MAP (
+        clock => Net_361 ,
+        cs_addr_1 => \Timer2:TimerUDB:control_7\ ,
+        cs_addr_0 => \Timer2:TimerUDB:per_zero\ ,
+        chain_out => \Timer2:TimerUDB:sT16:timerdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Next in chain : \Timer2:TimerUDB:sT16:timerdp:u1\
+
+controlcell: Name =\Timer2:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+    PORT MAP (
+        clock => Net_361 ,
+        control_7 => \Timer2:TimerUDB:control_7\ ,
+        control_6 => \Timer2:TimerUDB:control_6\ ,
+        control_5 => \Timer2:TimerUDB:control_5\ ,
+        control_4 => \Timer2:TimerUDB:control_4\ ,
+        control_3 => \Timer2:TimerUDB:control_3\ ,
+        control_2 => \Timer2:TimerUDB:control_2\ ,
+        control_1 => \Timer2:TimerUDB:control_1\ ,
+        control_0 => \Timer2:TimerUDB:control_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "11111111"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(3,0)] contents:
+LAB@[UDB=(3,0)][LB=0] #macrocells=2, #inputs=2, #pterms=1
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=Net_428, Mode=(D-Register) @ [UDB=(3,0)][LB=0][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_429) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer5:TimerUDB:control_7\ * \Timer5:TimerUDB:per_zero\
+        );
+        Output = Net_428 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\Timer5:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(3,0)][LB=0][MC=3]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer5:TimerUDB:control_7\ * \Timer5:TimerUDB:per_zero\
+        );
+        Output = \Timer5:TimerUDB:status_tc\ (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+datapathcell: Name =\Timer5:TimerUDB:sT16:timerdp:u1\
+    PORT MAP (
+        clock => Net_429 ,
+        cs_addr_1 => \Timer5:TimerUDB:control_7\ ,
+        cs_addr_0 => \Timer5:TimerUDB:per_zero\ ,
+        z0_comb => \Timer5:TimerUDB:per_zero\ ,
+        f0_bus_stat_comb => \Timer5:TimerUDB:status_3\ ,
+        f0_blk_stat_comb => \Timer5:TimerUDB:status_2\ ,
+        chain_in => \Timer5:TimerUDB:sT16:timerdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Previous in chain : \Timer5:TimerUDB:sT16:timerdp:u0\
+
+statusicell: Name =\Timer5:TimerUDB:rstSts:stsreg\
+    PORT MAP (
+        clock => Net_429 ,
+        status_3 => \Timer5:TimerUDB:status_3\ ,
+        status_2 => \Timer5:TimerUDB:status_2\ ,
+        status_0 => \Timer5:TimerUDB:status_tc\ );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "1111111"
+        cy_md_select = "0000011"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+controlcell: Name =\Timer5:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+    PORT MAP (
+        clock => Net_429 ,
+        control_7 => \Timer5:TimerUDB:control_7\ ,
+        control_6 => \Timer5:TimerUDB:control_6\ ,
+        control_5 => \Timer5:TimerUDB:control_5\ ,
+        control_4 => \Timer5:TimerUDB:control_4\ ,
+        control_3 => \Timer5:TimerUDB:control_3\ ,
+        control_2 => \Timer5:TimerUDB:control_2\ ,
+        control_1 => \Timer5:TimerUDB:control_1\ ,
+        control_0 => \Timer5:TimerUDB:control_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "11111111"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(3,1)] contents:
+datapathcell: Name =\SPIM_1:BSPIM:sR16:Dp:u0\
+    PORT MAP (
+        clock => \SPIM_1:Net_276\ ,
+        cs_addr_2 => \SPIM_1:BSPIM:state_2\ ,
+        cs_addr_1 => \SPIM_1:BSPIM:state_1\ ,
+        cs_addr_0 => \SPIM_1:BSPIM:state_0\ ,
+        f1_load => \SPIM_1:BSPIM:load_rx_data\ ,
+        chain_out => \SPIM_1:BSPIM:sR16:Dp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000000000000000000001100000000000001010000000001000100010000000000011100000000010001000000000000000101000000000000010100000011111111000000001111111111111111000000000000001000001100011100000000000000000100"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Next in chain : \SPIM_1:BSPIM:sR16:Dp:u1\
+
+controlcell: Name =\Timer3:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+    PORT MAP (
+        clock => Net_371 ,
+        control_7 => \Timer3:TimerUDB:control_7\ ,
+        control_6 => \Timer3:TimerUDB:control_6\ ,
+        control_5 => \Timer3:TimerUDB:control_5\ ,
+        control_4 => \Timer3:TimerUDB:control_4\ ,
+        control_3 => \Timer3:TimerUDB:control_3\ ,
+        control_2 => \Timer3:TimerUDB:control_2\ ,
+        control_1 => \Timer3:TimerUDB:control_1\ ,
+        control_0 => \Timer3:TimerUDB:control_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "11111111"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(3,2)] contents:
+LAB@[UDB=(3,2)][LB=0] #macrocells=2, #inputs=3, #pterms=2
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\SPIM_1:BSPIM:tx_status_0\, Mode=(Combinatorial) @ [UDB=(3,2)][LB=0][MC=1]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              \SPIM_1:BSPIM:state_0\
+        );
+        Output = \SPIM_1:BSPIM:tx_status_0\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\SPIM_1:BSPIM:tx_status_4\, Mode=(Combinatorial) @ [UDB=(3,2)][LB=0][MC=3]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SPIM_1:BSPIM:state_2\ * !\SPIM_1:BSPIM:state_1\ * 
+              !\SPIM_1:BSPIM:state_0\
+        );
+        Output = \SPIM_1:BSPIM:tx_status_4\ (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+datapathcell: Name =\Timer3:TimerUDB:sT16:timerdp:u0\
+    PORT MAP (
+        clock => Net_371 ,
+        cs_addr_1 => \Timer3:TimerUDB:control_7\ ,
+        cs_addr_0 => \Timer3:TimerUDB:per_zero\ ,
+        chain_out => \Timer3:TimerUDB:sT16:timerdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Next in chain : \Timer3:TimerUDB:sT16:timerdp:u1\
+
+statusicell: Name =\SPIM_1:BSPIM:TxStsReg\
+    PORT MAP (
+        clock => \SPIM_1:Net_276\ ,
+        status_4 => \SPIM_1:BSPIM:tx_status_4\ ,
+        status_3 => \SPIM_1:BSPIM:dpcounter_one\ ,
+        status_2 => \SPIM_1:BSPIM:tx_status_2\ ,
+        status_1 => \SPIM_1:BSPIM:tx_status_1\ ,
+        status_0 => \SPIM_1:BSPIM:tx_status_0\ );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "0000000"
+        cy_md_select = "0001001"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(3,3)] is empty.
+UDB [UDB=(3,4)] contents:
+LAB@[UDB=(3,4)][LB=0] #macrocells=1, #inputs=2, #pterms=1
+{
+    [McSlotId=0]:     MacroCell: Name=Net_427, Mode=(D-Register) @ [UDB=(3,4)][LB=0][MC=0]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_416) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer4:TimerUDB:control_7\ * \Timer4:TimerUDB:per_zero\
+        );
+        Output = Net_427 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\Timer4:TimerUDB:sT16:timerdp:u0\
+    PORT MAP (
+        clock => Net_416 ,
+        cs_addr_1 => \Timer4:TimerUDB:control_7\ ,
+        cs_addr_0 => \Timer4:TimerUDB:per_zero\ ,
+        chain_out => \Timer4:TimerUDB:sT16:timerdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Next in chain : \Timer4:TimerUDB:sT16:timerdp:u1\
+
+controlcell: Name =\Timer4:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+    PORT MAP (
+        clock => Net_416 ,
+        control_7 => \Timer4:TimerUDB:control_7\ ,
+        control_6 => \Timer4:TimerUDB:control_6\ ,
+        control_5 => \Timer4:TimerUDB:control_5\ ,
+        control_4 => \Timer4:TimerUDB:control_4\ ,
+        control_3 => \Timer4:TimerUDB:control_3\ ,
+        control_2 => \Timer4:TimerUDB:control_2\ ,
+        control_1 => \Timer4:TimerUDB:control_1\ ,
+        control_0 => \Timer4:TimerUDB:control_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "11111111"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(3,5)] contents:
+LAB@[UDB=(3,5)][LB=0] #macrocells=1, #inputs=2, #pterms=1
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\Timer2:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(3,5)][LB=0][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer2:TimerUDB:control_7\ * \Timer2:TimerUDB:per_zero\
+        );
+        Output = \Timer2:TimerUDB:status_tc\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\Timer2:TimerUDB:sT16:timerdp:u1\
+    PORT MAP (
+        clock => Net_361 ,
+        cs_addr_1 => \Timer2:TimerUDB:control_7\ ,
+        cs_addr_0 => \Timer2:TimerUDB:per_zero\ ,
+        z0_comb => \Timer2:TimerUDB:per_zero\ ,
+        f0_bus_stat_comb => \Timer2:TimerUDB:status_3\ ,
+        f0_blk_stat_comb => \Timer2:TimerUDB:status_2\ ,
+        chain_in => \Timer2:TimerUDB:sT16:timerdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Previous in chain : \Timer2:TimerUDB:sT16:timerdp:u0\
+
+statusicell: Name =\Timer2:TimerUDB:rstSts:stsreg\
+    PORT MAP (
+        clock => Net_361 ,
+        status_3 => \Timer2:TimerUDB:status_3\ ,
+        status_2 => \Timer2:TimerUDB:status_2\ ,
+        status_0 => \Timer2:TimerUDB:status_tc\ );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "1111111"
+        cy_md_select = "0000011"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+Intr container @ [IntrContainer=(0)]: 
+  Intr@ [IntrContainer=(0)][IntrId=(0)] 
+    interrupt: Name =isr_BlinkLED
+        PORT MAP (
+            interrupt => Net_427 );
+        Properties:
+        {
+            int_type = "00"
+            is_nmi = 0
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(1)] 
+    interrupt: Name =isr_LED_pulse
+        PORT MAP (
+            interrupt => Net_369 );
+        Properties:
+        {
+            int_type = "00"
+            is_nmi = 0
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(2)] 
+    interrupt: Name =isr_LED_refreshrate
+        PORT MAP (
+            interrupt => Net_360 );
+        Properties:
+        {
+            int_type = "00"
+            is_nmi = 0
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(3)] 
+    interrupt: Name =isr_LED_ring
+        PORT MAP (
+            interrupt => Net_379 );
+        Properties:
+        {
+            int_type = "00"
+            is_nmi = 0
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(4)] 
+    interrupt: Name =isr_delay
+        PORT MAP (
+            interrupt => Net_428 );
+        Properties:
+        {
+            int_type = "00"
+            is_nmi = 0
+        }
+Drq container @ [DrqContainer=(0)]: empty
+Port 0 contains the following IO cells:
+[IoId=6]: 
+Pin : Name = LEDdata2(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: CMOS_OUT
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: DIGITAL, ROUTABLE
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => LEDdata2(0)__PA ,
+        pin_input => Net_392 ,
+        pad => LEDdata2(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=7]: 
+Pin : Name = LEDdata(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: CMOS_OUT
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: DIGITAL, ROUTABLE
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => LEDdata(0)__PA ,
+        pin_input => Net_348 ,
+        pad => LEDdata(0)_PAD );
+    Properties:
+    {
+    }
+
+Port 1 contains the following IO cells:
+Port 2 contains the following IO cells:
+Port 3 contains the following IO cells:
+Port 12 contains the following IO cells:
+Port 15 contains the following IO cells:
+ARM group 0: empty
+CAN group 0: empty
+Cache group 0: empty
+CapSense group 0: empty
+Clock group 0: 
+    Clock Block @ F(Clock,0): 
+    clockblockcell: Name =ClockBlock
+        PORT MAP (
+            imo => ClockBlock_IMO ,
+            pllout => ClockBlock_PLL_OUT ,
+            ilo => ClockBlock_ILO ,
+            clk_100k => ClockBlock_100k ,
+            clk_1k => ClockBlock_1k ,
+            clk_32k => ClockBlock_32k ,
+            xtal => ClockBlock_XTAL ,
+            clk_32k_xtal => ClockBlock_XTAL_32KHZ ,
+            clk_sync => ClockBlock_MASTER_CLK ,
+            clk_bus_glb => ClockBlock_BUS_CLK ,
+            clk_bus => ClockBlock_BUS_CLK_local ,
+            dclk_glb_0 => \SPIM_1:Net_276\ ,
+            dclk_0 => \SPIM_1:Net_276_local\ ,
+            dclk_glb_1 => Net_371 ,
+            dclk_1 => Net_371_local ,
+            dclk_glb_2 => Net_429 ,
+            dclk_2 => Net_429_local ,
+            dclk_glb_3 => Net_416 ,
+            dclk_3 => Net_416_local ,
+            dclk_glb_4 => Net_10 ,
+            dclk_4 => Net_10_local ,
+            dclk_glb_5 => Net_361 ,
+            dclk_5 => Net_361_local );
+        Properties:
+        {
+        }
+Comparator group 0: empty
+DFB group 0: empty
+DSM group 0: empty
+Decimator group 0: empty
+EMIF group 0: empty
+I2C group 0: empty
+LCD group 0: empty
+LVD group 0: empty
+PICU group 0: empty
+PM group 0: empty
+SC group 0: empty
+SPC group 0: empty
+Timer group 0: empty
+USB group 0: empty
+VIDAC group 0: empty
+OpAmp group 0: empty
+CsAbuf group 0: empty
+Vref group 0: empty
+LPF group 0: empty
+SAR group 0: empty
+ANAIF group 0: empty
+PHUB group 0: empty
+</CYPRESSTAG>
+<CYPRESSTAG name="Port Configuration Details">
+
+------------------------------------------------------------
+Port Configuration report
+------------------------------------------------------------
+     |     |       | Interrupt |                  |             | 
+Port | Pin | Fixed |      Type |       Drive Mode |        Name | Connections
+-----+-----+-------+-----------+------------------+-------------+------------
+   0 |   6 |     * |      NONE |         CMOS_OUT | LEDdata2(0) | In(Net_392)
+     |   7 |     * |      NONE |         CMOS_OUT |  LEDdata(0) | In(Net_348)
+-----------------------------------------------------------------------------
+</CYPRESSTAG>
+</CYPRESSTAG>
+</CYPRESSTAG>
+Digital component placer commit/Report: Elapsed time ==> 0s.071ms
+Digital Placement phase: Elapsed time ==> 2s.175ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Digital Routing">
+"C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Users\cring\Documents\PSoC Creator\4.2\Devices\psoc5/psoc5lp/route_arch-rrg.cydata" --vh2-path "LED_control_r.vh2" --pcf-path "LED_control.pco" --des-name "LED_control" --dsf-path "LED_control.dsf" --sdc-path "LED_control.sdc" --lib-path "LED_control_r.lib"
+Routing successful.
+Digital Routing phase: Elapsed time ==> 2s.643ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Bitstream Generation">
+Bitstream Generation phase: Elapsed time ==> 0s.324ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Bitstream Verification">
+Bitstream Verification phase: Elapsed time ==> 0s.065ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Static timing analysis">
+Timing report is in LED_control_timing.html.
+Static timing analysis phase: Elapsed time ==> 0s.582ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Data reporting">
+Data reporting phase: Elapsed time ==> 0s.000ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Database update...">
+Design database save phase: Elapsed time ==> 0s.248ms
+</CYPRESSTAG>
+cydsfit: Elapsed time ==> 6s.822ms
+</CYPRESSTAG>
+Fitter phase: Elapsed time ==> 6s.822ms
+API generation phase: Elapsed time ==> 1s.924ms
+Dependency generation phase: Elapsed time ==> 0s.052ms
+Cleanup phase: Elapsed time ==> 0s.001ms
