@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="LCD_displayMedTimer\LCD_display\Source Files\Display.c">
+<ExpandedNodeIds>
+<v>LCD_displayMedTimer</v>
+<v>LCD_displayMedTimer\LCD_display</v>
+<v>LCD_displayMedTimer\LCD_display\TopDesign</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\Pins</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\Analog</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\Clocks</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\Interrupts</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\DMA</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\System</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\Directives</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\Flash Security</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\EEPROM</v>
+<v>LCD_displayMedTimer\LCD_display\Header Files</v>
+<v>LCD_displayMedTimer\LCD_display\Header Files\cyapicallbacks.h</v>
+<v>LCD_displayMedTimer\LCD_display\Header Files\Display.h</v>
+<v>LCD_displayMedTimer\LCD_display\Header Files\LiquidCrystal_I2C.h</v>
+<v>LCD_displayMedTimer\LCD_display\Header Files\Stopur.h</v>
+<v>LCD_displayMedTimer\LCD_display\Source Files</v>
+<v>LCD_displayMedTimer\LCD_display\Source Files\Display.c</v>
+<v>LCD_displayMedTimer\LCD_display\Source Files\LiquidCrystal_I2C.c</v>
+<v>LCD_displayMedTimer\LCD_display\Source Files\main.c</v>
+<v>LCD_displayMedTimer\LCD_display\Source Files\Stopur.c</v>
+<v>LCD_displayMedTimer\LCD_display\Generated_Source</v>
+<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>LCD_displayMedTimer</v>
+<v>LCD_displayMedTimer\LCD_display</v>
+<v>LCD_displayMedTimer\LCD_display\TopDesign</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\Pins</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\Analog</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\Clocks</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\Interrupts</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\DMA</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\System</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\Directives</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\Flash Security</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.cydwr\EEPROM</v>
+<v>LCD_displayMedTimer\LCD_display\Header Files</v>
+<v>LCD_displayMedTimer\LCD_display\Header Files\cyapicallbacks.h</v>
+<v>LCD_displayMedTimer\LCD_display\Header Files\Display.h</v>
+<v>LCD_displayMedTimer\LCD_display\Header Files\LiquidCrystal_I2C.h</v>
+<v>LCD_displayMedTimer\LCD_display\Header Files\Stopur.h</v>
+<v>LCD_displayMedTimer\LCD_display\Source Files</v>
+<v>LCD_displayMedTimer\LCD_display\Source Files\Display.c</v>
+<v>LCD_displayMedTimer\LCD_display\Source Files\LiquidCrystal_I2C.c</v>
+<v>LCD_displayMedTimer\LCD_display\Source Files\main.c</v>
+<v>LCD_displayMedTimer\LCD_display\Source Files\Stopur.c</v>
+<v>LCD_displayMedTimer\LCD_display\Generated_Source</v>
+<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5</v>
+<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cy_boot</v>
+<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\I2C_1</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>LCD_displayMedTimer</v>
+<v>LCD_displayMedTimer\LCD_display</v>
+<v>LCD_displayMedTimer\LCD_display\TopDesign</v>
+<v>LCD_displayMedTimer\LCD_display\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>LCD_displayMedTimer</v>
+<v>LCD_displayMedTimer\LCD_display</v>
+<v>LCD_displayMedTimer\LCD_display\TopDesign</v>
+<v>LCD_displayMedTimer\LCD_display\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>LCD_displayMedTimer</v>
+<v>LCD_displayMedTimer\LCD_display</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\Display.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_BOOT.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_INT.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_MASTER.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_PM.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_SLAVE.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_refreshrate_LCD.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_timer.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\LiquidCrystal_I2C.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\SCL_pin.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\SDA_pin.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\Stopur.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock_1.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_LCD.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_LCD_PM.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_Stopur.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_Stopur_PM.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\LCD_display.elf</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\LCD_display.hex</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\LCD_display.map</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.gpdsc</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display.rpt</v>
+<v>LCD_displayMedTimer\LCD_display\LCD_display_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>LCD_displayMedTimer</v>
+<v>LCD_displayMedTimer\LCD_display</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\Display.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_BOOT.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_INT.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_MASTER.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_PM.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_SLAVE.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_refreshrate_LCD.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_timer.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\LiquidCrystal_I2C.lst</v>
+<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>LCD_displayMedTimer</v>
+<v>LCD_displayMedTimer\LCD_display</v>
+<v>LCD_displayMedTimer\LCD_display\PSoC 5LP Architecture TRM</v>
+<v>LCD_displayMedTimer\LCD_display\CY8C58LP Family Datasheet</v>
+<v>LCD_displayMedTimer\LCD_display\System Reference Guides</v>
+<v>LCD_displayMedTimer\LCD_display\System Reference Guides\cy_boot_v5_70</v>
+<v>LCD_displayMedTimer\LCD_display\cy_clock_v2_20</v>
+<v>LCD_displayMedTimer\LCD_display\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>LCD_displayMedTimer\LCD_display\cy_isr_v1_70</v>
+<v>LCD_displayMedTimer\LCD_display\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>LCD_displayMedTimer\LCD_display\cy_pins_v2_20</v>
+<v>LCD_displayMedTimer\LCD_display\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>LCD_displayMedTimer\LCD_display\I2C_v3_50.pdf</v>
+<v>LCD_displayMedTimer\LCD_display\Timer_v2_80</v>
+<v>LCD_displayMedTimer\LCD_display\Timer_v2_80\Timer_v2_80.pdf</v>
+<v>LCD_displayMedTimer\LCD_display\ZeroTerminal</v>
+<v>LCD_displayMedTimer\LCD_display\ZeroTerminal\ZeroTerminal.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>LCD_displayMedTimer</v>
+<v>LCD_displayMedTimer\LCD_display</v>
+<v>LCD_displayMedTimer\LCD_display\PSoC 5LP Architecture TRM</v>
+<v>LCD_displayMedTimer\LCD_display\CY8C58LP Family Datasheet</v>
+<v>LCD_displayMedTimer\LCD_display\System Reference Guides</v>
+<v>LCD_displayMedTimer\LCD_display\System Reference Guides\cy_boot_v5_70</v>
+<v>LCD_displayMedTimer\LCD_display\cy_clock_v2_20</v>
+<v>LCD_displayMedTimer\LCD_display\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>LCD_displayMedTimer\LCD_display\cy_isr_v1_70</v>
+<v>LCD_displayMedTimer\LCD_display\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>LCD_displayMedTimer\LCD_display\cy_pins_v2_20</v>
+<v>LCD_displayMedTimer\LCD_display\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>LCD_displayMedTimer\LCD_display\I2C_v3_50.pdf</v>
+<v>LCD_displayMedTimer\LCD_display\Timer_v2_80</v>
+<v>LCD_displayMedTimer\LCD_display\Timer_v2_80\Timer_v2_80.pdf</v>
+<v>LCD_displayMedTimer\LCD_display\ZeroTerminal</v>
+<v>LCD_displayMedTimer\LCD_display\ZeroTerminal\ZeroTerminal.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators>
+<CyGuid_67999771-01c6-4f62-90b3-2054bb36a318 type_name="CyDesigner.Framework.CyBookmark" version="1">
+<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="2" DocumentName=".\LCD_display.cydsn\Display.c" />
+</CyGuid_67999771-01c6-4f62-90b3-2054bb36a318>
+<CyGuid_67999771-01c6-4f62-90b3-2054bb36a318 type_name="CyDesigner.Framework.CyBookmark" version="1">
+<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="20" DocumentName=".\LCD_display.cydsn\Display.c" />
+</CyGuid_67999771-01c6-4f62-90b3-2054bb36a318>
+<CyGuid_67999771-01c6-4f62-90b3-2054bb36a318 type_name="CyDesigner.Framework.CyBookmark" version="1">
+<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="13" DocumentName=".\LCD_display.cydsn\Display.c" />
+</CyGuid_67999771-01c6-4f62-90b3-2054bb36a318>
+<CyGuid_67999771-01c6-4f62-90b3-2054bb36a318 type_name="CyDesigner.Framework.CyBookmark" version="1">
+<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="65" DocumentName=".\LCD_display.cydsn\LiquidCrystal_I2C.h" />
+</CyGuid_67999771-01c6-4f62-90b3-2054bb36a318>
+</indicators>
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\LCD_display.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\LCD_display.cydsn\LCD_display.cydwr" />
+<name v=".\LCD_display.cydsn\main.c" />
+<name v=".\LCD_display.cydsn\Stopur.h" />
+<name v=".\LCD_display.cydsn\Display.h" />
+<name v=".\LCD_display.cydsn\Display.c" />
+<name v=".\LCD_display.cydsn\Stopur.c" />
+<name v=".\LCD_display.cydsn\LiquidCrystal_I2C.h" />
+<name v=".\LCD_display.cydsn\LiquidCrystal_I2C.c" />
+<name v=".\LCD_display.cydsn\cyapicallbacks.h" />
+<name v=".\LCD_display.cydsn\Generated_Source\PSoC5\I2C_1_MASTER.c" />
+<name v=".\LCD_display.cydsn\Generated_Source\PSoC5\Cm3Start.c" />
+<name v=".\LCD_display.cydsn\Generated_Source\PSoC5\isr_timer.c" />
+<name v=".\LCD_display.cydsn\Generated_Source\PSoC5\CyBootAsmGnu.s" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="875, 359" SelectedTabbedMdiWindow="eaeabda8-2fcb-4ccc-9288-c8069d8715ae"><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\TopDesign\TopDesign.cysch" Guid="6b688cbf-46b9-4592-b814-82db21c3e43a" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\LCD_display.cydwr" Guid="fc482a37-64cd-4a03-a418-1388904cfcc5" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\main.c" Guid="d77a2240-bb5c-4249-aa9f-1d4ecf6fb2c5" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Stopur.h" Guid="f9e5d83d-8367-48ae-9eaa-6d2470415fae" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Display.h" Guid="38976353-b0e3-4500-8a41-56471e182c67" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Display.c" Guid="eaeabda8-2fcb-4ccc-9288-c8069d8715ae" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Stopur.c" Guid="b0cad4ab-bd5d-48f0-b2c4-0b2dbb0cab47" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\LiquidCrystal_I2C.h" Guid="99430d3d-741a-4054-8104-554774c77f64" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\LiquidCrystal_I2C.c" Guid="33af4562-33e3-4a0b-9ff8-cef4ec773ead" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\cyapicallbacks.h" Guid="9760eade-9aa7-474b-9f20-1745cd0453ef" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Generated_Source\PSoC5\I2C_1_MASTER.c" Guid="92b56cec-b22e-4b18-9645-17d2dc7546d7" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Generated_Source\PSoC5\Cm3Start.c" Guid="ccb92a40-ca6d-44aa-b845-2c21147fb327" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Generated_Source\PSoC5\isr_timer.c" Guid="031157da-d97c-424f-a5f3-5a350800e44b" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Generated_Source\PSoC5\CyBootAsmGnu.s" Guid="f2311275-2f45-4049-bdc1-699beafa5c79" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="d9acdc0d-3130-4ebb-ac22-30d0e130c66d" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

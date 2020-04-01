@@ -1,0 +1,6 @@
+C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\LCD_display.cyprj|7851b90d-ec77-4ebb-88ec-9205326ec22c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|7b8e0884-5d29-4233-ac4c-f09e208f3efc
+C:\Users\Morten\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|f6510182-64f3-46de-b146-b86f16645060
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|eb12fd2e-7b80-4755-89e0-e95e1bc850b1
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|a827b21d-4e3f-44aa-82c0-66cb0017a237
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|c82dbc9a-4405-497d-a42b-d31aaba84452
