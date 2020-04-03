@@ -3,14 +3,14 @@
 
 int count = 0;
 
-CY_ISR(isr_timer)                // interrupter ved hvert 100 ms
+CY_ISR(isr_timer)                // interrupter hvert 100 ms
 {
     if (count < 1200)            // incrementeres ved hvert interrupt
     {
         count++;
        
     }else{
-        stopTimer();             // stopper vores interrupt rutine hvis count overstiger 1200
+        stopTimer();             // stopper vores interrupt rutine hvis count overstiger 1200 hvilket svarer til 120s eller 2 minuter
     }
 }
 

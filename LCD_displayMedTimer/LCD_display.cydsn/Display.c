@@ -5,8 +5,8 @@
 #define Display1 0x26                                  // Definere adressen på display 1
 #define Display2 0x27                                  // Definere adressen på display 2
 
-int display1On = 0;
-int display2On = 0;
+int display1On = 0;                                    //Bestemmer om display1 opdateres i interrupt
+int display2On = 0;                                    //Bestemmer om display2 opdateres i interrupt
 
 CY_ISR(isr_refreshrate_LCD)
 {
@@ -20,8 +20,8 @@ CY_ISR(isr_refreshrate_LCD)
 void initDisp(int Hz)                                   // Initiere display
 {
     I2C_1_Start();                                      // Initiere og klargør I2C komponenten
-    isr_refreshrate_LCD_StartEx(isr_refreshrate_LCD);   // starter timer for refreshrate på displays
-    Timer_LCD_WritePeriod((1/Hz)*10000);                // sørger for vi kan skrive vores værdier som Hertz
+    isr_refreshrate_LCD_StartEx(isr_refreshrate_LCD);   // Initiere interrupt for refreshrate på displays
+    Timer_LCD_WritePeriod((1/Hz)*10000);                // Omskriver Hz til ms og opdaterer refreshraten
     
     LiquidCrystal_I2C_init(Display1,16,2,0);            // Initiere vores LCD library med: adressen på LCD'en, antal characters, antal rækker og størrelsen på "dots"
     begin();                                            // positionere vores display til begin state
@@ -57,7 +57,7 @@ void dispTime(int disp, int ms)                           // positionere og udsk
     char buf[20];
     disp = disp == 1 ? 0x26 : 0x27;
    
-    seconds = ms / 1000;                                  // værdien kommer som ms derfor /10 for at få sekunder
+    seconds = ms / 1000;                                  // værdien kommer som ms derfor /1000 for at få sekunder
     ms = (ms - seconds*1000);                             // sørger for at vi får vores decimal tal 
     
     setaddress(disp);
