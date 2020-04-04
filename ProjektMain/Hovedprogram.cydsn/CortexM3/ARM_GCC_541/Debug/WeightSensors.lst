@@ -1,0 +1,1672 @@
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"WeightSensors.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	__aeabi_i2d
+  20              		.global	__aeabi_ddiv
+  21              		.global	__aeabi_d2uiz
+  22              		.section	.text.readdata1,"ax",%progbits
+  23              		.align	2
+  24              		.global	readdata1
+  25              		.thumb
+  26              		.thumb_func
+  27              		.type	readdata1, %function
+  28              	readdata1:
+  29              	.LFB64:
+  30              		.file 1 "WeightSensors.c"
+   1:WeightSensors.c **** /* ========================================
+   2:WeightSensors.c ****  *
+   3:WeightSensors.c ****  * Copyright YOUR COMPANY, THE YEAR
+   4:WeightSensors.c ****  * All Rights Reserved
+   5:WeightSensors.c ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:WeightSensors.c ****  *
+   7:WeightSensors.c ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:WeightSensors.c ****  * WHICH IS THE PROPERTY OF your company.
+   9:WeightSensors.c ****  *
+  10:WeightSensors.c ****  * ========================================
+  11:WeightSensors.c **** */
+  12:WeightSensors.c **** /* ========================================
+  13:WeightSensors.c ****  *
+  14:WeightSensors.c ****  * Copyright YOUR COMPANY, THE YEAR
+  15:WeightSensors.c ****  * All Rights Reserved
+  16:WeightSensors.c ****  * UNPUBLISHED, LICENSED SOFTWARE.
+  17:WeightSensors.c ****  *
+  18:WeightSensors.c ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+  19:WeightSensors.c ****  * WHICH IS THE PROPERTY OF your company.
+  20:WeightSensors.c ****  *
+  21:WeightSensors.c ****  * ========================================
+  22:WeightSensors.c **** */
+  23:WeightSensors.c **** #include "WeightSensors_.h"
+  24:WeightSensors.c **** #define afvigelse 10                //Bestemmer fejlmargin for compareWeight.
+  25:WeightSensors.c **** #define mVtoG 0.252
+  26:WeightSensors.c **** 
+  27:WeightSensors.c **** char uart_string[50];
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 2
+
+
+  28:WeightSensors.c **** ///*
+  29:WeightSensors.c **** WeightSensors  WSptr = {.p1 = 0, .p2 = 0}; //WeightSensor Pointer
+  30:WeightSensors.c **** 
+  31:WeightSensors.c **** uint16 readdata1()
+  32:WeightSensors.c **** {
+  31              		.loc 1 32 0
+  32              		.cfi_startproc
+  33              		@ args = 0, pretend = 0, frame = 0
+  34              		@ frame_needed = 0, uses_anonymous_args = 0
+  35 0000 10B5     		push	{r4, lr}
+  36              		.cfi_def_cfa_offset 8
+  37              		.cfi_offset 4, -8
+  38              		.cfi_offset 14, -4
+  33:WeightSensors.c ****     PlayerSelect_Select(0);//vælg player1
+  39              		.loc 1 33 0
+  40 0002 0020     		movs	r0, #0
+  41 0004 FFF7FEFF 		bl	PlayerSelect_FastSelect
+  42              	.LVL0:
+  34:WeightSensors.c ****     
+  35:WeightSensors.c ****     ADC_SAR_1_StartConvert();
+  43              		.loc 1 35 0
+  44 0008 FFF7FEFF 		bl	ADC_SAR_1_StartConvert
+  45              	.LVL1:
+  36:WeightSensors.c ****     if (ADC_SAR_1_IsEndConversion(ADC_SAR_1_WAIT_FOR_RESULT)!=0){
+  46              		.loc 1 36 0
+  47 000c 0020     		movs	r0, #0
+  48 000e FFF7FEFF 		bl	ADC_SAR_1_IsEndConversion
+  49              	.LVL2:
+  50 0012 C8B1     		cbz	r0, .L2
+  37:WeightSensors.c ****     WSptr.p1 = ADC_SAR_1_GetResult16();
+  51              		.loc 1 37 0
+  52 0014 FFF7FEFF 		bl	ADC_SAR_1_GetResult16
+  53              	.LVL3:
+  54 0018 0F4C     		ldr	r4, .L4+8
+  55 001a 2080     		strh	r0, [r4]	@ movhi
+  38:WeightSensors.c ****     WSptr.p1 = ADC_SAR_1_CountsTo_mVolts(WSptr.p1);
+  56              		.loc 1 38 0
+  57 001c FFF7FEFF 		bl	ADC_SAR_1_CountsTo_mVolts
+  58              	.LVL4:
+  39:WeightSensors.c ****     WSptr.p1 /= mVtoG;                                                      // Dividerer med 0.25 f
+  59              		.loc 1 39 0
+  60 0020 80B2     		uxth	r0, r0
+  61 0022 FFF7FEFF 		bl	__aeabi_i2d
+  62              	.LVL5:
+  63 0026 0AA3     		adr	r3, .L4
+  64 0028 D3E90023 		ldrd	r2, [r3]
+  65 002c FFF7FEFF 		bl	__aeabi_ddiv
+  66              	.LVL6:
+  67 0030 FFF7FEFF 		bl	__aeabi_d2uiz
+  68              	.LVL7:
+  69 0034 82B2     		uxth	r2, r0
+  70 0036 2280     		strh	r2, [r4]	@ movhi
+  40:WeightSensors.c ****     
+  41:WeightSensors.c ****     //Debugging-----------------------------
+  42:WeightSensors.c ****     sprintf(uart_string, "\r\ndata read from player 1: %u", WSptr.p1);     // convert to string
+  71              		.loc 1 42 0
+  72 0038 084C     		ldr	r4, .L4+12
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 3
+
+
+  73 003a 0949     		ldr	r1, .L4+16
+  74 003c 2046     		mov	r0, r4
+  75 003e FFF7FEFF 		bl	sprintf
+  76              	.LVL8:
+  43:WeightSensors.c ****     UART_1_PutString(uart_string);                                         // output string
+  77              		.loc 1 43 0
+  78 0042 2046     		mov	r0, r4
+  79 0044 FFF7FEFF 		bl	UART_1_PutString
+  80              	.LVL9:
+  81              	.L2:
+  44:WeightSensors.c ****     //--------------------------------------
+  45:WeightSensors.c ****     
+  46:WeightSensors.c ****     }
+  47:WeightSensors.c ****     return WSptr.p1;
+  48:WeightSensors.c **** }
+  82              		.loc 1 48 0
+  83 0048 034B     		ldr	r3, .L4+8
+  84 004a 1888     		ldrh	r0, [r3]
+  85 004c 10BD     		pop	{r4, pc}
+  86              	.L5:
+  87 004e 00BF     		.align	3
+  88              	.L4:
+  89 0050 54E3A59B 		.word	-1683627180
+  90 0054 C420D03F 		.word	1070604484
+  91 0058 00000000 		.word	.LANCHOR0
+  92 005c 00000000 		.word	uart_string
+  93 0060 00000000 		.word	.LC0
+  94              		.cfi_endproc
+  95              	.LFE64:
+  96              		.size	readdata1, .-readdata1
+  97              		.section	.text.readdata2,"ax",%progbits
+  98              		.align	2
+  99              		.global	readdata2
+ 100              		.thumb
+ 101              		.thumb_func
+ 102              		.type	readdata2, %function
+ 103              	readdata2:
+ 104              	.LFB65:
+  49:WeightSensors.c **** 
+  50:WeightSensors.c **** uint16 readdata2()
+  51:WeightSensors.c **** {
+ 105              		.loc 1 51 0
+ 106              		.cfi_startproc
+ 107              		@ args = 0, pretend = 0, frame = 0
+ 108              		@ frame_needed = 0, uses_anonymous_args = 0
+ 109 0000 10B5     		push	{r4, lr}
+ 110              		.cfi_def_cfa_offset 8
+ 111              		.cfi_offset 4, -8
+ 112              		.cfi_offset 14, -4
+  52:WeightSensors.c ****     PlayerSelect_Select(1); //vælg player2
+ 113              		.loc 1 52 0
+ 114 0002 0120     		movs	r0, #1
+ 115 0004 FFF7FEFF 		bl	PlayerSelect_FastSelect
+ 116              	.LVL10:
+  53:WeightSensors.c ****     
+  54:WeightSensors.c ****     ADC_SAR_1_StartConvert();
+ 117              		.loc 1 54 0
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 4
+
+
+ 118 0008 FFF7FEFF 		bl	ADC_SAR_1_StartConvert
+ 119              	.LVL11:
+  55:WeightSensors.c ****     if (ADC_SAR_1_IsEndConversion(ADC_SAR_1_WAIT_FOR_RESULT)!=0){
+ 120              		.loc 1 55 0
+ 121 000c 0020     		movs	r0, #0
+ 122 000e FFF7FEFF 		bl	ADC_SAR_1_IsEndConversion
+ 123              	.LVL12:
+ 124 0012 C8B1     		cbz	r0, .L7
+  56:WeightSensors.c ****     WSptr.p2 = ADC_SAR_1_GetResult16();
+ 125              		.loc 1 56 0
+ 126 0014 FFF7FEFF 		bl	ADC_SAR_1_GetResult16
+ 127              	.LVL13:
+ 128 0018 0F4C     		ldr	r4, .L9+8
+ 129 001a 6080     		strh	r0, [r4, #2]	@ movhi
+  57:WeightSensors.c ****     WSptr.p2 = ADC_SAR_1_CountsTo_mVolts(WSptr.p2);
+ 130              		.loc 1 57 0
+ 131 001c FFF7FEFF 		bl	ADC_SAR_1_CountsTo_mVolts
+ 132              	.LVL14:
+  58:WeightSensors.c ****     WSptr.p2 /= mVtoG;                                                      // Dividerer med 0.25 f
+ 133              		.loc 1 58 0
+ 134 0020 80B2     		uxth	r0, r0
+ 135 0022 FFF7FEFF 		bl	__aeabi_i2d
+ 136              	.LVL15:
+ 137 0026 0AA3     		adr	r3, .L9
+ 138 0028 D3E90023 		ldrd	r2, [r3]
+ 139 002c FFF7FEFF 		bl	__aeabi_ddiv
+ 140              	.LVL16:
+ 141 0030 FFF7FEFF 		bl	__aeabi_d2uiz
+ 142              	.LVL17:
+ 143 0034 82B2     		uxth	r2, r0
+ 144 0036 6280     		strh	r2, [r4, #2]	@ movhi
+  59:WeightSensors.c ****     
+  60:WeightSensors.c ****     //Debugging-----------------------------
+  61:WeightSensors.c ****     sprintf(uart_string, "\r\ndata read from player 2: %u", WSptr.p2);     // convert to string
+ 145              		.loc 1 61 0
+ 146 0038 084C     		ldr	r4, .L9+12
+ 147 003a 0949     		ldr	r1, .L9+16
+ 148 003c 2046     		mov	r0, r4
+ 149 003e FFF7FEFF 		bl	sprintf
+ 150              	.LVL18:
+  62:WeightSensors.c ****     UART_1_PutString(uart_string);                                         // output string
+ 151              		.loc 1 62 0
+ 152 0042 2046     		mov	r0, r4
+ 153 0044 FFF7FEFF 		bl	UART_1_PutString
+ 154              	.LVL19:
+ 155              	.L7:
+  63:WeightSensors.c ****     //--------------------------------------
+  64:WeightSensors.c ****     
+  65:WeightSensors.c ****     }
+  66:WeightSensors.c ****     return WSptr.p2;
+  67:WeightSensors.c ****     
+  68:WeightSensors.c **** }
+ 156              		.loc 1 68 0
+ 157 0048 034B     		ldr	r3, .L9+8
+ 158 004a 5888     		ldrh	r0, [r3, #2]
+ 159 004c 10BD     		pop	{r4, pc}
+ 160              	.L10:
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 5
+
+
+ 161 004e 00BF     		.align	3
+ 162              	.L9:
+ 163 0050 54E3A59B 		.word	-1683627180
+ 164 0054 C420D03F 		.word	1070604484
+ 165 0058 00000000 		.word	.LANCHOR0
+ 166 005c 00000000 		.word	uart_string
+ 167 0060 20000000 		.word	.LC1
+ 168              		.cfi_endproc
+ 169              	.LFE65:
+ 170              		.size	readdata2, .-readdata2
+ 171              		.section	.text.readdataLoser,"ax",%progbits
+ 172              		.align	2
+ 173              		.global	readdataLoser
+ 174              		.thumb
+ 175              		.thumb_func
+ 176              		.type	readdataLoser, %function
+ 177              	readdataLoser:
+ 178              	.LFB66:
+  69:WeightSensors.c **** 
+  70:WeightSensors.c **** uint16 readdataLoser(int x)
+  71:WeightSensors.c **** {
+ 179              		.loc 1 71 0
+ 180              		.cfi_startproc
+ 181              		@ args = 0, pretend = 0, frame = 0
+ 182              		@ frame_needed = 0, uses_anonymous_args = 0
+ 183              	.LVL20:
+ 184 0000 10B5     		push	{r4, lr}
+ 185              		.cfi_def_cfa_offset 8
+ 186              		.cfi_offset 4, -8
+ 187              		.cfi_offset 14, -4
+  72:WeightSensors.c ****     PlayerSelect_Select(x); //vælg player x
+ 188              		.loc 1 72 0
+ 189 0002 C0B2     		uxtb	r0, r0
+ 190              	.LVL21:
+ 191 0004 FFF7FEFF 		bl	PlayerSelect_FastSelect
+ 192              	.LVL22:
+  73:WeightSensors.c ****     
+  74:WeightSensors.c ****     ADC_SAR_1_StartConvert();
+ 193              		.loc 1 74 0
+ 194 0008 FFF7FEFF 		bl	ADC_SAR_1_StartConvert
+ 195              	.LVL23:
+  75:WeightSensors.c ****     if (ADC_SAR_1_IsEndConversion(ADC_SAR_1_WAIT_FOR_RESULT)!=0){
+ 196              		.loc 1 75 0
+ 197 000c 0020     		movs	r0, #0
+ 198 000e FFF7FEFF 		bl	ADC_SAR_1_IsEndConversion
+ 199              	.LVL24:
+ 200 0012 C8B1     		cbz	r0, .L12
+  76:WeightSensors.c ****     WSptr.pLoser = ADC_SAR_1_GetResult16();
+ 201              		.loc 1 76 0
+ 202 0014 FFF7FEFF 		bl	ADC_SAR_1_GetResult16
+ 203              	.LVL25:
+ 204 0018 0F4C     		ldr	r4, .L14+8
+ 205 001a A080     		strh	r0, [r4, #4]	@ movhi
+  77:WeightSensors.c ****     WSptr.pLoser = ADC_SAR_1_CountsTo_mVolts(WSptr.pLoser);
+ 206              		.loc 1 77 0
+ 207 001c FFF7FEFF 		bl	ADC_SAR_1_CountsTo_mVolts
+ 208              	.LVL26:
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 6
+
+
+  78:WeightSensors.c ****     WSptr.pLoser /= mVtoG;
+ 209              		.loc 1 78 0
+ 210 0020 80B2     		uxth	r0, r0
+ 211 0022 FFF7FEFF 		bl	__aeabi_i2d
+ 212              	.LVL27:
+ 213 0026 0AA3     		adr	r3, .L14
+ 214 0028 D3E90023 		ldrd	r2, [r3]
+ 215 002c FFF7FEFF 		bl	__aeabi_ddiv
+ 216              	.LVL28:
+ 217 0030 FFF7FEFF 		bl	__aeabi_d2uiz
+ 218              	.LVL29:
+ 219 0034 82B2     		uxth	r2, r0
+ 220 0036 A280     		strh	r2, [r4, #4]	@ movhi
+  79:WeightSensors.c ****     
+  80:WeightSensors.c ****     //Debugging-----------------------------
+  81:WeightSensors.c ****     sprintf(uart_string, "\r\ndata read from player 2: %u", WSptr.pLoser);     // convert to string
+ 221              		.loc 1 81 0
+ 222 0038 084C     		ldr	r4, .L14+12
+ 223 003a 0949     		ldr	r1, .L14+16
+ 224 003c 2046     		mov	r0, r4
+ 225 003e FFF7FEFF 		bl	sprintf
+ 226              	.LVL30:
+  82:WeightSensors.c ****     UART_1_PutString(uart_string);                                             // output string
+ 227              		.loc 1 82 0
+ 228 0042 2046     		mov	r0, r4
+ 229 0044 FFF7FEFF 		bl	UART_1_PutString
+ 230              	.LVL31:
+ 231              	.L12:
+  83:WeightSensors.c ****     //--------------------------------------
+  84:WeightSensors.c ****     
+  85:WeightSensors.c ****     }
+  86:WeightSensors.c ****     return WSptr.p2;
+  87:WeightSensors.c **** }
+ 232              		.loc 1 87 0
+ 233 0048 034B     		ldr	r3, .L14+8
+ 234 004a 5888     		ldrh	r0, [r3, #2]
+ 235 004c 10BD     		pop	{r4, pc}
+ 236              	.L15:
+ 237 004e 00BF     		.align	3
+ 238              	.L14:
+ 239 0050 54E3A59B 		.word	-1683627180
+ 240 0054 C420D03F 		.word	1070604484
+ 241 0058 00000000 		.word	.LANCHOR0
+ 242 005c 00000000 		.word	uart_string
+ 243 0060 20000000 		.word	.LC1
+ 244              		.cfi_endproc
+ 245              	.LFE66:
+ 246              		.size	readdataLoser, .-readdataLoser
+ 247              		.section	.text.WeightSensorsInit,"ax",%progbits
+ 248              		.align	2
+ 249              		.global	WeightSensorsInit
+ 250              		.thumb
+ 251              		.thumb_func
+ 252              		.type	WeightSensorsInit, %function
+ 253              	WeightSensorsInit:
+ 254              	.LFB67:
+  88:WeightSensors.c **** 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 7
+
+
+  89:WeightSensors.c **** void WeightSensorsInit()
+  90:WeightSensors.c **** {
+ 255              		.loc 1 90 0
+ 256              		.cfi_startproc
+ 257              		@ args = 0, pretend = 0, frame = 0
+ 258              		@ frame_needed = 0, uses_anonymous_args = 0
+ 259 0000 08B5     		push	{r3, lr}
+ 260              		.cfi_def_cfa_offset 8
+ 261              		.cfi_offset 3, -8
+ 262              		.cfi_offset 14, -4
+  91:WeightSensors.c ****     ADC_SAR_1_Start();
+ 263              		.loc 1 91 0
+ 264 0002 FFF7FEFF 		bl	ADC_SAR_1_Start
+ 265              	.LVL32:
+  92:WeightSensors.c ****     PlayerSelect_Init();
+ 266              		.loc 1 92 0
+ 267 0006 FFF7FEFF 		bl	PlayerSelect_Start
+ 268              	.LVL33:
+ 269 000a 08BD     		pop	{r3, pc}
+ 270              		.cfi_endproc
+ 271              	.LFE67:
+ 272              		.size	WeightSensorsInit, .-WeightSensorsInit
+ 273              		.section	.text.CompareWeight,"ax",%progbits
+ 274              		.align	2
+ 275              		.global	CompareWeight
+ 276              		.thumb
+ 277              		.thumb_func
+ 278              		.type	CompareWeight, %function
+ 279              	CompareWeight:
+ 280              	.LFB68:
+  93:WeightSensors.c **** }
+  94:WeightSensors.c **** 
+  95:WeightSensors.c **** int CompareWeight(){
+ 281              		.loc 1 95 0
+ 282              		.cfi_startproc
+ 283              		@ args = 0, pretend = 0, frame = 0
+ 284              		@ frame_needed = 0, uses_anonymous_args = 0
+ 285 0000 10B5     		push	{r4, lr}
+ 286              		.cfi_def_cfa_offset 8
+ 287              		.cfi_offset 4, -8
+ 288              		.cfi_offset 14, -4
+  96:WeightSensors.c **** 
+  97:WeightSensors.c ****     if (((readdata2() >= (readdata1() - afvigelse)) && (readdata2() <= readdata1() + afvigelse)) ||
+ 289              		.loc 1 97 0
+ 290 0002 FFF7FEFF 		bl	readdata2
+ 291              	.LVL34:
+ 292 0006 0446     		mov	r4, r0
+ 293 0008 FFF7FEFF 		bl	readdata1
+ 294              	.LVL35:
+ 295 000c 0A38     		subs	r0, r0, #10
+ 296 000e 8442     		cmp	r4, r0
+ 297 0010 07DB     		blt	.L19
+ 298              		.loc 1 97 0 is_stmt 0 discriminator 1
+ 299 0012 FFF7FEFF 		bl	readdata2
+ 300              	.LVL36:
+ 301 0016 0446     		mov	r4, r0
+ 302 0018 FFF7FEFF 		bl	readdata1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 8
+
+
+ 303              	.LVL37:
+ 304 001c 0A30     		adds	r0, r0, #10
+ 305 001e 8442     		cmp	r4, r0
+ 306 0020 1FDD     		ble	.L22
+ 307              	.L19:
+ 308              		.loc 1 97 0 discriminator 3
+ 309 0022 FFF7FEFF 		bl	readdata1
+ 310              	.LVL38:
+ 311 0026 0446     		mov	r4, r0
+ 312 0028 FFF7FEFF 		bl	readdata2
+ 313              	.LVL39:
+ 314 002c 0A38     		subs	r0, r0, #10
+ 315 002e 8442     		cmp	r4, r0
+ 316 0030 07DB     		blt	.L21
+ 317              		.loc 1 97 0 discriminator 4
+ 318 0032 FFF7FEFF 		bl	readdata1
+ 319              	.LVL40:
+ 320 0036 0446     		mov	r4, r0
+ 321 0038 FFF7FEFF 		bl	readdata2
+ 322              	.LVL41:
+ 323 003c 0A30     		adds	r0, r0, #10
+ 324 003e 8442     		cmp	r4, r0
+ 325 0040 11DD     		ble	.L23
+ 326              	.L21:
+  98:WeightSensors.c ****     {
+  99:WeightSensors.c ****         return 1;
+ 100:WeightSensors.c ****     }
+ 101:WeightSensors.c ****     else if (readdata2() > readdata1())//spiller 1 fejl
+ 327              		.loc 1 101 0 is_stmt 1
+ 328 0042 FFF7FEFF 		bl	readdata2
+ 329              	.LVL42:
+ 330 0046 0446     		mov	r4, r0
+ 331 0048 FFF7FEFF 		bl	readdata1
+ 332              	.LVL43:
+ 333 004c 8442     		cmp	r4, r0
+ 334 004e 0CD8     		bhi	.L24
+ 102:WeightSensors.c ****     { 
+ 103:WeightSensors.c ****         return 2;
+ 104:WeightSensors.c ****     }
+ 105:WeightSensors.c ****     else if(readdata2() < readdata1()) //spiller 2 fejl
+ 335              		.loc 1 105 0
+ 336 0050 FFF7FEFF 		bl	readdata2
+ 337              	.LVL44:
+ 338 0054 0446     		mov	r4, r0
+ 339 0056 FFF7FEFF 		bl	readdata1
+ 340              	.LVL45:
+ 341 005a 8442     		cmp	r4, r0
+ 342 005c 07D2     		bcs	.L25
+ 106:WeightSensors.c ****     {
+ 107:WeightSensors.c ****         return 3;
+ 343              		.loc 1 107 0
+ 344 005e 0320     		movs	r0, #3
+ 345 0060 10BD     		pop	{r4, pc}
+ 346              	.L22:
+  99:WeightSensors.c ****     }
+ 347              		.loc 1 99 0
+ 348 0062 0120     		movs	r0, #1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 9
+
+
+ 349 0064 10BD     		pop	{r4, pc}
+ 350              	.L23:
+ 351 0066 0120     		movs	r0, #1
+ 352 0068 10BD     		pop	{r4, pc}
+ 353              	.L24:
+ 103:WeightSensors.c ****     }
+ 354              		.loc 1 103 0
+ 355 006a 0220     		movs	r0, #2
+ 356 006c 10BD     		pop	{r4, pc}
+ 357              	.L25:
+ 108:WeightSensors.c ****     }
+ 109:WeightSensors.c ****     else;
+ 110:WeightSensors.c ****     return 0;   //for error handling
+ 358              		.loc 1 110 0
+ 359 006e 0020     		movs	r0, #0
+ 111:WeightSensors.c **** }
+ 360              		.loc 1 111 0
+ 361 0070 10BD     		pop	{r4, pc}
+ 362              		.cfi_endproc
+ 363              	.LFE68:
+ 364              		.size	CompareWeight, .-CompareWeight
+ 365              		.global	WSptr
+ 366              		.comm	uart_string,50,4
+ 367 0072 00BF     		.section	.rodata.str1.4,"aMS",%progbits,1
+ 368              		.align	2
+ 369              	.LC0:
+ 370 0000 0D0A6461 		.ascii	"\015\012data read from player 1: %u\000"
+ 370      74612072 
+ 370      65616420 
+ 370      66726F6D 
+ 370      20706C61 
+ 371 001e 0000     		.space	2
+ 372              	.LC1:
+ 373 0020 0D0A6461 		.ascii	"\015\012data read from player 2: %u\000"
+ 373      74612072 
+ 373      65616420 
+ 373      66726F6D 
+ 373      20706C61 
+ 374              		.bss
+ 375              		.align	2
+ 376              		.set	.LANCHOR0,. + 0
+ 377              		.type	WSptr, %object
+ 378              		.size	WSptr, 6
+ 379              	WSptr:
+ 380 0000 00000000 		.space	6
+ 380      0000
+ 381              		.text
+ 382              	.Letext0:
+ 383              		.file 2 "d:\\psoc\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.1\\arm-none-eabi\\includ
+ 384              		.file 3 "d:\\psoc\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.1\\arm-none-eabi\\includ
+ 385              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 386              		.file 5 "WeightSensors_.h"
+ 387              		.file 6 "Generated_Source\\PSoC5/core_cm3.h"
+ 388              		.file 7 "Generated_Source\\PSoC5/PlayerSelect.h"
+ 389              		.file 8 "Generated_Source\\PSoC5/ADC_SAR_1.h"
+ 390              		.file 9 "d:\\psoc\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.1\\arm-none-eabi\\includ
+ 391              		.file 10 "Generated_Source\\PSoC5/UART_1.h"
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 10
+
+
+ 392              		.section	.debug_info,"",%progbits
+ 393              	.Ldebug_info0:
+ 394 0000 E2030000 		.4byte	0x3e2
+ 395 0004 0400     		.2byte	0x4
+ 396 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 397 000a 04       		.byte	0x4
+ 398 000b 01       		.uleb128 0x1
+ 399 000c C2000000 		.4byte	.LASF34
+ 400 0010 0C       		.byte	0xc
+ 401 0011 0E000000 		.4byte	.LASF35
+ 402 0015 79010000 		.4byte	.LASF36
+ 403 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 404 001d 00000000 		.4byte	0
+ 405 0021 00000000 		.4byte	.Ldebug_line0
+ 406 0025 02       		.uleb128 0x2
+ 407 0026 01       		.byte	0x1
+ 408 0027 06       		.byte	0x6
+ 409 0028 CD020000 		.4byte	.LASF0
+ 410 002c 02       		.uleb128 0x2
+ 411 002d 01       		.byte	0x1
+ 412 002e 08       		.byte	0x8
+ 413 002f B4000000 		.4byte	.LASF1
+ 414 0033 02       		.uleb128 0x2
+ 415 0034 02       		.byte	0x2
+ 416 0035 05       		.byte	0x5
+ 417 0036 A0020000 		.4byte	.LASF2
+ 418 003a 02       		.uleb128 0x2
+ 419 003b 02       		.byte	0x2
+ 420 003c 07       		.byte	0x7
+ 421 003d 3A000000 		.4byte	.LASF3
+ 422 0041 03       		.uleb128 0x3
+ 423 0042 30000000 		.4byte	.LASF12
+ 424 0046 02       		.byte	0x2
+ 425 0047 3F       		.byte	0x3f
+ 426 0048 4C000000 		.4byte	0x4c
+ 427 004c 02       		.uleb128 0x2
+ 428 004d 04       		.byte	0x4
+ 429 004e 05       		.byte	0x5
+ 430 004f B8020000 		.4byte	.LASF4
+ 431 0053 02       		.uleb128 0x2
+ 432 0054 04       		.byte	0x4
+ 433 0055 07       		.byte	0x7
+ 434 0056 50010000 		.4byte	.LASF5
+ 435 005a 02       		.uleb128 0x2
+ 436 005b 08       		.byte	0x8
+ 437 005c 05       		.byte	0x5
+ 438 005d 62020000 		.4byte	.LASF6
+ 439 0061 02       		.uleb128 0x2
+ 440 0062 08       		.byte	0x8
+ 441 0063 07       		.byte	0x7
+ 442 0064 1F020000 		.4byte	.LASF7
+ 443 0068 04       		.uleb128 0x4
+ 444 0069 04       		.byte	0x4
+ 445 006a 05       		.byte	0x5
+ 446 006b 696E7400 		.ascii	"int\000"
+ 447 006f 02       		.uleb128 0x2
+ 448 0070 04       		.byte	0x4
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 11
+
+
+ 449 0071 07       		.byte	0x7
+ 450 0072 12020000 		.4byte	.LASF8
+ 451 0076 02       		.uleb128 0x2
+ 452 0077 08       		.byte	0x8
+ 453 0078 04       		.byte	0x4
+ 454 0079 C1020000 		.4byte	.LASF9
+ 455 007d 02       		.uleb128 0x2
+ 456 007e 04       		.byte	0x4
+ 457 007f 07       		.byte	0x7
+ 458 0080 43020000 		.4byte	.LASF10
+ 459 0084 02       		.uleb128 0x2
+ 460 0085 01       		.byte	0x1
+ 461 0086 08       		.byte	0x8
+ 462 0087 70020000 		.4byte	.LASF11
+ 463 008b 03       		.uleb128 0x3
+ 464 008c 89020000 		.4byte	.LASF13
+ 465 0090 03       		.byte	0x3
+ 466 0091 2C       		.byte	0x2c
+ 467 0092 41000000 		.4byte	0x41
+ 468 0096 05       		.uleb128 0x5
+ 469 0097 0B020000 		.4byte	.LASF14
+ 470 009b 04       		.byte	0x4
+ 471 009c E501     		.2byte	0x1e5
+ 472 009e 3A000000 		.4byte	0x3a
+ 473 00a2 02       		.uleb128 0x2
+ 474 00a3 04       		.byte	0x4
+ 475 00a4 04       		.byte	0x4
+ 476 00a5 94000000 		.4byte	.LASF15
+ 477 00a9 02       		.uleb128 0x2
+ 478 00aa 08       		.byte	0x8
+ 479 00ab 04       		.byte	0x4
+ 480 00ac 67000000 		.4byte	.LASF16
+ 481 00b0 06       		.uleb128 0x6
+ 482 00b1 91020000 		.4byte	.LASF37
+ 483 00b5 06       		.byte	0x6
+ 484 00b6 05       		.byte	0x5
+ 485 00b7 1D       		.byte	0x1d
+ 486 00b8 DF000000 		.4byte	0xdf
+ 487 00bc 07       		.uleb128 0x7
+ 488 00bd 703100   		.ascii	"p1\000"
+ 489 00c0 05       		.byte	0x5
+ 490 00c1 1F       		.byte	0x1f
+ 491 00c2 96000000 		.4byte	0x96
+ 492 00c6 00       		.byte	0
+ 493 00c7 07       		.uleb128 0x7
+ 494 00c8 703200   		.ascii	"p2\000"
+ 495 00cb 05       		.byte	0x5
+ 496 00cc 20       		.byte	0x20
+ 497 00cd 96000000 		.4byte	0x96
+ 498 00d1 02       		.byte	0x2
+ 499 00d2 08       		.uleb128 0x8
+ 500 00d3 3C020000 		.4byte	.LASF17
+ 501 00d7 05       		.byte	0x5
+ 502 00d8 21       		.byte	0x21
+ 503 00d9 96000000 		.4byte	0x96
+ 504 00dd 04       		.byte	0x4
+ 505 00de 00       		.byte	0
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 12
+
+
+ 506 00df 03       		.uleb128 0x3
+ 507 00e0 00000000 		.4byte	.LASF18
+ 508 00e4 05       		.byte	0x5
+ 509 00e5 23       		.byte	0x23
+ 510 00e6 B0000000 		.4byte	0xb0
+ 511 00ea 09       		.uleb128 0x9
+ 512 00eb 75020000 		.4byte	.LASF19
+ 513 00ef 01       		.byte	0x1
+ 514 00f0 1F       		.byte	0x1f
+ 515 00f1 96000000 		.4byte	0x96
+ 516 00f5 00000000 		.4byte	.LFB64
+ 517 00f9 64000000 		.4byte	.LFE64-.LFB64
+ 518 00fd 01       		.uleb128 0x1
+ 519 00fe 9C       		.byte	0x9c
+ 520 00ff 72010000 		.4byte	0x172
+ 521 0103 0A       		.uleb128 0xa
+ 522 0104 08000000 		.4byte	.LVL0
+ 523 0108 82030000 		.4byte	0x382
+ 524 010c 16010000 		.4byte	0x116
+ 525 0110 0B       		.uleb128 0xb
+ 526 0111 01       		.uleb128 0x1
+ 527 0112 50       		.byte	0x50
+ 528 0113 01       		.uleb128 0x1
+ 529 0114 30       		.byte	0x30
+ 530 0115 00       		.byte	0
+ 531 0116 0C       		.uleb128 0xc
+ 532 0117 0C000000 		.4byte	.LVL1
+ 533 011b 8D030000 		.4byte	0x38d
+ 534 011f 0A       		.uleb128 0xa
+ 535 0120 12000000 		.4byte	.LVL2
+ 536 0124 98030000 		.4byte	0x398
+ 537 0128 32010000 		.4byte	0x132
+ 538 012c 0B       		.uleb128 0xb
+ 539 012d 01       		.uleb128 0x1
+ 540 012e 50       		.byte	0x50
+ 541 012f 01       		.uleb128 0x1
+ 542 0130 30       		.byte	0x30
+ 543 0131 00       		.byte	0
+ 544 0132 0C       		.uleb128 0xc
+ 545 0133 18000000 		.4byte	.LVL3
+ 546 0137 A3030000 		.4byte	0x3a3
+ 547 013b 0C       		.uleb128 0xc
+ 548 013c 20000000 		.4byte	.LVL4
+ 549 0140 AE030000 		.4byte	0x3ae
+ 550 0144 0A       		.uleb128 0xa
+ 551 0145 42000000 		.4byte	.LVL8
+ 552 0149 B9030000 		.4byte	0x3b9
+ 553 014d 61010000 		.4byte	0x161
+ 554 0151 0B       		.uleb128 0xb
+ 555 0152 01       		.uleb128 0x1
+ 556 0153 50       		.byte	0x50
+ 557 0154 02       		.uleb128 0x2
+ 558 0155 74       		.byte	0x74
+ 559 0156 00       		.sleb128 0
+ 560 0157 0B       		.uleb128 0xb
+ 561 0158 01       		.uleb128 0x1
+ 562 0159 51       		.byte	0x51
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 13
+
+
+ 563 015a 05       		.uleb128 0x5
+ 564 015b 03       		.byte	0x3
+ 565 015c 00000000 		.4byte	.LC0
+ 566 0160 00       		.byte	0
+ 567 0161 0D       		.uleb128 0xd
+ 568 0162 48000000 		.4byte	.LVL9
+ 569 0166 C4030000 		.4byte	0x3c4
+ 570 016a 0B       		.uleb128 0xb
+ 571 016b 01       		.uleb128 0x1
+ 572 016c 50       		.byte	0x50
+ 573 016d 02       		.uleb128 0x2
+ 574 016e 74       		.byte	0x74
+ 575 016f 00       		.sleb128 0
+ 576 0170 00       		.byte	0
+ 577 0171 00       		.byte	0
+ 578 0172 09       		.uleb128 0x9
+ 579 0173 7F020000 		.4byte	.LASF20
+ 580 0177 01       		.byte	0x1
+ 581 0178 32       		.byte	0x32
+ 582 0179 96000000 		.4byte	0x96
+ 583 017d 00000000 		.4byte	.LFB65
+ 584 0181 64000000 		.4byte	.LFE65-.LFB65
+ 585 0185 01       		.uleb128 0x1
+ 586 0186 9C       		.byte	0x9c
+ 587 0187 FA010000 		.4byte	0x1fa
+ 588 018b 0A       		.uleb128 0xa
+ 589 018c 08000000 		.4byte	.LVL10
+ 590 0190 82030000 		.4byte	0x382
+ 591 0194 9E010000 		.4byte	0x19e
+ 592 0198 0B       		.uleb128 0xb
+ 593 0199 01       		.uleb128 0x1
+ 594 019a 50       		.byte	0x50
+ 595 019b 01       		.uleb128 0x1
+ 596 019c 31       		.byte	0x31
+ 597 019d 00       		.byte	0
+ 598 019e 0C       		.uleb128 0xc
+ 599 019f 0C000000 		.4byte	.LVL11
+ 600 01a3 8D030000 		.4byte	0x38d
+ 601 01a7 0A       		.uleb128 0xa
+ 602 01a8 12000000 		.4byte	.LVL12
+ 603 01ac 98030000 		.4byte	0x398
+ 604 01b0 BA010000 		.4byte	0x1ba
+ 605 01b4 0B       		.uleb128 0xb
+ 606 01b5 01       		.uleb128 0x1
+ 607 01b6 50       		.byte	0x50
+ 608 01b7 01       		.uleb128 0x1
+ 609 01b8 30       		.byte	0x30
+ 610 01b9 00       		.byte	0
+ 611 01ba 0C       		.uleb128 0xc
+ 612 01bb 18000000 		.4byte	.LVL13
+ 613 01bf A3030000 		.4byte	0x3a3
+ 614 01c3 0C       		.uleb128 0xc
+ 615 01c4 20000000 		.4byte	.LVL14
+ 616 01c8 AE030000 		.4byte	0x3ae
+ 617 01cc 0A       		.uleb128 0xa
+ 618 01cd 42000000 		.4byte	.LVL18
+ 619 01d1 B9030000 		.4byte	0x3b9
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 14
+
+
+ 620 01d5 E9010000 		.4byte	0x1e9
+ 621 01d9 0B       		.uleb128 0xb
+ 622 01da 01       		.uleb128 0x1
+ 623 01db 50       		.byte	0x50
+ 624 01dc 02       		.uleb128 0x2
+ 625 01dd 74       		.byte	0x74
+ 626 01de 00       		.sleb128 0
+ 627 01df 0B       		.uleb128 0xb
+ 628 01e0 01       		.uleb128 0x1
+ 629 01e1 51       		.byte	0x51
+ 630 01e2 05       		.uleb128 0x5
+ 631 01e3 03       		.byte	0x3
+ 632 01e4 20000000 		.4byte	.LC1
+ 633 01e8 00       		.byte	0
+ 634 01e9 0D       		.uleb128 0xd
+ 635 01ea 48000000 		.4byte	.LVL19
+ 636 01ee C4030000 		.4byte	0x3c4
+ 637 01f2 0B       		.uleb128 0xb
+ 638 01f3 01       		.uleb128 0x1
+ 639 01f4 50       		.byte	0x50
+ 640 01f5 02       		.uleb128 0x2
+ 641 01f6 74       		.byte	0x74
+ 642 01f7 00       		.sleb128 0
+ 643 01f8 00       		.byte	0
+ 644 01f9 00       		.byte	0
+ 645 01fa 0E       		.uleb128 0xe
+ 646 01fb 6E000000 		.4byte	.LASF38
+ 647 01ff 01       		.byte	0x1
+ 648 0200 46       		.byte	0x46
+ 649 0201 96000000 		.4byte	0x96
+ 650 0205 00000000 		.4byte	.LFB66
+ 651 0209 64000000 		.4byte	.LFE66-.LFB66
+ 652 020d 01       		.uleb128 0x1
+ 653 020e 9C       		.byte	0x9c
+ 654 020f 91020000 		.4byte	0x291
+ 655 0213 0F       		.uleb128 0xf
+ 656 0214 7800     		.ascii	"x\000"
+ 657 0216 01       		.byte	0x1
+ 658 0217 46       		.byte	0x46
+ 659 0218 68000000 		.4byte	0x68
+ 660 021c 00000000 		.4byte	.LLST0
+ 661 0220 0A       		.uleb128 0xa
+ 662 0221 08000000 		.4byte	.LVL22
+ 663 0225 82030000 		.4byte	0x382
+ 664 0229 35020000 		.4byte	0x235
+ 665 022d 0B       		.uleb128 0xb
+ 666 022e 01       		.uleb128 0x1
+ 667 022f 50       		.byte	0x50
+ 668 0230 03       		.uleb128 0x3
+ 669 0231 F3       		.byte	0xf3
+ 670 0232 01       		.uleb128 0x1
+ 671 0233 50       		.byte	0x50
+ 672 0234 00       		.byte	0
+ 673 0235 0C       		.uleb128 0xc
+ 674 0236 0C000000 		.4byte	.LVL23
+ 675 023a 8D030000 		.4byte	0x38d
+ 676 023e 0A       		.uleb128 0xa
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 15
+
+
+ 677 023f 12000000 		.4byte	.LVL24
+ 678 0243 98030000 		.4byte	0x398
+ 679 0247 51020000 		.4byte	0x251
+ 680 024b 0B       		.uleb128 0xb
+ 681 024c 01       		.uleb128 0x1
+ 682 024d 50       		.byte	0x50
+ 683 024e 01       		.uleb128 0x1
+ 684 024f 30       		.byte	0x30
+ 685 0250 00       		.byte	0
+ 686 0251 0C       		.uleb128 0xc
+ 687 0252 18000000 		.4byte	.LVL25
+ 688 0256 A3030000 		.4byte	0x3a3
+ 689 025a 0C       		.uleb128 0xc
+ 690 025b 20000000 		.4byte	.LVL26
+ 691 025f AE030000 		.4byte	0x3ae
+ 692 0263 0A       		.uleb128 0xa
+ 693 0264 42000000 		.4byte	.LVL30
+ 694 0268 B9030000 		.4byte	0x3b9
+ 695 026c 80020000 		.4byte	0x280
+ 696 0270 0B       		.uleb128 0xb
+ 697 0271 01       		.uleb128 0x1
+ 698 0272 50       		.byte	0x50
+ 699 0273 02       		.uleb128 0x2
+ 700 0274 74       		.byte	0x74
+ 701 0275 00       		.sleb128 0
+ 702 0276 0B       		.uleb128 0xb
+ 703 0277 01       		.uleb128 0x1
+ 704 0278 51       		.byte	0x51
+ 705 0279 05       		.uleb128 0x5
+ 706 027a 03       		.byte	0x3
+ 707 027b 20000000 		.4byte	.LC1
+ 708 027f 00       		.byte	0
+ 709 0280 0D       		.uleb128 0xd
+ 710 0281 48000000 		.4byte	.LVL31
+ 711 0285 C4030000 		.4byte	0x3c4
+ 712 0289 0B       		.uleb128 0xb
+ 713 028a 01       		.uleb128 0x1
+ 714 028b 50       		.byte	0x50
+ 715 028c 02       		.uleb128 0x2
+ 716 028d 74       		.byte	0x74
+ 717 028e 00       		.sleb128 0
+ 718 028f 00       		.byte	0
+ 719 0290 00       		.byte	0
+ 720 0291 10       		.uleb128 0x10
+ 721 0292 1E000000 		.4byte	.LASF39
+ 722 0296 01       		.byte	0x1
+ 723 0297 59       		.byte	0x59
+ 724 0298 00000000 		.4byte	.LFB67
+ 725 029c 0C000000 		.4byte	.LFE67-.LFB67
+ 726 02a0 01       		.uleb128 0x1
+ 727 02a1 9C       		.byte	0x9c
+ 728 02a2 B9020000 		.4byte	0x2b9
+ 729 02a6 0C       		.uleb128 0xc
+ 730 02a7 06000000 		.4byte	.LVL32
+ 731 02ab CF030000 		.4byte	0x3cf
+ 732 02af 0C       		.uleb128 0xc
+ 733 02b0 0A000000 		.4byte	.LVL33
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 16
+
+
+ 734 02b4 DA030000 		.4byte	0x3da
+ 735 02b8 00       		.byte	0
+ 736 02b9 11       		.uleb128 0x11
+ 737 02ba AA020000 		.4byte	.LASF21
+ 738 02be 01       		.byte	0x1
+ 739 02bf 5F       		.byte	0x5f
+ 740 02c0 68000000 		.4byte	0x68
+ 741 02c4 00000000 		.4byte	.LFB68
+ 742 02c8 72000000 		.4byte	.LFE68-.LFB68
+ 743 02cc 01       		.uleb128 0x1
+ 744 02cd 9C       		.byte	0x9c
+ 745 02ce 3F030000 		.4byte	0x33f
+ 746 02d2 0C       		.uleb128 0xc
+ 747 02d3 06000000 		.4byte	.LVL34
+ 748 02d7 72010000 		.4byte	0x172
+ 749 02db 0C       		.uleb128 0xc
+ 750 02dc 0C000000 		.4byte	.LVL35
+ 751 02e0 EA000000 		.4byte	0xea
+ 752 02e4 0C       		.uleb128 0xc
+ 753 02e5 16000000 		.4byte	.LVL36
+ 754 02e9 72010000 		.4byte	0x172
+ 755 02ed 0C       		.uleb128 0xc
+ 756 02ee 1C000000 		.4byte	.LVL37
+ 757 02f2 EA000000 		.4byte	0xea
+ 758 02f6 0C       		.uleb128 0xc
+ 759 02f7 26000000 		.4byte	.LVL38
+ 760 02fb EA000000 		.4byte	0xea
+ 761 02ff 0C       		.uleb128 0xc
+ 762 0300 2C000000 		.4byte	.LVL39
+ 763 0304 72010000 		.4byte	0x172
+ 764 0308 0C       		.uleb128 0xc
+ 765 0309 36000000 		.4byte	.LVL40
+ 766 030d EA000000 		.4byte	0xea
+ 767 0311 0C       		.uleb128 0xc
+ 768 0312 3C000000 		.4byte	.LVL41
+ 769 0316 72010000 		.4byte	0x172
+ 770 031a 0C       		.uleb128 0xc
+ 771 031b 46000000 		.4byte	.LVL42
+ 772 031f 72010000 		.4byte	0x172
+ 773 0323 0C       		.uleb128 0xc
+ 774 0324 4C000000 		.4byte	.LVL43
+ 775 0328 EA000000 		.4byte	0xea
+ 776 032c 0C       		.uleb128 0xc
+ 777 032d 54000000 		.4byte	.LVL44
+ 778 0331 72010000 		.4byte	0x172
+ 779 0335 0C       		.uleb128 0xc
+ 780 0336 5A000000 		.4byte	.LVL45
+ 781 033a EA000000 		.4byte	0xea
+ 782 033e 00       		.byte	0
+ 783 033f 12       		.uleb128 0x12
+ 784 0340 DF010000 		.4byte	.LASF22
+ 785 0344 06       		.byte	0x6
+ 786 0345 1207     		.2byte	0x712
+ 787 0347 4B030000 		.4byte	0x34b
+ 788 034b 13       		.uleb128 0x13
+ 789 034c 8B000000 		.4byte	0x8b
+ 790 0350 14       		.uleb128 0x14
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 17
+
+
+ 791 0351 84000000 		.4byte	0x84
+ 792 0355 60030000 		.4byte	0x360
+ 793 0359 15       		.uleb128 0x15
+ 794 035a 7D000000 		.4byte	0x7d
+ 795 035e 31       		.byte	0x31
+ 796 035f 00       		.byte	0
+ 797 0360 16       		.uleb128 0x16
+ 798 0361 EC010000 		.4byte	.LASF23
+ 799 0365 01       		.byte	0x1
+ 800 0366 1B       		.byte	0x1b
+ 801 0367 50030000 		.4byte	0x350
+ 802 036b 05       		.uleb128 0x5
+ 803 036c 03       		.byte	0x3
+ 804 036d 00000000 		.4byte	uart_string
+ 805 0371 16       		.uleb128 0x16
+ 806 0372 36020000 		.4byte	.LASF24
+ 807 0376 01       		.byte	0x1
+ 808 0377 1D       		.byte	0x1d
+ 809 0378 DF000000 		.4byte	0xdf
+ 810 037c 05       		.uleb128 0x5
+ 811 037d 03       		.byte	0x3
+ 812 037e 00000000 		.4byte	WSptr
+ 813 0382 17       		.uleb128 0x17
+ 814 0383 7C000000 		.4byte	.LASF25
+ 815 0387 7C000000 		.4byte	.LASF25
+ 816 038b 07       		.byte	0x7
+ 817 038c 27       		.byte	0x27
+ 818 038d 17       		.uleb128 0x17
+ 819 038e 62010000 		.4byte	.LASF26
+ 820 0392 62010000 		.4byte	.LASF26
+ 821 0396 08       		.byte	0x8
+ 822 0397 D1       		.byte	0xd1
+ 823 0398 17       		.uleb128 0x17
+ 824 0399 9A000000 		.4byte	.LASF27
+ 825 039d 9A000000 		.4byte	.LASF27
+ 826 03a1 08       		.byte	0x8
+ 827 03a2 39       		.byte	0x39
+ 828 03a3 17       		.uleb128 0x17
+ 829 03a4 4C020000 		.4byte	.LASF28
+ 830 03a8 4C020000 		.4byte	.LASF28
+ 831 03ac 08       		.byte	0x8
+ 832 03ad 3B       		.byte	0x3b
+ 833 03ae 17       		.uleb128 0x17
+ 834 03af 4D000000 		.4byte	.LASF29
+ 835 03b3 4D000000 		.4byte	.LASF29
+ 836 03b7 08       		.byte	0x8
+ 837 03b8 3F       		.byte	0x3f
+ 838 03b9 17       		.uleb128 0x17
+ 839 03ba FA020000 		.4byte	.LASF30
+ 840 03be FA020000 		.4byte	.LASF30
+ 841 03c2 09       		.byte	0x9
+ 842 03c3 E7       		.byte	0xe7
+ 843 03c4 17       		.uleb128 0x17
+ 844 03c5 E9020000 		.4byte	.LASF31
+ 845 03c9 E9020000 		.4byte	.LASF31
+ 846 03cd 0A       		.byte	0xa
+ 847 03ce 8B       		.byte	0x8b
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 18
+
+
+ 848 03cf 17       		.uleb128 0x17
+ 849 03d0 D9020000 		.4byte	.LASF32
+ 850 03d4 D9020000 		.4byte	.LASF32
+ 851 03d8 08       		.byte	0x8
+ 852 03d9 34       		.byte	0x34
+ 853 03da 17       		.uleb128 0x17
+ 854 03db F8010000 		.4byte	.LASF33
+ 855 03df F8010000 		.4byte	.LASF33
+ 856 03e3 07       		.byte	0x7
+ 857 03e4 25       		.byte	0x25
+ 858 03e5 00       		.byte	0
+ 859              		.section	.debug_abbrev,"",%progbits
+ 860              	.Ldebug_abbrev0:
+ 861 0000 01       		.uleb128 0x1
+ 862 0001 11       		.uleb128 0x11
+ 863 0002 01       		.byte	0x1
+ 864 0003 25       		.uleb128 0x25
+ 865 0004 0E       		.uleb128 0xe
+ 866 0005 13       		.uleb128 0x13
+ 867 0006 0B       		.uleb128 0xb
+ 868 0007 03       		.uleb128 0x3
+ 869 0008 0E       		.uleb128 0xe
+ 870 0009 1B       		.uleb128 0x1b
+ 871 000a 0E       		.uleb128 0xe
+ 872 000b 55       		.uleb128 0x55
+ 873 000c 17       		.uleb128 0x17
+ 874 000d 11       		.uleb128 0x11
+ 875 000e 01       		.uleb128 0x1
+ 876 000f 10       		.uleb128 0x10
+ 877 0010 17       		.uleb128 0x17
+ 878 0011 00       		.byte	0
+ 879 0012 00       		.byte	0
+ 880 0013 02       		.uleb128 0x2
+ 881 0014 24       		.uleb128 0x24
+ 882 0015 00       		.byte	0
+ 883 0016 0B       		.uleb128 0xb
+ 884 0017 0B       		.uleb128 0xb
+ 885 0018 3E       		.uleb128 0x3e
+ 886 0019 0B       		.uleb128 0xb
+ 887 001a 03       		.uleb128 0x3
+ 888 001b 0E       		.uleb128 0xe
+ 889 001c 00       		.byte	0
+ 890 001d 00       		.byte	0
+ 891 001e 03       		.uleb128 0x3
+ 892 001f 16       		.uleb128 0x16
+ 893 0020 00       		.byte	0
+ 894 0021 03       		.uleb128 0x3
+ 895 0022 0E       		.uleb128 0xe
+ 896 0023 3A       		.uleb128 0x3a
+ 897 0024 0B       		.uleb128 0xb
+ 898 0025 3B       		.uleb128 0x3b
+ 899 0026 0B       		.uleb128 0xb
+ 900 0027 49       		.uleb128 0x49
+ 901 0028 13       		.uleb128 0x13
+ 902 0029 00       		.byte	0
+ 903 002a 00       		.byte	0
+ 904 002b 04       		.uleb128 0x4
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 19
+
+
+ 905 002c 24       		.uleb128 0x24
+ 906 002d 00       		.byte	0
+ 907 002e 0B       		.uleb128 0xb
+ 908 002f 0B       		.uleb128 0xb
+ 909 0030 3E       		.uleb128 0x3e
+ 910 0031 0B       		.uleb128 0xb
+ 911 0032 03       		.uleb128 0x3
+ 912 0033 08       		.uleb128 0x8
+ 913 0034 00       		.byte	0
+ 914 0035 00       		.byte	0
+ 915 0036 05       		.uleb128 0x5
+ 916 0037 16       		.uleb128 0x16
+ 917 0038 00       		.byte	0
+ 918 0039 03       		.uleb128 0x3
+ 919 003a 0E       		.uleb128 0xe
+ 920 003b 3A       		.uleb128 0x3a
+ 921 003c 0B       		.uleb128 0xb
+ 922 003d 3B       		.uleb128 0x3b
+ 923 003e 05       		.uleb128 0x5
+ 924 003f 49       		.uleb128 0x49
+ 925 0040 13       		.uleb128 0x13
+ 926 0041 00       		.byte	0
+ 927 0042 00       		.byte	0
+ 928 0043 06       		.uleb128 0x6
+ 929 0044 13       		.uleb128 0x13
+ 930 0045 01       		.byte	0x1
+ 931 0046 03       		.uleb128 0x3
+ 932 0047 0E       		.uleb128 0xe
+ 933 0048 0B       		.uleb128 0xb
+ 934 0049 0B       		.uleb128 0xb
+ 935 004a 3A       		.uleb128 0x3a
+ 936 004b 0B       		.uleb128 0xb
+ 937 004c 3B       		.uleb128 0x3b
+ 938 004d 0B       		.uleb128 0xb
+ 939 004e 01       		.uleb128 0x1
+ 940 004f 13       		.uleb128 0x13
+ 941 0050 00       		.byte	0
+ 942 0051 00       		.byte	0
+ 943 0052 07       		.uleb128 0x7
+ 944 0053 0D       		.uleb128 0xd
+ 945 0054 00       		.byte	0
+ 946 0055 03       		.uleb128 0x3
+ 947 0056 08       		.uleb128 0x8
+ 948 0057 3A       		.uleb128 0x3a
+ 949 0058 0B       		.uleb128 0xb
+ 950 0059 3B       		.uleb128 0x3b
+ 951 005a 0B       		.uleb128 0xb
+ 952 005b 49       		.uleb128 0x49
+ 953 005c 13       		.uleb128 0x13
+ 954 005d 38       		.uleb128 0x38
+ 955 005e 0B       		.uleb128 0xb
+ 956 005f 00       		.byte	0
+ 957 0060 00       		.byte	0
+ 958 0061 08       		.uleb128 0x8
+ 959 0062 0D       		.uleb128 0xd
+ 960 0063 00       		.byte	0
+ 961 0064 03       		.uleb128 0x3
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 20
+
+
+ 962 0065 0E       		.uleb128 0xe
+ 963 0066 3A       		.uleb128 0x3a
+ 964 0067 0B       		.uleb128 0xb
+ 965 0068 3B       		.uleb128 0x3b
+ 966 0069 0B       		.uleb128 0xb
+ 967 006a 49       		.uleb128 0x49
+ 968 006b 13       		.uleb128 0x13
+ 969 006c 38       		.uleb128 0x38
+ 970 006d 0B       		.uleb128 0xb
+ 971 006e 00       		.byte	0
+ 972 006f 00       		.byte	0
+ 973 0070 09       		.uleb128 0x9
+ 974 0071 2E       		.uleb128 0x2e
+ 975 0072 01       		.byte	0x1
+ 976 0073 3F       		.uleb128 0x3f
+ 977 0074 19       		.uleb128 0x19
+ 978 0075 03       		.uleb128 0x3
+ 979 0076 0E       		.uleb128 0xe
+ 980 0077 3A       		.uleb128 0x3a
+ 981 0078 0B       		.uleb128 0xb
+ 982 0079 3B       		.uleb128 0x3b
+ 983 007a 0B       		.uleb128 0xb
+ 984 007b 49       		.uleb128 0x49
+ 985 007c 13       		.uleb128 0x13
+ 986 007d 11       		.uleb128 0x11
+ 987 007e 01       		.uleb128 0x1
+ 988 007f 12       		.uleb128 0x12
+ 989 0080 06       		.uleb128 0x6
+ 990 0081 40       		.uleb128 0x40
+ 991 0082 18       		.uleb128 0x18
+ 992 0083 9642     		.uleb128 0x2116
+ 993 0085 19       		.uleb128 0x19
+ 994 0086 01       		.uleb128 0x1
+ 995 0087 13       		.uleb128 0x13
+ 996 0088 00       		.byte	0
+ 997 0089 00       		.byte	0
+ 998 008a 0A       		.uleb128 0xa
+ 999 008b 898201   		.uleb128 0x4109
+ 1000 008e 01       		.byte	0x1
+ 1001 008f 11       		.uleb128 0x11
+ 1002 0090 01       		.uleb128 0x1
+ 1003 0091 31       		.uleb128 0x31
+ 1004 0092 13       		.uleb128 0x13
+ 1005 0093 01       		.uleb128 0x1
+ 1006 0094 13       		.uleb128 0x13
+ 1007 0095 00       		.byte	0
+ 1008 0096 00       		.byte	0
+ 1009 0097 0B       		.uleb128 0xb
+ 1010 0098 8A8201   		.uleb128 0x410a
+ 1011 009b 00       		.byte	0
+ 1012 009c 02       		.uleb128 0x2
+ 1013 009d 18       		.uleb128 0x18
+ 1014 009e 9142     		.uleb128 0x2111
+ 1015 00a0 18       		.uleb128 0x18
+ 1016 00a1 00       		.byte	0
+ 1017 00a2 00       		.byte	0
+ 1018 00a3 0C       		.uleb128 0xc
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 21
+
+
+ 1019 00a4 898201   		.uleb128 0x4109
+ 1020 00a7 00       		.byte	0
+ 1021 00a8 11       		.uleb128 0x11
+ 1022 00a9 01       		.uleb128 0x1
+ 1023 00aa 31       		.uleb128 0x31
+ 1024 00ab 13       		.uleb128 0x13
+ 1025 00ac 00       		.byte	0
+ 1026 00ad 00       		.byte	0
+ 1027 00ae 0D       		.uleb128 0xd
+ 1028 00af 898201   		.uleb128 0x4109
+ 1029 00b2 01       		.byte	0x1
+ 1030 00b3 11       		.uleb128 0x11
+ 1031 00b4 01       		.uleb128 0x1
+ 1032 00b5 31       		.uleb128 0x31
+ 1033 00b6 13       		.uleb128 0x13
+ 1034 00b7 00       		.byte	0
+ 1035 00b8 00       		.byte	0
+ 1036 00b9 0E       		.uleb128 0xe
+ 1037 00ba 2E       		.uleb128 0x2e
+ 1038 00bb 01       		.byte	0x1
+ 1039 00bc 3F       		.uleb128 0x3f
+ 1040 00bd 19       		.uleb128 0x19
+ 1041 00be 03       		.uleb128 0x3
+ 1042 00bf 0E       		.uleb128 0xe
+ 1043 00c0 3A       		.uleb128 0x3a
+ 1044 00c1 0B       		.uleb128 0xb
+ 1045 00c2 3B       		.uleb128 0x3b
+ 1046 00c3 0B       		.uleb128 0xb
+ 1047 00c4 27       		.uleb128 0x27
+ 1048 00c5 19       		.uleb128 0x19
+ 1049 00c6 49       		.uleb128 0x49
+ 1050 00c7 13       		.uleb128 0x13
+ 1051 00c8 11       		.uleb128 0x11
+ 1052 00c9 01       		.uleb128 0x1
+ 1053 00ca 12       		.uleb128 0x12
+ 1054 00cb 06       		.uleb128 0x6
+ 1055 00cc 40       		.uleb128 0x40
+ 1056 00cd 18       		.uleb128 0x18
+ 1057 00ce 9642     		.uleb128 0x2116
+ 1058 00d0 19       		.uleb128 0x19
+ 1059 00d1 01       		.uleb128 0x1
+ 1060 00d2 13       		.uleb128 0x13
+ 1061 00d3 00       		.byte	0
+ 1062 00d4 00       		.byte	0
+ 1063 00d5 0F       		.uleb128 0xf
+ 1064 00d6 05       		.uleb128 0x5
+ 1065 00d7 00       		.byte	0
+ 1066 00d8 03       		.uleb128 0x3
+ 1067 00d9 08       		.uleb128 0x8
+ 1068 00da 3A       		.uleb128 0x3a
+ 1069 00db 0B       		.uleb128 0xb
+ 1070 00dc 3B       		.uleb128 0x3b
+ 1071 00dd 0B       		.uleb128 0xb
+ 1072 00de 49       		.uleb128 0x49
+ 1073 00df 13       		.uleb128 0x13
+ 1074 00e0 02       		.uleb128 0x2
+ 1075 00e1 17       		.uleb128 0x17
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 22
+
+
+ 1076 00e2 00       		.byte	0
+ 1077 00e3 00       		.byte	0
+ 1078 00e4 10       		.uleb128 0x10
+ 1079 00e5 2E       		.uleb128 0x2e
+ 1080 00e6 01       		.byte	0x1
+ 1081 00e7 3F       		.uleb128 0x3f
+ 1082 00e8 19       		.uleb128 0x19
+ 1083 00e9 03       		.uleb128 0x3
+ 1084 00ea 0E       		.uleb128 0xe
+ 1085 00eb 3A       		.uleb128 0x3a
+ 1086 00ec 0B       		.uleb128 0xb
+ 1087 00ed 3B       		.uleb128 0x3b
+ 1088 00ee 0B       		.uleb128 0xb
+ 1089 00ef 11       		.uleb128 0x11
+ 1090 00f0 01       		.uleb128 0x1
+ 1091 00f1 12       		.uleb128 0x12
+ 1092 00f2 06       		.uleb128 0x6
+ 1093 00f3 40       		.uleb128 0x40
+ 1094 00f4 18       		.uleb128 0x18
+ 1095 00f5 9742     		.uleb128 0x2117
+ 1096 00f7 19       		.uleb128 0x19
+ 1097 00f8 01       		.uleb128 0x1
+ 1098 00f9 13       		.uleb128 0x13
+ 1099 00fa 00       		.byte	0
+ 1100 00fb 00       		.byte	0
+ 1101 00fc 11       		.uleb128 0x11
+ 1102 00fd 2E       		.uleb128 0x2e
+ 1103 00fe 01       		.byte	0x1
+ 1104 00ff 3F       		.uleb128 0x3f
+ 1105 0100 19       		.uleb128 0x19
+ 1106 0101 03       		.uleb128 0x3
+ 1107 0102 0E       		.uleb128 0xe
+ 1108 0103 3A       		.uleb128 0x3a
+ 1109 0104 0B       		.uleb128 0xb
+ 1110 0105 3B       		.uleb128 0x3b
+ 1111 0106 0B       		.uleb128 0xb
+ 1112 0107 49       		.uleb128 0x49
+ 1113 0108 13       		.uleb128 0x13
+ 1114 0109 11       		.uleb128 0x11
+ 1115 010a 01       		.uleb128 0x1
+ 1116 010b 12       		.uleb128 0x12
+ 1117 010c 06       		.uleb128 0x6
+ 1118 010d 40       		.uleb128 0x40
+ 1119 010e 18       		.uleb128 0x18
+ 1120 010f 9742     		.uleb128 0x2117
+ 1121 0111 19       		.uleb128 0x19
+ 1122 0112 01       		.uleb128 0x1
+ 1123 0113 13       		.uleb128 0x13
+ 1124 0114 00       		.byte	0
+ 1125 0115 00       		.byte	0
+ 1126 0116 12       		.uleb128 0x12
+ 1127 0117 34       		.uleb128 0x34
+ 1128 0118 00       		.byte	0
+ 1129 0119 03       		.uleb128 0x3
+ 1130 011a 0E       		.uleb128 0xe
+ 1131 011b 3A       		.uleb128 0x3a
+ 1132 011c 0B       		.uleb128 0xb
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 23
+
+
+ 1133 011d 3B       		.uleb128 0x3b
+ 1134 011e 05       		.uleb128 0x5
+ 1135 011f 49       		.uleb128 0x49
+ 1136 0120 13       		.uleb128 0x13
+ 1137 0121 3F       		.uleb128 0x3f
+ 1138 0122 19       		.uleb128 0x19
+ 1139 0123 3C       		.uleb128 0x3c
+ 1140 0124 19       		.uleb128 0x19
+ 1141 0125 00       		.byte	0
+ 1142 0126 00       		.byte	0
+ 1143 0127 13       		.uleb128 0x13
+ 1144 0128 35       		.uleb128 0x35
+ 1145 0129 00       		.byte	0
+ 1146 012a 49       		.uleb128 0x49
+ 1147 012b 13       		.uleb128 0x13
+ 1148 012c 00       		.byte	0
+ 1149 012d 00       		.byte	0
+ 1150 012e 14       		.uleb128 0x14
+ 1151 012f 01       		.uleb128 0x1
+ 1152 0130 01       		.byte	0x1
+ 1153 0131 49       		.uleb128 0x49
+ 1154 0132 13       		.uleb128 0x13
+ 1155 0133 01       		.uleb128 0x1
+ 1156 0134 13       		.uleb128 0x13
+ 1157 0135 00       		.byte	0
+ 1158 0136 00       		.byte	0
+ 1159 0137 15       		.uleb128 0x15
+ 1160 0138 21       		.uleb128 0x21
+ 1161 0139 00       		.byte	0
+ 1162 013a 49       		.uleb128 0x49
+ 1163 013b 13       		.uleb128 0x13
+ 1164 013c 2F       		.uleb128 0x2f
+ 1165 013d 0B       		.uleb128 0xb
+ 1166 013e 00       		.byte	0
+ 1167 013f 00       		.byte	0
+ 1168 0140 16       		.uleb128 0x16
+ 1169 0141 34       		.uleb128 0x34
+ 1170 0142 00       		.byte	0
+ 1171 0143 03       		.uleb128 0x3
+ 1172 0144 0E       		.uleb128 0xe
+ 1173 0145 3A       		.uleb128 0x3a
+ 1174 0146 0B       		.uleb128 0xb
+ 1175 0147 3B       		.uleb128 0x3b
+ 1176 0148 0B       		.uleb128 0xb
+ 1177 0149 49       		.uleb128 0x49
+ 1178 014a 13       		.uleb128 0x13
+ 1179 014b 3F       		.uleb128 0x3f
+ 1180 014c 19       		.uleb128 0x19
+ 1181 014d 02       		.uleb128 0x2
+ 1182 014e 18       		.uleb128 0x18
+ 1183 014f 00       		.byte	0
+ 1184 0150 00       		.byte	0
+ 1185 0151 17       		.uleb128 0x17
+ 1186 0152 2E       		.uleb128 0x2e
+ 1187 0153 00       		.byte	0
+ 1188 0154 3F       		.uleb128 0x3f
+ 1189 0155 19       		.uleb128 0x19
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 24
+
+
+ 1190 0156 3C       		.uleb128 0x3c
+ 1191 0157 19       		.uleb128 0x19
+ 1192 0158 6E       		.uleb128 0x6e
+ 1193 0159 0E       		.uleb128 0xe
+ 1194 015a 03       		.uleb128 0x3
+ 1195 015b 0E       		.uleb128 0xe
+ 1196 015c 3A       		.uleb128 0x3a
+ 1197 015d 0B       		.uleb128 0xb
+ 1198 015e 3B       		.uleb128 0x3b
+ 1199 015f 0B       		.uleb128 0xb
+ 1200 0160 00       		.byte	0
+ 1201 0161 00       		.byte	0
+ 1202 0162 00       		.byte	0
+ 1203              		.section	.debug_loc,"",%progbits
+ 1204              	.Ldebug_loc0:
+ 1205              	.LLST0:
+ 1206 0000 00000000 		.4byte	.LVL20
+ 1207 0004 04000000 		.4byte	.LVL21
+ 1208 0008 0100     		.2byte	0x1
+ 1209 000a 50       		.byte	0x50
+ 1210 000b 04000000 		.4byte	.LVL21
+ 1211 000f 64000000 		.4byte	.LFE66
+ 1212 0013 0400     		.2byte	0x4
+ 1213 0015 F3       		.byte	0xf3
+ 1214 0016 01       		.uleb128 0x1
+ 1215 0017 50       		.byte	0x50
+ 1216 0018 9F       		.byte	0x9f
+ 1217 0019 00000000 		.4byte	0
+ 1218 001d 00000000 		.4byte	0
+ 1219              		.section	.debug_aranges,"",%progbits
+ 1220 0000 3C000000 		.4byte	0x3c
+ 1221 0004 0200     		.2byte	0x2
+ 1222 0006 00000000 		.4byte	.Ldebug_info0
+ 1223 000a 04       		.byte	0x4
+ 1224 000b 00       		.byte	0
+ 1225 000c 0000     		.2byte	0
+ 1226 000e 0000     		.2byte	0
+ 1227 0010 00000000 		.4byte	.LFB64
+ 1228 0014 64000000 		.4byte	.LFE64-.LFB64
+ 1229 0018 00000000 		.4byte	.LFB65
+ 1230 001c 64000000 		.4byte	.LFE65-.LFB65
+ 1231 0020 00000000 		.4byte	.LFB66
+ 1232 0024 64000000 		.4byte	.LFE66-.LFB66
+ 1233 0028 00000000 		.4byte	.LFB67
+ 1234 002c 0C000000 		.4byte	.LFE67-.LFB67
+ 1235 0030 00000000 		.4byte	.LFB68
+ 1236 0034 72000000 		.4byte	.LFE68-.LFB68
+ 1237 0038 00000000 		.4byte	0
+ 1238 003c 00000000 		.4byte	0
+ 1239              		.section	.debug_ranges,"",%progbits
+ 1240              	.Ldebug_ranges0:
+ 1241 0000 00000000 		.4byte	.LFB64
+ 1242 0004 64000000 		.4byte	.LFE64
+ 1243 0008 00000000 		.4byte	.LFB65
+ 1244 000c 64000000 		.4byte	.LFE65
+ 1245 0010 00000000 		.4byte	.LFB66
+ 1246 0014 64000000 		.4byte	.LFE66
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 25
+
+
+ 1247 0018 00000000 		.4byte	.LFB67
+ 1248 001c 0C000000 		.4byte	.LFE67
+ 1249 0020 00000000 		.4byte	.LFB68
+ 1250 0024 72000000 		.4byte	.LFE68
+ 1251 0028 00000000 		.4byte	0
+ 1252 002c 00000000 		.4byte	0
+ 1253              		.section	.debug_line,"",%progbits
+ 1254              	.Ldebug_line0:
+ 1255 0000 50020000 		.section	.debug_str,"MS",%progbits,1
+ 1255      0200C401 
+ 1255      00000201 
+ 1255      FB0E0D00 
+ 1255      01010101 
+ 1256              	.LASF18:
+ 1257 0000 57656967 		.ascii	"WeightSensors\000"
+ 1257      68745365 
+ 1257      6E736F72 
+ 1257      7300
+ 1258              	.LASF35:
+ 1259 000e 57656967 		.ascii	"WeightSensors.c\000"
+ 1259      68745365 
+ 1259      6E736F72 
+ 1259      732E6300 
+ 1260              	.LASF39:
+ 1261 001e 57656967 		.ascii	"WeightSensorsInit\000"
+ 1261      68745365 
+ 1261      6E736F72 
+ 1261      73496E69 
+ 1261      7400
+ 1262              	.LASF12:
+ 1263 0030 5F5F696E 		.ascii	"__int32_t\000"
+ 1263      7433325F 
+ 1263      7400
+ 1264              	.LASF3:
+ 1265 003a 73686F72 		.ascii	"short unsigned int\000"
+ 1265      7420756E 
+ 1265      7369676E 
+ 1265      65642069 
+ 1265      6E7400
+ 1266              	.LASF29:
+ 1267 004d 4144435F 		.ascii	"ADC_SAR_1_CountsTo_mVolts\000"
+ 1267      5341525F 
+ 1267      315F436F 
+ 1267      756E7473 
+ 1267      546F5F6D 
+ 1268              	.LASF16:
+ 1269 0067 646F7562 		.ascii	"double\000"
+ 1269      6C6500
+ 1270              	.LASF38:
+ 1271 006e 72656164 		.ascii	"readdataLoser\000"
+ 1271      64617461 
+ 1271      4C6F7365 
+ 1271      7200
+ 1272              	.LASF25:
+ 1273 007c 506C6179 		.ascii	"PlayerSelect_FastSelect\000"
+ 1273      65725365 
+ 1273      6C656374 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 26
+
+
+ 1273      5F466173 
+ 1273      7453656C 
+ 1274              	.LASF15:
+ 1275 0094 666C6F61 		.ascii	"float\000"
+ 1275      7400
+ 1276              	.LASF27:
+ 1277 009a 4144435F 		.ascii	"ADC_SAR_1_IsEndConversion\000"
+ 1277      5341525F 
+ 1277      315F4973 
+ 1277      456E6443 
+ 1277      6F6E7665 
+ 1278              	.LASF1:
+ 1279 00b4 756E7369 		.ascii	"unsigned char\000"
+ 1279      676E6564 
+ 1279      20636861 
+ 1279      7200
+ 1280              	.LASF34:
+ 1281 00c2 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1281      43313120 
+ 1281      352E342E 
+ 1281      31203230 
+ 1281      31363036 
+ 1282 00f5 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1282      20726576 
+ 1282      6973696F 
+ 1282      6E203233 
+ 1282      37373135 
+ 1283 0128 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1283      66756E63 
+ 1283      74696F6E 
+ 1283      2D736563 
+ 1283      74696F6E 
+ 1284              	.LASF5:
+ 1285 0150 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1285      20756E73 
+ 1285      69676E65 
+ 1285      6420696E 
+ 1285      7400
+ 1286              	.LASF26:
+ 1287 0162 4144435F 		.ascii	"ADC_SAR_1_StartConvert\000"
+ 1287      5341525F 
+ 1287      315F5374 
+ 1287      61727443 
+ 1287      6F6E7665 
+ 1288              	.LASF36:
+ 1289 0179 433A5C55 		.ascii	"C:\\Users\\cring\\OneDrive - Aarhus universitet\\Un"
+ 1289      73657273 
+ 1289      5C637269 
+ 1289      6E675C4F 
+ 1289      6E654472 
+ 1290 01a8 695C332E 		.ascii	"i\\3. Semester\\PRJ3\\KODE\\ProjektMain\\Hovedprogr"
+ 1290      2053656D 
+ 1290      65737465 
+ 1290      725C5052 
+ 1290      4A335C4B 
+ 1291 01d6 616D2E63 		.ascii	"am.cydsn\000"
+ 1291      7964736E 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 27
+
+
+ 1291      00
+ 1292              	.LASF22:
+ 1293 01df 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1293      52784275 
+ 1293      66666572 
+ 1293      00
+ 1294              	.LASF23:
+ 1295 01ec 75617274 		.ascii	"uart_string\000"
+ 1295      5F737472 
+ 1295      696E6700 
+ 1296              	.LASF33:
+ 1297 01f8 506C6179 		.ascii	"PlayerSelect_Start\000"
+ 1297      65725365 
+ 1297      6C656374 
+ 1297      5F537461 
+ 1297      727400
+ 1298              	.LASF14:
+ 1299 020b 75696E74 		.ascii	"uint16\000"
+ 1299      313600
+ 1300              	.LASF8:
+ 1301 0212 756E7369 		.ascii	"unsigned int\000"
+ 1301      676E6564 
+ 1301      20696E74 
+ 1301      00
+ 1302              	.LASF7:
+ 1303 021f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1303      206C6F6E 
+ 1303      6720756E 
+ 1303      7369676E 
+ 1303      65642069 
+ 1304              	.LASF24:
+ 1305 0236 57537074 		.ascii	"WSptr\000"
+ 1305      7200
+ 1306              	.LASF17:
+ 1307 023c 704C6F73 		.ascii	"pLoser\000"
+ 1307      657200
+ 1308              	.LASF10:
+ 1309 0243 73697A65 		.ascii	"sizetype\000"
+ 1309      74797065 
+ 1309      00
+ 1310              	.LASF28:
+ 1311 024c 4144435F 		.ascii	"ADC_SAR_1_GetResult16\000"
+ 1311      5341525F 
+ 1311      315F4765 
+ 1311      74526573 
+ 1311      756C7431 
+ 1312              	.LASF6:
+ 1313 0262 6C6F6E67 		.ascii	"long long int\000"
+ 1313      206C6F6E 
+ 1313      6720696E 
+ 1313      7400
+ 1314              	.LASF11:
+ 1315 0270 63686172 		.ascii	"char\000"
+ 1315      00
+ 1316              	.LASF19:
+ 1317 0275 72656164 		.ascii	"readdata1\000"
+ 1317      64617461 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccbFS9yp.s 			page 28
+
+
+ 1317      3100
+ 1318              	.LASF20:
+ 1319 027f 72656164 		.ascii	"readdata2\000"
+ 1319      64617461 
+ 1319      3200
+ 1320              	.LASF13:
+ 1321 0289 696E7433 		.ascii	"int32_t\000"
+ 1321      325F7400 
+ 1322              	.LASF37:
+ 1323 0291 57656967 		.ascii	"WeightSensors_\000"
+ 1323      68745365 
+ 1323      6E736F72 
+ 1323      735F00
+ 1324              	.LASF2:
+ 1325 02a0 73686F72 		.ascii	"short int\000"
+ 1325      7420696E 
+ 1325      7400
+ 1326              	.LASF21:
+ 1327 02aa 436F6D70 		.ascii	"CompareWeight\000"
+ 1327      61726557 
+ 1327      65696768 
+ 1327      7400
+ 1328              	.LASF4:
+ 1329 02b8 6C6F6E67 		.ascii	"long int\000"
+ 1329      20696E74 
+ 1329      00
+ 1330              	.LASF9:
+ 1331 02c1 6C6F6E67 		.ascii	"long double\000"
+ 1331      20646F75 
+ 1331      626C6500 
+ 1332              	.LASF0:
+ 1333 02cd 7369676E 		.ascii	"signed char\000"
+ 1333      65642063 
+ 1333      68617200 
+ 1334              	.LASF32:
+ 1335 02d9 4144435F 		.ascii	"ADC_SAR_1_Start\000"
+ 1335      5341525F 
+ 1335      315F5374 
+ 1335      61727400 
+ 1336              	.LASF31:
+ 1337 02e9 55415254 		.ascii	"UART_1_PutString\000"
+ 1337      5F315F50 
+ 1337      75745374 
+ 1337      72696E67 
+ 1337      00
+ 1338              	.LASF30:
+ 1339 02fa 73707269 		.ascii	"sprintf\000"
+ 1339      6E746600 
+ 1340              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
