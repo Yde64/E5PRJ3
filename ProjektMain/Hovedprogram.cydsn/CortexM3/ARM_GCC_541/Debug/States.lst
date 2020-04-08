@@ -1,0 +1,2064 @@
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"States.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.Next_state_Logic,"ax",%progbits
+  20              		.align	2
+  21              		.global	Next_state_Logic
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	Next_state_Logic, %function
+  25              	Next_state_Logic:
+  26              	.LFB64:
+  27              		.file 1 "States.c"
+   1:States.c      **** #include "States.h"
+   2:States.c      **** #include "Stopur.h"
+   3:States.c      **** #include "Display.h"
+   4:States.c      **** 
+   5:States.c      **** states state;
+   6:States.c      **** 
+   7:States.c      **** #define glasvaegtp1 25 //eksempel
+   8:States.c      **** #define glasvaegtp2 25 //eksempel - skal testes
+   9:States.c      **** #define afvigelse 10 // maksimum mængde væske, der må være i glas efter spil  -  skal testes yd
+  10:States.c      **** #define delay 100
+  11:States.c      **** 
+  12:States.c      **** int glasvaegtWinner = 0;
+  13:States.c      **** int glasvaegtLoser = 0;
+  14:States.c      **** int pLoser = 0;
+  15:States.c      **** int tidWinner = 0;
+  16:States.c      **** int tidLoser = 0;
+  17:States.c      **** 
+  18:States.c      **** 
+  19:States.c      **** 
+  20:States.c      **** 
+  21:States.c      **** void Next_state_Logic(){
+  28              		.loc 1 21 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 10B5     		push	{r4, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 4, -8
+  35              		.cfi_offset 14, -4
+  22:States.c      **** switch(state)
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 2
+
+
+  36              		.loc 1 22 0
+  37 0002 6C4B     		ldr	r3, .L31
+  38 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  39 0006 132B     		cmp	r3, #19
+  40 0008 00F2D280 		bhi	.L1
+  41 000c DFE813F0 		tbh	[pc, r3, lsl #1]
+  42              	.L4:
+  43 0010 1400     		.2byte	(.L3-.L4)/2
+  44 0012 2000     		.2byte	(.L5-.L4)/2
+  45 0014 2400     		.2byte	(.L6-.L4)/2
+  46 0016 4000     		.2byte	(.L7-.L4)/2
+  47 0018 D000     		.2byte	(.L1-.L4)/2
+  48 001a 5600     		.2byte	(.L8-.L4)/2
+  49 001c 7A00     		.2byte	(.L9-.L4)/2
+  50 001e 7E00     		.2byte	(.L10-.L4)/2
+  51 0020 A200     		.2byte	(.L11-.L4)/2
+  52 0022 A600     		.2byte	(.L13-.L4)/2
+  53 0024 D000     		.2byte	(.L1-.L4)/2
+  54 0026 D000     		.2byte	(.L1-.L4)/2
+  55 0028 D000     		.2byte	(.L1-.L4)/2
+  56 002a D000     		.2byte	(.L1-.L4)/2
+  57 002c A600     		.2byte	(.L13-.L4)/2
+  58 002e B100     		.2byte	(.L14-.L4)/2
+  59 0030 B500     		.2byte	(.L15-.L4)/2
+  60 0032 BD00     		.2byte	(.L16-.L4)/2
+  61 0034 C500     		.2byte	(.L17-.L4)/2
+  62 0036 CD00     		.2byte	(.L18-.L4)/2
+  63              		.p2align 1
+  64              	.L3:
+  23:States.c      ****         {
+  24:States.c      ****             
+  25:States.c      ****         case IDLE:
+  26:States.c      ****             {
+  27:States.c      ****                 if(BPptr.ButtonPushed == 1)                //hvis startknap 
+  65              		.loc 1 27 0
+  66 0038 5F4B     		ldr	r3, .L31+4
+  67 003a 1B68     		ldr	r3, [r3]
+  68 003c 012B     		cmp	r3, #1
+  69 003e 03D1     		bne	.L19
+  28:States.c      ****                 {                               
+  29:States.c      ****                     state =  EVALUATING_WEIGHT; //state -> Evaluating Weight  
+  70              		.loc 1 29 0
+  71 0040 0222     		movs	r2, #2
+  72 0042 5C4B     		ldr	r3, .L31
+  73 0044 1A70     		strb	r2, [r3]
+  74 0046 10BD     		pop	{r4, pc}
+  75              	.L19:
+  30:States.c      ****                 }
+  31:States.c      ****             
+  32:States.c      ****                 else
+  33:States.c      ****                 {   
+  34:States.c      ****                     state = IDLE;               //ellers bliv her
+  76              		.loc 1 34 0
+  77 0048 0022     		movs	r2, #0
+  78 004a 5A4B     		ldr	r3, .L31
+  79 004c 1A70     		strb	r2, [r3]
+  80 004e 10BD     		pop	{r4, pc}
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 3
+
+
+  81              	.L5:
+  35:States.c      ****                 }
+  36:States.c      ****             }
+  37:States.c      ****             break;
+  38:States.c      ****            
+  39:States.c      ****         case GOING_IDLE :
+  40:States.c      ****             {
+  41:States.c      ****                 state = IDLE;                   //state -> Idle
+  82              		.loc 1 41 0
+  83 0050 0022     		movs	r2, #0
+  84 0052 584B     		ldr	r3, .L31
+  85 0054 1A70     		strb	r2, [r3]
+  42:States.c      ****             }
+  43:States.c      ****             break;
+  86              		.loc 1 43 0
+  87 0056 10BD     		pop	{r4, pc}
+  88              	.L6:
+  44:States.c      ****             
+  45:States.c      ****         case EVALUATING_WEIGHT :
+  46:States.c      ****             {
+  47:States.c      ****                 if (CompareWeight() == 1)       //hvis vægten passer
+  89              		.loc 1 47 0
+  90 0058 FFF7FEFF 		bl	CompareWeight
+  91              	.LVL0:
+  92 005c 0128     		cmp	r0, #1
+  93 005e 03D1     		bne	.L20
+  48:States.c      ****                 {
+  49:States.c      ****                     state = READY;
+  94              		.loc 1 49 0
+  95 0060 0322     		movs	r2, #3
+  96 0062 544B     		ldr	r3, .L31
+  97 0064 1A70     		strb	r2, [r3]
+  98 0066 10BD     		pop	{r4, pc}
+  99              	.L20:
+  50:States.c      ****                 }
+  51:States.c      ****                 else if (CompareWeight() != 1)  //hvis vægten ikke passer p1>p2
+ 100              		.loc 1 51 0
+ 101 0068 FFF7FEFF 		bl	CompareWeight
+ 102              	.LVL1:
+ 103 006c 0128     		cmp	r0, #1
+ 104 006e 03D0     		beq	.L21
+  52:States.c      ****                 {
+  53:States.c      ****                     state = ERR_WEIGHT;
+ 105              		.loc 1 53 0
+ 106 0070 0F22     		movs	r2, #15
+ 107 0072 504B     		ldr	r3, .L31
+ 108 0074 1A70     		strb	r2, [r3]
+ 109 0076 10BD     		pop	{r4, pc}
+ 110              	.L21:
+  54:States.c      ****                 }
+  55:States.c      ****                 else if (BPptr.ButtonPushed == 1)
+ 111              		.loc 1 55 0
+ 112 0078 4F4B     		ldr	r3, .L31+4
+ 113 007a 1B68     		ldr	r3, [r3]
+ 114 007c 012B     		cmp	r3, #1
+ 115 007e 03D1     		bne	.L22
+  56:States.c      ****                 {
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 4
+
+
+  57:States.c      ****                     state = GOING_IDLE;
+ 116              		.loc 1 57 0
+ 117 0080 0122     		movs	r2, #1
+ 118 0082 4C4B     		ldr	r3, .L31
+ 119 0084 1A70     		strb	r2, [r3]
+ 120 0086 10BD     		pop	{r4, pc}
+ 121              	.L22:
+  58:States.c      ****                 }
+  59:States.c      ****                 else 
+  60:States.c      ****                     state = EVALUATING_WEIGHT;
+ 122              		.loc 1 60 0
+ 123 0088 0222     		movs	r2, #2
+ 124 008a 4A4B     		ldr	r3, .L31
+ 125 008c 1A70     		strb	r2, [r3]
+ 126 008e 10BD     		pop	{r4, pc}
+ 127              	.L7:
+  61:States.c      ****                 
+  62:States.c      ****             }
+  63:States.c      ****             break;
+  64:States.c      ****             
+  65:States.c      ****         case READY :
+  66:States.c      ****             {
+  67:States.c      ****                 if (timeout() == 1)
+ 128              		.loc 1 67 0
+ 129 0090 FFF7FEFF 		bl	timeout
+ 130              	.LVL2:
+ 131 0094 18B1     		cbz	r0, .L23
+  68:States.c      ****                 {
+  69:States.c      ****                     state=ERR_NO_START;
+ 132              		.loc 1 69 0
+ 133 0096 1022     		movs	r2, #16
+ 134 0098 464B     		ldr	r3, .L31
+ 135 009a 1A70     		strb	r2, [r3]
+ 136 009c 10BD     		pop	{r4, pc}
+ 137              	.L23:
+  70:States.c      ****                 }
+  71:States.c      ****                 else if (BPptr.ButtonPushed == 1 && timeout()!=1) //hvis startknap -> Countdown
+ 138              		.loc 1 71 0
+ 139 009e 464B     		ldr	r3, .L31+4
+ 140 00a0 1B68     		ldr	r3, [r3]
+ 141 00a2 012B     		cmp	r3, #1
+ 142 00a4 06D1     		bne	.L24
+ 143              		.loc 1 71 0 is_stmt 0 discriminator 1
+ 144 00a6 FFF7FEFF 		bl	timeout
+ 145              	.LVL3:
+ 146 00aa 18B9     		cbnz	r0, .L24
+  72:States.c      ****                 {
+  73:States.c      ****                     state = COUNTDOWN;
+ 147              		.loc 1 73 0 is_stmt 1
+ 148 00ac 0422     		movs	r2, #4
+ 149 00ae 414B     		ldr	r3, .L31
+ 150 00b0 1A70     		strb	r2, [r3]
+ 151 00b2 10BD     		pop	{r4, pc}
+ 152              	.L24:
+  74:States.c      ****                 }
+  75:States.c      ****                 else 
+  76:States.c      ****                 {
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 5
+
+
+  77:States.c      ****                     state = READY;
+ 153              		.loc 1 77 0
+ 154 00b4 0322     		movs	r2, #3
+ 155 00b6 3F4B     		ldr	r3, .L31
+ 156 00b8 1A70     		strb	r2, [r3]
+ 157 00ba 10BD     		pop	{r4, pc}
+ 158              	.L8:
+  78:States.c      ****                 }    
+  79:States.c      ****             }
+  80:States.c      ****             break;
+  81:States.c      ****             
+  82:States.c      ****         case COUNTDOWN :
+  83:States.c      ****             {
+  84:States.c      ****               
+  85:States.c      ****                 //start timer;
+  86:States.c      ****                 
+  87:States.c      ****                 /*if () timer halløj (3-2-1-CHUG)
+  88:States.c      ****                 {
+  89:States.c      ****                     state = CHUG 
+  90:States.c      ****                 }
+  91:States.c      ****                 
+  92:States.c      ****             
+  93:States.c      ****                 else  if () //Hvis glasset løftes inden timer har talt ned fra 3-2-1-CHUG
+  94:States.c      ****                 (pseudokode) -> hvis (((nuværende timer < countdown timer) && (readdata1() < fyldt
+  95:States.c      ****                 {
+  96:States.c      ****                     state = ERR_FALSE_START    
+  97:States.c      ****                 }
+  98:States.c      ****                 
+  99:States.c      ****                 */
+ 100:States.c      ****             }
+ 101:States.c      ****             break;
+ 102:States.c      ****             
+ 103:States.c      ****         case CHUG:
+ 104:States.c      ****             {
+ 105:States.c      ****                 if(readdata1() != 0 || readdata2() != 0){
+ 159              		.loc 1 105 0
+ 160 00bc FFF7FEFF 		bl	readdata1
+ 161              	.LVL4:
+ 162 00c0 18B9     		cbnz	r0, .L25
+ 163              		.loc 1 105 0 is_stmt 0 discriminator 1
+ 164 00c2 FFF7FEFF 		bl	readdata2
+ 165              	.LVL5:
+ 166 00c6 0028     		cmp	r0, #0
+ 167 00c8 72D0     		beq	.L1
+ 168              	.L25:
+ 106:States.c      ****                     CyDelay(delay); //vent med at læse til efter inital impact
+ 169              		.loc 1 106 0 is_stmt 1
+ 170 00ca 6420     		movs	r0, #100
+ 171 00cc FFF7FEFF 		bl	CyDelay
+ 172              	.LVL6:
+ 107:States.c      ****                     
+ 108:States.c      ****                     if((glasvaegtp1 + afvigelse) >= readdata1()) //Her skal det erklæres hvilken a
+ 173              		.loc 1 108 0
+ 174 00d0 FFF7FEFF 		bl	readdata1
+ 175              	.LVL7:
+ 176 00d4 2328     		cmp	r0, #35
+ 177 00d6 08D8     		bhi	.L26
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 6
+
+
+ 109:States.c      ****                     {
+ 110:States.c      ****                         pLoser = 1; //player2 taber
+ 178              		.loc 1 110 0
+ 179 00d8 384B     		ldr	r3, .L31+8
+ 180 00da 0122     		movs	r2, #1
+ 181 00dc 1A60     		str	r2, [r3]
+ 111:States.c      ****                         glasvaegtLoser = glasvaegtp2;
+ 182              		.loc 1 111 0
+ 183 00de 1922     		movs	r2, #25
+ 184 00e0 5A60     		str	r2, [r3, #4]
+ 112:States.c      ****                         state = WINNER_DONE; //assign glasvaegtp1/p2 til glasvaegtLoser og glasvaeg
+ 185              		.loc 1 112 0
+ 186 00e2 0622     		movs	r2, #6
+ 187 00e4 334B     		ldr	r3, .L31
+ 188 00e6 1A70     		strb	r2, [r3]
+ 189 00e8 10BD     		pop	{r4, pc}
+ 190              	.L26:
+ 113:States.c      ****                                         
+ 114:States.c      ****                     }
+ 115:States.c      ****                     else if ((glasvaegtp2 + afvigelse) >= readdata2()) //hvis spiller2 vinder, sæt
+ 191              		.loc 1 115 0
+ 192 00ea FFF7FEFF 		bl	readdata2
+ 193              	.LVL8:
+ 194 00ee 2328     		cmp	r0, #35
+ 195 00f0 5ED8     		bhi	.L1
+ 116:States.c      ****                     {
+ 117:States.c      ****                         pLoser = 0; //player 1 taber
+ 196              		.loc 1 117 0
+ 197 00f2 324B     		ldr	r3, .L31+8
+ 198 00f4 0022     		movs	r2, #0
+ 199 00f6 1A60     		str	r2, [r3]
+ 118:States.c      ****                         glasvaegtLoser = glasvaegtp1;
+ 200              		.loc 1 118 0
+ 201 00f8 1922     		movs	r2, #25
+ 202 00fa 5A60     		str	r2, [r3, #4]
+ 119:States.c      ****                         state = WINNER_DONE;
+ 203              		.loc 1 119 0
+ 204 00fc 0622     		movs	r2, #6
+ 205 00fe 2D4B     		ldr	r3, .L31
+ 206 0100 1A70     		strb	r2, [r3]
+ 207 0102 10BD     		pop	{r4, pc}
+ 208              	.L9:
+ 120:States.c      ****                     }
+ 121:States.c      ****                     /*else if(timeoutTimer >= 2 min)
+ 122:States.c      ****                     {
+ 123:States.c      ****                         state =ERR_TIMEOUT;
+ 124:States.c      ****                     }
+ 125:States.c      ****                     */       
+ 126:States.c      ****                 }
+ 127:States.c      ****             }
+ 128:States.c      ****             break;    
+ 129:States.c      ****             
+ 130:States.c      ****         case WINNER_DONE:
+ 131:States.c      ****             {
+ 132:States.c      ****                 state = EVALUATING_NEW_WEIGHT;       
+ 209              		.loc 1 132 0
+ 210 0104 0722     		movs	r2, #7
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 7
+
+
+ 211 0106 2B4B     		ldr	r3, .L31
+ 212 0108 1A70     		strb	r2, [r3]
+ 133:States.c      ****             }
+ 134:States.c      ****             break;
+ 213              		.loc 1 134 0
+ 214 010a 10BD     		pop	{r4, pc}
+ 215              	.L10:
+ 135:States.c      ****             
+ 136:States.c      ****         case EVALUATING_NEW_WEIGHT :
+ 137:States.c      ****             {
+ 138:States.c      ****                 if((readdataLoser(pLoser) != 0))
+ 216              		.loc 1 138 0
+ 217 010c 2B4B     		ldr	r3, .L31+8
+ 218 010e 1868     		ldr	r0, [r3]
+ 219 0110 FFF7FEFF 		bl	readdataLoser
+ 220              	.LVL9:
+ 221 0114 D0B1     		cbz	r0, .L27
+ 139:States.c      ****                 {
+ 140:States.c      ****                     CyDelay(delay); //vent med at læse til efter inital impact
+ 222              		.loc 1 140 0
+ 223 0116 6420     		movs	r0, #100
+ 224 0118 FFF7FEFF 		bl	CyDelay
+ 225              	.LVL10:
+ 141:States.c      ****                     if (glasvaegtLoser + afvigelse < readdataLoser(pLoser))
+ 226              		.loc 1 141 0
+ 227 011c 274B     		ldr	r3, .L31+8
+ 228 011e 5C68     		ldr	r4, [r3, #4]
+ 229 0120 0A34     		adds	r4, r4, #10
+ 230 0122 1868     		ldr	r0, [r3]
+ 231 0124 FFF7FEFF 		bl	readdataLoser
+ 232              	.LVL11:
+ 233 0128 8442     		cmp	r4, r0
+ 234 012a 03DA     		bge	.L28
+ 142:States.c      ****                     {
+ 143:States.c      ****                         state = LOSER_DONE;
+ 235              		.loc 1 143 0
+ 236 012c 0822     		movs	r2, #8
+ 237 012e 214B     		ldr	r3, .L31
+ 238 0130 1A70     		strb	r2, [r3]
+ 239 0132 10BD     		pop	{r4, pc}
+ 240              	.L28:
+ 144:States.c      ****                     }
+ 145:States.c      ****                      else if (glasvaegtLoser + afvigelse > readdataLoser(pLoser))
+ 241              		.loc 1 145 0
+ 242 0134 214B     		ldr	r3, .L31+8
+ 243 0136 5C68     		ldr	r4, [r3, #4]
+ 244 0138 0A34     		adds	r4, r4, #10
+ 245 013a 1868     		ldr	r0, [r3]
+ 246 013c FFF7FEFF 		bl	readdataLoser
+ 247              	.LVL12:
+ 248 0140 8442     		cmp	r4, r0
+ 249 0142 35DD     		ble	.L1
+ 146:States.c      ****                     {
+ 147:States.c      ****                         state = ERR_NOCHUG;
+ 250              		.loc 1 147 0
+ 251 0144 1322     		movs	r2, #19
+ 252 0146 1B4B     		ldr	r3, .L31
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 8
+
+
+ 253 0148 1A70     		strb	r2, [r3]
+ 254 014a 10BD     		pop	{r4, pc}
+ 255              	.L27:
+ 148:States.c      ****                     }
+ 149:States.c      ****                 }
+ 150:States.c      ****                 else 
+ 151:States.c      ****                 {
+ 152:States.c      ****                     state = EVALUATING_NEW_WEIGHT;
+ 256              		.loc 1 152 0
+ 257 014c 0722     		movs	r2, #7
+ 258 014e 194B     		ldr	r3, .L31
+ 259 0150 1A70     		strb	r2, [r3]
+ 260 0152 10BD     		pop	{r4, pc}
+ 261              	.L11:
+ 153:States.c      ****                 }
+ 154:States.c      ****                
+ 155:States.c      ****             }   
+ 156:States.c      ****             break;
+ 157:States.c      ****             
+ 158:States.c      ****         case LOSER_DONE:
+ 159:States.c      ****             {
+ 160:States.c      ****                 state = WEIGHT_CONFIRMED;
+ 262              		.loc 1 160 0
+ 263 0154 0922     		movs	r2, #9
+ 264 0156 174B     		ldr	r3, .L31
+ 265 0158 1A70     		strb	r2, [r3]
+ 161:States.c      ****             }  
+ 162:States.c      ****             break;
+ 266              		.loc 1 162 0
+ 267 015a 10BD     		pop	{r4, pc}
+ 268              	.L13:
+ 163:States.c      ****         case WEIGHT_CONFIRMED:
+ 164:States.c      ****             {
+ 165:States.c      ****                 state = GAME_OVER;
+ 166:States.c      ****             }    
+ 167:States.c      ****         case GAME_OVER:
+ 168:States.c      ****             {
+ 169:States.c      ****                 if (BPptr.ButtonPushed != 0){
+ 269              		.loc 1 169 0
+ 270 015c 164B     		ldr	r3, .L31+4
+ 271 015e 1B68     		ldr	r3, [r3]
+ 272 0160 1BB1     		cbz	r3, .L29
+ 170:States.c      ****                     state = GOING_IDLE;
+ 273              		.loc 1 170 0
+ 274 0162 0122     		movs	r2, #1
+ 275 0164 134B     		ldr	r3, .L31
+ 276 0166 1A70     		strb	r2, [r3]
+ 277 0168 10BD     		pop	{r4, pc}
+ 278              	.L29:
+ 171:States.c      ****                 }
+ 172:States.c      ****                 else 
+ 173:States.c      ****                 state = GAME_OVER;
+ 279              		.loc 1 173 0
+ 280 016a 0E22     		movs	r2, #14
+ 281 016c 114B     		ldr	r3, .L31
+ 282 016e 1A70     		strb	r2, [r3]
+ 283 0170 10BD     		pop	{r4, pc}
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 9
+
+
+ 284              	.L14:
+ 174:States.c      ****             }
+ 175:States.c      ****             break;
+ 176:States.c      ****         
+ 177:States.c      ****             
+ 178:States.c      ****             
+ 179:States.c      ****             
+ 180:States.c      ****             
+ 181:States.c      ****             
+ 182:States.c      ****             
+ 183:States.c      ****             
+ 184:States.c      ****             // ------------------------------------ERR STATES--------------------------------------
+ 185:States.c      ****             
+ 186:States.c      ****             case ERR_WEIGHT:
+ 187:States.c      ****             {
+ 188:States.c      ****                 state = EVALUATING_WEIGHT;
+ 285              		.loc 1 188 0
+ 286 0172 0222     		movs	r2, #2
+ 287 0174 0F4B     		ldr	r3, .L31
+ 288 0176 1A70     		strb	r2, [r3]
+ 189:States.c      ****             }    
+ 190:States.c      ****             break;
+ 289              		.loc 1 190 0
+ 290 0178 10BD     		pop	{r4, pc}
+ 291              	.L15:
+ 191:States.c      ****             
+ 192:States.c      ****             case ERR_NO_START:
+ 193:States.c      ****             {
+ 194:States.c      ****                 if (BPptr.ButtonPushed == 1)
+ 292              		.loc 1 194 0
+ 293 017a 0F4B     		ldr	r3, .L31+4
+ 294 017c 1B68     		ldr	r3, [r3]
+ 295 017e 012B     		cmp	r3, #1
+ 296 0180 16D1     		bne	.L1
+ 195:States.c      ****                 {
+ 196:States.c      ****                     state = GOING_IDLE;
+ 297              		.loc 1 196 0
+ 298 0182 0122     		movs	r2, #1
+ 299 0184 0B4B     		ldr	r3, .L31
+ 300 0186 1A70     		strb	r2, [r3]
+ 301 0188 10BD     		pop	{r4, pc}
+ 302              	.L16:
+ 197:States.c      ****                 }
+ 198:States.c      ****                 
+ 199:States.c      ****             }    
+ 200:States.c      ****             break;
+ 201:States.c      ****             
+ 202:States.c      ****             case ERR_FALSE_START:
+ 203:States.c      ****             {
+ 204:States.c      ****                 if (BPptr.ButtonPushed == 1)
+ 303              		.loc 1 204 0
+ 304 018a 0B4B     		ldr	r3, .L31+4
+ 305 018c 1B68     		ldr	r3, [r3]
+ 306 018e 012B     		cmp	r3, #1
+ 307 0190 0ED1     		bne	.L1
+ 205:States.c      ****                 {
+ 206:States.c      ****                     state = GOING_IDLE;
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 10
+
+
+ 308              		.loc 1 206 0
+ 309 0192 0122     		movs	r2, #1
+ 310 0194 074B     		ldr	r3, .L31
+ 311 0196 1A70     		strb	r2, [r3]
+ 312 0198 10BD     		pop	{r4, pc}
+ 313              	.L17:
+ 207:States.c      ****                 }
+ 208:States.c      ****             }    
+ 209:States.c      ****             break;
+ 210:States.c      ****             
+ 211:States.c      ****             case ERR_TIMEOUT:
+ 212:States.c      ****             {
+ 213:States.c      ****                 if (BPptr.ButtonPushed == 1)
+ 314              		.loc 1 213 0
+ 315 019a 074B     		ldr	r3, .L31+4
+ 316 019c 1B68     		ldr	r3, [r3]
+ 317 019e 012B     		cmp	r3, #1
+ 318 01a0 06D1     		bne	.L1
+ 214:States.c      ****                 {
+ 215:States.c      ****                     state = GOING_IDLE;
+ 319              		.loc 1 215 0
+ 320 01a2 0122     		movs	r2, #1
+ 321 01a4 034B     		ldr	r3, .L31
+ 322 01a6 1A70     		strb	r2, [r3]
+ 323 01a8 10BD     		pop	{r4, pc}
+ 324              	.L18:
+ 216:States.c      ****                 }
+ 217:States.c      ****             }    
+ 218:States.c      ****             break;
+ 219:States.c      ****             
+ 220:States.c      ****             case ERR_NOCHUG:
+ 221:States.c      ****             {
+ 222:States.c      ****                 state = WINNER_DONE;
+ 325              		.loc 1 222 0
+ 326 01aa 0622     		movs	r2, #6
+ 327 01ac 014B     		ldr	r3, .L31
+ 328 01ae 1A70     		strb	r2, [r3]
+ 329              	.L1:
+ 330 01b0 10BD     		pop	{r4, pc}
+ 331              	.L32:
+ 332 01b2 00BF     		.align	2
+ 333              	.L31:
+ 334 01b4 00000000 		.word	state
+ 335 01b8 00000000 		.word	BPptr
+ 336 01bc 00000000 		.word	.LANCHOR0
+ 337              		.cfi_endproc
+ 338              	.LFE64:
+ 339              		.size	Next_state_Logic, .-Next_state_Logic
+ 340              		.section	.text.Output_logic,"ax",%progbits
+ 341              		.align	2
+ 342              		.global	Output_logic
+ 343              		.thumb
+ 344              		.thumb_func
+ 345              		.type	Output_logic, %function
+ 346              	Output_logic:
+ 347              	.LFB65:
+ 223:States.c      ****             }    
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 11
+
+
+ 224:States.c      ****             break;
+ 225:States.c      ****             
+ 226:States.c      ****             
+ 227:States.c      ****         default :
+ 228:States.c      ****             {
+ 229:States.c      ****             }
+ 230:States.c      ****             break;
+ 231:States.c      ****             
+ 232:States.c      ****         
+ 233:States.c      ****        }
+ 234:States.c      **** 
+ 235:States.c      **** }
+ 236:States.c      **** 
+ 237:States.c      **** /*
+ 238:States.c      **** void LEDinitSeq();   //Initieringssekvens
+ 239:States.c      **** void idleSeq();      //Idle-sekvens
+ 240:States.c      **** 
+ 241:States.c      **** void loserSeq();     //Tabersekvens
+ 242:States.c      **** 
+ 243:States.c      **** void zeroCalibrateSeq(); //Kalibreringssekvens
+ 244:States.c      **** 
+ 245:States.c      **** void checkSeq();     //Tjek vægt sekvens
+ 246:States.c      **** 
+ 247:States.c      **** void weightapprovedSeq(); //Vægt godkendt sekvens
+ 248:States.c      **** 
+ 249:States.c      **** void startSeq();     //Start sekvens
+ 250:States.c      **** void errorSeq();     //Fejl sekvens
+ 251:States.c      **** void winnerSeq();    //Vindersekvens
+ 252:States.c      **** */
+ 253:States.c      **** 
+ 254:States.c      **** void Output_logic(){
+ 348              		.loc 1 254 0
+ 349              		.cfi_startproc
+ 350              		@ args = 0, pretend = 0, frame = 0
+ 351              		@ frame_needed = 0, uses_anonymous_args = 0
+ 352 0000 08B5     		push	{r3, lr}
+ 353              		.cfi_def_cfa_offset 8
+ 354              		.cfi_offset 3, -8
+ 355              		.cfi_offset 14, -4
+ 255:States.c      **** switch(state)
+ 356              		.loc 1 255 0
+ 357 0002 2D4B     		ldr	r3, .L45
+ 358 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 359 0006 033B     		subs	r3, r3, #3
+ 360 0008 102B     		cmp	r3, #16
+ 361 000a 54D8     		bhi	.L33
+ 362 000c DFE803F0 		tbb	[pc, r3]
+ 363              	.L36:
+ 364 0010 09       		.byte	(.L35-.L36)/2
+ 365 0011 53       		.byte	(.L33-.L36)/2
+ 366 0012 10       		.byte	(.L37-.L36)/2
+ 367 0013 21       		.byte	(.L38-.L36)/2
+ 368 0014 36       		.byte	(.L39-.L36)/2
+ 369 0015 53       		.byte	(.L33-.L36)/2
+ 370 0016 53       		.byte	(.L33-.L36)/2
+ 371 0017 53       		.byte	(.L33-.L36)/2
+ 372 0018 53       		.byte	(.L33-.L36)/2
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 12
+
+
+ 373 0019 53       		.byte	(.L33-.L36)/2
+ 374 001a 53       		.byte	(.L33-.L36)/2
+ 375 001b 43       		.byte	(.L40-.L36)/2
+ 376 001c 46       		.byte	(.L41-.L36)/2
+ 377 001d 53       		.byte	(.L33-.L36)/2
+ 378 001e 53       		.byte	(.L33-.L36)/2
+ 379 001f 53       		.byte	(.L33-.L36)/2
+ 380 0020 4D       		.byte	(.L42-.L36)/2
+ 381 0021 00       		.p2align 1
+ 382              	.L35:
+ 256:States.c      ****         {
+ 257:States.c      ****             
+ 258:States.c      ****         case IDLE:
+ 259:States.c      ****             {
+ 260:States.c      ****                 //idleSeq();
+ 261:States.c      ****             }
+ 262:States.c      ****             break;
+ 263:States.c      ****            
+ 264:States.c      ****         case GOING_IDLE :
+ 265:States.c      ****             {
+ 266:States.c      ****                //clearDisp();    
+ 267:States.c      ****             }
+ 268:States.c      ****             break;
+ 269:States.c      ****             
+ 270:States.c      ****         case EVALUATING_WEIGHT :
+ 271:States.c      ****             {
+ 272:States.c      ****                 //checkSeq();
+ 273:States.c      ****             }
+ 274:States.c      ****             break;
+ 275:States.c      ****             
+ 276:States.c      ****         case READY :
+ 277:States.c      ****             {
+ 278:States.c      ****                if (timeout()== 1)
+ 383              		.loc 1 278 0
+ 384 0022 FFF7FEFF 		bl	timeout
+ 385              	.LVL13:
+ 279:States.c      ****             {
+ 280:States.c      ****                 //errorSeq(1);
+ 281:States.c      ****                 //errorSeq(2);  
+ 282:States.c      ****             } 
+ 283:States.c      ****             stopTimer();
+ 386              		.loc 1 283 0
+ 387 0026 FFF7FEFF 		bl	stopTimer
+ 388              	.LVL14:
+ 284:States.c      ****             clearTimer();
+ 389              		.loc 1 284 0
+ 390 002a FFF7FEFF 		bl	clearTimer
+ 391              	.LVL15:
+ 285:States.c      ****             }
+ 286:States.c      ****             break;
+ 392              		.loc 1 286 0
+ 393 002e 08BD     		pop	{r3, pc}
+ 394              	.L37:
+ 287:States.c      ****             
+ 288:States.c      ****         case COUNTDOWN :
+ 289:States.c      ****             {
+ 290:States.c      ****                 //startSeq();
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 13
+
+
+ 291:States.c      ****             }
+ 292:States.c      ****             break;
+ 293:States.c      ****             
+ 294:States.c      ****         case CHUG:
+ 295:States.c      ****             {
+ 296:States.c      ****                 dispTime(1, getTime());
+ 395              		.loc 1 296 0
+ 396 0030 FFF7FEFF 		bl	getTime
+ 397              	.LVL16:
+ 398 0034 0146     		mov	r1, r0
+ 399 0036 0120     		movs	r0, #1
+ 400 0038 FFF7FEFF 		bl	dispTime
+ 401              	.LVL17:
+ 297:States.c      ****                 dispTime(2, getTime());
+ 402              		.loc 1 297 0
+ 403 003c FFF7FEFF 		bl	getTime
+ 404              	.LVL18:
+ 405 0040 0146     		mov	r1, r0
+ 406 0042 0220     		movs	r0, #2
+ 407 0044 FFF7FEFF 		bl	dispTime
+ 408              	.LVL19:
+ 298:States.c      ****                 startTimer();
+ 409              		.loc 1 298 0
+ 410 0048 FFF7FEFF 		bl	startTimer
+ 411              	.LVL20:
+ 299:States.c      ****                 //sekvens for spil igang 
+ 300:States.c      ****             if (timeout()==1)
+ 412              		.loc 1 300 0
+ 413 004c FFF7FEFF 		bl	timeout
+ 414              	.LVL21:
+ 301:States.c      ****             {
+ 302:States.c      ****                 //errorSeq(1);
+ 303:States.c      ****                 //errorSeq(2);
+ 304:States.c      ****             }
+ 305:States.c      ****             }
+ 306:States.c      ****             break;    
+ 415              		.loc 1 306 0
+ 416 0050 08BD     		pop	{r3, pc}
+ 417              	.L38:
+ 307:States.c      ****             
+ 308:States.c      ****         case WINNER_DONE:
+ 309:States.c      ****             {
+ 310:States.c      ****               if (pLoser == 1)
+ 418              		.loc 1 310 0
+ 419 0052 1A4B     		ldr	r3, .L45+4
+ 420 0054 1B68     		ldr	r3, [r3]
+ 421 0056 012B     		cmp	r3, #1
+ 422 0058 07D1     		bne	.L43
+ 311:States.c      ****             {
+ 312:States.c      ****               stopLCD(1);
+ 423              		.loc 1 312 0
+ 424 005a 0120     		movs	r0, #1
+ 425 005c FFF7FEFF 		bl	stopLCD
+ 426              	.LVL22:
+ 313:States.c      ****               tidWinner = getTime();
+ 427              		.loc 1 313 0
+ 428 0060 FFF7FEFF 		bl	getTime
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 14
+
+
+ 429              	.LVL23:
+ 430 0064 154B     		ldr	r3, .L45+4
+ 431 0066 9860     		str	r0, [r3, #8]
+ 432 0068 08BD     		pop	{r3, pc}
+ 433              	.L43:
+ 314:States.c      ****               // afspiller vinder sekvens
+ 315:States.c      ****             }
+ 316:States.c      ****             else if (pLoser == 0)
+ 434              		.loc 1 316 0
+ 435 006a 23BB     		cbnz	r3, .L33
+ 317:States.c      ****             {
+ 318:States.c      ****                 stopLCD(2);
+ 436              		.loc 1 318 0
+ 437 006c 0220     		movs	r0, #2
+ 438 006e FFF7FEFF 		bl	stopLCD
+ 439              	.LVL24:
+ 319:States.c      ****                 tidWinner = getTime();
+ 440              		.loc 1 319 0
+ 441 0072 FFF7FEFF 		bl	getTime
+ 442              	.LVL25:
+ 443 0076 114B     		ldr	r3, .L45+4
+ 444 0078 9860     		str	r0, [r3, #8]
+ 445 007a 08BD     		pop	{r3, pc}
+ 446              	.L39:
+ 320:States.c      ****                 // afspiller vinder sekvens
+ 321:States.c      ****             }
+ 322:States.c      ****             }
+ 323:States.c      ****             
+ 324:States.c      ****             break;
+ 325:States.c      ****             
+ 326:States.c      ****         case EVALUATING_NEW_WEIGHT :
+ 327:States.c      ****             {
+ 328:States.c      ****               stopLCD(1);
+ 447              		.loc 1 328 0
+ 448 007c 0120     		movs	r0, #1
+ 449 007e FFF7FEFF 		bl	stopLCD
+ 450              	.LVL26:
+ 329:States.c      ****               stopLCD(2);
+ 451              		.loc 1 329 0
+ 452 0082 0220     		movs	r0, #2
+ 453 0084 FFF7FEFF 		bl	stopLCD
+ 454              	.LVL27:
+ 330:States.c      ****               tidLoser = getTime();
+ 455              		.loc 1 330 0
+ 456 0088 FFF7FEFF 		bl	getTime
+ 457              	.LVL28:
+ 458 008c 0B4B     		ldr	r3, .L45+4
+ 459 008e D860     		str	r0, [r3, #12]
+ 331:States.c      ****               stopTimer();
+ 460              		.loc 1 331 0
+ 461 0090 FFF7FEFF 		bl	stopTimer
+ 462              	.LVL29:
+ 332:States.c      ****               // afspiller taber sekvens
+ 333:States.c      ****             }
+ 334:States.c      ****           
+ 335:States.c      ****             break;
+ 463              		.loc 1 335 0
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 15
+
+
+ 464 0094 08BD     		pop	{r3, pc}
+ 465              	.L40:
+ 336:States.c      ****             
+ 337:States.c      **** //        case LOSER_DONE:
+ 338:States.c      **** //            {
+ 339:States.c      **** //                
+ 340:States.c      **** //            }  
+ 341:States.c      **** //            break;
+ 342:States.c      **** //        case WEIGHT_CONFIRMED:
+ 343:States.c      **** //            {
+ 344:States.c      **** //            
+ 345:States.c      **** //            }    
+ 346:States.c      ****         case GAME_OVER:
+ 347:States.c      ****             {
+ 348:States.c      ****               clearTimer();
+ 466              		.loc 1 348 0
+ 467 0096 FFF7FEFF 		bl	clearTimer
+ 468              	.LVL30:
+ 349:States.c      ****             }
+ 350:States.c      ****             break;
+ 469              		.loc 1 350 0
+ 470 009a 08BD     		pop	{r3, pc}
+ 471              	.L41:
+ 351:States.c      ****         
+ 352:States.c      ****             
+ 353:States.c      ****             
+ 354:States.c      ****             
+ 355:States.c      ****             
+ 356:States.c      ****             
+ 357:States.c      ****             
+ 358:States.c      ****             
+ 359:States.c      ****             // ------------------------------------ERR STATES--------------------------------------
+ 360:States.c      ****             
+ 361:States.c      ****             case ERR_WEIGHT:
+ 362:States.c      ****             {
+ 363:States.c      ****                 if (CompareWeight() == 2)  //hvis vægten ikke passer p1>p2 -> p2 har fejlen
+ 472              		.loc 1 363 0
+ 473 009c FFF7FEFF 		bl	CompareWeight
+ 474              	.LVL31:
+ 475 00a0 0228     		cmp	r0, #2
+ 476 00a2 08D0     		beq	.L33
+ 364:States.c      ****                 {
+ 365:States.c      ****                     //errorSeq(2);
+ 366:States.c      ****                 }
+ 367:States.c      ****                 else if (CompareWeight() == 3)  //hvis vægten ikke passer p1<p2 -> p1 har fejlen
+ 477              		.loc 1 367 0
+ 478 00a4 FFF7FEFF 		bl	CompareWeight
+ 479              	.LVL32:
+ 480 00a8 08BD     		pop	{r3, pc}
+ 481              	.L42:
+ 368:States.c      ****                 {
+ 369:States.c      ****                     //errorSeq(1);
+ 370:States.c      ****                 }
+ 371:States.c      **** 
+ 372:States.c      ****             }    
+ 373:States.c      ****             break;
+ 374:States.c      ****             
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 16
+
+
+ 375:States.c      ****             case ERR_NO_START:
+ 376:States.c      ****             {
+ 377:States.c      ****                 //timer if-else statement
+ 378:States.c      ****             }    
+ 379:States.c      ****             break;
+ 380:States.c      ****             
+ 381:States.c      ****             case ERR_FALSE_START:
+ 382:States.c      ****             {
+ 383:States.c      ****                 //timer if-else statement
+ 384:States.c      ****             }    
+ 385:States.c      ****             break;
+ 386:States.c      ****             
+ 387:States.c      ****             case ERR_TIMEOUT:
+ 388:States.c      ****             {
+ 389:States.c      ****                 //timer if-else statement
+ 390:States.c      ****             }    
+ 391:States.c      ****             break;
+ 392:States.c      ****             
+ 393:States.c      ****             case ERR_NOCHUG:
+ 394:States.c      ****             {
+ 395:States.c      ****                 if (glasvaegtp1 < readdata1()) 
+ 482              		.loc 1 395 0
+ 483 00aa FFF7FEFF 		bl	readdata1
+ 484              	.LVL33:
+ 485 00ae 1928     		cmp	r0, #25
+ 486 00b0 01D8     		bhi	.L33
+ 396:States.c      ****                 {
+ 397:States.c      ****                     //errorSeq(1);
+ 398:States.c      ****                 }
+ 399:States.c      ****                 else if(glasvaegtp2 < readdata2()) 
+ 487              		.loc 1 399 0
+ 488 00b2 FFF7FEFF 		bl	readdata2
+ 489              	.LVL34:
+ 490              	.L33:
+ 491 00b6 08BD     		pop	{r3, pc}
+ 492              	.L46:
+ 493              		.align	2
+ 494              	.L45:
+ 495 00b8 00000000 		.word	state
+ 496 00bc 00000000 		.word	.LANCHOR0
+ 497              		.cfi_endproc
+ 498              	.LFE65:
+ 499              		.size	Output_logic, .-Output_logic
+ 500              		.global	tidLoser
+ 501              		.global	tidWinner
+ 502              		.global	pLoser
+ 503              		.global	glasvaegtLoser
+ 504              		.global	glasvaegtWinner
+ 505              		.comm	state,1,1
+ 506              		.comm	BPptr,4,4
+ 507              		.bss
+ 508              		.align	2
+ 509              		.set	.LANCHOR0,. + 0
+ 510              		.type	pLoser, %object
+ 511              		.size	pLoser, 4
+ 512              	pLoser:
+ 513 0000 00000000 		.space	4
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 17
+
+
+ 514              		.type	glasvaegtLoser, %object
+ 515              		.size	glasvaegtLoser, 4
+ 516              	glasvaegtLoser:
+ 517 0004 00000000 		.space	4
+ 518              		.type	tidWinner, %object
+ 519              		.size	tidWinner, 4
+ 520              	tidWinner:
+ 521 0008 00000000 		.space	4
+ 522              		.type	tidLoser, %object
+ 523              		.size	tidLoser, 4
+ 524              	tidLoser:
+ 525 000c 00000000 		.space	4
+ 526              		.type	glasvaegtWinner, %object
+ 527              		.size	glasvaegtWinner, 4
+ 528              	glasvaegtWinner:
+ 529 0010 00000000 		.space	4
+ 530              		.text
+ 531              	.Letext0:
+ 532              		.file 2 "d:\\psoc\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.1\\arm-none-eabi\\includ
+ 533              		.file 3 "d:\\psoc\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.1\\arm-none-eabi\\includ
+ 534              		.file 4 "Startknap.h"
+ 535              		.file 5 "States.h"
+ 536              		.file 6 "Generated_Source\\PSoC5/core_cm3.h"
+ 537              		.file 7 "WeightSensors_.h"
+ 538              		.file 8 "Stopur.h"
+ 539              		.file 9 "Generated_Source\\PSoC5/CyLib.h"
+ 540              		.file 10 "Display.h"
+ 541              		.section	.debug_info,"",%progbits
+ 542              	.Ldebug_info0:
+ 543 0000 1A040000 		.4byte	0x41a
+ 544 0004 0400     		.2byte	0x4
+ 545 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 546 000a 04       		.byte	0x4
+ 547 000b 01       		.uleb128 0x1
+ 548 000c E8020000 		.4byte	.LASF60
+ 549 0010 0C       		.byte	0xc
+ 550 0011 E1010000 		.4byte	.LASF61
+ 551 0015 3E020000 		.4byte	.LASF62
+ 552 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 553 001d 00000000 		.4byte	0
+ 554 0021 00000000 		.4byte	.Ldebug_line0
+ 555 0025 02       		.uleb128 0x2
+ 556 0026 01       		.byte	0x1
+ 557 0027 06       		.byte	0x6
+ 558 0028 37010000 		.4byte	.LASF0
+ 559 002c 02       		.uleb128 0x2
+ 560 002d 01       		.byte	0x1
+ 561 002e 08       		.byte	0x8
+ 562 002f 21010000 		.4byte	.LASF1
+ 563 0033 02       		.uleb128 0x2
+ 564 0034 02       		.byte	0x2
+ 565 0035 05       		.byte	0x5
+ 566 0036 87000000 		.4byte	.LASF2
+ 567 003a 02       		.uleb128 0x2
+ 568 003b 02       		.byte	0x2
+ 569 003c 07       		.byte	0x7
+ 570 003d 9C010000 		.4byte	.LASF3
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 18
+
+
+ 571 0041 03       		.uleb128 0x3
+ 572 0042 BC010000 		.4byte	.LASF9
+ 573 0046 02       		.byte	0x2
+ 574 0047 3F       		.byte	0x3f
+ 575 0048 4C000000 		.4byte	0x4c
+ 576 004c 02       		.uleb128 0x2
+ 577 004d 04       		.byte	0x4
+ 578 004e 05       		.byte	0x5
+ 579 004f C8000000 		.4byte	.LASF4
+ 580 0053 02       		.uleb128 0x2
+ 581 0054 04       		.byte	0x4
+ 582 0055 07       		.byte	0x7
+ 583 0056 10020000 		.4byte	.LASF5
+ 584 005a 02       		.uleb128 0x2
+ 585 005b 08       		.byte	0x8
+ 586 005c 05       		.byte	0x5
+ 587 005d A7000000 		.4byte	.LASF6
+ 588 0061 02       		.uleb128 0x2
+ 589 0062 08       		.byte	0x8
+ 590 0063 07       		.byte	0x7
+ 591 0064 53010000 		.4byte	.LASF7
+ 592 0068 04       		.uleb128 0x4
+ 593 0069 04       		.byte	0x4
+ 594 006a 05       		.byte	0x5
+ 595 006b 696E7400 		.ascii	"int\000"
+ 596 006f 02       		.uleb128 0x2
+ 597 0070 04       		.byte	0x4
+ 598 0071 07       		.byte	0x7
+ 599 0072 6A010000 		.4byte	.LASF8
+ 600 0076 03       		.uleb128 0x3
+ 601 0077 B4010000 		.4byte	.LASF10
+ 602 007b 03       		.byte	0x3
+ 603 007c 2C       		.byte	0x2c
+ 604 007d 41000000 		.4byte	0x41
+ 605 0081 02       		.uleb128 0x2
+ 606 0082 04       		.byte	0x4
+ 607 0083 04       		.byte	0x4
+ 608 0084 A1000000 		.4byte	.LASF11
+ 609 0088 02       		.uleb128 0x2
+ 610 0089 08       		.byte	0x8
+ 611 008a 04       		.byte	0x4
+ 612 008b 22020000 		.4byte	.LASF12
+ 613 008f 02       		.uleb128 0x2
+ 614 0090 01       		.byte	0x1
+ 615 0091 08       		.byte	0x8
+ 616 0092 AF010000 		.4byte	.LASF13
+ 617 0096 02       		.uleb128 0x2
+ 618 0097 08       		.byte	0x8
+ 619 0098 04       		.byte	0x4
+ 620 0099 0B010000 		.4byte	.LASF14
+ 621 009d 02       		.uleb128 0x2
+ 622 009e 04       		.byte	0x4
+ 623 009f 07       		.byte	0x7
+ 624 00a0 4C000000 		.4byte	.LASF15
+ 625 00a4 05       		.uleb128 0x5
+ 626 00a5 7E030000 		.4byte	.LASF63
+ 627 00a9 04       		.byte	0x4
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 19
+
+
+ 628 00aa 04       		.byte	0x4
+ 629 00ab 12       		.byte	0x12
+ 630 00ac BD000000 		.4byte	0xbd
+ 631 00b0 06       		.uleb128 0x6
+ 632 00b1 7E030000 		.4byte	.LASF63
+ 633 00b5 04       		.byte	0x4
+ 634 00b6 13       		.byte	0x13
+ 635 00b7 68000000 		.4byte	0x68
+ 636 00bb 00       		.byte	0
+ 637 00bc 00       		.byte	0
+ 638 00bd 03       		.uleb128 0x3
+ 639 00be 95010000 		.4byte	.LASF16
+ 640 00c2 04       		.byte	0x4
+ 641 00c3 14       		.byte	0x14
+ 642 00c4 A4000000 		.4byte	0xa4
+ 643 00c8 07       		.uleb128 0x7
+ 644 00c9 01       		.byte	0x1
+ 645 00ca 2C000000 		.4byte	0x2c
+ 646 00ce 05       		.byte	0x5
+ 647 00cf 13       		.byte	0x13
+ 648 00d0 4D010000 		.4byte	0x14d
+ 649 00d4 08       		.uleb128 0x8
+ 650 00d5 91000000 		.4byte	.LASF17
+ 651 00d9 00       		.byte	0
+ 652 00da 08       		.uleb128 0x8
+ 653 00db E8000000 		.4byte	.LASF18
+ 654 00df 01       		.byte	0x1
+ 655 00e0 08       		.uleb128 0x8
+ 656 00e1 68000000 		.4byte	.LASF19
+ 657 00e5 02       		.byte	0x2
+ 658 00e6 08       		.uleb128 0x8
+ 659 00e7 29020000 		.4byte	.LASF20
+ 660 00eb 03       		.byte	0x3
+ 661 00ec 08       		.uleb128 0x8
+ 662 00ed F2010000 		.4byte	.LASF21
+ 663 00f1 04       		.byte	0x4
+ 664 00f2 08       		.uleb128 0x8
+ 665 00f3 C6010000 		.4byte	.LASF22
+ 666 00f7 05       		.byte	0x5
+ 667 00f8 08       		.uleb128 0x8
+ 668 00f9 8B030000 		.4byte	.LASF23
+ 669 00fd 06       		.byte	0x6
+ 670 00fe 08       		.uleb128 0x8
+ 671 00ff CB010000 		.4byte	.LASF24
+ 672 0103 07       		.byte	0x7
+ 673 0104 08       		.uleb128 0x8
+ 674 0105 D7000000 		.4byte	.LASF25
+ 675 0109 08       		.byte	0x8
+ 676 010a 08       		.uleb128 0x8
+ 677 010b AD020000 		.4byte	.LASF26
+ 678 010f 09       		.byte	0x9
+ 679 0110 08       		.uleb128 0x8
+ 680 0111 3A000000 		.4byte	.LASF27
+ 681 0115 0A       		.byte	0xa
+ 682 0116 08       		.uleb128 0x8
+ 683 0117 43000000 		.4byte	.LASF28
+ 684 011b 0B       		.byte	0xb
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 20
+
+
+ 685 011c 08       		.uleb128 0x8
+ 686 011d 17010000 		.4byte	.LASF29
+ 687 0121 0C       		.byte	0xc
+ 688 0122 08       		.uleb128 0x8
+ 689 0123 5E000000 		.4byte	.LASF30
+ 690 0127 0D       		.byte	0xd
+ 691 0128 08       		.uleb128 0x8
+ 692 0129 BE020000 		.4byte	.LASF31
+ 693 012d 0E       		.byte	0xe
+ 694 012e 08       		.uleb128 0x8
+ 695 012f 97030000 		.4byte	.LASF32
+ 696 0133 0F       		.byte	0xf
+ 697 0134 08       		.uleb128 0x8
+ 698 0135 7A000000 		.4byte	.LASF33
+ 699 0139 10       		.byte	0x10
+ 700 013a 08       		.uleb128 0x8
+ 701 013b 43010000 		.4byte	.LASF34
+ 702 013f 11       		.byte	0x11
+ 703 0140 08       		.uleb128 0x8
+ 704 0141 BC000000 		.4byte	.LASF35
+ 705 0145 12       		.byte	0x12
+ 706 0146 08       		.uleb128 0x8
+ 707 0147 96000000 		.4byte	.LASF36
+ 708 014b 13       		.byte	0x13
+ 709 014c 00       		.byte	0
+ 710 014d 03       		.uleb128 0x3
+ 711 014e B5000000 		.4byte	.LASF37
+ 712 0152 05       		.byte	0x5
+ 713 0153 2B       		.byte	0x2b
+ 714 0154 C8000000 		.4byte	0xc8
+ 715 0158 09       		.uleb128 0x9
+ 716 0159 00000000 		.4byte	.LASF38
+ 717 015d 01       		.byte	0x1
+ 718 015e 15       		.byte	0x15
+ 719 015f 00000000 		.4byte	.LFB64
+ 720 0163 C0010000 		.4byte	.LFE64-.LFB64
+ 721 0167 01       		.uleb128 0x1
+ 722 0168 9C       		.byte	0x9c
+ 723 0169 F9010000 		.4byte	0x1f9
+ 724 016d 0A       		.uleb128 0xa
+ 725 016e 5C000000 		.4byte	.LVL0
+ 726 0172 99030000 		.4byte	0x399
+ 727 0176 0A       		.uleb128 0xa
+ 728 0177 6C000000 		.4byte	.LVL1
+ 729 017b 99030000 		.4byte	0x399
+ 730 017f 0A       		.uleb128 0xa
+ 731 0180 94000000 		.4byte	.LVL2
+ 732 0184 A4030000 		.4byte	0x3a4
+ 733 0188 0A       		.uleb128 0xa
+ 734 0189 AA000000 		.4byte	.LVL3
+ 735 018d A4030000 		.4byte	0x3a4
+ 736 0191 0A       		.uleb128 0xa
+ 737 0192 C0000000 		.4byte	.LVL4
+ 738 0196 AF030000 		.4byte	0x3af
+ 739 019a 0A       		.uleb128 0xa
+ 740 019b C6000000 		.4byte	.LVL5
+ 741 019f BA030000 		.4byte	0x3ba
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 21
+
+
+ 742 01a3 0B       		.uleb128 0xb
+ 743 01a4 D0000000 		.4byte	.LVL6
+ 744 01a8 C5030000 		.4byte	0x3c5
+ 745 01ac B7010000 		.4byte	0x1b7
+ 746 01b0 0C       		.uleb128 0xc
+ 747 01b1 01       		.uleb128 0x1
+ 748 01b2 50       		.byte	0x50
+ 749 01b3 02       		.uleb128 0x2
+ 750 01b4 08       		.byte	0x8
+ 751 01b5 64       		.byte	0x64
+ 752 01b6 00       		.byte	0
+ 753 01b7 0A       		.uleb128 0xa
+ 754 01b8 D4000000 		.4byte	.LVL7
+ 755 01bc AF030000 		.4byte	0x3af
+ 756 01c0 0A       		.uleb128 0xa
+ 757 01c1 EE000000 		.4byte	.LVL8
+ 758 01c5 BA030000 		.4byte	0x3ba
+ 759 01c9 0A       		.uleb128 0xa
+ 760 01ca 14010000 		.4byte	.LVL9
+ 761 01ce D0030000 		.4byte	0x3d0
+ 762 01d2 0B       		.uleb128 0xb
+ 763 01d3 1C010000 		.4byte	.LVL10
+ 764 01d7 C5030000 		.4byte	0x3c5
+ 765 01db E6010000 		.4byte	0x1e6
+ 766 01df 0C       		.uleb128 0xc
+ 767 01e0 01       		.uleb128 0x1
+ 768 01e1 50       		.byte	0x50
+ 769 01e2 02       		.uleb128 0x2
+ 770 01e3 08       		.byte	0x8
+ 771 01e4 64       		.byte	0x64
+ 772 01e5 00       		.byte	0
+ 773 01e6 0A       		.uleb128 0xa
+ 774 01e7 28010000 		.4byte	.LVL11
+ 775 01eb D0030000 		.4byte	0x3d0
+ 776 01ef 0A       		.uleb128 0xa
+ 777 01f0 40010000 		.4byte	.LVL12
+ 778 01f4 D0030000 		.4byte	0x3d0
+ 779 01f8 00       		.byte	0
+ 780 01f9 09       		.uleb128 0x9
+ 781 01fa F3000000 		.4byte	.LASF39
+ 782 01fe 01       		.byte	0x1
+ 783 01ff FE       		.byte	0xfe
+ 784 0200 00000000 		.4byte	.LFB65
+ 785 0204 C0000000 		.4byte	.LFE65-.LFB65
+ 786 0208 01       		.uleb128 0x1
+ 787 0209 9C       		.byte	0x9c
+ 788 020a 11030000 		.4byte	0x311
+ 789 020e 0A       		.uleb128 0xa
+ 790 020f 26000000 		.4byte	.LVL13
+ 791 0213 A4030000 		.4byte	0x3a4
+ 792 0217 0A       		.uleb128 0xa
+ 793 0218 2A000000 		.4byte	.LVL14
+ 794 021c DB030000 		.4byte	0x3db
+ 795 0220 0A       		.uleb128 0xa
+ 796 0221 2E000000 		.4byte	.LVL15
+ 797 0225 E6030000 		.4byte	0x3e6
+ 798 0229 0A       		.uleb128 0xa
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 22
+
+
+ 799 022a 34000000 		.4byte	.LVL16
+ 800 022e F1030000 		.4byte	0x3f1
+ 801 0232 0B       		.uleb128 0xb
+ 802 0233 3C000000 		.4byte	.LVL17
+ 803 0237 FC030000 		.4byte	0x3fc
+ 804 023b 45020000 		.4byte	0x245
+ 805 023f 0C       		.uleb128 0xc
+ 806 0240 01       		.uleb128 0x1
+ 807 0241 50       		.byte	0x50
+ 808 0242 01       		.uleb128 0x1
+ 809 0243 31       		.byte	0x31
+ 810 0244 00       		.byte	0
+ 811 0245 0A       		.uleb128 0xa
+ 812 0246 40000000 		.4byte	.LVL18
+ 813 024a F1030000 		.4byte	0x3f1
+ 814 024e 0B       		.uleb128 0xb
+ 815 024f 48000000 		.4byte	.LVL19
+ 816 0253 FC030000 		.4byte	0x3fc
+ 817 0257 61020000 		.4byte	0x261
+ 818 025b 0C       		.uleb128 0xc
+ 819 025c 01       		.uleb128 0x1
+ 820 025d 50       		.byte	0x50
+ 821 025e 01       		.uleb128 0x1
+ 822 025f 32       		.byte	0x32
+ 823 0260 00       		.byte	0
+ 824 0261 0A       		.uleb128 0xa
+ 825 0262 4C000000 		.4byte	.LVL20
+ 826 0266 07040000 		.4byte	0x407
+ 827 026a 0A       		.uleb128 0xa
+ 828 026b 50000000 		.4byte	.LVL21
+ 829 026f A4030000 		.4byte	0x3a4
+ 830 0273 0B       		.uleb128 0xb
+ 831 0274 60000000 		.4byte	.LVL22
+ 832 0278 12040000 		.4byte	0x412
+ 833 027c 86020000 		.4byte	0x286
+ 834 0280 0C       		.uleb128 0xc
+ 835 0281 01       		.uleb128 0x1
+ 836 0282 50       		.byte	0x50
+ 837 0283 01       		.uleb128 0x1
+ 838 0284 31       		.byte	0x31
+ 839 0285 00       		.byte	0
+ 840 0286 0A       		.uleb128 0xa
+ 841 0287 64000000 		.4byte	.LVL23
+ 842 028b F1030000 		.4byte	0x3f1
+ 843 028f 0B       		.uleb128 0xb
+ 844 0290 72000000 		.4byte	.LVL24
+ 845 0294 12040000 		.4byte	0x412
+ 846 0298 A2020000 		.4byte	0x2a2
+ 847 029c 0C       		.uleb128 0xc
+ 848 029d 01       		.uleb128 0x1
+ 849 029e 50       		.byte	0x50
+ 850 029f 01       		.uleb128 0x1
+ 851 02a0 32       		.byte	0x32
+ 852 02a1 00       		.byte	0
+ 853 02a2 0A       		.uleb128 0xa
+ 854 02a3 76000000 		.4byte	.LVL25
+ 855 02a7 F1030000 		.4byte	0x3f1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 23
+
+
+ 856 02ab 0B       		.uleb128 0xb
+ 857 02ac 82000000 		.4byte	.LVL26
+ 858 02b0 12040000 		.4byte	0x412
+ 859 02b4 BE020000 		.4byte	0x2be
+ 860 02b8 0C       		.uleb128 0xc
+ 861 02b9 01       		.uleb128 0x1
+ 862 02ba 50       		.byte	0x50
+ 863 02bb 01       		.uleb128 0x1
+ 864 02bc 31       		.byte	0x31
+ 865 02bd 00       		.byte	0
+ 866 02be 0B       		.uleb128 0xb
+ 867 02bf 88000000 		.4byte	.LVL27
+ 868 02c3 12040000 		.4byte	0x412
+ 869 02c7 D1020000 		.4byte	0x2d1
+ 870 02cb 0C       		.uleb128 0xc
+ 871 02cc 01       		.uleb128 0x1
+ 872 02cd 50       		.byte	0x50
+ 873 02ce 01       		.uleb128 0x1
+ 874 02cf 32       		.byte	0x32
+ 875 02d0 00       		.byte	0
+ 876 02d1 0A       		.uleb128 0xa
+ 877 02d2 8C000000 		.4byte	.LVL28
+ 878 02d6 F1030000 		.4byte	0x3f1
+ 879 02da 0A       		.uleb128 0xa
+ 880 02db 94000000 		.4byte	.LVL29
+ 881 02df DB030000 		.4byte	0x3db
+ 882 02e3 0A       		.uleb128 0xa
+ 883 02e4 9A000000 		.4byte	.LVL30
+ 884 02e8 E6030000 		.4byte	0x3e6
+ 885 02ec 0A       		.uleb128 0xa
+ 886 02ed A0000000 		.4byte	.LVL31
+ 887 02f1 99030000 		.4byte	0x399
+ 888 02f5 0A       		.uleb128 0xa
+ 889 02f6 A8000000 		.4byte	.LVL32
+ 890 02fa 99030000 		.4byte	0x399
+ 891 02fe 0A       		.uleb128 0xa
+ 892 02ff AE000000 		.4byte	.LVL33
+ 893 0303 AF030000 		.4byte	0x3af
+ 894 0307 0A       		.uleb128 0xa
+ 895 0308 B6000000 		.4byte	.LVL34
+ 896 030c BA030000 		.4byte	0x3ba
+ 897 0310 00       		.byte	0
+ 898 0311 0D       		.uleb128 0xd
+ 899 0312 DB020000 		.4byte	.LASF40
+ 900 0316 06       		.byte	0x6
+ 901 0317 1207     		.2byte	0x712
+ 902 0319 1D030000 		.4byte	0x31d
+ 903 031d 0E       		.uleb128 0xe
+ 904 031e 76000000 		.4byte	0x76
+ 905 0322 0F       		.uleb128 0xf
+ 906 0323 D1000000 		.4byte	.LASF41
+ 907 0327 04       		.byte	0x4
+ 908 0328 16       		.byte	0x16
+ 909 0329 BD000000 		.4byte	0xbd
+ 910 032d 05       		.uleb128 0x5
+ 911 032e 03       		.byte	0x3
+ 912 032f 00000000 		.4byte	BPptr
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 24
+
+
+ 913 0333 0F       		.uleb128 0xf
+ 914 0334 E2000000 		.4byte	.LASF42
+ 915 0338 01       		.byte	0x1
+ 916 0339 05       		.byte	0x5
+ 917 033a 4D010000 		.4byte	0x14d
+ 918 033e 05       		.uleb128 0x5
+ 919 033f 03       		.byte	0x3
+ 920 0340 00000000 		.4byte	state
+ 921 0344 0F       		.uleb128 0xf
+ 922 0345 77010000 		.4byte	.LASF43
+ 923 0349 01       		.byte	0x1
+ 924 034a 0C       		.byte	0xc
+ 925 034b 68000000 		.4byte	0x68
+ 926 034f 05       		.uleb128 0x5
+ 927 0350 03       		.byte	0x3
+ 928 0351 00000000 		.4byte	glasvaegtWinner
+ 929 0355 0F       		.uleb128 0xf
+ 930 0356 2F020000 		.4byte	.LASF44
+ 931 035a 01       		.byte	0x1
+ 932 035b 0D       		.byte	0xd
+ 933 035c 68000000 		.4byte	0x68
+ 934 0360 05       		.uleb128 0x5
+ 935 0361 03       		.byte	0x3
+ 936 0362 00000000 		.4byte	glasvaegtLoser
+ 937 0366 0F       		.uleb128 0xf
+ 938 0367 33000000 		.4byte	.LASF45
+ 939 036b 01       		.byte	0x1
+ 940 036c 0E       		.byte	0xe
+ 941 036d 68000000 		.4byte	0x68
+ 942 0371 05       		.uleb128 0x5
+ 943 0372 03       		.byte	0x3
+ 944 0373 00000000 		.4byte	pLoser
+ 945 0377 0F       		.uleb128 0xf
+ 946 0378 29000000 		.4byte	.LASF46
+ 947 037c 01       		.byte	0x1
+ 948 037d 0F       		.byte	0xf
+ 949 037e 68000000 		.4byte	0x68
+ 950 0382 05       		.uleb128 0x5
+ 951 0383 03       		.byte	0x3
+ 952 0384 00000000 		.4byte	tidWinner
+ 953 0388 0F       		.uleb128 0xf
+ 954 0389 A4020000 		.4byte	.LASF47
+ 955 038d 01       		.byte	0x1
+ 956 038e 10       		.byte	0x10
+ 957 038f 68000000 		.4byte	0x68
+ 958 0393 05       		.uleb128 0x5
+ 959 0394 03       		.byte	0x3
+ 960 0395 00000000 		.4byte	tidLoser
+ 961 0399 10       		.uleb128 0x10
+ 962 039a 87010000 		.4byte	.LASF48
+ 963 039e 87010000 		.4byte	.LASF48
+ 964 03a2 07       		.byte	0x7
+ 965 03a3 2A       		.byte	0x2a
+ 966 03a4 10       		.uleb128 0x10
+ 967 03a5 EA010000 		.4byte	.LASF49
+ 968 03a9 EA010000 		.4byte	.LASF49
+ 969 03ad 08       		.byte	0x8
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 25
+
+
+ 970 03ae 0E       		.byte	0xe
+ 971 03af 10       		.uleb128 0x10
+ 972 03b0 FC010000 		.4byte	.LASF50
+ 973 03b4 FC010000 		.4byte	.LASF50
+ 974 03b8 07       		.byte	0x7
+ 975 03b9 25       		.byte	0x25
+ 976 03ba 10       		.uleb128 0x10
+ 977 03bb 06020000 		.4byte	.LASF51
+ 978 03bf 06020000 		.4byte	.LASF51
+ 979 03c3 07       		.byte	0x7
+ 980 03c4 26       		.byte	0x26
+ 981 03c5 10       		.uleb128 0x10
+ 982 03c6 76030000 		.4byte	.LASF52
+ 983 03ca 76030000 		.4byte	.LASF52
+ 984 03ce 09       		.byte	0x9
+ 985 03cf 76       		.byte	0x76
+ 986 03d0 10       		.uleb128 0x10
+ 987 03d1 11000000 		.4byte	.LASF53
+ 988 03d5 11000000 		.4byte	.LASF53
+ 989 03d9 07       		.byte	0x7
+ 990 03da 27       		.byte	0x27
+ 991 03db 10       		.uleb128 0x10
+ 992 03dc 1F000000 		.4byte	.LASF54
+ 993 03e0 1F000000 		.4byte	.LASF54
+ 994 03e4 08       		.byte	0x8
+ 995 03e5 0B       		.byte	0xb
+ 996 03e6 10       		.uleb128 0x10
+ 997 03e7 C8020000 		.4byte	.LASF55
+ 998 03eb C8020000 		.4byte	.LASF55
+ 999 03ef 08       		.byte	0x8
+ 1000 03f0 0D       		.byte	0xd
+ 1001 03f1 10       		.uleb128 0x10
+ 1002 03f2 2F010000 		.4byte	.LASF56
+ 1003 03f6 2F010000 		.4byte	.LASF56
+ 1004 03fa 08       		.byte	0x8
+ 1005 03fb 0C       		.byte	0xc
+ 1006 03fc 10       		.uleb128 0x10
+ 1007 03fd 55000000 		.4byte	.LASF57
+ 1008 0401 55000000 		.4byte	.LASF57
+ 1009 0405 0A       		.byte	0xa
+ 1010 0406 15       		.byte	0x15
+ 1011 0407 10       		.uleb128 0x10
+ 1012 0408 00010000 		.4byte	.LASF58
+ 1013 040c 00010000 		.4byte	.LASF58
+ 1014 0410 08       		.byte	0x8
+ 1015 0411 0A       		.byte	0xa
+ 1016 0412 10       		.uleb128 0x10
+ 1017 0413 D3020000 		.4byte	.LASF59
+ 1018 0417 D3020000 		.4byte	.LASF59
+ 1019 041b 0A       		.byte	0xa
+ 1020 041c 16       		.byte	0x16
+ 1021 041d 00       		.byte	0
+ 1022              		.section	.debug_abbrev,"",%progbits
+ 1023              	.Ldebug_abbrev0:
+ 1024 0000 01       		.uleb128 0x1
+ 1025 0001 11       		.uleb128 0x11
+ 1026 0002 01       		.byte	0x1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 26
+
+
+ 1027 0003 25       		.uleb128 0x25
+ 1028 0004 0E       		.uleb128 0xe
+ 1029 0005 13       		.uleb128 0x13
+ 1030 0006 0B       		.uleb128 0xb
+ 1031 0007 03       		.uleb128 0x3
+ 1032 0008 0E       		.uleb128 0xe
+ 1033 0009 1B       		.uleb128 0x1b
+ 1034 000a 0E       		.uleb128 0xe
+ 1035 000b 55       		.uleb128 0x55
+ 1036 000c 17       		.uleb128 0x17
+ 1037 000d 11       		.uleb128 0x11
+ 1038 000e 01       		.uleb128 0x1
+ 1039 000f 10       		.uleb128 0x10
+ 1040 0010 17       		.uleb128 0x17
+ 1041 0011 00       		.byte	0
+ 1042 0012 00       		.byte	0
+ 1043 0013 02       		.uleb128 0x2
+ 1044 0014 24       		.uleb128 0x24
+ 1045 0015 00       		.byte	0
+ 1046 0016 0B       		.uleb128 0xb
+ 1047 0017 0B       		.uleb128 0xb
+ 1048 0018 3E       		.uleb128 0x3e
+ 1049 0019 0B       		.uleb128 0xb
+ 1050 001a 03       		.uleb128 0x3
+ 1051 001b 0E       		.uleb128 0xe
+ 1052 001c 00       		.byte	0
+ 1053 001d 00       		.byte	0
+ 1054 001e 03       		.uleb128 0x3
+ 1055 001f 16       		.uleb128 0x16
+ 1056 0020 00       		.byte	0
+ 1057 0021 03       		.uleb128 0x3
+ 1058 0022 0E       		.uleb128 0xe
+ 1059 0023 3A       		.uleb128 0x3a
+ 1060 0024 0B       		.uleb128 0xb
+ 1061 0025 3B       		.uleb128 0x3b
+ 1062 0026 0B       		.uleb128 0xb
+ 1063 0027 49       		.uleb128 0x49
+ 1064 0028 13       		.uleb128 0x13
+ 1065 0029 00       		.byte	0
+ 1066 002a 00       		.byte	0
+ 1067 002b 04       		.uleb128 0x4
+ 1068 002c 24       		.uleb128 0x24
+ 1069 002d 00       		.byte	0
+ 1070 002e 0B       		.uleb128 0xb
+ 1071 002f 0B       		.uleb128 0xb
+ 1072 0030 3E       		.uleb128 0x3e
+ 1073 0031 0B       		.uleb128 0xb
+ 1074 0032 03       		.uleb128 0x3
+ 1075 0033 08       		.uleb128 0x8
+ 1076 0034 00       		.byte	0
+ 1077 0035 00       		.byte	0
+ 1078 0036 05       		.uleb128 0x5
+ 1079 0037 13       		.uleb128 0x13
+ 1080 0038 01       		.byte	0x1
+ 1081 0039 03       		.uleb128 0x3
+ 1082 003a 0E       		.uleb128 0xe
+ 1083 003b 0B       		.uleb128 0xb
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 27
+
+
+ 1084 003c 0B       		.uleb128 0xb
+ 1085 003d 3A       		.uleb128 0x3a
+ 1086 003e 0B       		.uleb128 0xb
+ 1087 003f 3B       		.uleb128 0x3b
+ 1088 0040 0B       		.uleb128 0xb
+ 1089 0041 01       		.uleb128 0x1
+ 1090 0042 13       		.uleb128 0x13
+ 1091 0043 00       		.byte	0
+ 1092 0044 00       		.byte	0
+ 1093 0045 06       		.uleb128 0x6
+ 1094 0046 0D       		.uleb128 0xd
+ 1095 0047 00       		.byte	0
+ 1096 0048 03       		.uleb128 0x3
+ 1097 0049 0E       		.uleb128 0xe
+ 1098 004a 3A       		.uleb128 0x3a
+ 1099 004b 0B       		.uleb128 0xb
+ 1100 004c 3B       		.uleb128 0x3b
+ 1101 004d 0B       		.uleb128 0xb
+ 1102 004e 49       		.uleb128 0x49
+ 1103 004f 13       		.uleb128 0x13
+ 1104 0050 38       		.uleb128 0x38
+ 1105 0051 0B       		.uleb128 0xb
+ 1106 0052 00       		.byte	0
+ 1107 0053 00       		.byte	0
+ 1108 0054 07       		.uleb128 0x7
+ 1109 0055 04       		.uleb128 0x4
+ 1110 0056 01       		.byte	0x1
+ 1111 0057 0B       		.uleb128 0xb
+ 1112 0058 0B       		.uleb128 0xb
+ 1113 0059 49       		.uleb128 0x49
+ 1114 005a 13       		.uleb128 0x13
+ 1115 005b 3A       		.uleb128 0x3a
+ 1116 005c 0B       		.uleb128 0xb
+ 1117 005d 3B       		.uleb128 0x3b
+ 1118 005e 0B       		.uleb128 0xb
+ 1119 005f 01       		.uleb128 0x1
+ 1120 0060 13       		.uleb128 0x13
+ 1121 0061 00       		.byte	0
+ 1122 0062 00       		.byte	0
+ 1123 0063 08       		.uleb128 0x8
+ 1124 0064 28       		.uleb128 0x28
+ 1125 0065 00       		.byte	0
+ 1126 0066 03       		.uleb128 0x3
+ 1127 0067 0E       		.uleb128 0xe
+ 1128 0068 1C       		.uleb128 0x1c
+ 1129 0069 0B       		.uleb128 0xb
+ 1130 006a 00       		.byte	0
+ 1131 006b 00       		.byte	0
+ 1132 006c 09       		.uleb128 0x9
+ 1133 006d 2E       		.uleb128 0x2e
+ 1134 006e 01       		.byte	0x1
+ 1135 006f 3F       		.uleb128 0x3f
+ 1136 0070 19       		.uleb128 0x19
+ 1137 0071 03       		.uleb128 0x3
+ 1138 0072 0E       		.uleb128 0xe
+ 1139 0073 3A       		.uleb128 0x3a
+ 1140 0074 0B       		.uleb128 0xb
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 28
+
+
+ 1141 0075 3B       		.uleb128 0x3b
+ 1142 0076 0B       		.uleb128 0xb
+ 1143 0077 11       		.uleb128 0x11
+ 1144 0078 01       		.uleb128 0x1
+ 1145 0079 12       		.uleb128 0x12
+ 1146 007a 06       		.uleb128 0x6
+ 1147 007b 40       		.uleb128 0x40
+ 1148 007c 18       		.uleb128 0x18
+ 1149 007d 9742     		.uleb128 0x2117
+ 1150 007f 19       		.uleb128 0x19
+ 1151 0080 01       		.uleb128 0x1
+ 1152 0081 13       		.uleb128 0x13
+ 1153 0082 00       		.byte	0
+ 1154 0083 00       		.byte	0
+ 1155 0084 0A       		.uleb128 0xa
+ 1156 0085 898201   		.uleb128 0x4109
+ 1157 0088 00       		.byte	0
+ 1158 0089 11       		.uleb128 0x11
+ 1159 008a 01       		.uleb128 0x1
+ 1160 008b 31       		.uleb128 0x31
+ 1161 008c 13       		.uleb128 0x13
+ 1162 008d 00       		.byte	0
+ 1163 008e 00       		.byte	0
+ 1164 008f 0B       		.uleb128 0xb
+ 1165 0090 898201   		.uleb128 0x4109
+ 1166 0093 01       		.byte	0x1
+ 1167 0094 11       		.uleb128 0x11
+ 1168 0095 01       		.uleb128 0x1
+ 1169 0096 31       		.uleb128 0x31
+ 1170 0097 13       		.uleb128 0x13
+ 1171 0098 01       		.uleb128 0x1
+ 1172 0099 13       		.uleb128 0x13
+ 1173 009a 00       		.byte	0
+ 1174 009b 00       		.byte	0
+ 1175 009c 0C       		.uleb128 0xc
+ 1176 009d 8A8201   		.uleb128 0x410a
+ 1177 00a0 00       		.byte	0
+ 1178 00a1 02       		.uleb128 0x2
+ 1179 00a2 18       		.uleb128 0x18
+ 1180 00a3 9142     		.uleb128 0x2111
+ 1181 00a5 18       		.uleb128 0x18
+ 1182 00a6 00       		.byte	0
+ 1183 00a7 00       		.byte	0
+ 1184 00a8 0D       		.uleb128 0xd
+ 1185 00a9 34       		.uleb128 0x34
+ 1186 00aa 00       		.byte	0
+ 1187 00ab 03       		.uleb128 0x3
+ 1188 00ac 0E       		.uleb128 0xe
+ 1189 00ad 3A       		.uleb128 0x3a
+ 1190 00ae 0B       		.uleb128 0xb
+ 1191 00af 3B       		.uleb128 0x3b
+ 1192 00b0 05       		.uleb128 0x5
+ 1193 00b1 49       		.uleb128 0x49
+ 1194 00b2 13       		.uleb128 0x13
+ 1195 00b3 3F       		.uleb128 0x3f
+ 1196 00b4 19       		.uleb128 0x19
+ 1197 00b5 3C       		.uleb128 0x3c
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 29
+
+
+ 1198 00b6 19       		.uleb128 0x19
+ 1199 00b7 00       		.byte	0
+ 1200 00b8 00       		.byte	0
+ 1201 00b9 0E       		.uleb128 0xe
+ 1202 00ba 35       		.uleb128 0x35
+ 1203 00bb 00       		.byte	0
+ 1204 00bc 49       		.uleb128 0x49
+ 1205 00bd 13       		.uleb128 0x13
+ 1206 00be 00       		.byte	0
+ 1207 00bf 00       		.byte	0
+ 1208 00c0 0F       		.uleb128 0xf
+ 1209 00c1 34       		.uleb128 0x34
+ 1210 00c2 00       		.byte	0
+ 1211 00c3 03       		.uleb128 0x3
+ 1212 00c4 0E       		.uleb128 0xe
+ 1213 00c5 3A       		.uleb128 0x3a
+ 1214 00c6 0B       		.uleb128 0xb
+ 1215 00c7 3B       		.uleb128 0x3b
+ 1216 00c8 0B       		.uleb128 0xb
+ 1217 00c9 49       		.uleb128 0x49
+ 1218 00ca 13       		.uleb128 0x13
+ 1219 00cb 3F       		.uleb128 0x3f
+ 1220 00cc 19       		.uleb128 0x19
+ 1221 00cd 02       		.uleb128 0x2
+ 1222 00ce 18       		.uleb128 0x18
+ 1223 00cf 00       		.byte	0
+ 1224 00d0 00       		.byte	0
+ 1225 00d1 10       		.uleb128 0x10
+ 1226 00d2 2E       		.uleb128 0x2e
+ 1227 00d3 00       		.byte	0
+ 1228 00d4 3F       		.uleb128 0x3f
+ 1229 00d5 19       		.uleb128 0x19
+ 1230 00d6 3C       		.uleb128 0x3c
+ 1231 00d7 19       		.uleb128 0x19
+ 1232 00d8 6E       		.uleb128 0x6e
+ 1233 00d9 0E       		.uleb128 0xe
+ 1234 00da 03       		.uleb128 0x3
+ 1235 00db 0E       		.uleb128 0xe
+ 1236 00dc 3A       		.uleb128 0x3a
+ 1237 00dd 0B       		.uleb128 0xb
+ 1238 00de 3B       		.uleb128 0x3b
+ 1239 00df 0B       		.uleb128 0xb
+ 1240 00e0 00       		.byte	0
+ 1241 00e1 00       		.byte	0
+ 1242 00e2 00       		.byte	0
+ 1243              		.section	.debug_aranges,"",%progbits
+ 1244 0000 24000000 		.4byte	0x24
+ 1245 0004 0200     		.2byte	0x2
+ 1246 0006 00000000 		.4byte	.Ldebug_info0
+ 1247 000a 04       		.byte	0x4
+ 1248 000b 00       		.byte	0
+ 1249 000c 0000     		.2byte	0
+ 1250 000e 0000     		.2byte	0
+ 1251 0010 00000000 		.4byte	.LFB64
+ 1252 0014 C0010000 		.4byte	.LFE64-.LFB64
+ 1253 0018 00000000 		.4byte	.LFB65
+ 1254 001c C0000000 		.4byte	.LFE65-.LFB65
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 30
+
+
+ 1255 0020 00000000 		.4byte	0
+ 1256 0024 00000000 		.4byte	0
+ 1257              		.section	.debug_ranges,"",%progbits
+ 1258              	.Ldebug_ranges0:
+ 1259 0000 00000000 		.4byte	.LFB64
+ 1260 0004 C0010000 		.4byte	.LFE64
+ 1261 0008 00000000 		.4byte	.LFB65
+ 1262 000c C0000000 		.4byte	.LFE65
+ 1263 0010 00000000 		.4byte	0
+ 1264 0014 00000000 		.4byte	0
+ 1265              		.section	.debug_line,"",%progbits
+ 1266              	.Ldebug_line0:
+ 1267 0000 FA010000 		.section	.debug_str,"MS",%progbits,1
+ 1267      02006601 
+ 1267      00000201 
+ 1267      FB0E0D00 
+ 1267      01010101 
+ 1268              	.LASF38:
+ 1269 0000 4E657874 		.ascii	"Next_state_Logic\000"
+ 1269      5F737461 
+ 1269      74655F4C 
+ 1269      6F676963 
+ 1269      00
+ 1270              	.LASF53:
+ 1271 0011 72656164 		.ascii	"readdataLoser\000"
+ 1271      64617461 
+ 1271      4C6F7365 
+ 1271      7200
+ 1272              	.LASF54:
+ 1273 001f 73746F70 		.ascii	"stopTimer\000"
+ 1273      54696D65 
+ 1273      7200
+ 1274              	.LASF46:
+ 1275 0029 74696457 		.ascii	"tidWinner\000"
+ 1275      696E6E65 
+ 1275      7200
+ 1276              	.LASF45:
+ 1277 0033 704C6F73 		.ascii	"pLoser\000"
+ 1277      657200
+ 1278              	.LASF27:
+ 1279 003a 4C4F5345 		.ascii	"LOSER_P1\000"
+ 1279      525F5031 
+ 1279      00
+ 1280              	.LASF28:
+ 1281 0043 4C4F5345 		.ascii	"LOSER_P2\000"
+ 1281      525F5032 
+ 1281      00
+ 1282              	.LASF15:
+ 1283 004c 73697A65 		.ascii	"sizetype\000"
+ 1283      74797065 
+ 1283      00
+ 1284              	.LASF57:
+ 1285 0055 64697370 		.ascii	"dispTime\000"
+ 1285      54696D65 
+ 1285      00
+ 1286              	.LASF30:
+ 1287 005e 57494E4E 		.ascii	"WINNER_P2\000"
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 31
+
+
+ 1287      45525F50 
+ 1287      3200
+ 1288              	.LASF19:
+ 1289 0068 4556414C 		.ascii	"EVALUATING_WEIGHT\000"
+ 1289      55415449 
+ 1289      4E475F57 
+ 1289      45494748 
+ 1289      5400
+ 1290              	.LASF33:
+ 1291 007a 4552525F 		.ascii	"ERR_NO_START\000"
+ 1291      4E4F5F53 
+ 1291      54415254 
+ 1291      00
+ 1292              	.LASF2:
+ 1293 0087 73686F72 		.ascii	"short int\000"
+ 1293      7420696E 
+ 1293      7400
+ 1294              	.LASF17:
+ 1295 0091 49444C45 		.ascii	"IDLE\000"
+ 1295      00
+ 1296              	.LASF36:
+ 1297 0096 4552525F 		.ascii	"ERR_NOCHUG\000"
+ 1297      4E4F4348 
+ 1297      554700
+ 1298              	.LASF11:
+ 1299 00a1 666C6F61 		.ascii	"float\000"
+ 1299      7400
+ 1300              	.LASF6:
+ 1301 00a7 6C6F6E67 		.ascii	"long long int\000"
+ 1301      206C6F6E 
+ 1301      6720696E 
+ 1301      7400
+ 1302              	.LASF37:
+ 1303 00b5 73746174 		.ascii	"states\000"
+ 1303      657300
+ 1304              	.LASF35:
+ 1305 00bc 4552525F 		.ascii	"ERR_TIMEOUT\000"
+ 1305      54494D45 
+ 1305      4F555400 
+ 1306              	.LASF4:
+ 1307 00c8 6C6F6E67 		.ascii	"long int\000"
+ 1307      20696E74 
+ 1307      00
+ 1308              	.LASF41:
+ 1309 00d1 42507074 		.ascii	"BPptr\000"
+ 1309      7200
+ 1310              	.LASF25:
+ 1311 00d7 4C4F5345 		.ascii	"LOSER_DONE\000"
+ 1311      525F444F 
+ 1311      4E4500
+ 1312              	.LASF42:
+ 1313 00e2 73746174 		.ascii	"state\000"
+ 1313      6500
+ 1314              	.LASF18:
+ 1315 00e8 474F494E 		.ascii	"GOING_IDLE\000"
+ 1315      475F4944 
+ 1315      4C4500
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 32
+
+
+ 1316              	.LASF39:
+ 1317 00f3 4F757470 		.ascii	"Output_logic\000"
+ 1317      75745F6C 
+ 1317      6F676963 
+ 1317      00
+ 1318              	.LASF58:
+ 1319 0100 73746172 		.ascii	"startTimer\000"
+ 1319      7454696D 
+ 1319      657200
+ 1320              	.LASF14:
+ 1321 010b 6C6F6E67 		.ascii	"long double\000"
+ 1321      20646F75 
+ 1321      626C6500 
+ 1322              	.LASF29:
+ 1323 0117 57494E4E 		.ascii	"WINNER_P1\000"
+ 1323      45525F50 
+ 1323      3100
+ 1324              	.LASF1:
+ 1325 0121 756E7369 		.ascii	"unsigned char\000"
+ 1325      676E6564 
+ 1325      20636861 
+ 1325      7200
+ 1326              	.LASF56:
+ 1327 012f 67657454 		.ascii	"getTime\000"
+ 1327      696D6500 
+ 1328              	.LASF0:
+ 1329 0137 7369676E 		.ascii	"signed char\000"
+ 1329      65642063 
+ 1329      68617200 
+ 1330              	.LASF34:
+ 1331 0143 4552525F 		.ascii	"ERR_FALSE_START\000"
+ 1331      46414C53 
+ 1331      455F5354 
+ 1331      41525400 
+ 1332              	.LASF7:
+ 1333 0153 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1333      206C6F6E 
+ 1333      6720756E 
+ 1333      7369676E 
+ 1333      65642069 
+ 1334              	.LASF8:
+ 1335 016a 756E7369 		.ascii	"unsigned int\000"
+ 1335      676E6564 
+ 1335      20696E74 
+ 1335      00
+ 1336              	.LASF43:
+ 1337 0177 676C6173 		.ascii	"glasvaegtWinner\000"
+ 1337      76616567 
+ 1337      7457696E 
+ 1337      6E657200 
+ 1338              	.LASF48:
+ 1339 0187 436F6D70 		.ascii	"CompareWeight\000"
+ 1339      61726557 
+ 1339      65696768 
+ 1339      7400
+ 1340              	.LASF16:
+ 1341 0195 42757474 		.ascii	"Button\000"
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 33
+
+
+ 1341      6F6E00
+ 1342              	.LASF3:
+ 1343 019c 73686F72 		.ascii	"short unsigned int\000"
+ 1343      7420756E 
+ 1343      7369676E 
+ 1343      65642069 
+ 1343      6E7400
+ 1344              	.LASF13:
+ 1345 01af 63686172 		.ascii	"char\000"
+ 1345      00
+ 1346              	.LASF10:
+ 1347 01b4 696E7433 		.ascii	"int32_t\000"
+ 1347      325F7400 
+ 1348              	.LASF9:
+ 1349 01bc 5F5F696E 		.ascii	"__int32_t\000"
+ 1349      7433325F 
+ 1349      7400
+ 1350              	.LASF22:
+ 1351 01c6 43485547 		.ascii	"CHUG\000"
+ 1351      00
+ 1352              	.LASF24:
+ 1353 01cb 4556414C 		.ascii	"EVALUATING_NEW_WEIGHT\000"
+ 1353      55415449 
+ 1353      4E475F4E 
+ 1353      45575F57 
+ 1353      45494748 
+ 1354              	.LASF61:
+ 1355 01e1 53746174 		.ascii	"States.c\000"
+ 1355      65732E63 
+ 1355      00
+ 1356              	.LASF49:
+ 1357 01ea 74696D65 		.ascii	"timeout\000"
+ 1357      6F757400 
+ 1358              	.LASF21:
+ 1359 01f2 434F554E 		.ascii	"COUNTDOWN\000"
+ 1359      54444F57 
+ 1359      4E00
+ 1360              	.LASF50:
+ 1361 01fc 72656164 		.ascii	"readdata1\000"
+ 1361      64617461 
+ 1361      3100
+ 1362              	.LASF51:
+ 1363 0206 72656164 		.ascii	"readdata2\000"
+ 1363      64617461 
+ 1363      3200
+ 1364              	.LASF5:
+ 1365 0210 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1365      20756E73 
+ 1365      69676E65 
+ 1365      6420696E 
+ 1365      7400
+ 1366              	.LASF12:
+ 1367 0222 646F7562 		.ascii	"double\000"
+ 1367      6C6500
+ 1368              	.LASF20:
+ 1369 0229 52454144 		.ascii	"READY\000"
+ 1369      5900
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 34
+
+
+ 1370              	.LASF44:
+ 1371 022f 676C6173 		.ascii	"glasvaegtLoser\000"
+ 1371      76616567 
+ 1371      744C6F73 
+ 1371      657200
+ 1372              	.LASF62:
+ 1373 023e 433A5C55 		.ascii	"C:\\Users\\cring\\OneDrive - Aarhus universitet\\Un"
+ 1373      73657273 
+ 1373      5C637269 
+ 1373      6E675C4F 
+ 1373      6E654472 
+ 1374 026d 695C332E 		.ascii	"i\\3. Semester\\PRJ3\\KODE\\ProjektMain\\Hovedprogr"
+ 1374      2053656D 
+ 1374      65737465 
+ 1374      725C5052 
+ 1374      4A335C4B 
+ 1375 029b 616D2E63 		.ascii	"am.cydsn\000"
+ 1375      7964736E 
+ 1375      00
+ 1376              	.LASF47:
+ 1377 02a4 7469644C 		.ascii	"tidLoser\000"
+ 1377      6F736572 
+ 1377      00
+ 1378              	.LASF26:
+ 1379 02ad 57454947 		.ascii	"WEIGHT_CONFIRMED\000"
+ 1379      48545F43 
+ 1379      4F4E4649 
+ 1379      524D4544 
+ 1379      00
+ 1380              	.LASF31:
+ 1381 02be 47414D45 		.ascii	"GAME_OVER\000"
+ 1381      5F4F5645 
+ 1381      5200
+ 1382              	.LASF55:
+ 1383 02c8 636C6561 		.ascii	"clearTimer\000"
+ 1383      7254696D 
+ 1383      657200
+ 1384              	.LASF59:
+ 1385 02d3 73746F70 		.ascii	"stopLCD\000"
+ 1385      4C434400 
+ 1386              	.LASF40:
+ 1387 02db 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1387      52784275 
+ 1387      66666572 
+ 1387      00
+ 1388              	.LASF60:
+ 1389 02e8 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1389      43313120 
+ 1389      352E342E 
+ 1389      31203230 
+ 1389      31363036 
+ 1390 031b 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1390      20726576 
+ 1390      6973696F 
+ 1390      6E203233 
+ 1390      37373135 
+ 1391 034e 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccZUplmO.s 			page 35
+
+
+ 1391      66756E63 
+ 1391      74696F6E 
+ 1391      2D736563 
+ 1391      74696F6E 
+ 1392              	.LASF52:
+ 1393 0376 43794465 		.ascii	"CyDelay\000"
+ 1393      6C617900 
+ 1394              	.LASF63:
+ 1395 037e 42757474 		.ascii	"ButtonPushed\000"
+ 1395      6F6E5075 
+ 1395      73686564 
+ 1395      00
+ 1396              	.LASF23:
+ 1397 038b 57494E4E 		.ascii	"WINNER_DONE\000"
+ 1397      45525F44 
+ 1397      4F4E4500 
+ 1398              	.LASF32:
+ 1399 0397 4552525F 		.ascii	"ERR_WEIGHT\000"
+ 1399      57454947 
+ 1399      485400
+ 1400              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

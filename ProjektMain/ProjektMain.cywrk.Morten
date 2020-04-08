@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ProjektMain\Hovedprogram\Source Files\main.c">
+<ExpandedNodeIds>
+<v>ProjektMain</v>
+<v>ProjektMain\Hovedprogram</v>
+<v>ProjektMain\Hovedprogram\TopDesign</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram.cydwr</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\Pins</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\Analog</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\Clocks</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\Interrupts</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\DMA</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\System</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\Directives</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\Flash Security</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\EEPROM</v>
+<v>ProjektMain\Hovedprogram\Header Files</v>
+<v>ProjektMain\Hovedprogram\Header Files\cyapicallbacks.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\Display.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\LEDcontrol.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\LiquidCrystal_I2C.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\Startknap.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\States.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\Stopur.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\UART.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\WeightSensors_.h</v>
+<v>ProjektMain\Hovedprogram\Source Files</v>
+<v>ProjektMain\Hovedprogram\Source Files\Display.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\LEDcontrol.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\LiquidCrystal_I2C.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\main.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\Startknap.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\States.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\Stopur.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\UART.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\WeightSensors.c</v>
+<v>ProjektMain\Hovedprogram\Generated_Source</v>
+<v>ProjektMain\Hovedprogram\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\System</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\Directives</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\Flash Security</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\EEPROM</v>
+<v>ProjektMain\Hovedprogram\Header Files</v>
+<v>ProjektMain\Hovedprogram\Header Files\cyapicallbacks.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\Display.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\LEDcontrol.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\LiquidCrystal_I2C.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\Startknap.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\States.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\Stopur.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\UART.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\WeightSensors_.h</v>
+<v>ProjektMain\Hovedprogram\Source Files</v>
+<v>ProjektMain\Hovedprogram\Source Files\Display.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\LEDcontrol.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\LiquidCrystal_I2C.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\main.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\Startknap.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\States.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\Stopur.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\UART.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\WeightSensors.c</v>
+<v>ProjektMain\Hovedprogram\Generated_Source</v>
+<v>ProjektMain\Hovedprogram\Generated_Source\PSoC5</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>ProjektMain</v>
+<v>ProjektMain\Hovedprogram</v>
+<v>ProjektMain\Hovedprogram\TopDesign</v>
+<v>ProjektMain\Hovedprogram\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>ProjektMain</v>
+<v>ProjektMain\Hovedprogram</v>
+<v>ProjektMain\Hovedprogram\TopDesign</v>
+<v>ProjektMain\Hovedprogram\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>ProjektMain</v>
+<v>ProjektMain\Hovedprogram</v>
+<v>ProjektMain\Hovedprogram\CortexM3</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_INT.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_IRQ.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_theACLK.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Display.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_BOOT.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_INT.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_MASTER.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_SLAVE.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_button.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_pulse.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_refreshrate.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_ring.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_refreshrate_LCD.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_timer.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_uart_rx.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDcontrol.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDdata.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDdata2.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LiquidCrystal_I2C.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_2.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\PlayerSelect.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SAR_p1.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SAR_p2.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SCL_pin.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SDA_pin.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIM_1.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIM_1_INT.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIM_1_IntClock.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIM_1_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIMOutCtrl.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIMOutCtrl_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Startknap.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\States.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Stopur.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timeout_timer.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timeout_timer_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock_1.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock_2.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock_3.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock_4.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_LCD.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_LCD_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_Stopur.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_Stopur_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer1.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer1_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer2.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer2_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer3.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer3_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_BOOT.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_INT.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_IntClock.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\WeightSensors.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Hovedprogram.elf</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Hovedprogram.hex</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Hovedprogram.map</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram.gpdsc</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram.rpt</v>
+<v>ProjektMain\Hovedprogram\Hovedprogram_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>ProjektMain</v>
+<v>ProjektMain\Hovedprogram</v>
+<v>ProjektMain\Hovedprogram\CortexM3</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_INT.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_IRQ.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_theACLK.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Display.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_BOOT.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_INT.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>ProjektMain</v>
+<v>ProjektMain\Hovedprogram</v>
+<v>ProjektMain\Hovedprogram\PSoC 5LP Architecture TRM</v>
+<v>ProjektMain\Hovedprogram\CY8C58LP Family Datasheet</v>
+<v>ProjektMain\Hovedprogram\System Reference Guides</v>
+<v>ProjektMain\Hovedprogram\System Reference Guides\cy_boot_v5_80</v>
+<v>ProjektMain\Hovedprogram\ADC_SAR_v3_10.pdf</v>
+<v>ProjektMain\Hovedprogram\AMux_v1_80.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_clock_v2_20</v>
+<v>ProjektMain\Hovedprogram\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_constant_v1_0.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_isr_v1_70</v>
+<v>ProjektMain\Hovedprogram\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_pins_v2_20</v>
+<v>ProjektMain\Hovedprogram\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>ProjektMain\Hovedprogram\CyControlReg_v1_80.pdf</v>
+<v>ProjektMain\Hovedprogram\demux_v1_10.pdf</v>
+<v>ProjektMain\Hovedprogram\I2C_v3_50.pdf</v>
+<v>ProjektMain\Hovedprogram\SPI_Master_v2_50.pdf</v>
+<v>ProjektMain\Hovedprogram\Timer_v2_80</v>
+<v>ProjektMain\Hovedprogram\Timer_v2_80\Timer_v2_80.pdf</v>
+<v>ProjektMain\Hovedprogram\UART_v2_50.pdf</v>
+<v>ProjektMain\Hovedprogram\ZeroTerminal</v>
+<v>ProjektMain\Hovedprogram\ZeroTerminal\ZeroTerminal.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>ProjektMain</v>
+<v>ProjektMain\Hovedprogram</v>
+<v>ProjektMain\Hovedprogram\PSoC 5LP Architecture TRM</v>
+<v>ProjektMain\Hovedprogram\CY8C58LP Family Datasheet</v>
+<v>ProjektMain\Hovedprogram\System Reference Guides</v>
+<v>ProjektMain\Hovedprogram\System Reference Guides\cy_boot_v5_80</v>
+<v>ProjektMain\Hovedprogram\ADC_SAR_v3_10.pdf</v>
+<v>ProjektMain\Hovedprogram\AMux_v1_80.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_clock_v2_20</v>
+<v>ProjektMain\Hovedprogram\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_constant_v1_0.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_isr_v1_70</v>
+<v>ProjektMain\Hovedprogram\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_pins_v2_20</v>
+<v>ProjektMain\Hovedprogram\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>ProjektMain\Hovedprogram\CyControlReg_v1_80.pdf</v>
+<v>ProjektMain\Hovedprogram\demux_v1_10.pdf</v>
+<v>ProjektMain\Hovedprogram\I2C_v3_50.pdf</v>
+<v>ProjektMain\Hovedprogram\SPI_Master_v2_50.pdf</v>
+<v>ProjektMain\Hovedprogram\Timer_v2_80</v>
+<v>ProjektMain\Hovedprogram\Timer_v2_80\Timer_v2_80.pdf</v>
+<v>ProjektMain\Hovedprogram\UART_v2_50.pdf</v>
+<v>ProjektMain\Hovedprogram\ZeroTerminal</v>
+<v>ProjektMain\Hovedprogram\ZeroTerminal\ZeroTerminal.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators>
+<CyGuid_67999771-01c6-4f62-90b3-2054bb36a318 type_name="CyDesigner.Framework.CyBookmark" version="1">
+<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="8" DocumentName=".\Hovedprogram.cydsn\Display.c" />
+</CyGuid_67999771-01c6-4f62-90b3-2054bb36a318>
+<CyGuid_67999771-01c6-4f62-90b3-2054bb36a318 type_name="CyDesigner.Framework.CyBookmark" version="1">
+<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="14" DocumentName=".\Hovedprogram.cydsn\Display.c" />
+</CyGuid_67999771-01c6-4f62-90b3-2054bb36a318>
+<CyGuid_67999771-01c6-4f62-90b3-2054bb36a318 type_name="CyDesigner.Framework.CyBookmark" version="1">
+<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="42" DocumentName=".\Hovedprogram.cydsn\Display.c" />
+</CyGuid_67999771-01c6-4f62-90b3-2054bb36a318>
+<CyGuid_67999771-01c6-4f62-90b3-2054bb36a318 type_name="CyDesigner.Framework.CyBookmark" version="1">
+<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="75" DocumentName=".\Hovedprogram.cydsn\Display.c" />
+</CyGuid_67999771-01c6-4f62-90b3-2054bb36a318>
+</indicators>
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\Hovedprogram.cydsn\States.c" />
+<name v=".\Hovedprogram.cydsn\States.h" />
+<name v=".\Hovedprogram.cydsn\Stopur.c" />
+<name v=".\Hovedprogram.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Hovedprogram.cydsn\Hovedprogram.cydwr" />
+<name v=".\Hovedprogram.cydsn\Display.c" />
+<name v=".\Hovedprogram.cydsn\Display.h" />
+<name v=".\Hovedprogram.cydsn\LiquidCrystal_I2C.h" />
+<name v=".\Hovedprogram.cydsn\Stopur.h" />
+<name v=".\Hovedprogram.cydsn\LEDcontrol.h" />
+<name v=".\Hovedprogram.cydsn\LEDcontrol.c" />
+<name v=".\Hovedprogram.cydsn\LiquidCrystal_I2C.c" />
+<name v=".\Hovedprogram.cydsn\main.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="844, 532" SelectedTabbedMdiWindow="966cc186-7711-4a21-993c-decfca786f1b"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="d9acdc0d-3130-4ebb-ac22-30d0e130c66d" /><DocumentWindow Key="C:\Users\Morten\Aarhus Universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\States.c" Guid="966cc186-7711-4a21-993c-decfca786f1b" /><DocumentWindow Key="C:\Users\Morten\Aarhus Universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\States.h" Guid="ece2ecd2-c0ab-4c5a-9ec3-02c4900424a7" /><DocumentWindow Key="C:\Users\Morten\Aarhus Universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Stopur.c" Guid="4b5a2cd5-7abf-4271-ad44-ef686a10af52" /><DocumentWindow Key="C:\Users\Morten\Aarhus Universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\TopDesign\TopDesign.cysch" Guid="18587ac2-9961-4360-9722-b5b197a7aae6" /><DocumentWindow Key="C:\Users\Morten\Aarhus Universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Hovedprogram.cydwr" Guid="da974d40-baf4-48ea-8a37-08b948cfee58" /><DocumentWindow Key="C:\Users\Morten\Aarhus Universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Display.c" Guid="b9b2bb6e-4e38-4b14-8f8a-4a5ef431d7ec" /><DocumentWindow Key="C:\Users\Morten\Aarhus Universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Display.h" Guid="02cb6f1e-ffac-4bec-8067-10953d4371d6" /><DocumentWindow Key="C:\Users\Morten\Aarhus Universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\LiquidCrystal_I2C.h" Guid="ba7b44eb-43d4-46c5-8329-f6940b40e5ff" /><DocumentWindow Key="C:\Users\Morten\Aarhus Universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Stopur.h" Guid="b0840c34-78a4-4755-8131-ca3f7cfe6e17" /><DocumentWindow Key="C:\Users\Morten\Aarhus Universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\LEDcontrol.h" Guid="d13bafbe-3345-4ea2-a417-c95139605945" /><DocumentWindow Key="C:\Users\Morten\Aarhus Universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\LEDcontrol.c" Guid="ce618f68-2762-4529-b0cc-e22ea859fb1c" /><DocumentWindow Key="C:\Users\Morten\Aarhus Universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\LiquidCrystal_I2C.c" Guid="9526f382-cd72-458b-9689-c3468973b3f4" /><DocumentWindow Key="C:\Users\Morten\Aarhus Universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\main.c" Guid="dbaf7181-c6e9-4541-a00b-2ca475193370" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
