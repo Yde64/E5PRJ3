@@ -278,7 +278,7 @@ void hsv2rgb(double h, double s, double v, int LED, LEDctrl *rgbLED)
     (rgbLED + LED)->red = r;
     (rgbLED + LED)->blue = b;
     return;
-    
+    //https://www.rapidtables.com/convert/color/hsv-to-rgb.html
 }
 
 void UpdateLED(LEDctrl *rgbLED)
@@ -453,6 +453,11 @@ int startSeq(LEDctrl *rgbLED_1, LEDctrl *rgbLED_2) //Start sekvens
         case 4:
         {
             Timer5_Stop();
+            count++;
+        }
+        break;
+        case 5 :
+        {
             count = 0;
             return 1;
         }
