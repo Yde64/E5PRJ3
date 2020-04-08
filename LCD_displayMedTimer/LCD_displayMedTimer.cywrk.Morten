@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="LCD_displayMedTimer\LCD_display\Source Files\Display.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="LCD_displayMedTimer\LCD_display\TopDesign">
 <ExpandedNodeIds>
 <v>LCD_displayMedTimer</v>
 <v>LCD_displayMedTimer\LCD_display</v>
@@ -234,19 +234,6 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\LCD_display.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\LCD_display.cydsn\LCD_display.cydwr" />
-<name v=".\LCD_display.cydsn\main.c" />
-<name v=".\LCD_display.cydsn\Stopur.h" />
-<name v=".\LCD_display.cydsn\Display.h" />
-<name v=".\LCD_display.cydsn\Display.c" />
-<name v=".\LCD_display.cydsn\Stopur.c" />
-<name v=".\LCD_display.cydsn\LiquidCrystal_I2C.h" />
-<name v=".\LCD_display.cydsn\LiquidCrystal_I2C.c" />
-<name v=".\LCD_display.cydsn\cyapicallbacks.h" />
-<name v=".\LCD_display.cydsn\Generated_Source\PSoC5\I2C_1_MASTER.c" />
-<name v=".\LCD_display.cydsn\Generated_Source\PSoC5\Cm3Start.c" />
-<name v=".\LCD_display.cydsn\Generated_Source\PSoC5\isr_timer.c" />
-<name v=".\LCD_display.cydsn\Generated_Source\PSoC5\CyBootAsmGnu.s" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -254,7 +241,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="875, 359" SelectedTabbedMdiWindow="eaeabda8-2fcb-4ccc-9288-c8069d8715ae"><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\TopDesign\TopDesign.cysch" Guid="6b688cbf-46b9-4592-b814-82db21c3e43a" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\LCD_display.cydwr" Guid="fc482a37-64cd-4a03-a418-1388904cfcc5" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\main.c" Guid="d77a2240-bb5c-4249-aa9f-1d4ecf6fb2c5" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Stopur.h" Guid="f9e5d83d-8367-48ae-9eaa-6d2470415fae" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Display.h" Guid="38976353-b0e3-4500-8a41-56471e182c67" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Display.c" Guid="eaeabda8-2fcb-4ccc-9288-c8069d8715ae" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Stopur.c" Guid="b0cad4ab-bd5d-48f0-b2c4-0b2dbb0cab47" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\LiquidCrystal_I2C.h" Guid="99430d3d-741a-4054-8104-554774c77f64" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\LiquidCrystal_I2C.c" Guid="33af4562-33e3-4a0b-9ff8-cef4ec773ead" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\cyapicallbacks.h" Guid="9760eade-9aa7-474b-9f20-1745cd0453ef" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Generated_Source\PSoC5\I2C_1_MASTER.c" Guid="92b56cec-b22e-4b18-9645-17d2dc7546d7" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Generated_Source\PSoC5\Cm3Start.c" Guid="ccb92a40-ca6d-44aa-b845-2c21147fb327" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Generated_Source\PSoC5\isr_timer.c" Guid="031157da-d97c-424f-a5f3-5a350800e44b" /><DocumentWindow Key="C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\Generated_Source\PSoC5\CyBootAsmGnu.s" Guid="f2311275-2f45-4049-bdc1-699beafa5c79" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="d9acdc0d-3130-4ebb-ac22-30d0e130c66d" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="801, 359" SelectedTabbedMdiWindow="1f731857-2846-4e0f-9b93-3050b9446509"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="d9acdc0d-3130-4ebb-ac22-30d0e130c66d" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\TopDesign\TopDesign.cysch" Guid="1f731857-2846-4e0f-9b93-3050b9446509" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
