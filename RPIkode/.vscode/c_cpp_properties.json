@@ -1,6 +1,6 @@
 {
     "env": {
-    "sourcetreePath": "/home/chris/sources/rpi-4.19.89",
+    "sourcetreePath": "~/sources/rpi-4.19.89",
     "sysrootPath": "/opt/poky/3.0.1/sysroots/x86_64-pokysdk-linux" 
     },
     "configurations": [
