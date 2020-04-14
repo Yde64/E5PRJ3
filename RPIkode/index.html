@@ -1,6 +1,6 @@
   <!DOCTYPE html>
   <meta charset="utf-8" />
-  <title>WebSocket Test</title>
+  <title>Chuck Champ Log</title>
   <iframe id="frmFile" src="test.txt" onload="LoadFile()" style="display: none;"></iframe>
   <script language="javascript" type="text/javascript">
    
@@ -64,64 +64,96 @@
   }
 
 
-function LoadFile() {
+/*function LoadFile() {
   var oFrame = document.getElementById("frmFile");
   var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML;  
   init();
   
   while (strRawContents.indexOf("\r") >= 0)
-        strRawContents = strRawContents.replace("\r", "");
-  var arrLines = strRawContents.split("\n");
+	strRawContents = strRawContents.replace("\r", "");
+  window.arrLines = strRawContents.split("\n");
   //alert("File " + oFrame.src + " has " + arrLines.length + " lines");
   for (var i = 0; i < arrLines.length; i++)
   {
-        var curLine = arrLines[i];
-        writeToScreen(curLine);
+	var curLine = arrLines[i];
+	writeToScreen(curLine);
   }
 }
-
+*/
   window.addEventListener("load", init, false);
 
-  function clicker()
+async  function clicker()
   {
-        var i = 0;
-        log[logCounter] = 1;
-        logCounter++;
-        for(i = 0; i < log.length; i++)
-        {
-                if(log[i] != 0 && log[i] != undefined)
-                {
-                        writeToScreen(log[i]);
-                }
-                else
-                {
-                        writeToScreen("Ikke flere Chug tider");
-                        break;
-                }
-        }
+	let response = await fetch('test.txt');
+	let text = await response.text();
 
- }
+  var x = 0;
+  var textString = [];
 
-  async function clearLog()
+	for(i = 0; i < text.length; i++)
+	{
+		if(text[i] == "\n") x++;
+		textString[x] = "";
+	}
+	x = 0;
+	
+	for(i = 0; i < text.length; i++)
+	{
+	
+		if(text[i] == "\n") x++;
+		
+		else
+		
+		textString[x] += text[i];
+	}
+
+
+	for(i = 0; i < textString.length-1; i++)
+	{
+	
+	var curLine = textString[i];
+	writeToScreen(curLine);
+	}
+  }
+
+  function clearLog()
   {
-        let response = await fetch('test1.txt');
-        let text = await response.text();
-        console.log(text);
-        writeToScreen(text);
+  
+  var data = "1";
 
+  fetch('test1.txt', {
+    method: 'post',
+    body: data,
+    }).then(function (response) {
+      return response.text();
+    }).then(function(text){
+      console.log(text);
+    }).catch(function (error){
+      console.error(error);
+    })
 
-}
+    <?php
+    
+      echo "Hej";
+    
+    ?>
+  
 
-  function TekstTest()
-  {
-        writeToScreen("det virker");
+  //console.log("I'm here");	
+	//writeToScreen("log cleared");
+ 	//document.getElementById("output").innerHTML = "";
+	//let response = fetch('test1.txt')
+	//.then(response => response.text())
+	//.then(commits => console.log(response)); 
+ 	//let response = await fetch('test1.txt');
+	//let text = await response.text();
+	//writeToScreen(text);
   }
 
   </script>
 
-  <h2>WebSocket Test</h2> 
+  <h2>Chuck Champ Log</h2> 
  
- <button type="button" onclick="clicker()">Insert and print log</button>
- <button type="button" onclick="TekstTest()">Test tekst fil</button> 
- <button type="button" onclick="clearLog()">Clear log</button>
- <div id="output"></div>
+  <button type="button" onclick="clicker()">Insert and print log</button> 
+  <button type="button" onclick="clearLog()">Clear log</button>
+  <div id="output"></div>
