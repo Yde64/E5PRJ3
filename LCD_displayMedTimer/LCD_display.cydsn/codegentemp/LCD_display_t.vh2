@@ -1,5 +1,5 @@
--- Project:   C:\Users\Morten\Desktop\LCD_displayMedTimer\LCD_display.cydsn\LCD_display.cyprj
--- Generated: 03/31/2020 15:14:07
+-- Project:   C:\Users\Morten\Desktop\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\LCD_display.cyprj
+-- Generated: 04/08/2020 10:49:24
 -- PSoC Creator  4.2
 
 ENTITY LCD_display IS

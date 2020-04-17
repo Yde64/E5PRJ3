@@ -19,9 +19,14 @@ int main(void)
     CyGlobalIntEnable; 
     initTimer();                         // Inititer timer_stopur
     initDisp(10);                        // sætter Hz værdien for displayet
-    
     startTimer();                        // starter timer_stopur
-    
+    while(1)
+    {
+        if(getTime()==20000)
+        {
+            stopLCD(1);
+        }
+    }
 }
 
 /* [] END OF FILE */
