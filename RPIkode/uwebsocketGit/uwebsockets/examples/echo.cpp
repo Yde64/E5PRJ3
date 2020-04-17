@@ -11,9 +11,17 @@ struct Data
   void operator()(uWS::WebSocket<uWS::SERVER> *ws,
 		  char *message, size_t length,
 		  uWS::OpCode opCode) {
+        message[length] = '\0';
+        if (strcmp(message, "SLETLOG") == 0)
+        {
+          remove("/www/pages/temp.txt");
+          int fd;
+          fd = open("/www/pages/temp.txt", O_WRONLY | O_APPEND | O_CREAT);
+          close(fd);
+          return;
+        }
         std::cout << "Data: " << std::string(message, length) << std::endl;
         ws->send(message, length, opCode);
-        remove("/www/pages/temp.txt");
   }
 
 };
@@ -21,18 +29,18 @@ struct Data
 
 void async(uWS::Hub* h)
 {
-  int fd, counter = 0;
+  int fd;
   char buf[20];
   
   for(;;)
   {
     sleep(1);
-
+/*
     std::ostringstream ss;
     ss << "Number of broadcasts hejs#" << counter++;
     
     h->broadcast(ss.str().c_str(),ss.str().length(), uWS::OpCode::TEXT);
-
+*/
     fd = open("/www/pages/temp.txt", O_WRONLY | O_APPEND | O_CREAT);
 
     sprintf(buf, "Chug tid: 10:00\n");

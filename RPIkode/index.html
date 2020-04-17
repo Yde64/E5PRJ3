@@ -84,36 +84,33 @@
 
 async  function clicker()
   {
-	let response = await fetch('test.txt');
-	let text = await response.text();
+	  let response = await fetch('test.txt');
+	  let text = await response.text();
 
-  var x = 0;
-  var textString = [];
+    var x = 0;
+    var textString = [];
 
-	for(i = 0; i < text.length; i++)
-	{
-		if(text[i] == "\n") x++;
-		textString[x] = "";
-	}
-	x = 0;
+	  for(i = 0; i < text.length; i++)
+	  {
+		  if(text[i] == "\n") x++;
+		  textString[x] = "";
+	  }
+	  x = 0;
 	
-	for(i = 0; i < text.length; i++)
-	{
-	
-		if(text[i] == "\n") x++;
-		
-		else
-		
-		textString[x] += text[i];
-	}
+	  for(i = 0; i < text.length; i++)
+	  {
+		  if(text[i] == "\n") 
+        x++;
+		  else
+		    textString[x] += text[i];
+    }
 
 
-	for(i = 0; i < textString.length-1; i++)
-	{
-	
-	var curLine = textString[i];
-	writeToScreen(curLine);
-	}
+	  for(i = 0; i < textString.length-1; i++)
+	  {
+	    var curLine = textString[i];
+	    writeToScreen(curLine);
+	  }
   }
 
   function clearLog()

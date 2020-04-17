@@ -1,6 +1,7 @@
   <!DOCTYPE html>
   <meta charset="utf-8" />
   <title>WebSocket Test</title>
+  <iframe id="frmFile" src="temp.txt" style="display: none;"></iframe>
   <script language="javascript" type="text/javascript">
 
   var wsUri = "ws://rpi:3000/";
@@ -44,6 +45,40 @@
     writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
   }
 
+  window.addEventListener("load", init, false);
+
+  async function updatedisp()
+  {
+	  let response = await fetch('temp.txt');
+	  let text = await response.text();
+
+    var x = 0;
+    var textString = [];
+
+	  for(i = 0; i < text.length; i++)
+	  {
+		  if(text[i] == "\n") x++;
+		  textString[x] = "";
+	  }
+	  x = 0;
+	
+	  for(i = 0; i < text.length; i++)
+	  {
+		  if(text[i] == "\n") 
+        x++;
+		  else
+		    textString[x] += text[i];
+    }
+
+
+	  for(i = 0; i < textString.length-1; i++)
+	  {
+	    var curLine = textString[i];
+	    writeToScreen(curLine);
+	  }
+
+  }
+
   function doSend(message)
   {
     writeToScreen("SENT: " + message);
@@ -60,14 +95,15 @@
 
   window.addEventListener("load", init, false);
 
-  function clicker()
+  function dellog()
   {
-    counter = counter+1;
-    doSend("Hello with count: " + counter);
+    doSend("SLETLOG");
+    output.innerHTML = "";
   }
   </script>
 
   <h2>WebSocket Test</h2>
 
-  <button type="button" onclick="clicker()">Click Me!</button>
+  <button type="button" onclick="dellog()">Slet log</button>
+  <button type="button" onclick="updatedisp()">Vis log</button>
   <div id="output"></div>
