@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 1
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 1
 
 
    1              		.syntax unified
@@ -33,18 +33,18 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 1
    3:Stopur.c      **** 
    4:Stopur.c      **** int count = 0;
    5:Stopur.c      **** 
-   6:Stopur.c      **** CY_ISR(isr_timer)                // interrupter ved hvert 100 ms
+   6:Stopur.c      **** CY_ISR(isr_timer)                // interrupter hvert 100 ms
    7:Stopur.c      **** {
    8:Stopur.c      ****     if (count < 1200)            // incrementeres ved hvert interrupt
    9:Stopur.c      ****     {
   10:Stopur.c      ****         count++;
   11:Stopur.c      ****        
   12:Stopur.c      ****     }else{
-  13:Stopur.c      ****         stopTimer();             
+  13:Stopur.c      ****         stopTimer();             // stopper vores interrupt rutine hvis count overstiger 1200 hvilk
   14:Stopur.c      ****     }
   15:Stopur.c      **** }
   16:Stopur.c      **** 
-  17:Stopur.c      **** void initTimer()                 // initiere timeren
+  17:Stopur.c      **** void initTimer()                 // initiere timer_stopur
   18:Stopur.c      **** {
   28              		.loc 1 18 0
   29              		.cfi_startproc
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 1
   36              		.loc 1 19 0
   37 0002 0248     		ldr	r0, .L3
   38 0004 FFF7FEFF 		bl	isr_timer_StartEx
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 2
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 2
 
 
   39              	.LVL0:
@@ -80,7 +80,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 1
   55              	.LFB66:
   20:Stopur.c      **** }
   21:Stopur.c      **** 
-  22:Stopur.c      **** void startTimer()                // starter timeren 
+  22:Stopur.c      **** void startTimer()                // starter timer_stopur 
   23:Stopur.c      **** {
   56              		.loc 1 23 0
   57              		.cfi_startproc
@@ -108,7 +108,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 1
   78              	.LFB67:
   25:Stopur.c      **** }
   26:Stopur.c      **** 
-  27:Stopur.c      **** void stopTimer()                 // Stopper timeren
+  27:Stopur.c      **** void stopTimer()                 // Stopper timer_stopur
   28:Stopur.c      **** {
   79              		.loc 1 28 0
   80              		.cfi_startproc
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 1
   84              		.cfi_def_cfa_offset 8
   85              		.cfi_offset 3, -8
   86              		.cfi_offset 14, -4
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 3
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 3
 
 
   29:Stopur.c      ****    Timer_Stopur_Stop();
@@ -178,728 +178,732 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 1
  136              		.thumb_func
  137              		.type	getTime, %function
  138              	getTime:
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 4
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 4
 
 
  139              	.LFB68:
   30:Stopur.c      **** }
   31:Stopur.c      **** 
-  32:Stopur.c      **** int getTime()                    // Returnere vores count værdi
+  32:Stopur.c      **** int getTime()                    // Returnere vores count værdi som ms
   33:Stopur.c      **** {   
  140              		.loc 1 33 0
  141              		.cfi_startproc
  142              		@ args = 0, pretend = 0, frame = 0
  143              		@ frame_needed = 0, uses_anonymous_args = 0
  144              		@ link register save eliminated.
-  34:Stopur.c      ****     return count;
+  34:Stopur.c      ****     return count*100;
+ 145              		.loc 1 34 0
+ 146 0000 024B     		ldr	r3, .L16
+ 147 0002 1B68     		ldr	r3, [r3]
   35:Stopur.c      **** }
- 145              		.loc 1 35 0
- 146 0000 014B     		ldr	r3, .L16
- 147 0002 1868     		ldr	r0, [r3]
- 148 0004 7047     		bx	lr
- 149              	.L17:
- 150 0006 00BF     		.align	2
- 151              	.L16:
- 152 0008 00000000 		.word	.LANCHOR0
- 153              		.cfi_endproc
- 154              	.LFE68:
- 155              		.size	getTime, .-getTime
- 156              		.section	.text.clearTimer,"ax",%progbits
- 157              		.align	2
- 158              		.global	clearTimer
- 159              		.thumb
- 160              		.thumb_func
- 161              		.type	clearTimer, %function
- 162              	clearTimer:
- 163              	.LFB69:
+ 148              		.loc 1 35 0
+ 149 0004 6420     		movs	r0, #100
+ 150 0006 00FB03F0 		mul	r0, r0, r3
+ 151 000a 7047     		bx	lr
+ 152              	.L17:
+ 153              		.align	2
+ 154              	.L16:
+ 155 000c 00000000 		.word	.LANCHOR0
+ 156              		.cfi_endproc
+ 157              	.LFE68:
+ 158              		.size	getTime, .-getTime
+ 159              		.section	.text.clearTimer,"ax",%progbits
+ 160              		.align	2
+ 161              		.global	clearTimer
+ 162              		.thumb
+ 163              		.thumb_func
+ 164              		.type	clearTimer, %function
+ 165              	clearTimer:
+ 166              	.LFB69:
   36:Stopur.c      **** 
   37:Stopur.c      **** void clearTimer()                // nulstiller vores timer ved at sætte count til 0
   38:Stopur.c      **** {
- 164              		.loc 1 38 0
- 165              		.cfi_startproc
- 166              		@ args = 0, pretend = 0, frame = 0
- 167              		@ frame_needed = 0, uses_anonymous_args = 0
- 168              		@ link register save eliminated.
+ 167              		.loc 1 38 0
+ 168              		.cfi_startproc
+ 169              		@ args = 0, pretend = 0, frame = 0
+ 170              		@ frame_needed = 0, uses_anonymous_args = 0
+ 171              		@ link register save eliminated.
   39:Stopur.c      ****     count = 0;
- 169              		.loc 1 39 0
- 170 0000 0022     		movs	r2, #0
- 171 0002 014B     		ldr	r3, .L19
- 172 0004 1A60     		str	r2, [r3]
- 173 0006 7047     		bx	lr
- 174              	.L20:
- 175              		.align	2
- 176              	.L19:
- 177 0008 00000000 		.word	.LANCHOR0
- 178              		.cfi_endproc
- 179              	.LFE69:
- 180              		.size	clearTimer, .-clearTimer
- 181              		.global	count
- 182              		.bss
- 183              		.align	2
- 184              		.set	.LANCHOR0,. + 0
- 185              		.type	count, %object
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 5
+ 172              		.loc 1 39 0
+ 173 0000 0022     		movs	r2, #0
+ 174 0002 014B     		ldr	r3, .L19
+ 175 0004 1A60     		str	r2, [r3]
+ 176 0006 7047     		bx	lr
+ 177              	.L20:
+ 178              		.align	2
+ 179              	.L19:
+ 180 0008 00000000 		.word	.LANCHOR0
+ 181              		.cfi_endproc
+ 182              	.LFE69:
+ 183              		.size	clearTimer, .-clearTimer
+ 184              		.global	count
+ 185              		.bss
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 5
 
 
- 186              		.size	count, 4
- 187              	count:
- 188 0000 00000000 		.space	4
- 189              		.text
- 190              	.Letext0:
- 191              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
- 192              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
- 193              		.file 4 "Generated_Source\\PSoC5/core_cm3.h"
- 194              		.file 5 "Generated_Source\\PSoC5/isr_timer.h"
- 195              		.file 6 "Generated_Source\\PSoC5/Timer_Stopur.h"
- 196              		.section	.debug_info,"",%progbits
- 197              	.Ldebug_info0:
- 198 0000 90010000 		.4byte	0x190
- 199 0004 0400     		.2byte	0x4
- 200 0006 00000000 		.4byte	.Ldebug_abbrev0
- 201 000a 04       		.byte	0x4
- 202 000b 01       		.uleb128 0x1
- 203 000c 53000000 		.4byte	.LASF24
- 204 0010 0C       		.byte	0xc
- 205 0011 C5010000 		.4byte	.LASF25
- 206 0015 DA010000 		.4byte	.LASF26
- 207 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 208 001d 00000000 		.4byte	0
- 209 0021 00000000 		.4byte	.Ldebug_line0
- 210 0025 02       		.uleb128 0x2
- 211 0026 01       		.byte	0x1
- 212 0027 06       		.byte	0x6
- 213 0028 CE010000 		.4byte	.LASF0
- 214 002c 02       		.uleb128 0x2
- 215 002d 01       		.byte	0x1
- 216 002e 08       		.byte	0x8
- 217 002f 45000000 		.4byte	.LASF1
- 218 0033 02       		.uleb128 0x2
- 219 0034 02       		.byte	0x2
- 220 0035 05       		.byte	0x5
- 221 0036 A7010000 		.4byte	.LASF2
- 222 003a 02       		.uleb128 0x2
- 223 003b 02       		.byte	0x2
- 224 003c 07       		.byte	0x7
- 225 003d 07010000 		.4byte	.LASF3
- 226 0041 03       		.uleb128 0x3
- 227 0042 08000000 		.4byte	.LASF9
- 228 0046 02       		.byte	0x2
- 229 0047 3F       		.byte	0x3f
- 230 0048 4C000000 		.4byte	0x4c
- 231 004c 02       		.uleb128 0x2
- 232 004d 04       		.byte	0x4
- 233 004e 05       		.byte	0x5
- 234 004f BC010000 		.4byte	.LASF4
- 235 0053 02       		.uleb128 0x2
- 236 0054 04       		.byte	0x4
- 237 0055 07       		.byte	0x7
- 238 0056 EB000000 		.4byte	.LASF5
- 239 005a 02       		.uleb128 0x2
- 240 005b 08       		.byte	0x8
- 241 005c 05       		.byte	0x5
- 242 005d 8E010000 		.4byte	.LASF6
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 6
+ 186              		.align	2
+ 187              		.set	.LANCHOR0,. + 0
+ 188              		.type	count, %object
+ 189              		.size	count, 4
+ 190              	count:
+ 191 0000 00000000 		.space	4
+ 192              		.text
+ 193              	.Letext0:
+ 194              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 195              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 196              		.file 4 "Generated_Source\\PSoC5/core_cm3.h"
+ 197              		.file 5 "Generated_Source\\PSoC5/isr_timer.h"
+ 198              		.file 6 "Generated_Source\\PSoC5/Timer_Stopur.h"
+ 199              		.section	.debug_info,"",%progbits
+ 200              	.Ldebug_info0:
+ 201 0000 90010000 		.4byte	0x190
+ 202 0004 0400     		.2byte	0x4
+ 203 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 204 000a 04       		.byte	0x4
+ 205 000b 01       		.uleb128 0x1
+ 206 000c 98000000 		.4byte	.LASF24
+ 207 0010 0C       		.byte	0xc
+ 208 0011 0A020000 		.4byte	.LASF25
+ 209 0015 08000000 		.4byte	.LASF26
+ 210 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 211 001d 00000000 		.4byte	0
+ 212 0021 00000000 		.4byte	.Ldebug_line0
+ 213 0025 02       		.uleb128 0x2
+ 214 0026 01       		.byte	0x1
+ 215 0027 06       		.byte	0x6
+ 216 0028 13020000 		.4byte	.LASF0
+ 217 002c 02       		.uleb128 0x2
+ 218 002d 01       		.byte	0x1
+ 219 002e 08       		.byte	0x8
+ 220 002f 8A000000 		.4byte	.LASF1
+ 221 0033 02       		.uleb128 0x2
+ 222 0034 02       		.byte	0x2
+ 223 0035 05       		.byte	0x5
+ 224 0036 EC010000 		.4byte	.LASF2
+ 225 003a 02       		.uleb128 0x2
+ 226 003b 02       		.byte	0x2
+ 227 003c 07       		.byte	0x7
+ 228 003d 4C010000 		.4byte	.LASF3
+ 229 0041 03       		.uleb128 0x3
+ 230 0042 4D000000 		.4byte	.LASF9
+ 231 0046 02       		.byte	0x2
+ 232 0047 3F       		.byte	0x3f
+ 233 0048 4C000000 		.4byte	0x4c
+ 234 004c 02       		.uleb128 0x2
+ 235 004d 04       		.byte	0x4
+ 236 004e 05       		.byte	0x5
+ 237 004f 01020000 		.4byte	.LASF4
+ 238 0053 02       		.uleb128 0x2
+ 239 0054 04       		.byte	0x4
+ 240 0055 07       		.byte	0x7
+ 241 0056 30010000 		.4byte	.LASF5
+ 242 005a 02       		.uleb128 0x2
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 6
 
 
- 243 0061 02       		.uleb128 0x2
- 244 0062 08       		.byte	0x8
- 245 0063 07       		.byte	0x7
- 246 0064 62010000 		.4byte	.LASF7
- 247 0068 04       		.uleb128 0x4
- 248 0069 04       		.byte	0x4
- 249 006a 05       		.byte	0x5
- 250 006b 696E7400 		.ascii	"int\000"
- 251 006f 02       		.uleb128 0x2
- 252 0070 04       		.byte	0x4
- 253 0071 07       		.byte	0x7
- 254 0072 43010000 		.4byte	.LASF8
- 255 0076 03       		.uleb128 0x3
- 256 0077 25000000 		.4byte	.LASF10
- 257 007b 03       		.byte	0x3
- 258 007c 2C       		.byte	0x2c
- 259 007d 41000000 		.4byte	0x41
- 260 0081 02       		.uleb128 0x2
- 261 0082 04       		.byte	0x4
- 262 0083 04       		.byte	0x4
- 263 0084 3F000000 		.4byte	.LASF11
- 264 0088 02       		.uleb128 0x2
- 265 0089 08       		.byte	0x8
- 266 008a 04       		.byte	0x4
- 267 008b 31010000 		.4byte	.LASF12
- 268 008f 02       		.uleb128 0x2
- 269 0090 01       		.byte	0x1
- 270 0091 08       		.byte	0x8
- 271 0092 9C010000 		.4byte	.LASF13
- 272 0096 02       		.uleb128 0x2
- 273 0097 08       		.byte	0x8
- 274 0098 04       		.byte	0x4
- 275 0099 79010000 		.4byte	.LASF14
- 276 009d 02       		.uleb128 0x2
- 277 009e 04       		.byte	0x4
- 278 009f 07       		.byte	0x7
- 279 00a0 85010000 		.4byte	.LASF15
- 280 00a4 05       		.uleb128 0x5
- 281 00a5 1A010000 		.4byte	.LASF16
- 282 00a9 01       		.byte	0x1
- 283 00aa 11       		.byte	0x11
- 284 00ab 00000000 		.4byte	.LFB65
- 285 00af 10000000 		.4byte	.LFE65-.LFB65
- 286 00b3 01       		.uleb128 0x1
- 287 00b4 9C       		.byte	0x9c
- 288 00b5 CD000000 		.4byte	0xcd
- 289 00b9 06       		.uleb128 0x6
- 290 00ba 08000000 		.4byte	.LVL0
- 291 00be 72010000 		.4byte	0x172
- 292 00c2 07       		.uleb128 0x7
- 293 00c3 01       		.uleb128 0x1
- 294 00c4 50       		.byte	0x50
- 295 00c5 05       		.uleb128 0x5
- 296 00c6 03       		.byte	0x3
- 297 00c7 00000000 		.4byte	isr_timer
- 298 00cb 00       		.byte	0
- 299 00cc 00       		.byte	0
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 7
+ 243 005b 08       		.byte	0x8
+ 244 005c 05       		.byte	0x5
+ 245 005d D3010000 		.4byte	.LASF6
+ 246 0061 02       		.uleb128 0x2
+ 247 0062 08       		.byte	0x8
+ 248 0063 07       		.byte	0x7
+ 249 0064 A7010000 		.4byte	.LASF7
+ 250 0068 04       		.uleb128 0x4
+ 251 0069 04       		.byte	0x4
+ 252 006a 05       		.byte	0x5
+ 253 006b 696E7400 		.ascii	"int\000"
+ 254 006f 02       		.uleb128 0x2
+ 255 0070 04       		.byte	0x4
+ 256 0071 07       		.byte	0x7
+ 257 0072 88010000 		.4byte	.LASF8
+ 258 0076 03       		.uleb128 0x3
+ 259 0077 6A000000 		.4byte	.LASF10
+ 260 007b 03       		.byte	0x3
+ 261 007c 2C       		.byte	0x2c
+ 262 007d 41000000 		.4byte	0x41
+ 263 0081 02       		.uleb128 0x2
+ 264 0082 04       		.byte	0x4
+ 265 0083 04       		.byte	0x4
+ 266 0084 84000000 		.4byte	.LASF11
+ 267 0088 02       		.uleb128 0x2
+ 268 0089 08       		.byte	0x8
+ 269 008a 04       		.byte	0x4
+ 270 008b 76010000 		.4byte	.LASF12
+ 271 008f 02       		.uleb128 0x2
+ 272 0090 01       		.byte	0x1
+ 273 0091 08       		.byte	0x8
+ 274 0092 E1010000 		.4byte	.LASF13
+ 275 0096 02       		.uleb128 0x2
+ 276 0097 08       		.byte	0x8
+ 277 0098 04       		.byte	0x4
+ 278 0099 BE010000 		.4byte	.LASF14
+ 279 009d 02       		.uleb128 0x2
+ 280 009e 04       		.byte	0x4
+ 281 009f 07       		.byte	0x7
+ 282 00a0 CA010000 		.4byte	.LASF15
+ 283 00a4 05       		.uleb128 0x5
+ 284 00a5 5F010000 		.4byte	.LASF16
+ 285 00a9 01       		.byte	0x1
+ 286 00aa 11       		.byte	0x11
+ 287 00ab 00000000 		.4byte	.LFB65
+ 288 00af 10000000 		.4byte	.LFE65-.LFB65
+ 289 00b3 01       		.uleb128 0x1
+ 290 00b4 9C       		.byte	0x9c
+ 291 00b5 CD000000 		.4byte	0xcd
+ 292 00b9 06       		.uleb128 0x6
+ 293 00ba 08000000 		.4byte	.LVL0
+ 294 00be 72010000 		.4byte	0x172
+ 295 00c2 07       		.uleb128 0x7
+ 296 00c3 01       		.uleb128 0x1
+ 297 00c4 50       		.byte	0x50
+ 298 00c5 05       		.uleb128 0x5
+ 299 00c6 03       		.byte	0x3
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 7
 
 
- 300 00cd 05       		.uleb128 0x5
- 301 00ce 38010000 		.4byte	.LASF17
- 302 00d2 01       		.byte	0x1
- 303 00d3 16       		.byte	0x16
- 304 00d4 00000000 		.4byte	.LFB66
- 305 00d8 08000000 		.4byte	.LFE66-.LFB66
- 306 00dc 01       		.uleb128 0x1
- 307 00dd 9C       		.byte	0x9c
- 308 00de EC000000 		.4byte	0xec
- 309 00e2 08       		.uleb128 0x8
- 310 00e3 06000000 		.4byte	.LVL1
- 311 00e7 7D010000 		.4byte	0x17d
- 312 00eb 00       		.byte	0
- 313 00ec 05       		.uleb128 0x5
- 314 00ed E1000000 		.4byte	.LASF18
- 315 00f1 01       		.byte	0x1
- 316 00f2 1B       		.byte	0x1b
- 317 00f3 00000000 		.4byte	.LFB67
- 318 00f7 08000000 		.4byte	.LFE67-.LFB67
- 319 00fb 01       		.uleb128 0x1
- 320 00fc 9C       		.byte	0x9c
- 321 00fd 0B010000 		.4byte	0x10b
- 322 0101 08       		.uleb128 0x8
- 323 0102 06000000 		.4byte	.LVL2
- 324 0106 88010000 		.4byte	0x188
- 325 010a 00       		.byte	0
- 326 010b 09       		.uleb128 0x9
- 327 010c FD000000 		.4byte	.LASF27
- 328 0110 01       		.byte	0x1
- 329 0111 06       		.byte	0x6
- 330 0112 00000000 		.4byte	.LFB64
- 331 0116 20000000 		.4byte	.LFE64-.LFB64
- 332 011a 01       		.uleb128 0x1
- 333 011b 9C       		.byte	0x9c
- 334 011c 2A010000 		.4byte	0x12a
- 335 0120 08       		.uleb128 0x8
- 336 0121 18000000 		.4byte	.LVL3
- 337 0125 EC000000 		.4byte	0xec
- 338 0129 00       		.byte	0
- 339 012a 0A       		.uleb128 0xa
- 340 012b 00000000 		.4byte	.LASF28
- 341 012f 01       		.byte	0x1
- 342 0130 20       		.byte	0x20
- 343 0131 68000000 		.4byte	0x68
- 344 0135 00000000 		.4byte	.LFB68
- 345 0139 0C000000 		.4byte	.LFE68-.LFB68
- 346 013d 01       		.uleb128 0x1
- 347 013e 9C       		.byte	0x9c
- 348 013f 0B       		.uleb128 0xb
- 349 0140 B1010000 		.4byte	.LASF29
- 350 0144 01       		.byte	0x1
- 351 0145 25       		.byte	0x25
- 352 0146 00000000 		.4byte	.LFB69
- 353 014a 0C000000 		.4byte	.LFE69-.LFB69
- 354 014e 01       		.uleb128 0x1
- 355 014f 9C       		.byte	0x9c
- 356 0150 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 8
+ 300 00c7 00000000 		.4byte	isr_timer
+ 301 00cb 00       		.byte	0
+ 302 00cc 00       		.byte	0
+ 303 00cd 05       		.uleb128 0x5
+ 304 00ce 7D010000 		.4byte	.LASF17
+ 305 00d2 01       		.byte	0x1
+ 306 00d3 16       		.byte	0x16
+ 307 00d4 00000000 		.4byte	.LFB66
+ 308 00d8 08000000 		.4byte	.LFE66-.LFB66
+ 309 00dc 01       		.uleb128 0x1
+ 310 00dd 9C       		.byte	0x9c
+ 311 00de EC000000 		.4byte	0xec
+ 312 00e2 08       		.uleb128 0x8
+ 313 00e3 06000000 		.4byte	.LVL1
+ 314 00e7 7D010000 		.4byte	0x17d
+ 315 00eb 00       		.byte	0
+ 316 00ec 05       		.uleb128 0x5
+ 317 00ed 26010000 		.4byte	.LASF18
+ 318 00f1 01       		.byte	0x1
+ 319 00f2 1B       		.byte	0x1b
+ 320 00f3 00000000 		.4byte	.LFB67
+ 321 00f7 08000000 		.4byte	.LFE67-.LFB67
+ 322 00fb 01       		.uleb128 0x1
+ 323 00fc 9C       		.byte	0x9c
+ 324 00fd 0B010000 		.4byte	0x10b
+ 325 0101 08       		.uleb128 0x8
+ 326 0102 06000000 		.4byte	.LVL2
+ 327 0106 88010000 		.4byte	0x188
+ 328 010a 00       		.byte	0
+ 329 010b 09       		.uleb128 0x9
+ 330 010c 42010000 		.4byte	.LASF27
+ 331 0110 01       		.byte	0x1
+ 332 0111 06       		.byte	0x6
+ 333 0112 00000000 		.4byte	.LFB64
+ 334 0116 20000000 		.4byte	.LFE64-.LFB64
+ 335 011a 01       		.uleb128 0x1
+ 336 011b 9C       		.byte	0x9c
+ 337 011c 2A010000 		.4byte	0x12a
+ 338 0120 08       		.uleb128 0x8
+ 339 0121 18000000 		.4byte	.LVL3
+ 340 0125 EC000000 		.4byte	0xec
+ 341 0129 00       		.byte	0
+ 342 012a 0A       		.uleb128 0xa
+ 343 012b 00000000 		.4byte	.LASF28
+ 344 012f 01       		.byte	0x1
+ 345 0130 20       		.byte	0x20
+ 346 0131 68000000 		.4byte	0x68
+ 347 0135 00000000 		.4byte	.LFB68
+ 348 0139 10000000 		.4byte	.LFE68-.LFB68
+ 349 013d 01       		.uleb128 0x1
+ 350 013e 9C       		.byte	0x9c
+ 351 013f 0B       		.uleb128 0xb
+ 352 0140 F6010000 		.4byte	.LASF29
+ 353 0144 01       		.byte	0x1
+ 354 0145 25       		.byte	0x25
+ 355 0146 00000000 		.4byte	.LFB69
+ 356 014a 0C000000 		.4byte	.LFE69-.LFB69
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 8
 
 
- 357 0151 24010000 		.4byte	.LASF19
- 358 0155 04       		.byte	0x4
- 359 0156 1207     		.2byte	0x712
- 360 0158 5C010000 		.4byte	0x15c
- 361 015c 0D       		.uleb128 0xd
- 362 015d 76000000 		.4byte	0x76
- 363 0161 0E       		.uleb128 0xe
- 364 0162 A1010000 		.4byte	.LASF20
- 365 0166 01       		.byte	0x1
- 366 0167 04       		.byte	0x4
- 367 0168 68000000 		.4byte	0x68
- 368 016c 05       		.uleb128 0x5
- 369 016d 03       		.byte	0x3
- 370 016e 00000000 		.4byte	count
- 371 0172 0F       		.uleb128 0xf
- 372 0173 2D000000 		.4byte	.LASF21
- 373 0177 2D000000 		.4byte	.LASF21
- 374 017b 05       		.byte	0x5
- 375 017c 18       		.byte	0x18
- 376 017d 0F       		.uleb128 0xf
- 377 017e 12000000 		.4byte	.LASF22
- 378 0182 12000000 		.4byte	.LASF22
- 379 0186 06       		.byte	0x6
- 380 0187 5A       		.byte	0x5a
- 381 0188 0F       		.uleb128 0xf
- 382 0189 50010000 		.4byte	.LASF23
- 383 018d 50010000 		.4byte	.LASF23
- 384 0191 06       		.byte	0x6
- 385 0192 5B       		.byte	0x5b
- 386 0193 00       		.byte	0
- 387              		.section	.debug_abbrev,"",%progbits
- 388              	.Ldebug_abbrev0:
- 389 0000 01       		.uleb128 0x1
- 390 0001 11       		.uleb128 0x11
- 391 0002 01       		.byte	0x1
- 392 0003 25       		.uleb128 0x25
- 393 0004 0E       		.uleb128 0xe
- 394 0005 13       		.uleb128 0x13
- 395 0006 0B       		.uleb128 0xb
- 396 0007 03       		.uleb128 0x3
- 397 0008 0E       		.uleb128 0xe
- 398 0009 1B       		.uleb128 0x1b
- 399 000a 0E       		.uleb128 0xe
- 400 000b 55       		.uleb128 0x55
- 401 000c 17       		.uleb128 0x17
- 402 000d 11       		.uleb128 0x11
- 403 000e 01       		.uleb128 0x1
- 404 000f 10       		.uleb128 0x10
- 405 0010 17       		.uleb128 0x17
- 406 0011 00       		.byte	0
- 407 0012 00       		.byte	0
- 408 0013 02       		.uleb128 0x2
- 409 0014 24       		.uleb128 0x24
- 410 0015 00       		.byte	0
- 411 0016 0B       		.uleb128 0xb
- 412 0017 0B       		.uleb128 0xb
- 413 0018 3E       		.uleb128 0x3e
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 9
+ 357 014e 01       		.uleb128 0x1
+ 358 014f 9C       		.byte	0x9c
+ 359 0150 0C       		.uleb128 0xc
+ 360 0151 69010000 		.4byte	.LASF19
+ 361 0155 04       		.byte	0x4
+ 362 0156 1207     		.2byte	0x712
+ 363 0158 5C010000 		.4byte	0x15c
+ 364 015c 0D       		.uleb128 0xd
+ 365 015d 76000000 		.4byte	0x76
+ 366 0161 0E       		.uleb128 0xe
+ 367 0162 E6010000 		.4byte	.LASF20
+ 368 0166 01       		.byte	0x1
+ 369 0167 04       		.byte	0x4
+ 370 0168 68000000 		.4byte	0x68
+ 371 016c 05       		.uleb128 0x5
+ 372 016d 03       		.byte	0x3
+ 373 016e 00000000 		.4byte	count
+ 374 0172 0F       		.uleb128 0xf
+ 375 0173 72000000 		.4byte	.LASF21
+ 376 0177 72000000 		.4byte	.LASF21
+ 377 017b 05       		.byte	0x5
+ 378 017c 18       		.byte	0x18
+ 379 017d 0F       		.uleb128 0xf
+ 380 017e 57000000 		.4byte	.LASF22
+ 381 0182 57000000 		.4byte	.LASF22
+ 382 0186 06       		.byte	0x6
+ 383 0187 5A       		.byte	0x5a
+ 384 0188 0F       		.uleb128 0xf
+ 385 0189 95010000 		.4byte	.LASF23
+ 386 018d 95010000 		.4byte	.LASF23
+ 387 0191 06       		.byte	0x6
+ 388 0192 5B       		.byte	0x5b
+ 389 0193 00       		.byte	0
+ 390              		.section	.debug_abbrev,"",%progbits
+ 391              	.Ldebug_abbrev0:
+ 392 0000 01       		.uleb128 0x1
+ 393 0001 11       		.uleb128 0x11
+ 394 0002 01       		.byte	0x1
+ 395 0003 25       		.uleb128 0x25
+ 396 0004 0E       		.uleb128 0xe
+ 397 0005 13       		.uleb128 0x13
+ 398 0006 0B       		.uleb128 0xb
+ 399 0007 03       		.uleb128 0x3
+ 400 0008 0E       		.uleb128 0xe
+ 401 0009 1B       		.uleb128 0x1b
+ 402 000a 0E       		.uleb128 0xe
+ 403 000b 55       		.uleb128 0x55
+ 404 000c 17       		.uleb128 0x17
+ 405 000d 11       		.uleb128 0x11
+ 406 000e 01       		.uleb128 0x1
+ 407 000f 10       		.uleb128 0x10
+ 408 0010 17       		.uleb128 0x17
+ 409 0011 00       		.byte	0
+ 410 0012 00       		.byte	0
+ 411 0013 02       		.uleb128 0x2
+ 412 0014 24       		.uleb128 0x24
+ 413 0015 00       		.byte	0
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 9
 
 
- 414 0019 0B       		.uleb128 0xb
- 415 001a 03       		.uleb128 0x3
- 416 001b 0E       		.uleb128 0xe
- 417 001c 00       		.byte	0
- 418 001d 00       		.byte	0
- 419 001e 03       		.uleb128 0x3
- 420 001f 16       		.uleb128 0x16
- 421 0020 00       		.byte	0
- 422 0021 03       		.uleb128 0x3
- 423 0022 0E       		.uleb128 0xe
- 424 0023 3A       		.uleb128 0x3a
- 425 0024 0B       		.uleb128 0xb
- 426 0025 3B       		.uleb128 0x3b
- 427 0026 0B       		.uleb128 0xb
- 428 0027 49       		.uleb128 0x49
- 429 0028 13       		.uleb128 0x13
- 430 0029 00       		.byte	0
- 431 002a 00       		.byte	0
- 432 002b 04       		.uleb128 0x4
- 433 002c 24       		.uleb128 0x24
- 434 002d 00       		.byte	0
- 435 002e 0B       		.uleb128 0xb
- 436 002f 0B       		.uleb128 0xb
- 437 0030 3E       		.uleb128 0x3e
- 438 0031 0B       		.uleb128 0xb
- 439 0032 03       		.uleb128 0x3
- 440 0033 08       		.uleb128 0x8
- 441 0034 00       		.byte	0
- 442 0035 00       		.byte	0
- 443 0036 05       		.uleb128 0x5
- 444 0037 2E       		.uleb128 0x2e
- 445 0038 01       		.byte	0x1
- 446 0039 3F       		.uleb128 0x3f
- 447 003a 19       		.uleb128 0x19
- 448 003b 03       		.uleb128 0x3
- 449 003c 0E       		.uleb128 0xe
- 450 003d 3A       		.uleb128 0x3a
- 451 003e 0B       		.uleb128 0xb
- 452 003f 3B       		.uleb128 0x3b
- 453 0040 0B       		.uleb128 0xb
- 454 0041 11       		.uleb128 0x11
- 455 0042 01       		.uleb128 0x1
- 456 0043 12       		.uleb128 0x12
- 457 0044 06       		.uleb128 0x6
- 458 0045 40       		.uleb128 0x40
- 459 0046 18       		.uleb128 0x18
- 460 0047 9742     		.uleb128 0x2117
- 461 0049 19       		.uleb128 0x19
- 462 004a 01       		.uleb128 0x1
- 463 004b 13       		.uleb128 0x13
- 464 004c 00       		.byte	0
- 465 004d 00       		.byte	0
- 466 004e 06       		.uleb128 0x6
- 467 004f 898201   		.uleb128 0x4109
- 468 0052 01       		.byte	0x1
- 469 0053 11       		.uleb128 0x11
- 470 0054 01       		.uleb128 0x1
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 10
+ 414 0016 0B       		.uleb128 0xb
+ 415 0017 0B       		.uleb128 0xb
+ 416 0018 3E       		.uleb128 0x3e
+ 417 0019 0B       		.uleb128 0xb
+ 418 001a 03       		.uleb128 0x3
+ 419 001b 0E       		.uleb128 0xe
+ 420 001c 00       		.byte	0
+ 421 001d 00       		.byte	0
+ 422 001e 03       		.uleb128 0x3
+ 423 001f 16       		.uleb128 0x16
+ 424 0020 00       		.byte	0
+ 425 0021 03       		.uleb128 0x3
+ 426 0022 0E       		.uleb128 0xe
+ 427 0023 3A       		.uleb128 0x3a
+ 428 0024 0B       		.uleb128 0xb
+ 429 0025 3B       		.uleb128 0x3b
+ 430 0026 0B       		.uleb128 0xb
+ 431 0027 49       		.uleb128 0x49
+ 432 0028 13       		.uleb128 0x13
+ 433 0029 00       		.byte	0
+ 434 002a 00       		.byte	0
+ 435 002b 04       		.uleb128 0x4
+ 436 002c 24       		.uleb128 0x24
+ 437 002d 00       		.byte	0
+ 438 002e 0B       		.uleb128 0xb
+ 439 002f 0B       		.uleb128 0xb
+ 440 0030 3E       		.uleb128 0x3e
+ 441 0031 0B       		.uleb128 0xb
+ 442 0032 03       		.uleb128 0x3
+ 443 0033 08       		.uleb128 0x8
+ 444 0034 00       		.byte	0
+ 445 0035 00       		.byte	0
+ 446 0036 05       		.uleb128 0x5
+ 447 0037 2E       		.uleb128 0x2e
+ 448 0038 01       		.byte	0x1
+ 449 0039 3F       		.uleb128 0x3f
+ 450 003a 19       		.uleb128 0x19
+ 451 003b 03       		.uleb128 0x3
+ 452 003c 0E       		.uleb128 0xe
+ 453 003d 3A       		.uleb128 0x3a
+ 454 003e 0B       		.uleb128 0xb
+ 455 003f 3B       		.uleb128 0x3b
+ 456 0040 0B       		.uleb128 0xb
+ 457 0041 11       		.uleb128 0x11
+ 458 0042 01       		.uleb128 0x1
+ 459 0043 12       		.uleb128 0x12
+ 460 0044 06       		.uleb128 0x6
+ 461 0045 40       		.uleb128 0x40
+ 462 0046 18       		.uleb128 0x18
+ 463 0047 9742     		.uleb128 0x2117
+ 464 0049 19       		.uleb128 0x19
+ 465 004a 01       		.uleb128 0x1
+ 466 004b 13       		.uleb128 0x13
+ 467 004c 00       		.byte	0
+ 468 004d 00       		.byte	0
+ 469 004e 06       		.uleb128 0x6
+ 470 004f 898201   		.uleb128 0x4109
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 10
 
 
- 471 0055 31       		.uleb128 0x31
- 472 0056 13       		.uleb128 0x13
- 473 0057 00       		.byte	0
- 474 0058 00       		.byte	0
- 475 0059 07       		.uleb128 0x7
- 476 005a 8A8201   		.uleb128 0x410a
- 477 005d 00       		.byte	0
- 478 005e 02       		.uleb128 0x2
- 479 005f 18       		.uleb128 0x18
- 480 0060 9142     		.uleb128 0x2111
- 481 0062 18       		.uleb128 0x18
- 482 0063 00       		.byte	0
- 483 0064 00       		.byte	0
- 484 0065 08       		.uleb128 0x8
- 485 0066 898201   		.uleb128 0x4109
- 486 0069 00       		.byte	0
- 487 006a 11       		.uleb128 0x11
- 488 006b 01       		.uleb128 0x1
- 489 006c 31       		.uleb128 0x31
- 490 006d 13       		.uleb128 0x13
- 491 006e 00       		.byte	0
- 492 006f 00       		.byte	0
- 493 0070 09       		.uleb128 0x9
- 494 0071 2E       		.uleb128 0x2e
- 495 0072 01       		.byte	0x1
- 496 0073 3F       		.uleb128 0x3f
- 497 0074 19       		.uleb128 0x19
- 498 0075 03       		.uleb128 0x3
- 499 0076 0E       		.uleb128 0xe
- 500 0077 3A       		.uleb128 0x3a
- 501 0078 0B       		.uleb128 0xb
- 502 0079 3B       		.uleb128 0x3b
- 503 007a 0B       		.uleb128 0xb
- 504 007b 27       		.uleb128 0x27
- 505 007c 19       		.uleb128 0x19
- 506 007d 11       		.uleb128 0x11
- 507 007e 01       		.uleb128 0x1
- 508 007f 12       		.uleb128 0x12
- 509 0080 06       		.uleb128 0x6
- 510 0081 40       		.uleb128 0x40
- 511 0082 18       		.uleb128 0x18
- 512 0083 9742     		.uleb128 0x2117
- 513 0085 19       		.uleb128 0x19
- 514 0086 01       		.uleb128 0x1
- 515 0087 13       		.uleb128 0x13
- 516 0088 00       		.byte	0
- 517 0089 00       		.byte	0
- 518 008a 0A       		.uleb128 0xa
- 519 008b 2E       		.uleb128 0x2e
- 520 008c 00       		.byte	0
- 521 008d 3F       		.uleb128 0x3f
- 522 008e 19       		.uleb128 0x19
- 523 008f 03       		.uleb128 0x3
- 524 0090 0E       		.uleb128 0xe
- 525 0091 3A       		.uleb128 0x3a
- 526 0092 0B       		.uleb128 0xb
- 527 0093 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 11
+ 471 0052 01       		.byte	0x1
+ 472 0053 11       		.uleb128 0x11
+ 473 0054 01       		.uleb128 0x1
+ 474 0055 31       		.uleb128 0x31
+ 475 0056 13       		.uleb128 0x13
+ 476 0057 00       		.byte	0
+ 477 0058 00       		.byte	0
+ 478 0059 07       		.uleb128 0x7
+ 479 005a 8A8201   		.uleb128 0x410a
+ 480 005d 00       		.byte	0
+ 481 005e 02       		.uleb128 0x2
+ 482 005f 18       		.uleb128 0x18
+ 483 0060 9142     		.uleb128 0x2111
+ 484 0062 18       		.uleb128 0x18
+ 485 0063 00       		.byte	0
+ 486 0064 00       		.byte	0
+ 487 0065 08       		.uleb128 0x8
+ 488 0066 898201   		.uleb128 0x4109
+ 489 0069 00       		.byte	0
+ 490 006a 11       		.uleb128 0x11
+ 491 006b 01       		.uleb128 0x1
+ 492 006c 31       		.uleb128 0x31
+ 493 006d 13       		.uleb128 0x13
+ 494 006e 00       		.byte	0
+ 495 006f 00       		.byte	0
+ 496 0070 09       		.uleb128 0x9
+ 497 0071 2E       		.uleb128 0x2e
+ 498 0072 01       		.byte	0x1
+ 499 0073 3F       		.uleb128 0x3f
+ 500 0074 19       		.uleb128 0x19
+ 501 0075 03       		.uleb128 0x3
+ 502 0076 0E       		.uleb128 0xe
+ 503 0077 3A       		.uleb128 0x3a
+ 504 0078 0B       		.uleb128 0xb
+ 505 0079 3B       		.uleb128 0x3b
+ 506 007a 0B       		.uleb128 0xb
+ 507 007b 27       		.uleb128 0x27
+ 508 007c 19       		.uleb128 0x19
+ 509 007d 11       		.uleb128 0x11
+ 510 007e 01       		.uleb128 0x1
+ 511 007f 12       		.uleb128 0x12
+ 512 0080 06       		.uleb128 0x6
+ 513 0081 40       		.uleb128 0x40
+ 514 0082 18       		.uleb128 0x18
+ 515 0083 9742     		.uleb128 0x2117
+ 516 0085 19       		.uleb128 0x19
+ 517 0086 01       		.uleb128 0x1
+ 518 0087 13       		.uleb128 0x13
+ 519 0088 00       		.byte	0
+ 520 0089 00       		.byte	0
+ 521 008a 0A       		.uleb128 0xa
+ 522 008b 2E       		.uleb128 0x2e
+ 523 008c 00       		.byte	0
+ 524 008d 3F       		.uleb128 0x3f
+ 525 008e 19       		.uleb128 0x19
+ 526 008f 03       		.uleb128 0x3
+ 527 0090 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 11
 
 
- 528 0094 0B       		.uleb128 0xb
- 529 0095 49       		.uleb128 0x49
- 530 0096 13       		.uleb128 0x13
- 531 0097 11       		.uleb128 0x11
- 532 0098 01       		.uleb128 0x1
- 533 0099 12       		.uleb128 0x12
- 534 009a 06       		.uleb128 0x6
- 535 009b 40       		.uleb128 0x40
- 536 009c 18       		.uleb128 0x18
- 537 009d 9742     		.uleb128 0x2117
- 538 009f 19       		.uleb128 0x19
- 539 00a0 00       		.byte	0
- 540 00a1 00       		.byte	0
- 541 00a2 0B       		.uleb128 0xb
- 542 00a3 2E       		.uleb128 0x2e
- 543 00a4 00       		.byte	0
- 544 00a5 3F       		.uleb128 0x3f
- 545 00a6 19       		.uleb128 0x19
- 546 00a7 03       		.uleb128 0x3
- 547 00a8 0E       		.uleb128 0xe
- 548 00a9 3A       		.uleb128 0x3a
- 549 00aa 0B       		.uleb128 0xb
- 550 00ab 3B       		.uleb128 0x3b
- 551 00ac 0B       		.uleb128 0xb
- 552 00ad 11       		.uleb128 0x11
- 553 00ae 01       		.uleb128 0x1
- 554 00af 12       		.uleb128 0x12
- 555 00b0 06       		.uleb128 0x6
- 556 00b1 40       		.uleb128 0x40
- 557 00b2 18       		.uleb128 0x18
- 558 00b3 9742     		.uleb128 0x2117
- 559 00b5 19       		.uleb128 0x19
- 560 00b6 00       		.byte	0
- 561 00b7 00       		.byte	0
- 562 00b8 0C       		.uleb128 0xc
- 563 00b9 34       		.uleb128 0x34
- 564 00ba 00       		.byte	0
- 565 00bb 03       		.uleb128 0x3
- 566 00bc 0E       		.uleb128 0xe
- 567 00bd 3A       		.uleb128 0x3a
- 568 00be 0B       		.uleb128 0xb
- 569 00bf 3B       		.uleb128 0x3b
- 570 00c0 05       		.uleb128 0x5
- 571 00c1 49       		.uleb128 0x49
- 572 00c2 13       		.uleb128 0x13
- 573 00c3 3F       		.uleb128 0x3f
- 574 00c4 19       		.uleb128 0x19
- 575 00c5 3C       		.uleb128 0x3c
- 576 00c6 19       		.uleb128 0x19
- 577 00c7 00       		.byte	0
- 578 00c8 00       		.byte	0
- 579 00c9 0D       		.uleb128 0xd
- 580 00ca 35       		.uleb128 0x35
- 581 00cb 00       		.byte	0
- 582 00cc 49       		.uleb128 0x49
- 583 00cd 13       		.uleb128 0x13
- 584 00ce 00       		.byte	0
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 12
+ 528 0091 3A       		.uleb128 0x3a
+ 529 0092 0B       		.uleb128 0xb
+ 530 0093 3B       		.uleb128 0x3b
+ 531 0094 0B       		.uleb128 0xb
+ 532 0095 49       		.uleb128 0x49
+ 533 0096 13       		.uleb128 0x13
+ 534 0097 11       		.uleb128 0x11
+ 535 0098 01       		.uleb128 0x1
+ 536 0099 12       		.uleb128 0x12
+ 537 009a 06       		.uleb128 0x6
+ 538 009b 40       		.uleb128 0x40
+ 539 009c 18       		.uleb128 0x18
+ 540 009d 9742     		.uleb128 0x2117
+ 541 009f 19       		.uleb128 0x19
+ 542 00a0 00       		.byte	0
+ 543 00a1 00       		.byte	0
+ 544 00a2 0B       		.uleb128 0xb
+ 545 00a3 2E       		.uleb128 0x2e
+ 546 00a4 00       		.byte	0
+ 547 00a5 3F       		.uleb128 0x3f
+ 548 00a6 19       		.uleb128 0x19
+ 549 00a7 03       		.uleb128 0x3
+ 550 00a8 0E       		.uleb128 0xe
+ 551 00a9 3A       		.uleb128 0x3a
+ 552 00aa 0B       		.uleb128 0xb
+ 553 00ab 3B       		.uleb128 0x3b
+ 554 00ac 0B       		.uleb128 0xb
+ 555 00ad 11       		.uleb128 0x11
+ 556 00ae 01       		.uleb128 0x1
+ 557 00af 12       		.uleb128 0x12
+ 558 00b0 06       		.uleb128 0x6
+ 559 00b1 40       		.uleb128 0x40
+ 560 00b2 18       		.uleb128 0x18
+ 561 00b3 9742     		.uleb128 0x2117
+ 562 00b5 19       		.uleb128 0x19
+ 563 00b6 00       		.byte	0
+ 564 00b7 00       		.byte	0
+ 565 00b8 0C       		.uleb128 0xc
+ 566 00b9 34       		.uleb128 0x34
+ 567 00ba 00       		.byte	0
+ 568 00bb 03       		.uleb128 0x3
+ 569 00bc 0E       		.uleb128 0xe
+ 570 00bd 3A       		.uleb128 0x3a
+ 571 00be 0B       		.uleb128 0xb
+ 572 00bf 3B       		.uleb128 0x3b
+ 573 00c0 05       		.uleb128 0x5
+ 574 00c1 49       		.uleb128 0x49
+ 575 00c2 13       		.uleb128 0x13
+ 576 00c3 3F       		.uleb128 0x3f
+ 577 00c4 19       		.uleb128 0x19
+ 578 00c5 3C       		.uleb128 0x3c
+ 579 00c6 19       		.uleb128 0x19
+ 580 00c7 00       		.byte	0
+ 581 00c8 00       		.byte	0
+ 582 00c9 0D       		.uleb128 0xd
+ 583 00ca 35       		.uleb128 0x35
+ 584 00cb 00       		.byte	0
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 12
 
 
- 585 00cf 00       		.byte	0
- 586 00d0 0E       		.uleb128 0xe
- 587 00d1 34       		.uleb128 0x34
- 588 00d2 00       		.byte	0
- 589 00d3 03       		.uleb128 0x3
- 590 00d4 0E       		.uleb128 0xe
- 591 00d5 3A       		.uleb128 0x3a
- 592 00d6 0B       		.uleb128 0xb
- 593 00d7 3B       		.uleb128 0x3b
- 594 00d8 0B       		.uleb128 0xb
- 595 00d9 49       		.uleb128 0x49
- 596 00da 13       		.uleb128 0x13
- 597 00db 3F       		.uleb128 0x3f
- 598 00dc 19       		.uleb128 0x19
- 599 00dd 02       		.uleb128 0x2
- 600 00de 18       		.uleb128 0x18
- 601 00df 00       		.byte	0
- 602 00e0 00       		.byte	0
- 603 00e1 0F       		.uleb128 0xf
- 604 00e2 2E       		.uleb128 0x2e
- 605 00e3 00       		.byte	0
- 606 00e4 3F       		.uleb128 0x3f
- 607 00e5 19       		.uleb128 0x19
- 608 00e6 3C       		.uleb128 0x3c
- 609 00e7 19       		.uleb128 0x19
- 610 00e8 6E       		.uleb128 0x6e
- 611 00e9 0E       		.uleb128 0xe
- 612 00ea 03       		.uleb128 0x3
- 613 00eb 0E       		.uleb128 0xe
- 614 00ec 3A       		.uleb128 0x3a
- 615 00ed 0B       		.uleb128 0xb
- 616 00ee 3B       		.uleb128 0x3b
- 617 00ef 0B       		.uleb128 0xb
- 618 00f0 00       		.byte	0
- 619 00f1 00       		.byte	0
- 620 00f2 00       		.byte	0
- 621              		.section	.debug_aranges,"",%progbits
- 622 0000 44000000 		.4byte	0x44
- 623 0004 0200     		.2byte	0x2
- 624 0006 00000000 		.4byte	.Ldebug_info0
- 625 000a 04       		.byte	0x4
- 626 000b 00       		.byte	0
- 627 000c 0000     		.2byte	0
- 628 000e 0000     		.2byte	0
- 629 0010 00000000 		.4byte	.LFB65
- 630 0014 10000000 		.4byte	.LFE65-.LFB65
- 631 0018 00000000 		.4byte	.LFB66
- 632 001c 08000000 		.4byte	.LFE66-.LFB66
- 633 0020 00000000 		.4byte	.LFB67
- 634 0024 08000000 		.4byte	.LFE67-.LFB67
- 635 0028 00000000 		.4byte	.LFB64
- 636 002c 20000000 		.4byte	.LFE64-.LFB64
- 637 0030 00000000 		.4byte	.LFB68
- 638 0034 0C000000 		.4byte	.LFE68-.LFB68
- 639 0038 00000000 		.4byte	.LFB69
- 640 003c 0C000000 		.4byte	.LFE69-.LFB69
- 641 0040 00000000 		.4byte	0
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 13
+ 585 00cc 49       		.uleb128 0x49
+ 586 00cd 13       		.uleb128 0x13
+ 587 00ce 00       		.byte	0
+ 588 00cf 00       		.byte	0
+ 589 00d0 0E       		.uleb128 0xe
+ 590 00d1 34       		.uleb128 0x34
+ 591 00d2 00       		.byte	0
+ 592 00d3 03       		.uleb128 0x3
+ 593 00d4 0E       		.uleb128 0xe
+ 594 00d5 3A       		.uleb128 0x3a
+ 595 00d6 0B       		.uleb128 0xb
+ 596 00d7 3B       		.uleb128 0x3b
+ 597 00d8 0B       		.uleb128 0xb
+ 598 00d9 49       		.uleb128 0x49
+ 599 00da 13       		.uleb128 0x13
+ 600 00db 3F       		.uleb128 0x3f
+ 601 00dc 19       		.uleb128 0x19
+ 602 00dd 02       		.uleb128 0x2
+ 603 00de 18       		.uleb128 0x18
+ 604 00df 00       		.byte	0
+ 605 00e0 00       		.byte	0
+ 606 00e1 0F       		.uleb128 0xf
+ 607 00e2 2E       		.uleb128 0x2e
+ 608 00e3 00       		.byte	0
+ 609 00e4 3F       		.uleb128 0x3f
+ 610 00e5 19       		.uleb128 0x19
+ 611 00e6 3C       		.uleb128 0x3c
+ 612 00e7 19       		.uleb128 0x19
+ 613 00e8 6E       		.uleb128 0x6e
+ 614 00e9 0E       		.uleb128 0xe
+ 615 00ea 03       		.uleb128 0x3
+ 616 00eb 0E       		.uleb128 0xe
+ 617 00ec 3A       		.uleb128 0x3a
+ 618 00ed 0B       		.uleb128 0xb
+ 619 00ee 3B       		.uleb128 0x3b
+ 620 00ef 0B       		.uleb128 0xb
+ 621 00f0 00       		.byte	0
+ 622 00f1 00       		.byte	0
+ 623 00f2 00       		.byte	0
+ 624              		.section	.debug_aranges,"",%progbits
+ 625 0000 44000000 		.4byte	0x44
+ 626 0004 0200     		.2byte	0x2
+ 627 0006 00000000 		.4byte	.Ldebug_info0
+ 628 000a 04       		.byte	0x4
+ 629 000b 00       		.byte	0
+ 630 000c 0000     		.2byte	0
+ 631 000e 0000     		.2byte	0
+ 632 0010 00000000 		.4byte	.LFB65
+ 633 0014 10000000 		.4byte	.LFE65-.LFB65
+ 634 0018 00000000 		.4byte	.LFB66
+ 635 001c 08000000 		.4byte	.LFE66-.LFB66
+ 636 0020 00000000 		.4byte	.LFB67
+ 637 0024 08000000 		.4byte	.LFE67-.LFB67
+ 638 0028 00000000 		.4byte	.LFB64
+ 639 002c 20000000 		.4byte	.LFE64-.LFB64
+ 640 0030 00000000 		.4byte	.LFB68
+ 641 0034 10000000 		.4byte	.LFE68-.LFB68
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 13
 
 
- 642 0044 00000000 		.4byte	0
- 643              		.section	.debug_ranges,"",%progbits
- 644              	.Ldebug_ranges0:
- 645 0000 00000000 		.4byte	.LFB65
- 646 0004 10000000 		.4byte	.LFE65
- 647 0008 00000000 		.4byte	.LFB66
- 648 000c 08000000 		.4byte	.LFE66
- 649 0010 00000000 		.4byte	.LFB67
- 650 0014 08000000 		.4byte	.LFE67
- 651 0018 00000000 		.4byte	.LFB64
- 652 001c 20000000 		.4byte	.LFE64
- 653 0020 00000000 		.4byte	.LFB68
- 654 0024 0C000000 		.4byte	.LFE68
- 655 0028 00000000 		.4byte	.LFB69
- 656 002c 0C000000 		.4byte	.LFE69
- 657 0030 00000000 		.4byte	0
- 658 0034 00000000 		.4byte	0
- 659              		.section	.debug_line,"",%progbits
- 660              	.Ldebug_line0:
- 661 0000 C8010000 		.section	.debug_str,"MS",%progbits,1
- 661      02006201 
- 661      00000201 
- 661      FB0E0D00 
- 661      01010101 
- 662              	.LASF28:
- 663 0000 67657454 		.ascii	"getTime\000"
- 663      696D6500 
- 664              	.LASF9:
- 665 0008 5F5F696E 		.ascii	"__int32_t\000"
- 665      7433325F 
- 665      7400
- 666              	.LASF22:
- 667 0012 54696D65 		.ascii	"Timer_Stopur_Start\000"
- 667      725F5374 
- 667      6F707572 
- 667      5F537461 
- 667      727400
- 668              	.LASF10:
- 669 0025 696E7433 		.ascii	"int32_t\000"
- 669      325F7400 
- 670              	.LASF21:
- 671 002d 6973725F 		.ascii	"isr_timer_StartEx\000"
- 671      74696D65 
- 671      725F5374 
- 671      61727445 
- 671      7800
- 672              	.LASF11:
- 673 003f 666C6F61 		.ascii	"float\000"
- 673      7400
- 674              	.LASF1:
- 675 0045 756E7369 		.ascii	"unsigned char\000"
- 675      676E6564 
- 675      20636861 
- 675      7200
- 676              	.LASF24:
- 677 0053 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 677      43313120 
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 14
+ 642 0038 00000000 		.4byte	.LFB69
+ 643 003c 0C000000 		.4byte	.LFE69-.LFB69
+ 644 0040 00000000 		.4byte	0
+ 645 0044 00000000 		.4byte	0
+ 646              		.section	.debug_ranges,"",%progbits
+ 647              	.Ldebug_ranges0:
+ 648 0000 00000000 		.4byte	.LFB65
+ 649 0004 10000000 		.4byte	.LFE65
+ 650 0008 00000000 		.4byte	.LFB66
+ 651 000c 08000000 		.4byte	.LFE66
+ 652 0010 00000000 		.4byte	.LFB67
+ 653 0014 08000000 		.4byte	.LFE67
+ 654 0018 00000000 		.4byte	.LFB64
+ 655 001c 20000000 		.4byte	.LFE64
+ 656 0020 00000000 		.4byte	.LFB68
+ 657 0024 10000000 		.4byte	.LFE68
+ 658 0028 00000000 		.4byte	.LFB69
+ 659 002c 0C000000 		.4byte	.LFE69
+ 660 0030 00000000 		.4byte	0
+ 661 0034 00000000 		.4byte	0
+ 662              		.section	.debug_line,"",%progbits
+ 663              	.Ldebug_line0:
+ 664 0000 C9010000 		.section	.debug_str,"MS",%progbits,1
+ 664      02006201 
+ 664      00000201 
+ 664      FB0E0D00 
+ 664      01010101 
+ 665              	.LASF28:
+ 666 0000 67657454 		.ascii	"getTime\000"
+ 666      696D6500 
+ 667              	.LASF26:
+ 668 0008 433A5C55 		.ascii	"C:\\Users\\Morten\\Desktop\\E5PRJ3\\LCD_displayMedT"
+ 668      73657273 
+ 668      5C4D6F72 
+ 668      74656E5C 
+ 668      4465736B 
+ 669 0036 696D6572 		.ascii	"imer\\LCD_display.cydsn\000"
+ 669      5C4C4344 
+ 669      5F646973 
+ 669      706C6179 
+ 669      2E637964 
+ 670              	.LASF9:
+ 671 004d 5F5F696E 		.ascii	"__int32_t\000"
+ 671      7433325F 
+ 671      7400
+ 672              	.LASF22:
+ 673 0057 54696D65 		.ascii	"Timer_Stopur_Start\000"
+ 673      725F5374 
+ 673      6F707572 
+ 673      5F537461 
+ 673      727400
+ 674              	.LASF10:
+ 675 006a 696E7433 		.ascii	"int32_t\000"
+ 675      325F7400 
+ 676              	.LASF21:
+ 677 0072 6973725F 		.ascii	"isr_timer_StartEx\000"
+ 677      74696D65 
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 14
 
 
- 677      352E342E 
- 677      31203230 
- 677      31363036 
- 678 0086 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 678      20726576 
- 678      6973696F 
- 678      6E203233 
- 678      37373135 
- 679 00b9 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 679      66756E63 
- 679      74696F6E 
- 679      2D736563 
- 679      74696F6E 
- 680              	.LASF18:
- 681 00e1 73746F70 		.ascii	"stopTimer\000"
- 681      54696D65 
+ 677      725F5374 
+ 677      61727445 
+ 677      7800
+ 678              	.LASF11:
+ 679 0084 666C6F61 		.ascii	"float\000"
+ 679      7400
+ 680              	.LASF1:
+ 681 008a 756E7369 		.ascii	"unsigned char\000"
+ 681      676E6564 
+ 681      20636861 
  681      7200
- 682              	.LASF5:
- 683 00eb 6C6F6E67 		.ascii	"long unsigned int\000"
- 683      20756E73 
- 683      69676E65 
- 683      6420696E 
- 683      7400
- 684              	.LASF27:
- 685 00fd 6973725F 		.ascii	"isr_timer\000"
- 685      74696D65 
- 685      7200
- 686              	.LASF3:
- 687 0107 73686F72 		.ascii	"short unsigned int\000"
- 687      7420756E 
- 687      7369676E 
- 687      65642069 
- 687      6E7400
- 688              	.LASF16:
- 689 011a 696E6974 		.ascii	"initTimer\000"
- 689      54696D65 
- 689      7200
- 690              	.LASF19:
- 691 0124 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 691      52784275 
- 691      66666572 
- 691      00
- 692              	.LASF12:
- 693 0131 646F7562 		.ascii	"double\000"
- 693      6C6500
- 694              	.LASF17:
- 695 0138 73746172 		.ascii	"startTimer\000"
- 695      7454696D 
- 695      657200
- 696              	.LASF8:
- 697 0143 756E7369 		.ascii	"unsigned int\000"
- 697      676E6564 
- 697      20696E74 
+ 682              	.LASF24:
+ 683 0098 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 683      43313120 
+ 683      352E342E 
+ 683      31203230 
+ 683      31363036 
+ 684 00cb 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 684      20726576 
+ 684      6973696F 
+ 684      6E203233 
+ 684      37373135 
+ 685 00fe 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 685      66756E63 
+ 685      74696F6E 
+ 685      2D736563 
+ 685      74696F6E 
+ 686              	.LASF18:
+ 687 0126 73746F70 		.ascii	"stopTimer\000"
+ 687      54696D65 
+ 687      7200
+ 688              	.LASF5:
+ 689 0130 6C6F6E67 		.ascii	"long unsigned int\000"
+ 689      20756E73 
+ 689      69676E65 
+ 689      6420696E 
+ 689      7400
+ 690              	.LASF27:
+ 691 0142 6973725F 		.ascii	"isr_timer\000"
+ 691      74696D65 
+ 691      7200
+ 692              	.LASF3:
+ 693 014c 73686F72 		.ascii	"short unsigned int\000"
+ 693      7420756E 
+ 693      7369676E 
+ 693      65642069 
+ 693      6E7400
+ 694              	.LASF16:
+ 695 015f 696E6974 		.ascii	"initTimer\000"
+ 695      54696D65 
+ 695      7200
+ 696              	.LASF19:
+ 697 0169 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 697      52784275 
+ 697      66666572 
  697      00
- 698              	.LASF23:
- 699 0150 54696D65 		.ascii	"Timer_Stopur_Stop\000"
- 699      725F5374 
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 15
+ 698              	.LASF12:
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 15
 
 
- 699      6F707572 
- 699      5F53746F 
- 699      7000
- 700              	.LASF7:
- 701 0162 6C6F6E67 		.ascii	"long long unsigned int\000"
- 701      206C6F6E 
- 701      6720756E 
- 701      7369676E 
- 701      65642069 
- 702              	.LASF14:
- 703 0179 6C6F6E67 		.ascii	"long double\000"
- 703      20646F75 
- 703      626C6500 
- 704              	.LASF15:
- 705 0185 73697A65 		.ascii	"sizetype\000"
- 705      74797065 
- 705      00
- 706              	.LASF6:
- 707 018e 6C6F6E67 		.ascii	"long long int\000"
+ 699 0176 646F7562 		.ascii	"double\000"
+ 699      6C6500
+ 700              	.LASF17:
+ 701 017d 73746172 		.ascii	"startTimer\000"
+ 701      7454696D 
+ 701      657200
+ 702              	.LASF8:
+ 703 0188 756E7369 		.ascii	"unsigned int\000"
+ 703      676E6564 
+ 703      20696E74 
+ 703      00
+ 704              	.LASF23:
+ 705 0195 54696D65 		.ascii	"Timer_Stopur_Stop\000"
+ 705      725F5374 
+ 705      6F707572 
+ 705      5F53746F 
+ 705      7000
+ 706              	.LASF7:
+ 707 01a7 6C6F6E67 		.ascii	"long long unsigned int\000"
  707      206C6F6E 
- 707      6720696E 
- 707      7400
- 708              	.LASF13:
- 709 019c 63686172 		.ascii	"char\000"
- 709      00
- 710              	.LASF20:
- 711 01a1 636F756E 		.ascii	"count\000"
- 711      7400
- 712              	.LASF2:
- 713 01a7 73686F72 		.ascii	"short int\000"
- 713      7420696E 
+ 707      6720756E 
+ 707      7369676E 
+ 707      65642069 
+ 708              	.LASF14:
+ 709 01be 6C6F6E67 		.ascii	"long double\000"
+ 709      20646F75 
+ 709      626C6500 
+ 710              	.LASF15:
+ 711 01ca 73697A65 		.ascii	"sizetype\000"
+ 711      74797065 
+ 711      00
+ 712              	.LASF6:
+ 713 01d3 6C6F6E67 		.ascii	"long long int\000"
+ 713      206C6F6E 
+ 713      6720696E 
  713      7400
- 714              	.LASF29:
- 715 01b1 636C6561 		.ascii	"clearTimer\000"
- 715      7254696D 
- 715      657200
- 716              	.LASF4:
- 717 01bc 6C6F6E67 		.ascii	"long int\000"
- 717      20696E74 
- 717      00
- 718              	.LASF25:
- 719 01c5 53746F70 		.ascii	"Stopur.c\000"
- 719      75722E63 
- 719      00
- 720              	.LASF0:
- 721 01ce 7369676E 		.ascii	"signed char\000"
- 721      65642063 
- 721      68617200 
- 722              	.LASF26:
- 723 01da 433A5C55 		.ascii	"C:\\Users\\Morten\\Desktop\\LCD_displayMedTimer\\LC"
- 723      73657273 
- 723      5C4D6F72 
- 723      74656E5C 
- 723      4465736B 
- 724 0208 445F6469 		.ascii	"D_display.cydsn\000"
- 724      73706C61 
- 724      792E6379 
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOec4AR.s 			page 16
+ 714              	.LASF13:
+ 715 01e1 63686172 		.ascii	"char\000"
+ 715      00
+ 716              	.LASF20:
+ 717 01e6 636F756E 		.ascii	"count\000"
+ 717      7400
+ 718              	.LASF2:
+ 719 01ec 73686F72 		.ascii	"short int\000"
+ 719      7420696E 
+ 719      7400
+ 720              	.LASF29:
+ 721 01f6 636C6561 		.ascii	"clearTimer\000"
+ 721      7254696D 
+ 721      657200
+ 722              	.LASF4:
+ 723 0201 6C6F6E67 		.ascii	"long int\000"
+ 723      20696E74 
+ 723      00
+ 724              	.LASF25:
+ 725 020a 53746F70 		.ascii	"Stopur.c\000"
+ 725      75722E63 
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc26p184.s 			page 16
 
 
- 724      64736E00 
- 725              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 725      00
+ 726              	.LASF0:
+ 727 0213 7369676E 		.ascii	"signed char\000"
+ 727      65642063 
+ 727      68617200 
+ 728              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
