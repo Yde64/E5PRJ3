@@ -1,16 +1,18 @@
   <!DOCTYPE html>
   <meta charset="utf-8" />
-  <title>WebSocket Test</title>
-  <iframe id="frmFile" src="temp.txt" style="display: none;"></iframe>
+  <title>CHUG CHAMP WebSocket</title>
+  <iframe id="frmFile" src="log.txt" style="display: none;"></iframe>
   <script language="javascript" type="text/javascript">
 
   var wsUri = "ws://rpi:3000/";
   var output;
+  var init;
   var counter = 0;
 
   function init()
   {
     output = document.getElementById("output");
+    init = document.getElementById("init");
     testWebSocket();
   }
 
@@ -20,18 +22,20 @@
     websocket.onopen = function(evt) { onOpen(evt) };
     websocket.onclose = function(evt) { onClose(evt) };
     websocket.onmessage = function(evt) { onMessage(evt) };
-    websocket.onerror = function(evt) { onError(evt) };
+    //websocket.onerror = function(evt) { onError(evt) };
   }
 
   function onOpen(evt)
   {
-    writeToScreen("CONNECTED");
-    doSend("WebSocket rocks");
+    writeToScreeninit('<span style="color: green;">CONNECTED</span> ');
+    
+    //doSend("WebSocket rocks");
   }
 
   function onClose(evt)
   {
-    writeToScreen("DISCONNECTED");
+    init.innerHTML = "";
+    writeToScreeninit('<span style="color: red;">DISCONNECTED</span> ');
   }
 
   function onMessage(evt)
@@ -40,16 +44,19 @@
     //websocket.close();
   }
 
-  function onError(evt)
+  function reconnect(evt)
   {
-    writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+    init.innerHTML = "";
+    testWebSocket();
   }
 
   window.addEventListener("load", init, false);
 
   async function updatedisp()
   {
-	  let response = await fetch('temp.txt');
+    output.innerHTML = "";
+
+	  let response = await fetch('log.txt');
 	  let text = await response.text();
 
     var x = 0;
@@ -75,7 +82,7 @@
 	  {
 	    var curLine = textString[i];
 	    writeToScreen(curLine);
-	  }
+    }
 
   }
 
@@ -93,17 +100,49 @@
     output.appendChild(pre);
   }
 
+  function writeToScreeninit(message)
+  {
+    var pre = document.createElement("p");
+    pre.style.wordWrap = "break-word";
+    pre.innerHTML = message;
+    init.appendChild(pre);
+  }
+
   window.addEventListener("load", init, false);
 
   function dellog()
   {
-    doSend("SLETLOG");
+    websocket.send("SLETLOG");
     output.innerHTML = "";
   }
   </script>
 
-  <h2>WebSocket Test</h2>
+  <h2>CHUG CHAMP LOG</h2>
 
-  <button type="button" onclick="dellog()">Slet log</button>
-  <button type="button" onclick="updatedisp()">Vis log</button>
+  <style>
+    .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    
+    .button2 {background-color: #008CBA;} /* Blue */
+    .button3 {background-color: #f44336;} /* Red */ 
+    .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+    .button5 {background-color: #555555;} /* Black */
+    </style>
+
+
+
+  <button class="button button2" onclick="dellog()">Slet log</button>
+  <button class="button button3" onclick="updatedisp()">Vis log</button>
+  <button class="button button4" onclick="reconnect()">BITCONNECT</button>
+  <div id="init"></div>
   <div id="output"></div>
