@@ -27,7 +27,7 @@ endif
 
 ifeq ($(CCPREFIX),)
 
-	CCPREFIX = arm-linux-gnueabi-
+	CCPREFIX = arm-poky-linux-gnueabi-
 
 endif
 
