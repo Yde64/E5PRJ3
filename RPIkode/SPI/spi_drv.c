@@ -280,24 +280,31 @@ ssize_t my_spi_read_byte(struct file *filep, struct spi_device *spi, int *data)
 
   */ 
 
-  struct spi_transfer t[2];
+  struct spi_transfer t[3];
   struct spi_message m;
   int dataSek = 0, dataMs = 0;
+  int sendSek = 0x20;
+  int sendMs = 0x10;
   int modtaget = 0x1A;
 
   memset(t, 0, sizeof(t));
   spi_message_init(&m);
   m.spi = spi;
 
-  t[0].tx_buf = &modtaget;
-  t[0].rx_buf = &dataSek;
+  t[0].tx_buf = &sendSek;
+  t[0].rx_buf = NULL;
   t[0].len = 1;
   spi_message_add_tail(&t[0], &m);
 
-  t[1].tx_buf = &modtaget; 
-  t[1].rx_buf = &dataMs;
+  t[1].tx_buf = &sendMs;
+  t[1].rx_buf = &dataSek;
   t[1].len = 1;
   spi_message_add_tail(&t[1], &m);
+
+  t[2].tx_buf = NULL; 
+  t[2].rx_buf = &dataMs;
+  t[2].len = 1;
+  spi_message_add_tail(&t[2], &m);
 
   int err = spi_sync(m.spi, &m);
   if (err < 0)
@@ -306,6 +313,10 @@ ssize_t my_spi_read_byte(struct file *filep, struct spi_device *spi, int *data)
     printk("Error code%i", err);
     return -EFAULT;
   }
+
+  printk("SEK: %i", dataSek);
+  printk("MS: %i", dataMs);
+
   int Msparity = (dataMs >> 2) % 2;
   int Sekparity = dataSek % 2;
 
