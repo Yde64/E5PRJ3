@@ -374,7 +374,7 @@ static int spi_drv_probe(struct spi_device *sdev)
   /* We map spi_devs index to minor number here */
   spi_drv_device = device_create(spi_drv_class, NULL,
                                  MKDEV(MAJOR(devno), spi_devs_cnt),
-                                 NULL, "MCP3202%d", spi_devs_cnt);
+                                 NULL, "SPI_%d", spi_devs_cnt);
   if (IS_ERR(spi_drv_device))
     printk(KERN_ALERT "FAILED TO CREATE DEVICE\n");
   else
