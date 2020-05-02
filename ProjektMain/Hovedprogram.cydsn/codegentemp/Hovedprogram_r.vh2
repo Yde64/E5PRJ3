@@ -1,5 +1,5 @@
 -- Project:   Hovedprogram
--- Generated: 04/04/2020 23:43:05
+-- Generated: 05/02/2020 13:34:47
 -- PSoC Creator  4.3
 
 ENTITY Hovedprogram IS
@@ -40,9 +40,7 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     SIGNAL Net_23 : bit;
     ATTRIBUTE placement_force OF Net_23 : SIGNAL IS "U(3,4,B)1";
     SIGNAL Net_34 : bit;
-    ATTRIBUTE placement_force OF Net_34 : SIGNAL IS "U(2,5,B)2";
-    SIGNAL Net_348 : bit;
-    ATTRIBUTE placement_force OF Net_348 : SIGNAL IS "U(2,4,A)1";
+    ATTRIBUTE placement_force OF Net_34 : SIGNAL IS "U(3,5,B)2";
     SIGNAL Net_360 : bit;
     ATTRIBUTE placement_force OF Net_360 : SIGNAL IS "U(2,0,A)2";
     SIGNAL Net_373 : bit;
@@ -54,24 +52,26 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     SIGNAL Net_583 : bit;
     ATTRIBUTE placement_force OF Net_583 : SIGNAL IS "U(1,3,A)2";
     SIGNAL Net_584 : bit;
-    ATTRIBUTE placement_force OF Net_584 : SIGNAL IS "U(1,4,B)1";
-    SIGNAL Net_590 : bit;
-    ATTRIBUTE placement_force OF Net_590 : SIGNAL IS "U(2,4,B)3";
-    SIGNAL Net_624 : bit;
-    SIGNAL Net_627 : bit;
+    ATTRIBUTE placement_force OF Net_584 : SIGNAL IS "U(1,4,B)3";
     SIGNAL Net_628 : bit;
-    ATTRIBUTE placement_force OF Net_628 : SIGNAL IS "U(2,1,B)0";
+    ATTRIBUTE placement_force OF Net_628 : SIGNAL IS "U(3,1,A)0";
     SIGNAL Net_632 : bit;
-    ATTRIBUTE placement_force OF Net_632 : SIGNAL IS "U(2,2,B)0";
+    ATTRIBUTE placement_force OF Net_632 : SIGNAL IS "U(3,2,A)3";
     SIGNAL Net_637 : bit;
     SIGNAL Net_701 : bit;
     ATTRIBUTE placement_force OF Net_701 : SIGNAL IS "U(0,0,B)1";
     SIGNAL Net_702 : bit;
-    ATTRIBUTE placement_force OF Net_702 : SIGNAL IS "U(2,3,B)0";
+    ATTRIBUTE placement_force OF Net_702 : SIGNAL IS "U(3,3,A)3";
     SIGNAL Net_706 : bit;
     ATTRIBUTE udbclken_assigned OF Net_706 : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_706 : SIGNAL IS true;
     SIGNAL Net_706_local : bit;
+    SIGNAL Net_721 : bit;
+    ATTRIBUTE placement_force OF Net_721 : SIGNAL IS "U(3,4,A)2";
+    SIGNAL Net_722 : bit;
+    ATTRIBUTE placement_force OF Net_722 : SIGNAL IS "U(3,4,A)3";
+    SIGNAL Net_744 : bit;
+    SIGNAL Net_747 : bit;
     SIGNAL Pin_2(0)__PA : bit;
     SIGNAL Rx_1(0)__PA : bit;
     SIGNAL SAR_p1(0)__PA : bit;
@@ -120,7 +120,7 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     SIGNAL \SPIM_1:BSPIM:count_5\ : bit;
     SIGNAL \SPIM_1:BSPIM:count_6\ : bit;
     SIGNAL \SPIM_1:BSPIM:dpcounter_one\ : bit;
-    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:dpcounter_one\ : SIGNAL IS "U(0,3,B)2";
+    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:dpcounter_one\ : SIGNAL IS "U(0,4,A)1";
     SIGNAL \SPIM_1:BSPIM:is_spi_done\ : bit;
     ATTRIBUTE placement_force OF \SPIM_1:BSPIM:is_spi_done\ : SIGNAL IS "U(0,3,A)2";
     SIGNAL \SPIM_1:BSPIM:ld_ident\ : bit;
@@ -128,7 +128,7 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     SIGNAL \SPIM_1:BSPIM:load_cond\ : bit;
     ATTRIBUTE placement_force OF \SPIM_1:BSPIM:load_cond\ : SIGNAL IS "U(0,4,A)0";
     SIGNAL \SPIM_1:BSPIM:load_rx_data\ : bit;
-    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:load_rx_data\ : SIGNAL IS "U(0,4,A)1";
+    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:load_rx_data\ : SIGNAL IS "U(0,4,A)2";
     SIGNAL \SPIM_1:BSPIM:mosi_from_dp\ : bit;
     SIGNAL \SPIM_1:BSPIM:mosi_from_dp_reg\ : bit;
     ATTRIBUTE placement_force OF \SPIM_1:BSPIM:mosi_from_dp_reg\ : SIGNAL IS "U(1,4,A)1";
@@ -152,7 +152,7 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     SIGNAL \SPIM_1:BSPIM:tx_status_1\ : bit;
     SIGNAL \SPIM_1:BSPIM:tx_status_2\ : bit;
     SIGNAL \SPIM_1:BSPIM:tx_status_4\ : bit;
-    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:tx_status_4\ : SIGNAL IS "U(1,4,B)3";
+    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:tx_status_4\ : SIGNAL IS "U(1,4,B)0";
     SIGNAL \SPIM_1:Net_276\ : bit;
     ATTRIBUTE udbclken_assigned OF \SPIM_1:Net_276\ : SIGNAL IS "True";
     ATTRIBUTE global_signal OF \SPIM_1:Net_276\ : SIGNAL IS true;
@@ -228,7 +228,7 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     SIGNAL \Timer5:TimerUDB:status_2\ : bit;
     SIGNAL \Timer5:TimerUDB:status_3\ : bit;
     SIGNAL \Timer5:TimerUDB:status_tc\ : bit;
-    ATTRIBUTE placement_force OF \Timer5:TimerUDB:status_tc\ : SIGNAL IS "U(3,3,A)1";
+    ATTRIBUTE placement_force OF \Timer5:TimerUDB:status_tc\ : SIGNAL IS "U(3,3,B)0";
     SIGNAL \Timer_LCD:TimerUDB:control_0\ : bit;
     SIGNAL \Timer_LCD:TimerUDB:control_1\ : bit;
     SIGNAL \Timer_LCD:TimerUDB:control_2\ : bit;
@@ -256,15 +256,15 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     SIGNAL \Timer_Stopur:TimerUDB:status_2\ : bit;
     SIGNAL \Timer_Stopur:TimerUDB:status_3\ : bit;
     SIGNAL \Timer_Stopur:TimerUDB:status_tc\ : bit;
-    ATTRIBUTE placement_force OF \Timer_Stopur:TimerUDB:status_tc\ : SIGNAL IS "U(2,4,A)3";
+    ATTRIBUTE placement_force OF \Timer_Stopur:TimerUDB:status_tc\ : SIGNAL IS "U(2,4,A)1";
     SIGNAL \UART_1:BUART:counter_load_not\ : bit;
-    ATTRIBUTE placement_force OF \UART_1:BUART:counter_load_not\ : SIGNAL IS "U(0,1,B)3";
+    ATTRIBUTE placement_force OF \UART_1:BUART:counter_load_not\ : SIGNAL IS "U(0,0,B)3";
     SIGNAL \UART_1:BUART:pollcount_0\ : bit;
     ATTRIBUTE placement_force OF \UART_1:BUART:pollcount_0\ : SIGNAL IS "U(1,0,A)3";
     SIGNAL \UART_1:BUART:pollcount_1\ : bit;
     ATTRIBUTE placement_force OF \UART_1:BUART:pollcount_1\ : SIGNAL IS "U(1,0,A)2";
     SIGNAL \UART_1:BUART:rx_bitclk_enable\ : bit;
-    ATTRIBUTE placement_force OF \UART_1:BUART:rx_bitclk_enable\ : SIGNAL IS "U(1,0,A)1";
+    ATTRIBUTE placement_force OF \UART_1:BUART:rx_bitclk_enable\ : SIGNAL IS "U(1,1,B)1";
     SIGNAL \UART_1:BUART:rx_count7_tc\ : bit;
     SIGNAL \UART_1:BUART:rx_count_0\ : bit;
     SIGNAL \UART_1:BUART:rx_count_1\ : bit;
@@ -298,32 +298,32 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     SIGNAL \UART_1:BUART:rx_status_5\ : bit;
     ATTRIBUTE placement_force OF \UART_1:BUART:rx_status_5\ : SIGNAL IS "U(1,3,B)0";
     SIGNAL \UART_1:BUART:tx_bitclk\ : bit;
-    ATTRIBUTE placement_force OF \UART_1:BUART:tx_bitclk\ : SIGNAL IS "U(1,1,A)0";
+    ATTRIBUTE placement_force OF \UART_1:BUART:tx_bitclk\ : SIGNAL IS "U(0,1,B)2";
     SIGNAL \UART_1:BUART:tx_bitclk_enable_pre\ : bit;
     SIGNAL \UART_1:BUART:tx_counter_dp\ : bit;
     SIGNAL \UART_1:BUART:tx_ctrl_mark_last\ : bit;
-    ATTRIBUTE placement_force OF \UART_1:BUART:tx_ctrl_mark_last\ : SIGNAL IS "U(0,2,A)1";
+    ATTRIBUTE placement_force OF \UART_1:BUART:tx_ctrl_mark_last\ : SIGNAL IS "U(0,2,A)2";
     SIGNAL \UART_1:BUART:tx_fifo_empty\ : bit;
     SIGNAL \UART_1:BUART:tx_fifo_notfull\ : bit;
     SIGNAL \UART_1:BUART:tx_shift_out\ : bit;
     SIGNAL \UART_1:BUART:tx_state_0\ : bit;
-    ATTRIBUTE placement_force OF \UART_1:BUART:tx_state_0\ : SIGNAL IS "U(1,1,B)2";
+    ATTRIBUTE placement_force OF \UART_1:BUART:tx_state_0\ : SIGNAL IS "U(1,1,B)0";
     SIGNAL \UART_1:BUART:tx_state_1\ : bit;
-    ATTRIBUTE placement_force OF \UART_1:BUART:tx_state_1\ : SIGNAL IS "U(0,1,A)1";
+    ATTRIBUTE placement_force OF \UART_1:BUART:tx_state_1\ : SIGNAL IS "U(1,0,B)0";
     SIGNAL \UART_1:BUART:tx_state_2\ : bit;
-    ATTRIBUTE placement_force OF \UART_1:BUART:tx_state_2\ : SIGNAL IS "U(0,1,B)1";
+    ATTRIBUTE placement_force OF \UART_1:BUART:tx_state_2\ : SIGNAL IS "U(0,1,A)0";
     SIGNAL \UART_1:BUART:tx_status_0\ : bit;
     ATTRIBUTE placement_force OF \UART_1:BUART:tx_status_0\ : SIGNAL IS "U(1,1,A)1";
     SIGNAL \UART_1:BUART:tx_status_2\ : bit;
     ATTRIBUTE placement_force OF \UART_1:BUART:tx_status_2\ : SIGNAL IS "U(1,1,B)3";
     SIGNAL \UART_1:BUART:txn\ : bit;
-    ATTRIBUTE placement_force OF \UART_1:BUART:txn\ : SIGNAL IS "U(0,1,A)0";
+    ATTRIBUTE placement_force OF \UART_1:BUART:txn\ : SIGNAL IS "U(0,0,A)0";
     SIGNAL \UART_1:Net_9\ : bit;
     ATTRIBUTE udbclken_assigned OF \UART_1:Net_9\ : SIGNAL IS "True";
     ATTRIBUTE global_signal OF \UART_1:Net_9\ : SIGNAL IS true;
     SIGNAL \UART_1:Net_9_local\ : bit;
     SIGNAL __ONE__ : bit;
-    ATTRIBUTE placement_force OF __ONE__ : SIGNAL IS "U(2,0,A)0";
+    ATTRIBUTE placement_force OF __ONE__ : SIGNAL IS "U(1,1,B)2";
     ATTRIBUTE POWER OF __ONE__ : SIGNAL IS true;
     SIGNAL __ZERO__ : bit;
     ATTRIBUTE GROUND OF __ZERO__ : SIGNAL IS true;
@@ -430,15 +430,15 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     SIGNAL \Timer5:TimerUDB:sT16:timerdp:u1.cmsbo__sig\ : bit;
     ATTRIBUTE Location OF ClockBlock : LABEL IS "F(Clock,0)";
     ATTRIBUTE lib_model OF LEDdata2(0) : LABEL IS "iocell1";
-    ATTRIBUTE Location OF LEDdata2(0) : LABEL IS "P15[3]";
+    ATTRIBUTE Location OF LEDdata2(0) : LABEL IS "P0[6]";
     ATTRIBUTE lib_model OF LEDdata(0) : LABEL IS "iocell2";
-    ATTRIBUTE Location OF LEDdata(0) : LABEL IS "P15[1]";
+    ATTRIBUTE Location OF LEDdata(0) : LABEL IS "P0[5]";
     ATTRIBUTE lib_model OF Rx_1(0) : LABEL IS "iocell3";
     ATTRIBUTE Location OF Rx_1(0) : LABEL IS "P12[6]";
     ATTRIBUTE lib_model OF Tx_1(0) : LABEL IS "iocell4";
     ATTRIBUTE Location OF Tx_1(0) : LABEL IS "P12[7]";
     ATTRIBUTE lib_model OF SAR_p2(0) : LABEL IS "iocell5";
-    ATTRIBUTE Location OF SAR_p2(0) : LABEL IS "P0[6]";
+    ATTRIBUTE Location OF SAR_p2(0) : LABEL IS "P0[7]";
     ATTRIBUTE lib_model OF Pin_2(0) : LABEL IS "iocell6";
     ATTRIBUTE Location OF Pin_2(0) : LABEL IS "P15[4]";
     ATTRIBUTE lib_model OF SAR_p1(0) : LABEL IS "iocell7";
@@ -454,7 +454,7 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE lib_model OF \Timer1:TimerUDB:status_tc\ : LABEL IS "macrocell3";
     ATTRIBUTE Location OF \Timer1:TimerUDB:status_tc\ : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF \SPIM_1:BSPIM:dpcounter_one\ : LABEL IS "macrocell4";
-    ATTRIBUTE Location OF \SPIM_1:BSPIM:dpcounter_one\ : LABEL IS "U(0,3)";
+    ATTRIBUTE Location OF \SPIM_1:BSPIM:dpcounter_one\ : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF \SPIM_1:BSPIM:tx_status_0\ : LABEL IS "macrocell5";
     ATTRIBUTE Location OF \SPIM_1:BSPIM:tx_status_0\ : LABEL IS "U(1,4)";
     ATTRIBUTE lib_model OF \SPIM_1:BSPIM:tx_status_4\ : LABEL IS "macrocell6";
@@ -464,7 +464,7 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE lib_model OF Net_389 : LABEL IS "macrocell8";
     ATTRIBUTE Location OF Net_389 : LABEL IS "U(0,0)";
     ATTRIBUTE lib_model OF \UART_1:BUART:counter_load_not\ : LABEL IS "macrocell9";
-    ATTRIBUTE Location OF \UART_1:BUART:counter_load_not\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \UART_1:BUART:counter_load_not\ : LABEL IS "U(0,0)";
     ATTRIBUTE lib_model OF \UART_1:BUART:tx_status_0\ : LABEL IS "macrocell10";
     ATTRIBUTE Location OF \UART_1:BUART:tx_status_0\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \UART_1:BUART:tx_status_2\ : LABEL IS "macrocell11";
@@ -477,10 +477,10 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE Location OF \UART_1:BUART:rx_status_4\ : LABEL IS "U(1,2)";
     ATTRIBUTE lib_model OF \UART_1:BUART:rx_status_5\ : LABEL IS "macrocell15";
     ATTRIBUTE Location OF \UART_1:BUART:rx_status_5\ : LABEL IS "U(1,3)";
-    ATTRIBUTE lib_model OF Net_348 : LABEL IS "macrocell16";
-    ATTRIBUTE Location OF Net_348 : LABEL IS "U(2,4)";
-    ATTRIBUTE lib_model OF Net_590 : LABEL IS "macrocell17";
-    ATTRIBUTE Location OF Net_590 : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF Net_721 : LABEL IS "macrocell16";
+    ATTRIBUTE Location OF Net_721 : LABEL IS "U(3,4)";
+    ATTRIBUTE lib_model OF Net_722 : LABEL IS "macrocell17";
+    ATTRIBUTE Location OF Net_722 : LABEL IS "U(3,4)";
     ATTRIBUTE lib_model OF \Timer_Stopur:TimerUDB:status_tc\ : LABEL IS "macrocell18";
     ATTRIBUTE Location OF \Timer_Stopur:TimerUDB:status_tc\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \Timer_LCD:TimerUDB:status_tc\ : LABEL IS "macrocell19";
@@ -491,9 +491,9 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE Location OF \Timer5:TimerUDB:status_tc\ : LABEL IS "U(3,3)";
     ATTRIBUTE Location OF isr_LED_ring : LABEL IS "[IntrContainer=(0)][IntrId=(4)]";
     ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell22";
-    ATTRIBUTE Location OF __ONE__ : LABEL IS "U(2,0)";
+    ATTRIBUTE Location OF __ONE__ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \Timer3:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell1";
-    ATTRIBUTE Location OF \Timer3:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \Timer3:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \Timer3:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell1";
     ATTRIBUTE Location OF \Timer3:TimerUDB:rstSts:stsreg\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \Timer3:TimerUDB:sT16:timerdp:u0\ : LABEL IS "datapathcell1";
@@ -502,7 +502,7 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE Location OF \Timer3:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(2,1)";
     ATTRIBUTE Location OF isr_LED_pulse : LABEL IS "[IntrContainer=(0)][IntrId=(2)]";
     ATTRIBUTE lib_model OF \Timer2:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell2";
-    ATTRIBUTE Location OF \Timer2:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(2,2)";
+    ATTRIBUTE Location OF \Timer2:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF \Timer2:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell2";
     ATTRIBUTE Location OF \Timer2:TimerUDB:rstSts:stsreg\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \Timer2:TimerUDB:sT16:timerdp:u0\ : LABEL IS "datapathcell3";
@@ -544,11 +544,11 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE Location OF isr_button : LABEL IS "[IntrContainer=(0)][IntrId=(5)]";
     ATTRIBUTE Location OF \Timeout_timer:TimerHW\ : LABEL IS "F(Timer,0)";
     ATTRIBUTE lib_model OF \SPIMOutCtrl:Sync:ctrl_reg\ : LABEL IS "controlcell4";
-    ATTRIBUTE Location OF \SPIMOutCtrl:Sync:ctrl_reg\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \SPIMOutCtrl:Sync:ctrl_reg\ : LABEL IS "U(3,4)";
     ATTRIBUTE Location OF \I2C_1:I2C_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(15)]";
     ATTRIBUTE Location OF \I2C_1:I2C_FF\ : LABEL IS "F(I2C,0)";
     ATTRIBUTE lib_model OF \Timer_Stopur:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell5";
-    ATTRIBUTE Location OF \Timer_Stopur:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(3,4)";
+    ATTRIBUTE Location OF \Timer_Stopur:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \Timer_Stopur:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell8";
     ATTRIBUTE Location OF \Timer_Stopur:TimerUDB:rstSts:stsreg\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \Timer_Stopur:TimerUDB:sT16:timerdp:u0\ : LABEL IS "datapathcell12";
@@ -557,7 +557,7 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE Location OF \Timer_Stopur:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(2,4)";
     ATTRIBUTE Location OF isr_timer : LABEL IS "[IntrContainer=(0)][IntrId=(8)]";
     ATTRIBUTE lib_model OF \Timer_LCD:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell6";
-    ATTRIBUTE Location OF \Timer_LCD:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(3,5)";
+    ATTRIBUTE Location OF \Timer_LCD:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \Timer_LCD:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell9";
     ATTRIBUTE Location OF \Timer_LCD:TimerUDB:rstSts:stsreg\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \Timer_LCD:TimerUDB:sT16:timerdp:u0\ : LABEL IS "datapathcell14";
@@ -576,7 +576,7 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE Location OF isr_BlinkLED : LABEL IS "[IntrContainer=(0)][IntrId=(1)]";
     ATTRIBUTE Location OF isr_delay : LABEL IS "[IntrContainer=(0)][IntrId=(6)]";
     ATTRIBUTE lib_model OF \Timer5:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell8";
-    ATTRIBUTE Location OF \Timer5:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF \Timer5:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(3,3)";
     ATTRIBUTE lib_model OF \Timer5:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell11";
     ATTRIBUTE Location OF \Timer5:TimerUDB:rstSts:stsreg\ : LABEL IS "U(3,3)";
     ATTRIBUTE lib_model OF \Timer5:TimerUDB:sT16:timerdp:u0\ : LABEL IS "datapathcell18";
@@ -584,9 +584,9 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE lib_model OF \Timer5:TimerUDB:sT16:timerdp:u1\ : LABEL IS "datapathcell19";
     ATTRIBUTE Location OF \Timer5:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(3,3)";
     ATTRIBUTE lib_model OF Net_628 : LABEL IS "macrocell23";
-    ATTRIBUTE Location OF Net_628 : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF Net_628 : LABEL IS "U(3,1)";
     ATTRIBUTE lib_model OF Net_632 : LABEL IS "macrocell24";
-    ATTRIBUTE Location OF Net_632 : LABEL IS "U(2,2)";
+    ATTRIBUTE Location OF Net_632 : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF Net_360 : LABEL IS "macrocell25";
     ATTRIBUTE Location OF Net_360 : LABEL IS "U(2,0)";
     ATTRIBUTE lib_model OF \SPIM_1:BSPIM:load_rx_data\ : LABEL IS "macrocell26";
@@ -616,15 +616,15 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE lib_model OF Net_583 : LABEL IS "macrocell38";
     ATTRIBUTE Location OF Net_583 : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \UART_1:BUART:txn\ : LABEL IS "macrocell39";
-    ATTRIBUTE Location OF \UART_1:BUART:txn\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \UART_1:BUART:txn\ : LABEL IS "U(0,0)";
     ATTRIBUTE lib_model OF \UART_1:BUART:tx_state_1\ : LABEL IS "macrocell40";
-    ATTRIBUTE Location OF \UART_1:BUART:tx_state_1\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \UART_1:BUART:tx_state_1\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \UART_1:BUART:tx_state_0\ : LABEL IS "macrocell41";
     ATTRIBUTE Location OF \UART_1:BUART:tx_state_0\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \UART_1:BUART:tx_state_2\ : LABEL IS "macrocell42";
     ATTRIBUTE Location OF \UART_1:BUART:tx_state_2\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \UART_1:BUART:tx_bitclk\ : LABEL IS "macrocell43";
-    ATTRIBUTE Location OF \UART_1:BUART:tx_bitclk\ : LABEL IS "U(1,1)";
+    ATTRIBUTE Location OF \UART_1:BUART:tx_bitclk\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \UART_1:BUART:tx_ctrl_mark_last\ : LABEL IS "macrocell44";
     ATTRIBUTE Location OF \UART_1:BUART:tx_ctrl_mark_last\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_0\ : LABEL IS "macrocell45";
@@ -636,7 +636,7 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_2\ : LABEL IS "macrocell48";
     ATTRIBUTE Location OF \UART_1:BUART:rx_state_2\ : LABEL IS "U(1,2)";
     ATTRIBUTE lib_model OF \UART_1:BUART:rx_bitclk_enable\ : LABEL IS "macrocell49";
-    ATTRIBUTE Location OF \UART_1:BUART:rx_bitclk_enable\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \UART_1:BUART:rx_bitclk_enable\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_stop1_reg\ : LABEL IS "macrocell50";
     ATTRIBUTE Location OF \UART_1:BUART:rx_state_stop1_reg\ : LABEL IS "U(1,2)";
     ATTRIBUTE lib_model OF \UART_1:BUART:pollcount_1\ : LABEL IS "macrocell51";
@@ -650,11 +650,11 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE lib_model OF Net_23 : LABEL IS "macrocell55";
     ATTRIBUTE Location OF Net_23 : LABEL IS "U(3,4)";
     ATTRIBUTE lib_model OF Net_34 : LABEL IS "macrocell56";
-    ATTRIBUTE Location OF Net_34 : LABEL IS "U(2,5)";
+    ATTRIBUTE Location OF Net_34 : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF Net_701 : LABEL IS "macrocell57";
     ATTRIBUTE Location OF Net_701 : LABEL IS "U(0,0)";
     ATTRIBUTE lib_model OF Net_702 : LABEL IS "macrocell58";
-    ATTRIBUTE Location OF Net_702 : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF Net_702 : LABEL IS "U(3,3)";
     COMPONENT clockblockcell
         PORT (
             dclk_0 : OUT std_ulogic;
@@ -1119,7 +1119,7 @@ BEGIN
         PORT MAP(
             pa_out => LEDdata2(0)__PA,
             oe => open,
-            pin_input => Net_590,
+            pin_input => Net_722,
             pad_out => LEDdata2(0)_PAD,
             pad_in => LEDdata2(0)_PAD,
             in_clock => open,
@@ -1211,7 +1211,7 @@ BEGIN
         PORT MAP(
             pa_out => LEDdata(0)__PA,
             oe => open,
-            pin_input => Net_348,
+            pin_input => Net_721,
             pad_out => LEDdata(0)_PAD,
             pad_in => LEDdata(0)_PAD,
             in_clock => open,
@@ -1496,7 +1496,7 @@ BEGIN
 
     Pin_2:logicalport
         GENERIC MAP(
-            drive_mode => "001",
+            drive_mode => "011",
             ibuf_enabled => "1",
             id => "8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba",
             init_dr_st => "0",
@@ -2025,24 +2025,24 @@ BEGIN
             main_0 => \UART_1:BUART:rx_fifonotempty\,
             main_1 => \UART_1:BUART:rx_state_stop1_reg\);
 
-    Net_348:macrocell
+    Net_721:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1 * !main_2)",
             regmode => 0,
             clken_mode => 1)
         PORT MAP(
-            q => Net_348,
+            q => Net_721,
             main_0 => Net_584,
             main_1 => \SPIM_1:BSPIM:mosi_hs_reg\,
             main_2 => Net_637);
 
-    Net_590:macrocell
+    Net_722:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1 * main_2)",
             regmode => 0,
             clken_mode => 1)
         PORT MAP(
-            q => Net_590,
+            q => Net_722,
             main_0 => Net_584,
             main_1 => \SPIM_1:BSPIM:mosi_hs_reg\,
             main_2 => Net_637);
@@ -2680,7 +2680,7 @@ BEGIN
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => Net_624,
+            interrupt => Net_744,
             clock => ClockBlock_BUS_CLK);
 
     \ADC_SAR_1:ADC_SAR\:sarcell
@@ -2699,7 +2699,7 @@ BEGIN
             vn_ctl_udb_1 => open,
             vn_ctl_udb_0 => open,
             irq => \ADC_SAR_1:Net_252\,
-            next => Net_627,
+            next => Net_747,
             data_out_udb_11 => \ADC_SAR_1:Net_207_11\,
             data_out_udb_10 => \ADC_SAR_1:Net_207_10\,
             data_out_udb_9 => \ADC_SAR_1:Net_207_9\,
@@ -2712,7 +2712,7 @@ BEGIN
             data_out_udb_2 => \ADC_SAR_1:Net_207_2\,
             data_out_udb_1 => \ADC_SAR_1:Net_207_1\,
             data_out_udb_0 => \ADC_SAR_1:Net_207_0\,
-            eof_udb => Net_624);
+            eof_udb => Net_744);
 
     \UART_1:BUART:sTX:TxShifter:u0\:datapathcell
         GENERIC MAP(
@@ -2896,7 +2896,7 @@ BEGIN
 
     isr_button:interrupt
         GENERIC MAP(
-            int_type => "10",
+            int_type => "00",
             is_nmi => 0)
         PORT MAP(
             interrupt => Net_445,

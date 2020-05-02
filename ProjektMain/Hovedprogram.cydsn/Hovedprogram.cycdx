@@ -95,7 +95,7 @@
     <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <register name="Timer_Stopur_COUNTER" address="0x40006402" bitWidth="16" desc="UDB.A0 - Current Down Counter Value" hidden="false" />
     <register name="Timer_Stopur_PERIOD" address="0x40006422" bitWidth="16" desc="UDB.D0 - Assigned Period" hidden="false" />
-    <register name="Timer_Stopur_Control_Reg" address="0x40006472" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
+    <register name="Timer_Stopur_Control_Reg" address="0x40006473" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
       <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the Timer" hidden="false" />
       <field name="CTRL_CMODE" from="6" to="5" access="RW" resetVal="" desc="Capture Mode" hidden="false" />
       <field name="CTRL_TEN" from="4" to="4" access="RW" resetVal="" desc="Trigger Enable Bit" hidden="false" />
@@ -137,7 +137,7 @@
   </block>
   <block name="ZeroTerminal_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="SPIMOutCtrl" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <register name="SPIMOutCtrl_CONTROL_REG" address="0x40006473" bitWidth="8" desc="" hidden="false" />
+    <register name="SPIMOutCtrl_CONTROL_REG" address="0x40006472" bitWidth="8" desc="" hidden="false" />
   </block>
   <block name="Timeout_timer_clock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="SAR_p1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -212,7 +212,7 @@
     <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <register name="Timer5_COUNTER" address="0x40006404" bitWidth="16" desc="UDB.A0 - Current Down Counter Value" hidden="false" />
     <register name="Timer5_PERIOD" address="0x40006424" bitWidth="16" desc="UDB.D0 - Assigned Period" hidden="false" />
-    <register name="Timer5_Control_Reg" address="0x40006474" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
+    <register name="Timer5_Control_Reg" address="0x40006475" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
       <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the Timer" hidden="false" />
       <field name="CTRL_CMODE" from="6" to="5" access="RW" resetVal="" desc="Capture Mode" hidden="false" />
       <field name="CTRL_TEN" from="4" to="4" access="RW" resetVal="" desc="Trigger Enable Bit" hidden="false" />
@@ -264,7 +264,7 @@
     <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <register name="Timer_LCD_COUNTER" address="0x40006400" bitWidth="16" desc="UDB.A0 - Current Down Counter Value" hidden="false" />
     <register name="Timer_LCD_PERIOD" address="0x40006420" bitWidth="16" desc="UDB.D0 - Assigned Period" hidden="false" />
-    <register name="Timer_LCD_Control_Reg" address="0x40006471" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
+    <register name="Timer_LCD_Control_Reg" address="0x40006470" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
       <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the Timer" hidden="false" />
       <field name="CTRL_CMODE" from="6" to="5" access="RW" resetVal="" desc="Capture Mode" hidden="false" />
       <field name="CTRL_TEN" from="4" to="4" access="RW" resetVal="" desc="Trigger Enable Bit" hidden="false" />
@@ -421,7 +421,7 @@
     <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <register name="Timer3_COUNTER" address="0x40006506" bitWidth="16" desc="UDB.A0 - Current Down Counter Value" hidden="false" />
     <register name="Timer3_PERIOD" address="0x40006526" bitWidth="16" desc="UDB.D0 - Assigned Period" hidden="false" />
-    <register name="Timer3_Control_Reg" address="0x40006576" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
+    <register name="Timer3_Control_Reg" address="0x40006577" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
       <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the Timer" hidden="false" />
       <field name="CTRL_CMODE" from="6" to="5" access="RW" resetVal="" desc="Capture Mode" hidden="false" />
       <field name="CTRL_TEN" from="4" to="4" access="RW" resetVal="" desc="Trigger Enable Bit" hidden="false" />
@@ -470,7 +470,7 @@
     <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <register name="Timer2_COUNTER" address="0x40006406" bitWidth="16" desc="UDB.A0 - Current Down Counter Value" hidden="false" />
     <register name="Timer2_PERIOD" address="0x40006426" bitWidth="16" desc="UDB.D0 - Assigned Period" hidden="false" />
-    <register name="Timer2_Control_Reg" address="0x40006477" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
+    <register name="Timer2_Control_Reg" address="0x40006476" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
       <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the Timer" hidden="false" />
       <field name="CTRL_CMODE" from="6" to="5" access="RW" resetVal="" desc="Capture Mode" hidden="false" />
       <field name="CTRL_TEN" from="4" to="4" access="RW" resetVal="" desc="Trigger Enable Bit" hidden="false" />

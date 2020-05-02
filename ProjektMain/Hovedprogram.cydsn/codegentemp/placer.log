@@ -6,7 +6,7 @@
 
 #Build Date:         Sep  9 2019 11:47:43
 
-#File Generated:     Apr 4 2020 23:43:03
+#File Generated:     May 2 2020 13:34:36
 
 #Purpose:            
 
@@ -14,7 +14,7 @@
 
 #***************************************************************************
 
-Executing : D:\Psoc\PSoC Creator\4.3\PSoC Creator\bin/sjplacer.exe --proj-name Hovedprogram --netlist-vh2 Hovedprogram_p.vh2 --arch p35_udb4x6 --arch-file D:\Psoc\PSoC Creator\4.3\PSoC Creator\dev\arch/udbdsi_4x6_24.cydata --ip-file D:\Psoc\PSoC Creator\4.3\PSoC Creator\dev\psoc5/psoc5lp/ip_blocks.cydata --rrg-file D:\Psoc\PSoC Creator\4.3\PSoC Creator\dev\psoc5/psoc5lp/route_arch-rrg.cydata --irq-file D:\Psoc\PSoC Creator\4.3\PSoC Creator\dev\psoc5/psoc5lp/irqconn.cydata --drq-file D:\Psoc\PSoC Creator\4.3\PSoC Creator\dev\psoc5/psoc5lp/dmaconn.cydata --dsi-conn-file D:\Psoc\PSoC Creator\4.3\PSoC Creator\dev\psoc5/psoc5lp/dsiconn.cydata --pins-file pins_68-QFN.xml --lib-file Hovedprogram_p.lib --sdc-file Hovedprogram.sdc --io-pcf Hovedprogram.pci --outdir .
+Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\bin/sjplacer.exe --proj-name Hovedprogram --netlist-vh2 Hovedprogram_p.vh2 --arch p35_udb4x6 --arch-file C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\arch/udbdsi_4x6_24.cydata --ip-file C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\psoc5/psoc5lp/ip_blocks.cydata --rrg-file C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\psoc5/psoc5lp/route_arch-rrg.cydata --irq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\psoc5/psoc5lp/irqconn.cydata --drq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\psoc5/psoc5lp/dmaconn.cydata --dsi-conn-file C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\psoc5/psoc5lp/dsiconn.cydata --pins-file pins_68-QFN.xml --lib-file Hovedprogram_p.lib --sdc-file Hovedprogram.sdc --io-pcf Hovedprogram.pci --outdir .
 
 		Softjin Techologies Placer, Version 1.1
 
@@ -23,7 +23,7 @@ Build Date : Sep  9 2019	11:45:12
 D2004: Option and Settings Summary
 =============================================================
 Netlist vh2 file          - Hovedprogram_p.vh2
-Architecture file         - D:\Psoc\PSoC Creator\4.3\PSoC Creator\dev\arch/udbdsi_4x6_24.cydata
+Architecture file         - C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\arch/udbdsi_4x6_24.cydata
 Package                   - 
 Defparam file             - 
 SDC file                  - Hovedprogram.sdc
@@ -34,7 +34,7 @@ IO Placement file         - Hovedprogram.pci
 D2050: Starting reading inputs for placer
 =============================================================
 D2065: Reading netlist file : "Hovedprogram_p.vh2"
-D2065: Reading arch file : "D:\Psoc\PSoC Creator\4.3\PSoC Creator\dev\arch/udbdsi_4x6_24.cydata"
+D2065: Reading arch file : "C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\arch/udbdsi_4x6_24.cydata"
 D2051: Reading of inputs for placer completed successfully
 
 D2053: Starting placement of the design
@@ -96,7 +96,7 @@ Clock: timer_clock_1        | Frequency:  59.7 MHz | Target:   0.0 MHz
                      End of Clock Summary
 ######################################################################
 
-D2088: Phase 6, elapsed time : 0.1 (sec)
+D2088: Phase 6, elapsed time : 0.2 (sec)
 
 Phase 7
 ######################################################################
@@ -118,7 +118,7 @@ Clock: timer_clock_1        | Frequency:  59.7 MHz | Target:   0.0 MHz
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 0.9 (sec)
+D2088: Phase 7, elapsed time : 3.3 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	22
@@ -170,5 +170,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 1.6 sec.
+I2076: Total run-time: 7.9 sec.
 

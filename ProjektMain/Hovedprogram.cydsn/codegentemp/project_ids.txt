@@ -1,6 +1,6 @@
-C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Hovedprogram.cyprj|6d0a3aef-57de-4fef-8403-33a4c7bbebf1
-D:\Psoc\PSoC Creator\4.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|13835cc8-fcae-48e1-820c-b35c871455d0
-C:\Users\cring\Documents\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|dfdc527b-bb30-4311-886b-8246a0851032
-D:\Psoc\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|718e5da2-ef84-474a-90ab-38767aa85f50
-D:\Psoc\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|95d84141-0f27-48ae-9ff7-ed99042a1b30
-D:\Psoc\PSoC Creator\4.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|76d523be-9780-460f-916b-90f66c348a90
+C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Hovedprogram.cyprj|c3462a29-4d40-4ef0-a10b-438adcf57cb7
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|00381db6-ba5b-494d-bf13-8dee8d1ed4c8
+C:\Users\cring\Documents\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|9e7dd2ca-a990-407b-b0f9-8e54040a4a84
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|56b50f05-04b5-4bea-8054-6e80328a0696
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|6658be4e-b9fd-4010-8679-b9720393d531
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|e3c594d7-0d02-49b9-8c6a-7b22649b228f

@@ -30,9 +30,9 @@ void stopTimer()                 // Stopper timer_stopur
    Timer_Stopur_Stop();
 }
 
-int getTime()                    // Returnere vores count værdi som ms
+int getTime()                    // Returnerer vores count værdi som ms
 {   
-    return count*100;
+    return count * 100;
 }
 
 void clearTimer()                // nulstiller vores timer ved at sætte count til 0
@@ -42,13 +42,15 @@ void clearTimer()                // nulstiller vores timer ved at sætte count t
 
 bool timeout()
 {
-   if (count < 1200)             // incrementeres ved hvert interrupt
+   if (count >= 1200)             // incrementeres ved hvert interrupt
     {
-        return 1;
+        return 1;                 // stopper vores interrupt rutine hvis count overstiger 1200 hvilket svarer til 120s eller 2 minuter
     }
     else
     {
-        return 0;                // stopper vores interrupt rutine hvis count overstiger 1200 hvilket svarer til 120s eller 2 minuter
+        return 0;                
     } 
 }
+
+
 

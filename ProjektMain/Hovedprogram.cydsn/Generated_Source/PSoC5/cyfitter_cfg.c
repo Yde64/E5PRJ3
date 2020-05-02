@@ -159,31 +159,31 @@ CYPACKED typedef struct
 #define cy_cfg_data_table ((const cy_cfg_addrvalue_t CYFAR *)0x4800009Cu)
 
 /* IOPORT_7 Address: CYDEV_PRTDSI_PRT12_BASE Size (bytes): 6 */
-#define BS_IOPORT_7_VAL ((const uint8 CYFAR *)0x48000A3Cu)
+#define BS_IOPORT_7_VAL ((const uint8 CYFAR *)0x48000A64u)
 
 /* IDMUX_IRQ Address: CYREG_IDMUX_IRQ_CTL0 Size (bytes): 8 */
-#define BS_IDMUX_IRQ_VAL ((const uint8 CYFAR *)0x48000A44u)
+#define BS_IDMUX_IRQ_VAL ((const uint8 CYFAR *)0x48000A6Cu)
 
 /* UDB_0_2_1_CONFIG Address: CYDEV_UCFG_B0_P4_U0_BASE Size (bytes): 128 */
-#define BS_UDB_0_2_1_CONFIG_VAL ((const uint8 CYFAR *)0x48000A4Cu)
+#define BS_UDB_0_2_1_CONFIG_VAL ((const uint8 CYFAR *)0x48000A74u)
 
 /* UDB_0_4_0_CONFIG Address: CYDEV_UCFG_B0_P6_U1_BASE Size (bytes): 128 */
-#define BS_UDB_0_4_0_CONFIG_VAL ((const uint8 CYFAR *)0x48000ACCu)
+#define BS_UDB_0_4_0_CONFIG_VAL ((const uint8 CYFAR *)0x48000AF4u)
 
 /* IOPINS0_0 Address: CYREG_PRT0_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_0_VAL ((const uint8 CYFAR *)0x48000B4Cu)
+#define BS_IOPINS0_0_VAL ((const uint8 CYFAR *)0x48000B74u)
 
 /* IOPINS0_7 Address: CYREG_PRT12_DR Size (bytes): 10 */
-#define BS_IOPINS0_7_VAL ((const uint8 CYFAR *)0x48000B54u)
+#define BS_IOPINS0_7_VAL ((const uint8 CYFAR *)0x48000B7Cu)
 
 /* IOPINS0_8 Address: CYREG_PRT15_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_8_VAL ((const uint8 CYFAR *)0x48000B60u)
+#define BS_IOPINS0_8_VAL ((const uint8 CYFAR *)0x48000B88u)
 
 /* IOPINS0_1 Address: CYREG_PRT1_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x48000B68u)
+#define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x48000B90u)
 
 /* CYDEV_CLKDIST_ACFG0_CFG0 Address: CYREG_CLKDIST_ACFG0_CFG0 Size (bytes): 4 */
-#define BS_CYDEV_CLKDIST_ACFG0_CFG0_VAL ((const uint8 CYFAR *)0x48000B70u)
+#define BS_CYDEV_CLKDIST_ACFG0_CFG0_VAL ((const uint8 CYFAR *)0x48000B98u)
 
 
 /*******************************************************************************
@@ -322,7 +322,7 @@ static void AnalogSetDefault(void)
 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_RESET_CR4), (cr4 | 0x03u));
 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_RESET_CR5), (cr5 | 0x03u));
 	CY_SET_XTND_REG8((void CYFAR *)CYREG_SAR0_CSR1, 0x80u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_SAR0_SW0, 0x40u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_SAR0_SW0, 0xC0u);
 	CY_SET_XTND_REG8((void CYFAR *)CYREG_SAR0_SW3, 0x20u);
 	CyDelayUs(10u); /* Allow vref to settle before re-enabling PRES */
 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_RESET_CR5), (cr5));
@@ -375,7 +375,7 @@ uint8 CYXDATA * const CYCODE PlayerSelect__addrTable[2] = {
    incompatible with other versions of PSoC Creator. */
 const uint8 CYCODE PlayerSelect__maskTable[2] = {
 	0x04u, 
-	0x40u, 
+	0x80u, 
 };
 
 /*******************************************************************************

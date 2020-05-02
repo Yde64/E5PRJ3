@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="LCD_displayMedTimer\LCD_display\Source Files\Display.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="LCD_displayMedTimer\LCD_display\TopDesign">
 <ExpandedNodeIds>
 <v>LCD_displayMedTimer</v>
 <v>LCD_displayMedTimer\LCD_display</v>
@@ -78,22 +78,6 @@
 <v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\timer_clock_1</v>
 <v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\Timer_LCD</v>
 <v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\Timer_Stopur</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cycodeshareexport.ld</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cycodeshareimport.ld</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cycodeshareimport.scat</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cydevice.h</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cydevice_trm.h</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cydevicegnu.inc</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cydeviceiar.inc</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cydevicerv.inc</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cydisabledsheets.h</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cyfitter.h</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cyfitter_cfg.c</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cyfitter_cfg.h</v>
-<v>LCD_displayMedTimer\LCD_display\Generated_Source\PSoC5\cyfittergnu.inc</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -193,13 +177,6 @@
 <v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_LCD.lst</v>
 <v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_LCD_PM.lst</v>
 <v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_Stopur.lst</v>
-<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_Stopur_PM.lst</v>
-<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\LCD_display.elf</v>
-<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\LCD_display.hex</v>
-<v>LCD_displayMedTimer\LCD_display\CortexM3\ARM_GCC_541\Debug\LCD_display.map</v>
-<v>LCD_displayMedTimer\LCD_display\LCD_display.gpdsc</v>
-<v>LCD_displayMedTimer\LCD_display\LCD_display.rpt</v>
-<v>LCD_displayMedTimer\LCD_display\LCD_display_timing.html</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -259,6 +236,8 @@
 <name v=".\LCD_display.cydsn\LiquidCrystal_I2C.h" />
 <name v=".\LCD_display.cydsn\Display.h" />
 <name v=".\LCD_display.cydsn\Display.c" />
+<name v=".\LCD_display.cydsn\LCD_display.cydwr" />
+<name v=".\LCD_display.cydsn\TopDesign\TopDesign.cysch" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -266,7 +245,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1465, 841" SelectedTabbedMdiWindow="efd20b87-ee02-46cf-8e20-72a75ddac183"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a81e21bb-5e2e-400c-9cbf-968a63daa365" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\Stopur.c" Guid="5e4baa36-bfd7-4c83-bbe0-b5cafd9fc114" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\LiquidCrystal_I2C.c" Guid="553f095f-68c0-4434-bdb7-dda6c26d547e" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\LiquidCrystal_I2C.h" Guid="1fa32781-c3b9-4e4c-9b17-3dd2ab0e7bea" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\Display.h" Guid="9c78d5a8-12e4-4557-8aeb-9c3883b671ca" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\Display.c" Guid="efd20b87-ee02-46cf-8e20-72a75ddac183" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1055, 495" SelectedTabbedMdiWindow="b839d8bc-6e27-4f21-b3cf-b321c791b408"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a81e21bb-5e2e-400c-9cbf-968a63daa365" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\Stopur.c" Guid="5e4baa36-bfd7-4c83-bbe0-b5cafd9fc114" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\LiquidCrystal_I2C.c" Guid="553f095f-68c0-4434-bdb7-dda6c26d547e" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\LiquidCrystal_I2C.h" Guid="1fa32781-c3b9-4e4c-9b17-3dd2ab0e7bea" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\Display.h" Guid="9c78d5a8-12e4-4557-8aeb-9c3883b671ca" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\Display.c" Guid="efd20b87-ee02-46cf-8e20-72a75ddac183" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\LCD_display.cydwr" Guid="1a0da2a1-1b1b-4065-857c-d9effac4be0b" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\TopDesign\TopDesign.cysch" Guid="b839d8bc-6e27-4f21-b3cf-b321c791b408" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

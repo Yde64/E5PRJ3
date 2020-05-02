@@ -25,18 +25,25 @@
 #include <stdio.h>
 #include <stdint.h>
 #include "project.h"
+#include "UART.h"
 
 typedef struct WeightSensors_
 {
-    uint16 p1; //player1 data
-    uint16 p2; //player2 data
-    uint16 pLoser; //Loser data
+    int CalibrateP1; //buffer
+    int CalibrateP2; //buffer
+    
+    int p1; //buffer
+    int p2; //buffer
+    int p1cal; //player1 data
+    int p2cal; //player2 data
+    int pLoser; //Loser data
 
 }WeightSensors;
 
-uint16 readdata1();
-uint16 readdata2();
-uint16 readdataLoser(int x);
+int getWeight(int Player);
+int getCalWeight(int Player);
+int getWeightLoser(int x);
+void CalibrateSensors();
 
 void WeightSensorsInit();
 int CompareWeight();
