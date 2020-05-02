@@ -1,0 +1,1096 @@
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"SPI_Master.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.isr_spi_rx,"ax",%progbits
+  20              		.align	2
+  21              		.global	isr_spi_rx
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	isr_spi_rx, %function
+  25              	isr_spi_rx:
+  26              	.LFB65:
+  27              		.file 1 "SPI_Master.c"
+   1:SPI_Master.c  **** /* ========================================
+   2:SPI_Master.c  ****  *
+   3:SPI_Master.c  ****  * Copyright YOUR COMPANY, THE YEAR
+   4:SPI_Master.c  ****  * All Rights Reserved
+   5:SPI_Master.c  ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:SPI_Master.c  ****  *
+   7:SPI_Master.c  ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:SPI_Master.c  ****  * WHICH IS THE PROPERTY OF your company.
+   9:SPI_Master.c  ****  *
+  10:SPI_Master.c  ****  * ========================================
+  11:SPI_Master.c  **** */
+  12:SPI_Master.c  **** #include "SPI_Master.h"
+  13:SPI_Master.c  **** 
+  14:SPI_Master.c  **** int rxFlag = 0;
+  15:SPI_Master.c  **** int tx[2];
+  16:SPI_Master.c  **** 
+  17:SPI_Master.c  **** void SPIS_initSPI(){         //make spi ready to work...
+  18:SPI_Master.c  ****     SPI_int_Write(0);
+  19:SPI_Master.c  ****     SPIS_Start();
+  20:SPI_Master.c  **** //    SPIS_ClearTxBuffer();
+  21:SPI_Master.c  **** //    SPIS_ClearFIFO();
+  22:SPI_Master.c  ****     
+  23:SPI_Master.c  ****     rx_isr_StartEx(isr_spi_rx);
+  24:SPI_Master.c  **** }
+  25:SPI_Master.c  **** 
+  26:SPI_Master.c  **** void SPIS_sendData(int sek, int ms){
+  27:SPI_Master.c  ****     tx[0] = sek;
+  28:SPI_Master.c  ****     tx[1] = (sek%2) == 0 ? (ms<<2) : ((ms<<2) | 0b10);        //sek parity
+  29:SPI_Master.c  ****     tx[1] = (ms%2) == 0 ? tx[1] : (tx[1] | 0b01);             //ms parity
+  30:SPI_Master.c  ****     
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 2
+
+
+  31:SPI_Master.c  ****     //send interrupt to SPIM
+  32:SPI_Master.c  ****     SPI_int_Write(255);
+  33:SPI_Master.c  ****     //send chugtime(data) to tx ready to send
+  34:SPI_Master.c  ****     LED_tester_Write(0);
+  35:SPI_Master.c  **** //    rx_isr_Enable();
+  36:SPI_Master.c  **** }
+  37:SPI_Master.c  **** 
+  38:SPI_Master.c  **** CY_ISR(isr_spi_rx){
+  28              		.loc 1 38 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 08B5     		push	{r3, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 3, -8
+  35              		.cfi_offset 14, -4
+  39:SPI_Master.c  ****     SPI_int_Write(0);
+  36              		.loc 1 39 0
+  37 0002 0020     		movs	r0, #0
+  38 0004 FFF7FEFF 		bl	SPI_int_Write
+  39              	.LVL0:
+  40:SPI_Master.c  ****     uint8 SPIDATA = SPIS_ReadRxData();
+  40              		.loc 1 40 0
+  41 0008 FFF7FEFF 		bl	SPIS_ReadRxData
+  42              	.LVL1:
+  41:SPI_Master.c  ****     
+  42:SPI_Master.c  ****     switch(SPIDATA){
+  43              		.loc 1 42 0
+  44 000c 1028     		cmp	r0, #16
+  45 000e 06D0     		beq	.L3
+  46 0010 2028     		cmp	r0, #32
+  47 0012 09D1     		bne	.L6
+  43:SPI_Master.c  ****         case 0x20 :
+  44:SPI_Master.c  ****         {
+  45:SPI_Master.c  ****             SPIS_WriteTxData(tx[0]);    //sek
+  48              		.loc 1 45 0
+  49 0014 064B     		ldr	r3, .L8
+  50 0016 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+  51              	.LVL2:
+  52 0018 FFF7FEFF 		bl	SPIS_WriteTxData
+  53              	.LVL3:
+  46:SPI_Master.c  ****         }
+  47:SPI_Master.c  ****         break;
+  54              		.loc 1 47 0
+  55 001c 08BD     		pop	{r3, pc}
+  56              	.LVL4:
+  57              	.L3:
+  48:SPI_Master.c  ****         case 0x10 :
+  49:SPI_Master.c  ****         {
+  50:SPI_Master.c  ****             SPIS_WriteTxData(tx[1]);    //ms
+  58              		.loc 1 50 0
+  59 001e 044B     		ldr	r3, .L8
+  60 0020 1879     		ldrb	r0, [r3, #4]	@ zero_extendqisi2
+  61              	.LVL5:
+  62 0022 FFF7FEFF 		bl	SPIS_WriteTxData
+  63              	.LVL6:
+  51:SPI_Master.c  ****         }
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 3
+
+
+  52:SPI_Master.c  ****         break;
+  64              		.loc 1 52 0
+  65 0026 08BD     		pop	{r3, pc}
+  66              	.LVL7:
+  67              	.L6:
+  53:SPI_Master.c  ****         default :
+  54:SPI_Master.c  ****         {
+  55:SPI_Master.c  ****             SPIS_WriteTxData(SPIDATA);     //echo
+  68              		.loc 1 55 0
+  69 0028 FFF7FEFF 		bl	SPIS_WriteTxData
+  70              	.LVL8:
+  71 002c 08BD     		pop	{r3, pc}
+  72              	.L9:
+  73 002e 00BF     		.align	2
+  74              	.L8:
+  75 0030 00000000 		.word	tx
+  76              		.cfi_endproc
+  77              	.LFE65:
+  78              		.size	isr_spi_rx, .-isr_spi_rx
+  79              		.section	.text.SPIS_initSPI,"ax",%progbits
+  80              		.align	2
+  81              		.global	SPIS_initSPI
+  82              		.thumb
+  83              		.thumb_func
+  84              		.type	SPIS_initSPI, %function
+  85              	SPIS_initSPI:
+  86              	.LFB63:
+  17:SPI_Master.c  ****     SPI_int_Write(0);
+  87              		.loc 1 17 0
+  88              		.cfi_startproc
+  89              		@ args = 0, pretend = 0, frame = 0
+  90              		@ frame_needed = 0, uses_anonymous_args = 0
+  91 0000 08B5     		push	{r3, lr}
+  92              		.cfi_def_cfa_offset 8
+  93              		.cfi_offset 3, -8
+  94              		.cfi_offset 14, -4
+  18:SPI_Master.c  ****     SPIS_Start();
+  95              		.loc 1 18 0
+  96 0002 0020     		movs	r0, #0
+  97 0004 FFF7FEFF 		bl	SPI_int_Write
+  98              	.LVL9:
+  19:SPI_Master.c  **** //    SPIS_ClearTxBuffer();
+  99              		.loc 1 19 0
+ 100 0008 FFF7FEFF 		bl	SPIS_Start
+ 101              	.LVL10:
+  23:SPI_Master.c  **** }
+ 102              		.loc 1 23 0
+ 103 000c 0148     		ldr	r0, .L12
+ 104 000e FFF7FEFF 		bl	rx_isr_StartEx
+ 105              	.LVL11:
+ 106 0012 08BD     		pop	{r3, pc}
+ 107              	.L13:
+ 108              		.align	2
+ 109              	.L12:
+ 110 0014 00000000 		.word	isr_spi_rx
+ 111              		.cfi_endproc
+ 112              	.LFE63:
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 4
+
+
+ 113              		.size	SPIS_initSPI, .-SPIS_initSPI
+ 114              		.section	.text.SPIS_sendData,"ax",%progbits
+ 115              		.align	2
+ 116              		.global	SPIS_sendData
+ 117              		.thumb
+ 118              		.thumb_func
+ 119              		.type	SPIS_sendData, %function
+ 120              	SPIS_sendData:
+ 121              	.LFB64:
+  26:SPI_Master.c  ****     tx[0] = sek;
+ 122              		.loc 1 26 0
+ 123              		.cfi_startproc
+ 124              		@ args = 0, pretend = 0, frame = 0
+ 125              		@ frame_needed = 0, uses_anonymous_args = 0
+ 126              	.LVL12:
+ 127 0000 08B5     		push	{r3, lr}
+ 128              		.cfi_def_cfa_offset 8
+ 129              		.cfi_offset 3, -8
+ 130              		.cfi_offset 14, -4
+  27:SPI_Master.c  ****     tx[1] = (sek%2) == 0 ? (ms<<2) : ((ms<<2) | 0b10);        //sek parity
+ 131              		.loc 1 27 0
+ 132 0002 0C4B     		ldr	r3, .L19
+ 133 0004 1860     		str	r0, [r3]
+  28:SPI_Master.c  ****     tx[1] = (ms%2) == 0 ? tx[1] : (tx[1] | 0b01);             //ms parity
+ 134              		.loc 1 28 0
+ 135 0006 10F0010F 		tst	r0, #1
+ 136 000a 01D1     		bne	.L15
+  28:SPI_Master.c  ****     tx[1] = (ms%2) == 0 ? tx[1] : (tx[1] | 0b01);             //ms parity
+ 137              		.loc 1 28 0 is_stmt 0 discriminator 1
+ 138 000c 8B00     		lsls	r3, r1, #2
+ 139 000e 02E0     		b	.L16
+ 140              	.L15:
+  28:SPI_Master.c  ****     tx[1] = (ms%2) == 0 ? tx[1] : (tx[1] | 0b01);             //ms parity
+ 141              		.loc 1 28 0 discriminator 2
+ 142 0010 8B00     		lsls	r3, r1, #2
+ 143 0012 43F00203 		orr	r3, r3, #2
+ 144              	.L16:
+  29:SPI_Master.c  ****     
+ 145              		.loc 1 29 0 is_stmt 1 discriminator 4
+ 146 0016 11F0010F 		tst	r1, #1
+ 147 001a 01D0     		beq	.L17
+  29:SPI_Master.c  ****     
+ 148              		.loc 1 29 0 is_stmt 0 discriminator 2
+ 149 001c 43F00103 		orr	r3, r3, #1
+ 150              	.L17:
+  29:SPI_Master.c  ****     
+ 151              		.loc 1 29 0 discriminator 4
+ 152 0020 044A     		ldr	r2, .L19
+ 153 0022 5360     		str	r3, [r2, #4]
+  32:SPI_Master.c  ****     //send chugtime(data) to tx ready to send
+ 154              		.loc 1 32 0 is_stmt 1 discriminator 4
+ 155 0024 FF20     		movs	r0, #255
+ 156              	.LVL13:
+ 157 0026 FFF7FEFF 		bl	SPI_int_Write
+ 158              	.LVL14:
+  34:SPI_Master.c  **** //    rx_isr_Enable();
+ 159              		.loc 1 34 0 discriminator 4
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 5
+
+
+ 160 002a 0020     		movs	r0, #0
+ 161 002c FFF7FEFF 		bl	LED_tester_Write
+ 162              	.LVL15:
+ 163 0030 08BD     		pop	{r3, pc}
+ 164              	.L20:
+ 165 0032 00BF     		.align	2
+ 166              	.L19:
+ 167 0034 00000000 		.word	tx
+ 168              		.cfi_endproc
+ 169              	.LFE64:
+ 170              		.size	SPIS_sendData, .-SPIS_sendData
+ 171              		.comm	tx,8,4
+ 172              		.global	rxFlag
+ 173              		.bss
+ 174              		.align	2
+ 175              		.type	rxFlag, %object
+ 176              		.size	rxFlag, 4
+ 177              	rxFlag:
+ 178 0000 00000000 		.space	4
+ 179              		.text
+ 180              	.Letext0:
+ 181              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 182              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 183              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 184              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
+ 185              		.file 6 "Generated_Source\\PSoC5/SPI_int.h"
+ 186              		.file 7 "Generated_Source\\PSoC5/SPIS.h"
+ 187              		.file 8 "Generated_Source\\PSoC5/rx_isr.h"
+ 188              		.file 9 "Generated_Source\\PSoC5/LED_tester.h"
+ 189              		.section	.debug_info,"",%progbits
+ 190              	.Ldebug_info0:
+ 191 0000 28020000 		.4byte	0x228
+ 192 0004 0400     		.2byte	0x4
+ 193 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 194 000a 04       		.byte	0x4
+ 195 000b 01       		.uleb128 0x1
+ 196 000c F7000000 		.4byte	.LASF27
+ 197 0010 0C       		.byte	0xc
+ 198 0011 E3000000 		.4byte	.LASF28
+ 199 0015 A4010000 		.4byte	.LASF29
+ 200 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 201 001d 00000000 		.4byte	0
+ 202 0021 00000000 		.4byte	.Ldebug_line0
+ 203 0025 02       		.uleb128 0x2
+ 204 0026 01       		.byte	0x1
+ 205 0027 06       		.byte	0x6
+ 206 0028 0E020000 		.4byte	.LASF0
+ 207 002c 02       		.uleb128 0x2
+ 208 002d 01       		.byte	0x1
+ 209 002e 08       		.byte	0x8
+ 210 002f 54000000 		.4byte	.LASF1
+ 211 0033 02       		.uleb128 0x2
+ 212 0034 02       		.byte	0x2
+ 213 0035 05       		.byte	0x5
+ 214 0036 DA010000 		.4byte	.LASF2
+ 215 003a 02       		.uleb128 0x2
+ 216 003b 02       		.byte	0x2
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 6
+
+
+ 217 003c 07       		.byte	0x7
+ 218 003d 74000000 		.4byte	.LASF3
+ 219 0041 03       		.uleb128 0x3
+ 220 0042 0B000000 		.4byte	.LASF9
+ 221 0046 02       		.byte	0x2
+ 222 0047 3F       		.byte	0x3f
+ 223 0048 4C000000 		.4byte	0x4c
+ 224 004c 02       		.uleb128 0x2
+ 225 004d 04       		.byte	0x4
+ 226 004e 05       		.byte	0x5
+ 227 004f F9010000 		.4byte	.LASF4
+ 228 0053 02       		.uleb128 0x2
+ 229 0054 04       		.byte	0x4
+ 230 0055 07       		.byte	0x7
+ 231 0056 62000000 		.4byte	.LASF5
+ 232 005a 02       		.uleb128 0x2
+ 233 005b 08       		.byte	0x8
+ 234 005c 05       		.byte	0x5
+ 235 005d 96010000 		.4byte	.LASF6
+ 236 0061 02       		.uleb128 0x2
+ 237 0062 08       		.byte	0x8
+ 238 0063 07       		.byte	0x7
+ 239 0064 CC000000 		.4byte	.LASF7
+ 240 0068 04       		.uleb128 0x4
+ 241 0069 04       		.byte	0x4
+ 242 006a 05       		.byte	0x5
+ 243 006b 696E7400 		.ascii	"int\000"
+ 244 006f 02       		.uleb128 0x2
+ 245 0070 04       		.byte	0x4
+ 246 0071 07       		.byte	0x7
+ 247 0072 BF000000 		.4byte	.LASF8
+ 248 0076 03       		.uleb128 0x3
+ 249 0077 85010000 		.4byte	.LASF10
+ 250 007b 03       		.byte	0x3
+ 251 007c 2C       		.byte	0x2c
+ 252 007d 41000000 		.4byte	0x41
+ 253 0081 05       		.uleb128 0x5
+ 254 0082 E4010000 		.4byte	.LASF11
+ 255 0086 04       		.byte	0x4
+ 256 0087 E401     		.2byte	0x1e4
+ 257 0089 2C000000 		.4byte	0x2c
+ 258 008d 02       		.uleb128 0x2
+ 259 008e 04       		.byte	0x4
+ 260 008f 04       		.byte	0x4
+ 261 0090 4E000000 		.4byte	.LASF12
+ 262 0094 02       		.uleb128 0x2
+ 263 0095 08       		.byte	0x8
+ 264 0096 04       		.byte	0x4
+ 265 0097 A2000000 		.4byte	.LASF13
+ 266 009b 02       		.uleb128 0x2
+ 267 009c 01       		.byte	0x1
+ 268 009d 08       		.byte	0x8
+ 269 009e D5010000 		.4byte	.LASF14
+ 270 00a2 02       		.uleb128 0x2
+ 271 00a3 08       		.byte	0x8
+ 272 00a4 04       		.byte	0x4
+ 273 00a5 02020000 		.4byte	.LASF15
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 7
+
+
+ 274 00a9 02       		.uleb128 0x2
+ 275 00aa 04       		.byte	0x4
+ 276 00ab 07       		.byte	0x7
+ 277 00ac 8D010000 		.4byte	.LASF16
+ 278 00b0 06       		.uleb128 0x6
+ 279 00b1 36000000 		.4byte	.LASF17
+ 280 00b5 01       		.byte	0x1
+ 281 00b6 26       		.byte	0x26
+ 282 00b7 00000000 		.4byte	.LFB65
+ 283 00bb 34000000 		.4byte	.LFE65-.LFB65
+ 284 00bf 01       		.uleb128 0x1
+ 285 00c0 9C       		.byte	0x9c
+ 286 00c1 0C010000 		.4byte	0x10c
+ 287 00c5 07       		.uleb128 0x7
+ 288 00c6 B7000000 		.4byte	.LASF30
+ 289 00ca 01       		.byte	0x1
+ 290 00cb 28       		.byte	0x28
+ 291 00cc 81000000 		.4byte	0x81
+ 292 00d0 00000000 		.4byte	.LLST0
+ 293 00d4 08       		.uleb128 0x8
+ 294 00d5 08000000 		.4byte	.LVL0
+ 295 00d9 E9010000 		.4byte	0x1e9
+ 296 00dd E7000000 		.4byte	0xe7
+ 297 00e1 09       		.uleb128 0x9
+ 298 00e2 01       		.uleb128 0x1
+ 299 00e3 50       		.byte	0x50
+ 300 00e4 01       		.uleb128 0x1
+ 301 00e5 30       		.byte	0x30
+ 302 00e6 00       		.byte	0
+ 303 00e7 0A       		.uleb128 0xa
+ 304 00e8 0C000000 		.4byte	.LVL1
+ 305 00ec F4010000 		.4byte	0x1f4
+ 306 00f0 0A       		.uleb128 0xa
+ 307 00f1 1C000000 		.4byte	.LVL3
+ 308 00f5 FF010000 		.4byte	0x1ff
+ 309 00f9 0A       		.uleb128 0xa
+ 310 00fa 26000000 		.4byte	.LVL6
+ 311 00fe FF010000 		.4byte	0x1ff
+ 312 0102 0A       		.uleb128 0xa
+ 313 0103 2C000000 		.4byte	.LVL8
+ 314 0107 FF010000 		.4byte	0x1ff
+ 315 010b 00       		.byte	0
+ 316 010c 0B       		.uleb128 0xb
+ 317 010d 41000000 		.4byte	.LASF31
+ 318 0111 01       		.byte	0x1
+ 319 0112 11       		.byte	0x11
+ 320 0113 00000000 		.4byte	.LFB63
+ 321 0117 18000000 		.4byte	.LFE63-.LFB63
+ 322 011b 01       		.uleb128 0x1
+ 323 011c 9C       		.byte	0x9c
+ 324 011d 51010000 		.4byte	0x151
+ 325 0121 08       		.uleb128 0x8
+ 326 0122 08000000 		.4byte	.LVL9
+ 327 0126 E9010000 		.4byte	0x1e9
+ 328 012a 34010000 		.4byte	0x134
+ 329 012e 09       		.uleb128 0x9
+ 330 012f 01       		.uleb128 0x1
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 8
+
+
+ 331 0130 50       		.byte	0x50
+ 332 0131 01       		.uleb128 0x1
+ 333 0132 30       		.byte	0x30
+ 334 0133 00       		.byte	0
+ 335 0134 0A       		.uleb128 0xa
+ 336 0135 0C000000 		.4byte	.LVL10
+ 337 0139 0A020000 		.4byte	0x20a
+ 338 013d 0C       		.uleb128 0xc
+ 339 013e 12000000 		.4byte	.LVL11
+ 340 0142 15020000 		.4byte	0x215
+ 341 0146 09       		.uleb128 0x9
+ 342 0147 01       		.uleb128 0x1
+ 343 0148 50       		.byte	0x50
+ 344 0149 05       		.uleb128 0x5
+ 345 014a 03       		.byte	0x3
+ 346 014b 00000000 		.4byte	isr_spi_rx
+ 347 014f 00       		.byte	0
+ 348 0150 00       		.byte	0
+ 349 0151 06       		.uleb128 0x6
+ 350 0152 87000000 		.4byte	.LASF18
+ 351 0156 01       		.byte	0x1
+ 352 0157 1A       		.byte	0x1a
+ 353 0158 00000000 		.4byte	.LFB64
+ 354 015c 38000000 		.4byte	.LFE64-.LFB64
+ 355 0160 01       		.uleb128 0x1
+ 356 0161 9C       		.byte	0x9c
+ 357 0162 A7010000 		.4byte	0x1a7
+ 358 0166 0D       		.uleb128 0xd
+ 359 0167 73656B00 		.ascii	"sek\000"
+ 360 016b 01       		.byte	0x1
+ 361 016c 1A       		.byte	0x1a
+ 362 016d 68000000 		.4byte	0x68
+ 363 0171 29000000 		.4byte	.LLST1
+ 364 0175 0D       		.uleb128 0xd
+ 365 0176 6D7300   		.ascii	"ms\000"
+ 366 0179 01       		.byte	0x1
+ 367 017a 1A       		.byte	0x1a
+ 368 017b 68000000 		.4byte	0x68
+ 369 017f 59000000 		.4byte	.LLST2
+ 370 0183 08       		.uleb128 0x8
+ 371 0184 2A000000 		.4byte	.LVL14
+ 372 0188 E9010000 		.4byte	0x1e9
+ 373 018c 97010000 		.4byte	0x197
+ 374 0190 09       		.uleb128 0x9
+ 375 0191 01       		.uleb128 0x1
+ 376 0192 50       		.byte	0x50
+ 377 0193 02       		.uleb128 0x2
+ 378 0194 09       		.byte	0x9
+ 379 0195 FF       		.byte	0xff
+ 380 0196 00       		.byte	0
+ 381 0197 0C       		.uleb128 0xc
+ 382 0198 30000000 		.4byte	.LVL15
+ 383 019c 20020000 		.4byte	0x220
+ 384 01a0 09       		.uleb128 0x9
+ 385 01a1 01       		.uleb128 0x1
+ 386 01a2 50       		.byte	0x50
+ 387 01a3 01       		.uleb128 0x1
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 9
+
+
+ 388 01a4 30       		.byte	0x30
+ 389 01a5 00       		.byte	0
+ 390 01a6 00       		.byte	0
+ 391 01a7 0E       		.uleb128 0xe
+ 392 01a8 95000000 		.4byte	.LASF19
+ 393 01ac 05       		.byte	0x5
+ 394 01ad 1207     		.2byte	0x712
+ 395 01af B3010000 		.4byte	0x1b3
+ 396 01b3 0F       		.uleb128 0xf
+ 397 01b4 76000000 		.4byte	0x76
+ 398 01b8 10       		.uleb128 0x10
+ 399 01b9 F0000000 		.4byte	.LASF20
+ 400 01bd 01       		.byte	0x1
+ 401 01be 0E       		.byte	0xe
+ 402 01bf 68000000 		.4byte	0x68
+ 403 01c3 05       		.uleb128 0x5
+ 404 01c4 03       		.byte	0x3
+ 405 01c5 00000000 		.4byte	rxFlag
+ 406 01c9 11       		.uleb128 0x11
+ 407 01ca 68000000 		.4byte	0x68
+ 408 01ce D9010000 		.4byte	0x1d9
+ 409 01d2 12       		.uleb128 0x12
+ 410 01d3 A9000000 		.4byte	0xa9
+ 411 01d7 01       		.byte	0x1
+ 412 01d8 00       		.byte	0
+ 413 01d9 13       		.uleb128 0x13
+ 414 01da 747800   		.ascii	"tx\000"
+ 415 01dd 01       		.byte	0x1
+ 416 01de 0F       		.byte	0xf
+ 417 01df C9010000 		.4byte	0x1c9
+ 418 01e3 05       		.uleb128 0x5
+ 419 01e4 03       		.byte	0x3
+ 420 01e5 00000000 		.4byte	tx
+ 421 01e9 14       		.uleb128 0x14
+ 422 01ea A9000000 		.4byte	.LASF21
+ 423 01ee A9000000 		.4byte	.LASF21
+ 424 01f2 06       		.byte	0x6
+ 425 01f3 26       		.byte	0x26
+ 426 01f4 14       		.uleb128 0x14
+ 427 01f5 26000000 		.4byte	.LASF22
+ 428 01f9 26000000 		.4byte	.LASF22
+ 429 01fd 07       		.byte	0x7
+ 430 01fe 57       		.byte	0x57
+ 431 01ff 14       		.uleb128 0x14
+ 432 0200 15000000 		.4byte	.LASF23
+ 433 0204 15000000 		.4byte	.LASF23
+ 434 0208 07       		.byte	0x7
+ 435 0209 50       		.byte	0x50
+ 436 020a 14       		.uleb128 0x14
+ 437 020b 00000000 		.4byte	.LASF24
+ 438 020f 00000000 		.4byte	.LASF24
+ 439 0213 07       		.byte	0x7
+ 440 0214 46       		.byte	0x46
+ 441 0215 14       		.uleb128 0x14
+ 442 0216 EA010000 		.4byte	.LASF25
+ 443 021a EA010000 		.4byte	.LASF25
+ 444 021e 08       		.byte	0x8
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 10
+
+
+ 445 021f 18       		.byte	0x18
+ 446 0220 14       		.uleb128 0x14
+ 447 0221 1A020000 		.4byte	.LASF26
+ 448 0225 1A020000 		.4byte	.LASF26
+ 449 0229 09       		.byte	0x9
+ 450 022a 26       		.byte	0x26
+ 451 022b 00       		.byte	0
+ 452              		.section	.debug_abbrev,"",%progbits
+ 453              	.Ldebug_abbrev0:
+ 454 0000 01       		.uleb128 0x1
+ 455 0001 11       		.uleb128 0x11
+ 456 0002 01       		.byte	0x1
+ 457 0003 25       		.uleb128 0x25
+ 458 0004 0E       		.uleb128 0xe
+ 459 0005 13       		.uleb128 0x13
+ 460 0006 0B       		.uleb128 0xb
+ 461 0007 03       		.uleb128 0x3
+ 462 0008 0E       		.uleb128 0xe
+ 463 0009 1B       		.uleb128 0x1b
+ 464 000a 0E       		.uleb128 0xe
+ 465 000b 55       		.uleb128 0x55
+ 466 000c 17       		.uleb128 0x17
+ 467 000d 11       		.uleb128 0x11
+ 468 000e 01       		.uleb128 0x1
+ 469 000f 10       		.uleb128 0x10
+ 470 0010 17       		.uleb128 0x17
+ 471 0011 00       		.byte	0
+ 472 0012 00       		.byte	0
+ 473 0013 02       		.uleb128 0x2
+ 474 0014 24       		.uleb128 0x24
+ 475 0015 00       		.byte	0
+ 476 0016 0B       		.uleb128 0xb
+ 477 0017 0B       		.uleb128 0xb
+ 478 0018 3E       		.uleb128 0x3e
+ 479 0019 0B       		.uleb128 0xb
+ 480 001a 03       		.uleb128 0x3
+ 481 001b 0E       		.uleb128 0xe
+ 482 001c 00       		.byte	0
+ 483 001d 00       		.byte	0
+ 484 001e 03       		.uleb128 0x3
+ 485 001f 16       		.uleb128 0x16
+ 486 0020 00       		.byte	0
+ 487 0021 03       		.uleb128 0x3
+ 488 0022 0E       		.uleb128 0xe
+ 489 0023 3A       		.uleb128 0x3a
+ 490 0024 0B       		.uleb128 0xb
+ 491 0025 3B       		.uleb128 0x3b
+ 492 0026 0B       		.uleb128 0xb
+ 493 0027 49       		.uleb128 0x49
+ 494 0028 13       		.uleb128 0x13
+ 495 0029 00       		.byte	0
+ 496 002a 00       		.byte	0
+ 497 002b 04       		.uleb128 0x4
+ 498 002c 24       		.uleb128 0x24
+ 499 002d 00       		.byte	0
+ 500 002e 0B       		.uleb128 0xb
+ 501 002f 0B       		.uleb128 0xb
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 11
+
+
+ 502 0030 3E       		.uleb128 0x3e
+ 503 0031 0B       		.uleb128 0xb
+ 504 0032 03       		.uleb128 0x3
+ 505 0033 08       		.uleb128 0x8
+ 506 0034 00       		.byte	0
+ 507 0035 00       		.byte	0
+ 508 0036 05       		.uleb128 0x5
+ 509 0037 16       		.uleb128 0x16
+ 510 0038 00       		.byte	0
+ 511 0039 03       		.uleb128 0x3
+ 512 003a 0E       		.uleb128 0xe
+ 513 003b 3A       		.uleb128 0x3a
+ 514 003c 0B       		.uleb128 0xb
+ 515 003d 3B       		.uleb128 0x3b
+ 516 003e 05       		.uleb128 0x5
+ 517 003f 49       		.uleb128 0x49
+ 518 0040 13       		.uleb128 0x13
+ 519 0041 00       		.byte	0
+ 520 0042 00       		.byte	0
+ 521 0043 06       		.uleb128 0x6
+ 522 0044 2E       		.uleb128 0x2e
+ 523 0045 01       		.byte	0x1
+ 524 0046 3F       		.uleb128 0x3f
+ 525 0047 19       		.uleb128 0x19
+ 526 0048 03       		.uleb128 0x3
+ 527 0049 0E       		.uleb128 0xe
+ 528 004a 3A       		.uleb128 0x3a
+ 529 004b 0B       		.uleb128 0xb
+ 530 004c 3B       		.uleb128 0x3b
+ 531 004d 0B       		.uleb128 0xb
+ 532 004e 27       		.uleb128 0x27
+ 533 004f 19       		.uleb128 0x19
+ 534 0050 11       		.uleb128 0x11
+ 535 0051 01       		.uleb128 0x1
+ 536 0052 12       		.uleb128 0x12
+ 537 0053 06       		.uleb128 0x6
+ 538 0054 40       		.uleb128 0x40
+ 539 0055 18       		.uleb128 0x18
+ 540 0056 9742     		.uleb128 0x2117
+ 541 0058 19       		.uleb128 0x19
+ 542 0059 01       		.uleb128 0x1
+ 543 005a 13       		.uleb128 0x13
+ 544 005b 00       		.byte	0
+ 545 005c 00       		.byte	0
+ 546 005d 07       		.uleb128 0x7
+ 547 005e 34       		.uleb128 0x34
+ 548 005f 00       		.byte	0
+ 549 0060 03       		.uleb128 0x3
+ 550 0061 0E       		.uleb128 0xe
+ 551 0062 3A       		.uleb128 0x3a
+ 552 0063 0B       		.uleb128 0xb
+ 553 0064 3B       		.uleb128 0x3b
+ 554 0065 0B       		.uleb128 0xb
+ 555 0066 49       		.uleb128 0x49
+ 556 0067 13       		.uleb128 0x13
+ 557 0068 02       		.uleb128 0x2
+ 558 0069 17       		.uleb128 0x17
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 12
+
+
+ 559 006a 00       		.byte	0
+ 560 006b 00       		.byte	0
+ 561 006c 08       		.uleb128 0x8
+ 562 006d 898201   		.uleb128 0x4109
+ 563 0070 01       		.byte	0x1
+ 564 0071 11       		.uleb128 0x11
+ 565 0072 01       		.uleb128 0x1
+ 566 0073 31       		.uleb128 0x31
+ 567 0074 13       		.uleb128 0x13
+ 568 0075 01       		.uleb128 0x1
+ 569 0076 13       		.uleb128 0x13
+ 570 0077 00       		.byte	0
+ 571 0078 00       		.byte	0
+ 572 0079 09       		.uleb128 0x9
+ 573 007a 8A8201   		.uleb128 0x410a
+ 574 007d 00       		.byte	0
+ 575 007e 02       		.uleb128 0x2
+ 576 007f 18       		.uleb128 0x18
+ 577 0080 9142     		.uleb128 0x2111
+ 578 0082 18       		.uleb128 0x18
+ 579 0083 00       		.byte	0
+ 580 0084 00       		.byte	0
+ 581 0085 0A       		.uleb128 0xa
+ 582 0086 898201   		.uleb128 0x4109
+ 583 0089 00       		.byte	0
+ 584 008a 11       		.uleb128 0x11
+ 585 008b 01       		.uleb128 0x1
+ 586 008c 31       		.uleb128 0x31
+ 587 008d 13       		.uleb128 0x13
+ 588 008e 00       		.byte	0
+ 589 008f 00       		.byte	0
+ 590 0090 0B       		.uleb128 0xb
+ 591 0091 2E       		.uleb128 0x2e
+ 592 0092 01       		.byte	0x1
+ 593 0093 3F       		.uleb128 0x3f
+ 594 0094 19       		.uleb128 0x19
+ 595 0095 03       		.uleb128 0x3
+ 596 0096 0E       		.uleb128 0xe
+ 597 0097 3A       		.uleb128 0x3a
+ 598 0098 0B       		.uleb128 0xb
+ 599 0099 3B       		.uleb128 0x3b
+ 600 009a 0B       		.uleb128 0xb
+ 601 009b 11       		.uleb128 0x11
+ 602 009c 01       		.uleb128 0x1
+ 603 009d 12       		.uleb128 0x12
+ 604 009e 06       		.uleb128 0x6
+ 605 009f 40       		.uleb128 0x40
+ 606 00a0 18       		.uleb128 0x18
+ 607 00a1 9742     		.uleb128 0x2117
+ 608 00a3 19       		.uleb128 0x19
+ 609 00a4 01       		.uleb128 0x1
+ 610 00a5 13       		.uleb128 0x13
+ 611 00a6 00       		.byte	0
+ 612 00a7 00       		.byte	0
+ 613 00a8 0C       		.uleb128 0xc
+ 614 00a9 898201   		.uleb128 0x4109
+ 615 00ac 01       		.byte	0x1
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 13
+
+
+ 616 00ad 11       		.uleb128 0x11
+ 617 00ae 01       		.uleb128 0x1
+ 618 00af 31       		.uleb128 0x31
+ 619 00b0 13       		.uleb128 0x13
+ 620 00b1 00       		.byte	0
+ 621 00b2 00       		.byte	0
+ 622 00b3 0D       		.uleb128 0xd
+ 623 00b4 05       		.uleb128 0x5
+ 624 00b5 00       		.byte	0
+ 625 00b6 03       		.uleb128 0x3
+ 626 00b7 08       		.uleb128 0x8
+ 627 00b8 3A       		.uleb128 0x3a
+ 628 00b9 0B       		.uleb128 0xb
+ 629 00ba 3B       		.uleb128 0x3b
+ 630 00bb 0B       		.uleb128 0xb
+ 631 00bc 49       		.uleb128 0x49
+ 632 00bd 13       		.uleb128 0x13
+ 633 00be 02       		.uleb128 0x2
+ 634 00bf 17       		.uleb128 0x17
+ 635 00c0 00       		.byte	0
+ 636 00c1 00       		.byte	0
+ 637 00c2 0E       		.uleb128 0xe
+ 638 00c3 34       		.uleb128 0x34
+ 639 00c4 00       		.byte	0
+ 640 00c5 03       		.uleb128 0x3
+ 641 00c6 0E       		.uleb128 0xe
+ 642 00c7 3A       		.uleb128 0x3a
+ 643 00c8 0B       		.uleb128 0xb
+ 644 00c9 3B       		.uleb128 0x3b
+ 645 00ca 05       		.uleb128 0x5
+ 646 00cb 49       		.uleb128 0x49
+ 647 00cc 13       		.uleb128 0x13
+ 648 00cd 3F       		.uleb128 0x3f
+ 649 00ce 19       		.uleb128 0x19
+ 650 00cf 3C       		.uleb128 0x3c
+ 651 00d0 19       		.uleb128 0x19
+ 652 00d1 00       		.byte	0
+ 653 00d2 00       		.byte	0
+ 654 00d3 0F       		.uleb128 0xf
+ 655 00d4 35       		.uleb128 0x35
+ 656 00d5 00       		.byte	0
+ 657 00d6 49       		.uleb128 0x49
+ 658 00d7 13       		.uleb128 0x13
+ 659 00d8 00       		.byte	0
+ 660 00d9 00       		.byte	0
+ 661 00da 10       		.uleb128 0x10
+ 662 00db 34       		.uleb128 0x34
+ 663 00dc 00       		.byte	0
+ 664 00dd 03       		.uleb128 0x3
+ 665 00de 0E       		.uleb128 0xe
+ 666 00df 3A       		.uleb128 0x3a
+ 667 00e0 0B       		.uleb128 0xb
+ 668 00e1 3B       		.uleb128 0x3b
+ 669 00e2 0B       		.uleb128 0xb
+ 670 00e3 49       		.uleb128 0x49
+ 671 00e4 13       		.uleb128 0x13
+ 672 00e5 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 14
+
+
+ 673 00e6 19       		.uleb128 0x19
+ 674 00e7 02       		.uleb128 0x2
+ 675 00e8 18       		.uleb128 0x18
+ 676 00e9 00       		.byte	0
+ 677 00ea 00       		.byte	0
+ 678 00eb 11       		.uleb128 0x11
+ 679 00ec 01       		.uleb128 0x1
+ 680 00ed 01       		.byte	0x1
+ 681 00ee 49       		.uleb128 0x49
+ 682 00ef 13       		.uleb128 0x13
+ 683 00f0 01       		.uleb128 0x1
+ 684 00f1 13       		.uleb128 0x13
+ 685 00f2 00       		.byte	0
+ 686 00f3 00       		.byte	0
+ 687 00f4 12       		.uleb128 0x12
+ 688 00f5 21       		.uleb128 0x21
+ 689 00f6 00       		.byte	0
+ 690 00f7 49       		.uleb128 0x49
+ 691 00f8 13       		.uleb128 0x13
+ 692 00f9 2F       		.uleb128 0x2f
+ 693 00fa 0B       		.uleb128 0xb
+ 694 00fb 00       		.byte	0
+ 695 00fc 00       		.byte	0
+ 696 00fd 13       		.uleb128 0x13
+ 697 00fe 34       		.uleb128 0x34
+ 698 00ff 00       		.byte	0
+ 699 0100 03       		.uleb128 0x3
+ 700 0101 08       		.uleb128 0x8
+ 701 0102 3A       		.uleb128 0x3a
+ 702 0103 0B       		.uleb128 0xb
+ 703 0104 3B       		.uleb128 0x3b
+ 704 0105 0B       		.uleb128 0xb
+ 705 0106 49       		.uleb128 0x49
+ 706 0107 13       		.uleb128 0x13
+ 707 0108 3F       		.uleb128 0x3f
+ 708 0109 19       		.uleb128 0x19
+ 709 010a 02       		.uleb128 0x2
+ 710 010b 18       		.uleb128 0x18
+ 711 010c 00       		.byte	0
+ 712 010d 00       		.byte	0
+ 713 010e 14       		.uleb128 0x14
+ 714 010f 2E       		.uleb128 0x2e
+ 715 0110 00       		.byte	0
+ 716 0111 3F       		.uleb128 0x3f
+ 717 0112 19       		.uleb128 0x19
+ 718 0113 3C       		.uleb128 0x3c
+ 719 0114 19       		.uleb128 0x19
+ 720 0115 6E       		.uleb128 0x6e
+ 721 0116 0E       		.uleb128 0xe
+ 722 0117 03       		.uleb128 0x3
+ 723 0118 0E       		.uleb128 0xe
+ 724 0119 3A       		.uleb128 0x3a
+ 725 011a 0B       		.uleb128 0xb
+ 726 011b 3B       		.uleb128 0x3b
+ 727 011c 0B       		.uleb128 0xb
+ 728 011d 00       		.byte	0
+ 729 011e 00       		.byte	0
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 15
+
+
+ 730 011f 00       		.byte	0
+ 731              		.section	.debug_loc,"",%progbits
+ 732              	.Ldebug_loc0:
+ 733              	.LLST0:
+ 734 0000 0C000000 		.4byte	.LVL1
+ 735 0004 18000000 		.4byte	.LVL2
+ 736 0008 0100     		.2byte	0x1
+ 737 000a 50       		.byte	0x50
+ 738 000b 1E000000 		.4byte	.LVL4
+ 739 000f 22000000 		.4byte	.LVL5
+ 740 0013 0100     		.2byte	0x1
+ 741 0015 50       		.byte	0x50
+ 742 0016 28000000 		.4byte	.LVL7
+ 743 001a 2B000000 		.4byte	.LVL8-1
+ 744 001e 0100     		.2byte	0x1
+ 745 0020 50       		.byte	0x50
+ 746 0021 00000000 		.4byte	0
+ 747 0025 00000000 		.4byte	0
+ 748              	.LLST1:
+ 749 0029 00000000 		.4byte	.LVL12
+ 750 002d 26000000 		.4byte	.LVL13
+ 751 0031 0100     		.2byte	0x1
+ 752 0033 50       		.byte	0x50
+ 753 0034 26000000 		.4byte	.LVL13
+ 754 0038 29000000 		.4byte	.LVL14-1
+ 755 003c 0500     		.2byte	0x5
+ 756 003e 03       		.byte	0x3
+ 757 003f 00000000 		.4byte	tx
+ 758 0043 29000000 		.4byte	.LVL14-1
+ 759 0047 38000000 		.4byte	.LFE64
+ 760 004b 0400     		.2byte	0x4
+ 761 004d F3       		.byte	0xf3
+ 762 004e 01       		.uleb128 0x1
+ 763 004f 50       		.byte	0x50
+ 764 0050 9F       		.byte	0x9f
+ 765 0051 00000000 		.4byte	0
+ 766 0055 00000000 		.4byte	0
+ 767              	.LLST2:
+ 768 0059 00000000 		.4byte	.LVL12
+ 769 005d 29000000 		.4byte	.LVL14-1
+ 770 0061 0100     		.2byte	0x1
+ 771 0063 51       		.byte	0x51
+ 772 0064 29000000 		.4byte	.LVL14-1
+ 773 0068 38000000 		.4byte	.LFE64
+ 774 006c 0400     		.2byte	0x4
+ 775 006e F3       		.byte	0xf3
+ 776 006f 01       		.uleb128 0x1
+ 777 0070 51       		.byte	0x51
+ 778 0071 9F       		.byte	0x9f
+ 779 0072 00000000 		.4byte	0
+ 780 0076 00000000 		.4byte	0
+ 781              		.section	.debug_aranges,"",%progbits
+ 782 0000 2C000000 		.4byte	0x2c
+ 783 0004 0200     		.2byte	0x2
+ 784 0006 00000000 		.4byte	.Ldebug_info0
+ 785 000a 04       		.byte	0x4
+ 786 000b 00       		.byte	0
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 16
+
+
+ 787 000c 0000     		.2byte	0
+ 788 000e 0000     		.2byte	0
+ 789 0010 00000000 		.4byte	.LFB65
+ 790 0014 34000000 		.4byte	.LFE65-.LFB65
+ 791 0018 00000000 		.4byte	.LFB63
+ 792 001c 18000000 		.4byte	.LFE63-.LFB63
+ 793 0020 00000000 		.4byte	.LFB64
+ 794 0024 38000000 		.4byte	.LFE64-.LFB64
+ 795 0028 00000000 		.4byte	0
+ 796 002c 00000000 		.4byte	0
+ 797              		.section	.debug_ranges,"",%progbits
+ 798              	.Ldebug_ranges0:
+ 799 0000 00000000 		.4byte	.LFB65
+ 800 0004 34000000 		.4byte	.LFE65
+ 801 0008 00000000 		.4byte	.LFB63
+ 802 000c 18000000 		.4byte	.LFE63
+ 803 0010 00000000 		.4byte	.LFB64
+ 804 0014 38000000 		.4byte	.LFE64
+ 805 0018 00000000 		.4byte	0
+ 806 001c 00000000 		.4byte	0
+ 807              		.section	.debug_line,"",%progbits
+ 808              	.Ldebug_line0:
+ 809 0000 EC010000 		.section	.debug_str,"MS",%progbits,1
+ 809      02008501 
+ 809      00000201 
+ 809      FB0E0D00 
+ 809      01010101 
+ 810              	.LASF24:
+ 811 0000 53504953 		.ascii	"SPIS_Start\000"
+ 811      5F537461 
+ 811      727400
+ 812              	.LASF9:
+ 813 000b 5F5F696E 		.ascii	"__int32_t\000"
+ 813      7433325F 
+ 813      7400
+ 814              	.LASF23:
+ 815 0015 53504953 		.ascii	"SPIS_WriteTxData\000"
+ 815      5F577269 
+ 815      74655478 
+ 815      44617461 
+ 815      00
+ 816              	.LASF22:
+ 817 0026 53504953 		.ascii	"SPIS_ReadRxData\000"
+ 817      5F526561 
+ 817      64527844 
+ 817      61746100 
+ 818              	.LASF17:
+ 819 0036 6973725F 		.ascii	"isr_spi_rx\000"
+ 819      7370695F 
+ 819      727800
+ 820              	.LASF31:
+ 821 0041 53504953 		.ascii	"SPIS_initSPI\000"
+ 821      5F696E69 
+ 821      74535049 
+ 821      00
+ 822              	.LASF12:
+ 823 004e 666C6F61 		.ascii	"float\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 17
+
+
+ 823      7400
+ 824              	.LASF1:
+ 825 0054 756E7369 		.ascii	"unsigned char\000"
+ 825      676E6564 
+ 825      20636861 
+ 825      7200
+ 826              	.LASF5:
+ 827 0062 6C6F6E67 		.ascii	"long unsigned int\000"
+ 827      20756E73 
+ 827      69676E65 
+ 827      6420696E 
+ 827      7400
+ 828              	.LASF3:
+ 829 0074 73686F72 		.ascii	"short unsigned int\000"
+ 829      7420756E 
+ 829      7369676E 
+ 829      65642069 
+ 829      6E7400
+ 830              	.LASF18:
+ 831 0087 53504953 		.ascii	"SPIS_sendData\000"
+ 831      5F73656E 
+ 831      64446174 
+ 831      6100
+ 832              	.LASF19:
+ 833 0095 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 833      52784275 
+ 833      66666572 
+ 833      00
+ 834              	.LASF13:
+ 835 00a2 646F7562 		.ascii	"double\000"
+ 835      6C6500
+ 836              	.LASF21:
+ 837 00a9 5350495F 		.ascii	"SPI_int_Write\000"
+ 837      696E745F 
+ 837      57726974 
+ 837      6500
+ 838              	.LASF30:
+ 839 00b7 53504944 		.ascii	"SPIDATA\000"
+ 839      41544100 
+ 840              	.LASF8:
+ 841 00bf 756E7369 		.ascii	"unsigned int\000"
+ 841      676E6564 
+ 841      20696E74 
+ 841      00
+ 842              	.LASF7:
+ 843 00cc 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 843      206C6F6E 
+ 843      6720756E 
+ 843      7369676E 
+ 843      65642069 
+ 844              	.LASF28:
+ 845 00e3 5350495F 		.ascii	"SPI_Master.c\000"
+ 845      4D617374 
+ 845      65722E63 
+ 845      00
+ 846              	.LASF20:
+ 847 00f0 7278466C 		.ascii	"rxFlag\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 18
+
+
+ 847      616700
+ 848              	.LASF27:
+ 849 00f7 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 849      43313120 
+ 849      352E342E 
+ 849      31203230 
+ 849      31363036 
+ 850 012a 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 850      20726576 
+ 850      6973696F 
+ 850      6E203233 
+ 850      37373135 
+ 851 015d 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 851      66756E63 
+ 851      74696F6E 
+ 851      2D736563 
+ 851      74696F6E 
+ 852              	.LASF10:
+ 853 0185 696E7433 		.ascii	"int32_t\000"
+ 853      325F7400 
+ 854              	.LASF16:
+ 855 018d 73697A65 		.ascii	"sizetype\000"
+ 855      74797065 
+ 855      00
+ 856              	.LASF6:
+ 857 0196 6C6F6E67 		.ascii	"long long int\000"
+ 857      206C6F6E 
+ 857      6720696E 
+ 857      7400
+ 858              	.LASF29:
+ 859 01a4 433A5C55 		.ascii	"C:\\Users\\dryos\\Desktop\\SPI_Master\\SPI_PSoC.cyd"
+ 859      73657273 
+ 859      5C647279 
+ 859      6F735C44 
+ 859      65736B74 
+ 860 01d2 736E00   		.ascii	"sn\000"
+ 861              	.LASF14:
+ 862 01d5 63686172 		.ascii	"char\000"
+ 862      00
+ 863              	.LASF2:
+ 864 01da 73686F72 		.ascii	"short int\000"
+ 864      7420696E 
+ 864      7400
+ 865              	.LASF11:
+ 866 01e4 75696E74 		.ascii	"uint8\000"
+ 866      3800
+ 867              	.LASF25:
+ 868 01ea 72785F69 		.ascii	"rx_isr_StartEx\000"
+ 868      73725F53 
+ 868      74617274 
+ 868      457800
+ 869              	.LASF4:
+ 870 01f9 6C6F6E67 		.ascii	"long int\000"
+ 870      20696E74 
+ 870      00
+ 871              	.LASF15:
+ 872 0202 6C6F6E67 		.ascii	"long double\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccAgwzMH.s 			page 19
+
+
+ 872      20646F75 
+ 872      626C6500 
+ 873              	.LASF0:
+ 874 020e 7369676E 		.ascii	"signed char\000"
+ 874      65642063 
+ 874      68617200 
+ 875              	.LASF26:
+ 876 021a 4C45445F 		.ascii	"LED_tester_Write\000"
+ 876      74657374 
+ 876      65725F57 
+ 876      72697465 
+ 876      00
+ 877              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
