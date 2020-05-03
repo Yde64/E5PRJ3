@@ -1,6 +1,6 @@
-C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\LED_control.cyprj|5abd5d8f-2825-455e-a39f-731a2001367d
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|c7ccee47-7b36-48c7-a311-5a7ba42dba29
-C:\Users\cring\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|a80dc3f8-88f0-4538-a948-e6684d75203a
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|2bcdcc9d-44d1-4865-a365-0c5961370a4e
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|70627cdf-0c02-4842-adf8-54259e0328e1
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|3aa80cbe-1394-47e6-b5a2-6389ac71a884
+C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\LED_control.cyprj|868298d7-4594-499e-8aad-35999686a612
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|63c31a5d-cd51-451f-b65a-3c063c36e0bf
+C:\Users\cring\Documents\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|3a420541-aaa5-42ad-ae8b-3bdcb81b4a99
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|0d5ea08e-939d-4e4b-9874-08a883cda1a4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|235faa72-6bf4-4729-bfb5-91c0aee19d79
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|ac3daf3a-8ee3-4dc9-8262-cb55b5c9ff09

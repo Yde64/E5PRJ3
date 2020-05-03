@@ -18,9 +18,36 @@
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\cyfitteriar.inc" value="HEADER;;;;;" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\cyfitter.h" value="HEADER;;;;;" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\cydisabledsheets.h" value="HEADER;;;;;" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\LEDdata_aliases.h" value="HEADER;;;;;LEDdata" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\LEDdata.c" value="SOURCE_C;CortexM3;;;;LEDdata" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\LEDdata.h" value="HEADER;;;;;LEDdata" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer5.c" value="SOURCE_C;CortexM3;;;;Timer5" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer5.h" value="HEADER;;;;;Timer5" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer5_PM.c" value="SOURCE_C;CortexM3;;;;Timer5" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_delay.c" value="SOURCE_C;CortexM3;;;;isr_delay" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_delay.h" value="HEADER;;;;;isr_delay" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_BlinkLED.c" value="SOURCE_C;CortexM3;;;;isr_BlinkLED" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_BlinkLED.h" value="HEADER;;;;;isr_BlinkLED" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer4.c" value="SOURCE_C;CortexM3;;;;Timer4" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer4.h" value="HEADER;;;;;Timer4" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer4_PM.c" value="SOURCE_C;CortexM3;;;;Timer4" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\SPIMOutCtrl.h" value="HEADER;;;;;SPIMOutCtrl" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\SPIMOutCtrl.c" value="SOURCE_C;CortexM3;;;;SPIMOutCtrl" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\SPIMOutCtrl_PM.c" value="SOURCE_C;CortexM3;;;;SPIMOutCtrl" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_LED_ring.c" value="SOURCE_C;CortexM3;;;;isr_LED_ring" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_LED_ring.h" value="HEADER;;;;;isr_LED_ring" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer3.c" value="SOURCE_C;CortexM3;;;;Timer3" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer3.h" value="HEADER;;;;;Timer3" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer3_PM.c" value="SOURCE_C;CortexM3;;;;Timer3" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_LED_pulse.c" value="SOURCE_C;CortexM3;;;;isr_LED_pulse" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_LED_pulse.h" value="HEADER;;;;;isr_LED_pulse" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer2.c" value="SOURCE_C;CortexM3;;;;Timer2" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer2.h" value="HEADER;;;;;Timer2" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer2_PM.c" value="SOURCE_C;CortexM3;;;;Timer2" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\timer_clock_1.c" value="SOURCE_C;CortexM3;;;;timer_clock_1" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\timer_clock_1.h" value="HEADER;;;;;timer_clock_1" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_LED_refreshrate.c" value="SOURCE_C;CortexM3;;;;isr_LED_refreshrate" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_LED_refreshrate.h" value="HEADER;;;;;isr_LED_refreshrate" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer1.c" value="SOURCE_C;CortexM3;;;;Timer1" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer1.h" value="HEADER;;;;;Timer1" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer1_PM.c" value="SOURCE_C;CortexM3;;;;Timer1" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\LEDdata2_aliases.h" value="HEADER;;;;;LEDdata2" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\LEDdata2.c" value="SOURCE_C;CortexM3;;;;LEDdata2" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\LEDdata2.h" value="HEADER;;;;;LEDdata2" />
@@ -29,48 +56,11 @@
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\SPIM_1_PM.c" value="SOURCE_C;CortexM3;;;;SPIM_1" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\SPIM_1_INT.c" value="SOURCE_C;CortexM3;;;;SPIM_1" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\SPIM_1_PVT.h" value="HEADER;;;;;SPIM_1" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\timer_clock.c" value="SOURCE_C;CortexM3;;;;timer_clock" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\timer_clock.h" value="HEADER;;;;;timer_clock" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer1.c" value="SOURCE_C;CortexM3;;;;Timer1" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer1.h" value="HEADER;;;;;Timer1" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer1_PM.c" value="SOURCE_C;CortexM3;;;;Timer1" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_LED_refreshrate.c" value="SOURCE_C;CortexM3;;;;isr_LED_refreshrate" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_LED_refreshrate.h" value="HEADER;;;;;isr_LED_refreshrate" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\timer_clock_1.c" value="SOURCE_C;CortexM3;;;;timer_clock_1" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\timer_clock_1.h" value="HEADER;;;;;timer_clock_1" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer2.c" value="SOURCE_C;CortexM3;;;;Timer2" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer2.h" value="HEADER;;;;;Timer2" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer2_PM.c" value="SOURCE_C;CortexM3;;;;Timer2" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_LED_pulse.c" value="SOURCE_C;CortexM3;;;;isr_LED_pulse" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_LED_pulse.h" value="HEADER;;;;;isr_LED_pulse" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\timer_clock_2.c" value="SOURCE_C;CortexM3;;;;timer_clock_2" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\timer_clock_2.h" value="HEADER;;;;;timer_clock_2" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer3.c" value="SOURCE_C;CortexM3;;;;Timer3" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer3.h" value="HEADER;;;;;Timer3" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer3_PM.c" value="SOURCE_C;CortexM3;;;;Timer3" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_LED_ring.c" value="SOURCE_C;CortexM3;;;;isr_LED_ring" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_LED_ring.h" value="HEADER;;;;;isr_LED_ring" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\SPIMOutCtrl.h" value="HEADER;;;;;SPIMOutCtrl" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\SPIMOutCtrl.c" value="SOURCE_C;CortexM3;;;;SPIMOutCtrl" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\SPIMOutCtrl_PM.c" value="SOURCE_C;CortexM3;;;;SPIMOutCtrl" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\timer_clock_3.c" value="SOURCE_C;CortexM3;;;;timer_clock_3" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\timer_clock_3.h" value="HEADER;;;;;timer_clock_3" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer4.c" value="SOURCE_C;CortexM3;;;;Timer4" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer4.h" value="HEADER;;;;;Timer4" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer4_PM.c" value="SOURCE_C;CortexM3;;;;Timer4" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_BlinkLED.c" value="SOURCE_C;CortexM3;;;;isr_BlinkLED" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_BlinkLED.h" value="HEADER;;;;;isr_BlinkLED" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_delay.c" value="SOURCE_C;CortexM3;;;;isr_delay" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\isr_delay.h" value="HEADER;;;;;isr_delay" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\timer_clock_4.c" value="SOURCE_C;CortexM3;;;;timer_clock_4" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\timer_clock_4.h" value="HEADER;;;;;timer_clock_4" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer5.c" value="SOURCE_C;CortexM3;;;;Timer5" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer5.h" value="HEADER;;;;;Timer5" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Timer5_PM.c" value="SOURCE_C;CortexM3;;;;Timer5" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\LEDdata_aliases.h" value="HEADER;;;;;LEDdata" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\LEDdata.c" value="SOURCE_C;CortexM3;;;;LEDdata" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\LEDdata.h" value="HEADER;;;;;LEDdata" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\SPIM_1_IntClock.c" value="SOURCE_C;CortexM3;;;;SPIM_1_IntClock" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\SPIM_1_IntClock.h" value="HEADER;;;;;SPIM_1_IntClock" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\cy_em_eeprom.c" value="SOURCE_C;CortexM3;;;;Em_EEPROM_Dynamic" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\cy_em_eeprom.h" value="HEADER;;;;;Em_EEPROM_Dynamic" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Cm3RealView.scat" value="LINKER_SCRIPT;;;fdb8e1ae-f83a-46cf-9446-1d703716f38a;;cy_boot" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\Cm3Start.c" value="SOURCE_C;CortexM3;;;;cy_boot" />
@@ -98,6 +88,8 @@
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\cmsis_armcc.h" value="HEADER;;;;;cy_boot" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\cmsis_gcc.h" value="HEADER;;;;;cy_boot" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\cmsis_compiler.h" value="HEADER;;;;;cy_boot" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\cy_em_eeprom.c" value="SOURCE_C;CortexM3;;;;Em_EEPROM_Dynamic" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\cy_em_eeprom.h" value="HEADER;;;;;Em_EEPROM_Dynamic" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\project.h" value="OTHER;;;;;" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\cycodeshareimport.ld" value="OTHER;;;;;" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\codegentemp\cycodeshareexport.ld" value="OTHER;;;;;" />
