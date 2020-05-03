@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpbF5Ok.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
   28:Generated_Source\PSoC5/SCL_pin.c **** *
   29:Generated_Source\PSoC5/SCL_pin.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/SCL_pin.c **** *  and shifting the bits appropriately. 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 2
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpbF5Ok.s 			page 2
 
 
   31:Generated_Source\PSoC5/SCL_pin.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
   52              		.size	SCL_pin_Write, .-SCL_pin_Write
   53              		.section	.text.SCL_pin_SetDriveMode,"ax",%progbits
   54              		.align	2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 3
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpbF5Ok.s 			page 3
 
 
   55              		.global	SCL_pin_SetDriveMode
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
   77 0012 00BF     		.align	2
   78              	.L5:
   79 0014 64500040 		.word	1073762404
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 4
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpbF5Ok.s 			page 4
 
 
   80              		.cfi_endproc
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
  110              		.align	2
  111              		.global	SCL_pin_ReadDataReg
  112              		.thumb
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 5
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpbF5Ok.s 			page 5
 
 
  113              		.thumb_func
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
  139              	.Ldebug_info0:
  140 0000 1B010000 		.4byte	0x11b
  141 0004 0400     		.2byte	0x4
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 6
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpbF5Ok.s 			page 6
 
 
  142 0006 00000000 		.4byte	.Ldebug_abbrev0
@@ -306,8 +306,8 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
  144 000b 01       		.uleb128 0x1
  145 000c 25000000 		.4byte	.LASF20
  146 0010 0C       		.byte	0xc
- 147 0011 87010000 		.4byte	.LASF21
- 148 0015 DD000000 		.4byte	.LASF22
+ 147 0011 21010000 		.4byte	.LASF21
+ 148 0015 42010000 		.4byte	.LASF22
  149 0019 00000000 		.4byte	.Ldebug_ranges0+0
  150 001d 00000000 		.4byte	0
  151 0021 00000000 		.4byte	.Ldebug_line0
@@ -342,7 +342,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
  180 0056 02       		.uleb128 0x2
  181 0057 08       		.byte	0x8
  182 0058 07       		.byte	0x7
- 183 0059 57010000 		.4byte	.LASF7
+ 183 0059 F1000000 		.4byte	.LASF7
  184 005d 03       		.uleb128 0x3
  185 005e 04       		.byte	0x4
  186 005f 05       		.byte	0x5
@@ -350,7 +350,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
  188 0064 02       		.uleb128 0x2
  189 0065 04       		.byte	0x4
  190 0066 07       		.byte	0x7
- 191 0067 4A010000 		.4byte	.LASF8
+ 191 0067 E4000000 		.4byte	.LASF8
  192 006b 04       		.uleb128 0x4
  193 006c DA010000 		.4byte	.LASF12
  194 0070 02       		.byte	0x2
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
  196 0073 2C000000 		.4byte	0x2c
  197 0077 02       		.uleb128 0x2
  198 0078 04       		.byte	0x4
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 7
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpbF5Ok.s 			page 7
 
 
  199 0079 04       		.byte	0x4
@@ -366,7 +366,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
  201 007e 02       		.uleb128 0x2
  202 007f 08       		.byte	0x8
  203 0080 04       		.byte	0x4
- 204 0081 43010000 		.4byte	.LASF10
+ 204 0081 DD000000 		.4byte	.LASF10
  205 0085 02       		.uleb128 0x2
  206 0086 01       		.byte	0x1
  207 0087 08       		.byte	0x8
@@ -411,14 +411,14 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
  246 00df 9C       		.byte	0x9c
  247 00e0 F4000000 		.4byte	0xf4
  248 00e4 07       		.uleb128 0x7
- 249 00e5 82010000 		.4byte	.LASF17
+ 249 00e5 1C010000 		.4byte	.LASF17
  250 00e9 01       		.byte	0x1
  251 00ea 5A       		.byte	0x5a
  252 00eb 6B000000 		.4byte	0x6b
  253 00ef 21000000 		.4byte	.LLST1
  254 00f3 00       		.byte	0
  255 00f4 09       		.uleb128 0x9
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 8
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpbF5Ok.s 			page 8
 
 
  256 00f5 F5010000 		.4byte	.LASF18
@@ -430,7 +430,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
  262 0107 01       		.uleb128 0x1
  263 0108 9C       		.byte	0x9c
  264 0109 09       		.uleb128 0x9
- 265 010a 6E010000 		.4byte	.LASF19
+ 265 010a 08010000 		.4byte	.LASF19
  266 010e 01       		.byte	0x1
  267 010f 8D       		.byte	0x8d
  268 0110 6B000000 		.4byte	0x6b
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
  310 0022 0B       		.uleb128 0xb
  311 0023 3E       		.uleb128 0x3e
  312 0024 0B       		.uleb128 0xb
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 9
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpbF5Ok.s 			page 9
 
 
  313 0025 03       		.uleb128 0x3
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
  367 005c 3A       		.uleb128 0x3a
  368 005d 0B       		.uleb128 0xb
  369 005e 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 10
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpbF5Ok.s 			page 10
 
 
  370 005f 0B       		.uleb128 0xb
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
  424 000a 50       		.byte	0x50
  425 000b 0A000000 		.4byte	.LVL2
  426 000f 18000000 		.4byte	.LFE0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 11
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpbF5Ok.s 			page 11
 
 
  427 0013 0400     		.2byte	0x4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
  480      02004400 
  480      00000201 
  480      FB0E0D00 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 12
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpbF5Ok.s 			page 12
 
 
  480      01010101 
@@ -708,52 +708,52 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
  498      7369676E 
  498      65642069 
  498      6E7400
- 499              	.LASF22:
- 500 00dd 433A5C55 		.ascii	"C:\\Users\\cring\\OneDrive - Aarhus universitet\\Un"
- 500      73657273 
- 500      5C637269 
- 500      6E675C4F 
- 500      6E654472 
- 501 010c 695C332E 		.ascii	"i\\3. Semester\\PRJ3\\KODE\\ProjektMain\\Hovedprogr"
- 501      2053656D 
- 501      65737465 
- 501      725C5052 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 13
-
-
- 501      4A335C4B 
- 502 013a 616D2E63 		.ascii	"am.cydsn\000"
- 502      7964736E 
+ 499              	.LASF10:
+ 500 00dd 646F7562 		.ascii	"double\000"
+ 500      6C6500
+ 501              	.LASF8:
+ 502 00e4 756E7369 		.ascii	"unsigned int\000"
+ 502      676E6564 
+ 502      20696E74 
  502      00
- 503              	.LASF10:
- 504 0143 646F7562 		.ascii	"double\000"
- 504      6C6500
- 505              	.LASF8:
- 506 014a 756E7369 		.ascii	"unsigned int\000"
- 506      676E6564 
- 506      20696E74 
- 506      00
- 507              	.LASF7:
- 508 0157 6C6F6E67 		.ascii	"long long unsigned int\000"
- 508      206C6F6E 
- 508      6720756E 
- 508      7369676E 
- 508      65642069 
- 509              	.LASF19:
- 510 016e 53434C5F 		.ascii	"SCL_pin_ReadDataReg\000"
- 510      70696E5F 
- 510      52656164 
- 510      44617461 
- 510      52656700 
- 511              	.LASF17:
- 512 0182 6D6F6465 		.ascii	"mode\000"
- 512      00
- 513              	.LASF21:
- 514 0187 47656E65 		.ascii	"Generated_Source\\PSoC5\\SCL_pin.c\000"
- 514      72617465 
- 514      645F536F 
- 514      75726365 
- 514      5C50536F 
+ 503              	.LASF7:
+ 504 00f1 6C6F6E67 		.ascii	"long long unsigned int\000"
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpbF5Ok.s 			page 13
+
+
+ 504      206C6F6E 
+ 504      6720756E 
+ 504      7369676E 
+ 504      65642069 
+ 505              	.LASF19:
+ 506 0108 53434C5F 		.ascii	"SCL_pin_ReadDataReg\000"
+ 506      70696E5F 
+ 506      52656164 
+ 506      44617461 
+ 506      52656700 
+ 507              	.LASF17:
+ 508 011c 6D6F6465 		.ascii	"mode\000"
+ 508      00
+ 509              	.LASF21:
+ 510 0121 47656E65 		.ascii	"Generated_Source\\PSoC5\\SCL_pin.c\000"
+ 510      72617465 
+ 510      645F536F 
+ 510      75726365 
+ 510      5C50536F 
+ 511              	.LASF22:
+ 512 0142 433A5C55 		.ascii	"C:\\Users\\cring\\OneDrive - Aarhus Universitet\\Un"
+ 512      73657273 
+ 512      5C637269 
+ 512      6E675C4F 
+ 512      6E654472 
+ 513 0171 695C332E 		.ascii	"i\\3. Semester\\PRJ3\\KODE\\ProjektMain\\Hovedprogr"
+ 513      2053656D 
+ 513      65737465 
+ 513      725C5052 
+ 513      4A335C4B 
+ 514 019f 616D2E63 		.ascii	"am.cydsn\000"
+ 514      7964736E 
+ 514      00
  515              	.LASF6:
  516 01a8 6C6F6E67 		.ascii	"long long int\000"
  516      206C6F6E 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 1
  525              	.LASF4:
  526 01e0 6C6F6E67 		.ascii	"long int\000"
  526      20696E74 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpyYIlN.s 			page 14
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpbF5Ok.s 			page 14
 
 
  526      00

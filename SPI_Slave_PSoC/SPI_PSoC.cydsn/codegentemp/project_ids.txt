@@ -1,0 +1,7 @@
+C:\Users\dryos\Desktop\SPI_Master\SPI_PSoC.cydsn\SPI_PSoC.cyprj|7216c870-5320-4323-9bd4-71f749495293
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|359e451b-f152-4e98-9595-4b9b9f411cac
+C:\Users\dryos\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|7b1de5b0-34b1-419a-b379-42c01c3a4496
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|3ed48e87-0484-47fd-9032-aaf12293fde6
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|4f9401b5-adbe-4ee8-a252-4286666235c9
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|7cf4a04d-0522-4f83-8507-fb6ce73203d5
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc3\AnalogDevice\PSoC35AnalogDevice.cylib\PSoC35AnalogDevice.cyprj|f28df7e9-fe95-4441-acb4-aefe4dcb19cd

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc2trVhB.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
   28:Generated_Source\PSoC5/SPIMOutCtrl_PM.c **** ********************************************************************************
   29:Generated_Source\PSoC5/SPIMOutCtrl_PM.c **** *
   30:Generated_Source\PSoC5/SPIMOutCtrl_PM.c **** * Summary:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 2
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc2trVhB.s 			page 2
 
 
   31:Generated_Source\PSoC5/SPIMOutCtrl_PM.c **** *  Saves the control register value.
@@ -87,7 +87,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
   39              	.L3:
   40 000a 00BF     		.align	2
   41              	.L2:
-  42 000c 73640040 		.word	1073767539
+  42 000c 72640040 		.word	1073767538
   43 0010 00000000 		.word	.LANCHOR0
   44              		.cfi_endproc
   45              	.LFE0:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
   58:Generated_Source\PSoC5/SPIMOutCtrl_PM.c **** *
   59:Generated_Source\PSoC5/SPIMOutCtrl_PM.c **** *
   60:Generated_Source\PSoC5/SPIMOutCtrl_PM.c **** *******************************************************************************/
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 3
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc2trVhB.s 			page 3
 
 
   61:Generated_Source\PSoC5/SPIMOutCtrl_PM.c **** void SPIMOutCtrl_RestoreConfig(void) 
@@ -139,7 +139,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
   67 000a 00BF     		.align	2
   68              	.L5:
   69 000c 00000000 		.word	.LANCHOR0
-  70 0010 73640040 		.word	1073767539
+  70 0010 72640040 		.word	1073767538
   71              		.cfi_endproc
   72              	.LFE1:
   73              		.size	SPIMOutCtrl_RestoreConfig, .-SPIMOutCtrl_RestoreConfig
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
   87              		.cfi_def_cfa_offset 8
   88              		.cfi_offset 3, -8
   89              		.cfi_offset 14, -4
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 4
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc2trVhB.s 			page 4
 
 
   83:Generated_Source\PSoC5/SPIMOutCtrl_PM.c ****     SPIMOutCtrl_SaveConfig();
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
  123              		.type	SPIMOutCtrl_backup, %object
  124              		.size	SPIMOutCtrl_backup, 1
  125              	SPIMOutCtrl_backup:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 5
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc2trVhB.s 			page 5
 
 
  126 0000 00       		.space	1
@@ -256,7 +256,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
  138 000c 26000000 		.4byte	.LASF19
  139 0010 0C       		.byte	0xc
  140 0011 10020000 		.4byte	.LASF20
- 141 0015 DE000000 		.4byte	.LASF21
+ 141 0015 74010000 		.4byte	.LASF21
  142 0019 00000000 		.4byte	.Ldebug_ranges0+0
  143 001d 00000000 		.4byte	0
  144 0021 00000000 		.4byte	.Ldebug_line0
@@ -291,18 +291,18 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
  173 0056 02       		.uleb128 0x2
  174 0057 08       		.byte	0x8
  175 0058 07       		.byte	0x7
- 176 0059 65010000 		.4byte	.LASF7
+ 176 0059 16010000 		.4byte	.LASF7
  177 005d 03       		.uleb128 0x3
  178 005e 04       		.byte	0x4
  179 005f 05       		.byte	0x5
  180 0060 696E7400 		.ascii	"int\000"
  181 0064 02       		.uleb128 0x2
  182 0065 04       		.byte	0x4
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 6
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc2trVhB.s 			page 6
 
 
  183 0066 07       		.byte	0x7
- 184 0067 58010000 		.4byte	.LASF8
+ 184 0067 09010000 		.4byte	.LASF8
  185 006b 04       		.uleb128 0x4
  186 006c 0A020000 		.4byte	.LASF12
  187 0070 02       		.byte	0x2
@@ -315,7 +315,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
  194 007e 02       		.uleb128 0x2
  195 007f 08       		.byte	0x8
  196 0080 04       		.byte	0x4
- 197 0081 51010000 		.4byte	.LASF10
+ 197 0081 02010000 		.4byte	.LASF10
  198 0085 02       		.uleb128 0x2
  199 0086 01       		.byte	0x1
  200 0087 08       		.byte	0x8
@@ -333,19 +333,19 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
  212 00a0 24       		.byte	0x24
  213 00a1 B2000000 		.4byte	0xb2
  214 00a5 07       		.uleb128 0x7
- 215 00a6 44010000 		.4byte	.LASF22
+ 215 00a6 F5000000 		.4byte	.LASF22
  216 00aa 03       		.byte	0x3
  217 00ab 26       		.byte	0x26
  218 00ac 6B000000 		.4byte	0x6b
  219 00b0 00       		.byte	0
  220 00b1 00       		.byte	0
  221 00b2 08       		.uleb128 0x8
- 222 00b3 7C010000 		.4byte	.LASF14
+ 222 00b3 2D010000 		.4byte	.LASF14
  223 00b7 03       		.byte	0x3
  224 00b8 28       		.byte	0x28
  225 00b9 9D000000 		.4byte	0x9d
  226 00bd 09       		.uleb128 0x9
- 227 00be C3010000 		.4byte	.LASF15
+ 227 00be DE000000 		.4byte	.LASF15
  228 00c2 01       		.byte	0x1
  229 00c3 28       		.byte	0x28
  230 00c4 00000000 		.4byte	.LFB0
@@ -353,12 +353,12 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
  232 00cc 01       		.uleb128 0x1
  233 00cd 9C       		.byte	0x9c
  234 00ce 09       		.uleb128 0x9
- 235 00cf A9010000 		.4byte	.LASF16
+ 235 00cf 5A010000 		.4byte	.LASF16
  236 00d3 01       		.byte	0x1
  237 00d4 3D       		.byte	0x3d
  238 00d5 00000000 		.4byte	.LFB1
  239 00d9 14000000 		.4byte	.LFE1-.LFB1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 7
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc2trVhB.s 			page 7
 
 
  240 00dd 01       		.uleb128 0x1
@@ -390,7 +390,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
  266 0118 CE000000 		.4byte	0xce
  267 011c 00       		.byte	0
  268 011d 0C       		.uleb128 0xc
- 269 011e 96010000 		.4byte	.LASF23
+ 269 011e 47010000 		.4byte	.LASF23
  270 0122 01       		.byte	0x1
  271 0123 17       		.byte	0x17
  272 0124 B2000000 		.4byte	0xb2
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
  294 000f 10       		.uleb128 0x10
  295 0010 17       		.uleb128 0x17
  296 0011 00       		.byte	0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 8
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc2trVhB.s 			page 8
 
 
  297 0012 00       		.byte	0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
  351 0048 00       		.byte	0
  352 0049 00       		.byte	0
  353 004a 07       		.uleb128 0x7
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 9
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc2trVhB.s 			page 9
 
 
  354 004b 0D       		.uleb128 0xd
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
  408 0082 19       		.uleb128 0x19
  409 0083 03       		.uleb128 0x3
  410 0084 0E       		.uleb128 0xe
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 10
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc2trVhB.s 			page 10
 
 
  411 0085 3A       		.uleb128 0x3a
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
  465 001c 14000000 		.4byte	.LFE1-.LFB1
  466 0020 00000000 		.4byte	.LFB2
  467 0024 08000000 		.4byte	.LFE2-.LFB2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 11
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc2trVhB.s 			page 11
 
 
  468 0028 00000000 		.4byte	.LFB3
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
  498 00b4 72656738 		.ascii	"reg8\000"
  498      00
  499              	.LASF5:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 12
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc2trVhB.s 			page 12
 
 
  500 00b9 6C6F6E67 		.ascii	"long unsigned int\000"
@@ -672,66 +672,66 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 1
  502      7369676E 
  502      65642069 
  502      6E7400
- 503              	.LASF21:
- 504 00de 433A5C55 		.ascii	"C:\\Users\\cring\\OneDrive - Aarhus universitet\\Un"
- 504      73657273 
- 504      5C637269 
- 504      6E675C4F 
- 504      6E654472 
- 505 010d 695C332E 		.ascii	"i\\3. Semester\\PRJ3\\KODE\\ProjektMain\\Hovedprogr"
- 505      2053656D 
- 505      65737465 
- 505      725C5052 
- 505      4A335C4B 
- 506 013b 616D2E63 		.ascii	"am.cydsn\000"
- 506      7964736E 
+ 503              	.LASF15:
+ 504 00de 5350494D 		.ascii	"SPIMOutCtrl_SaveConfig\000"
+ 504      4F757443 
+ 504      74726C5F 
+ 504      53617665 
+ 504      436F6E66 
+ 505              	.LASF22:
+ 506 00f5 636F6E74 		.ascii	"controlState\000"
+ 506      726F6C53 
+ 506      74617465 
  506      00
- 507              	.LASF22:
- 508 0144 636F6E74 		.ascii	"controlState\000"
- 508      726F6C53 
- 508      74617465 
- 508      00
- 509              	.LASF10:
- 510 0151 646F7562 		.ascii	"double\000"
- 510      6C6500
- 511              	.LASF8:
- 512 0158 756E7369 		.ascii	"unsigned int\000"
- 512      676E6564 
- 512      20696E74 
- 512      00
- 513              	.LASF7:
- 514 0165 6C6F6E67 		.ascii	"long long unsigned int\000"
- 514      206C6F6E 
- 514      6720756E 
- 514      7369676E 
- 514      65642069 
- 515              	.LASF14:
- 516 017c 5350494D 		.ascii	"SPIMOutCtrl_BACKUP_STRUCT\000"
+ 507              	.LASF10:
+ 508 0102 646F7562 		.ascii	"double\000"
+ 508      6C6500
+ 509              	.LASF8:
+ 510 0109 756E7369 		.ascii	"unsigned int\000"
+ 510      676E6564 
+ 510      20696E74 
+ 510      00
+ 511              	.LASF7:
+ 512 0116 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 512      206C6F6E 
+ 512      6720756E 
+ 512      7369676E 
+ 512      65642069 
+ 513              	.LASF14:
+ 514 012d 5350494D 		.ascii	"SPIMOutCtrl_BACKUP_STRUCT\000"
+ 514      4F757443 
+ 514      74726C5F 
+ 514      4241434B 
+ 514      55505F53 
+ 515              	.LASF23:
+ 516 0147 5350494D 		.ascii	"SPIMOutCtrl_backup\000"
  516      4F757443 
  516      74726C5F 
- 516      4241434B 
- 516      55505F53 
- 517              	.LASF23:
- 518 0196 5350494D 		.ascii	"SPIMOutCtrl_backup\000"
+ 516      6261636B 
+ 516      757000
+ 517              	.LASF16:
+ 518 015a 5350494D 		.ascii	"SPIMOutCtrl_RestoreConfig\000"
  518      4F757443 
  518      74726C5F 
- 518      6261636B 
- 518      757000
- 519              	.LASF16:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccwQqwpX.s 			page 13
+ 518      52657374 
+ 518      6F726543 
+ 519              	.LASF21:
+ 520 0174 433A5C55 		.ascii	"C:\\Users\\cring\\OneDrive - Aarhus Universitet\\Un"
+ 520      73657273 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc2trVhB.s 			page 13
 
 
- 520 01a9 5350494D 		.ascii	"SPIMOutCtrl_RestoreConfig\000"
- 520      4F757443 
- 520      74726C5F 
- 520      52657374 
- 520      6F726543 
- 521              	.LASF15:
- 522 01c3 5350494D 		.ascii	"SPIMOutCtrl_SaveConfig\000"
- 522      4F757443 
- 522      74726C5F 
- 522      53617665 
- 522      436F6E66 
+ 520      5C637269 
+ 520      6E675C4F 
+ 520      6E654472 
+ 521 01a3 695C332E 		.ascii	"i\\3. Semester\\PRJ3\\KODE\\ProjektMain\\Hovedprogr"
+ 521      2053656D 
+ 521      65737465 
+ 521      725C5052 
+ 521      4A335C4B 
+ 522 01d1 616D2E63 		.ascii	"am.cydsn\000"
+ 522      7964736E 
+ 522      00
  523              	.LASF6:
  524 01da 6C6F6E67 		.ascii	"long long int\000"
  524      206C6F6E 

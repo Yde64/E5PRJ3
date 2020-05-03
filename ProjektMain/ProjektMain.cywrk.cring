@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ProjektMain\Hovedprogram\Source Files\States.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>ProjektMain</v>
 <v>ProjektMain\Hovedprogram</v>
@@ -37,6 +37,7 @@
 <v>ProjektMain\Hovedprogram\Header Files\States.h</v>
 <v>ProjektMain\Hovedprogram\Header Files\Stopur.h</v>
 <v>ProjektMain\Hovedprogram\Header Files\UART.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\VT100Terminal.h</v>
 <v>ProjektMain\Hovedprogram\Header Files\WeightSensors_.h</v>
 <v>ProjektMain\Hovedprogram\Source Files</v>
 <v>ProjektMain\Hovedprogram\Source Files\Display.c</v>
@@ -44,9 +45,9 @@
 <v>ProjektMain\Hovedprogram\Source Files\LiquidCrystal_I2C.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\main.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\Startknap.c</v>
-<v>ProjektMain\Hovedprogram\Source Files\States.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\Stopur.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\UART.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\VT100Terminal.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\WeightSensors.c</v>
 <v>ProjektMain\Hovedprogram\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
@@ -73,6 +74,7 @@
 <v>ProjektMain\Hovedprogram\Header Files\States.h</v>
 <v>ProjektMain\Hovedprogram\Header Files\Stopur.h</v>
 <v>ProjektMain\Hovedprogram\Header Files\UART.h</v>
+<v>ProjektMain\Hovedprogram\Header Files\VT100Terminal.h</v>
 <v>ProjektMain\Hovedprogram\Header Files\WeightSensors_.h</v>
 <v>ProjektMain\Hovedprogram\Source Files</v>
 <v>ProjektMain\Hovedprogram\Source Files\Display.c</v>
@@ -80,9 +82,9 @@
 <v>ProjektMain\Hovedprogram\Source Files\LiquidCrystal_I2C.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\main.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\Startknap.c</v>
-<v>ProjektMain\Hovedprogram\Source Files\States.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\Stopur.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\UART.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\VT100Terminal.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\WeightSensors.c</v>
 <v>ProjektMain\Hovedprogram\Generated_Source</v>
 </VisibleNodeIds>
@@ -159,7 +161,6 @@
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIMOutCtrl.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIMOutCtrl_PM.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Startknap.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\States.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Stopur.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timeout_timer.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timeout_timer_PM.lst</v>
@@ -184,6 +185,7 @@
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_INT.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_IntClock.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\VT100Terminal.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\WeightSensors.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Hovedprogram.elf</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Hovedprogram.hex</v>
@@ -229,22 +231,6 @@
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_refreshrate.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_ring.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_refreshrate_LCD.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_timer.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_uart_rx.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDcontrol.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDdata.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDdata2.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LiquidCrystal_I2C.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_2.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\PlayerSelect.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SAR_p1.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SAR_p2.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SCL_pin.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SDA_pin.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIM_1.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIM_1_INT.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIM_1_IntClock.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -259,7 +245,7 @@
 <v>ProjektMain\Hovedprogram\PSoC 5LP Architecture TRM</v>
 <v>ProjektMain\Hovedprogram\CY8C58LP Family Datasheet</v>
 <v>ProjektMain\Hovedprogram\System Reference Guides</v>
-<v>ProjektMain\Hovedprogram\System Reference Guides\cy_boot_v5_80</v>
+<v>ProjektMain\Hovedprogram\System Reference Guides\cy_boot_v5_90</v>
 <v>ProjektMain\Hovedprogram\ADC_SAR_v3_10.pdf</v>
 <v>ProjektMain\Hovedprogram\AMux_v1_80.pdf</v>
 <v>ProjektMain\Hovedprogram\cy_clock_v2_20</v>
@@ -285,7 +271,7 @@
 <v>ProjektMain\Hovedprogram\PSoC 5LP Architecture TRM</v>
 <v>ProjektMain\Hovedprogram\CY8C58LP Family Datasheet</v>
 <v>ProjektMain\Hovedprogram\System Reference Guides</v>
-<v>ProjektMain\Hovedprogram\System Reference Guides\cy_boot_v5_80</v>
+<v>ProjektMain\Hovedprogram\System Reference Guides\cy_boot_v5_90</v>
 <v>ProjektMain\Hovedprogram\ADC_SAR_v3_10.pdf</v>
 <v>ProjektMain\Hovedprogram\AMux_v1_80.pdf</v>
 <v>ProjektMain\Hovedprogram\cy_clock_v2_20</v>
@@ -313,21 +299,14 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\Hovedprogram.cydsn\States.c" />
+<name v=".\Hovedprogram.cydsn\WeightSensors.c" />
 <name v=".\Hovedprogram.cydsn\main.c" />
 <name v=".\Hovedprogram.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\Hovedprogram.cydsn\Hovedprogram.cydwr" />
-<name v=".\Hovedprogram.cydsn\States.h" />
-<name v=".\Hovedprogram.cydsn\LEDcontrol.h" />
-<name v=".\Hovedprogram.cydsn\Startknap.h" />
-<name v=".\Hovedprogram.cydsn\LiquidCrystal_I2C.h" />
-<name v=".\Hovedprogram.cydsn\Display.h" />
-<name v=".\Hovedprogram.cydsn\cyapicallbacks.h" />
-<name v=".\Hovedprogram.cydsn\WeightSensors_.h" />
-<name v=".\Hovedprogram.cydsn\UART.h" />
-<name v=".\Hovedprogram.cydsn\Stopur.h" />
 <name v=".\Hovedprogram.cydsn\LEDcontrol.c" />
-<name v=".\Hovedprogram.cydsn\WeightSensors.c" />
+<name v=".\Hovedprogram.cydsn\Display.c" />
+<name v=".\Hovedprogram.cydsn\WeightSensors_.h" />
+<name v=".\Hovedprogram.cydsn\Stopur.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -335,7 +314,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Vertical"><TabbedMdiContainer Size="1465, 684" SelectedTabbedMdiWindow="d522c7ae-cba8-4797-b680-6b368e106f9d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a81e21bb-5e2e-400c-9cbf-968a63daa365" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\States.c" Guid="d522c7ae-cba8-4797-b680-6b368e106f9d" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\main.c" Guid="9f26af46-ce57-4f09-9f7f-07ac34d24e45" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\TopDesign\TopDesign.cysch" Guid="db0fe6a9-dc2c-4958-ade2-80ad7ca47a5d" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Hovedprogram.cydwr" Guid="850b2fd5-ab19-48ff-a50a-b6e41b6daa86" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\States.h" Guid="921d19d5-d7b1-4736-b779-919970affac9" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\LEDcontrol.h" Guid="4aafc5b3-be64-4348-8c18-d2f70c36a0f0" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Startknap.h" Guid="908ae3a8-9205-4d8f-8b8b-777c3902367a" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\LiquidCrystal_I2C.h" Guid="cd9274f5-3361-40c0-9015-7a43ee4006df" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Display.h" Guid="a6c7308d-ecb4-41e8-8283-24d16e8ce240" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\cyapicallbacks.h" Guid="7d0581f9-e592-42b0-8888-bf3911c7202a" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\WeightSensors_.h" Guid="35490e28-4b90-4506-b49f-e3ee48b66903" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\UART.h" Guid="45c0beb8-43fb-426d-8b95-ae432228c40e" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Stopur.h" Guid="16baf756-6295-41bf-a76b-eeb00c6363b7" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\LEDcontrol.c" Guid="5effea47-c4e0-4efc-8b19-3173f3bb1b4f" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\WeightSensors.c" Guid="cf156ee8-f499-4bf8-9e2d-2f7298c64b7f" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Vertical"><TabbedMdiContainer Size="1098, 512" SelectedTabbedMdiWindow="64c4f9ab-e104-4187-ae2c-a03977c529b6"><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\WeightSensors.c" Guid="242aa6bb-d950-4e78-8483-d89828af000d" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\main.c" Guid="a144ffc9-d90d-4937-94b3-000359a3e370" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\TopDesign\TopDesign.cysch" Guid="9f707571-ae91-438b-86fa-7c0c560fc14d" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Hovedprogram.cydwr" Guid="1fdcae9a-f8fb-408e-9af7-f97892f1500e" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\LEDcontrol.c" Guid="64c4f9ab-e104-4187-ae2c-a03977c529b6" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Display.c" Guid="63e92520-735e-4a92-a047-cadb83565d5e" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\WeightSensors_.h" Guid="efb05fa0-8cb8-45f8-b803-f07d0fe49742" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Stopur.c" Guid="c80b0d28-24c8-4bdd-8f43-1871edea30a5" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a81e21bb-5e2e-400c-9cbf-968a63daa365" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

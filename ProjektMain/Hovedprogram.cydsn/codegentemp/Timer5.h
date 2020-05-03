@@ -172,10 +172,10 @@ void Timer5_Wakeup(void)        ;
 #define Timer5_INIT_CAPTURE_MODE       ((uint8)((uint8)1u << Timer5_CTRL_CAP_MODE_SHIFT))
 #define Timer5_INIT_TRIGGER_MODE       ((uint8)((uint8)0u << Timer5_CTRL_TRIG_MODE_SHIFT))
 #if (Timer5_UsingFixedFunction)
-    #define Timer5_INIT_INTERRUPT_MODE (((uint8)((uint8)0u << Timer5_STATUS_TC_INT_MASK_SHIFT)) | \
+    #define Timer5_INIT_INTERRUPT_MODE (((uint8)((uint8)1u << Timer5_STATUS_TC_INT_MASK_SHIFT)) | \
                                                   ((uint8)((uint8)0 << Timer5_STATUS_CAPTURE_INT_MASK_SHIFT)))
 #else
-    #define Timer5_INIT_INTERRUPT_MODE (((uint8)((uint8)0u << Timer5_STATUS_TC_INT_MASK_SHIFT)) | \
+    #define Timer5_INIT_INTERRUPT_MODE (((uint8)((uint8)1u << Timer5_STATUS_TC_INT_MASK_SHIFT)) | \
                                                  ((uint8)((uint8)0 << Timer5_STATUS_CAPTURE_INT_MASK_SHIFT)) | \
                                                  ((uint8)((uint8)0 << Timer5_STATUS_FIFOFULL_INT_MASK_SHIFT)))
 #endif /* (Timer5_UsingFixedFunction) */

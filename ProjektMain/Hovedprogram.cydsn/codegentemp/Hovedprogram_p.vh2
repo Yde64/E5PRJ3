@@ -1,5 +1,5 @@
 -- Project:   Hovedprogram
--- Generated: 04/04/2020 23:43:03
+-- Generated: 05/02/2020 14:03:36
 -- PSoC Creator  4.3
 
 ENTITY Hovedprogram IS
@@ -39,7 +39,6 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     SIGNAL Net_22 : bit;
     SIGNAL Net_23 : bit;
     SIGNAL Net_34 : bit;
-    SIGNAL Net_348 : bit;
     SIGNAL Net_360 : bit;
     SIGNAL Net_373 : bit;
     ATTRIBUTE GROUND OF Net_373 : SIGNAL IS true;
@@ -48,9 +47,6 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     SIGNAL Net_445 : bit;
     SIGNAL Net_583 : bit;
     SIGNAL Net_584 : bit;
-    SIGNAL Net_590 : bit;
-    SIGNAL Net_624 : bit;
-    SIGNAL Net_627 : bit;
     SIGNAL Net_628 : bit;
     SIGNAL Net_632 : bit;
     SIGNAL Net_637 : bit;
@@ -60,6 +56,10 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE udbclken_assigned OF Net_706 : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_706 : SIGNAL IS true;
     SIGNAL Net_706_local : bit;
+    SIGNAL Net_721 : bit;
+    SIGNAL Net_722 : bit;
+    SIGNAL Net_744 : bit;
+    SIGNAL Net_747 : bit;
     SIGNAL Pin_2(0)__PA : bit;
     SIGNAL Rx_1(0)__PA : bit;
     SIGNAL SAR_p1(0)__PA : bit;
@@ -371,15 +371,15 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     SIGNAL \Timer5:TimerUDB:sT16:timerdp:u1.sor__sig\ : bit;
     SIGNAL \Timer5:TimerUDB:sT16:timerdp:u1.cmsbo__sig\ : bit;
     ATTRIBUTE lib_model OF LEDdata2(0) : LABEL IS "iocell1";
-    ATTRIBUTE Location OF LEDdata2(0) : LABEL IS "P15[3]";
+    ATTRIBUTE Location OF LEDdata2(0) : LABEL IS "P0[6]";
     ATTRIBUTE lib_model OF LEDdata(0) : LABEL IS "iocell2";
-    ATTRIBUTE Location OF LEDdata(0) : LABEL IS "P15[1]";
+    ATTRIBUTE Location OF LEDdata(0) : LABEL IS "P0[5]";
     ATTRIBUTE lib_model OF Rx_1(0) : LABEL IS "iocell3";
     ATTRIBUTE Location OF Rx_1(0) : LABEL IS "P12[6]";
     ATTRIBUTE lib_model OF Tx_1(0) : LABEL IS "iocell4";
     ATTRIBUTE Location OF Tx_1(0) : LABEL IS "P12[7]";
     ATTRIBUTE lib_model OF SAR_p2(0) : LABEL IS "iocell5";
-    ATTRIBUTE Location OF SAR_p2(0) : LABEL IS "P0[6]";
+    ATTRIBUTE Location OF SAR_p2(0) : LABEL IS "P0[7]";
     ATTRIBUTE lib_model OF Pin_2(0) : LABEL IS "iocell6";
     ATTRIBUTE Location OF Pin_2(0) : LABEL IS "P15[4]";
     ATTRIBUTE lib_model OF SAR_p1(0) : LABEL IS "iocell7";
@@ -403,8 +403,8 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE lib_model OF \UART_1:BUART:rx_postpoll\ : LABEL IS "macrocell13";
     ATTRIBUTE lib_model OF \UART_1:BUART:rx_status_4\ : LABEL IS "macrocell14";
     ATTRIBUTE lib_model OF \UART_1:BUART:rx_status_5\ : LABEL IS "macrocell15";
-    ATTRIBUTE lib_model OF Net_348 : LABEL IS "macrocell16";
-    ATTRIBUTE lib_model OF Net_590 : LABEL IS "macrocell17";
+    ATTRIBUTE lib_model OF Net_721 : LABEL IS "macrocell16";
+    ATTRIBUTE lib_model OF Net_722 : LABEL IS "macrocell17";
     ATTRIBUTE lib_model OF \Timer_Stopur:TimerUDB:status_tc\ : LABEL IS "macrocell18";
     ATTRIBUTE lib_model OF \Timer_LCD:TimerUDB:status_tc\ : LABEL IS "macrocell19";
     ATTRIBUTE lib_model OF \Timer4:TimerUDB:status_tc\ : LABEL IS "macrocell20";
@@ -971,7 +971,7 @@ BEGIN
         PORT MAP(
             pa_out => LEDdata2(0)__PA,
             oe => open,
-            pin_input => Net_590,
+            pin_input => Net_722,
             pad_out => LEDdata2(0)_PAD,
             pad_in => LEDdata2(0)_PAD,
             in_clock => open,
@@ -1063,7 +1063,7 @@ BEGIN
         PORT MAP(
             pa_out => LEDdata(0)__PA,
             oe => open,
-            pin_input => Net_348,
+            pin_input => Net_721,
             pad_out => LEDdata(0)_PAD,
             pad_in => LEDdata(0)_PAD,
             in_clock => open,
@@ -1348,7 +1348,7 @@ BEGIN
 
     Pin_2:logicalport
         GENERIC MAP(
-            drive_mode => "001",
+            drive_mode => "011",
             ibuf_enabled => "1",
             id => "8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba",
             init_dr_st => "0",
@@ -1877,24 +1877,24 @@ BEGIN
             main_0 => \UART_1:BUART:rx_fifonotempty\,
             main_1 => \UART_1:BUART:rx_state_stop1_reg\);
 
-    Net_348:macrocell
+    Net_721:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1 * !main_2)",
             regmode => 0,
             clken_mode => 1)
         PORT MAP(
-            q => Net_348,
+            q => Net_721,
             main_0 => Net_584,
             main_1 => \SPIM_1:BSPIM:mosi_hs_reg\,
             main_2 => Net_637);
 
-    Net_590:macrocell
+    Net_722:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1 * main_2)",
             regmode => 0,
             clken_mode => 1)
         PORT MAP(
-            q => Net_590,
+            q => Net_722,
             main_0 => Net_584,
             main_1 => \SPIM_1:BSPIM:mosi_hs_reg\,
             main_2 => Net_637);
@@ -2532,7 +2532,7 @@ BEGIN
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => Net_624,
+            interrupt => Net_744,
             clock => ClockBlock_BUS_CLK);
 
     \ADC_SAR_1:ADC_SAR\:sarcell
@@ -2551,7 +2551,7 @@ BEGIN
             vn_ctl_udb_1 => open,
             vn_ctl_udb_0 => open,
             irq => \ADC_SAR_1:Net_252\,
-            next => Net_627,
+            next => Net_747,
             data_out_udb_11 => \ADC_SAR_1:Net_207_11\,
             data_out_udb_10 => \ADC_SAR_1:Net_207_10\,
             data_out_udb_9 => \ADC_SAR_1:Net_207_9\,
@@ -2564,7 +2564,7 @@ BEGIN
             data_out_udb_2 => \ADC_SAR_1:Net_207_2\,
             data_out_udb_1 => \ADC_SAR_1:Net_207_1\,
             data_out_udb_0 => \ADC_SAR_1:Net_207_0\,
-            eof_udb => Net_624);
+            eof_udb => Net_744);
 
     \UART_1:BUART:sTX:TxShifter:u0\:datapathcell
         GENERIC MAP(
@@ -2748,7 +2748,7 @@ BEGIN
 
     isr_button:interrupt
         GENERIC MAP(
-            int_type => "10",
+            int_type => "00",
             is_nmi => 0)
         PORT MAP(
             interrupt => Net_445,

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
   28:Generated_Source\PSoC5/I2C_1_PM.c ****     I2C_1_DEFAULT_CFG,
   29:Generated_Source\PSoC5/I2C_1_PM.c **** #endif /* (I2C_1_FF_IMPLEMENTED) */
   30:Generated_Source\PSoC5/I2C_1_PM.c **** 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 2
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 2
 
 
   31:Generated_Source\PSoC5/I2C_1_PM.c **** #if (I2C_1_TIMEOUT_ENABLED)
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
   80:Generated_Source\PSoC5/I2C_1_PM.c ****     I2C_1_backup.cfg     = I2C_1_CFG_REG;
   33              		.loc 1 80 0
   34 0000 084B     		ldr	r3, .L2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 3
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 3
 
 
   35 0002 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
   95:Generated_Source\PSoC5/I2C_1_PM.c ****     /* 1) Set force NACK to ignore I2C transactions;
   96:Generated_Source\PSoC5/I2C_1_PM.c ****     *  2) Wait unti I2C is ready go to Sleep; !!
   97:Generated_Source\PSoC5/I2C_1_PM.c ****     *  3) These bits are cleared on wake up.
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 4
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 4
 
 
   98:Generated_Source\PSoC5/I2C_1_PM.c ****     */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  152:Generated_Source\PSoC5/I2C_1_PM.c **** {
   75              		.loc 1 152 0
   76              		.cfi_startproc
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 5
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 5
 
 
   77              		@ args = 0, pretend = 0, frame = 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  112              		.type	I2C_1_RestoreConfig, %function
  113              	I2C_1_RestoreConfig:
  114              	.LFB2:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 6
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 6
 
 
  172:Generated_Source\PSoC5/I2C_1_PM.c **** }
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  126 0006 13F0040F 		tst	r3, #4
  127 000a 0DD0     		beq	.L10
  215:Generated_Source\PSoC5/I2C_1_PM.c ****     /* Low power mode was Sleep - backup regulator is enabled */
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 7
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 7
 
 
  216:Generated_Source\PSoC5/I2C_1_PM.c ****     {
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  155              		.loc 1 242 0
  156 0036 D978     		ldrb	r1, [r3, #3]	@ zero_extendqisi2
  157 0038 0C3A     		subs	r2, r2, #12
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 8
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 8
 
 
  158 003a 1170     		strb	r1, [r2]
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  268:Generated_Source\PSoC5/I2C_1_PM.c **** /*******************************************************************************
  269:Generated_Source\PSoC5/I2C_1_PM.c **** * Function Name: I2C_1_Wakeup
  270:Generated_Source\PSoC5/I2C_1_PM.c **** ********************************************************************************
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 9
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 9
 
 
  271:Generated_Source\PSoC5/I2C_1_PM.c **** *
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  204              	.LVL5:
  308:Generated_Source\PSoC5/I2C_1_PM.c ****         I2C_1_EnableInt();
  205              		.loc 1 308 0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 10
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 10
 
 
  206 0010 4FF40042 		mov	r2, #32768
@@ -579,10 +579,10 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  241 0006 00000000 		.4byte	.Ldebug_abbrev0
  242 000a 04       		.byte	0x4
  243 000b 01       		.uleb128 0x1
- 244 000c 86000000 		.4byte	.LASF32
+ 244 000c EC000000 		.4byte	.LASF32
  245 0010 0C       		.byte	0xc
  246 0011 B6010000 		.4byte	.LASF33
- 247 0015 30010000 		.4byte	.LASF34
+ 247 0015 1A000000 		.4byte	.LASF34
  248 0019 00000000 		.4byte	.Ldebug_ranges0+0
  249 001d 00000000 		.4byte	0
  250 0021 00000000 		.4byte	.Ldebug_line0
@@ -593,18 +593,18 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  255 002c 02       		.uleb128 0x2
  256 002d 01       		.byte	0x1
  257 002e 08       		.byte	0x8
- 258 002f 78000000 		.4byte	.LASF1
+ 258 002f DE000000 		.4byte	.LASF1
  259 0033 02       		.uleb128 0x2
  260 0034 02       		.byte	0x2
  261 0035 05       		.byte	0x5
  262 0036 65020000 		.4byte	.LASF2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 11
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 11
 
 
  263 003a 02       		.uleb128 0x2
  264 003b 02       		.byte	0x2
  265 003c 07       		.byte	0x7
- 266 003d 27000000 		.4byte	.LASF3
+ 266 003d 8D000000 		.4byte	.LASF3
  267 0041 02       		.uleb128 0x2
  268 0042 04       		.byte	0x4
  269 0043 05       		.byte	0x5
@@ -612,7 +612,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  271 0048 02       		.uleb128 0x2
  272 0049 04       		.byte	0x4
  273 004a 07       		.byte	0x7
- 274 004b 19010000 		.4byte	.LASF5
+ 274 004b 7F010000 		.4byte	.LASF5
  275 004f 02       		.uleb128 0x2
  276 0050 08       		.byte	0x8
  277 0051 05       		.byte	0x5
@@ -620,7 +620,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  279 0056 02       		.uleb128 0x2
  280 0057 08       		.byte	0x8
  281 0058 07       		.byte	0x7
- 282 0059 61000000 		.4byte	.LASF7
+ 282 0059 C7000000 		.4byte	.LASF7
  283 005d 03       		.uleb128 0x3
  284 005e 04       		.byte	0x4
  285 005f 05       		.byte	0x5
@@ -647,7 +647,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  306 008f 02       		.uleb128 0x2
  307 0090 04       		.byte	0x4
  308 0091 04       		.byte	0x4
- 309 0092 5B000000 		.4byte	.LASF12
+ 309 0092 C1000000 		.4byte	.LASF12
  310 0096 02       		.uleb128 0x2
  311 0097 08       		.byte	0x8
  312 0098 04       		.byte	0x4
@@ -657,8 +657,8 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  316 009f 08       		.byte	0x8
  317 00a0 4E020000 		.4byte	.LASF14
  318 00a4 04       		.uleb128 0x4
- 319 00a5 14010000 		.4byte	.LASF15
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 12
+ 319 00a5 7A010000 		.4byte	.LASF15
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 12
 
 
  320 00a9 02       		.byte	0x2
@@ -705,7 +705,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  361 00fb 6B000000 		.4byte	0x6b
  362 00ff 02       		.byte	0x2
  363 0100 07       		.uleb128 0x7
- 364 0101 2B010000 		.4byte	.LASF21
+ 364 0101 91010000 		.4byte	.LASF21
  365 0105 03       		.byte	0x3
  366 0106 7D       		.byte	0x7d
  367 0107 6B000000 		.4byte	0x6b
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  374 0117 04       		.byte	0x4
  375 0118 07       		.uleb128 0x7
  376 0119 18020000 		.4byte	.LASF23
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 13
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 13
 
 
  377 011d 03       		.byte	0x3
@@ -756,7 +756,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  409 0164 30010000 		.4byte	0x130
  410 0168 00       		.byte	0
  411 0169 0B       		.uleb128 0xb
- 412 016a 47000000 		.4byte	.LASF26
+ 412 016a AD000000 		.4byte	.LASF26
  413 016e 01       		.byte	0x1
  414 016f D1       		.byte	0xd1
  415 0170 00000000 		.4byte	.LFB2
@@ -778,10 +778,10 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  431 019b F0010000 		.4byte	0x1f0
  432 019f 00       		.byte	0
  433 01a0 0E       		.uleb128 0xe
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 14
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 14
 
 
- 434 01a1 3A000000 		.4byte	.LASF27
+ 434 01a1 A0000000 		.4byte	.LASF27
  435 01a5 01       		.byte	0x1
  436 01a6 2C01     		.2byte	0x12c
  437 01a8 00000000 		.4byte	.LFB3
@@ -797,7 +797,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  447 01c4 FB010000 		.4byte	0x1fb
  448 01c8 00       		.byte	0
  449 01c9 0F       		.uleb128 0xf
- 450 01ca 1A000000 		.4byte	.LASF37
+ 450 01ca 80000000 		.4byte	.LASF37
  451 01ce 01       		.byte	0x1
  452 01cf 11       		.byte	0x11
  453 01d0 25010000 		.4byte	0x125
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  488 0008 0E       		.uleb128 0xe
  489 0009 1B       		.uleb128 0x1b
  490 000a 0E       		.uleb128 0xe
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 15
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 15
 
 
  491 000b 55       		.uleb128 0x55
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  545 0041 0B       		.uleb128 0xb
  546 0042 3A       		.uleb128 0x3a
  547 0043 0B       		.uleb128 0xb
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 16
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 16
 
 
  548 0044 3B       		.uleb128 0x3b
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  602 007a 03       		.uleb128 0x3
  603 007b 0E       		.uleb128 0xe
  604 007c 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 17
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 17
 
 
  605 007d 0B       		.uleb128 0xb
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  659 00b7 3A       		.uleb128 0x3a
  660 00b8 0B       		.uleb128 0xb
  661 00b9 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 18
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 18
 
 
  662 00ba 0B       		.uleb128 0xb
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  716 00f1 3C       		.uleb128 0x3c
  717 00f2 19       		.uleb128 0x19
  718 00f3 6E       		.uleb128 0x6e
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 19
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 19
 
 
  719 00f4 0E       		.uleb128 0xe
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  770      FB0E0D00 
  770      01010101 
  771              	.LASF16:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 20
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 20
 
 
  772 0000 72656733 		.ascii	"reg32\000"
@@ -1149,86 +1149,86 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  774      434B5550 
  774      5F535452 
  774      55435400 
- 775              	.LASF37:
- 776 001a 4932435F 		.ascii	"I2C_1_backup\000"
- 776      315F6261 
- 776      636B7570 
- 776      00
- 777              	.LASF3:
- 778 0027 73686F72 		.ascii	"short unsigned int\000"
- 778      7420756E 
- 778      7369676E 
- 778      65642069 
- 778      6E7400
- 779              	.LASF27:
- 780 003a 4932435F 		.ascii	"I2C_1_Wakeup\000"
- 780      315F5761 
- 780      6B657570 
+ 775              	.LASF34:
+ 776 001a 433A5C55 		.ascii	"C:\\Users\\cring\\OneDrive - Aarhus Universitet\\Un"
+ 776      73657273 
+ 776      5C637269 
+ 776      6E675C4F 
+ 776      6E654472 
+ 777 0049 695C332E 		.ascii	"i\\3. Semester\\PRJ3\\KODE\\ProjektMain\\Hovedprogr"
+ 777      2053656D 
+ 777      65737465 
+ 777      725C5052 
+ 777      4A335C4B 
+ 778 0077 616D2E63 		.ascii	"am.cydsn\000"
+ 778      7964736E 
+ 778      00
+ 779              	.LASF37:
+ 780 0080 4932435F 		.ascii	"I2C_1_backup\000"
+ 780      315F6261 
+ 780      636B7570 
  780      00
- 781              	.LASF26:
- 782 0047 4932435F 		.ascii	"I2C_1_RestoreConfig\000"
- 782      315F5265 
- 782      73746F72 
- 782      65436F6E 
- 782      66696700 
- 783              	.LASF12:
- 784 005b 666C6F61 		.ascii	"float\000"
- 784      7400
- 785              	.LASF7:
- 786 0061 6C6F6E67 		.ascii	"long long unsigned int\000"
- 786      206C6F6E 
- 786      6720756E 
- 786      7369676E 
- 786      65642069 
- 787              	.LASF1:
- 788 0078 756E7369 		.ascii	"unsigned char\000"
- 788      676E6564 
- 788      20636861 
- 788      7200
- 789              	.LASF32:
- 790 0086 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 790      43313120 
- 790      352E342E 
- 790      31203230 
- 790      31363036 
- 791 00b9 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 791      20726576 
- 791      6973696F 
- 791      6E203233 
- 791      37373135 
- 792 00ec 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 792      66756E63 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 21
+ 781              	.LASF3:
+ 782 008d 73686F72 		.ascii	"short unsigned int\000"
+ 782      7420756E 
+ 782      7369676E 
+ 782      65642069 
+ 782      6E7400
+ 783              	.LASF27:
+ 784 00a0 4932435F 		.ascii	"I2C_1_Wakeup\000"
+ 784      315F5761 
+ 784      6B657570 
+ 784      00
+ 785              	.LASF26:
+ 786 00ad 4932435F 		.ascii	"I2C_1_RestoreConfig\000"
+ 786      315F5265 
+ 786      73746F72 
+ 786      65436F6E 
+ 786      66696700 
+ 787              	.LASF12:
+ 788 00c1 666C6F61 		.ascii	"float\000"
+ 788      7400
+ 789              	.LASF7:
+ 790 00c7 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 790      206C6F6E 
+ 790      6720756E 
+ 790      7369676E 
+ 790      65642069 
+ 791              	.LASF1:
+ 792 00de 756E7369 		.ascii	"unsigned char\000"
+ 792      676E6564 
+ 792      20636861 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 21
 
 
- 792      74696F6E 
- 792      2D736563 
- 792      74696F6E 
- 793              	.LASF15:
- 794 0114 72656738 		.ascii	"reg8\000"
- 794      00
- 795              	.LASF5:
- 796 0119 6C6F6E67 		.ascii	"long unsigned int\000"
- 796      20756E73 
- 796      69676E65 
- 796      6420696E 
- 796      7400
- 797              	.LASF21:
- 798 012b 61646472 		.ascii	"addr\000"
+ 792      7200
+ 793              	.LASF32:
+ 794 00ec 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 794      43313120 
+ 794      352E342E 
+ 794      31203230 
+ 794      31363036 
+ 795 011f 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 795      20726576 
+ 795      6973696F 
+ 795      6E203233 
+ 795      37373135 
+ 796 0152 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 796      66756E63 
+ 796      74696F6E 
+ 796      2D736563 
+ 796      74696F6E 
+ 797              	.LASF15:
+ 798 017a 72656738 		.ascii	"reg8\000"
  798      00
- 799              	.LASF34:
- 800 0130 433A5C55 		.ascii	"C:\\Users\\cring\\OneDrive - Aarhus universitet\\Un"
- 800      73657273 
- 800      5C637269 
- 800      6E675C4F 
- 800      6E654472 
- 801 015f 695C332E 		.ascii	"i\\3. Semester\\PRJ3\\KODE\\ProjektMain\\Hovedprogr"
- 801      2053656D 
- 801      65737465 
- 801      725C5052 
- 801      4A335C4B 
- 802 018d 616D2E63 		.ascii	"am.cydsn\000"
- 802      7964736E 
+ 799              	.LASF5:
+ 800 017f 6C6F6E67 		.ascii	"long unsigned int\000"
+ 800      20756E73 
+ 800      69676E65 
+ 800      6420696E 
+ 800      7400
+ 801              	.LASF21:
+ 802 0191 61646472 		.ascii	"addr\000"
  802      00
  803              	.LASF13:
  804 0196 646F7562 		.ascii	"double\000"
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  816      676E6564 
  816      20696E74 
  816      00
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 22
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 22
 
 
  817              	.LASF25:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 1
  844 027e 656E6162 		.ascii	"enableState\000"
  844      6C655374 
  844      61746500 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBIOAyi.s 			page 23
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccPBK8uH.s 			page 23
 
 
  845              	.LASF17:

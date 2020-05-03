@@ -251,13 +251,26 @@
   </Group>
   <Group key="Component">
     <Group key="v1">
-      <Data key="cy_boot" value="cy_boot_v5_80" />
+      <Data key="cy_boot" value="cy_boot_v5_90" />
       <Data key="Em_EEPROM_Dynamic" value="Em_EEPROM_Dynamic_v2_20" />
       <Data key="LIN_Dynamic" value="LIN_Dynamic_v5_0" />
     </Group>
   </Group>
   <Data key="DataVersionKey" value="2" />
   <Group key="DWRInstGuidMapping">
+    <Group key="Interrupt">
+      <Data key="1f7afa06-0396-451c-a87d-c9c3fe984b69" value="isr_LED_ring" />
+      <Data key="7b5511ed-bd08-44f6-9135-39eae7bd5cb1" value="isr_delay" />
+      <Data key="8cdaa296-e75b-48d5-8ba4-745bb0924da4" value="isr_refreshrate_LCD" />
+      <Data key="9ea4f6d7-f1a2-45bb-8706-ec20f1408cb0" value="isr_LED_pulse" />
+      <Data key="85ecc733-73f2-45ca-87af-396904ff0034" value="isr_uart_rx" />
+      <Data key="061829bb-b0f6-42e5-b578-7651214ef7ce" value="isr_LED_refreshrate" />
+      <Data key="357143bf-42d1-4122-990c-441e41e2a9ed/b73dcd38-4bce-4cd7-acec-33f53e91ccd6" value="ADC_SAR_1_IRQ" />
+      <Data key="1045864d-305c-4e16-bbb1-8f776233874f/74b069b5-d5c5-469b-a48a-44b8a12146cd" value="I2C_1_I2C_IRQ" />
+      <Data key="a2e5cfd7-6526-476d-a7ab-edc9a78f84b1" value="isr_button" />
+      <Data key="a4261e07-9101-48d8-8fee-a67e8249fd50" value="isr_timer" />
+      <Data key="c45a7a1d-78e9-4882-90b9-0e527f00f494" value="isr_BlinkLED" />
+    </Group>
     <Group key="Pin">
       <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="Pin_2" />
       <Data key="46f5da43-e64c-4c88-9e6e-61dc6d1f4ac6" value="SAR_p1" />
@@ -3356,6 +3369,43 @@
       </Group>
     </Group>
   </Group>
+  <Group key="Interrupt">
+    <Group key="7b5511ed-bd08-44f6-9135-39eae7bd5cb1">
+      <Group key="CortexM3">
+        <Data key="Assigned" value="True" />
+        <Data key="Priority" value="5" />
+        <Data key="Vector" value="-1" />
+      </Group>
+    </Group>
+    <Group key="8cdaa296-e75b-48d5-8ba4-745bb0924da4">
+      <Group key="CortexM3">
+        <Data key="Assigned" value="True" />
+        <Data key="Priority" value="2" />
+        <Data key="Vector" value="-1" />
+      </Group>
+    </Group>
+    <Group key="357143bf-42d1-4122-990c-441e41e2a9ed/b73dcd38-4bce-4cd7-acec-33f53e91ccd6">
+      <Group key="CortexM3">
+        <Data key="Assigned" value="True" />
+        <Data key="Priority" value="6" />
+        <Data key="Vector" value="-1" />
+      </Group>
+    </Group>
+    <Group key="1045864d-305c-4e16-bbb1-8f776233874f/74b069b5-d5c5-469b-a48a-44b8a12146cd">
+      <Group key="CortexM3">
+        <Data key="Assigned" value="True" />
+        <Data key="Priority" value="3" />
+        <Data key="Vector" value="-1" />
+      </Group>
+    </Group>
+    <Group key="a4261e07-9101-48d8-8fee-a67e8249fd50">
+      <Group key="CortexM3">
+        <Data key="Assigned" value="True" />
+        <Data key="Priority" value="0" />
+        <Data key="Vector" value="-1" />
+      </Group>
+    </Group>
+  </Group>
   <Group key="Pin2">
     <Group key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba">
       <Group key="0">
@@ -3399,12 +3449,12 @@
     </Group>
     <Group key="d8eaaac5-ead0-4f00-9de9-c7e773d047e1">
       <Group key="0">
-        <Data key="Port Format" value="15,3" />
+        <Data key="Port Format" value="0,6" />
       </Group>
     </Group>
     <Group key="e851a3b9-efb8-48be-bbb8-b303b216c393">
       <Group key="0">
-        <Data key="Port Format" value="15,1" />
+        <Data key="Port Format" value="0,5" />
       </Group>
     </Group>
     <Group key="ed092b9b-d398-4703-be89-cebf998501f6">
@@ -3414,7 +3464,7 @@
     </Group>
     <Group key="f2cb00e7-19df-4206-aa5c-d597ec6d4632">
       <Group key="0">
-        <Data key="Port Format" value="0,6" />
+        <Data key="Port Format" value="0,7" />
       </Group>
     </Group>
     <Group key="UnAssigned Pins" />

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 1
 
 
    1              		.syntax unified
@@ -19,14 +19,14 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 1
   16              		.text
   17              	.Ltext0:
   18              		.cfi_sections	.debug_frame
-  19              		.section	.text.initDisp,"ax",%progbits
+  19              		.section	.text.StartDisp,"ax",%progbits
   20              		.align	2
-  21              		.global	initDisp
+  21              		.global	StartDisp
   22              		.thumb
   23              		.thumb_func
-  24              		.type	initDisp, %function
-  25              	initDisp:
-  26              	.LFB65:
+  24              		.type	StartDisp, %function
+  25              	StartDisp:
+  26              	.LFB66:
   27              		.file 1 "Display.c"
    1:Display.c     **** 
    2:Display.c     **** #include "Display.h"
@@ -40,7 +40,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 1
   10:Display.c     **** 
   11:Display.c     **** CY_ISR(isr_refreshrate_LCD)
   12:Display.c     **** {
-  13:Display.c     ****     int x = getTime();                                  // vores count værdi bliver lagt i variabl
+  13:Display.c     ****     int x = getTime()/100;                                  // vores count værdi bliver lagt i var
   14:Display.c     ****     if (display1On == 1) dispTime(1,x);                 // Kalder dispTime funktion for begge displ
   15:Display.c     ****     if (display2On == 1) dispTime(2,x);
   16:Display.c     **** }
@@ -49,1734 +49,1795 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 1
   19:Display.c     **** 
   20:Display.c     **** void initDisp(int Hz)                                   // Initiere display
   21:Display.c     **** {
-  28              		.loc 1 21 0
+  22:Display.c     ****     I2C_1_Start();                                      // Initiere og klargør I2C komponenten
+  23:Display.c     ****     isr_refreshrate_LCD_StartEx(isr_refreshrate_LCD);   // Initiere interrupt for refreshrate på d
+  24:Display.c     ****     Timer_LCD_WritePeriod((1/Hz)*10000);                // Omskriver Hz til ms og opdaterer refresh
+  25:Display.c     ****     
+  26:Display.c     ****     LiquidCrystal_I2C_init(Display1,16,2,0);            // Initiere vores LCD library med: adressen
+  27:Display.c     ****     begin();                                            // positionere vores display til begin stat
+  28:Display.c     ****     
+  29:Display.c     ****     LiquidCrystal_I2C_init(Display2,16,2,0);
+  30:Display.c     ****     begin();                                            // positionere vores display til begin stat
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 2
+
+
+  31:Display.c     ****     StartDisp();                           
+  32:Display.c     **** }
+  33:Display.c     **** void StartDisp()
+  34:Display.c     **** {
+  28              		.loc 1 34 0
   29              		.cfi_startproc
   30              		@ args = 0, pretend = 0, frame = 0
   31              		@ frame_needed = 0, uses_anonymous_args = 0
-  32              	.LVL0:
-  33 0000 38B5     		push	{r3, r4, r5, lr}
-  34              		.cfi_def_cfa_offset 16
-  35              		.cfi_offset 3, -16
-  36              		.cfi_offset 4, -12
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 2
-
-
-  37              		.cfi_offset 5, -8
-  38              		.cfi_offset 14, -4
-  39 0002 0446     		mov	r4, r0
-  22:Display.c     ****     I2C_1_Start();                                      // Initiere og klargør I2C komponenten
-  40              		.loc 1 22 0
-  41 0004 FFF7FEFF 		bl	I2C_1_Start
+  32 0000 10B5     		push	{r4, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 4, -8
+  35              		.cfi_offset 14, -4
+  35:Display.c     ****     Timer_LCD_Stop();
+  36              		.loc 1 35 0
+  37 0002 FFF7FEFF 		bl	Timer_LCD_Stop
+  38              	.LVL0:
+  36:Display.c     ****     setaddress(Display1);
+  39              		.loc 1 36 0
+  40 0006 2620     		movs	r0, #38
+  41 0008 FFF7FEFF 		bl	setaddress
   42              	.LVL1:
-  23:Display.c     ****     isr_refreshrate_LCD_StartEx(isr_refreshrate_LCD);   // Initiere interrupt for refreshrate på d
-  43              		.loc 1 23 0
-  44 0008 1F48     		ldr	r0, .L3
-  45 000a FFF7FEFF 		bl	isr_refreshrate_LCD_StartEx
-  46              	.LVL2:
-  24:Display.c     ****     Timer_LCD_WritePeriod((1/Hz)*10000);                // Omskriver Hz til ms og opdaterer refresh
-  47              		.loc 1 24 0
-  48 000e 0125     		movs	r5, #1
-  49 0010 95FBF4F0 		sdiv	r0, r5, r4
-  50 0014 C0EB4013 		rsb	r3, r0, r0, lsl #5
-  51 0018 00EB8300 		add	r0, r0, r3, lsl #2
-  52 001c 00EB8000 		add	r0, r0, r0, lsl #2
-  53 0020 0301     		lsls	r3, r0, #4
-  54 0022 98B2     		uxth	r0, r3
-  55 0024 FFF7FEFF 		bl	Timer_LCD_WritePeriod
-  56              	.LVL3:
-  25:Display.c     ****     
-  26:Display.c     ****     LiquidCrystal_I2C_init(Display1,16,2,0);            // Initiere vores LCD library med: adressen
-  57              		.loc 1 26 0
-  58 0028 0023     		movs	r3, #0
-  59 002a 0222     		movs	r2, #2
-  60 002c 1021     		movs	r1, #16
-  61 002e 2620     		movs	r0, #38
-  62 0030 FFF7FEFF 		bl	LiquidCrystal_I2C_init
-  63              	.LVL4:
-  27:Display.c     ****     begin();                                            // positionere vores display til begin stat
-  64              		.loc 1 27 0
-  65 0034 FFF7FEFF 		bl	begin
-  66              	.LVL5:
-  28:Display.c     ****     clearDisp();
-  67              		.loc 1 28 0
-  68 0038 FFF7FEFF 		bl	clearDisp
-  69              	.LVL6:
-  29:Display.c     ****     
-  30:Display.c     ****     LCD_print("Spiller 1");
-  70              		.loc 1 30 0
-  71 003c 1348     		ldr	r0, .L3+4
-  72 003e FFF7FEFF 		bl	LCD_print
-  73              	.LVL7:
-  31:Display.c     ****     setCursor(0,1);                                     // vælger kollene og række
-  74              		.loc 1 31 0
-  75 0042 2946     		mov	r1, r5
-  76 0044 0020     		movs	r0, #0
-  77 0046 FFF7FEFF 		bl	setCursor
-  78              	.LVL8:
-  32:Display.c     ****     LCD_print("Tid: ");
-  79              		.loc 1 32 0
-  80 004a 114C     		ldr	r4, .L3+8
-  81              	.LVL9:
-  82 004c 2046     		mov	r0, r4
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 3
+  37:Display.c     ****     clearDisp();
+  43              		.loc 1 37 0
+  44 000c FFF7FEFF 		bl	clearDisp
+  45              	.LVL2:
+  38:Display.c     ****     
+  39:Display.c     ****     LCD_print("Spiller 1");
+  46              		.loc 1 39 0
+  47 0010 1048     		ldr	r0, .L3
+  48 0012 FFF7FEFF 		bl	LCD_print
+  49              	.LVL3:
+  40:Display.c     ****     setCursor(0,1);                                     // vælger kollene og række
+  50              		.loc 1 40 0
+  51 0016 0121     		movs	r1, #1
+  52 0018 0020     		movs	r0, #0
+  53 001a FFF7FEFF 		bl	setCursor
+  54              	.LVL4:
+  41:Display.c     ****     LCD_print("Tid: ");
+  55              		.loc 1 41 0
+  56 001e 0E4C     		ldr	r4, .L3+4
+  57 0020 2046     		mov	r0, r4
+  58 0022 FFF7FEFF 		bl	LCD_print
+  59              	.LVL5:
+  42:Display.c     ****     
+  43:Display.c     ****     setaddress(Display2);
+  60              		.loc 1 43 0
+  61 0026 2720     		movs	r0, #39
+  62 0028 FFF7FEFF 		bl	setaddress
+  63              	.LVL6:
+  44:Display.c     ****     clearDisp();
+  64              		.loc 1 44 0
+  65 002c FFF7FEFF 		bl	clearDisp
+  66              	.LVL7:
+  45:Display.c     ****     
+  46:Display.c     ****     LCD_print("Spiller 2");
+  67              		.loc 1 46 0
+  68 0030 0A48     		ldr	r0, .L3+8
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 3
 
 
-  83 004e FFF7FEFF 		bl	LCD_print
-  84              	.LVL10:
-  33:Display.c     ****     
-  34:Display.c     ****     LiquidCrystal_I2C_init(Display2,16,2,0);
-  85              		.loc 1 34 0
-  86 0052 0023     		movs	r3, #0
-  87 0054 0222     		movs	r2, #2
-  88 0056 1021     		movs	r1, #16
-  89 0058 2720     		movs	r0, #39
-  90 005a FFF7FEFF 		bl	LiquidCrystal_I2C_init
-  91              	.LVL11:
-  35:Display.c     ****     begin();                                            // positionere vores display til begin stat
-  92              		.loc 1 35 0
-  93 005e FFF7FEFF 		bl	begin
-  94              	.LVL12:
-  36:Display.c     ****     clearDisp();
-  95              		.loc 1 36 0
-  96 0062 FFF7FEFF 		bl	clearDisp
-  97              	.LVL13:
-  37:Display.c     ****     
-  38:Display.c     ****     LCD_print("Spiller 2");
-  98              		.loc 1 38 0
-  99 0066 0B48     		ldr	r0, .L3+12
- 100 0068 FFF7FEFF 		bl	LCD_print
- 101              	.LVL14:
-  39:Display.c     ****     setCursor(0,1);                                     // vælger kollenne og række
- 102              		.loc 1 39 0
- 103 006c 2946     		mov	r1, r5
- 104 006e 0020     		movs	r0, #0
- 105 0070 FFF7FEFF 		bl	setCursor
- 106              	.LVL15:
-  40:Display.c     ****     LCD_print("Tid: ");
- 107              		.loc 1 40 0
- 108 0074 2046     		mov	r0, r4
- 109 0076 FFF7FEFF 		bl	LCD_print
- 110              	.LVL16:
-  41:Display.c     ****     
-  42:Display.c     ****     display1On = 1;
- 111              		.loc 1 42 0
- 112 007a 074B     		ldr	r3, .L3+16
- 113 007c 1D60     		str	r5, [r3]
-  43:Display.c     ****     display2On = 1;
- 114              		.loc 1 43 0
- 115 007e 5D60     		str	r5, [r3, #4]
-  44:Display.c     ****     
-  45:Display.c     ****     Timer_LCD_Start();                                    // starter timeren for display
- 116              		.loc 1 45 0
- 117 0080 FFF7FEFF 		bl	Timer_LCD_Start
- 118              	.LVL17:
- 119 0084 38BD     		pop	{r3, r4, r5, pc}
- 120              	.L4:
- 121 0086 00BF     		.align	2
- 122              	.L3:
- 123 0088 00000000 		.word	isr_refreshrate_LCD
- 124 008c 00000000 		.word	.LC0
- 125 0090 0C000000 		.word	.LC1
- 126 0094 14000000 		.word	.LC2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 4
+  69 0032 FFF7FEFF 		bl	LCD_print
+  70              	.LVL8:
+  47:Display.c     ****     setCursor(0,1);                                     // vælger kollenne og række
+  71              		.loc 1 47 0
+  72 0036 0121     		movs	r1, #1
+  73 0038 0020     		movs	r0, #0
+  74 003a FFF7FEFF 		bl	setCursor
+  75              	.LVL9:
+  48:Display.c     ****     LCD_print("Tid: ");
+  76              		.loc 1 48 0
+  77 003e 2046     		mov	r0, r4
+  78 0040 FFF7FEFF 		bl	LCD_print
+  79              	.LVL10:
+  49:Display.c     ****     
+  50:Display.c     ****     display1On = 1;
+  80              		.loc 1 50 0
+  81 0044 064B     		ldr	r3, .L3+12
+  82 0046 0122     		movs	r2, #1
+  83 0048 1A60     		str	r2, [r3]
+  51:Display.c     ****     display2On = 1;
+  84              		.loc 1 51 0
+  85 004a 5A60     		str	r2, [r3, #4]
+  52:Display.c     ****     
+  53:Display.c     ****     Timer_LCD_Start();                                   // starter timeren for display
+  86              		.loc 1 53 0
+  87 004c FFF7FEFF 		bl	Timer_LCD_Start
+  88              	.LVL11:
+  89 0050 10BD     		pop	{r4, pc}
+  90              	.L4:
+  91 0052 00BF     		.align	2
+  92              	.L3:
+  93 0054 00000000 		.word	.LC0
+  94 0058 0C000000 		.word	.LC1
+  95 005c 14000000 		.word	.LC2
+  96 0060 00000000 		.word	.LANCHOR0
+  97              		.cfi_endproc
+  98              	.LFE66:
+  99              		.size	StartDisp, .-StartDisp
+ 100              		.section	.text.initDisp,"ax",%progbits
+ 101              		.align	2
+ 102              		.global	initDisp
+ 103              		.thumb
+ 104              		.thumb_func
+ 105              		.type	initDisp, %function
+ 106              	initDisp:
+ 107              	.LFB65:
+  21:Display.c     ****     I2C_1_Start();                                      // Initiere og klargør I2C komponenten
+ 108              		.loc 1 21 0
+ 109              		.cfi_startproc
+ 110              		@ args = 0, pretend = 0, frame = 0
+ 111              		@ frame_needed = 0, uses_anonymous_args = 0
+ 112              	.LVL12:
+ 113 0000 10B5     		push	{r4, lr}
+ 114              		.cfi_def_cfa_offset 8
+ 115              		.cfi_offset 4, -8
+ 116              		.cfi_offset 14, -4
+ 117 0002 0446     		mov	r4, r0
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 4
 
 
- 127 0098 00000000 		.word	.LANCHOR0
- 128              		.cfi_endproc
- 129              	.LFE65:
- 130              		.size	initDisp, .-initDisp
- 131              		.section	.text.dispTime,"ax",%progbits
- 132              		.align	2
- 133              		.global	dispTime
- 134              		.thumb
- 135              		.thumb_func
- 136              		.type	dispTime, %function
- 137              	dispTime:
- 138              	.LFB66:
-  46:Display.c     **** }
-  47:Display.c     **** 
-  48:Display.c     **** void dispTime(int disp, int ms)                           // positionerer og udskriver på displays
-  49:Display.c     **** {
- 139              		.loc 1 49 0
- 140              		.cfi_startproc
- 141              		@ args = 0, pretend = 0, frame = 24
- 142              		@ frame_needed = 0, uses_anonymous_args = 0
- 143              	.LVL18:
- 144 0000 30B5     		push	{r4, r5, lr}
- 145              		.cfi_def_cfa_offset 12
- 146              		.cfi_offset 4, -12
- 147              		.cfi_offset 5, -8
- 148              		.cfi_offset 14, -4
- 149 0002 89B0     		sub	sp, sp, #36
- 150              		.cfi_def_cfa_offset 48
- 151 0004 0446     		mov	r4, r0
- 152 0006 0D46     		mov	r5, r1
-  50:Display.c     ****     Timer_LCD_Stop();                                     // stopper opdateringen af display
- 153              		.loc 1 50 0
- 154 0008 FFF7FEFF 		bl	Timer_LCD_Stop
- 155              	.LVL19:
-  51:Display.c     ****     if(ms == 0)
- 156              		.loc 1 51 0
- 157 000c 35B9     		cbnz	r5, .L6
-  52:Display.c     ****     {
-  53:Display.c     ****         setCursor(9,1);
- 158              		.loc 1 53 0
- 159 000e 0121     		movs	r1, #1
- 160 0010 0920     		movs	r0, #9
- 161 0012 FFF7FEFF 		bl	setCursor
- 162              	.LVL20:
-  54:Display.c     ****         LCD_print("     ");                               // nulstiller display tid
- 163              		.loc 1 54 0
- 164 0016 1248     		ldr	r0, .L10
- 165 0018 FFF7FEFF 		bl	LCD_print
- 166              	.LVL21:
- 167              	.L6:
-  55:Display.c     ****     }
-  56:Display.c     ****     int seconds = 0;
-  57:Display.c     ****     char buf[20];
-  58:Display.c     ****     disp = disp == 1 ? 0x26 : 0x27;
- 168              		.loc 1 58 0
- 169 001c 012C     		cmp	r4, #1
- 170 001e 01D1     		bne	.L8
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 5
+  22:Display.c     ****     isr_refreshrate_LCD_StartEx(isr_refreshrate_LCD);   // Initiere interrupt for refreshrate på d
+ 118              		.loc 1 22 0
+ 119 0004 FFF7FEFF 		bl	I2C_1_Start
+ 120              	.LVL13:
+  23:Display.c     ****     Timer_LCD_WritePeriod((1/Hz)*10000);                // Omskriver Hz til ms og opdaterer refresh
+ 121              		.loc 1 23 0
+ 122 0008 1148     		ldr	r0, .L7
+ 123 000a FFF7FEFF 		bl	isr_refreshrate_LCD_StartEx
+ 124              	.LVL14:
+  24:Display.c     ****     
+ 125              		.loc 1 24 0
+ 126 000e 0120     		movs	r0, #1
+ 127 0010 90FBF4F0 		sdiv	r0, r0, r4
+ 128 0014 C0EB4013 		rsb	r3, r0, r0, lsl #5
+ 129 0018 00EB8300 		add	r0, r0, r3, lsl #2
+ 130 001c 00EB8000 		add	r0, r0, r0, lsl #2
+ 131 0020 0301     		lsls	r3, r0, #4
+ 132 0022 98B2     		uxth	r0, r3
+ 133 0024 FFF7FEFF 		bl	Timer_LCD_WritePeriod
+ 134              	.LVL15:
+  26:Display.c     ****     begin();                                            // positionere vores display til begin stat
+ 135              		.loc 1 26 0
+ 136 0028 0023     		movs	r3, #0
+ 137 002a 0222     		movs	r2, #2
+ 138 002c 1021     		movs	r1, #16
+ 139 002e 2620     		movs	r0, #38
+ 140 0030 FFF7FEFF 		bl	LiquidCrystal_I2C_init
+ 141              	.LVL16:
+  27:Display.c     ****     
+ 142              		.loc 1 27 0
+ 143 0034 FFF7FEFF 		bl	begin
+ 144              	.LVL17:
+  29:Display.c     ****     begin();                                            // positionere vores display til begin stat
+ 145              		.loc 1 29 0
+ 146 0038 0023     		movs	r3, #0
+ 147 003a 0222     		movs	r2, #2
+ 148 003c 1021     		movs	r1, #16
+ 149 003e 2720     		movs	r0, #39
+ 150 0040 FFF7FEFF 		bl	LiquidCrystal_I2C_init
+ 151              	.LVL18:
+  30:Display.c     ****     StartDisp();                           
+ 152              		.loc 1 30 0
+ 153 0044 FFF7FEFF 		bl	begin
+ 154              	.LVL19:
+  31:Display.c     **** }
+ 155              		.loc 1 31 0
+ 156 0048 FFF7FEFF 		bl	StartDisp
+ 157              	.LVL20:
+ 158 004c 10BD     		pop	{r4, pc}
+ 159              	.LVL21:
+ 160              	.L8:
+ 161 004e 00BF     		.align	2
+ 162              	.L7:
+ 163 0050 00000000 		.word	isr_refreshrate_LCD
+ 164              		.cfi_endproc
+ 165              	.LFE65:
+ 166              		.size	initDisp, .-initDisp
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 5
 
 
- 171 0020 2620     		movs	r0, #38
- 172 0022 00E0     		b	.L7
- 173              	.L8:
- 174 0024 2720     		movs	r0, #39
- 175              	.L7:
- 176              	.LVL22:
-  59:Display.c     ****    
-  60:Display.c     ****     seconds = ms / 1000;                                  // værdien kommer som ms derfor /1000 fo
- 177              		.loc 1 60 0 discriminator 4
- 178 0026 0F4C     		ldr	r4, .L10+4
- 179 0028 84FB0534 		smull	r3, r4, r4, r5
- 180 002c EB17     		asrs	r3, r5, #31
- 181 002e C3EBA414 		rsb	r4, r3, r4, asr #6
- 182              	.LVL23:
-  61:Display.c     ****     ms = (ms - seconds*1000);                             // sørger for at vi får vores decimal t
- 183              		.loc 1 61 0 discriminator 4
- 184 0032 0D4B     		ldr	r3, .L10+8
- 185 0034 03FB0455 		mla	r5, r3, r4, r5
- 186              	.LVL24:
-  62:Display.c     ****     
-  63:Display.c     ****     setaddress(disp);
- 187              		.loc 1 63 0 discriminator 4
- 188 0038 FFF7FEFF 		bl	setaddress
- 189              	.LVL25:
-  64:Display.c     ****     snprintf(buf, 8, "%d,%ds", seconds, ms);              // udskriver vores sekunder og ms
- 190              		.loc 1 64 0 discriminator 4
- 191 003c 0095     		str	r5, [sp]
- 192 003e 2346     		mov	r3, r4
- 193 0040 0A4A     		ldr	r2, .L10+12
- 194 0042 0821     		movs	r1, #8
- 195 0044 03A8     		add	r0, sp, #12
- 196 0046 FFF7FEFF 		bl	snprintf
- 197              	.LVL26:
-  65:Display.c     ****     setCursor(5,1);
- 198              		.loc 1 65 0 discriminator 4
- 199 004a 0121     		movs	r1, #1
- 200 004c 0520     		movs	r0, #5
- 201 004e FFF7FEFF 		bl	setCursor
- 202              	.LVL27:
-  66:Display.c     ****     LCD_print(buf);
- 203              		.loc 1 66 0 discriminator 4
- 204 0052 03A8     		add	r0, sp, #12
- 205 0054 FFF7FEFF 		bl	LCD_print
- 206              	.LVL28:
-  67:Display.c     ****     
-  68:Display.c     ****     Timer_LCD_Start();                                    // starter timeren for displays 
- 207              		.loc 1 68 0 discriminator 4
- 208 0058 FFF7FEFF 		bl	Timer_LCD_Start
- 209              	.LVL29:
-  69:Display.c     **** }
- 210              		.loc 1 69 0 discriminator 4
- 211 005c 09B0     		add	sp, sp, #36
- 212              		.cfi_def_cfa_offset 12
- 213              		@ sp needed
- 214 005e 30BD     		pop	{r4, r5, pc}
- 215              	.LVL30:
- 216              	.L11:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 6
+ 167              		.section	.text.dispTime,"ax",%progbits
+ 168              		.align	2
+ 169              		.global	dispTime
+ 170              		.thumb
+ 171              		.thumb_func
+ 172              		.type	dispTime, %function
+ 173              	dispTime:
+ 174              	.LFB67:
+  54:Display.c     **** }
+  55:Display.c     **** 
+  56:Display.c     **** 
+  57:Display.c     **** void dispTime(int disp, int ms)                           // positionerer og udskriver på displays
+  58:Display.c     **** {
+ 175              		.loc 1 58 0
+ 176              		.cfi_startproc
+ 177              		@ args = 0, pretend = 0, frame = 24
+ 178              		@ frame_needed = 0, uses_anonymous_args = 0
+ 179              	.LVL22:
+ 180 0000 30B5     		push	{r4, r5, lr}
+ 181              		.cfi_def_cfa_offset 12
+ 182              		.cfi_offset 4, -12
+ 183              		.cfi_offset 5, -8
+ 184              		.cfi_offset 14, -4
+ 185 0002 87B0     		sub	sp, sp, #28
+ 186              		.cfi_def_cfa_offset 40
+ 187 0004 0446     		mov	r4, r0
+ 188 0006 0D46     		mov	r5, r1
+  59:Display.c     ****     Timer_LCD_Stop();                                     // stopper opdateringen af display
+ 189              		.loc 1 59 0
+ 190 0008 FFF7FEFF 		bl	Timer_LCD_Stop
+ 191              	.LVL23:
+  60:Display.c     ****     int seconds = 0;
+  61:Display.c     ****     char buf[20];
+  62:Display.c     ****     disp = disp == 1 ? 0x26 : 0x27;
+ 192              		.loc 1 62 0
+ 193 000c 012C     		cmp	r4, #1
+ 194 000e 01D1     		bne	.L11
+ 195 0010 2620     		movs	r0, #38
+ 196 0012 00E0     		b	.L10
+ 197              	.L11:
+ 198 0014 2720     		movs	r0, #39
+ 199              	.L10:
+ 200              	.LVL24:
+  63:Display.c     ****    
+  64:Display.c     ****     seconds = ms / 10;                                  // værdien kommer som ms derfor /10 for at
+ 201              		.loc 1 64 0 discriminator 4
+ 202 0016 0E4C     		ldr	r4, .L13
+ 203 0018 84FB0534 		smull	r3, r4, r4, r5
+ 204 001c EA17     		asrs	r2, r5, #31
+ 205 001e C2EBA404 		rsb	r4, r2, r4, asr #2
+ 206              	.LVL25:
+  65:Display.c     ****     ms = (ms - seconds*10);                             // sørger for at vi får vores decimal tal
+ 207              		.loc 1 65 0 discriminator 4
+ 208 0022 6FF00903 		mvn	r3, #9
+ 209 0026 03FB0455 		mla	r5, r3, r4, r5
+ 210              	.LVL26:
+  66:Display.c     ****     
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 6
 
 
- 217              		.align	2
- 218              	.L10:
- 219 0060 20000000 		.word	.LC3
- 220 0064 D34D6210 		.word	274877907
- 221 0068 18FCFFFF 		.word	-1000
- 222 006c 28000000 		.word	.LC4
- 223              		.cfi_endproc
- 224              	.LFE66:
- 225              		.size	dispTime, .-dispTime
- 226              		.section	.text.isr_refreshrate_LCD,"ax",%progbits
- 227              		.align	2
- 228              		.global	isr_refreshrate_LCD
- 229              		.thumb
- 230              		.thumb_func
- 231              		.type	isr_refreshrate_LCD, %function
- 232              	isr_refreshrate_LCD:
- 233              	.LFB64:
-  12:Display.c     ****     int x = getTime();                                  // vores count værdi bliver lagt i variabl
- 234              		.loc 1 12 0
- 235              		.cfi_startproc
- 236              		@ args = 0, pretend = 0, frame = 0
- 237              		@ frame_needed = 0, uses_anonymous_args = 0
- 238 0000 10B5     		push	{r4, lr}
- 239              		.cfi_def_cfa_offset 8
- 240              		.cfi_offset 4, -8
- 241              		.cfi_offset 14, -4
+  67:Display.c     ****     setaddress(disp);
+ 211              		.loc 1 67 0 discriminator 4
+ 212 002a FFF7FEFF 		bl	setaddress
+ 213              	.LVL27:
+  68:Display.c     ****     sprintf(buf,"%d,%ds   ", seconds, ms);              // udskriver vores sekunder og ms
+ 214              		.loc 1 68 0 discriminator 4
+ 215 002e 2B46     		mov	r3, r5
+ 216 0030 2246     		mov	r2, r4
+ 217 0032 0849     		ldr	r1, .L13+4
+ 218 0034 01A8     		add	r0, sp, #4
+ 219 0036 FFF7FEFF 		bl	sprintf
+ 220              	.LVL28:
+  69:Display.c     ****     setCursor(5,1);
+ 221              		.loc 1 69 0 discriminator 4
+ 222 003a 0121     		movs	r1, #1
+ 223 003c 0520     		movs	r0, #5
+ 224 003e FFF7FEFF 		bl	setCursor
+ 225              	.LVL29:
+  70:Display.c     ****     LCD_print(buf);
+ 226              		.loc 1 70 0 discriminator 4
+ 227 0042 01A8     		add	r0, sp, #4
+ 228 0044 FFF7FEFF 		bl	LCD_print
+ 229              	.LVL30:
+  71:Display.c     ****     
+  72:Display.c     ****     Timer_LCD_Start();                                    // starter timeren for displays 
+ 230              		.loc 1 72 0 discriminator 4
+ 231 0048 FFF7FEFF 		bl	Timer_LCD_Start
+ 232              	.LVL31:
+  73:Display.c     **** }
+ 233              		.loc 1 73 0 discriminator 4
+ 234 004c 07B0     		add	sp, sp, #28
+ 235              		.cfi_def_cfa_offset 12
+ 236              		@ sp needed
+ 237 004e 30BD     		pop	{r4, r5, pc}
+ 238              	.LVL32:
+ 239              	.L14:
+ 240              		.align	2
+ 241              	.L13:
+ 242 0050 67666666 		.word	1717986919
+ 243 0054 20000000 		.word	.LC3
+ 244              		.cfi_endproc
+ 245              	.LFE67:
+ 246              		.size	dispTime, .-dispTime
+ 247              		.section	.text.isr_refreshrate_LCD,"ax",%progbits
+ 248              		.align	2
+ 249              		.global	isr_refreshrate_LCD
+ 250              		.thumb
+ 251              		.thumb_func
+ 252              		.type	isr_refreshrate_LCD, %function
+ 253              	isr_refreshrate_LCD:
+ 254              	.LFB64:
+  12:Display.c     ****     int x = getTime()/100;                                  // vores count værdi bliver lagt i var
+ 255              		.loc 1 12 0
+ 256              		.cfi_startproc
+ 257              		@ args = 0, pretend = 0, frame = 0
+ 258              		@ frame_needed = 0, uses_anonymous_args = 0
+ 259 0000 10B5     		push	{r4, lr}
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 7
+
+
+ 260              		.cfi_def_cfa_offset 8
+ 261              		.cfi_offset 4, -8
+ 262              		.cfi_offset 14, -4
   13:Display.c     ****     if (display1On == 1) dispTime(1,x);                 // Kalder dispTime funktion for begge displ
- 242              		.loc 1 13 0
- 243 0002 FFF7FEFF 		bl	getTime
- 244              	.LVL31:
- 245 0006 0446     		mov	r4, r0
- 246              	.LVL32:
+ 263              		.loc 1 13 0
+ 264 0002 FFF7FEFF 		bl	getTime
+ 265              	.LVL33:
+ 266 0006 0B4C     		ldr	r4, .L19
+ 267 0008 84FB0034 		smull	r3, r4, r4, r0
+ 268 000c C017     		asrs	r0, r0, #31
+ 269 000e C0EB6414 		rsb	r4, r0, r4, asr #5
+ 270              	.LVL34:
   14:Display.c     ****     if (display2On == 1) dispTime(2,x);
- 247              		.loc 1 14 0
- 248 0008 084B     		ldr	r3, .L16
- 249 000a 1B68     		ldr	r3, [r3]
- 250 000c 012B     		cmp	r3, #1
- 251 000e 03D1     		bne	.L13
+ 271              		.loc 1 14 0
+ 272 0012 094B     		ldr	r3, .L19+4
+ 273 0014 1B68     		ldr	r3, [r3]
+ 274 0016 012B     		cmp	r3, #1
+ 275 0018 03D1     		bne	.L16
   14:Display.c     ****     if (display2On == 1) dispTime(2,x);
- 252              		.loc 1 14 0 is_stmt 0 discriminator 1
- 253 0010 0146     		mov	r1, r0
- 254 0012 0120     		movs	r0, #1
- 255              	.LVL33:
- 256 0014 FFF7FEFF 		bl	dispTime
- 257              	.LVL34:
- 258              	.L13:
+ 276              		.loc 1 14 0 is_stmt 0 discriminator 1
+ 277 001a 2146     		mov	r1, r4
+ 278 001c 0120     		movs	r0, #1
+ 279 001e FFF7FEFF 		bl	dispTime
+ 280              	.LVL35:
+ 281              	.L16:
   15:Display.c     **** }
- 259              		.loc 1 15 0 is_stmt 1
- 260 0018 044B     		ldr	r3, .L16
- 261 001a 5B68     		ldr	r3, [r3, #4]
- 262 001c 012B     		cmp	r3, #1
- 263 001e 03D1     		bne	.L12
+ 282              		.loc 1 15 0 is_stmt 1
+ 283 0022 054B     		ldr	r3, .L19+4
+ 284 0024 5B68     		ldr	r3, [r3, #4]
+ 285 0026 012B     		cmp	r3, #1
+ 286 0028 03D1     		bne	.L15
   15:Display.c     **** }
- 264              		.loc 1 15 0 is_stmt 0 discriminator 1
- 265 0020 2146     		mov	r1, r4
- 266 0022 0220     		movs	r0, #2
- 267 0024 FFF7FEFF 		bl	dispTime
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 7
+ 287              		.loc 1 15 0 is_stmt 0 discriminator 1
+ 288 002a 2146     		mov	r1, r4
+ 289 002c 0220     		movs	r0, #2
+ 290 002e FFF7FEFF 		bl	dispTime
+ 291              	.LVL36:
+ 292              	.L15:
+ 293 0032 10BD     		pop	{r4, pc}
+ 294              	.LVL37:
+ 295              	.L20:
+ 296              		.align	2
+ 297              	.L19:
+ 298 0034 1F85EB51 		.word	1374389535
+ 299 0038 00000000 		.word	.LANCHOR0
+ 300              		.cfi_endproc
+ 301              	.LFE64:
+ 302              		.size	isr_refreshrate_LCD, .-isr_refreshrate_LCD
+ 303              		.section	.text.stopLCD,"ax",%progbits
+ 304              		.align	2
+ 305              		.global	stopLCD
+ 306              		.thumb
+ 307              		.thumb_func
+ 308              		.type	stopLCD, %function
+ 309              	stopLCD:
+ 310              	.LFB68:
+  74:Display.c     **** 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 8
 
 
- 268              	.LVL35:
- 269              	.L12:
- 270 0028 10BD     		pop	{r4, pc}
- 271              	.LVL36:
- 272              	.L17:
- 273 002a 00BF     		.align	2
- 274              	.L16:
- 275 002c 00000000 		.word	.LANCHOR0
- 276              		.cfi_endproc
- 277              	.LFE64:
- 278              		.size	isr_refreshrate_LCD, .-isr_refreshrate_LCD
- 279              		.section	.text.stopLCD,"ax",%progbits
- 280              		.align	2
- 281              		.global	stopLCD
- 282              		.thumb
- 283              		.thumb_func
- 284              		.type	stopLCD, %function
- 285              	stopLCD:
- 286              	.LFB67:
-  70:Display.c     **** 
-  71:Display.c     **** void stopLCD(int disp)                                    // stopper displays enkeltvis 
-  72:Display.c     **** {
- 287              		.loc 1 72 0 is_stmt 1
- 288              		.cfi_startproc
- 289              		@ args = 0, pretend = 0, frame = 0
- 290              		@ frame_needed = 0, uses_anonymous_args = 0
- 291              		@ link register save eliminated.
- 292              	.LVL37:
-  73:Display.c     ****     if (disp == 1)
- 293              		.loc 1 73 0
- 294 0000 0128     		cmp	r0, #1
- 295 0002 03D1     		bne	.L19
-  74:Display.c     ****     {
-  75:Display.c     ****     display1On = 0;
- 296              		.loc 1 75 0
- 297 0004 0022     		movs	r2, #0
- 298 0006 044B     		ldr	r3, .L21
- 299 0008 1A60     		str	r2, [r3]
- 300 000a 7047     		bx	lr
- 301              	.L19:
-  76:Display.c     ****     }
-  77:Display.c     ****     else if (disp == 2)
- 302              		.loc 1 77 0
- 303 000c 0228     		cmp	r0, #2
- 304 000e 02D1     		bne	.L18
+  75:Display.c     **** void stopLCD(int disp)                                    // stopper displays enkeltvis 
+  76:Display.c     **** {
+ 311              		.loc 1 76 0 is_stmt 1
+ 312              		.cfi_startproc
+ 313              		@ args = 0, pretend = 0, frame = 0
+ 314              		@ frame_needed = 0, uses_anonymous_args = 0
+ 315              		@ link register save eliminated.
+ 316              	.LVL38:
+  77:Display.c     ****     if (disp == 1)
+ 317              		.loc 1 77 0
+ 318 0000 0128     		cmp	r0, #1
+ 319 0002 03D1     		bne	.L22
   78:Display.c     ****     {
-  79:Display.c     ****     display2On = 0;
- 305              		.loc 1 79 0
- 306 0010 0022     		movs	r2, #0
- 307 0012 014B     		ldr	r3, .L21
- 308 0014 5A60     		str	r2, [r3, #4]
- 309              	.L18:
- 310 0016 7047     		bx	lr
- 311              	.L22:
- 312              		.align	2
- 313              	.L21:
- 314 0018 00000000 		.word	.LANCHOR0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 8
+  79:Display.c     ****     display1On = 0;
+ 320              		.loc 1 79 0
+ 321 0004 0022     		movs	r2, #0
+ 322 0006 044B     		ldr	r3, .L24
+ 323 0008 1A60     		str	r2, [r3]
+ 324 000a 7047     		bx	lr
+ 325              	.L22:
+  80:Display.c     ****     }
+  81:Display.c     ****     else if (disp == 2)
+ 326              		.loc 1 81 0
+ 327 000c 0228     		cmp	r0, #2
+ 328 000e 02D1     		bne	.L21
+  82:Display.c     ****     {
+  83:Display.c     ****     display2On = 0;
+ 329              		.loc 1 83 0
+ 330 0010 0022     		movs	r2, #0
+ 331 0012 014B     		ldr	r3, .L24
+ 332 0014 5A60     		str	r2, [r3, #4]
+ 333              	.L21:
+ 334 0016 7047     		bx	lr
+ 335              	.L25:
+ 336              		.align	2
+ 337              	.L24:
+ 338 0018 00000000 		.word	.LANCHOR0
+ 339              		.cfi_endproc
+ 340              	.LFE68:
+ 341              		.size	stopLCD, .-stopLCD
+ 342              		.global	display2On
+ 343              		.global	display1On
+ 344              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 345              		.align	2
+ 346              	.LC0:
+ 347 0000 5370696C 		.ascii	"Spiller 1\000"
+ 347      6C657220 
+ 347      3100
+ 348 000a 0000     		.space	2
+ 349              	.LC1:
+ 350 000c 5469643A 		.ascii	"Tid: \000"
+ 350      2000
+ 351 0012 0000     		.space	2
+ 352              	.LC2:
+ 353 0014 5370696C 		.ascii	"Spiller 2\000"
+ 353      6C657220 
+ 353      3200
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 9
 
 
- 315              		.cfi_endproc
- 316              	.LFE67:
- 317              		.size	stopLCD, .-stopLCD
- 318              		.global	display2On
- 319              		.global	display1On
- 320              		.section	.rodata.str1.4,"aMS",%progbits,1
- 321              		.align	2
- 322              	.LC0:
- 323 0000 5370696C 		.ascii	"Spiller 1\000"
- 323      6C657220 
- 323      3100
- 324 000a 0000     		.space	2
- 325              	.LC1:
- 326 000c 5469643A 		.ascii	"Tid: \000"
- 326      2000
- 327 0012 0000     		.space	2
- 328              	.LC2:
- 329 0014 5370696C 		.ascii	"Spiller 2\000"
- 329      6C657220 
- 329      3200
- 330 001e 0000     		.space	2
- 331              	.LC3:
- 332 0020 20202020 		.ascii	"     \000"
- 332      2000
- 333 0026 0000     		.space	2
- 334              	.LC4:
- 335 0028 25642C25 		.ascii	"%d,%ds\000"
- 335      647300
- 336              		.bss
- 337              		.align	2
- 338              		.set	.LANCHOR0,. + 0
- 339              		.type	display1On, %object
- 340              		.size	display1On, 4
- 341              	display1On:
- 342 0000 00000000 		.space	4
- 343              		.type	display2On, %object
- 344              		.size	display2On, 4
- 345              	display2On:
- 346 0004 00000000 		.space	4
- 347              		.text
- 348              	.Letext0:
- 349              		.file 2 "d:\\psoc\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.1\\arm-none-eabi\\includ
- 350              		.file 3 "d:\\psoc\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.1\\arm-none-eabi\\includ
- 351              		.file 4 "Generated_Source\\PSoC5/core_cm3.h"
- 352              		.file 5 "Generated_Source\\PSoC5/I2C_1.h"
- 353              		.file 6 "Generated_Source\\PSoC5/isr_refreshrate_LCD.h"
- 354              		.file 7 "Generated_Source\\PSoC5/Timer_LCD.h"
- 355              		.file 8 "LiquidCrystal_I2C.h"
- 356              		.file 9 "d:\\psoc\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.1\\arm-none-eabi\\includ
- 357              		.file 10 "Stopur.h"
- 358              		.section	.debug_info,"",%progbits
- 359              	.Ldebug_info0:
- 360 0000 49040000 		.4byte	0x449
- 361 0004 0400     		.2byte	0x4
- 362 0006 00000000 		.4byte	.Ldebug_abbrev0
- 363 000a 04       		.byte	0x4
- 364 000b 01       		.uleb128 0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 9
+ 354 001e 0000     		.space	2
+ 355              	.LC3:
+ 356 0020 25642C25 		.ascii	"%d,%ds   \000"
+ 356      64732020 
+ 356      2000
+ 357              		.bss
+ 358              		.align	2
+ 359              		.set	.LANCHOR0,. + 0
+ 360              		.type	display1On, %object
+ 361              		.size	display1On, 4
+ 362              	display1On:
+ 363 0000 00000000 		.space	4
+ 364              		.type	display2On, %object
+ 365              		.size	display2On, 4
+ 366              	display2On:
+ 367 0004 00000000 		.space	4
+ 368              		.text
+ 369              	.Letext0:
+ 370              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.
+ 371              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.
+ 372              		.file 4 "Generated_Source\\PSoC5/core_cm3.h"
+ 373              		.file 5 "Generated_Source\\PSoC5/Timer_LCD.h"
+ 374              		.file 6 "LiquidCrystal_I2C.h"
+ 375              		.file 7 "Generated_Source\\PSoC5/I2C_1.h"
+ 376              		.file 8 "Generated_Source\\PSoC5/isr_refreshrate_LCD.h"
+ 377              		.file 9 "c:\\program files (x86)\\cypress\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.
+ 378              		.file 10 "Stopur.h"
+ 379              		.section	.debug_info,"",%progbits
+ 380              	.Ldebug_info0:
+ 381 0000 60040000 		.4byte	0x460
+ 382 0004 0400     		.2byte	0x4
+ 383 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 384 000a 04       		.byte	0x4
+ 385 000b 01       		.uleb128 0x1
+ 386 000c 30010000 		.4byte	.LASF38
+ 387 0010 0C       		.byte	0xc
+ 388 0011 8C020000 		.4byte	.LASF39
+ 389 0015 C6010000 		.4byte	.LASF40
+ 390 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 391 001d 00000000 		.4byte	0
+ 392 0021 00000000 		.4byte	.Ldebug_line0
+ 393 0025 02       		.uleb128 0x2
+ 394 0026 08       		.byte	0x8
+ 395 0027 07       		.byte	0x7
+ 396 0028 14010000 		.4byte	.LASF0
+ 397 002c 02       		.uleb128 0x2
+ 398 002d 04       		.byte	0x4
+ 399 002e 07       		.byte	0x7
+ 400 002f 07010000 		.4byte	.LASF1
+ 401 0033 03       		.uleb128 0x3
+ 402 0034 04       		.byte	0x4
+ 403 0035 05       		.byte	0x5
+ 404 0036 696E7400 		.ascii	"int\000"
+ 405 003a 02       		.uleb128 0x2
+ 406 003b 01       		.byte	0x1
+ 407 003c 06       		.byte	0x6
+ 408 003d BA020000 		.4byte	.LASF2
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 10
 
 
- 365 000c 74000000 		.4byte	.LASF38
- 366 0010 0C       		.byte	0xc
- 367 0011 81020000 		.4byte	.LASF39
- 368 0015 27010000 		.4byte	.LASF40
- 369 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 370 001d 00000000 		.4byte	0
- 371 0021 00000000 		.4byte	.Ldebug_line0
- 372 0025 02       		.uleb128 0x2
- 373 0026 08       		.byte	0x8
- 374 0027 07       		.byte	0x7
- 375 0028 FD010000 		.4byte	.LASF0
- 376 002c 02       		.uleb128 0x2
- 377 002d 04       		.byte	0x4
- 378 002e 07       		.byte	0x7
- 379 002f F0010000 		.4byte	.LASF1
- 380 0033 03       		.uleb128 0x3
- 381 0034 04       		.byte	0x4
- 382 0035 05       		.byte	0x5
- 383 0036 696E7400 		.ascii	"int\000"
- 384 003a 02       		.uleb128 0x2
- 385 003b 01       		.byte	0x1
- 386 003c 06       		.byte	0x6
- 387 003d B9020000 		.4byte	.LASF2
- 388 0041 02       		.uleb128 0x2
- 389 0042 01       		.byte	0x1
- 390 0043 08       		.byte	0x8
- 391 0044 66000000 		.4byte	.LASF3
- 392 0048 02       		.uleb128 0x2
- 393 0049 02       		.byte	0x2
- 394 004a 05       		.byte	0x5
- 395 004b DC010000 		.4byte	.LASF4
- 396 004f 02       		.uleb128 0x2
- 397 0050 02       		.byte	0x2
- 398 0051 07       		.byte	0x7
- 399 0052 14010000 		.4byte	.LASF5
- 400 0056 04       		.uleb128 0x4
- 401 0057 2A000000 		.4byte	.LASF9
- 402 005b 02       		.byte	0x2
- 403 005c 3F       		.byte	0x3f
- 404 005d 61000000 		.4byte	0x61
- 405 0061 02       		.uleb128 0x2
- 406 0062 04       		.byte	0x4
- 407 0063 05       		.byte	0x5
- 408 0064 95020000 		.4byte	.LASF6
- 409 0068 02       		.uleb128 0x2
- 410 0069 04       		.byte	0x4
- 411 006a 07       		.byte	0x7
- 412 006b 02010000 		.4byte	.LASF7
- 413 006f 02       		.uleb128 0x2
- 414 0070 08       		.byte	0x8
- 415 0071 05       		.byte	0x5
- 416 0072 00000000 		.4byte	.LASF8
- 417 0076 04       		.uleb128 0x4
- 418 0077 19020000 		.4byte	.LASF10
- 419 007b 03       		.byte	0x3
- 420 007c 2C       		.byte	0x2c
- 421 007d 56000000 		.4byte	0x56
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 10
+ 409 0041 02       		.uleb128 0x2
+ 410 0042 01       		.byte	0x1
+ 411 0043 08       		.byte	0x8
+ 412 0044 67000000 		.4byte	.LASF3
+ 413 0048 02       		.uleb128 0x2
+ 414 0049 02       		.byte	0x2
+ 415 004a 05       		.byte	0x5
+ 416 004b F3000000 		.4byte	.LASF4
+ 417 004f 02       		.uleb128 0x2
+ 418 0050 02       		.byte	0x2
+ 419 0051 07       		.byte	0x7
+ 420 0052 91000000 		.4byte	.LASF5
+ 421 0056 04       		.uleb128 0x4
+ 422 0057 2A000000 		.4byte	.LASF9
+ 423 005b 02       		.byte	0x2
+ 424 005c 3F       		.byte	0x3f
+ 425 005d 61000000 		.4byte	0x61
+ 426 0061 02       		.uleb128 0x2
+ 427 0062 04       		.byte	0x4
+ 428 0063 05       		.byte	0x5
+ 429 0064 96020000 		.4byte	.LASF6
+ 430 0068 02       		.uleb128 0x2
+ 431 0069 04       		.byte	0x4
+ 432 006a 07       		.byte	0x7
+ 433 006b 7F000000 		.4byte	.LASF7
+ 434 006f 02       		.uleb128 0x2
+ 435 0070 08       		.byte	0x8
+ 436 0071 05       		.byte	0x5
+ 437 0072 00000000 		.4byte	.LASF8
+ 438 0076 04       		.uleb128 0x4
+ 439 0077 BE010000 		.4byte	.LASF10
+ 440 007b 03       		.byte	0x3
+ 441 007c 2C       		.byte	0x2c
+ 442 007d 56000000 		.4byte	0x56
+ 443 0081 02       		.uleb128 0x2
+ 444 0082 04       		.byte	0x4
+ 445 0083 04       		.byte	0x4
+ 446 0084 58000000 		.4byte	.LASF11
+ 447 0088 02       		.uleb128 0x2
+ 448 0089 08       		.byte	0x8
+ 449 008a 04       		.byte	0x4
+ 450 008b CC000000 		.4byte	.LASF12
+ 451 008f 02       		.uleb128 0x2
+ 452 0090 01       		.byte	0x1
+ 453 0091 08       		.byte	0x8
+ 454 0092 70020000 		.4byte	.LASF13
+ 455 0096 02       		.uleb128 0x2
+ 456 0097 08       		.byte	0x8
+ 457 0098 04       		.byte	0x4
+ 458 0099 9F020000 		.4byte	.LASF14
+ 459 009d 02       		.uleb128 0x2
+ 460 009e 04       		.byte	0x4
+ 461 009f 07       		.byte	0x7
+ 462 00a0 48020000 		.4byte	.LASF15
+ 463 00a4 05       		.uleb128 0x5
+ 464 00a5 75000000 		.4byte	.LASF41
+ 465 00a9 01       		.byte	0x1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 11
 
 
- 422 0081 02       		.uleb128 0x2
- 423 0082 04       		.byte	0x4
- 424 0083 04       		.byte	0x4
- 425 0084 57000000 		.4byte	.LASF11
- 426 0088 02       		.uleb128 0x2
- 427 0089 08       		.byte	0x8
- 428 008a 04       		.byte	0x4
- 429 008b B5010000 		.4byte	.LASF12
- 430 008f 02       		.uleb128 0x2
- 431 0090 01       		.byte	0x1
- 432 0091 08       		.byte	0x8
- 433 0092 65020000 		.4byte	.LASF13
- 434 0096 02       		.uleb128 0x2
- 435 0097 08       		.byte	0x8
- 436 0098 04       		.byte	0x4
- 437 0099 9E020000 		.4byte	.LASF14
- 438 009d 02       		.uleb128 0x2
- 439 009e 04       		.byte	0x4
- 440 009f 07       		.byte	0x7
- 441 00a0 21020000 		.4byte	.LASF15
- 442 00a4 05       		.uleb128 0x5
- 443 00a5 5D000000 		.4byte	.LASF16
- 444 00a9 01       		.byte	0x1
- 445 00aa 14       		.byte	0x14
- 446 00ab 00000000 		.4byte	.LFB65
- 447 00af 9C000000 		.4byte	.LFE65-.LFB65
- 448 00b3 01       		.uleb128 0x1
- 449 00b4 9C       		.byte	0x9c
- 450 00b5 08020000 		.4byte	0x208
- 451 00b9 06       		.uleb128 0x6
- 452 00ba 487A00   		.ascii	"Hz\000"
- 453 00bd 01       		.byte	0x1
- 454 00be 14       		.byte	0x14
- 455 00bf 33000000 		.4byte	0x33
- 456 00c3 00000000 		.4byte	.LLST0
- 457 00c7 07       		.uleb128 0x7
- 458 00c8 08000000 		.4byte	.LVL1
- 459 00cc BD030000 		.4byte	0x3bd
- 460 00d0 08       		.uleb128 0x8
- 461 00d1 0E000000 		.4byte	.LVL2
- 462 00d5 C8030000 		.4byte	0x3c8
- 463 00d9 E7000000 		.4byte	0xe7
- 464 00dd 09       		.uleb128 0x9
- 465 00de 01       		.uleb128 0x1
- 466 00df 50       		.byte	0x50
- 467 00e0 05       		.uleb128 0x5
- 468 00e1 03       		.byte	0x3
- 469 00e2 00000000 		.4byte	isr_refreshrate_LCD
- 470 00e6 00       		.byte	0
- 471 00e7 08       		.uleb128 0x8
- 472 00e8 28000000 		.4byte	.LVL3
- 473 00ec D3030000 		.4byte	0x3d3
- 474 00f0 0C010000 		.4byte	0x10c
- 475 00f4 09       		.uleb128 0x9
- 476 00f5 01       		.uleb128 0x1
- 477 00f6 50       		.byte	0x50
- 478 00f7 13       		.uleb128 0x13
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 11
+ 466 00aa 21       		.byte	0x21
+ 467 00ab 00000000 		.4byte	.LFB66
+ 468 00af 64000000 		.4byte	.LFE66-.LFB66
+ 469 00b3 01       		.uleb128 0x1
+ 470 00b4 9C       		.byte	0x9c
+ 471 00b5 8C010000 		.4byte	0x18c
+ 472 00b9 06       		.uleb128 0x6
+ 473 00ba 06000000 		.4byte	.LVL0
+ 474 00be D4030000 		.4byte	0x3d4
+ 475 00c2 07       		.uleb128 0x7
+ 476 00c3 0C000000 		.4byte	.LVL1
+ 477 00c7 DF030000 		.4byte	0x3df
+ 478 00cb D6000000 		.4byte	0xd6
+ 479 00cf 08       		.uleb128 0x8
+ 480 00d0 01       		.uleb128 0x1
+ 481 00d1 50       		.byte	0x50
+ 482 00d2 02       		.uleb128 0x2
+ 483 00d3 08       		.byte	0x8
+ 484 00d4 26       		.byte	0x26
+ 485 00d5 00       		.byte	0
+ 486 00d6 06       		.uleb128 0x6
+ 487 00d7 10000000 		.4byte	.LVL2
+ 488 00db EA030000 		.4byte	0x3ea
+ 489 00df 07       		.uleb128 0x7
+ 490 00e0 16000000 		.4byte	.LVL3
+ 491 00e4 F5030000 		.4byte	0x3f5
+ 492 00e8 F6000000 		.4byte	0xf6
+ 493 00ec 08       		.uleb128 0x8
+ 494 00ed 01       		.uleb128 0x1
+ 495 00ee 50       		.byte	0x50
+ 496 00ef 05       		.uleb128 0x5
+ 497 00f0 03       		.byte	0x3
+ 498 00f1 00000000 		.4byte	.LC0
+ 499 00f5 00       		.byte	0
+ 500 00f6 07       		.uleb128 0x7
+ 501 00f7 1E000000 		.4byte	.LVL4
+ 502 00fb 00040000 		.4byte	0x400
+ 503 00ff 0E010000 		.4byte	0x10e
+ 504 0103 08       		.uleb128 0x8
+ 505 0104 01       		.uleb128 0x1
+ 506 0105 50       		.byte	0x50
+ 507 0106 01       		.uleb128 0x1
+ 508 0107 30       		.byte	0x30
+ 509 0108 08       		.uleb128 0x8
+ 510 0109 01       		.uleb128 0x1
+ 511 010a 51       		.byte	0x51
+ 512 010b 01       		.uleb128 0x1
+ 513 010c 31       		.byte	0x31
+ 514 010d 00       		.byte	0
+ 515 010e 07       		.uleb128 0x7
+ 516 010f 26000000 		.4byte	.LVL5
+ 517 0113 F5030000 		.4byte	0x3f5
+ 518 0117 22010000 		.4byte	0x122
+ 519 011b 08       		.uleb128 0x8
+ 520 011c 01       		.uleb128 0x1
+ 521 011d 50       		.byte	0x50
+ 522 011e 02       		.uleb128 0x2
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 12
 
 
- 479 00f8 75       		.byte	0x75
- 480 00f9 00       		.sleb128 0
- 481 00fa 74       		.byte	0x74
- 482 00fb 00       		.sleb128 0
- 483 00fc 1B       		.byte	0x1b
- 484 00fd 4F       		.byte	0x4f
- 485 00fe 1E       		.byte	0x1e
- 486 00ff 32       		.byte	0x32
- 487 0100 24       		.byte	0x24
- 488 0101 75       		.byte	0x75
- 489 0102 00       		.sleb128 0
- 490 0103 74       		.byte	0x74
- 491 0104 00       		.sleb128 0
- 492 0105 1B       		.byte	0x1b
- 493 0106 22       		.byte	0x22
- 494 0107 35       		.byte	0x35
- 495 0108 1E       		.byte	0x1e
- 496 0109 34       		.byte	0x34
- 497 010a 24       		.byte	0x24
- 498 010b 00       		.byte	0
- 499 010c 08       		.uleb128 0x8
- 500 010d 34000000 		.4byte	.LVL4
- 501 0111 DE030000 		.4byte	0x3de
- 502 0115 2F010000 		.4byte	0x12f
- 503 0119 09       		.uleb128 0x9
- 504 011a 01       		.uleb128 0x1
- 505 011b 50       		.byte	0x50
- 506 011c 02       		.uleb128 0x2
- 507 011d 08       		.byte	0x8
- 508 011e 26       		.byte	0x26
- 509 011f 09       		.uleb128 0x9
- 510 0120 01       		.uleb128 0x1
- 511 0121 51       		.byte	0x51
- 512 0122 01       		.uleb128 0x1
- 513 0123 40       		.byte	0x40
- 514 0124 09       		.uleb128 0x9
- 515 0125 01       		.uleb128 0x1
- 516 0126 52       		.byte	0x52
- 517 0127 01       		.uleb128 0x1
- 518 0128 32       		.byte	0x32
- 519 0129 09       		.uleb128 0x9
- 520 012a 01       		.uleb128 0x1
- 521 012b 53       		.byte	0x53
- 522 012c 01       		.uleb128 0x1
- 523 012d 30       		.byte	0x30
- 524 012e 00       		.byte	0
- 525 012f 07       		.uleb128 0x7
- 526 0130 38000000 		.4byte	.LVL5
- 527 0134 E9030000 		.4byte	0x3e9
- 528 0138 07       		.uleb128 0x7
- 529 0139 3C000000 		.4byte	.LVL6
- 530 013d F4030000 		.4byte	0x3f4
- 531 0141 08       		.uleb128 0x8
- 532 0142 42000000 		.4byte	.LVL7
- 533 0146 FF030000 		.4byte	0x3ff
- 534 014a 58010000 		.4byte	0x158
- 535 014e 09       		.uleb128 0x9
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 12
+ 523 011f 74       		.byte	0x74
+ 524 0120 00       		.sleb128 0
+ 525 0121 00       		.byte	0
+ 526 0122 07       		.uleb128 0x7
+ 527 0123 2C000000 		.4byte	.LVL6
+ 528 0127 DF030000 		.4byte	0x3df
+ 529 012b 36010000 		.4byte	0x136
+ 530 012f 08       		.uleb128 0x8
+ 531 0130 01       		.uleb128 0x1
+ 532 0131 50       		.byte	0x50
+ 533 0132 02       		.uleb128 0x2
+ 534 0133 08       		.byte	0x8
+ 535 0134 27       		.byte	0x27
+ 536 0135 00       		.byte	0
+ 537 0136 06       		.uleb128 0x6
+ 538 0137 30000000 		.4byte	.LVL7
+ 539 013b EA030000 		.4byte	0x3ea
+ 540 013f 07       		.uleb128 0x7
+ 541 0140 36000000 		.4byte	.LVL8
+ 542 0144 F5030000 		.4byte	0x3f5
+ 543 0148 56010000 		.4byte	0x156
+ 544 014c 08       		.uleb128 0x8
+ 545 014d 01       		.uleb128 0x1
+ 546 014e 50       		.byte	0x50
+ 547 014f 05       		.uleb128 0x5
+ 548 0150 03       		.byte	0x3
+ 549 0151 14000000 		.4byte	.LC2
+ 550 0155 00       		.byte	0
+ 551 0156 07       		.uleb128 0x7
+ 552 0157 3E000000 		.4byte	.LVL9
+ 553 015b 00040000 		.4byte	0x400
+ 554 015f 6E010000 		.4byte	0x16e
+ 555 0163 08       		.uleb128 0x8
+ 556 0164 01       		.uleb128 0x1
+ 557 0165 50       		.byte	0x50
+ 558 0166 01       		.uleb128 0x1
+ 559 0167 30       		.byte	0x30
+ 560 0168 08       		.uleb128 0x8
+ 561 0169 01       		.uleb128 0x1
+ 562 016a 51       		.byte	0x51
+ 563 016b 01       		.uleb128 0x1
+ 564 016c 31       		.byte	0x31
+ 565 016d 00       		.byte	0
+ 566 016e 07       		.uleb128 0x7
+ 567 016f 44000000 		.4byte	.LVL10
+ 568 0173 F5030000 		.4byte	0x3f5
+ 569 0177 82010000 		.4byte	0x182
+ 570 017b 08       		.uleb128 0x8
+ 571 017c 01       		.uleb128 0x1
+ 572 017d 50       		.byte	0x50
+ 573 017e 02       		.uleb128 0x2
+ 574 017f 74       		.byte	0x74
+ 575 0180 00       		.sleb128 0
+ 576 0181 00       		.byte	0
+ 577 0182 06       		.uleb128 0x6
+ 578 0183 50000000 		.4byte	.LVL11
+ 579 0187 0B040000 		.4byte	0x40b
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 13
 
 
- 536 014f 01       		.uleb128 0x1
- 537 0150 50       		.byte	0x50
- 538 0151 05       		.uleb128 0x5
- 539 0152 03       		.byte	0x3
- 540 0153 00000000 		.4byte	.LC0
- 541 0157 00       		.byte	0
- 542 0158 08       		.uleb128 0x8
- 543 0159 4A000000 		.4byte	.LVL8
- 544 015d 0A040000 		.4byte	0x40a
- 545 0161 71010000 		.4byte	0x171
- 546 0165 09       		.uleb128 0x9
- 547 0166 01       		.uleb128 0x1
- 548 0167 50       		.byte	0x50
- 549 0168 01       		.uleb128 0x1
- 550 0169 30       		.byte	0x30
- 551 016a 09       		.uleb128 0x9
- 552 016b 01       		.uleb128 0x1
- 553 016c 51       		.byte	0x51
- 554 016d 02       		.uleb128 0x2
- 555 016e 75       		.byte	0x75
- 556 016f 00       		.sleb128 0
- 557 0170 00       		.byte	0
- 558 0171 08       		.uleb128 0x8
- 559 0172 52000000 		.4byte	.LVL10
- 560 0176 FF030000 		.4byte	0x3ff
- 561 017a 85010000 		.4byte	0x185
- 562 017e 09       		.uleb128 0x9
- 563 017f 01       		.uleb128 0x1
- 564 0180 50       		.byte	0x50
- 565 0181 02       		.uleb128 0x2
- 566 0182 74       		.byte	0x74
- 567 0183 00       		.sleb128 0
- 568 0184 00       		.byte	0
- 569 0185 08       		.uleb128 0x8
- 570 0186 5E000000 		.4byte	.LVL11
- 571 018a DE030000 		.4byte	0x3de
- 572 018e A8010000 		.4byte	0x1a8
- 573 0192 09       		.uleb128 0x9
- 574 0193 01       		.uleb128 0x1
- 575 0194 50       		.byte	0x50
- 576 0195 02       		.uleb128 0x2
- 577 0196 08       		.byte	0x8
- 578 0197 27       		.byte	0x27
- 579 0198 09       		.uleb128 0x9
- 580 0199 01       		.uleb128 0x1
- 581 019a 51       		.byte	0x51
- 582 019b 01       		.uleb128 0x1
- 583 019c 40       		.byte	0x40
- 584 019d 09       		.uleb128 0x9
- 585 019e 01       		.uleb128 0x1
- 586 019f 52       		.byte	0x52
- 587 01a0 01       		.uleb128 0x1
- 588 01a1 32       		.byte	0x32
- 589 01a2 09       		.uleb128 0x9
- 590 01a3 01       		.uleb128 0x1
- 591 01a4 53       		.byte	0x53
- 592 01a5 01       		.uleb128 0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 13
+ 580 018b 00       		.byte	0
+ 581 018c 09       		.uleb128 0x9
+ 582 018d 5E000000 		.4byte	.LASF16
+ 583 0191 01       		.byte	0x1
+ 584 0192 14       		.byte	0x14
+ 585 0193 00000000 		.4byte	.LFB65
+ 586 0197 54000000 		.4byte	.LFE65-.LFB65
+ 587 019b 01       		.uleb128 0x1
+ 588 019c 9C       		.byte	0x9c
+ 589 019d 54020000 		.4byte	0x254
+ 590 01a1 0A       		.uleb128 0xa
+ 591 01a2 487A00   		.ascii	"Hz\000"
+ 592 01a5 01       		.byte	0x1
+ 593 01a6 14       		.byte	0x14
+ 594 01a7 33000000 		.4byte	0x33
+ 595 01ab 00000000 		.4byte	.LLST0
+ 596 01af 06       		.uleb128 0x6
+ 597 01b0 08000000 		.4byte	.LVL13
+ 598 01b4 16040000 		.4byte	0x416
+ 599 01b8 07       		.uleb128 0x7
+ 600 01b9 0E000000 		.4byte	.LVL14
+ 601 01bd 21040000 		.4byte	0x421
+ 602 01c1 CF010000 		.4byte	0x1cf
+ 603 01c5 08       		.uleb128 0x8
+ 604 01c6 01       		.uleb128 0x1
+ 605 01c7 50       		.byte	0x50
+ 606 01c8 05       		.uleb128 0x5
+ 607 01c9 03       		.byte	0x3
+ 608 01ca 00000000 		.4byte	isr_refreshrate_LCD
+ 609 01ce 00       		.byte	0
+ 610 01cf 07       		.uleb128 0x7
+ 611 01d0 28000000 		.4byte	.LVL15
+ 612 01d4 2C040000 		.4byte	0x42c
+ 613 01d8 F2010000 		.4byte	0x1f2
+ 614 01dc 08       		.uleb128 0x8
+ 615 01dd 01       		.uleb128 0x1
+ 616 01de 50       		.byte	0x50
+ 617 01df 11       		.uleb128 0x11
+ 618 01e0 31       		.byte	0x31
+ 619 01e1 74       		.byte	0x74
+ 620 01e2 00       		.sleb128 0
+ 621 01e3 1B       		.byte	0x1b
+ 622 01e4 4F       		.byte	0x4f
+ 623 01e5 1E       		.byte	0x1e
+ 624 01e6 32       		.byte	0x32
+ 625 01e7 24       		.byte	0x24
+ 626 01e8 31       		.byte	0x31
+ 627 01e9 74       		.byte	0x74
+ 628 01ea 00       		.sleb128 0
+ 629 01eb 1B       		.byte	0x1b
+ 630 01ec 22       		.byte	0x22
+ 631 01ed 35       		.byte	0x35
+ 632 01ee 1E       		.byte	0x1e
+ 633 01ef 34       		.byte	0x34
+ 634 01f0 24       		.byte	0x24
+ 635 01f1 00       		.byte	0
+ 636 01f2 07       		.uleb128 0x7
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 14
 
 
- 593 01a6 30       		.byte	0x30
- 594 01a7 00       		.byte	0
- 595 01a8 07       		.uleb128 0x7
- 596 01a9 62000000 		.4byte	.LVL12
- 597 01ad E9030000 		.4byte	0x3e9
- 598 01b1 07       		.uleb128 0x7
- 599 01b2 66000000 		.4byte	.LVL13
- 600 01b6 F4030000 		.4byte	0x3f4
- 601 01ba 08       		.uleb128 0x8
- 602 01bb 6C000000 		.4byte	.LVL14
- 603 01bf FF030000 		.4byte	0x3ff
- 604 01c3 D1010000 		.4byte	0x1d1
- 605 01c7 09       		.uleb128 0x9
- 606 01c8 01       		.uleb128 0x1
- 607 01c9 50       		.byte	0x50
- 608 01ca 05       		.uleb128 0x5
- 609 01cb 03       		.byte	0x3
- 610 01cc 14000000 		.4byte	.LC2
- 611 01d0 00       		.byte	0
- 612 01d1 08       		.uleb128 0x8
- 613 01d2 74000000 		.4byte	.LVL15
- 614 01d6 0A040000 		.4byte	0x40a
- 615 01da EA010000 		.4byte	0x1ea
- 616 01de 09       		.uleb128 0x9
- 617 01df 01       		.uleb128 0x1
- 618 01e0 50       		.byte	0x50
- 619 01e1 01       		.uleb128 0x1
- 620 01e2 30       		.byte	0x30
- 621 01e3 09       		.uleb128 0x9
- 622 01e4 01       		.uleb128 0x1
- 623 01e5 51       		.byte	0x51
- 624 01e6 02       		.uleb128 0x2
- 625 01e7 75       		.byte	0x75
- 626 01e8 00       		.sleb128 0
- 627 01e9 00       		.byte	0
- 628 01ea 08       		.uleb128 0x8
- 629 01eb 7A000000 		.4byte	.LVL16
- 630 01ef FF030000 		.4byte	0x3ff
- 631 01f3 FE010000 		.4byte	0x1fe
- 632 01f7 09       		.uleb128 0x9
- 633 01f8 01       		.uleb128 0x1
- 634 01f9 50       		.byte	0x50
- 635 01fa 02       		.uleb128 0x2
- 636 01fb 74       		.byte	0x74
- 637 01fc 00       		.sleb128 0
- 638 01fd 00       		.byte	0
- 639 01fe 07       		.uleb128 0x7
- 640 01ff 84000000 		.4byte	.LVL17
- 641 0203 15040000 		.4byte	0x415
- 642 0207 00       		.byte	0
- 643 0208 05       		.uleb128 0x5
- 644 0209 21000000 		.4byte	.LASF17
- 645 020d 01       		.byte	0x1
- 646 020e 30       		.byte	0x30
- 647 020f 00000000 		.4byte	.LFB66
- 648 0213 70000000 		.4byte	.LFE66-.LFB66
- 649 0217 01       		.uleb128 0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 14
+ 637 01f3 34000000 		.4byte	.LVL16
+ 638 01f7 37040000 		.4byte	0x437
+ 639 01fb 15020000 		.4byte	0x215
+ 640 01ff 08       		.uleb128 0x8
+ 641 0200 01       		.uleb128 0x1
+ 642 0201 50       		.byte	0x50
+ 643 0202 02       		.uleb128 0x2
+ 644 0203 08       		.byte	0x8
+ 645 0204 26       		.byte	0x26
+ 646 0205 08       		.uleb128 0x8
+ 647 0206 01       		.uleb128 0x1
+ 648 0207 51       		.byte	0x51
+ 649 0208 01       		.uleb128 0x1
+ 650 0209 40       		.byte	0x40
+ 651 020a 08       		.uleb128 0x8
+ 652 020b 01       		.uleb128 0x1
+ 653 020c 52       		.byte	0x52
+ 654 020d 01       		.uleb128 0x1
+ 655 020e 32       		.byte	0x32
+ 656 020f 08       		.uleb128 0x8
+ 657 0210 01       		.uleb128 0x1
+ 658 0211 53       		.byte	0x53
+ 659 0212 01       		.uleb128 0x1
+ 660 0213 30       		.byte	0x30
+ 661 0214 00       		.byte	0
+ 662 0215 06       		.uleb128 0x6
+ 663 0216 38000000 		.4byte	.LVL17
+ 664 021a 42040000 		.4byte	0x442
+ 665 021e 07       		.uleb128 0x7
+ 666 021f 44000000 		.4byte	.LVL18
+ 667 0223 37040000 		.4byte	0x437
+ 668 0227 41020000 		.4byte	0x241
+ 669 022b 08       		.uleb128 0x8
+ 670 022c 01       		.uleb128 0x1
+ 671 022d 50       		.byte	0x50
+ 672 022e 02       		.uleb128 0x2
+ 673 022f 08       		.byte	0x8
+ 674 0230 27       		.byte	0x27
+ 675 0231 08       		.uleb128 0x8
+ 676 0232 01       		.uleb128 0x1
+ 677 0233 51       		.byte	0x51
+ 678 0234 01       		.uleb128 0x1
+ 679 0235 40       		.byte	0x40
+ 680 0236 08       		.uleb128 0x8
+ 681 0237 01       		.uleb128 0x1
+ 682 0238 52       		.byte	0x52
+ 683 0239 01       		.uleb128 0x1
+ 684 023a 32       		.byte	0x32
+ 685 023b 08       		.uleb128 0x8
+ 686 023c 01       		.uleb128 0x1
+ 687 023d 53       		.byte	0x53
+ 688 023e 01       		.uleb128 0x1
+ 689 023f 30       		.byte	0x30
+ 690 0240 00       		.byte	0
+ 691 0241 06       		.uleb128 0x6
+ 692 0242 48000000 		.4byte	.LVL19
+ 693 0246 42040000 		.4byte	0x442
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 15
 
 
- 650 0218 9C       		.byte	0x9c
- 651 0219 FD020000 		.4byte	0x2fd
- 652 021d 0A       		.uleb128 0xa
- 653 021e 14020000 		.4byte	.LASF18
- 654 0222 01       		.byte	0x1
- 655 0223 30       		.byte	0x30
- 656 0224 33000000 		.4byte	0x33
- 657 0228 2C000000 		.4byte	.LLST1
- 658 022c 06       		.uleb128 0x6
- 659 022d 6D7300   		.ascii	"ms\000"
- 660 0230 01       		.byte	0x1
- 661 0231 30       		.byte	0x30
- 662 0232 33000000 		.4byte	0x33
- 663 0236 55000000 		.4byte	.LLST2
- 664 023a 0B       		.uleb128 0xb
- 665 023b 5D020000 		.4byte	.LASF19
- 666 023f 01       		.byte	0x1
- 667 0240 38       		.byte	0x38
- 668 0241 33000000 		.4byte	0x33
- 669 0245 A4000000 		.4byte	.LLST3
- 670 0249 0C       		.uleb128 0xc
- 671 024a 62756600 		.ascii	"buf\000"
- 672 024e 01       		.byte	0x1
- 673 024f 39       		.byte	0x39
- 674 0250 FD020000 		.4byte	0x2fd
- 675 0254 02       		.uleb128 0x2
- 676 0255 91       		.byte	0x91
- 677 0256 5C       		.sleb128 -36
- 678 0257 07       		.uleb128 0x7
- 679 0258 0C000000 		.4byte	.LVL19
- 680 025c 20040000 		.4byte	0x420
- 681 0260 08       		.uleb128 0x8
- 682 0261 16000000 		.4byte	.LVL20
- 683 0265 0A040000 		.4byte	0x40a
- 684 0269 78020000 		.4byte	0x278
- 685 026d 09       		.uleb128 0x9
- 686 026e 01       		.uleb128 0x1
- 687 026f 50       		.byte	0x50
- 688 0270 01       		.uleb128 0x1
- 689 0271 39       		.byte	0x39
- 690 0272 09       		.uleb128 0x9
- 691 0273 01       		.uleb128 0x1
- 692 0274 51       		.byte	0x51
- 693 0275 01       		.uleb128 0x1
- 694 0276 31       		.byte	0x31
- 695 0277 00       		.byte	0
- 696 0278 08       		.uleb128 0x8
- 697 0279 1C000000 		.4byte	.LVL21
- 698 027d FF030000 		.4byte	0x3ff
- 699 0281 8F020000 		.4byte	0x28f
- 700 0285 09       		.uleb128 0x9
- 701 0286 01       		.uleb128 0x1
- 702 0287 50       		.byte	0x50
- 703 0288 05       		.uleb128 0x5
- 704 0289 03       		.byte	0x3
- 705 028a 20000000 		.4byte	.LC3
- 706 028e 00       		.byte	0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 15
+ 694 024a 06       		.uleb128 0x6
+ 695 024b 4C000000 		.4byte	.LVL20
+ 696 024f A4000000 		.4byte	0xa4
+ 697 0253 00       		.byte	0
+ 698 0254 09       		.uleb128 0x9
+ 699 0255 21000000 		.4byte	.LASF17
+ 700 0259 01       		.byte	0x1
+ 701 025a 39       		.byte	0x39
+ 702 025b 00000000 		.4byte	.LFB67
+ 703 025f 58000000 		.4byte	.LFE67-.LFB67
+ 704 0263 01       		.uleb128 0x1
+ 705 0264 9C       		.byte	0x9c
+ 706 0265 14030000 		.4byte	0x314
+ 707 0269 0B       		.uleb128 0xb
+ 708 026a 2B010000 		.4byte	.LASF18
+ 709 026e 01       		.byte	0x1
+ 710 026f 39       		.byte	0x39
+ 711 0270 33000000 		.4byte	0x33
+ 712 0274 2C000000 		.4byte	.LLST1
+ 713 0278 0A       		.uleb128 0xa
+ 714 0279 6D7300   		.ascii	"ms\000"
+ 715 027c 01       		.byte	0x1
+ 716 027d 39       		.byte	0x39
+ 717 027e 33000000 		.4byte	0x33
+ 718 0282 55000000 		.4byte	.LLST2
+ 719 0286 0C       		.uleb128 0xc
+ 720 0287 68020000 		.4byte	.LASF19
+ 721 028b 01       		.byte	0x1
+ 722 028c 3C       		.byte	0x3c
+ 723 028d 33000000 		.4byte	0x33
+ 724 0291 A3000000 		.4byte	.LLST3
+ 725 0295 0D       		.uleb128 0xd
+ 726 0296 62756600 		.ascii	"buf\000"
+ 727 029a 01       		.byte	0x1
+ 728 029b 3D       		.byte	0x3d
+ 729 029c 14030000 		.4byte	0x314
+ 730 02a0 02       		.uleb128 0x2
+ 731 02a1 91       		.byte	0x91
+ 732 02a2 5C       		.sleb128 -36
+ 733 02a3 06       		.uleb128 0x6
+ 734 02a4 0C000000 		.4byte	.LVL23
+ 735 02a8 D4030000 		.4byte	0x3d4
+ 736 02ac 06       		.uleb128 0x6
+ 737 02ad 2E000000 		.4byte	.LVL27
+ 738 02b1 DF030000 		.4byte	0x3df
+ 739 02b5 07       		.uleb128 0x7
+ 740 02b6 3A000000 		.4byte	.LVL28
+ 741 02ba 4D040000 		.4byte	0x44d
+ 742 02be DE020000 		.4byte	0x2de
+ 743 02c2 08       		.uleb128 0x8
+ 744 02c3 01       		.uleb128 0x1
+ 745 02c4 50       		.byte	0x50
+ 746 02c5 02       		.uleb128 0x2
+ 747 02c6 91       		.byte	0x91
+ 748 02c7 5C       		.sleb128 -36
+ 749 02c8 08       		.uleb128 0x8
+ 750 02c9 01       		.uleb128 0x1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 16
 
 
- 707 028f 07       		.uleb128 0x7
- 708 0290 3C000000 		.4byte	.LVL25
- 709 0294 2B040000 		.4byte	0x42b
- 710 0298 08       		.uleb128 0x8
- 711 0299 4A000000 		.4byte	.LVL26
- 712 029d 36040000 		.4byte	0x436
- 713 02a1 C7020000 		.4byte	0x2c7
- 714 02a5 09       		.uleb128 0x9
- 715 02a6 01       		.uleb128 0x1
- 716 02a7 50       		.byte	0x50
- 717 02a8 02       		.uleb128 0x2
- 718 02a9 91       		.byte	0x91
- 719 02aa 5C       		.sleb128 -36
- 720 02ab 09       		.uleb128 0x9
- 721 02ac 01       		.uleb128 0x1
- 722 02ad 51       		.byte	0x51
- 723 02ae 01       		.uleb128 0x1
- 724 02af 38       		.byte	0x38
- 725 02b0 09       		.uleb128 0x9
- 726 02b1 01       		.uleb128 0x1
- 727 02b2 52       		.byte	0x52
- 728 02b3 05       		.uleb128 0x5
- 729 02b4 03       		.byte	0x3
- 730 02b5 28000000 		.4byte	.LC4
- 731 02b9 09       		.uleb128 0x9
- 732 02ba 01       		.uleb128 0x1
- 733 02bb 53       		.byte	0x53
- 734 02bc 02       		.uleb128 0x2
- 735 02bd 74       		.byte	0x74
- 736 02be 00       		.sleb128 0
- 737 02bf 09       		.uleb128 0x9
- 738 02c0 02       		.uleb128 0x2
- 739 02c1 7D       		.byte	0x7d
- 740 02c2 00       		.sleb128 0
- 741 02c3 02       		.uleb128 0x2
- 742 02c4 75       		.byte	0x75
- 743 02c5 00       		.sleb128 0
- 744 02c6 00       		.byte	0
- 745 02c7 08       		.uleb128 0x8
- 746 02c8 52000000 		.4byte	.LVL27
- 747 02cc 0A040000 		.4byte	0x40a
- 748 02d0 DF020000 		.4byte	0x2df
- 749 02d4 09       		.uleb128 0x9
- 750 02d5 01       		.uleb128 0x1
- 751 02d6 50       		.byte	0x50
- 752 02d7 01       		.uleb128 0x1
- 753 02d8 35       		.byte	0x35
- 754 02d9 09       		.uleb128 0x9
- 755 02da 01       		.uleb128 0x1
- 756 02db 51       		.byte	0x51
- 757 02dc 01       		.uleb128 0x1
- 758 02dd 31       		.byte	0x31
- 759 02de 00       		.byte	0
- 760 02df 08       		.uleb128 0x8
- 761 02e0 58000000 		.4byte	.LVL28
- 762 02e4 FF030000 		.4byte	0x3ff
- 763 02e8 F3020000 		.4byte	0x2f3
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 16
+ 751 02ca 51       		.byte	0x51
+ 752 02cb 05       		.uleb128 0x5
+ 753 02cc 03       		.byte	0x3
+ 754 02cd 20000000 		.4byte	.LC3
+ 755 02d1 08       		.uleb128 0x8
+ 756 02d2 01       		.uleb128 0x1
+ 757 02d3 52       		.byte	0x52
+ 758 02d4 02       		.uleb128 0x2
+ 759 02d5 74       		.byte	0x74
+ 760 02d6 00       		.sleb128 0
+ 761 02d7 08       		.uleb128 0x8
+ 762 02d8 01       		.uleb128 0x1
+ 763 02d9 53       		.byte	0x53
+ 764 02da 02       		.uleb128 0x2
+ 765 02db 75       		.byte	0x75
+ 766 02dc 00       		.sleb128 0
+ 767 02dd 00       		.byte	0
+ 768 02de 07       		.uleb128 0x7
+ 769 02df 42000000 		.4byte	.LVL29
+ 770 02e3 00040000 		.4byte	0x400
+ 771 02e7 F6020000 		.4byte	0x2f6
+ 772 02eb 08       		.uleb128 0x8
+ 773 02ec 01       		.uleb128 0x1
+ 774 02ed 50       		.byte	0x50
+ 775 02ee 01       		.uleb128 0x1
+ 776 02ef 35       		.byte	0x35
+ 777 02f0 08       		.uleb128 0x8
+ 778 02f1 01       		.uleb128 0x1
+ 779 02f2 51       		.byte	0x51
+ 780 02f3 01       		.uleb128 0x1
+ 781 02f4 31       		.byte	0x31
+ 782 02f5 00       		.byte	0
+ 783 02f6 07       		.uleb128 0x7
+ 784 02f7 48000000 		.4byte	.LVL30
+ 785 02fb F5030000 		.4byte	0x3f5
+ 786 02ff 0A030000 		.4byte	0x30a
+ 787 0303 08       		.uleb128 0x8
+ 788 0304 01       		.uleb128 0x1
+ 789 0305 50       		.byte	0x50
+ 790 0306 02       		.uleb128 0x2
+ 791 0307 91       		.byte	0x91
+ 792 0308 5C       		.sleb128 -36
+ 793 0309 00       		.byte	0
+ 794 030a 06       		.uleb128 0x6
+ 795 030b 4C000000 		.4byte	.LVL31
+ 796 030f 0B040000 		.4byte	0x40b
+ 797 0313 00       		.byte	0
+ 798 0314 0E       		.uleb128 0xe
+ 799 0315 8F000000 		.4byte	0x8f
+ 800 0319 24030000 		.4byte	0x324
+ 801 031d 0F       		.uleb128 0xf
+ 802 031e 9D000000 		.4byte	0x9d
+ 803 0322 13       		.byte	0x13
+ 804 0323 00       		.byte	0
+ 805 0324 09       		.uleb128 0x9
+ 806 0325 44000000 		.4byte	.LASF20
+ 807 0329 01       		.byte	0x1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 17
 
 
- 764 02ec 09       		.uleb128 0x9
- 765 02ed 01       		.uleb128 0x1
- 766 02ee 50       		.byte	0x50
- 767 02ef 02       		.uleb128 0x2
- 768 02f0 91       		.byte	0x91
- 769 02f1 5C       		.sleb128 -36
- 770 02f2 00       		.byte	0
- 771 02f3 07       		.uleb128 0x7
- 772 02f4 5C000000 		.4byte	.LVL29
- 773 02f8 15040000 		.4byte	0x415
- 774 02fc 00       		.byte	0
- 775 02fd 0D       		.uleb128 0xd
- 776 02fe 8F000000 		.4byte	0x8f
- 777 0302 0D030000 		.4byte	0x30d
- 778 0306 0E       		.uleb128 0xe
- 779 0307 9D000000 		.4byte	0x9d
- 780 030b 13       		.byte	0x13
- 781 030c 00       		.byte	0
- 782 030d 05       		.uleb128 0x5
- 783 030e 43000000 		.4byte	.LASF20
- 784 0312 01       		.byte	0x1
- 785 0313 0B       		.byte	0xb
- 786 0314 00000000 		.4byte	.LFB64
- 787 0318 30000000 		.4byte	.LFE64-.LFB64
- 788 031c 01       		.uleb128 0x1
- 789 031d 9C       		.byte	0x9c
- 790 031e 67030000 		.4byte	0x367
- 791 0322 0F       		.uleb128 0xf
- 792 0323 7800     		.ascii	"x\000"
- 793 0325 01       		.byte	0x1
- 794 0326 0D       		.byte	0xd
- 795 0327 33000000 		.4byte	0x33
- 796 032b EC000000 		.4byte	.LLST4
- 797 032f 07       		.uleb128 0x7
- 798 0330 06000000 		.4byte	.LVL31
- 799 0334 41040000 		.4byte	0x441
- 800 0338 08       		.uleb128 0x8
- 801 0339 18000000 		.4byte	.LVL34
- 802 033d 08020000 		.4byte	0x208
- 803 0341 51030000 		.4byte	0x351
- 804 0345 09       		.uleb128 0x9
- 805 0346 01       		.uleb128 0x1
- 806 0347 50       		.byte	0x50
- 807 0348 01       		.uleb128 0x1
- 808 0349 31       		.byte	0x31
- 809 034a 09       		.uleb128 0x9
- 810 034b 01       		.uleb128 0x1
- 811 034c 51       		.byte	0x51
- 812 034d 02       		.uleb128 0x2
- 813 034e 74       		.byte	0x74
- 814 034f 00       		.sleb128 0
- 815 0350 00       		.byte	0
- 816 0351 10       		.uleb128 0x10
- 817 0352 28000000 		.4byte	.LVL35
- 818 0356 08020000 		.4byte	0x208
- 819 035a 09       		.uleb128 0x9
- 820 035b 01       		.uleb128 0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 17
+ 808 032a 0B       		.byte	0xb
+ 809 032b 00000000 		.4byte	.LFB64
+ 810 032f 3C000000 		.4byte	.LFE64-.LFB64
+ 811 0333 01       		.uleb128 0x1
+ 812 0334 9C       		.byte	0x9c
+ 813 0335 7E030000 		.4byte	0x37e
+ 814 0339 10       		.uleb128 0x10
+ 815 033a 7800     		.ascii	"x\000"
+ 816 033c 01       		.byte	0x1
+ 817 033d 0D       		.byte	0xd
+ 818 033e 33000000 		.4byte	0x33
+ 819 0342 EB000000 		.4byte	.LLST4
+ 820 0346 06       		.uleb128 0x6
+ 821 0347 06000000 		.4byte	.LVL33
+ 822 034b 58040000 		.4byte	0x458
+ 823 034f 07       		.uleb128 0x7
+ 824 0350 22000000 		.4byte	.LVL35
+ 825 0354 54020000 		.4byte	0x254
+ 826 0358 68030000 		.4byte	0x368
+ 827 035c 08       		.uleb128 0x8
+ 828 035d 01       		.uleb128 0x1
+ 829 035e 50       		.byte	0x50
+ 830 035f 01       		.uleb128 0x1
+ 831 0360 31       		.byte	0x31
+ 832 0361 08       		.uleb128 0x8
+ 833 0362 01       		.uleb128 0x1
+ 834 0363 51       		.byte	0x51
+ 835 0364 02       		.uleb128 0x2
+ 836 0365 74       		.byte	0x74
+ 837 0366 00       		.sleb128 0
+ 838 0367 00       		.byte	0
+ 839 0368 11       		.uleb128 0x11
+ 840 0369 32000000 		.4byte	.LVL36
+ 841 036d 54020000 		.4byte	0x254
+ 842 0371 08       		.uleb128 0x8
+ 843 0372 01       		.uleb128 0x1
+ 844 0373 50       		.byte	0x50
+ 845 0374 01       		.uleb128 0x1
+ 846 0375 32       		.byte	0x32
+ 847 0376 08       		.uleb128 0x8
+ 848 0377 01       		.uleb128 0x1
+ 849 0378 51       		.byte	0x51
+ 850 0379 02       		.uleb128 0x2
+ 851 037a 74       		.byte	0x74
+ 852 037b 00       		.sleb128 0
+ 853 037c 00       		.byte	0
+ 854 037d 00       		.byte	0
+ 855 037e 09       		.uleb128 0x9
+ 856 037f CE020000 		.4byte	.LASF21
+ 857 0383 01       		.byte	0x1
+ 858 0384 4B       		.byte	0x4b
+ 859 0385 00000000 		.4byte	.LFB68
+ 860 0389 1C000000 		.4byte	.LFE68-.LFB68
+ 861 038d 01       		.uleb128 0x1
+ 862 038e 9C       		.byte	0x9c
+ 863 038f A1030000 		.4byte	0x3a1
+ 864 0393 12       		.uleb128 0x12
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 18
 
 
- 821 035c 50       		.byte	0x50
- 822 035d 01       		.uleb128 0x1
- 823 035e 32       		.byte	0x32
- 824 035f 09       		.uleb128 0x9
- 825 0360 01       		.uleb128 0x1
- 826 0361 51       		.byte	0x51
- 827 0362 02       		.uleb128 0x2
- 828 0363 74       		.byte	0x74
- 829 0364 00       		.sleb128 0
- 830 0365 00       		.byte	0
- 831 0366 00       		.byte	0
- 832 0367 05       		.uleb128 0x5
- 833 0368 C5020000 		.4byte	.LASF21
- 834 036c 01       		.byte	0x1
- 835 036d 47       		.byte	0x47
- 836 036e 00000000 		.4byte	.LFB67
- 837 0372 1C000000 		.4byte	.LFE67-.LFB67
- 838 0376 01       		.uleb128 0x1
- 839 0377 9C       		.byte	0x9c
- 840 0378 8A030000 		.4byte	0x38a
- 841 037c 11       		.uleb128 0x11
- 842 037d 14020000 		.4byte	.LASF18
- 843 0381 01       		.byte	0x1
- 844 0382 47       		.byte	0x47
- 845 0383 33000000 		.4byte	0x33
- 846 0387 01       		.uleb128 0x1
- 847 0388 50       		.byte	0x50
- 848 0389 00       		.byte	0
- 849 038a 12       		.uleb128 0x12
- 850 038b 9D010000 		.4byte	.LASF22
- 851 038f 04       		.byte	0x4
- 852 0390 1207     		.2byte	0x712
- 853 0392 96030000 		.4byte	0x396
- 854 0396 13       		.uleb128 0x13
- 855 0397 76000000 		.4byte	0x76
- 856 039b 14       		.uleb128 0x14
- 857 039c AA010000 		.4byte	.LASF23
- 858 03a0 01       		.byte	0x1
- 859 03a1 08       		.byte	0x8
- 860 03a2 33000000 		.4byte	0x33
- 861 03a6 05       		.uleb128 0x5
- 862 03a7 03       		.byte	0x3
- 863 03a8 00000000 		.4byte	display1On
- 864 03ac 14       		.uleb128 0x14
- 865 03ad 6A020000 		.4byte	.LASF24
- 866 03b1 01       		.byte	0x1
- 867 03b2 09       		.byte	0x9
- 868 03b3 33000000 		.4byte	0x33
- 869 03b7 05       		.uleb128 0x5
- 870 03b8 03       		.byte	0x3
- 871 03b9 00000000 		.4byte	display2On
- 872 03bd 15       		.uleb128 0x15
- 873 03be 75020000 		.4byte	.LASF25
- 874 03c2 75020000 		.4byte	.LASF25
- 875 03c6 05       		.byte	0x5
- 876 03c7 93       		.byte	0x93
- 877 03c8 15       		.uleb128 0x15
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 18
+ 865 0394 2B010000 		.4byte	.LASF18
+ 866 0398 01       		.byte	0x1
+ 867 0399 4B       		.byte	0x4b
+ 868 039a 33000000 		.4byte	0x33
+ 869 039e 01       		.uleb128 0x1
+ 870 039f 50       		.byte	0x50
+ 871 03a0 00       		.byte	0
+ 872 03a1 13       		.uleb128 0x13
+ 873 03a2 B4000000 		.4byte	.LASF22
+ 874 03a6 04       		.byte	0x4
+ 875 03a7 1207     		.2byte	0x712
+ 876 03a9 AD030000 		.4byte	0x3ad
+ 877 03ad 14       		.uleb128 0x14
+ 878 03ae 76000000 		.4byte	0x76
+ 879 03b2 15       		.uleb128 0x15
+ 880 03b3 C1000000 		.4byte	.LASF23
+ 881 03b7 01       		.byte	0x1
+ 882 03b8 08       		.byte	0x8
+ 883 03b9 33000000 		.4byte	0x33
+ 884 03bd 05       		.uleb128 0x5
+ 885 03be 03       		.byte	0x3
+ 886 03bf 00000000 		.4byte	display1On
+ 887 03c3 15       		.uleb128 0x15
+ 888 03c4 75020000 		.4byte	.LASF24
+ 889 03c8 01       		.byte	0x1
+ 890 03c9 09       		.byte	0x9
+ 891 03ca 33000000 		.4byte	0x33
+ 892 03ce 05       		.uleb128 0x5
+ 893 03cf 03       		.byte	0x3
+ 894 03d0 00000000 		.4byte	display2On
+ 895 03d4 16       		.uleb128 0x16
+ 896 03d5 AB020000 		.4byte	.LASF25
+ 897 03d9 AB020000 		.4byte	.LASF25
+ 898 03dd 05       		.byte	0x5
+ 899 03de 5B       		.byte	0x5b
+ 900 03df 16       		.uleb128 0x16
+ 901 03e0 0E000000 		.4byte	.LASF26
+ 902 03e4 0E000000 		.4byte	.LASF26
+ 903 03e8 06       		.byte	0x6
+ 904 03e9 8C       		.byte	0x8c
+ 905 03ea 16       		.uleb128 0x16
+ 906 03eb FD000000 		.4byte	.LASF27
+ 907 03ef FD000000 		.4byte	.LASF27
+ 908 03f3 06       		.byte	0x6
+ 909 03f4 54       		.byte	0x54
+ 910 03f5 16       		.uleb128 0x16
+ 911 03f6 D3000000 		.4byte	.LASF28
+ 912 03fa D3000000 		.4byte	.LASF28
+ 913 03fe 06       		.byte	0x6
+ 914 03ff 8B       		.byte	0x8b
+ 915 0400 16       		.uleb128 0x16
+ 916 0401 34000000 		.4byte	.LASF29
+ 917 0405 34000000 		.4byte	.LASF29
+ 918 0409 06       		.byte	0x6
+ 919 040a 88       		.byte	0x88
+ 920 040b 16       		.uleb128 0x16
+ 921 040c A4000000 		.4byte	.LASF30
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 19
 
 
- 878 03c9 2A020000 		.4byte	.LASF26
- 879 03cd 2A020000 		.4byte	.LASF26
- 880 03d1 06       		.byte	0x6
- 881 03d2 18       		.byte	0x18
- 882 03d3 15       		.uleb128 0x15
- 883 03d4 C6010000 		.4byte	.LASF27
- 884 03d8 C6010000 		.4byte	.LASF27
- 885 03dc 07       		.byte	0x7
- 886 03dd 68       		.byte	0x68
- 887 03de 15       		.uleb128 0x15
- 888 03df 46020000 		.4byte	.LASF28
- 889 03e3 46020000 		.4byte	.LASF28
- 890 03e7 08       		.byte	0x8
- 891 03e8 47       		.byte	0x47
- 892 03e9 15       		.uleb128 0x15
- 893 03ea 3D000000 		.4byte	.LASF29
- 894 03ee 3D000000 		.4byte	.LASF29
- 895 03f2 08       		.byte	0x8
- 896 03f3 4E       		.byte	0x4e
- 897 03f4 15       		.uleb128 0x15
- 898 03f5 E6010000 		.4byte	.LASF30
- 899 03f9 E6010000 		.4byte	.LASF30
- 900 03fd 08       		.byte	0x8
- 901 03fe 54       		.byte	0x54
- 902 03ff 15       		.uleb128 0x15
- 903 0400 BC010000 		.4byte	.LASF31
- 904 0404 BC010000 		.4byte	.LASF31
- 905 0408 08       		.byte	0x8
- 906 0409 8B       		.byte	0x8b
- 907 040a 15       		.uleb128 0x15
- 908 040b 8B020000 		.4byte	.LASF32
- 909 040f 8B020000 		.4byte	.LASF32
- 910 0413 08       		.byte	0x8
- 911 0414 88       		.byte	0x88
- 912 0415 15       		.uleb128 0x15
- 913 0416 8D010000 		.4byte	.LASF33
- 914 041a 8D010000 		.4byte	.LASF33
- 915 041e 07       		.byte	0x7
- 916 041f 5A       		.byte	0x5a
- 917 0420 15       		.uleb128 0x15
- 918 0421 AA020000 		.4byte	.LASF34
- 919 0425 AA020000 		.4byte	.LASF34
- 920 0429 07       		.byte	0x7
- 921 042a 5B       		.byte	0x5b
- 922 042b 15       		.uleb128 0x15
- 923 042c 0E000000 		.4byte	.LASF35
- 924 0430 0E000000 		.4byte	.LASF35
- 925 0434 08       		.byte	0x8
- 926 0435 8C       		.byte	0x8c
- 927 0436 15       		.uleb128 0x15
- 928 0437 34000000 		.4byte	.LASF36
- 929 043b 34000000 		.4byte	.LASF36
- 930 043f 09       		.byte	0x9
- 931 0440 FD       		.byte	0xfd
- 932 0441 15       		.uleb128 0x15
- 933 0442 19000000 		.4byte	.LASF37
- 934 0446 19000000 		.4byte	.LASF37
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 19
+ 922 0410 A4000000 		.4byte	.LASF30
+ 923 0414 05       		.byte	0x5
+ 924 0415 5A       		.byte	0x5a
+ 925 0416 16       		.uleb128 0x16
+ 926 0417 80020000 		.4byte	.LASF31
+ 927 041b 80020000 		.4byte	.LASF31
+ 928 041f 07       		.byte	0x7
+ 929 0420 93       		.byte	0x93
+ 930 0421 16       		.uleb128 0x16
+ 931 0422 2C020000 		.4byte	.LASF32
+ 932 0426 2C020000 		.4byte	.LASF32
+ 933 042a 08       		.byte	0x8
+ 934 042b 18       		.byte	0x18
+ 935 042c 16       		.uleb128 0x16
+ 936 042d DD000000 		.4byte	.LASF33
+ 937 0431 DD000000 		.4byte	.LASF33
+ 938 0435 05       		.byte	0x5
+ 939 0436 68       		.byte	0x68
+ 940 0437 16       		.uleb128 0x16
+ 941 0438 51020000 		.4byte	.LASF34
+ 942 043c 51020000 		.4byte	.LASF34
+ 943 0440 06       		.byte	0x6
+ 944 0441 47       		.byte	0x47
+ 945 0442 16       		.uleb128 0x16
+ 946 0443 3E000000 		.4byte	.LASF35
+ 947 0447 3E000000 		.4byte	.LASF35
+ 948 044b 06       		.byte	0x6
+ 949 044c 4E       		.byte	0x4e
+ 950 044d 16       		.uleb128 0x16
+ 951 044e C6020000 		.4byte	.LASF36
+ 952 0452 C6020000 		.4byte	.LASF36
+ 953 0456 09       		.byte	0x9
+ 954 0457 E7       		.byte	0xe7
+ 955 0458 16       		.uleb128 0x16
+ 956 0459 19000000 		.4byte	.LASF37
+ 957 045d 19000000 		.4byte	.LASF37
+ 958 0461 0A       		.byte	0xa
+ 959 0462 0C       		.byte	0xc
+ 960 0463 00       		.byte	0
+ 961              		.section	.debug_abbrev,"",%progbits
+ 962              	.Ldebug_abbrev0:
+ 963 0000 01       		.uleb128 0x1
+ 964 0001 11       		.uleb128 0x11
+ 965 0002 01       		.byte	0x1
+ 966 0003 25       		.uleb128 0x25
+ 967 0004 0E       		.uleb128 0xe
+ 968 0005 13       		.uleb128 0x13
+ 969 0006 0B       		.uleb128 0xb
+ 970 0007 03       		.uleb128 0x3
+ 971 0008 0E       		.uleb128 0xe
+ 972 0009 1B       		.uleb128 0x1b
+ 973 000a 0E       		.uleb128 0xe
+ 974 000b 55       		.uleb128 0x55
+ 975 000c 17       		.uleb128 0x17
+ 976 000d 11       		.uleb128 0x11
+ 977 000e 01       		.uleb128 0x1
+ 978 000f 10       		.uleb128 0x10
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 20
 
 
- 935 044a 0A       		.byte	0xa
- 936 044b 0C       		.byte	0xc
- 937 044c 00       		.byte	0
- 938              		.section	.debug_abbrev,"",%progbits
- 939              	.Ldebug_abbrev0:
- 940 0000 01       		.uleb128 0x1
- 941 0001 11       		.uleb128 0x11
- 942 0002 01       		.byte	0x1
- 943 0003 25       		.uleb128 0x25
- 944 0004 0E       		.uleb128 0xe
- 945 0005 13       		.uleb128 0x13
- 946 0006 0B       		.uleb128 0xb
- 947 0007 03       		.uleb128 0x3
- 948 0008 0E       		.uleb128 0xe
- 949 0009 1B       		.uleb128 0x1b
- 950 000a 0E       		.uleb128 0xe
- 951 000b 55       		.uleb128 0x55
- 952 000c 17       		.uleb128 0x17
- 953 000d 11       		.uleb128 0x11
- 954 000e 01       		.uleb128 0x1
- 955 000f 10       		.uleb128 0x10
- 956 0010 17       		.uleb128 0x17
- 957 0011 00       		.byte	0
- 958 0012 00       		.byte	0
- 959 0013 02       		.uleb128 0x2
- 960 0014 24       		.uleb128 0x24
- 961 0015 00       		.byte	0
- 962 0016 0B       		.uleb128 0xb
- 963 0017 0B       		.uleb128 0xb
- 964 0018 3E       		.uleb128 0x3e
- 965 0019 0B       		.uleb128 0xb
- 966 001a 03       		.uleb128 0x3
- 967 001b 0E       		.uleb128 0xe
- 968 001c 00       		.byte	0
- 969 001d 00       		.byte	0
- 970 001e 03       		.uleb128 0x3
- 971 001f 24       		.uleb128 0x24
- 972 0020 00       		.byte	0
- 973 0021 0B       		.uleb128 0xb
- 974 0022 0B       		.uleb128 0xb
- 975 0023 3E       		.uleb128 0x3e
- 976 0024 0B       		.uleb128 0xb
- 977 0025 03       		.uleb128 0x3
- 978 0026 08       		.uleb128 0x8
- 979 0027 00       		.byte	0
- 980 0028 00       		.byte	0
- 981 0029 04       		.uleb128 0x4
- 982 002a 16       		.uleb128 0x16
- 983 002b 00       		.byte	0
- 984 002c 03       		.uleb128 0x3
- 985 002d 0E       		.uleb128 0xe
- 986 002e 3A       		.uleb128 0x3a
- 987 002f 0B       		.uleb128 0xb
- 988 0030 3B       		.uleb128 0x3b
- 989 0031 0B       		.uleb128 0xb
- 990 0032 49       		.uleb128 0x49
- 991 0033 13       		.uleb128 0x13
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 20
+ 979 0010 17       		.uleb128 0x17
+ 980 0011 00       		.byte	0
+ 981 0012 00       		.byte	0
+ 982 0013 02       		.uleb128 0x2
+ 983 0014 24       		.uleb128 0x24
+ 984 0015 00       		.byte	0
+ 985 0016 0B       		.uleb128 0xb
+ 986 0017 0B       		.uleb128 0xb
+ 987 0018 3E       		.uleb128 0x3e
+ 988 0019 0B       		.uleb128 0xb
+ 989 001a 03       		.uleb128 0x3
+ 990 001b 0E       		.uleb128 0xe
+ 991 001c 00       		.byte	0
+ 992 001d 00       		.byte	0
+ 993 001e 03       		.uleb128 0x3
+ 994 001f 24       		.uleb128 0x24
+ 995 0020 00       		.byte	0
+ 996 0021 0B       		.uleb128 0xb
+ 997 0022 0B       		.uleb128 0xb
+ 998 0023 3E       		.uleb128 0x3e
+ 999 0024 0B       		.uleb128 0xb
+ 1000 0025 03       		.uleb128 0x3
+ 1001 0026 08       		.uleb128 0x8
+ 1002 0027 00       		.byte	0
+ 1003 0028 00       		.byte	0
+ 1004 0029 04       		.uleb128 0x4
+ 1005 002a 16       		.uleb128 0x16
+ 1006 002b 00       		.byte	0
+ 1007 002c 03       		.uleb128 0x3
+ 1008 002d 0E       		.uleb128 0xe
+ 1009 002e 3A       		.uleb128 0x3a
+ 1010 002f 0B       		.uleb128 0xb
+ 1011 0030 3B       		.uleb128 0x3b
+ 1012 0031 0B       		.uleb128 0xb
+ 1013 0032 49       		.uleb128 0x49
+ 1014 0033 13       		.uleb128 0x13
+ 1015 0034 00       		.byte	0
+ 1016 0035 00       		.byte	0
+ 1017 0036 05       		.uleb128 0x5
+ 1018 0037 2E       		.uleb128 0x2e
+ 1019 0038 01       		.byte	0x1
+ 1020 0039 3F       		.uleb128 0x3f
+ 1021 003a 19       		.uleb128 0x19
+ 1022 003b 03       		.uleb128 0x3
+ 1023 003c 0E       		.uleb128 0xe
+ 1024 003d 3A       		.uleb128 0x3a
+ 1025 003e 0B       		.uleb128 0xb
+ 1026 003f 3B       		.uleb128 0x3b
+ 1027 0040 0B       		.uleb128 0xb
+ 1028 0041 11       		.uleb128 0x11
+ 1029 0042 01       		.uleb128 0x1
+ 1030 0043 12       		.uleb128 0x12
+ 1031 0044 06       		.uleb128 0x6
+ 1032 0045 40       		.uleb128 0x40
+ 1033 0046 18       		.uleb128 0x18
+ 1034 0047 9742     		.uleb128 0x2117
+ 1035 0049 19       		.uleb128 0x19
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 21
 
 
- 992 0034 00       		.byte	0
- 993 0035 00       		.byte	0
- 994 0036 05       		.uleb128 0x5
- 995 0037 2E       		.uleb128 0x2e
- 996 0038 01       		.byte	0x1
- 997 0039 3F       		.uleb128 0x3f
- 998 003a 19       		.uleb128 0x19
- 999 003b 03       		.uleb128 0x3
- 1000 003c 0E       		.uleb128 0xe
- 1001 003d 3A       		.uleb128 0x3a
- 1002 003e 0B       		.uleb128 0xb
- 1003 003f 3B       		.uleb128 0x3b
- 1004 0040 0B       		.uleb128 0xb
- 1005 0041 27       		.uleb128 0x27
- 1006 0042 19       		.uleb128 0x19
- 1007 0043 11       		.uleb128 0x11
- 1008 0044 01       		.uleb128 0x1
- 1009 0045 12       		.uleb128 0x12
- 1010 0046 06       		.uleb128 0x6
- 1011 0047 40       		.uleb128 0x40
- 1012 0048 18       		.uleb128 0x18
- 1013 0049 9742     		.uleb128 0x2117
- 1014 004b 19       		.uleb128 0x19
- 1015 004c 01       		.uleb128 0x1
- 1016 004d 13       		.uleb128 0x13
- 1017 004e 00       		.byte	0
- 1018 004f 00       		.byte	0
- 1019 0050 06       		.uleb128 0x6
- 1020 0051 05       		.uleb128 0x5
- 1021 0052 00       		.byte	0
- 1022 0053 03       		.uleb128 0x3
- 1023 0054 08       		.uleb128 0x8
- 1024 0055 3A       		.uleb128 0x3a
- 1025 0056 0B       		.uleb128 0xb
- 1026 0057 3B       		.uleb128 0x3b
- 1027 0058 0B       		.uleb128 0xb
- 1028 0059 49       		.uleb128 0x49
- 1029 005a 13       		.uleb128 0x13
- 1030 005b 02       		.uleb128 0x2
- 1031 005c 17       		.uleb128 0x17
- 1032 005d 00       		.byte	0
- 1033 005e 00       		.byte	0
- 1034 005f 07       		.uleb128 0x7
- 1035 0060 898201   		.uleb128 0x4109
- 1036 0063 00       		.byte	0
- 1037 0064 11       		.uleb128 0x11
- 1038 0065 01       		.uleb128 0x1
- 1039 0066 31       		.uleb128 0x31
- 1040 0067 13       		.uleb128 0x13
- 1041 0068 00       		.byte	0
- 1042 0069 00       		.byte	0
- 1043 006a 08       		.uleb128 0x8
- 1044 006b 898201   		.uleb128 0x4109
- 1045 006e 01       		.byte	0x1
- 1046 006f 11       		.uleb128 0x11
- 1047 0070 01       		.uleb128 0x1
- 1048 0071 31       		.uleb128 0x31
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 21
+ 1036 004a 01       		.uleb128 0x1
+ 1037 004b 13       		.uleb128 0x13
+ 1038 004c 00       		.byte	0
+ 1039 004d 00       		.byte	0
+ 1040 004e 06       		.uleb128 0x6
+ 1041 004f 898201   		.uleb128 0x4109
+ 1042 0052 00       		.byte	0
+ 1043 0053 11       		.uleb128 0x11
+ 1044 0054 01       		.uleb128 0x1
+ 1045 0055 31       		.uleb128 0x31
+ 1046 0056 13       		.uleb128 0x13
+ 1047 0057 00       		.byte	0
+ 1048 0058 00       		.byte	0
+ 1049 0059 07       		.uleb128 0x7
+ 1050 005a 898201   		.uleb128 0x4109
+ 1051 005d 01       		.byte	0x1
+ 1052 005e 11       		.uleb128 0x11
+ 1053 005f 01       		.uleb128 0x1
+ 1054 0060 31       		.uleb128 0x31
+ 1055 0061 13       		.uleb128 0x13
+ 1056 0062 01       		.uleb128 0x1
+ 1057 0063 13       		.uleb128 0x13
+ 1058 0064 00       		.byte	0
+ 1059 0065 00       		.byte	0
+ 1060 0066 08       		.uleb128 0x8
+ 1061 0067 8A8201   		.uleb128 0x410a
+ 1062 006a 00       		.byte	0
+ 1063 006b 02       		.uleb128 0x2
+ 1064 006c 18       		.uleb128 0x18
+ 1065 006d 9142     		.uleb128 0x2111
+ 1066 006f 18       		.uleb128 0x18
+ 1067 0070 00       		.byte	0
+ 1068 0071 00       		.byte	0
+ 1069 0072 09       		.uleb128 0x9
+ 1070 0073 2E       		.uleb128 0x2e
+ 1071 0074 01       		.byte	0x1
+ 1072 0075 3F       		.uleb128 0x3f
+ 1073 0076 19       		.uleb128 0x19
+ 1074 0077 03       		.uleb128 0x3
+ 1075 0078 0E       		.uleb128 0xe
+ 1076 0079 3A       		.uleb128 0x3a
+ 1077 007a 0B       		.uleb128 0xb
+ 1078 007b 3B       		.uleb128 0x3b
+ 1079 007c 0B       		.uleb128 0xb
+ 1080 007d 27       		.uleb128 0x27
+ 1081 007e 19       		.uleb128 0x19
+ 1082 007f 11       		.uleb128 0x11
+ 1083 0080 01       		.uleb128 0x1
+ 1084 0081 12       		.uleb128 0x12
+ 1085 0082 06       		.uleb128 0x6
+ 1086 0083 40       		.uleb128 0x40
+ 1087 0084 18       		.uleb128 0x18
+ 1088 0085 9742     		.uleb128 0x2117
+ 1089 0087 19       		.uleb128 0x19
+ 1090 0088 01       		.uleb128 0x1
+ 1091 0089 13       		.uleb128 0x13
+ 1092 008a 00       		.byte	0
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 22
 
 
- 1049 0072 13       		.uleb128 0x13
- 1050 0073 01       		.uleb128 0x1
- 1051 0074 13       		.uleb128 0x13
- 1052 0075 00       		.byte	0
- 1053 0076 00       		.byte	0
- 1054 0077 09       		.uleb128 0x9
- 1055 0078 8A8201   		.uleb128 0x410a
- 1056 007b 00       		.byte	0
- 1057 007c 02       		.uleb128 0x2
- 1058 007d 18       		.uleb128 0x18
- 1059 007e 9142     		.uleb128 0x2111
- 1060 0080 18       		.uleb128 0x18
- 1061 0081 00       		.byte	0
- 1062 0082 00       		.byte	0
- 1063 0083 0A       		.uleb128 0xa
- 1064 0084 05       		.uleb128 0x5
- 1065 0085 00       		.byte	0
- 1066 0086 03       		.uleb128 0x3
- 1067 0087 0E       		.uleb128 0xe
- 1068 0088 3A       		.uleb128 0x3a
- 1069 0089 0B       		.uleb128 0xb
- 1070 008a 3B       		.uleb128 0x3b
- 1071 008b 0B       		.uleb128 0xb
- 1072 008c 49       		.uleb128 0x49
- 1073 008d 13       		.uleb128 0x13
- 1074 008e 02       		.uleb128 0x2
- 1075 008f 17       		.uleb128 0x17
- 1076 0090 00       		.byte	0
- 1077 0091 00       		.byte	0
- 1078 0092 0B       		.uleb128 0xb
- 1079 0093 34       		.uleb128 0x34
- 1080 0094 00       		.byte	0
- 1081 0095 03       		.uleb128 0x3
- 1082 0096 0E       		.uleb128 0xe
- 1083 0097 3A       		.uleb128 0x3a
- 1084 0098 0B       		.uleb128 0xb
- 1085 0099 3B       		.uleb128 0x3b
- 1086 009a 0B       		.uleb128 0xb
- 1087 009b 49       		.uleb128 0x49
- 1088 009c 13       		.uleb128 0x13
- 1089 009d 02       		.uleb128 0x2
- 1090 009e 17       		.uleb128 0x17
- 1091 009f 00       		.byte	0
- 1092 00a0 00       		.byte	0
- 1093 00a1 0C       		.uleb128 0xc
- 1094 00a2 34       		.uleb128 0x34
- 1095 00a3 00       		.byte	0
- 1096 00a4 03       		.uleb128 0x3
- 1097 00a5 08       		.uleb128 0x8
- 1098 00a6 3A       		.uleb128 0x3a
- 1099 00a7 0B       		.uleb128 0xb
- 1100 00a8 3B       		.uleb128 0x3b
- 1101 00a9 0B       		.uleb128 0xb
- 1102 00aa 49       		.uleb128 0x49
- 1103 00ab 13       		.uleb128 0x13
- 1104 00ac 02       		.uleb128 0x2
- 1105 00ad 18       		.uleb128 0x18
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 22
+ 1093 008b 00       		.byte	0
+ 1094 008c 0A       		.uleb128 0xa
+ 1095 008d 05       		.uleb128 0x5
+ 1096 008e 00       		.byte	0
+ 1097 008f 03       		.uleb128 0x3
+ 1098 0090 08       		.uleb128 0x8
+ 1099 0091 3A       		.uleb128 0x3a
+ 1100 0092 0B       		.uleb128 0xb
+ 1101 0093 3B       		.uleb128 0x3b
+ 1102 0094 0B       		.uleb128 0xb
+ 1103 0095 49       		.uleb128 0x49
+ 1104 0096 13       		.uleb128 0x13
+ 1105 0097 02       		.uleb128 0x2
+ 1106 0098 17       		.uleb128 0x17
+ 1107 0099 00       		.byte	0
+ 1108 009a 00       		.byte	0
+ 1109 009b 0B       		.uleb128 0xb
+ 1110 009c 05       		.uleb128 0x5
+ 1111 009d 00       		.byte	0
+ 1112 009e 03       		.uleb128 0x3
+ 1113 009f 0E       		.uleb128 0xe
+ 1114 00a0 3A       		.uleb128 0x3a
+ 1115 00a1 0B       		.uleb128 0xb
+ 1116 00a2 3B       		.uleb128 0x3b
+ 1117 00a3 0B       		.uleb128 0xb
+ 1118 00a4 49       		.uleb128 0x49
+ 1119 00a5 13       		.uleb128 0x13
+ 1120 00a6 02       		.uleb128 0x2
+ 1121 00a7 17       		.uleb128 0x17
+ 1122 00a8 00       		.byte	0
+ 1123 00a9 00       		.byte	0
+ 1124 00aa 0C       		.uleb128 0xc
+ 1125 00ab 34       		.uleb128 0x34
+ 1126 00ac 00       		.byte	0
+ 1127 00ad 03       		.uleb128 0x3
+ 1128 00ae 0E       		.uleb128 0xe
+ 1129 00af 3A       		.uleb128 0x3a
+ 1130 00b0 0B       		.uleb128 0xb
+ 1131 00b1 3B       		.uleb128 0x3b
+ 1132 00b2 0B       		.uleb128 0xb
+ 1133 00b3 49       		.uleb128 0x49
+ 1134 00b4 13       		.uleb128 0x13
+ 1135 00b5 02       		.uleb128 0x2
+ 1136 00b6 17       		.uleb128 0x17
+ 1137 00b7 00       		.byte	0
+ 1138 00b8 00       		.byte	0
+ 1139 00b9 0D       		.uleb128 0xd
+ 1140 00ba 34       		.uleb128 0x34
+ 1141 00bb 00       		.byte	0
+ 1142 00bc 03       		.uleb128 0x3
+ 1143 00bd 08       		.uleb128 0x8
+ 1144 00be 3A       		.uleb128 0x3a
+ 1145 00bf 0B       		.uleb128 0xb
+ 1146 00c0 3B       		.uleb128 0x3b
+ 1147 00c1 0B       		.uleb128 0xb
+ 1148 00c2 49       		.uleb128 0x49
+ 1149 00c3 13       		.uleb128 0x13
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 23
 
 
- 1106 00ae 00       		.byte	0
- 1107 00af 00       		.byte	0
- 1108 00b0 0D       		.uleb128 0xd
- 1109 00b1 01       		.uleb128 0x1
- 1110 00b2 01       		.byte	0x1
- 1111 00b3 49       		.uleb128 0x49
- 1112 00b4 13       		.uleb128 0x13
- 1113 00b5 01       		.uleb128 0x1
- 1114 00b6 13       		.uleb128 0x13
- 1115 00b7 00       		.byte	0
- 1116 00b8 00       		.byte	0
- 1117 00b9 0E       		.uleb128 0xe
- 1118 00ba 21       		.uleb128 0x21
- 1119 00bb 00       		.byte	0
- 1120 00bc 49       		.uleb128 0x49
- 1121 00bd 13       		.uleb128 0x13
- 1122 00be 2F       		.uleb128 0x2f
- 1123 00bf 0B       		.uleb128 0xb
- 1124 00c0 00       		.byte	0
- 1125 00c1 00       		.byte	0
- 1126 00c2 0F       		.uleb128 0xf
- 1127 00c3 34       		.uleb128 0x34
- 1128 00c4 00       		.byte	0
- 1129 00c5 03       		.uleb128 0x3
- 1130 00c6 08       		.uleb128 0x8
- 1131 00c7 3A       		.uleb128 0x3a
- 1132 00c8 0B       		.uleb128 0xb
- 1133 00c9 3B       		.uleb128 0x3b
- 1134 00ca 0B       		.uleb128 0xb
- 1135 00cb 49       		.uleb128 0x49
- 1136 00cc 13       		.uleb128 0x13
- 1137 00cd 02       		.uleb128 0x2
- 1138 00ce 17       		.uleb128 0x17
- 1139 00cf 00       		.byte	0
- 1140 00d0 00       		.byte	0
- 1141 00d1 10       		.uleb128 0x10
- 1142 00d2 898201   		.uleb128 0x4109
- 1143 00d5 01       		.byte	0x1
- 1144 00d6 11       		.uleb128 0x11
- 1145 00d7 01       		.uleb128 0x1
- 1146 00d8 31       		.uleb128 0x31
- 1147 00d9 13       		.uleb128 0x13
- 1148 00da 00       		.byte	0
- 1149 00db 00       		.byte	0
- 1150 00dc 11       		.uleb128 0x11
- 1151 00dd 05       		.uleb128 0x5
- 1152 00de 00       		.byte	0
- 1153 00df 03       		.uleb128 0x3
- 1154 00e0 0E       		.uleb128 0xe
- 1155 00e1 3A       		.uleb128 0x3a
- 1156 00e2 0B       		.uleb128 0xb
- 1157 00e3 3B       		.uleb128 0x3b
- 1158 00e4 0B       		.uleb128 0xb
- 1159 00e5 49       		.uleb128 0x49
- 1160 00e6 13       		.uleb128 0x13
- 1161 00e7 02       		.uleb128 0x2
- 1162 00e8 18       		.uleb128 0x18
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 23
+ 1150 00c4 02       		.uleb128 0x2
+ 1151 00c5 18       		.uleb128 0x18
+ 1152 00c6 00       		.byte	0
+ 1153 00c7 00       		.byte	0
+ 1154 00c8 0E       		.uleb128 0xe
+ 1155 00c9 01       		.uleb128 0x1
+ 1156 00ca 01       		.byte	0x1
+ 1157 00cb 49       		.uleb128 0x49
+ 1158 00cc 13       		.uleb128 0x13
+ 1159 00cd 01       		.uleb128 0x1
+ 1160 00ce 13       		.uleb128 0x13
+ 1161 00cf 00       		.byte	0
+ 1162 00d0 00       		.byte	0
+ 1163 00d1 0F       		.uleb128 0xf
+ 1164 00d2 21       		.uleb128 0x21
+ 1165 00d3 00       		.byte	0
+ 1166 00d4 49       		.uleb128 0x49
+ 1167 00d5 13       		.uleb128 0x13
+ 1168 00d6 2F       		.uleb128 0x2f
+ 1169 00d7 0B       		.uleb128 0xb
+ 1170 00d8 00       		.byte	0
+ 1171 00d9 00       		.byte	0
+ 1172 00da 10       		.uleb128 0x10
+ 1173 00db 34       		.uleb128 0x34
+ 1174 00dc 00       		.byte	0
+ 1175 00dd 03       		.uleb128 0x3
+ 1176 00de 08       		.uleb128 0x8
+ 1177 00df 3A       		.uleb128 0x3a
+ 1178 00e0 0B       		.uleb128 0xb
+ 1179 00e1 3B       		.uleb128 0x3b
+ 1180 00e2 0B       		.uleb128 0xb
+ 1181 00e3 49       		.uleb128 0x49
+ 1182 00e4 13       		.uleb128 0x13
+ 1183 00e5 02       		.uleb128 0x2
+ 1184 00e6 17       		.uleb128 0x17
+ 1185 00e7 00       		.byte	0
+ 1186 00e8 00       		.byte	0
+ 1187 00e9 11       		.uleb128 0x11
+ 1188 00ea 898201   		.uleb128 0x4109
+ 1189 00ed 01       		.byte	0x1
+ 1190 00ee 11       		.uleb128 0x11
+ 1191 00ef 01       		.uleb128 0x1
+ 1192 00f0 31       		.uleb128 0x31
+ 1193 00f1 13       		.uleb128 0x13
+ 1194 00f2 00       		.byte	0
+ 1195 00f3 00       		.byte	0
+ 1196 00f4 12       		.uleb128 0x12
+ 1197 00f5 05       		.uleb128 0x5
+ 1198 00f6 00       		.byte	0
+ 1199 00f7 03       		.uleb128 0x3
+ 1200 00f8 0E       		.uleb128 0xe
+ 1201 00f9 3A       		.uleb128 0x3a
+ 1202 00fa 0B       		.uleb128 0xb
+ 1203 00fb 3B       		.uleb128 0x3b
+ 1204 00fc 0B       		.uleb128 0xb
+ 1205 00fd 49       		.uleb128 0x49
+ 1206 00fe 13       		.uleb128 0x13
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 24
 
 
- 1163 00e9 00       		.byte	0
- 1164 00ea 00       		.byte	0
- 1165 00eb 12       		.uleb128 0x12
- 1166 00ec 34       		.uleb128 0x34
- 1167 00ed 00       		.byte	0
- 1168 00ee 03       		.uleb128 0x3
- 1169 00ef 0E       		.uleb128 0xe
- 1170 00f0 3A       		.uleb128 0x3a
- 1171 00f1 0B       		.uleb128 0xb
- 1172 00f2 3B       		.uleb128 0x3b
- 1173 00f3 05       		.uleb128 0x5
- 1174 00f4 49       		.uleb128 0x49
- 1175 00f5 13       		.uleb128 0x13
- 1176 00f6 3F       		.uleb128 0x3f
- 1177 00f7 19       		.uleb128 0x19
- 1178 00f8 3C       		.uleb128 0x3c
- 1179 00f9 19       		.uleb128 0x19
- 1180 00fa 00       		.byte	0
- 1181 00fb 00       		.byte	0
- 1182 00fc 13       		.uleb128 0x13
- 1183 00fd 35       		.uleb128 0x35
- 1184 00fe 00       		.byte	0
- 1185 00ff 49       		.uleb128 0x49
- 1186 0100 13       		.uleb128 0x13
- 1187 0101 00       		.byte	0
- 1188 0102 00       		.byte	0
- 1189 0103 14       		.uleb128 0x14
- 1190 0104 34       		.uleb128 0x34
- 1191 0105 00       		.byte	0
- 1192 0106 03       		.uleb128 0x3
- 1193 0107 0E       		.uleb128 0xe
- 1194 0108 3A       		.uleb128 0x3a
- 1195 0109 0B       		.uleb128 0xb
- 1196 010a 3B       		.uleb128 0x3b
- 1197 010b 0B       		.uleb128 0xb
- 1198 010c 49       		.uleb128 0x49
- 1199 010d 13       		.uleb128 0x13
- 1200 010e 3F       		.uleb128 0x3f
- 1201 010f 19       		.uleb128 0x19
- 1202 0110 02       		.uleb128 0x2
- 1203 0111 18       		.uleb128 0x18
- 1204 0112 00       		.byte	0
- 1205 0113 00       		.byte	0
- 1206 0114 15       		.uleb128 0x15
- 1207 0115 2E       		.uleb128 0x2e
- 1208 0116 00       		.byte	0
- 1209 0117 3F       		.uleb128 0x3f
- 1210 0118 19       		.uleb128 0x19
- 1211 0119 3C       		.uleb128 0x3c
- 1212 011a 19       		.uleb128 0x19
- 1213 011b 6E       		.uleb128 0x6e
- 1214 011c 0E       		.uleb128 0xe
- 1215 011d 03       		.uleb128 0x3
- 1216 011e 0E       		.uleb128 0xe
- 1217 011f 3A       		.uleb128 0x3a
- 1218 0120 0B       		.uleb128 0xb
- 1219 0121 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 24
+ 1207 00ff 02       		.uleb128 0x2
+ 1208 0100 18       		.uleb128 0x18
+ 1209 0101 00       		.byte	0
+ 1210 0102 00       		.byte	0
+ 1211 0103 13       		.uleb128 0x13
+ 1212 0104 34       		.uleb128 0x34
+ 1213 0105 00       		.byte	0
+ 1214 0106 03       		.uleb128 0x3
+ 1215 0107 0E       		.uleb128 0xe
+ 1216 0108 3A       		.uleb128 0x3a
+ 1217 0109 0B       		.uleb128 0xb
+ 1218 010a 3B       		.uleb128 0x3b
+ 1219 010b 05       		.uleb128 0x5
+ 1220 010c 49       		.uleb128 0x49
+ 1221 010d 13       		.uleb128 0x13
+ 1222 010e 3F       		.uleb128 0x3f
+ 1223 010f 19       		.uleb128 0x19
+ 1224 0110 3C       		.uleb128 0x3c
+ 1225 0111 19       		.uleb128 0x19
+ 1226 0112 00       		.byte	0
+ 1227 0113 00       		.byte	0
+ 1228 0114 14       		.uleb128 0x14
+ 1229 0115 35       		.uleb128 0x35
+ 1230 0116 00       		.byte	0
+ 1231 0117 49       		.uleb128 0x49
+ 1232 0118 13       		.uleb128 0x13
+ 1233 0119 00       		.byte	0
+ 1234 011a 00       		.byte	0
+ 1235 011b 15       		.uleb128 0x15
+ 1236 011c 34       		.uleb128 0x34
+ 1237 011d 00       		.byte	0
+ 1238 011e 03       		.uleb128 0x3
+ 1239 011f 0E       		.uleb128 0xe
+ 1240 0120 3A       		.uleb128 0x3a
+ 1241 0121 0B       		.uleb128 0xb
+ 1242 0122 3B       		.uleb128 0x3b
+ 1243 0123 0B       		.uleb128 0xb
+ 1244 0124 49       		.uleb128 0x49
+ 1245 0125 13       		.uleb128 0x13
+ 1246 0126 3F       		.uleb128 0x3f
+ 1247 0127 19       		.uleb128 0x19
+ 1248 0128 02       		.uleb128 0x2
+ 1249 0129 18       		.uleb128 0x18
+ 1250 012a 00       		.byte	0
+ 1251 012b 00       		.byte	0
+ 1252 012c 16       		.uleb128 0x16
+ 1253 012d 2E       		.uleb128 0x2e
+ 1254 012e 00       		.byte	0
+ 1255 012f 3F       		.uleb128 0x3f
+ 1256 0130 19       		.uleb128 0x19
+ 1257 0131 3C       		.uleb128 0x3c
+ 1258 0132 19       		.uleb128 0x19
+ 1259 0133 6E       		.uleb128 0x6e
+ 1260 0134 0E       		.uleb128 0xe
+ 1261 0135 03       		.uleb128 0x3
+ 1262 0136 0E       		.uleb128 0xe
+ 1263 0137 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 25
 
 
- 1220 0122 0B       		.uleb128 0xb
- 1221 0123 00       		.byte	0
- 1222 0124 00       		.byte	0
- 1223 0125 00       		.byte	0
- 1224              		.section	.debug_loc,"",%progbits
- 1225              	.Ldebug_loc0:
- 1226              	.LLST0:
- 1227 0000 00000000 		.4byte	.LVL0
- 1228 0004 07000000 		.4byte	.LVL1-1
- 1229 0008 0100     		.2byte	0x1
- 1230 000a 50       		.byte	0x50
- 1231 000b 07000000 		.4byte	.LVL1-1
- 1232 000f 4C000000 		.4byte	.LVL9
- 1233 0013 0100     		.2byte	0x1
- 1234 0015 54       		.byte	0x54
- 1235 0016 4C000000 		.4byte	.LVL9
- 1236 001a 9C000000 		.4byte	.LFE65
- 1237 001e 0400     		.2byte	0x4
- 1238 0020 F3       		.byte	0xf3
- 1239 0021 01       		.uleb128 0x1
- 1240 0022 50       		.byte	0x50
- 1241 0023 9F       		.byte	0x9f
- 1242 0024 00000000 		.4byte	0
- 1243 0028 00000000 		.4byte	0
- 1244              	.LLST1:
- 1245 002c 00000000 		.4byte	.LVL18
- 1246 0030 0B000000 		.4byte	.LVL19-1
- 1247 0034 0100     		.2byte	0x1
- 1248 0036 50       		.byte	0x50
- 1249 0037 0B000000 		.4byte	.LVL19-1
- 1250 003b 26000000 		.4byte	.LVL22
- 1251 003f 0100     		.2byte	0x1
- 1252 0041 54       		.byte	0x54
- 1253 0042 26000000 		.4byte	.LVL22
- 1254 0046 3B000000 		.4byte	.LVL25-1
- 1255 004a 0100     		.2byte	0x1
- 1256 004c 50       		.byte	0x50
- 1257 004d 00000000 		.4byte	0
- 1258 0051 00000000 		.4byte	0
- 1259              	.LLST2:
- 1260 0055 00000000 		.4byte	.LVL18
- 1261 0059 0B000000 		.4byte	.LVL19-1
- 1262 005d 0100     		.2byte	0x1
- 1263 005f 51       		.byte	0x51
- 1264 0060 0B000000 		.4byte	.LVL19-1
- 1265 0064 60000000 		.4byte	.LVL30
- 1266 0068 0100     		.2byte	0x1
- 1267 006a 55       		.byte	0x55
- 1268 006b 60000000 		.4byte	.LVL30
- 1269 006f 70000000 		.4byte	.LFE66
- 1270 0073 2700     		.2byte	0x27
- 1271 0075 F3       		.byte	0xf3
- 1272 0076 01       		.uleb128 0x1
- 1273 0077 51       		.byte	0x51
- 1274 0078 F7       		.byte	0xf7
- 1275 0079 33       		.uleb128 0x33
- 1276 007a F7       		.byte	0xf7
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 25
+ 1264 0138 0B       		.uleb128 0xb
+ 1265 0139 3B       		.uleb128 0x3b
+ 1266 013a 0B       		.uleb128 0xb
+ 1267 013b 00       		.byte	0
+ 1268 013c 00       		.byte	0
+ 1269 013d 00       		.byte	0
+ 1270              		.section	.debug_loc,"",%progbits
+ 1271              	.Ldebug_loc0:
+ 1272              	.LLST0:
+ 1273 0000 00000000 		.4byte	.LVL12
+ 1274 0004 07000000 		.4byte	.LVL13-1
+ 1275 0008 0100     		.2byte	0x1
+ 1276 000a 50       		.byte	0x50
+ 1277 000b 07000000 		.4byte	.LVL13-1
+ 1278 000f 4E000000 		.4byte	.LVL21
+ 1279 0013 0100     		.2byte	0x1
+ 1280 0015 54       		.byte	0x54
+ 1281 0016 4E000000 		.4byte	.LVL21
+ 1282 001a 54000000 		.4byte	.LFE65
+ 1283 001e 0400     		.2byte	0x4
+ 1284 0020 F3       		.byte	0xf3
+ 1285 0021 01       		.uleb128 0x1
+ 1286 0022 50       		.byte	0x50
+ 1287 0023 9F       		.byte	0x9f
+ 1288 0024 00000000 		.4byte	0
+ 1289 0028 00000000 		.4byte	0
+ 1290              	.LLST1:
+ 1291 002c 00000000 		.4byte	.LVL22
+ 1292 0030 0B000000 		.4byte	.LVL23-1
+ 1293 0034 0100     		.2byte	0x1
+ 1294 0036 50       		.byte	0x50
+ 1295 0037 0B000000 		.4byte	.LVL23-1
+ 1296 003b 16000000 		.4byte	.LVL24
+ 1297 003f 0100     		.2byte	0x1
+ 1298 0041 54       		.byte	0x54
+ 1299 0042 16000000 		.4byte	.LVL24
+ 1300 0046 2D000000 		.4byte	.LVL27-1
+ 1301 004a 0100     		.2byte	0x1
+ 1302 004c 50       		.byte	0x50
+ 1303 004d 00000000 		.4byte	0
+ 1304 0051 00000000 		.4byte	0
+ 1305              	.LLST2:
+ 1306 0055 00000000 		.4byte	.LVL22
+ 1307 0059 0B000000 		.4byte	.LVL23-1
+ 1308 005d 0100     		.2byte	0x1
+ 1309 005f 51       		.byte	0x51
+ 1310 0060 0B000000 		.4byte	.LVL23-1
+ 1311 0064 50000000 		.4byte	.LVL32
+ 1312 0068 0100     		.2byte	0x1
+ 1313 006a 55       		.byte	0x55
+ 1314 006b 50000000 		.4byte	.LVL32
+ 1315 006f 58000000 		.4byte	.LFE67
+ 1316 0073 2600     		.2byte	0x26
+ 1317 0075 F3       		.byte	0xf3
+ 1318 0076 01       		.uleb128 0x1
+ 1319 0077 51       		.byte	0x51
+ 1320 0078 F7       		.byte	0xf7
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 26
 
 
- 1277 007b 25       		.uleb128 0x25
- 1278 007c 0C       		.byte	0xc
- 1279 007d D34D6210 		.4byte	0x10624dd3
- 1280 0081 F7       		.byte	0xf7
- 1281 0082 25       		.uleb128 0x25
- 1282 0083 1E       		.byte	0x1e
- 1283 0084 08       		.byte	0x8
- 1284 0085 20       		.byte	0x20
- 1285 0086 F7       		.byte	0xf7
- 1286 0087 25       		.uleb128 0x25
- 1287 0088 25       		.byte	0x25
- 1288 0089 F7       		.byte	0xf7
- 1289 008a 2C       		.uleb128 0x2c
- 1290 008b 36       		.byte	0x36
- 1291 008c 26       		.byte	0x26
- 1292 008d F3       		.byte	0xf3
- 1293 008e 01       		.uleb128 0x1
- 1294 008f 51       		.byte	0x51
- 1295 0090 4F       		.byte	0x4f
- 1296 0091 26       		.byte	0x26
- 1297 0092 1C       		.byte	0x1c
- 1298 0093 0B       		.byte	0xb
- 1299 0094 18FC     		.2byte	0xfc18
- 1300 0096 1E       		.byte	0x1e
- 1301 0097 F3       		.byte	0xf3
- 1302 0098 01       		.uleb128 0x1
- 1303 0099 51       		.byte	0x51
- 1304 009a 22       		.byte	0x22
- 1305 009b 9F       		.byte	0x9f
- 1306 009c 00000000 		.4byte	0
- 1307 00a0 00000000 		.4byte	0
- 1308              	.LLST3:
- 1309 00a4 1C000000 		.4byte	.LVL21
- 1310 00a8 32000000 		.4byte	.LVL23
- 1311 00ac 0200     		.2byte	0x2
- 1312 00ae 30       		.byte	0x30
- 1313 00af 9F       		.byte	0x9f
- 1314 00b0 32000000 		.4byte	.LVL23
- 1315 00b4 60000000 		.4byte	.LVL30
- 1316 00b8 0100     		.2byte	0x1
- 1317 00ba 54       		.byte	0x54
- 1318 00bb 60000000 		.4byte	.LVL30
- 1319 00bf 70000000 		.4byte	.LFE66
- 1320 00c3 1F00     		.2byte	0x1f
- 1321 00c5 F3       		.byte	0xf3
- 1322 00c6 01       		.uleb128 0x1
- 1323 00c7 51       		.byte	0x51
- 1324 00c8 F7       		.byte	0xf7
- 1325 00c9 33       		.uleb128 0x33
- 1326 00ca F7       		.byte	0xf7
- 1327 00cb 25       		.uleb128 0x25
- 1328 00cc 0C       		.byte	0xc
- 1329 00cd D34D6210 		.4byte	0x10624dd3
- 1330 00d1 F7       		.byte	0xf7
- 1331 00d2 25       		.uleb128 0x25
- 1332 00d3 1E       		.byte	0x1e
- 1333 00d4 08       		.byte	0x8
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 26
+ 1321 0079 33       		.uleb128 0x33
+ 1322 007a F7       		.byte	0xf7
+ 1323 007b 25       		.uleb128 0x25
+ 1324 007c 0C       		.byte	0xc
+ 1325 007d 67666666 		.4byte	0x66666667
+ 1326 0081 F7       		.byte	0xf7
+ 1327 0082 25       		.uleb128 0x25
+ 1328 0083 1E       		.byte	0x1e
+ 1329 0084 08       		.byte	0x8
+ 1330 0085 20       		.byte	0x20
+ 1331 0086 F7       		.byte	0xf7
+ 1332 0087 25       		.uleb128 0x25
+ 1333 0088 25       		.byte	0x25
+ 1334 0089 F7       		.byte	0xf7
+ 1335 008a 2C       		.uleb128 0x2c
+ 1336 008b 32       		.byte	0x32
+ 1337 008c 26       		.byte	0x26
+ 1338 008d F3       		.byte	0xf3
+ 1339 008e 01       		.uleb128 0x1
+ 1340 008f 51       		.byte	0x51
+ 1341 0090 4F       		.byte	0x4f
+ 1342 0091 26       		.byte	0x26
+ 1343 0092 1C       		.byte	0x1c
+ 1344 0093 09       		.byte	0x9
+ 1345 0094 F6       		.byte	0xf6
+ 1346 0095 1E       		.byte	0x1e
+ 1347 0096 F3       		.byte	0xf3
+ 1348 0097 01       		.uleb128 0x1
+ 1349 0098 51       		.byte	0x51
+ 1350 0099 22       		.byte	0x22
+ 1351 009a 9F       		.byte	0x9f
+ 1352 009b 00000000 		.4byte	0
+ 1353 009f 00000000 		.4byte	0
+ 1354              	.LLST3:
+ 1355 00a3 0C000000 		.4byte	.LVL23
+ 1356 00a7 22000000 		.4byte	.LVL25
+ 1357 00ab 0200     		.2byte	0x2
+ 1358 00ad 30       		.byte	0x30
+ 1359 00ae 9F       		.byte	0x9f
+ 1360 00af 22000000 		.4byte	.LVL25
+ 1361 00b3 50000000 		.4byte	.LVL32
+ 1362 00b7 0100     		.2byte	0x1
+ 1363 00b9 54       		.byte	0x54
+ 1364 00ba 50000000 		.4byte	.LVL32
+ 1365 00be 58000000 		.4byte	.LFE67
+ 1366 00c2 1F00     		.2byte	0x1f
+ 1367 00c4 F3       		.byte	0xf3
+ 1368 00c5 01       		.uleb128 0x1
+ 1369 00c6 51       		.byte	0x51
+ 1370 00c7 F7       		.byte	0xf7
+ 1371 00c8 33       		.uleb128 0x33
+ 1372 00c9 F7       		.byte	0xf7
+ 1373 00ca 25       		.uleb128 0x25
+ 1374 00cb 0C       		.byte	0xc
+ 1375 00cc 67666666 		.4byte	0x66666667
+ 1376 00d0 F7       		.byte	0xf7
+ 1377 00d1 25       		.uleb128 0x25
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 27
 
 
- 1334 00d5 20       		.byte	0x20
- 1335 00d6 F7       		.byte	0xf7
- 1336 00d7 25       		.uleb128 0x25
- 1337 00d8 25       		.byte	0x25
- 1338 00d9 F7       		.byte	0xf7
- 1339 00da 2C       		.uleb128 0x2c
- 1340 00db 36       		.byte	0x36
- 1341 00dc 26       		.byte	0x26
- 1342 00dd F3       		.byte	0xf3
- 1343 00de 01       		.uleb128 0x1
- 1344 00df 51       		.byte	0x51
- 1345 00e0 4F       		.byte	0x4f
- 1346 00e1 26       		.byte	0x26
- 1347 00e2 1C       		.byte	0x1c
- 1348 00e3 9F       		.byte	0x9f
- 1349 00e4 00000000 		.4byte	0
- 1350 00e8 00000000 		.4byte	0
- 1351              	.LLST4:
- 1352 00ec 08000000 		.4byte	.LVL32
- 1353 00f0 14000000 		.4byte	.LVL33
- 1354 00f4 0100     		.2byte	0x1
- 1355 00f6 50       		.byte	0x50
- 1356 00f7 14000000 		.4byte	.LVL33
- 1357 00fb 17000000 		.4byte	.LVL34-1
- 1358 00ff 0100     		.2byte	0x1
- 1359 0101 51       		.byte	0x51
- 1360 0102 17000000 		.4byte	.LVL34-1
- 1361 0106 2A000000 		.4byte	.LVL36
- 1362 010a 0100     		.2byte	0x1
- 1363 010c 54       		.byte	0x54
- 1364 010d 00000000 		.4byte	0
- 1365 0111 00000000 		.4byte	0
- 1366              		.section	.debug_aranges,"",%progbits
- 1367 0000 34000000 		.4byte	0x34
- 1368 0004 0200     		.2byte	0x2
- 1369 0006 00000000 		.4byte	.Ldebug_info0
- 1370 000a 04       		.byte	0x4
- 1371 000b 00       		.byte	0
- 1372 000c 0000     		.2byte	0
- 1373 000e 0000     		.2byte	0
- 1374 0010 00000000 		.4byte	.LFB65
- 1375 0014 9C000000 		.4byte	.LFE65-.LFB65
- 1376 0018 00000000 		.4byte	.LFB66
- 1377 001c 70000000 		.4byte	.LFE66-.LFB66
- 1378 0020 00000000 		.4byte	.LFB64
- 1379 0024 30000000 		.4byte	.LFE64-.LFB64
- 1380 0028 00000000 		.4byte	.LFB67
- 1381 002c 1C000000 		.4byte	.LFE67-.LFB67
- 1382 0030 00000000 		.4byte	0
- 1383 0034 00000000 		.4byte	0
- 1384              		.section	.debug_ranges,"",%progbits
- 1385              	.Ldebug_ranges0:
- 1386 0000 00000000 		.4byte	.LFB65
- 1387 0004 9C000000 		.4byte	.LFE65
- 1388 0008 00000000 		.4byte	.LFB66
- 1389 000c 70000000 		.4byte	.LFE66
- 1390 0010 00000000 		.4byte	.LFB64
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 27
+ 1378 00d2 1E       		.byte	0x1e
+ 1379 00d3 08       		.byte	0x8
+ 1380 00d4 20       		.byte	0x20
+ 1381 00d5 F7       		.byte	0xf7
+ 1382 00d6 25       		.uleb128 0x25
+ 1383 00d7 25       		.byte	0x25
+ 1384 00d8 F7       		.byte	0xf7
+ 1385 00d9 2C       		.uleb128 0x2c
+ 1386 00da 32       		.byte	0x32
+ 1387 00db 26       		.byte	0x26
+ 1388 00dc F3       		.byte	0xf3
+ 1389 00dd 01       		.uleb128 0x1
+ 1390 00de 51       		.byte	0x51
+ 1391 00df 4F       		.byte	0x4f
+ 1392 00e0 26       		.byte	0x26
+ 1393 00e1 1C       		.byte	0x1c
+ 1394 00e2 9F       		.byte	0x9f
+ 1395 00e3 00000000 		.4byte	0
+ 1396 00e7 00000000 		.4byte	0
+ 1397              	.LLST4:
+ 1398 00eb 12000000 		.4byte	.LVL34
+ 1399 00ef 34000000 		.4byte	.LVL37
+ 1400 00f3 0100     		.2byte	0x1
+ 1401 00f5 54       		.byte	0x54
+ 1402 00f6 00000000 		.4byte	0
+ 1403 00fa 00000000 		.4byte	0
+ 1404              		.section	.debug_aranges,"",%progbits
+ 1405 0000 3C000000 		.4byte	0x3c
+ 1406 0004 0200     		.2byte	0x2
+ 1407 0006 00000000 		.4byte	.Ldebug_info0
+ 1408 000a 04       		.byte	0x4
+ 1409 000b 00       		.byte	0
+ 1410 000c 0000     		.2byte	0
+ 1411 000e 0000     		.2byte	0
+ 1412 0010 00000000 		.4byte	.LFB66
+ 1413 0014 64000000 		.4byte	.LFE66-.LFB66
+ 1414 0018 00000000 		.4byte	.LFB65
+ 1415 001c 54000000 		.4byte	.LFE65-.LFB65
+ 1416 0020 00000000 		.4byte	.LFB67
+ 1417 0024 58000000 		.4byte	.LFE67-.LFB67
+ 1418 0028 00000000 		.4byte	.LFB64
+ 1419 002c 3C000000 		.4byte	.LFE64-.LFB64
+ 1420 0030 00000000 		.4byte	.LFB68
+ 1421 0034 1C000000 		.4byte	.LFE68-.LFB68
+ 1422 0038 00000000 		.4byte	0
+ 1423 003c 00000000 		.4byte	0
+ 1424              		.section	.debug_ranges,"",%progbits
+ 1425              	.Ldebug_ranges0:
+ 1426 0000 00000000 		.4byte	.LFB66
+ 1427 0004 64000000 		.4byte	.LFE66
+ 1428 0008 00000000 		.4byte	.LFB65
+ 1429 000c 54000000 		.4byte	.LFE65
+ 1430 0010 00000000 		.4byte	.LFB67
+ 1431 0014 58000000 		.4byte	.LFE67
+ 1432 0018 00000000 		.4byte	.LFB64
+ 1433 001c 3C000000 		.4byte	.LFE64
+ 1434 0020 00000000 		.4byte	.LFB68
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 28
 
 
- 1391 0014 30000000 		.4byte	.LFE64
- 1392 0018 00000000 		.4byte	.LFB67
- 1393 001c 1C000000 		.4byte	.LFE67
- 1394 0020 00000000 		.4byte	0
- 1395 0024 00000000 		.4byte	0
- 1396              		.section	.debug_line,"",%progbits
- 1397              	.Ldebug_line0:
- 1398 0000 5C020000 		.section	.debug_str,"MS",%progbits,1
- 1398      0200C601 
- 1398      00000201 
- 1398      FB0E0D00 
- 1398      01010101 
- 1399              	.LASF8:
- 1400 0000 6C6F6E67 		.ascii	"long long int\000"
- 1400      206C6F6E 
- 1400      6720696E 
- 1400      7400
- 1401              	.LASF35:
- 1402 000e 73657461 		.ascii	"setaddress\000"
- 1402      64647265 
- 1402      737300
- 1403              	.LASF37:
- 1404 0019 67657454 		.ascii	"getTime\000"
- 1404      696D6500 
- 1405              	.LASF17:
- 1406 0021 64697370 		.ascii	"dispTime\000"
- 1406      54696D65 
- 1406      00
- 1407              	.LASF9:
- 1408 002a 5F5F696E 		.ascii	"__int32_t\000"
- 1408      7433325F 
- 1408      7400
- 1409              	.LASF36:
- 1410 0034 736E7072 		.ascii	"snprintf\000"
- 1410      696E7466 
- 1410      00
- 1411              	.LASF29:
- 1412 003d 62656769 		.ascii	"begin\000"
- 1412      6E00
- 1413              	.LASF20:
- 1414 0043 6973725F 		.ascii	"isr_refreshrate_LCD\000"
- 1414      72656672 
- 1414      65736872 
- 1414      6174655F 
- 1414      4C434400 
- 1415              	.LASF11:
- 1416 0057 666C6F61 		.ascii	"float\000"
- 1416      7400
- 1417              	.LASF16:
- 1418 005d 696E6974 		.ascii	"initDisp\000"
- 1418      44697370 
- 1418      00
- 1419              	.LASF3:
- 1420 0066 756E7369 		.ascii	"unsigned char\000"
- 1420      676E6564 
- 1420      20636861 
- 1420      7200
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 28
-
-
- 1421              	.LASF38:
- 1422 0074 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1422      43313120 
- 1422      352E342E 
- 1422      31203230 
- 1422      31363036 
- 1423 00a7 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 1423      20726576 
- 1423      6973696F 
- 1423      6E203233 
- 1423      37373135 
- 1424 00da 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1424      66756E63 
- 1424      74696F6E 
- 1424      2D736563 
- 1424      74696F6E 
- 1425              	.LASF7:
- 1426 0102 6C6F6E67 		.ascii	"long unsigned int\000"
- 1426      20756E73 
- 1426      69676E65 
- 1426      6420696E 
- 1426      7400
- 1427              	.LASF5:
- 1428 0114 73686F72 		.ascii	"short unsigned int\000"
- 1428      7420756E 
- 1428      7369676E 
- 1428      65642069 
- 1428      6E7400
- 1429              	.LASF40:
- 1430 0127 433A5C55 		.ascii	"C:\\Users\\cring\\OneDrive - Aarhus universitet\\Un"
- 1430      73657273 
- 1430      5C637269 
- 1430      6E675C4F 
- 1430      6E654472 
- 1431 0156 695C332E 		.ascii	"i\\3. Semester\\PRJ3\\KODE\\ProjektMain\\Hovedprogr"
- 1431      2053656D 
- 1431      65737465 
- 1431      725C5052 
- 1431      4A335C4B 
- 1432 0184 616D2E63 		.ascii	"am.cydsn\000"
- 1432      7964736E 
- 1432      00
- 1433              	.LASF33:
- 1434 018d 54696D65 		.ascii	"Timer_LCD_Start\000"
- 1434      725F4C43 
- 1434      445F5374 
- 1434      61727400 
- 1435              	.LASF22:
- 1436 019d 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 1436      52784275 
- 1436      66666572 
- 1436      00
- 1437              	.LASF23:
- 1438 01aa 64697370 		.ascii	"display1On\000"
- 1438      6C617931 
- 1438      4F6E00
- 1439              	.LASF12:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 29
-
-
- 1440 01b5 646F7562 		.ascii	"double\000"
- 1440      6C6500
- 1441              	.LASF31:
- 1442 01bc 4C43445F 		.ascii	"LCD_print\000"
- 1442      7072696E 
+ 1435 0024 1C000000 		.4byte	.LFE68
+ 1436 0028 00000000 		.4byte	0
+ 1437 002c 00000000 		.4byte	0
+ 1438              		.section	.debug_line,"",%progbits
+ 1439              	.Ldebug_line0:
+ 1440 0000 B1020000 		.section	.debug_str,"MS",%progbits,1
+ 1440      02000B02 
+ 1440      00000201 
+ 1440      FB0E0D00 
+ 1440      01010101 
+ 1441              	.LASF8:
+ 1442 0000 6C6F6E67 		.ascii	"long long int\000"
+ 1442      206C6F6E 
+ 1442      6720696E 
  1442      7400
- 1443              	.LASF27:
- 1444 01c6 54696D65 		.ascii	"Timer_LCD_WritePeriod\000"
- 1444      725F4C43 
- 1444      445F5772 
- 1444      69746550 
- 1444      6572696F 
- 1445              	.LASF4:
- 1446 01dc 73686F72 		.ascii	"short int\000"
- 1446      7420696E 
- 1446      7400
- 1447              	.LASF30:
- 1448 01e6 636C6561 		.ascii	"clearDisp\000"
- 1448      72446973 
- 1448      7000
- 1449              	.LASF1:
- 1450 01f0 756E7369 		.ascii	"unsigned int\000"
- 1450      676E6564 
- 1450      20696E74 
- 1450      00
- 1451              	.LASF0:
- 1452 01fd 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1452      206C6F6E 
- 1452      6720756E 
- 1452      7369676E 
- 1452      65642069 
- 1453              	.LASF18:
- 1454 0214 64697370 		.ascii	"disp\000"
- 1454      00
- 1455              	.LASF10:
- 1456 0219 696E7433 		.ascii	"int32_t\000"
- 1456      325F7400 
- 1457              	.LASF15:
- 1458 0221 73697A65 		.ascii	"sizetype\000"
- 1458      74797065 
- 1458      00
- 1459              	.LASF26:
- 1460 022a 6973725F 		.ascii	"isr_refreshrate_LCD_StartEx\000"
- 1460      72656672 
- 1460      65736872 
- 1460      6174655F 
- 1460      4C43445F 
- 1461              	.LASF28:
- 1462 0246 4C697175 		.ascii	"LiquidCrystal_I2C_init\000"
- 1462      69644372 
- 1462      79737461 
- 1462      6C5F4932 
- 1462      435F696E 
- 1463              	.LASF19:
- 1464 025d 7365636F 		.ascii	"seconds\000"
- 1464      6E647300 
- 1465              	.LASF13:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpWMyC1.s 			page 30
+ 1443              	.LASF26:
+ 1444 000e 73657461 		.ascii	"setaddress\000"
+ 1444      64647265 
+ 1444      737300
+ 1445              	.LASF37:
+ 1446 0019 67657454 		.ascii	"getTime\000"
+ 1446      696D6500 
+ 1447              	.LASF17:
+ 1448 0021 64697370 		.ascii	"dispTime\000"
+ 1448      54696D65 
+ 1448      00
+ 1449              	.LASF9:
+ 1450 002a 5F5F696E 		.ascii	"__int32_t\000"
+ 1450      7433325F 
+ 1450      7400
+ 1451              	.LASF29:
+ 1452 0034 73657443 		.ascii	"setCursor\000"
+ 1452      7572736F 
+ 1452      7200
+ 1453              	.LASF35:
+ 1454 003e 62656769 		.ascii	"begin\000"
+ 1454      6E00
+ 1455              	.LASF20:
+ 1456 0044 6973725F 		.ascii	"isr_refreshrate_LCD\000"
+ 1456      72656672 
+ 1456      65736872 
+ 1456      6174655F 
+ 1456      4C434400 
+ 1457              	.LASF11:
+ 1458 0058 666C6F61 		.ascii	"float\000"
+ 1458      7400
+ 1459              	.LASF16:
+ 1460 005e 696E6974 		.ascii	"initDisp\000"
+ 1460      44697370 
+ 1460      00
+ 1461              	.LASF3:
+ 1462 0067 756E7369 		.ascii	"unsigned char\000"
+ 1462      676E6564 
+ 1462      20636861 
+ 1462      7200
+ 1463              	.LASF41:
+ 1464 0075 53746172 		.ascii	"StartDisp\000"
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 29
 
 
- 1466 0265 63686172 		.ascii	"char\000"
- 1466      00
- 1467              	.LASF24:
- 1468 026a 64697370 		.ascii	"display2On\000"
- 1468      6C617932 
- 1468      4F6E00
- 1469              	.LASF25:
- 1470 0275 4932435F 		.ascii	"I2C_1_Start\000"
- 1470      315F5374 
+ 1464      74446973 
+ 1464      7000
+ 1465              	.LASF7:
+ 1466 007f 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1466      20756E73 
+ 1466      69676E65 
+ 1466      6420696E 
+ 1466      7400
+ 1467              	.LASF5:
+ 1468 0091 73686F72 		.ascii	"short unsigned int\000"
+ 1468      7420756E 
+ 1468      7369676E 
+ 1468      65642069 
+ 1468      6E7400
+ 1469              	.LASF30:
+ 1470 00a4 54696D65 		.ascii	"Timer_LCD_Start\000"
+ 1470      725F4C43 
+ 1470      445F5374 
  1470      61727400 
- 1471              	.LASF39:
- 1472 0281 44697370 		.ascii	"Display.c\000"
- 1472      6C61792E 
- 1472      6300
- 1473              	.LASF32:
- 1474 028b 73657443 		.ascii	"setCursor\000"
- 1474      7572736F 
- 1474      7200
- 1475              	.LASF6:
- 1476 0295 6C6F6E67 		.ascii	"long int\000"
- 1476      20696E74 
- 1476      00
- 1477              	.LASF14:
- 1478 029e 6C6F6E67 		.ascii	"long double\000"
- 1478      20646F75 
- 1478      626C6500 
- 1479              	.LASF34:
- 1480 02aa 54696D65 		.ascii	"Timer_LCD_Stop\000"
+ 1471              	.LASF22:
+ 1472 00b4 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1472      52784275 
+ 1472      66666572 
+ 1472      00
+ 1473              	.LASF23:
+ 1474 00c1 64697370 		.ascii	"display1On\000"
+ 1474      6C617931 
+ 1474      4F6E00
+ 1475              	.LASF12:
+ 1476 00cc 646F7562 		.ascii	"double\000"
+ 1476      6C6500
+ 1477              	.LASF28:
+ 1478 00d3 4C43445F 		.ascii	"LCD_print\000"
+ 1478      7072696E 
+ 1478      7400
+ 1479              	.LASF33:
+ 1480 00dd 54696D65 		.ascii	"Timer_LCD_WritePeriod\000"
  1480      725F4C43 
- 1480      445F5374 
- 1480      6F7000
- 1481              	.LASF2:
- 1482 02b9 7369676E 		.ascii	"signed char\000"
- 1482      65642063 
- 1482      68617200 
- 1483              	.LASF21:
- 1484 02c5 73746F70 		.ascii	"stopLCD\000"
- 1484      4C434400 
- 1485              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1480      445F5772 
+ 1480      69746550 
+ 1480      6572696F 
+ 1481              	.LASF4:
+ 1482 00f3 73686F72 		.ascii	"short int\000"
+ 1482      7420696E 
+ 1482      7400
+ 1483              	.LASF27:
+ 1484 00fd 636C6561 		.ascii	"clearDisp\000"
+ 1484      72446973 
+ 1484      7000
+ 1485              	.LASF1:
+ 1486 0107 756E7369 		.ascii	"unsigned int\000"
+ 1486      676E6564 
+ 1486      20696E74 
+ 1486      00
+ 1487              	.LASF0:
+ 1488 0114 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1488      206C6F6E 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 30
+
+
+ 1488      6720756E 
+ 1488      7369676E 
+ 1488      65642069 
+ 1489              	.LASF18:
+ 1490 012b 64697370 		.ascii	"disp\000"
+ 1490      00
+ 1491              	.LASF38:
+ 1492 0130 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1492      43313120 
+ 1492      352E342E 
+ 1492      31203230 
+ 1492      31363036 
+ 1493 0163 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1493      20726576 
+ 1493      6973696F 
+ 1493      6E203233 
+ 1493      37373135 
+ 1494 0196 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1494      66756E63 
+ 1494      74696F6E 
+ 1494      2D736563 
+ 1494      74696F6E 
+ 1495              	.LASF10:
+ 1496 01be 696E7433 		.ascii	"int32_t\000"
+ 1496      325F7400 
+ 1497              	.LASF40:
+ 1498 01c6 433A5C55 		.ascii	"C:\\Users\\cring\\OneDrive - Aarhus Universitet\\Un"
+ 1498      73657273 
+ 1498      5C637269 
+ 1498      6E675C4F 
+ 1498      6E654472 
+ 1499 01f5 695C332E 		.ascii	"i\\3. Semester\\PRJ3\\KODE\\ProjektMain\\Hovedprogr"
+ 1499      2053656D 
+ 1499      65737465 
+ 1499      725C5052 
+ 1499      4A335C4B 
+ 1500 0223 616D2E63 		.ascii	"am.cydsn\000"
+ 1500      7964736E 
+ 1500      00
+ 1501              	.LASF32:
+ 1502 022c 6973725F 		.ascii	"isr_refreshrate_LCD_StartEx\000"
+ 1502      72656672 
+ 1502      65736872 
+ 1502      6174655F 
+ 1502      4C43445F 
+ 1503              	.LASF15:
+ 1504 0248 73697A65 		.ascii	"sizetype\000"
+ 1504      74797065 
+ 1504      00
+ 1505              	.LASF34:
+ 1506 0251 4C697175 		.ascii	"LiquidCrystal_I2C_init\000"
+ 1506      69644372 
+ 1506      79737461 
+ 1506      6C5F4932 
+ 1506      435F696E 
+ 1507              	.LASF19:
+ 1508 0268 7365636F 		.ascii	"seconds\000"
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccsh9s35.s 			page 31
+
+
+ 1508      6E647300 
+ 1509              	.LASF13:
+ 1510 0270 63686172 		.ascii	"char\000"
+ 1510      00
+ 1511              	.LASF24:
+ 1512 0275 64697370 		.ascii	"display2On\000"
+ 1512      6C617932 
+ 1512      4F6E00
+ 1513              	.LASF31:
+ 1514 0280 4932435F 		.ascii	"I2C_1_Start\000"
+ 1514      315F5374 
+ 1514      61727400 
+ 1515              	.LASF39:
+ 1516 028c 44697370 		.ascii	"Display.c\000"
+ 1516      6C61792E 
+ 1516      6300
+ 1517              	.LASF6:
+ 1518 0296 6C6F6E67 		.ascii	"long int\000"
+ 1518      20696E74 
+ 1518      00
+ 1519              	.LASF14:
+ 1520 029f 6C6F6E67 		.ascii	"long double\000"
+ 1520      20646F75 
+ 1520      626C6500 
+ 1521              	.LASF25:
+ 1522 02ab 54696D65 		.ascii	"Timer_LCD_Stop\000"
+ 1522      725F4C43 
+ 1522      445F5374 
+ 1522      6F7000
+ 1523              	.LASF2:
+ 1524 02ba 7369676E 		.ascii	"signed char\000"
+ 1524      65642063 
+ 1524      68617200 
+ 1525              	.LASF36:
+ 1526 02c6 73707269 		.ascii	"sprintf\000"
+ 1526      6E746600 
+ 1527              	.LASF21:
+ 1528 02ce 73746F70 		.ascii	"stopLCD\000"
+ 1528      4C434400 
+ 1529              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

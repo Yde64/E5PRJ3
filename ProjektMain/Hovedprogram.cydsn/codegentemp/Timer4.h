@@ -172,10 +172,10 @@ void Timer4_Wakeup(void)        ;
 #define Timer4_INIT_CAPTURE_MODE       ((uint8)((uint8)1u << Timer4_CTRL_CAP_MODE_SHIFT))
 #define Timer4_INIT_TRIGGER_MODE       ((uint8)((uint8)0u << Timer4_CTRL_TRIG_MODE_SHIFT))
 #if (Timer4_UsingFixedFunction)
-    #define Timer4_INIT_INTERRUPT_MODE (((uint8)((uint8)0u << Timer4_STATUS_TC_INT_MASK_SHIFT)) | \
+    #define Timer4_INIT_INTERRUPT_MODE (((uint8)((uint8)1u << Timer4_STATUS_TC_INT_MASK_SHIFT)) | \
                                                   ((uint8)((uint8)0 << Timer4_STATUS_CAPTURE_INT_MASK_SHIFT)))
 #else
-    #define Timer4_INIT_INTERRUPT_MODE (((uint8)((uint8)0u << Timer4_STATUS_TC_INT_MASK_SHIFT)) | \
+    #define Timer4_INIT_INTERRUPT_MODE (((uint8)((uint8)1u << Timer4_STATUS_TC_INT_MASK_SHIFT)) | \
                                                  ((uint8)((uint8)0 << Timer4_STATUS_CAPTURE_INT_MASK_SHIFT)) | \
                                                  ((uint8)((uint8)0 << Timer4_STATUS_FIFOFULL_INT_MASK_SHIFT)))
 #endif /* (Timer4_UsingFixedFunction) */

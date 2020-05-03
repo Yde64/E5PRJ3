@@ -35,15 +35,38 @@ void handleByteReceived(uint8_t byteReceived)
     {
         case '1' :
         {
-            readdata1();
+            //getWeight(1);
+            getCalWeight(1);
         }
         break;
         case '2' :
         {
-            readdata2();
+            //getWeight(2);
+            getCalWeight(2);
         }
         break;
       
+    }
+}
+
+void UARTprint(char* line, char* string)
+{
+    movecursor(line, "0");
+    delline(1);
+    movecursor(line, "0");
+    UART_1_PutString(string);
+}
+
+void clearTerm(int lines)
+{
+    char buf[10];
+        for(int i = 0;i < lines; i++)
+    {
+        
+        snprintf(buf, 5, "%d", i);
+        
+        movecursor(buf, "0");
+        delline(1);
     }
 }
 /* [] END OF FILE */

@@ -11,12 +11,13 @@
 */
 
 /* [] END OF FILE */
+#define MAXLEDINTENSE 0.5
 
 #include "LEDcontrol.h"
 
 static int pulselength_ = 0;
 static int index_ = 0;
-static float index2 = 1;
+static float index2 = MAXLEDINTENSE;
 static int count = 0;
 static int count2 = 0;
 static int count3 = 0;
@@ -27,15 +28,20 @@ LEDctrl *rgbLED2 = NULL;
 
 CY_ISR(isr_refreshrate)
 {
+    Timer1_Stop();
+    isr_refreshrate_LCD_Disable();
     if (rgbLED1 != NULL)
     {
     UpdateLED(rgbLED1);
     }
-    CyDelayUs(200);
+    CyDelayUs(100);
     if (rgbLED2 != NULL)
     {
     UpdateLED(rgbLED2);
     }
+    CyDelayUs(100);
+    isr_refreshrate_LCD_Enable();
+    Timer1_Start();
 }
 
 CY_ISR(isr_LED_ring)
@@ -79,49 +85,31 @@ CY_ISR(isr_LED_pulse)
         if (rgbLED1->pulse == 1)fillcolor(rgbLED1->h,rgbLED1->s,index2, rgbLED1);
         if (rgbLED2->pulse == 1)fillcolor(rgbLED2->h,rgbLED2->s,index2, rgbLED2);
         index2 = index2+0.01;
-        if (index2 == 1)count = 0;
+        if (index2 == MAXLEDINTENSE)count = 0;
     }
     
 }
 
 CY_ISR(isr_BlinkLED)
 {
-    if(rgbLED1->blink == 1)
+    switch (count3)
     {
-        switch (count3)
+        case 0:
         {
-            case 0:
-            {
-                fillcolor(rgbLED1->h, rgbLED1->s,1, rgbLED1);
-                count3++;
-            }
-            break;
-            case 1:
-            {
-                fillcolor(rgbLED1->h, rgbLED1->s,0, rgbLED1);
-                count3 = 0;
-            }
-            break;
+            if(rgbLED1->blink == 1) fillcolor(rgbLED1->h, rgbLED1->s,1, rgbLED1);
+            if(rgbLED2->blink == 1) fillcolor(rgbLED2->h, rgbLED2->s,1, rgbLED2);
+            count3++;
         }
-    }
-    if(rgbLED2->blink == 1)
-    {
-        switch (count3)
+        break;
+        case 1:
         {
-            case 0:
-            {
-                fillcolor(rgbLED2->h, rgbLED2->s,1, rgbLED2);
-                count3++;
-            }
-            break;
-            case 1:
-            {
-                fillcolor(rgbLED2->h, rgbLED2->s,0, rgbLED2);
-                count3 = 0;
-            }
-            break;
+            if(rgbLED1->blink == 1)fillcolor(rgbLED1->h, rgbLED1->s,0, rgbLED1);
+            if(rgbLED2->blink == 1)fillcolor(rgbLED2->h, rgbLED2->s,0, rgbLED2);
+            count3 = 0;
         }
+        break;
     }
+  
 }
 
 CY_ISR(isr_delay)
@@ -163,6 +151,17 @@ void initLED(int Hz)
     isr_BlinkLED_StartEx(isr_BlinkLED);
     isr_delay_StartEx(isr_delay);
     
+    LEDOff(rgbLED1);
+    LEDOff(rgbLED2);
+    
+    pulselength_ = 0;
+    index_ = 0;
+    index2 = MAXLEDINTENSE;
+    count = 0;
+    count2 = 0;
+    count3 = 0;
+    
+    
     SPIM_1_Start();
     Timer1_Start();
     Timer2_Start();
@@ -170,6 +169,7 @@ void initLED(int Hz)
     Timer4_Start();
     
     setrefreshrate(Hz);
+    
 }
 
 
@@ -217,6 +217,8 @@ void hsv2rgb(double h, double s, double v, int LED, LEDctrl *rgbLED)
 {
     double      hh, p, q, t, ff, r, g, b;
     long        i;
+    
+    if(v > MAXLEDINTENSE) v = MAXLEDINTENSE;
 
     if(s <= 0.0) {       // < is bogus, just shuts up warnings
         (rgbLED + LED)->green = v;
@@ -367,6 +369,7 @@ void setcolorLED(double h, double s, double v, int LED, LEDctrl *rgbLED)
 
 void LEDOff(LEDctrl *rgbLED)
 {
+    Timer5_Stop();
     rgbLED->ring = 0;
     rgbLED->pulse = 0;
     rgbLED->blink = 0;
@@ -423,39 +426,63 @@ void weightapprovedSeq(LEDctrl *rgbLED) //Vægt godkendt sekvens
 
 int startSeq(LEDctrl *rgbLED_1, LEDctrl *rgbLED_2) //Start sekvens
 {
-    LEDOff(rgbLED_1);
-    LEDOff(rgbLED_2);
     switch (count2)
     {
         case 0:
         {
+            LEDOff(rgbLED_1);
+            LEDOff(rgbLED_2);
+            Timer5_Start();
+            isr_delay_Enable();
+        }
+        case 1:
+        {            
             fillcolor(3, 1.0, 0.83, rgbLED_1);
             fillcolor(3, 1.0, 0.83, rgbLED_2);
-            Timer5_Start();
         }
         break;
-        case 1:
-        {
-            fillcolor(65, 1, 1, rgbLED_1);
-            fillcolor(65, 1, 1, rgbLED_2);
-        }
-        break;
+        
         case 2:
         {
             fillcolor(65, 1, 1, rgbLED_1);
             fillcolor(65, 1, 1, rgbLED_2);
+            //return 1;
         }
         break;
+        
         case 3:
         {
-            fillcolor(116, 1, 1.0, rgbLED_1);
-            fillcolor(116, 1, 1.0, rgbLED_2);
+            fillcolor(65, 1, 1, rgbLED_1);
+            fillcolor(65, 1, 1, rgbLED_2);
+               
+            count2++;
+            //fillcolor(65, 1, 1, rgbLED_1);
+            //fillcolor(65, 1, 1, rgbLED_2);
+            //return 1;
+            
         }
         break;
         case 4:
         {
+            //1 sekund delay
+        }
+        break;
+        case 5:
+        {
+            LEDOff(rgbLED_1);
+            LEDOff(rgbLED_2);
+            
+            fillcolor(116, 1, 1.0, rgbLED_1);
+            fillcolor(116, 1, 1.0, rgbLED_2);
             Timer5_Stop();
-            count = 0;
+            //count2 = 0;
+            isr_delay_Disable();
+            count2++;
+        }
+        break;
+        case 6:
+        {  
+            count2 = 0;
             return 1;
         }
         break;

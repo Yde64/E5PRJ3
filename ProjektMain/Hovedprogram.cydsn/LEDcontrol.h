@@ -22,9 +22,9 @@ typedef struct LEDctrl_
     int green;
     int blue;
     
-    double h;
-    double s;
-    double v;
+    double h; //Hue
+    double s; //Saturation
+    double v; //Value
     
     int green1;
     int green2;
@@ -40,6 +40,7 @@ typedef struct LEDctrl_
     int pulse;
     int blink;
 }LEDctrl;
+
 
 void UpdateLED(LEDctrl *rgbLEd_); //Opdater alle LED, ny farve, i ønsket LED strip
 void hsv2rgb(double H, double S, double L, int LED, LEDctrl *rgbLEd_); //Konverter HSV til RGB

@@ -447,7 +447,7 @@
         <register>
           <name>Timer_Stopur_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006472</addressOffset>
+          <addressOffset>0x40006473</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -669,7 +669,7 @@
         <register>
           <name>SPIMOutCtrl_CONTROL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x40006473</addressOffset>
+          <addressOffset>0x40006472</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1000,7 +1000,7 @@
         <register>
           <name>Timer5_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006474</addressOffset>
+          <addressOffset>0x40006475</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1240,7 +1240,7 @@
         <register>
           <name>Timer_LCD_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006471</addressOffset>
+          <addressOffset>0x40006470</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1960,7 +1960,7 @@
         <register>
           <name>Timer3_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006576</addressOffset>
+          <addressOffset>0x40006577</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2200,7 +2200,7 @@
         <register>
           <name>Timer2_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006477</addressOffset>
+          <addressOffset>0x40006476</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>

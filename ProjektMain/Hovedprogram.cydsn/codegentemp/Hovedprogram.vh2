@@ -2,7 +2,7 @@
 --	Conversion of Hovedprogram.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sat Apr 04 23:43:01 2020
+--	Sat May 02 14:03:33 2020
 --
 
 USE cypress.cypress.all;
@@ -590,7 +590,7 @@ SIGNAL \Timer1:Net_102\ : bit;
 SIGNAL \Timer1:Net_266\ : bit;
 SIGNAL Net_336 : bit;
 SIGNAL tmpOE__LEDdata2_net_0 : bit;
-SIGNAL Net_590 : bit;
+SIGNAL Net_722 : bit;
 SIGNAL tmpFB_0__LEDdata2_net_0 : bit;
 SIGNAL tmpIO_0__LEDdata2_net_0 : bit;
 TERMINAL tmpSIOVREF__LEDdata2_net_0 : bit;
@@ -796,14 +796,14 @@ SIGNAL \SPIM_1:BSPIM:sR16:Dp:f1_blk_stat_reg_1\ : bit;
 ATTRIBUTE port_state_att of \SPIM_1:BSPIM:sR16:Dp:f1_blk_stat_reg_1\:SIGNAL IS 2;
 SIGNAL \SPIM_1:Net_289\ : bit;
 SIGNAL tmpOE__LEDdata_net_0 : bit;
-SIGNAL Net_348 : bit;
+SIGNAL Net_721 : bit;
 SIGNAL tmpFB_0__LEDdata_net_0 : bit;
 SIGNAL tmpIO_0__LEDdata_net_0 : bit;
 TERMINAL tmpSIOVREF__LEDdata_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__LEDdata_net_0 : bit;
 TERMINAL \ADC_SAR_1:Net_248\ : bit;
 TERMINAL \ADC_SAR_1:Net_233\ : bit;
-SIGNAL Net_624 : bit;
+SIGNAL Net_744 : bit;
 SIGNAL \ADC_SAR_1:vp_ctl_0\ : bit;
 SIGNAL \ADC_SAR_1:vp_ctl_2\ : bit;
 SIGNAL \ADC_SAR_1:vn_ctl_1\ : bit;
@@ -816,13 +816,13 @@ SIGNAL \ADC_SAR_1:Net_385\ : bit;
 SIGNAL \ADC_SAR_1:Net_381\ : bit;
 SIGNAL \ADC_SAR_1:Net_188\ : bit;
 SIGNAL \ADC_SAR_1:Net_221\ : bit;
-TERMINAL Net_568 : bit;
+TERMINAL Net_748 : bit;
 TERMINAL \ADC_SAR_1:Net_126\ : bit;
 TERMINAL \ADC_SAR_1:Net_215\ : bit;
 TERMINAL \ADC_SAR_1:Net_257\ : bit;
 SIGNAL \ADC_SAR_1:soc\ : bit;
 SIGNAL \ADC_SAR_1:Net_252\ : bit;
-SIGNAL Net_627 : bit;
+SIGNAL Net_747 : bit;
 SIGNAL \ADC_SAR_1:Net_207_11\ : bit;
 SIGNAL \ADC_SAR_1:Net_207_10\ : bit;
 SIGNAL \ADC_SAR_1:Net_207_9\ : bit;
@@ -2317,9 +2317,9 @@ Net_415D <= ((not \UART_1:BUART:reset_reg\ and \UART_1:BUART:tx_state_2\)
 
 \UART_1:BUART:rx_address_detected\\D\ <= ((not \UART_1:BUART:reset_reg\ and \UART_1:BUART:rx_address_detected\));
 
-Net_348 <= ((not Net_584 and not Net_637 and \SPIM_1:BSPIM:mosi_hs_reg\));
+Net_721 <= ((not Net_584 and not Net_637 and \SPIM_1:BSPIM:mosi_hs_reg\));
 
-Net_590 <= ((not Net_584 and \SPIM_1:BSPIM:mosi_hs_reg\ and Net_637));
+Net_722 <= ((not Net_584 and \SPIM_1:BSPIM:mosi_hs_reg\ and Net_637));
 
 \Timer_Stopur:TimerUDB:status_tc\ <= ((\Timer_Stopur:TimerUDB:control_7\ and \Timer_Stopur:TimerUDB:per_zero\));
 
@@ -3011,7 +3011,7 @@ LEDdata2:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
-		y=>Net_590,
+		y=>Net_722,
 		fb=>(tmpFB_0__LEDdata2_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__LEDdata2_net_0),
@@ -3299,7 +3299,7 @@ LEDdata:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
-		y=>Net_348,
+		y=>Net_721,
 		fb=>(tmpFB_0__LEDdata_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__LEDdata_net_0),
@@ -3320,7 +3320,7 @@ LEDdata:cy_psoc3_pins_v1_10
 \ADC_SAR_1:IRQ\:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10",
 		is_nmi=>'0')
-	PORT MAP(int_signal=>Net_624);
+	PORT MAP(int_signal=>Net_744);
 \ADC_SAR_1:theACLK\:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
 		id=>"357143bf-42d1-4122-990c-441e41e2a9ed/696a0979-21fc-4185-bf38-6c79febcde7a",
@@ -3333,7 +3333,7 @@ LEDdata:cy_psoc3_pins_v1_10
 		dig_domain_out=>\ADC_SAR_1:Net_381\);
 \ADC_SAR_1:ADC_SAR\:cy_psoc5_sar_v2_0
 	GENERIC MAP(cy_registers=>"")
-	PORT MAP(vplus=>Net_568,
+	PORT MAP(vplus=>Net_748,
 		vminus=>\ADC_SAR_1:Net_126\,
 		ext_pin=>\ADC_SAR_1:Net_215\,
 		vrefhi_out=>\ADC_SAR_1:Net_257\,
@@ -3345,11 +3345,11 @@ LEDdata:cy_psoc3_pins_v1_10
 		vp_ctl_udb=>(Net_373, Net_373, Net_373, Net_373),
 		vn_ctl_udb=>(Net_373, Net_373, Net_373, Net_373),
 		irq=>\ADC_SAR_1:Net_252\,
-		next_out=>Net_627,
+		next_out=>Net_747,
 		data_out=>(\ADC_SAR_1:Net_207_11\, \ADC_SAR_1:Net_207_10\, \ADC_SAR_1:Net_207_9\, \ADC_SAR_1:Net_207_8\,
 			\ADC_SAR_1:Net_207_7\, \ADC_SAR_1:Net_207_6\, \ADC_SAR_1:Net_207_5\, \ADC_SAR_1:Net_207_4\,
 			\ADC_SAR_1:Net_207_3\, \ADC_SAR_1:Net_207_2\, \ADC_SAR_1:Net_207_1\, \ADC_SAR_1:Net_207_0\),
-		eof_udb=>Net_624);
+		eof_udb=>Net_744);
 \ADC_SAR_1:cy_analog_virtualmux_2_connect\:cy_connect_v1_0
 	GENERIC MAP(sig_width=>1,
 		is_net_join=>'0')
@@ -3387,7 +3387,7 @@ PlayerSelect:cy_psoc3_amux_v1_0
 		connect_mode=>0)
 	PORT MAP(muxin=>(Net_578, Net_577),
 		hw_ctrl_en=>(others => Net_373),
-		vout=>Net_568);
+		vout=>Net_748);
 \UART_1:IntClock\:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
 		id=>"b0162966-0060-4af5-82d1-fcb491ad7619/be0a0e37-ad17-42ca-b5a1-1a654d736358",
@@ -3908,12 +3908,12 @@ SAR_p2:cy_psoc3_pins_v1_10
 		out_reset=>Net_373,
 		interrupt=>tmpINTERRUPT_0__SAR_p2_net_0);
 isr_button:cy_isr_v1_0
-	GENERIC MAP(int_type=>"10",
+	GENERIC MAP(int_type=>"00",
 		is_nmi=>'0')
 	PORT MAP(int_signal=>Net_445);
 Pin_2:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba",
-		drive_mode=>"001",
+		drive_mode=>"011",
 		ibuf_enabled=>"1",
 		init_dr_st=>"0",
 		input_sync=>"0",

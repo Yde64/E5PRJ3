@@ -21,5 +21,6 @@ typedef struct ButtonPushed{
 
 Button BPptr; //skal gøres for at være global åbenbart
 
-CY_ISR(isr_button_handler);
+CY_ISR_PROTO(isr_button_handler);
+
 

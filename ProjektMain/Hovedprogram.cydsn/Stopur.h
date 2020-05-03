@@ -12,3 +12,6 @@ void stopTimer();          // stopper timer_stopur
 int getTime();             // retunerer count værdien som ms
 void clearTimer();         // nulstiller timer_stopur
 bool timeout();           // timeout timer 
+
+
+CY_ISR_PROTO(isr_timer);

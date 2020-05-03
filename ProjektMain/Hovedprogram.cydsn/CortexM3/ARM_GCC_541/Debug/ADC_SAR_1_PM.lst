@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccA91KhB.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
   28:Generated_Source\PSoC5/ADC_SAR_1_PM.c **** 
   29:Generated_Source\PSoC5/ADC_SAR_1_PM.c **** 
   30:Generated_Source\PSoC5/ADC_SAR_1_PM.c **** /*******************************************************************************
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 2
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccA91KhB.s 			page 2
 
 
   31:Generated_Source\PSoC5/ADC_SAR_1_PM.c **** * Function Name: ADC_SAR_1_SaveConfig
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
   47              		@ args = 0, pretend = 0, frame = 0
   48              		@ frame_needed = 0, uses_anonymous_args = 0
   49              		@ link register save eliminated.
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 3
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccA91KhB.s 			page 3
 
 
   50 0000 7047     		bx	lr
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
   94:Generated_Source\PSoC5/ADC_SAR_1_PM.c ****         if((ADC_SAR_1_SAR_CSR0_REG & ADC_SAR_1_SAR_SOF_START_CONV) != 0u)
   76              		.loc 1 94 0
   77 000c 0A4B     		ldr	r3, .L9+4
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 4
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccA91KhB.s 			page 4
 
 
   78 000e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  108:Generated_Source\PSoC5/ADC_SAR_1_PM.c **** }
  109:Generated_Source\PSoC5/ADC_SAR_1_PM.c **** 
  110:Generated_Source\PSoC5/ADC_SAR_1_PM.c **** 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 5
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccA91KhB.s 			page 5
 
 
  111:Generated_Source\PSoC5/ADC_SAR_1_PM.c **** /*******************************************************************************
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  143 001a 08BD     		pop	{r3, pc}
  144              	.L15:
  145              		.align	2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 6
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccA91KhB.s 			page 6
 
 
  146              	.L14:
@@ -327,7 +327,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  169 000c 63000000 		.4byte	.LASF22
  170 0010 0C       		.byte	0xc
  171 0011 00000000 		.4byte	.LASF23
- 172 0015 1B010000 		.4byte	.LASF24
+ 172 0015 90010000 		.4byte	.LASF24
  173 0019 00000000 		.4byte	.Ldebug_ranges0+0
  174 001d 00000000 		.4byte	0
  175 0021 00000000 		.4byte	.Ldebug_line0
@@ -358,14 +358,14 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  200 004f 02       		.uleb128 0x2
  201 0050 08       		.byte	0x8
  202 0051 05       		.byte	0x5
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 7
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccA91KhB.s 			page 7
 
 
  203 0052 F6010000 		.4byte	.LASF6
  204 0056 02       		.uleb128 0x2
  205 0057 08       		.byte	0x8
  206 0058 07       		.byte	0x7
- 207 0059 CF010000 		.4byte	.LASF7
+ 207 0059 69010000 		.4byte	.LASF7
  208 005d 03       		.uleb128 0x3
  209 005e 04       		.byte	0x4
  210 005f 05       		.byte	0x5
@@ -373,7 +373,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  212 0064 02       		.uleb128 0x2
  213 0065 04       		.byte	0x4
  214 0066 07       		.byte	0x7
- 215 0067 AA010000 		.4byte	.LASF8
+ 215 0067 44010000 		.4byte	.LASF8
  216 006b 04       		.uleb128 0x4
  217 006c 4E020000 		.4byte	.LASF12
  218 0070 02       		.byte	0x2
@@ -386,7 +386,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  225 007e 02       		.uleb128 0x2
  226 007f 08       		.byte	0x8
  227 0080 04       		.byte	0x4
- 228 0081 92010000 		.4byte	.LASF10
+ 228 0081 2C010000 		.4byte	.LASF10
  229 0085 02       		.uleb128 0x2
  230 0086 01       		.byte	0x1
  231 0087 08       		.byte	0x8
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  257 00bd 09       		.uleb128 0x9
  258 00be 18020000 		.4byte	.LASF15
  259 00c2 01       		.byte	0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 8
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccA91KhB.s 			page 8
 
 
  260 00c3 2C       		.byte	0x2c
@@ -427,7 +427,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  263 00cc 01       		.uleb128 0x1
  264 00cd 9C       		.byte	0x9c
  265 00ce 09       		.uleb128 0x9
- 266 00cf B7010000 		.4byte	.LASF16
+ 266 00cf 51010000 		.4byte	.LASF16
  267 00d3 01       		.byte	0x1
  268 00d4 40       		.byte	0x40
  269 00d5 00000000 		.4byte	.LFB1
@@ -435,7 +435,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  271 00dd 01       		.uleb128 0x1
  272 00de 9C       		.byte	0x9c
  273 00df 0A       		.uleb128 0xa
- 274 00e0 E6010000 		.4byte	.LASF17
+ 274 00e0 80010000 		.4byte	.LASF17
  275 00e4 01       		.byte	0x1
  276 00e5 5A       		.byte	0x5a
  277 00e6 00000000 		.4byte	.LFB2
@@ -464,7 +464,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  300 0121 4D010000 		.4byte	0x14d
  301 0125 00       		.byte	0
  302 0126 0C       		.uleb128 0xc
- 303 0127 99010000 		.4byte	.LASF26
+ 303 0127 33010000 		.4byte	.LASF26
  304 012b 01       		.byte	0x1
  305 012c 18       		.byte	0x18
  306 012d B2000000 		.4byte	0xb2
@@ -477,11 +477,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  313 0140 03       		.byte	0x3
  314 0141 35       		.byte	0x35
  315 0142 0D       		.uleb128 0xd
- 316 0143 81010000 		.4byte	.LASF20
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 9
+ 316 0143 1B010000 		.4byte	.LASF20
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccA91KhB.s 			page 9
 
 
- 317 0147 81010000 		.4byte	.LASF20
+ 317 0147 1B010000 		.4byte	.LASF20
  318 014b 03       		.byte	0x3
  319 014c 44       		.byte	0x44
  320 014d 0D       		.uleb128 0xd
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  371 002b 00       		.byte	0
  372 002c 03       		.uleb128 0x3
  373 002d 0E       		.uleb128 0xe
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 10
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccA91KhB.s 			page 10
 
 
  374 002e 3A       		.uleb128 0x3a
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  428 0064 00       		.byte	0
  429 0065 00       		.byte	0
  430 0066 09       		.uleb128 0x9
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 11
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccA91KhB.s 			page 11
 
 
  431 0067 2E       		.uleb128 0x2e
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  485 00a1 00       		.byte	0
  486 00a2 00       		.byte	0
  487 00a3 0C       		.uleb128 0xc
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 12
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccA91KhB.s 			page 12
 
 
  488 00a4 34       		.uleb128 0x34
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  542 0008 00000000 		.4byte	.LFB1
  543 000c 02000000 		.4byte	.LFE1
  544 0010 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 13
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccA91KhB.s 			page 13
 
 
  545 0014 40000000 		.4byte	.LFE2
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  567              	.LASF13:
  568 00f1 72656738 		.ascii	"reg8\000"
  568      00
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 14
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccA91KhB.s 			page 14
 
 
  569              	.LASF5:
@@ -793,60 +793,60 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 1
  572      7369676E 
  572      65642069 
  572      6E7400
- 573              	.LASF24:
- 574 011b 433A5C55 		.ascii	"C:\\Users\\cring\\OneDrive - Aarhus universitet\\Un"
- 574      73657273 
- 574      5C637269 
- 574      6E675C4F 
- 574      6E654472 
- 575 014a 695C332E 		.ascii	"i\\3. Semester\\PRJ3\\KODE\\ProjektMain\\Hovedprogr"
- 575      2053656D 
- 575      65737465 
- 575      725C5052 
- 575      4A335C4B 
- 576 0178 616D2E63 		.ascii	"am.cydsn\000"
- 576      7964736E 
- 576      00
- 577              	.LASF20:
- 578 0181 4144435F 		.ascii	"ADC_SAR_1_Enable\000"
+ 573              	.LASF20:
+ 574 011b 4144435F 		.ascii	"ADC_SAR_1_Enable\000"
+ 574      5341525F 
+ 574      315F456E 
+ 574      61626C65 
+ 574      00
+ 575              	.LASF10:
+ 576 012c 646F7562 		.ascii	"double\000"
+ 576      6C6500
+ 577              	.LASF26:
+ 578 0133 4144435F 		.ascii	"ADC_SAR_1_backup\000"
  578      5341525F 
- 578      315F456E 
- 578      61626C65 
+ 578      315F6261 
+ 578      636B7570 
  578      00
- 579              	.LASF10:
- 580 0192 646F7562 		.ascii	"double\000"
- 580      6C6500
- 581              	.LASF26:
- 582 0199 4144435F 		.ascii	"ADC_SAR_1_backup\000"
+ 579              	.LASF8:
+ 580 0144 756E7369 		.ascii	"unsigned int\000"
+ 580      676E6564 
+ 580      20696E74 
+ 580      00
+ 581              	.LASF16:
+ 582 0151 4144435F 		.ascii	"ADC_SAR_1_RestoreConfig\000"
  582      5341525F 
- 582      315F6261 
- 582      636B7570 
- 582      00
- 583              	.LASF8:
- 584 01aa 756E7369 		.ascii	"unsigned int\000"
- 584      676E6564 
- 584      20696E74 
- 584      00
- 585              	.LASF16:
- 586 01b7 4144435F 		.ascii	"ADC_SAR_1_RestoreConfig\000"
+ 582      315F5265 
+ 582      73746F72 
+ 582      65436F6E 
+ 583              	.LASF7:
+ 584 0169 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 584      206C6F6E 
+ 584      6720756E 
+ 584      7369676E 
+ 584      65642069 
+ 585              	.LASF17:
+ 586 0180 4144435F 		.ascii	"ADC_SAR_1_Sleep\000"
  586      5341525F 
- 586      315F5265 
- 586      73746F72 
- 586      65436F6E 
- 587              	.LASF7:
- 588 01cf 6C6F6E67 		.ascii	"long long unsigned int\000"
- 588      206C6F6E 
- 588      6720756E 
- 588      7369676E 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccEEGhHL.s 			page 15
+ 586      315F536C 
+ 586      65657000 
+ 587              	.LASF24:
+ 588 0190 433A5C55 		.ascii	"C:\\Users\\cring\\OneDrive - Aarhus Universitet\\Un"
+ 588      73657273 
+ 588      5C637269 
+ 588      6E675C4F 
+ 588      6E654472 
+ 589 01bf 695C332E 		.ascii	"i\\3. Semester\\PRJ3\\KODE\\ProjektMain\\Hovedprogr"
+ 589      2053656D 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccA91KhB.s 			page 15
 
 
- 588      65642069 
- 589              	.LASF17:
- 590 01e6 4144435F 		.ascii	"ADC_SAR_1_Sleep\000"
- 590      5341525F 
- 590      315F536C 
- 590      65657000 
+ 589      65737465 
+ 589      725C5052 
+ 589      4A335C4B 
+ 590 01ed 616D2E63 		.ascii	"am.cydsn\000"
+ 590      7964736E 
+ 590      00
  591              	.LASF6:
  592 01f6 6C6F6E67 		.ascii	"long long int\000"
  592      206C6F6E 
