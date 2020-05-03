@@ -34,11 +34,12 @@ CY_ISR(isr_refreshrate)
     {
     UpdateLED(rgbLED1);
     }
-    CyDelayUs(200);
+    CyDelayUs(100);
     if (rgbLED2 != NULL)
     {
     UpdateLED(rgbLED2);
     }
+    CyDelayUs(100);
     isr_refreshrate_LCD_Enable();
     Timer1_Start();
 }

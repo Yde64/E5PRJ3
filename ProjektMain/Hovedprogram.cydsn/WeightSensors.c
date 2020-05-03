@@ -23,7 +23,7 @@
 #include "WeightSensors_.h"
 #define afvigelse 25                //Bestemmer fejlmargin for compareWeight.
 #define mVtoG 0.252
-#define samples 400
+#define samples 1000
 #define calSamples 200
 #define delay 1
 
@@ -92,17 +92,6 @@ int getCalWeight(int player)
         case 1: 
         {
             WSptr.p1cal = 0;
-            PlayerSelect_Select(0);//vælg player1
-            
-//            for (int i = 0; i < samples; i++){
-//            ADC_SAR_1_StartConvert();
-//            CyDelay(delay); //delay indsat, så måling ikke trailer med 1 måling
-//                if (ADC_SAR_1_IsEndConversion(ADC_SAR_1_WAIT_FOR_RESULT)!=0)
-//                {
-//                    WSptr.p1cal += ADC_SAR_1_GetResult16();
-//                }
-//            }
-//            WSptr.p1cal /= samples;
             WSptr.p1cal = getWeight(1);
         
 
@@ -123,19 +112,6 @@ int getCalWeight(int player)
         case 2: 
         { 
             WSptr.p2cal = 0;
-            PlayerSelect_Select(1);//vælg player2
-
-//            for (int i = 0; i < samples; i++){
-//            ADC_SAR_1_StartConvert();
-//            CyDelay(delay); //delay indsat, så måling ikke trailer med 1 måling
-//                if (ADC_SAR_1_IsEndConversion(ADC_SAR_1_WAIT_FOR_RESULT)!=0)
-//                {
-//                    WSptr.p2cal += ADC_SAR_1_GetResult16();
-//                
-//                }
-//            }
-//            WSptr.p2cal /= samples;
-            
             WSptr.p2cal = getWeight(2);
             
             WSptr.p2cal -= (WSptr.CalibrateP2);
@@ -159,18 +135,6 @@ return 0;
 int getWeightLoser(int x)
 {
     WSptr.pLoser = getWeight(x);
-    
-//    PlayerSelect_Select(x-1); //vælg player x-1: p1=1-1=0, p2=2-1=1 (i multiplexer)
-//    
-//        for (int i = 0; i < samples; i++){
-//        ADC_SAR_1_StartConvert();
-//        CyDelay(delay); //delay indsat, så måling ikke trailer med 1 måling
-//            if (ADC_SAR_1_IsEndConversion(ADC_SAR_1_WAIT_FOR_RESULT)!=0)
-//            {
-//                WSptr.pLoser += ADC_SAR_1_GetResult16();
-//            }
-//        }
-//        WSptr.pLoser /= samples;
         
         if(x == 1)
         {
@@ -186,8 +150,8 @@ int getWeightLoser(int x)
         WSptr.pLoser /= mVtoG;
        
         //Debugging-----------------------------
-        sprintf(uart_string, "\r\ndata read from Loser: %u", WSptr.pLoser);     // convert to string
-        UART_1_PutString(uart_string);                                             // output string
+        //sprintf(uart_string, "\r\ndata read from Loser: %u", WSptr.pLoser);     // convert to string
+        //UART_1_PutString(uart_string);                                             // output string
         //--------------------------------------
         return WSptr.pLoser;
         
@@ -237,15 +201,6 @@ void CalibrateSensors()
     
     WSptr.CalibrateP1 = getWeight(1);
     WSptr.CalibrateP2 = getWeight(2);
-    /*
-    for (int i = 0; i < calSamples; i++){                  //Der laves 10 samples for at få en gennemsnitsværdi
-        WSptr.CalibrateP1 += getWeight(1);
-        WSptr.CalibrateP2 += getWeight(2);
-    }
-    
-    WSptr.CalibrateP1 /= calSamples;
-    WSptr.CalibrateP2 /= calSamples;
-    */
 }
 
     //*/
