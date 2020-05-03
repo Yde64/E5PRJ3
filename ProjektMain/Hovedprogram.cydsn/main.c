@@ -35,8 +35,9 @@ WeightSensors  _WSptr = {.p1 = 0, .p2 = 0}; //WeightSensor Pointer
 #define glasvaegtp2 440 //eksempel - skal testes (i gram)
 #define afvigelse 40   // maksimum mængde væske, der må være i glas efter spil (i gram) -  skal testes yderligere
 #define afvigelse2 50 //afvigelse for sikring af tyvstart (ERR_FALSE_START)
+#define afvigelsehys -100
 #define delay 100
-#define nulvaegt -100
+#define nulvaegt -200
 
 
 int glasvaegtWinner = 0;
@@ -199,14 +200,6 @@ int main(void)
             {
                 UARTprint("3", "NSL - CHUG\r\n");
                 
-                //måske skal output logic herop
-                if (chugstart == 0){
-                    while(getCalWeight(1) > nulvaegt && getCalWeight(2) > nulvaegt) 
-                    {
-                        //så længe et glas ikke er løftet, sidder vi fast her
-                    }
-                    chugstart = 1; //sørger for at vi ikke ryger i while-loop igen
-                }
                 if(getCalWeight(1) < nulvaegt) //hvis spiller 1 glas er løftet
                 { 
                     chugp1 = 1;
@@ -267,22 +260,29 @@ int main(void)
             {
                 UARTprint("3", "NSL - EVALUATING_NEW_WEIGHT\r\n");
                 
-                if((getWeightLoser(pLoser) > nulvaegt))
-                {
-                    CyDelay(delay); //vent med at læse til efter inital impact
-                    if (getCalWeight(pLoser) <= afvigelse)
-                    {
-                        NEXT_STATE = LOSER_DONE;
-                    }
-                     else
-                    {
-                        NEXT_STATE = ERR_NOCHUG;
-                    }
+                if (getCalWeight(2) < nulvaegt) //hvis spiller 2 glas er løftet
+                { 
+                    chugp2 = 1;   
                 }
-                else
-                {
-                    NEXT_STATE = EVALUATING_NEW_WEIGHT;
-                }
+                    if(chugp2 == 1)
+                    {
+                        if((getWeightLoser(pLoser) > nulvaegt))
+                        {
+                            CyDelay(delay); //vent med at læse til efter inital impact
+                            if (getCalWeight(pLoser) <= afvigelse)
+                            {
+                                NEXT_STATE = LOSER_DONE;
+                            }
+                             else
+                            {
+                                NEXT_STATE = ERR_NOCHUG;
+                            }
+                        }
+                        else
+                        {
+                            NEXT_STATE = EVALUATING_NEW_WEIGHT;
+                        }
+                    }
                
             }   
             break;
@@ -499,15 +499,18 @@ int main(void)
                             
                             loserSeq(rgbstrip2); // afspiller taber sekvens
                             tidp2 = getTime();
-                            stopLCD(2);
                         }
                         else if (pLoser == 1)
                         {   
                             
                             loserSeq(rgbstrip1); // afspiller taber sekvens
                             tidp1 = getTime();
-                            stopLCD(1);
                         }
+                        
+                        //Send LOG-data
+                        
+                        stopLCD(2);
+                        stopLCD(1);
                         
                     }  
                     break;

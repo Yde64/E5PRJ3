@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ProjektMain\Hovedprogram\Generated_Source">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>ProjektMain</v>
 <v>ProjektMain\Hovedprogram</v>
@@ -45,7 +45,6 @@
 <v>ProjektMain\Hovedprogram\Source Files\LiquidCrystal_I2C.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\main.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\Startknap.c</v>
-<v>ProjektMain\Hovedprogram\Source Files\States.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\Stopur.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\UART.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\VT100Terminal.c</v>
@@ -83,7 +82,6 @@
 <v>ProjektMain\Hovedprogram\Source Files\LiquidCrystal_I2C.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\main.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\Startknap.c</v>
-<v>ProjektMain\Hovedprogram\Source Files\States.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\Stopur.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\UART.c</v>
 <v>ProjektMain\Hovedprogram\Source Files\VT100Terminal.c</v>
@@ -163,7 +161,6 @@
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIMOutCtrl.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIMOutCtrl_PM.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Startknap.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\States.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Stopur.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timeout_timer.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Timeout_timer_PM.lst</v>
