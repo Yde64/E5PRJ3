@@ -17,6 +17,7 @@ static DECLARE_WAIT_QUEUE_HEAD(wq);
 int gpios_len;
 static struct platform_driver led_drv;
 
+
 struct gpio_dev {
   int no;   // GPIO number
   int dir; // 0: in, 1: out
@@ -181,7 +182,7 @@ ssize_t spi_drv_read(struct file *filep, char __user *ubuf,
                      size_t count, loff_t *f_pos)
 {
   int minor, len;
-  char resultBuf[MAXLEN];
+  int resultBuf[MAXLEN];
   s16 result=1234;
 
   minor = iminor(filep->f_inode);
@@ -194,22 +195,16 @@ ssize_t spi_drv_read(struct file *filep, char __user *ubuf,
   //my_spi_read_byte(filep, spi_devs[minor].spi, &(spi_devs[minor].datain));
   //result = spi_devs[minor].datain;
 
-  result = ((50 << 8) + 5); 
+  result = ((120 << 8) + 9);
+  resultBuf[0] = (result >> 8);
+  resultBuf[1] = (result & 255);
 
   if(MODULE_DEBUG)
     printk(KERN_ALERT "%s-%i read: %i\n",
            spi_devs[minor].spi->modalias, spi_devs[minor].channel, result);
 
-  /* Convert integer to string limited to "count" size. Returns
-   * length excluding NULL termination */
-  //len = snprintf(resultBuf, count, "%d\n", result);
-  len = 2;
-  /* Append Length of NULL termination */
-  //len++;
-
-  int buf2[3] = {128, 5, '\0'};
   /* Copy data to user space */
-  if(copy_to_user(ubuf, buf2, 3))
+  if(copy_to_user(ubuf, resultBuf, 16))
     return -EFAULT;
 
   /* Move fileptr */

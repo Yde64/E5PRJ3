@@ -7,6 +7,7 @@
 #include </mnt/c/Users/cring/Documents/GitHub/E5PRJ3/RPIkode/uwebsocketGit/uwebsockets/src/spiMaster.h>
 
 using namespace std;
+spiMaster spi1;
 
 struct Data
 {
@@ -20,18 +21,16 @@ struct Data
         {
           remove("/www/pages/log.txt");
           int fd = open("/www/pages/log.txt", O_WRONLY | O_APPEND | O_CREAT);
-
-
-          
+          spi1.setcount(0);
           close(fd);
+          
           return;
-
-
 
         }
         //std::cout << "Data: " << std::string(message, length) << std::endl;
         //ws->send(message, length, opCode);
   }
+
 
 };
 
@@ -39,6 +38,7 @@ void async(uWS::Hub* h)
 {
   
   for(;;)
+
   {
     sleep(1);
 
@@ -57,15 +57,16 @@ void async(uWS::Hub* h)
 int main()
 {
   uWS::Hub hub;
-  spiMaster spi1;
+
 
   Data d { hub };
   hub.onMessage(d);
   if (hub.listen(3000)) {
     std::thread th(async, &hub);
-    thread th2(&spiMaster::listen,  spiMaster());
+    std::thread th2 (&spiMaster::listen, &spi1);
     hub.run();
     
+
   }
 }
 

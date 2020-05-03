@@ -11,8 +11,9 @@ public:
 spiMaster(int data = 0);
 void listen();
 int getdata();
+void setcount(int count);
 
 private:
 int data_;
-
+int count_;
 };

@@ -25,21 +25,14 @@ void spiMaster::listen()
       read(spi, buf, 3);
       close(spi);
 
-      cout << "Spi buffer[0]: " << buf[0] << endl;
-      cout << "Spi buffer[1]: " << buf[1] << endl;
-      cout << "Spi buffer[3]: " << buf[3] << endl;
-      cout << "Spi buffer[4]: " << buf[4] << endl;
-      cout << "Spi buffer[5]: " << buf[5] << endl;
-      cout << "Spi buffer[6]: " << 128 << endl;
+      sek = buf[0];
+      ms = buf[1];
 
-      sek = buf[0] >> 8;
-      ms = buf[0] & 255;
-      
 
       log = open("/www/pages/log.txt", O_WRONLY | O_APPEND | O_CREAT);
-      sprintf(buf2, "Chug tid: %i:%i\n", sek, ms);
+      sprintf(buf2, "%i:  Chug tid: %is,%i0s\n", count_, sek, ms);
       dprintf(log, buf2, strlen(buf2)); 
-
+      count_++;
       close(log);
 
 
@@ -55,4 +48,8 @@ void spiMaster::listen()
 int spiMaster::getdata()
 {
 return 0;
+}
+void spiMaster::setcount(int count)
+{
+  count_ = count;
 }

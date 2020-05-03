@@ -9,7 +9,7 @@
 # kernel Makefile or not.
 file := index
 # cfile := test
-IP := rpiwifi
+IP := rpi
 
 ifeq ($(KERNELRELEASE),)
 
