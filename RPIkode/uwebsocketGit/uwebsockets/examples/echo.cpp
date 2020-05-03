@@ -24,6 +24,7 @@ struct Data
           spi1.setcount(0);
           close(fd);
           
+
           return;
 
         }
@@ -58,6 +59,12 @@ int main()
 {
   uWS::Hub hub;
 
+  int gpio;
+
+  gpio = open("/dev/mygpio22", O_RDWR);
+  write(gpio, "0", 2);
+  close(gpio);
+  
 
   Data d { hub };
   hub.onMessage(d);

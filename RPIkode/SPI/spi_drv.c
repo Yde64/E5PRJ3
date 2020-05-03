@@ -180,8 +180,8 @@ ssize_t spi_drv_write(struct file *filep, const char __user *ubuf,
 ssize_t spi_drv_read(struct file *filep, char __user *ubuf,
                      size_t count, loff_t *f_pos)
 {
-  int minor, len;
-  char resultBuf[MAXLEN];
+  int minor;
+  int resultBuf[MAXLEN];
   s16 result=1234;
 
   minor = iminor(filep->f_inode);
@@ -194,24 +194,23 @@ ssize_t spi_drv_read(struct file *filep, char __user *ubuf,
   my_spi_read_byte(filep, spi_devs[minor].spi, &(spi_devs[minor].datain));
   result = spi_devs[minor].datain;
 
+  resultBuf[0] = (result >> 8);
+  resultBuf[1] = (result & 255);
+
+  printk("resultbuf0: %i", resultBuf[0]);
+  printk("resultbuf1: %i", resultBuf[1]);
+
   if(MODULE_DEBUG)
     printk(KERN_ALERT "%s-%i read: %i\n",
            spi_devs[minor].spi->modalias, spi_devs[minor].channel, result);
 
-  /* Convert integer to string limited to "count" size. Returns
-   * length excluding NULL termination */
-  len = snprintf(resultBuf, count, "%d\n", result);
-
-  /* Append Length of NULL termination */
-  len++;
-
   /* Copy data to user space */
-  if(copy_to_user(ubuf, resultBuf, len))
+  if(copy_to_user(ubuf, resultBuf, 16))
     return -EFAULT;
 
   /* Move fileptr */
-  *f_pos += len;
-  return len;
+  //*f_pos += len;
+  return 3;
 }
 
 int mygpio_open(struct inode *inode, struct file *filep)

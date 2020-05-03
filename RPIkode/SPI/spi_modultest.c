@@ -209,7 +209,7 @@ ssize_t spi_drv_read(struct file *filep, char __user *ubuf,
 
   /* Move fileptr */
   //*f_pos += len;
-  return 3;
+  return 16;
 }
 
 int mygpio_open(struct inode *inode, struct file *filep)

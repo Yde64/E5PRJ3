@@ -3,7 +3,7 @@ KMODULE := spi_drv
 DTB_FILE := $(KMODULE)-overlay.dtb
 DTBO_FILE := $(KMODULE).dtbo
 KERNELDIR = ~/sources/rpi-4.19.89
-IP := 10.9.8.2
+IP := rpi
 CCPREFIX = arm-poky-linux-gnueabi-
 
 # To build modules outside of the kernel tree, we run "make"
