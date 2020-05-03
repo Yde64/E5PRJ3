@@ -28,7 +28,6 @@ LEDctrl *rgbLED2 = NULL;
 CY_ISR(isr_refreshrate)
 {
     Timer1_Stop();
-    isr_refreshrate_LCD_Disable();
     if (rgbLED1 != NULL)
     {
     UpdateLED(rgbLED1);
@@ -39,7 +38,6 @@ CY_ISR(isr_refreshrate)
     UpdateLED(rgbLED2);
     }
     CyDelayUs(100);
-    isr_refreshrate_LCD_Enable();
     Timer1_Start();
 }
 

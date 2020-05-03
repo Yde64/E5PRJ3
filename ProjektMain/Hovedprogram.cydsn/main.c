@@ -475,6 +475,7 @@ int main(void)
                             tidp2 = getTime()/100; 
                             stopLCD(2); //hvis spiller 2 taber, stoppes LCD ved spiller 1
                             dispTime(2, tidp2);
+                            
                             winnerSeq(rgbstrip1); // afspiller vinder sekvens
                         }
                         else if (pLoser == 2)
