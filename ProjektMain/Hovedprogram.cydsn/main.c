@@ -218,7 +218,7 @@ int main(void)
                                 NEXT_STATE = WINNER_DONE; 
                                         
                             }
-                            else if(timeout() == 1)
+                            else if((getTime()/100) >= 1200)
                             {
                                 NEXT_STATE = ERR_TIMEOUT;
                             }
@@ -241,7 +241,7 @@ int main(void)
                                 glasvaegtLoser = glasvaegtp1;
                                 NEXT_STATE = WINNER_DONE;
                             }
-                            else if(timeout() == 1)
+                            else if((getTime()/100) >= 1200)
                             {
                                 NEXT_STATE = ERR_TIMEOUT;
                             }
@@ -474,12 +474,14 @@ int main(void)
                         {
                             tidp2 = getTime()/100; 
                             stopLCD(2); //hvis spiller 2 taber, stoppes LCD ved spiller 1
+                            dispTime(2, tidp2);
                             winnerSeq(rgbstrip1); // afspiller vinder sekvens
                         }
                         else if (pLoser == 2)
                         {
                             tidp1 = getTime()/100;
                             stopLCD(1);
+                            dispTime(1, tidp1);
                             winnerSeq(rgbstrip2); // afspiller vinder sekvens
                         }
                         
@@ -500,15 +502,17 @@ int main(void)
                         {
                             
                             loserSeq(rgbstrip2); // afspiller taber sekvens
-                            stopLCD(2);
                             tidp2 = getTime()/100;
+                            stopLCD(2);
+                            dispTime(2, tidp2);
                         }
                         else if (pLoser == 1)
                         {   
                             
                             loserSeq(rgbstrip1); // afspiller taber sekvens
-                            stopLCD(1);
                             tidp1 = getTime()/100;
+                            stopLCD(1);
+                            dispTime(1, tidp1);
                         }
                         
                         int sek;
@@ -563,8 +567,6 @@ int main(void)
                     {               
                         stopTimer();
                         clearTimer();
-                        LEDOff(rgbstrip1);
-                        LEDOff(rgbstrip2);
                         errorSeq(rgbstrip1);
                         errorSeq(rgbstrip2);
                         
@@ -577,12 +579,10 @@ int main(void)
                     {
                         if (pErr == 1)
                         {
-                            LEDOff(rgbstrip1);
                             errorSeq(rgbstrip1);
                         }
                         else if (pErr == 2)
                         {
-                            LEDOff(rgbstrip2);
                             errorSeq(rgbstrip2);
                         }
                         clearTimer();
@@ -593,8 +593,6 @@ int main(void)
                     
                     case ERR_TIMEOUT:
                     {
-                        LEDOff(rgbstrip1);
-                        LEDOff(rgbstrip2);
                         errorSeq(rgbstrip1);
                         errorSeq(rgbstrip2);
                         
@@ -610,12 +608,10 @@ int main(void)
                         
                         if (pErr == 1)
                         {
-                            LEDOff(rgbstrip1);
                             errorSeq(rgbstrip1);
                         }
                         else if (pErr == 2)
                         {
-                            LEDOff(rgbstrip2);
                             errorSeq(rgbstrip2);
                         }
                     }    

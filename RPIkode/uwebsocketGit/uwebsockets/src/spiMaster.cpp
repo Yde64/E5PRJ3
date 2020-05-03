@@ -22,15 +22,19 @@ void spiMaster::listen()
     if (buf[0] == 1)
     {
       spi = open("/dev/SPI_0", O_RDONLY);
+      sleep(0.1);
       read(spi, buf, 3);
       close(spi);
 
       sek = buf[0];
       ms = buf[1];
 
+      cout << "sek: " << sek << endl;
+      cout << "ms: " << ms << endl;
+
 
       log = open("/www/pages/log.txt", O_WRONLY | O_APPEND | O_CREAT);
-      sprintf(buf2, "%i:  Chug tid: %is,%i0s\n", count_, sek, ms);
+      sprintf(buf2, "%i:  Chug tid: %is,%i0ms\n", count_, sek, ms);
       dprintf(log, buf2, strlen(buf2)); 
       count_++;
       close(log);
