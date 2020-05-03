@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
   28:Generated_Source\PSoC5/Timer_LCD_PM.c **** * Summary:
   29:Generated_Source\PSoC5/Timer_LCD_PM.c **** *     Save the current user configuration
   30:Generated_Source\PSoC5/Timer_LCD_PM.c **** *
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 2
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 2
 
 
   31:Generated_Source\PSoC5/Timer_LCD_PM.c **** * Parameters:
@@ -110,7 +110,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
   51              		.align	2
   52              	.L3:
   53 0018 00000000 		.word	.LANCHOR0
-  54 001c 81640040 		.word	1073767553
+  54 001c 8B640040 		.word	1073767563
   55              		.cfi_endproc
   56              	.LFE0:
   57              		.size	Timer_LCD_SaveConfig, .-Timer_LCD_SaveConfig
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
   59              		.align	2
   60              		.global	Timer_LCD_RestoreConfig
   61              		.thumb
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 3
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 3
 
 
   62              		.thumb_func
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
   87:Generated_Source\PSoC5/Timer_LCD_PM.c ****         #if(!Timer_LCD_UDB_CONTROL_REG_REMOVED)
   88:Generated_Source\PSoC5/Timer_LCD_PM.c ****             Timer_LCD_WriteControlRegister(Timer_LCD_backup.TimerControlRegister);
   83              		.loc 1 88 0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 4
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 4
 
 
   84 0010 6079     		ldrb	r0, [r4, #5]	@ zero_extendqisi2
@@ -189,7 +189,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
   89              		.align	2
   90              	.L7:
   91 0018 00000000 		.word	.LANCHOR0
-  92 001c 81640040 		.word	1073767553
+  92 001c 8B640040 		.word	1073767563
   93              		.cfi_endproc
   94              	.LFE1:
   95              		.size	Timer_LCD_RestoreConfig, .-Timer_LCD_RestoreConfig
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  115:Generated_Source\PSoC5/Timer_LCD_PM.c ****         /* Save Counter's enable state */
  116:Generated_Source\PSoC5/Timer_LCD_PM.c ****         if(Timer_LCD_CTRL_ENABLE == (Timer_LCD_CONTROL & Timer_LCD_CTRL_ENABLE))
  112              		.loc 1 116 0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 5
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 5
 
 
  113 0002 084B     		ldr	r3, .L13
@@ -278,7 +278,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  135              	.L14:
  136              		.align	2
  137              	.L13:
- 138 0024 70640040 		.word	1073767536
+ 138 0024 7B640040 		.word	1073767547
  139 0028 00000000 		.word	.LANCHOR0
  140              		.cfi_endproc
  141              	.LFE2:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  133:Generated_Source\PSoC5/Timer_LCD_PM.c **** * Function Name: Timer_LCD_Wakeup
  134:Generated_Source\PSoC5/Timer_LCD_PM.c **** ********************************************************************************
  135:Generated_Source\PSoC5/Timer_LCD_PM.c **** *
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 6
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 6
 
 
  136:Generated_Source\PSoC5/Timer_LCD_PM.c **** * Summary:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  184              	Timer_LCD_backup:
  185 0000 00000000 		.space	6
  185      0000
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 7
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 7
 
 
  186              		.text
@@ -372,45 +372,45 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  194 0006 00000000 		.4byte	.Ldebug_abbrev0
  195 000a 04       		.byte	0x4
  196 000b 01       		.uleb128 0x1
- 197 000c 24010000 		.4byte	.LASF32
+ 197 000c BE000000 		.4byte	.LASF32
  198 0010 0C       		.byte	0xc
- 199 0011 BF000000 		.4byte	.LASF33
- 200 0015 30000000 		.4byte	.LASF34
+ 199 0011 59000000 		.4byte	.LASF33
+ 200 0015 87010000 		.4byte	.LASF34
  201 0019 00000000 		.4byte	.Ldebug_ranges0+0
  202 001d 00000000 		.4byte	0
  203 0021 00000000 		.4byte	.Ldebug_line0
  204 0025 02       		.uleb128 0x2
  205 0026 01       		.byte	0x1
  206 0027 06       		.byte	0x6
- 207 0028 E5020000 		.4byte	.LASF0
+ 207 0028 C5020000 		.4byte	.LASF0
  208 002c 02       		.uleb128 0x2
  209 002d 01       		.byte	0x1
  210 002e 08       		.byte	0x8
- 211 002f 16010000 		.4byte	.LASF1
+ 211 002f B0000000 		.4byte	.LASF1
  212 0033 02       		.uleb128 0x2
  213 0034 02       		.byte	0x2
  214 0035 05       		.byte	0x5
- 215 0036 71020000 		.4byte	.LASF2
+ 215 0036 51020000 		.4byte	.LASF2
  216 003a 02       		.uleb128 0x2
  217 003b 02       		.byte	0x2
  218 003c 07       		.byte	0x7
- 219 003d 96000000 		.4byte	.LASF3
+ 219 003d 30000000 		.4byte	.LASF3
  220 0041 02       		.uleb128 0x2
  221 0042 04       		.byte	0x4
  222 0043 05       		.byte	0x5
- 223 0044 C1020000 		.4byte	.LASF4
+ 223 0044 A1020000 		.4byte	.LASF4
  224 0048 02       		.uleb128 0x2
  225 0049 04       		.byte	0x4
  226 004a 07       		.byte	0x7
- 227 004b B7010000 		.4byte	.LASF5
+ 227 004b 51010000 		.4byte	.LASF5
  228 004f 02       		.uleb128 0x2
  229 0050 08       		.byte	0x8
  230 0051 05       		.byte	0x5
- 231 0052 39020000 		.4byte	.LASF6
+ 231 0052 19020000 		.4byte	.LASF6
  232 0056 02       		.uleb128 0x2
  233 0057 08       		.byte	0x8
  234 0058 07       		.byte	0x7
- 235 0059 19020000 		.4byte	.LASF7
+ 235 0059 F9010000 		.4byte	.LASF7
  236 005d 03       		.uleb128 0x3
  237 005e 04       		.byte	0x4
  238 005f 05       		.byte	0x5
@@ -418,34 +418,34 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  240 0064 02       		.uleb128 0x2
  241 0065 04       		.byte	0x4
  242 0066 07       		.byte	0x7
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 8
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 8
 
 
- 243 0067 F4010000 		.4byte	.LASF8
+ 243 0067 D4010000 		.4byte	.LASF8
  244 006b 04       		.uleb128 0x4
- 245 006c C9010000 		.4byte	.LASF9
+ 245 006c 63010000 		.4byte	.LASF9
  246 0070 02       		.byte	0x2
  247 0071 E401     		.2byte	0x1e4
  248 0073 2C000000 		.4byte	0x2c
  249 0077 04       		.uleb128 0x4
- 250 0078 ED010000 		.4byte	.LASF10
+ 250 0078 CD010000 		.4byte	.LASF10
  251 007c 02       		.byte	0x2
  252 007d E501     		.2byte	0x1e5
  253 007f 3A000000 		.4byte	0x3a
  254 0083 02       		.uleb128 0x2
  255 0084 04       		.byte	0x4
  256 0085 04       		.byte	0x4
- 257 0086 10010000 		.4byte	.LASF11
+ 257 0086 AA000000 		.4byte	.LASF11
  258 008a 02       		.uleb128 0x2
  259 008b 08       		.byte	0x8
  260 008c 04       		.byte	0x4
- 261 008d CF010000 		.4byte	.LASF12
+ 261 008d 80010000 		.4byte	.LASF12
  262 0091 02       		.uleb128 0x2
  263 0092 01       		.byte	0x1
  264 0093 08       		.byte	0x8
- 265 0094 47020000 		.4byte	.LASF13
+ 265 0094 27020000 		.4byte	.LASF13
  266 0098 04       		.uleb128 0x4
- 267 0099 B2010000 		.4byte	.LASF14
+ 267 0099 4C010000 		.4byte	.LASF14
  268 009d 02       		.byte	0x2
  269 009e 8E02     		.2byte	0x28e
  270 00a0 A4000000 		.4byte	0xa4
@@ -454,11 +454,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  273 00a9 02       		.uleb128 0x2
  274 00aa 08       		.byte	0x8
  275 00ab 04       		.byte	0x4
- 276 00ac CA020000 		.4byte	.LASF15
+ 276 00ac AA020000 		.4byte	.LASF15
  277 00b0 02       		.uleb128 0x2
  278 00b1 04       		.byte	0x4
  279 00b2 07       		.byte	0x7
- 280 00b3 30020000 		.4byte	.LASF16
+ 280 00b3 10020000 		.4byte	.LASF16
  281 00b7 06       		.uleb128 0x6
  282 00b8 06       		.byte	0x6
  283 00b9 03       		.byte	0x3
@@ -471,14 +471,14 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  290 00c6 6B000000 		.4byte	0x6b
  291 00ca 00       		.byte	0
  292 00cb 07       		.uleb128 0x7
- 293 00cc E5000000 		.4byte	.LASF18
+ 293 00cc 7F000000 		.4byte	.LASF18
  294 00d0 03       		.byte	0x3
  295 00d1 48       		.byte	0x48
  296 00d2 77000000 		.4byte	0x77
  297 00d6 02       		.byte	0x2
  298 00d7 07       		.uleb128 0x7
- 299 00d8 F1020000 		.4byte	.LASF19
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 9
+ 299 00d8 D1020000 		.4byte	.LASF19
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 9
 
 
  300 00dc 03       		.byte	0x3
@@ -486,19 +486,19 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  302 00de 6B000000 		.4byte	0x6b
  303 00e2 04       		.byte	0x4
  304 00e3 07       		.uleb128 0x7
- 305 00e4 04030000 		.4byte	.LASF20
+ 305 00e4 E4020000 		.4byte	.LASF20
  306 00e8 03       		.byte	0x3
  307 00e9 4F       		.byte	0x4f
  308 00ea 6B000000 		.4byte	0x6b
  309 00ee 05       		.byte	0x5
  310 00ef 00       		.byte	0
  311 00f0 08       		.uleb128 0x8
- 312 00f1 D6010000 		.4byte	.LASF21
+ 312 00f1 69010000 		.4byte	.LASF21
  313 00f5 03       		.byte	0x3
  314 00f6 53       		.byte	0x53
  315 00f7 B7000000 		.4byte	0xb7
  316 00fb 09       		.uleb128 0x9
- 317 00fc 5C020000 		.4byte	.LASF22
+ 317 00fc 3C020000 		.4byte	.LASF22
  318 0100 01       		.byte	0x1
  319 0101 2B       		.byte	0x2b
  320 0102 00000000 		.4byte	.LFB0
@@ -514,7 +514,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  330 011e B7010000 		.4byte	0x1b7
  331 0122 00       		.byte	0
  332 0123 09       		.uleb128 0x9
- 333 0124 01020000 		.4byte	.LASF23
+ 333 0124 E1010000 		.4byte	.LASF23
  334 0128 01       		.byte	0x1
  335 0129 4D       		.byte	0x4d
  336 012a 00000000 		.4byte	.LFB1
@@ -530,7 +530,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  346 0146 CD010000 		.4byte	0x1cd
  347 014a 00       		.byte	0
  348 014b 09       		.uleb128 0x9
- 349 014c 4C020000 		.4byte	.LASF24
+ 349 014c 2C020000 		.4byte	.LASF24
  350 0150 01       		.byte	0x1
  351 0151 70       		.byte	0x70
  352 0152 00000000 		.4byte	.LFB2
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  354 015a 01       		.uleb128 0x1
  355 015b 9C       		.byte	0x9c
  356 015c 73010000 		.4byte	0x173
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 10
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 10
 
 
  357 0160 0A       		.uleb128 0xa
@@ -549,7 +549,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  362 016e FB000000 		.4byte	0xfb
  363 0172 00       		.byte	0
  364 0173 09       		.uleb128 0x9
- 365 0174 7B020000 		.4byte	.LASF25
+ 365 0174 5B020000 		.4byte	.LASF25
  366 0178 01       		.byte	0x1
  367 0179 96       		.byte	0x96
  368 017a 00000000 		.4byte	.LFB3
@@ -565,7 +565,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  378 0196 E3010000 		.4byte	0x1e3
  379 019a 00       		.byte	0
  380 019b 0B       		.uleb128 0xb
- 381 019c EE000000 		.4byte	.LASF35
+ 381 019c 88000000 		.4byte	.LASF35
  382 01a0 01       		.byte	0x1
  383 01a1 15       		.byte	0x15
  384 01a2 F0000000 		.4byte	0xf0
@@ -573,18 +573,18 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  386 01a7 03       		.byte	0x3
  387 01a8 00000000 		.4byte	Timer_LCD_backup
  388 01ac 0C       		.uleb128 0xc
- 389 01ad A9000000 		.4byte	.LASF26
- 390 01b1 A9000000 		.4byte	.LASF26
+ 389 01ad 43000000 		.4byte	.LASF26
+ 390 01b1 43000000 		.4byte	.LASF26
  391 01b5 03       		.byte	0x3
  392 01b6 69       		.byte	0x69
  393 01b7 0C       		.uleb128 0xc
- 394 01b8 8C020000 		.4byte	.LASF27
- 395 01bc 8C020000 		.4byte	.LASF27
+ 394 01b8 6C020000 		.4byte	.LASF27
+ 395 01bc 6C020000 		.4byte	.LASF27
  396 01c0 03       		.byte	0x3
  397 01c1 63       		.byte	0x63
  398 01c2 0C       		.uleb128 0xc
- 399 01c3 AA020000 		.4byte	.LASF28
- 400 01c7 AA020000 		.4byte	.LASF28
+ 399 01c3 8A020000 		.4byte	.LASF28
+ 400 01c7 8A020000 		.4byte	.LASF28
  401 01cb 03       		.byte	0x3
  402 01cc 6A       		.byte	0x6a
  403 01cd 0C       		.uleb128 0xc
@@ -593,16 +593,16 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  406 01d6 03       		.byte	0x3
  407 01d7 64       		.byte	0x64
  408 01d8 0C       		.uleb128 0xc
- 409 01d9 D6020000 		.4byte	.LASF30
- 410 01dd D6020000 		.4byte	.LASF30
+ 409 01d9 B6020000 		.4byte	.LASF30
+ 410 01dd B6020000 		.4byte	.LASF30
  411 01e1 03       		.byte	0x3
  412 01e2 5B       		.byte	0x5b
  413 01e3 0C       		.uleb128 0xc
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 11
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 11
 
 
- 414 01e4 FF000000 		.4byte	.LASF31
- 415 01e8 FF000000 		.4byte	.LASF31
+ 414 01e4 99000000 		.4byte	.LASF31
+ 415 01e8 99000000 		.4byte	.LASF31
  416 01ec 03       		.byte	0x3
  417 01ed 8B       		.byte	0x8b
  418 01ee 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  468 002f 0B       		.uleb128 0xb
  469 0030 3B       		.uleb128 0x3b
  470 0031 05       		.uleb128 0x5
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 12
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 12
 
 
  471 0032 49       		.uleb128 0x49
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  525 0068 01       		.byte	0x1
  526 0069 3F       		.uleb128 0x3f
  527 006a 19       		.uleb128 0x19
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 13
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 13
 
 
  528 006b 03       		.uleb128 0x3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  582 00a4 0E       		.uleb128 0xe
  583 00a5 3A       		.uleb128 0x3a
  584 00a6 0B       		.uleb128 0xb
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 14
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 14
 
 
  585 00a7 3B       		.uleb128 0x3b
@@ -835,203 +835,200 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 1
  626      445F5772 
  626      69746543 
  626      6F6E7472 
- 627              	.LASF34:
- 628 0030 433A5C55 		.ascii	"C:\\Users\\cring\\OneDrive - Aarhus Universitet\\Un"
- 628      73657273 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 15
+ 627              	.LASF3:
+ 628 0030 73686F72 		.ascii	"short unsigned int\000"
+ 628      7420756E 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 15
 
 
- 628      5C637269 
- 628      6E675C4F 
- 628      6E654472 
- 629 005f 695C332E 		.ascii	"i\\3. Semester\\PRJ3\\KODE\\ProjektMain\\Hovedprogr"
- 629      2053656D 
- 629      65737465 
- 629      725C5052 
- 629      4A335C4B 
- 630 008d 616D2E63 		.ascii	"am.cydsn\000"
- 630      7964736E 
- 630      00
- 631              	.LASF3:
- 632 0096 73686F72 		.ascii	"short unsigned int\000"
- 632      7420756E 
- 632      7369676E 
- 632      65642069 
- 632      6E7400
- 633              	.LASF26:
- 634 00a9 54696D65 		.ascii	"Timer_LCD_ReadCounter\000"
- 634      725F4C43 
- 634      445F5265 
- 634      6164436F 
- 634      756E7465 
- 635              	.LASF33:
- 636 00bf 47656E65 		.ascii	"Generated_Source\\PSoC5\\Timer_LCD_PM.c\000"
- 636      72617465 
- 636      645F536F 
- 636      75726365 
- 636      5C50536F 
- 637              	.LASF18:
- 638 00e5 54696D65 		.ascii	"TimerUdb\000"
- 638      72556462 
+ 628      7369676E 
+ 628      65642069 
+ 628      6E7400
+ 629              	.LASF26:
+ 630 0043 54696D65 		.ascii	"Timer_LCD_ReadCounter\000"
+ 630      725F4C43 
+ 630      445F5265 
+ 630      6164436F 
+ 630      756E7465 
+ 631              	.LASF33:
+ 632 0059 47656E65 		.ascii	"Generated_Source\\PSoC5\\Timer_LCD_PM.c\000"
+ 632      72617465 
+ 632      645F536F 
+ 632      75726365 
+ 632      5C50536F 
+ 633              	.LASF18:
+ 634 007f 54696D65 		.ascii	"TimerUdb\000"
+ 634      72556462 
+ 634      00
+ 635              	.LASF35:
+ 636 0088 54696D65 		.ascii	"Timer_LCD_backup\000"
+ 636      725F4C43 
+ 636      445F6261 
+ 636      636B7570 
+ 636      00
+ 637              	.LASF31:
+ 638 0099 54696D65 		.ascii	"Timer_LCD_Enable\000"
+ 638      725F4C43 
+ 638      445F456E 
+ 638      61626C65 
  638      00
- 639              	.LASF35:
- 640 00ee 54696D65 		.ascii	"Timer_LCD_backup\000"
- 640      725F4C43 
- 640      445F6261 
- 640      636B7570 
- 640      00
- 641              	.LASF31:
- 642 00ff 54696D65 		.ascii	"Timer_LCD_Enable\000"
- 642      725F4C43 
- 642      445F456E 
- 642      61626C65 
- 642      00
- 643              	.LASF11:
- 644 0110 666C6F61 		.ascii	"float\000"
- 644      7400
- 645              	.LASF1:
- 646 0116 756E7369 		.ascii	"unsigned char\000"
- 646      676E6564 
- 646      20636861 
- 646      7200
- 647              	.LASF32:
- 648 0124 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 648      43313120 
- 648      352E342E 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 16
+ 639              	.LASF11:
+ 640 00aa 666C6F61 		.ascii	"float\000"
+ 640      7400
+ 641              	.LASF1:
+ 642 00b0 756E7369 		.ascii	"unsigned char\000"
+ 642      676E6564 
+ 642      20636861 
+ 642      7200
+ 643              	.LASF32:
+ 644 00be 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 644      43313120 
+ 644      352E342E 
+ 644      31203230 
+ 644      31363036 
+ 645 00f1 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 645      20726576 
+ 645      6973696F 
+ 645      6E203233 
+ 645      37373135 
+ 646 0124 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 646      66756E63 
+ 646      74696F6E 
+ 646      2D736563 
+ 646      74696F6E 
+ 647              	.LASF14:
+ 648 014c 72656738 		.ascii	"reg8\000"
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 16
 
 
- 648      31203230 
- 648      31363036 
- 649 0157 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 649      20726576 
- 649      6973696F 
- 649      6E203233 
- 649      37373135 
- 650 018a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 650      66756E63 
- 650      74696F6E 
- 650      2D736563 
- 650      74696F6E 
- 651              	.LASF14:
- 652 01b2 72656738 		.ascii	"reg8\000"
- 652      00
- 653              	.LASF5:
- 654 01b7 6C6F6E67 		.ascii	"long unsigned int\000"
- 654      20756E73 
- 654      69676E65 
- 654      6420696E 
- 654      7400
- 655              	.LASF9:
- 656 01c9 75696E74 		.ascii	"uint8\000"
- 656      3800
- 657              	.LASF12:
- 658 01cf 646F7562 		.ascii	"double\000"
- 658      6C6500
- 659              	.LASF21:
- 660 01d6 54696D65 		.ascii	"Timer_LCD_backupStruct\000"
- 660      725F4C43 
- 660      445F6261 
- 660      636B7570 
- 660      53747275 
- 661              	.LASF10:
- 662 01ed 75696E74 		.ascii	"uint16\000"
- 662      313600
- 663              	.LASF8:
- 664 01f4 756E7369 		.ascii	"unsigned int\000"
- 664      676E6564 
- 664      20696E74 
- 664      00
- 665              	.LASF23:
- 666 0201 54696D65 		.ascii	"Timer_LCD_RestoreConfig\000"
- 666      725F4C43 
- 666      445F5265 
- 666      73746F72 
- 666      65436F6E 
- 667              	.LASF7:
- 668 0219 6C6F6E67 		.ascii	"long long unsigned int\000"
- 668      206C6F6E 
- 668      6720756E 
- 668      7369676E 
- 668      65642069 
- 669              	.LASF16:
- 670 0230 73697A65 		.ascii	"sizetype\000"
- 670      74797065 
- 670      00
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 17
+ 648      00
+ 649              	.LASF5:
+ 650 0151 6C6F6E67 		.ascii	"long unsigned int\000"
+ 650      20756E73 
+ 650      69676E65 
+ 650      6420696E 
+ 650      7400
+ 651              	.LASF9:
+ 652 0163 75696E74 		.ascii	"uint8\000"
+ 652      3800
+ 653              	.LASF21:
+ 654 0169 54696D65 		.ascii	"Timer_LCD_backupStruct\000"
+ 654      725F4C43 
+ 654      445F6261 
+ 654      636B7570 
+ 654      53747275 
+ 655              	.LASF12:
+ 656 0180 646F7562 		.ascii	"double\000"
+ 656      6C6500
+ 657              	.LASF34:
+ 658 0187 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\E5PRJ3\\Projek"
+ 658      73657273 
+ 658      5C637269 
+ 658      6E675C44 
+ 658      6F63756D 
+ 659 01b4 744D6169 		.ascii	"tMain\\Hovedprogram.cydsn\000"
+ 659      6E5C486F 
+ 659      76656470 
+ 659      726F6772 
+ 659      616D2E63 
+ 660              	.LASF10:
+ 661 01cd 75696E74 		.ascii	"uint16\000"
+ 661      313600
+ 662              	.LASF8:
+ 663 01d4 756E7369 		.ascii	"unsigned int\000"
+ 663      676E6564 
+ 663      20696E74 
+ 663      00
+ 664              	.LASF23:
+ 665 01e1 54696D65 		.ascii	"Timer_LCD_RestoreConfig\000"
+ 665      725F4C43 
+ 665      445F5265 
+ 665      73746F72 
+ 665      65436F6E 
+ 666              	.LASF7:
+ 667 01f9 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 667      206C6F6E 
+ 667      6720756E 
+ 667      7369676E 
+ 667      65642069 
+ 668              	.LASF16:
+ 669 0210 73697A65 		.ascii	"sizetype\000"
+ 669      74797065 
+ 669      00
+ 670              	.LASF6:
+ 671 0219 6C6F6E67 		.ascii	"long long int\000"
+ 671      206C6F6E 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 17
 
 
- 671              	.LASF6:
- 672 0239 6C6F6E67 		.ascii	"long long int\000"
- 672      206C6F6E 
- 672      6720696E 
- 672      7400
- 673              	.LASF13:
- 674 0247 63686172 		.ascii	"char\000"
- 674      00
- 675              	.LASF24:
- 676 024c 54696D65 		.ascii	"Timer_LCD_Sleep\000"
- 676      725F4C43 
- 676      445F536C 
- 676      65657000 
- 677              	.LASF22:
- 678 025c 54696D65 		.ascii	"Timer_LCD_SaveConfig\000"
- 678      725F4C43 
- 678      445F5361 
- 678      7665436F 
- 678      6E666967 
- 679              	.LASF2:
- 680 0271 73686F72 		.ascii	"short int\000"
- 680      7420696E 
- 680      7400
- 681              	.LASF25:
- 682 027b 54696D65 		.ascii	"Timer_LCD_Wakeup\000"
- 682      725F4C43 
- 682      445F5761 
- 682      6B657570 
- 682      00
- 683              	.LASF27:
- 684 028c 54696D65 		.ascii	"Timer_LCD_ReadControlRegister\000"
- 684      725F4C43 
- 684      445F5265 
- 684      6164436F 
- 684      6E74726F 
- 685              	.LASF28:
- 686 02aa 54696D65 		.ascii	"Timer_LCD_WriteCounter\000"
- 686      725F4C43 
- 686      445F5772 
- 686      69746543 
- 686      6F756E74 
- 687              	.LASF4:
- 688 02c1 6C6F6E67 		.ascii	"long int\000"
- 688      20696E74 
- 688      00
- 689              	.LASF15:
- 690 02ca 6C6F6E67 		.ascii	"long double\000"
- 690      20646F75 
- 690      626C6500 
- 691              	.LASF30:
- 692 02d6 54696D65 		.ascii	"Timer_LCD_Stop\000"
- 692      725F4C43 
- 692      445F5374 
- 692      6F7000
- 693              	.LASF0:
- 694 02e5 7369676E 		.ascii	"signed char\000"
- 694      65642063 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccR5Y4UD.s 			page 18
+ 671      6720696E 
+ 671      7400
+ 672              	.LASF13:
+ 673 0227 63686172 		.ascii	"char\000"
+ 673      00
+ 674              	.LASF24:
+ 675 022c 54696D65 		.ascii	"Timer_LCD_Sleep\000"
+ 675      725F4C43 
+ 675      445F536C 
+ 675      65657000 
+ 676              	.LASF22:
+ 677 023c 54696D65 		.ascii	"Timer_LCD_SaveConfig\000"
+ 677      725F4C43 
+ 677      445F5361 
+ 677      7665436F 
+ 677      6E666967 
+ 678              	.LASF2:
+ 679 0251 73686F72 		.ascii	"short int\000"
+ 679      7420696E 
+ 679      7400
+ 680              	.LASF25:
+ 681 025b 54696D65 		.ascii	"Timer_LCD_Wakeup\000"
+ 681      725F4C43 
+ 681      445F5761 
+ 681      6B657570 
+ 681      00
+ 682              	.LASF27:
+ 683 026c 54696D65 		.ascii	"Timer_LCD_ReadControlRegister\000"
+ 683      725F4C43 
+ 683      445F5265 
+ 683      6164436F 
+ 683      6E74726F 
+ 684              	.LASF28:
+ 685 028a 54696D65 		.ascii	"Timer_LCD_WriteCounter\000"
+ 685      725F4C43 
+ 685      445F5772 
+ 685      69746543 
+ 685      6F756E74 
+ 686              	.LASF4:
+ 687 02a1 6C6F6E67 		.ascii	"long int\000"
+ 687      20696E74 
+ 687      00
+ 688              	.LASF15:
+ 689 02aa 6C6F6E67 		.ascii	"long double\000"
+ 689      20646F75 
+ 689      626C6500 
+ 690              	.LASF30:
+ 691 02b6 54696D65 		.ascii	"Timer_LCD_Stop\000"
+ 691      725F4C43 
+ 691      445F5374 
+ 691      6F7000
+ 692              	.LASF0:
+ 693 02c5 7369676E 		.ascii	"signed char\000"
+ 693      65642063 
+ 693      68617200 
+ 694              	.LASF19:
+ 695 02d1 496E7465 		.ascii	"InterruptMaskValue\000"
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyvds7j.s 			page 18
 
 
- 694      68617200 
- 695              	.LASF19:
- 696 02f1 496E7465 		.ascii	"InterruptMaskValue\000"
- 696      72727570 
- 696      744D6173 
- 696      6B56616C 
- 696      756500
- 697              	.LASF20:
- 698 0304 54696D65 		.ascii	"TimerControlRegister\000"
- 698      72436F6E 
- 698      74726F6C 
- 698      52656769 
- 698      73746572 
- 699              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 695      72727570 
+ 695      744D6173 
+ 695      6B56616C 
+ 695      756500
+ 696              	.LASF20:
+ 697 02e4 54696D65 		.ascii	"TimerControlRegister\000"
+ 697      72436F6E 
+ 697      74726F6C 
+ 697      52656769 
+ 697      73746572 
+ 698              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

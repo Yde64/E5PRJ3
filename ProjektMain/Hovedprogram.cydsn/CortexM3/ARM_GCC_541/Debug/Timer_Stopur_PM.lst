@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
   28:Generated_Source\PSoC5/Timer_Stopur_PM.c **** * Summary:
   29:Generated_Source\PSoC5/Timer_Stopur_PM.c **** *     Save the current user configuration
   30:Generated_Source\PSoC5/Timer_Stopur_PM.c **** *
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 2
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 2
 
 
   31:Generated_Source\PSoC5/Timer_Stopur_PM.c **** * Parameters:
@@ -110,7 +110,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
   51              		.align	2
   52              	.L3:
   53 0018 00000000 		.word	.LANCHOR0
-  54 001c 83640040 		.word	1073767555
+  54 001c 8D640040 		.word	1073767565
   55              		.cfi_endproc
   56              	.LFE0:
   57              		.size	Timer_Stopur_SaveConfig, .-Timer_Stopur_SaveConfig
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
   59              		.align	2
   60              		.global	Timer_Stopur_RestoreConfig
   61              		.thumb
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 3
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 3
 
 
   62              		.thumb_func
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
   87:Generated_Source\PSoC5/Timer_Stopur_PM.c ****         #if(!Timer_Stopur_UDB_CONTROL_REG_REMOVED)
   88:Generated_Source\PSoC5/Timer_Stopur_PM.c ****             Timer_Stopur_WriteControlRegister(Timer_Stopur_backup.TimerControlRegister);
   83              		.loc 1 88 0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 4
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 4
 
 
   84 0010 6079     		ldrb	r0, [r4, #5]	@ zero_extendqisi2
@@ -189,7 +189,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
   89              		.align	2
   90              	.L7:
   91 0018 00000000 		.word	.LANCHOR0
-  92 001c 83640040 		.word	1073767555
+  92 001c 8D640040 		.word	1073767565
   93              		.cfi_endproc
   94              	.LFE1:
   95              		.size	Timer_Stopur_RestoreConfig, .-Timer_Stopur_RestoreConfig
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  115:Generated_Source\PSoC5/Timer_Stopur_PM.c ****         /* Save Counter's enable state */
  116:Generated_Source\PSoC5/Timer_Stopur_PM.c ****         if(Timer_Stopur_CTRL_ENABLE == (Timer_Stopur_CONTROL & Timer_Stopur_CTRL_ENABLE))
  112              		.loc 1 116 0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 5
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 5
 
 
  113 0002 084B     		ldr	r3, .L13
@@ -278,7 +278,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  135              	.L14:
  136              		.align	2
  137              	.L13:
- 138 0024 73640040 		.word	1073767539
+ 138 0024 7A640040 		.word	1073767546
  139 0028 00000000 		.word	.LANCHOR0
  140              		.cfi_endproc
  141              	.LFE2:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  133:Generated_Source\PSoC5/Timer_Stopur_PM.c **** * Function Name: Timer_Stopur_Wakeup
  134:Generated_Source\PSoC5/Timer_Stopur_PM.c **** ********************************************************************************
  135:Generated_Source\PSoC5/Timer_Stopur_PM.c **** *
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 6
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 6
 
 
  136:Generated_Source\PSoC5/Timer_Stopur_PM.c **** * Summary:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  184              	Timer_Stopur_backup:
  185 0000 00000000 		.space	6
  185      0000
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 7
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 7
 
 
  186              		.text
@@ -372,45 +372,45 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  194 0006 00000000 		.4byte	.Ldebug_abbrev0
  195 000a 04       		.byte	0x4
  196 000b 01       		.uleb128 0x1
- 197 000c 1C010000 		.4byte	.LASF32
+ 197 000c B6000000 		.4byte	.LASF32
  198 0010 0C       		.byte	0xc
- 199 0011 E5000000 		.4byte	.LASF33
- 200 0015 3D000000 		.4byte	.LASF34
+ 199 0011 7F000000 		.4byte	.LASF33
+ 200 0015 A7010000 		.4byte	.LASF34
  201 0019 00000000 		.4byte	.Ldebug_ranges0+0
  202 001d 00000000 		.4byte	0
  203 0021 00000000 		.4byte	.Ldebug_line0
  204 0025 02       		.uleb128 0x2
  205 0026 01       		.byte	0x1
  206 0027 06       		.byte	0x6
- 207 0028 D7020000 		.4byte	.LASF0
+ 207 0028 B7020000 		.4byte	.LASF0
  208 002c 02       		.uleb128 0x2
  209 002d 01       		.byte	0x1
  210 002e 08       		.byte	0x8
- 211 002f 0E010000 		.4byte	.LASF1
+ 211 002f A8000000 		.4byte	.LASF1
  212 0033 02       		.uleb128 0x2
  213 0034 02       		.byte	0x2
  214 0035 05       		.byte	0x5
- 215 0036 97020000 		.4byte	.LASF2
+ 215 0036 77020000 		.4byte	.LASF2
  216 003a 02       		.uleb128 0x2
  217 003b 02       		.byte	0x2
  218 003c 07       		.byte	0x7
- 219 003d A3000000 		.4byte	.LASF3
+ 219 003d 3D000000 		.4byte	.LASF3
  220 0041 02       		.uleb128 0x2
  221 0042 04       		.byte	0x4
  222 0043 05       		.byte	0x5
- 223 0044 A1020000 		.4byte	.LASF4
+ 223 0044 81020000 		.4byte	.LASF4
  224 0048 02       		.uleb128 0x2
  225 0049 04       		.byte	0x4
  226 004a 07       		.byte	0x7
- 227 004b AF010000 		.4byte	.LASF5
+ 227 004b 49010000 		.4byte	.LASF5
  228 004f 02       		.uleb128 0x2
  229 0050 08       		.byte	0x8
  230 0051 05       		.byte	0x5
- 231 0052 84020000 		.4byte	.LASF6
+ 231 0052 64020000 		.4byte	.LASF6
  232 0056 02       		.uleb128 0x2
  233 0057 08       		.byte	0x8
  234 0058 07       		.byte	0x7
- 235 0059 42020000 		.4byte	.LASF7
+ 235 0059 22020000 		.4byte	.LASF7
  236 005d 03       		.uleb128 0x3
  237 005e 04       		.byte	0x4
  238 005f 05       		.byte	0x5
@@ -418,34 +418,34 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  240 0064 02       		.uleb128 0x2
  241 0065 04       		.byte	0x4
  242 0066 07       		.byte	0x7
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 8
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 8
 
 
- 243 0067 C9000000 		.4byte	.LASF8
+ 243 0067 63000000 		.4byte	.LASF8
  244 006b 04       		.uleb128 0x4
- 245 006c C1010000 		.4byte	.LASF9
+ 245 006c 5B010000 		.4byte	.LASF9
  246 0070 02       		.byte	0x2
  247 0071 E401     		.2byte	0x1e4
  248 0073 2C000000 		.4byte	0x2c
  249 0077 04       		.uleb128 0x4
- 250 0078 0D020000 		.4byte	.LASF10
+ 250 0078 ED010000 		.4byte	.LASF10
  251 007c 02       		.byte	0x2
  252 007d E501     		.2byte	0x1e5
  253 007f 3A000000 		.4byte	0x3a
  254 0083 02       		.uleb128 0x2
  255 0084 04       		.byte	0x4
  256 0085 04       		.byte	0x4
- 257 0086 DF000000 		.4byte	.LASF11
+ 257 0086 79000000 		.4byte	.LASF11
  258 008a 02       		.uleb128 0x2
  259 008b 08       		.byte	0x8
  260 008c 04       		.byte	0x4
- 261 008d 06020000 		.4byte	.LASF12
+ 261 008d A0010000 		.4byte	.LASF12
  262 0091 02       		.uleb128 0x2
  263 0092 01       		.byte	0x1
  264 0093 08       		.byte	0x8
- 265 0094 92020000 		.4byte	.LASF13
+ 265 0094 72020000 		.4byte	.LASF13
  266 0098 04       		.uleb128 0x4
- 267 0099 AA010000 		.4byte	.LASF14
+ 267 0099 44010000 		.4byte	.LASF14
  268 009d 02       		.byte	0x2
  269 009e 8E02     		.2byte	0x28e
  270 00a0 A4000000 		.4byte	0xa4
@@ -454,11 +454,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  273 00a9 02       		.uleb128 0x2
  274 00aa 08       		.byte	0x8
  275 00ab 04       		.byte	0x4
- 276 00ac AA020000 		.4byte	.LASF15
+ 276 00ac 8A020000 		.4byte	.LASF15
  277 00b0 02       		.uleb128 0x2
  278 00b1 04       		.byte	0x4
  279 00b2 07       		.byte	0x7
- 280 00b3 7B020000 		.4byte	.LASF16
+ 280 00b3 5B020000 		.4byte	.LASF16
  281 00b7 06       		.uleb128 0x6
  282 00b8 06       		.byte	0x6
  283 00b9 03       		.byte	0x3
@@ -471,14 +471,14 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  290 00c6 6B000000 		.4byte	0x6b
  291 00ca 00       		.byte	0
  292 00cb 07       		.uleb128 0x7
- 293 00cc D6000000 		.4byte	.LASF18
+ 293 00cc 70000000 		.4byte	.LASF18
  294 00d0 03       		.byte	0x3
  295 00d1 48       		.byte	0x48
  296 00d2 77000000 		.4byte	0x77
  297 00d6 02       		.byte	0x2
  298 00d7 07       		.uleb128 0x7
- 299 00d8 FE020000 		.4byte	.LASF19
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 9
+ 299 00d8 DE020000 		.4byte	.LASF19
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 9
 
 
  300 00dc 03       		.byte	0x3
@@ -486,14 +486,14 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  302 00de 6B000000 		.4byte	0x6b
  303 00e2 04       		.byte	0x4
  304 00e3 07       		.uleb128 0x7
- 305 00e4 11030000 		.4byte	.LASF20
+ 305 00e4 F1020000 		.4byte	.LASF20
  306 00e8 03       		.byte	0x3
  307 00e9 4F       		.byte	0x4f
  308 00ea 6B000000 		.4byte	0x6b
  309 00ee 05       		.byte	0x5
  310 00ef 00       		.byte	0
  311 00f0 08       		.uleb128 0x8
- 312 00f1 26030000 		.4byte	.LASF21
+ 312 00f1 06030000 		.4byte	.LASF21
  313 00f5 03       		.byte	0x3
  314 00f6 53       		.byte	0x53
  315 00f7 B7000000 		.4byte	0xb7
@@ -514,7 +514,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  330 011e B7010000 		.4byte	0x1b7
  331 0122 00       		.byte	0
  332 0123 09       		.uleb128 0x9
- 333 0124 E3020000 		.4byte	.LASF23
+ 333 0124 C3020000 		.4byte	.LASF23
  334 0128 01       		.byte	0x1
  335 0129 4D       		.byte	0x4d
  336 012a 00000000 		.4byte	.LFB1
@@ -530,7 +530,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  346 0146 CD010000 		.4byte	0x1cd
  347 014a 00       		.byte	0
  348 014b 09       		.uleb128 0x9
- 349 014c B6000000 		.4byte	.LASF24
+ 349 014c 50000000 		.4byte	.LASF24
  350 0150 01       		.byte	0x1
  351 0151 70       		.byte	0x70
  352 0152 00000000 		.4byte	.LFB2
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  354 015a 01       		.uleb128 0x1
  355 015b 9C       		.byte	0x9c
  356 015c 73010000 		.4byte	0x173
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 10
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 10
 
 
  357 0160 0A       		.uleb128 0xa
@@ -549,7 +549,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  362 016e FB000000 		.4byte	0xfb
  363 0172 00       		.byte	0
  364 0173 09       		.uleb128 0x9
- 365 0174 14020000 		.4byte	.LASF25
+ 365 0174 F4010000 		.4byte	.LASF25
  366 0178 01       		.byte	0x1
  367 0179 96       		.byte	0x96
  368 017a 00000000 		.4byte	.LFB3
@@ -565,7 +565,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  378 0196 E3010000 		.4byte	0x1e3
  379 019a 00       		.byte	0
  380 019b 0B       		.uleb128 0xb
- 381 019c D9010000 		.4byte	.LASF35
+ 381 019c 73010000 		.4byte	.LASF35
  382 01a0 01       		.byte	0x1
  383 01a1 15       		.byte	0x15
  384 01a2 F0000000 		.4byte	0xf0
@@ -573,32 +573,32 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  386 01a7 03       		.byte	0x3
  387 01a8 00000000 		.4byte	Timer_Stopur_backup
  388 01ac 0C       		.uleb128 0xc
- 389 01ad ED010000 		.4byte	.LASF26
- 390 01b1 ED010000 		.4byte	.LASF26
+ 389 01ad 87010000 		.4byte	.LASF26
+ 390 01b1 87010000 		.4byte	.LASF26
  391 01b5 03       		.byte	0x3
  392 01b6 69       		.byte	0x69
  393 01b7 0C       		.uleb128 0xc
- 394 01b8 B6020000 		.4byte	.LASF27
- 395 01bc B6020000 		.4byte	.LASF27
+ 394 01b8 96020000 		.4byte	.LASF27
+ 395 01bc 96020000 		.4byte	.LASF27
  396 01c0 03       		.byte	0x3
  397 01c1 63       		.byte	0x63
  398 01c2 0C       		.uleb128 0xc
- 399 01c3 28020000 		.4byte	.LASF28
- 400 01c7 28020000 		.4byte	.LASF28
+ 399 01c3 08020000 		.4byte	.LASF28
+ 400 01c7 08020000 		.4byte	.LASF28
  401 01cb 03       		.byte	0x3
  402 01cc 6A       		.byte	0x6a
  403 01cd 0C       		.uleb128 0xc
- 404 01ce 59020000 		.4byte	.LASF29
- 405 01d2 59020000 		.4byte	.LASF29
+ 404 01ce 39020000 		.4byte	.LASF29
+ 405 01d2 39020000 		.4byte	.LASF29
  406 01d6 03       		.byte	0x3
  407 01d7 64       		.byte	0x64
  408 01d8 0C       		.uleb128 0xc
- 409 01d9 C7010000 		.4byte	.LASF30
- 410 01dd C7010000 		.4byte	.LASF30
+ 409 01d9 61010000 		.4byte	.LASF30
+ 410 01dd 61010000 		.4byte	.LASF30
  411 01e1 03       		.byte	0x3
  412 01e2 5B       		.byte	0x5b
  413 01e3 0C       		.uleb128 0xc
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 11
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 11
 
 
  414 01e4 29000000 		.4byte	.LASF31
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  468 002f 0B       		.uleb128 0xb
  469 0030 3B       		.uleb128 0x3b
  470 0031 05       		.uleb128 0x5
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 12
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 12
 
 
  471 0032 49       		.uleb128 0x49
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  525 0068 01       		.byte	0x1
  526 0069 3F       		.uleb128 0x3f
  527 006a 19       		.uleb128 0x19
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 13
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 13
 
 
  528 006b 03       		.uleb128 0x3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  582 00a4 0E       		.uleb128 0xe
  583 00a5 3A       		.uleb128 0x3a
  584 00a6 0B       		.uleb128 0xb
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 14
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 14
 
 
  585 00a7 3B       		.uleb128 0x3b
@@ -838,202 +838,199 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 1
  627              	.LASF31:
  628 0029 54696D65 		.ascii	"Timer_Stopur_Enable\000"
  628      725F5374 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 15
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 15
 
 
  628      6F707572 
  628      5F456E61 
  628      626C6500 
- 629              	.LASF34:
- 630 003d 433A5C55 		.ascii	"C:\\Users\\cring\\OneDrive - Aarhus Universitet\\Un"
- 630      73657273 
- 630      5C637269 
- 630      6E675C4F 
- 630      6E654472 
- 631 006c 695C332E 		.ascii	"i\\3. Semester\\PRJ3\\KODE\\ProjektMain\\Hovedprogr"
- 631      2053656D 
- 631      65737465 
- 631      725C5052 
- 631      4A335C4B 
- 632 009a 616D2E63 		.ascii	"am.cydsn\000"
- 632      7964736E 
- 632      00
- 633              	.LASF3:
- 634 00a3 73686F72 		.ascii	"short unsigned int\000"
- 634      7420756E 
- 634      7369676E 
- 634      65642069 
- 634      6E7400
- 635              	.LASF24:
- 636 00b6 54696D65 		.ascii	"Timer_Stopur_Sleep\000"
- 636      725F5374 
- 636      6F707572 
- 636      5F536C65 
- 636      657000
- 637              	.LASF8:
- 638 00c9 756E7369 		.ascii	"unsigned int\000"
- 638      676E6564 
- 638      20696E74 
- 638      00
- 639              	.LASF18:
- 640 00d6 54696D65 		.ascii	"TimerUdb\000"
- 640      72556462 
- 640      00
- 641              	.LASF11:
- 642 00df 666C6F61 		.ascii	"float\000"
- 642      7400
- 643              	.LASF33:
- 644 00e5 47656E65 		.ascii	"Generated_Source\\PSoC5\\Timer_Stopur_PM.c\000"
- 644      72617465 
- 644      645F536F 
- 644      75726365 
- 644      5C50536F 
- 645              	.LASF1:
- 646 010e 756E7369 		.ascii	"unsigned char\000"
- 646      676E6564 
- 646      20636861 
- 646      7200
- 647              	.LASF32:
- 648 011c 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 648      43313120 
- 648      352E342E 
- 648      31203230 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 16
+ 629              	.LASF3:
+ 630 003d 73686F72 		.ascii	"short unsigned int\000"
+ 630      7420756E 
+ 630      7369676E 
+ 630      65642069 
+ 630      6E7400
+ 631              	.LASF24:
+ 632 0050 54696D65 		.ascii	"Timer_Stopur_Sleep\000"
+ 632      725F5374 
+ 632      6F707572 
+ 632      5F536C65 
+ 632      657000
+ 633              	.LASF8:
+ 634 0063 756E7369 		.ascii	"unsigned int\000"
+ 634      676E6564 
+ 634      20696E74 
+ 634      00
+ 635              	.LASF18:
+ 636 0070 54696D65 		.ascii	"TimerUdb\000"
+ 636      72556462 
+ 636      00
+ 637              	.LASF11:
+ 638 0079 666C6F61 		.ascii	"float\000"
+ 638      7400
+ 639              	.LASF33:
+ 640 007f 47656E65 		.ascii	"Generated_Source\\PSoC5\\Timer_Stopur_PM.c\000"
+ 640      72617465 
+ 640      645F536F 
+ 640      75726365 
+ 640      5C50536F 
+ 641              	.LASF1:
+ 642 00a8 756E7369 		.ascii	"unsigned char\000"
+ 642      676E6564 
+ 642      20636861 
+ 642      7200
+ 643              	.LASF32:
+ 644 00b6 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 644      43313120 
+ 644      352E342E 
+ 644      31203230 
+ 644      31363036 
+ 645 00e9 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 645      20726576 
+ 645      6973696F 
+ 645      6E203233 
+ 645      37373135 
+ 646 011c 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 646      66756E63 
+ 646      74696F6E 
+ 646      2D736563 
+ 646      74696F6E 
+ 647              	.LASF14:
+ 648 0144 72656738 		.ascii	"reg8\000"
+ 648      00
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 16
 
 
- 648      31363036 
- 649 014f 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 649      20726576 
- 649      6973696F 
- 649      6E203233 
- 649      37373135 
- 650 0182 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 650      66756E63 
- 650      74696F6E 
- 650      2D736563 
- 650      74696F6E 
- 651              	.LASF14:
- 652 01aa 72656738 		.ascii	"reg8\000"
- 652      00
- 653              	.LASF5:
- 654 01af 6C6F6E67 		.ascii	"long unsigned int\000"
- 654      20756E73 
- 654      69676E65 
- 654      6420696E 
- 654      7400
- 655              	.LASF9:
- 656 01c1 75696E74 		.ascii	"uint8\000"
- 656      3800
- 657              	.LASF30:
- 658 01c7 54696D65 		.ascii	"Timer_Stopur_Stop\000"
+ 649              	.LASF5:
+ 650 0149 6C6F6E67 		.ascii	"long unsigned int\000"
+ 650      20756E73 
+ 650      69676E65 
+ 650      6420696E 
+ 650      7400
+ 651              	.LASF9:
+ 652 015b 75696E74 		.ascii	"uint8\000"
+ 652      3800
+ 653              	.LASF30:
+ 654 0161 54696D65 		.ascii	"Timer_Stopur_Stop\000"
+ 654      725F5374 
+ 654      6F707572 
+ 654      5F53746F 
+ 654      7000
+ 655              	.LASF35:
+ 656 0173 54696D65 		.ascii	"Timer_Stopur_backup\000"
+ 656      725F5374 
+ 656      6F707572 
+ 656      5F626163 
+ 656      6B757000 
+ 657              	.LASF26:
+ 658 0187 54696D65 		.ascii	"Timer_Stopur_ReadCounter\000"
  658      725F5374 
  658      6F707572 
- 658      5F53746F 
- 658      7000
- 659              	.LASF35:
- 660 01d9 54696D65 		.ascii	"Timer_Stopur_backup\000"
- 660      725F5374 
- 660      6F707572 
- 660      5F626163 
- 660      6B757000 
- 661              	.LASF26:
- 662 01ed 54696D65 		.ascii	"Timer_Stopur_ReadCounter\000"
- 662      725F5374 
- 662      6F707572 
- 662      5F526561 
- 662      64436F75 
- 663              	.LASF12:
- 664 0206 646F7562 		.ascii	"double\000"
- 664      6C6500
- 665              	.LASF10:
- 666 020d 75696E74 		.ascii	"uint16\000"
- 666      313600
- 667              	.LASF25:
- 668 0214 54696D65 		.ascii	"Timer_Stopur_Wakeup\000"
- 668      725F5374 
- 668      6F707572 
- 668      5F57616B 
- 668      65757000 
- 669              	.LASF28:
- 670 0228 54696D65 		.ascii	"Timer_Stopur_WriteCounter\000"
- 670      725F5374 
- 670      6F707572 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 17
+ 658      5F526561 
+ 658      64436F75 
+ 659              	.LASF12:
+ 660 01a0 646F7562 		.ascii	"double\000"
+ 660      6C6500
+ 661              	.LASF34:
+ 662 01a7 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\E5PRJ3\\Projek"
+ 662      73657273 
+ 662      5C637269 
+ 662      6E675C44 
+ 662      6F63756D 
+ 663 01d4 744D6169 		.ascii	"tMain\\Hovedprogram.cydsn\000"
+ 663      6E5C486F 
+ 663      76656470 
+ 663      726F6772 
+ 663      616D2E63 
+ 664              	.LASF10:
+ 665 01ed 75696E74 		.ascii	"uint16\000"
+ 665      313600
+ 666              	.LASF25:
+ 667 01f4 54696D65 		.ascii	"Timer_Stopur_Wakeup\000"
+ 667      725F5374 
+ 667      6F707572 
+ 667      5F57616B 
+ 667      65757000 
+ 668              	.LASF28:
+ 669 0208 54696D65 		.ascii	"Timer_Stopur_WriteCounter\000"
+ 669      725F5374 
+ 669      6F707572 
+ 669      5F577269 
+ 669      7465436F 
+ 670              	.LASF7:
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 17
 
 
- 670      5F577269 
- 670      7465436F 
- 671              	.LASF7:
- 672 0242 6C6F6E67 		.ascii	"long long unsigned int\000"
- 672      206C6F6E 
- 672      6720756E 
- 672      7369676E 
- 672      65642069 
- 673              	.LASF29:
- 674 0259 54696D65 		.ascii	"Timer_Stopur_WriteControlRegister\000"
- 674      725F5374 
- 674      6F707572 
- 674      5F577269 
- 674      7465436F 
- 675              	.LASF16:
- 676 027b 73697A65 		.ascii	"sizetype\000"
- 676      74797065 
- 676      00
- 677              	.LASF6:
- 678 0284 6C6F6E67 		.ascii	"long long int\000"
- 678      206C6F6E 
- 678      6720696E 
- 678      7400
- 679              	.LASF13:
- 680 0292 63686172 		.ascii	"char\000"
- 680      00
- 681              	.LASF2:
- 682 0297 73686F72 		.ascii	"short int\000"
- 682      7420696E 
- 682      7400
- 683              	.LASF4:
- 684 02a1 6C6F6E67 		.ascii	"long int\000"
- 684      20696E74 
- 684      00
- 685              	.LASF15:
- 686 02aa 6C6F6E67 		.ascii	"long double\000"
- 686      20646F75 
- 686      626C6500 
- 687              	.LASF27:
- 688 02b6 54696D65 		.ascii	"Timer_Stopur_ReadControlRegister\000"
- 688      725F5374 
- 688      6F707572 
- 688      5F526561 
- 688      64436F6E 
- 689              	.LASF0:
- 690 02d7 7369676E 		.ascii	"signed char\000"
- 690      65642063 
- 690      68617200 
- 691              	.LASF23:
- 692 02e3 54696D65 		.ascii	"Timer_Stopur_RestoreConfig\000"
- 692      725F5374 
- 692      6F707572 
- 692      5F526573 
- 692      746F7265 
- 693              	.LASF19:
- 694 02fe 496E7465 		.ascii	"InterruptMaskValue\000"
- 694      72727570 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccDZSCbf.s 			page 18
+ 671 0222 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 671      206C6F6E 
+ 671      6720756E 
+ 671      7369676E 
+ 671      65642069 
+ 672              	.LASF29:
+ 673 0239 54696D65 		.ascii	"Timer_Stopur_WriteControlRegister\000"
+ 673      725F5374 
+ 673      6F707572 
+ 673      5F577269 
+ 673      7465436F 
+ 674              	.LASF16:
+ 675 025b 73697A65 		.ascii	"sizetype\000"
+ 675      74797065 
+ 675      00
+ 676              	.LASF6:
+ 677 0264 6C6F6E67 		.ascii	"long long int\000"
+ 677      206C6F6E 
+ 677      6720696E 
+ 677      7400
+ 678              	.LASF13:
+ 679 0272 63686172 		.ascii	"char\000"
+ 679      00
+ 680              	.LASF2:
+ 681 0277 73686F72 		.ascii	"short int\000"
+ 681      7420696E 
+ 681      7400
+ 682              	.LASF4:
+ 683 0281 6C6F6E67 		.ascii	"long int\000"
+ 683      20696E74 
+ 683      00
+ 684              	.LASF15:
+ 685 028a 6C6F6E67 		.ascii	"long double\000"
+ 685      20646F75 
+ 685      626C6500 
+ 686              	.LASF27:
+ 687 0296 54696D65 		.ascii	"Timer_Stopur_ReadControlRegister\000"
+ 687      725F5374 
+ 687      6F707572 
+ 687      5F526561 
+ 687      64436F6E 
+ 688              	.LASF0:
+ 689 02b7 7369676E 		.ascii	"signed char\000"
+ 689      65642063 
+ 689      68617200 
+ 690              	.LASF23:
+ 691 02c3 54696D65 		.ascii	"Timer_Stopur_RestoreConfig\000"
+ 691      725F5374 
+ 691      6F707572 
+ 691      5F526573 
+ 691      746F7265 
+ 692              	.LASF19:
+ 693 02de 496E7465 		.ascii	"InterruptMaskValue\000"
+ 693      72727570 
+ 693      744D6173 
+ 693      6B56616C 
+ 693      756500
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccyXEcaJ.s 			page 18
 
 
- 694      744D6173 
- 694      6B56616C 
- 694      756500
- 695              	.LASF20:
- 696 0311 54696D65 		.ascii	"TimerControlRegister\000"
- 696      72436F6E 
- 696      74726F6C 
- 696      52656769 
- 696      73746572 
- 697              	.LASF21:
- 698 0326 54696D65 		.ascii	"Timer_Stopur_backupStruct\000"
- 698      725F5374 
- 698      6F707572 
- 698      5F626163 
- 698      6B757053 
- 699              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 694              	.LASF20:
+ 695 02f1 54696D65 		.ascii	"TimerControlRegister\000"
+ 695      72436F6E 
+ 695      74726F6C 
+ 695      52656769 
+ 695      73746572 
+ 696              	.LASF21:
+ 697 0306 54696D65 		.ascii	"Timer_Stopur_backupStruct\000"
+ 697      725F5374 
+ 697      6F707572 
+ 697      5F626163 
+ 697      6B757053 
+ 698              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

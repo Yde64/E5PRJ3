@@ -12,7 +12,6 @@
 
 /* [] END OF FILE */
 #define MAXLEDINTENSE 0.5
-
 #include "LEDcontrol.h"
 
 static int pulselength_ = 0;

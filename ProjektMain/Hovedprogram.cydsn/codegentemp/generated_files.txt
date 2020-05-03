@@ -70,9 +70,15 @@
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SAR_p1_aliases.h" value="HEADER;;;;;SAR_p1" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SAR_p1.c" value="SOURCE_C;CortexM3;;;;SAR_p1" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SAR_p1.h" value="HEADER;;;;;SAR_p1" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\Timeout_timer.c" value="SOURCE_C;CortexM3;;;;Timeout_timer" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\Timeout_timer.h" value="HEADER;;;;;Timeout_timer" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\Timeout_timer_PM.c" value="SOURCE_C;CortexM3;;;;Timeout_timer" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\MOSI_aliases.h" value="HEADER;;;;;MOSI" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\MOSI.c" value="SOURCE_C;CortexM3;;;;MOSI" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\MOSI.h" value="HEADER;;;;;MOSI" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\MISO_aliases.h" value="HEADER;;;;;MISO" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\MISO.c" value="SOURCE_C;CortexM3;;;;MISO" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\MISO.h" value="HEADER;;;;;MISO" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SCLK_aliases.h" value="HEADER;;;;;SCLK" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SCLK.c" value="SOURCE_C;CortexM3;;;;SCLK" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SCLK.h" value="HEADER;;;;;SCLK" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPIMOutCtrl.h" value="HEADER;;;;;SPIMOutCtrl" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPIMOutCtrl.c" value="SOURCE_C;CortexM3;;;;SPIMOutCtrl" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPIMOutCtrl_PM.c" value="SOURCE_C;CortexM3;;;;SPIMOutCtrl" />
@@ -110,6 +116,20 @@
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\Timer5.c" value="SOURCE_C;CortexM3;;;;Timer5" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\Timer5.h" value="HEADER;;;;;Timer5" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\Timer5_PM.c" value="SOURCE_C;CortexM3;;;;Timer5" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPI_int_aliases.h" value="HEADER;;;;;SPI_int" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPI_int.c" value="SOURCE_C;CortexM3;;;;SPI_int" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPI_int.h" value="HEADER;;;;;SPI_int" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPIS.c" value="SOURCE_C;CortexM3;;;;SPIS" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPIS.h" value="HEADER;;;;;SPIS" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPIS_PM.c" value="SOURCE_C;CortexM3;;;;SPIS" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPIS_INT.c" value="SOURCE_C;CortexM3;;;;SPIS" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPIS_BOOT.c" value="SOURCE_C;CortexM3;;;;SPIS" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPIS_PVT.h" value="HEADER;;;;;SPIS" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SS_aliases.h" value="HEADER;;;;;SS" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SS.c" value="SOURCE_C;CortexM3;;;;SS" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SS.h" value="HEADER;;;;;SS" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\rx_isr.c" value="SOURCE_C;CortexM3;;;;rx_isr" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\rx_isr.h" value="HEADER;;;;;rx_isr" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPIM_1_IntClock.c" value="SOURCE_C;CortexM3;;;;SPIM_1_IntClock" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPIM_1_IntClock.h" value="HEADER;;;;;SPIM_1_IntClock" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\ADC_SAR_1_IRQ.c" value="SOURCE_C;CortexM3;;;;ADC_SAR_1_IRQ" />
@@ -118,6 +138,8 @@
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\ADC_SAR_1_theACLK.h" value="HEADER;;;;;ADC_SAR_1_theACLK" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\UART_1_IntClock.c" value="SOURCE_C;CortexM3;;;;UART_1_IntClock" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\UART_1_IntClock.h" value="HEADER;;;;;UART_1_IntClock" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPIS_IntClock.c" value="SOURCE_C;CortexM3;;;;SPIS_IntClock" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\SPIS_IntClock.h" value="HEADER;;;;;SPIS_IntClock" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\Cm3RealView.scat" value="LINKER_SCRIPT;;;fdb8e1ae-f83a-46cf-9446-1d703716f38a;;cy_boot" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\codegentemp\Cm3Start.c" value="SOURCE_C;CortexM3;;;;cy_boot" />

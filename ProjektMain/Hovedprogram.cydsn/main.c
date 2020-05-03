@@ -19,6 +19,7 @@
 #include "LEDcontrol.h"
 #include "Stopur.h"
 #include "VT100Terminal.h"
+#include "SPI_Master.h"
 
 #define Display1 0x26
 #define Display2 0x27
@@ -71,6 +72,7 @@ int main(void)
     isr_uart_rx_StartEx(ISR_UART_rx_handler);
     isr_timer_StartEx(isr_timer);
     UART_1_Start();
+    SPIS_initSPI();
     
     WeightSensorsInit();
     
@@ -470,14 +472,14 @@ int main(void)
                                        
                         if (pLoser == 1)
                         {
-                            stopLCD(1); //hvis spiller 2 taber, stoppes LCD ved spiller 1
-                            tidp1 = getTime(); 
+                            tidp2 = getTime()/100; 
+                            stopLCD(2); //hvis spiller 2 taber, stoppes LCD ved spiller 1
                             winnerSeq(rgbstrip1); // afspiller vinder sekvens
                         }
                         else if (pLoser == 2)
                         {
-                            stopLCD(2);
-                            tidp2 = getTime();
+                            tidp1 = getTime()/100;
+                            stopLCD(1);
                             winnerSeq(rgbstrip2); // afspiller vinder sekvens
                         }
                         
@@ -498,19 +500,28 @@ int main(void)
                         {
                             
                             loserSeq(rgbstrip2); // afspiller taber sekvens
-                            tidp2 = getTime();
+                            stopLCD(2);
+                            tidp2 = getTime()/100;
                         }
                         else if (pLoser == 1)
                         {   
                             
                             loserSeq(rgbstrip1); // afspiller taber sekvens
-                            tidp1 = getTime();
+                            stopLCD(1);
+                            tidp1 = getTime()/100;
                         }
                         
-                        //Send LOG-data
+                        int sek;
+                        int ms;
+                        sek = tidp1/10;
+                        ms = tidp1%10;
+                        SPIS_sendData(sek, ms);
+                        CyDelay(1500);
                         
-                        stopLCD(2);
-                        stopLCD(1);
+                        sek = tidp2/10;
+                        ms = tidp2%10;
+                        SPIS_sendData(sek, ms);
+                        
                         
                     }  
                     break;
