@@ -26,9 +26,13 @@ int main(void)
 
     setspeed(100, 20, 300);
     //weightapprovedSeq(rgbstrip1);
-    //idleSeq(rgbstrip1);
-    //zeroCalibrateSeq(rgbstrip1);
     checkSeq(rgbstrip1);
+    checkSeq(rgbstrip2);
+    //zeroCalibrateSeq(rgbstrip1);
+    
+    
+    //checkSeq(rgbstrip1);
+    //checkSeq(rgbstrip2);
     for(;;)
     {
         //while(startSeq(rgbstrip1, rgbstrip2) == 0);

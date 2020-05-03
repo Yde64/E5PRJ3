@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ProjektMain\Hovedprogram\Source Files\Display.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ProjektMain\Hovedprogram\TopDesign">
 <ExpandedNodeIds>
 <v>ProjektMain</v>
 <v>ProjektMain\Hovedprogram</v>
@@ -54,7 +54,6 @@
 <v>ProjektMain\Hovedprogram\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>ProjektMain</v>
 <v>ProjektMain\Hovedprogram</v>
 <v>ProjektMain\Hovedprogram\TopDesign</v>
 <v>ProjektMain\Hovedprogram\Hovedprogram.cydwr</v>
@@ -245,22 +244,6 @@
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_refreshrate.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_ring.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_refreshrate_LCD.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_timer.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_uart_rx.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDcontrol.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDdata.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDdata2.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LiquidCrystal_I2C.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\MISO.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\MOSI.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_2.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\PlayerSelect.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\rx_isr.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SAR_p1.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SAR_p2.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SCL_pin.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SCLK.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -275,6 +258,25 @@
 <v>ProjektMain\Hovedprogram\PSoC 5LP Architecture TRM</v>
 <v>ProjektMain\Hovedprogram\CY8C58LP Family Datasheet</v>
 <v>ProjektMain\Hovedprogram\System Reference Guides</v>
+<v>ProjektMain\Hovedprogram\System Reference Guides\cy_boot_v5_90</v>
+<v>ProjektMain\Hovedprogram\ADC_SAR_v3_10.pdf</v>
+<v>ProjektMain\Hovedprogram\AMux_v1_80.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_clock_v2_20.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_constant_v1_0.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_isr_v1_70</v>
+<v>ProjektMain\Hovedprogram\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_pins_v2_20</v>
+<v>ProjektMain\Hovedprogram\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>ProjektMain\Hovedprogram\CyControlReg_v1_80.pdf</v>
+<v>ProjektMain\Hovedprogram\demux_v1_10.pdf</v>
+<v>ProjektMain\Hovedprogram\I2C_v3_50.pdf</v>
+<v>ProjektMain\Hovedprogram\SPI_Master_v2_50.pdf</v>
+<v>ProjektMain\Hovedprogram\SPI_Slave_v2_70.pdf</v>
+<v>ProjektMain\Hovedprogram\Timer_v2_80</v>
+<v>ProjektMain\Hovedprogram\Timer_v2_80\Timer_v2_80.pdf</v>
+<v>ProjektMain\Hovedprogram\UART_v2_50.pdf</v>
+<v>ProjektMain\Hovedprogram\ZeroTerminal</v>
+<v>ProjektMain\Hovedprogram\ZeroTerminal\ZeroTerminal.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>ProjektMain</v>
@@ -282,6 +284,25 @@
 <v>ProjektMain\Hovedprogram\PSoC 5LP Architecture TRM</v>
 <v>ProjektMain\Hovedprogram\CY8C58LP Family Datasheet</v>
 <v>ProjektMain\Hovedprogram\System Reference Guides</v>
+<v>ProjektMain\Hovedprogram\System Reference Guides\cy_boot_v5_90</v>
+<v>ProjektMain\Hovedprogram\ADC_SAR_v3_10.pdf</v>
+<v>ProjektMain\Hovedprogram\AMux_v1_80.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_clock_v2_20.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_constant_v1_0.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_isr_v1_70</v>
+<v>ProjektMain\Hovedprogram\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>ProjektMain\Hovedprogram\cy_pins_v2_20</v>
+<v>ProjektMain\Hovedprogram\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>ProjektMain\Hovedprogram\CyControlReg_v1_80.pdf</v>
+<v>ProjektMain\Hovedprogram\demux_v1_10.pdf</v>
+<v>ProjektMain\Hovedprogram\I2C_v3_50.pdf</v>
+<v>ProjektMain\Hovedprogram\SPI_Master_v2_50.pdf</v>
+<v>ProjektMain\Hovedprogram\SPI_Slave_v2_70.pdf</v>
+<v>ProjektMain\Hovedprogram\Timer_v2_80</v>
+<v>ProjektMain\Hovedprogram\Timer_v2_80\Timer_v2_80.pdf</v>
+<v>ProjektMain\Hovedprogram\UART_v2_50.pdf</v>
+<v>ProjektMain\Hovedprogram\ZeroTerminal</v>
+<v>ProjektMain\Hovedprogram\ZeroTerminal\ZeroTerminal.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -300,6 +321,7 @@
 <name v=".\Hovedprogram.cydsn\SPI_Master.c" />
 <name v=".\Hovedprogram.cydsn\Stopur.c" />
 <name v=".\Hovedprogram.cydsn\Display.c" />
+<name v=".\Hovedprogram.cydsn\LEDcontrol.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -307,7 +329,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Vertical"><TabbedMdiContainer Size="1567, 783" SelectedTabbedMdiWindow="ceb6456f-75f3-4bcd-abef-4aa016a7762b"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a81e21bb-5e2e-400c-9cbf-968a63daa365" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\main.c" Guid="ceb6456f-75f3-4bcd-abef-4aa016a7762b" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\LEDcontrol.c" Guid="77cdf61f-9ba6-4b1a-9e78-0c52db4ef4a8" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\WeightSensors.c" Guid="b6b59310-9549-439c-8140-c0da9fb11984" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Hovedprogram.cydwr" Guid="238888da-9b6a-43c0-95c1-33a2fdd321a0" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\TopDesign\TopDesign.cysch" Guid="f59ef554-a412-42fb-9cbf-323a206aabf9" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\SPI_Master.h" Guid="6c5e7e70-f781-4fae-9108-846aa3ef6a90" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\SPI_Master.c" Guid="8aa91d35-b9f6-4a11-8f32-764c54794dc9" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Stopur.c" Guid="ea023663-c3d7-4bba-9d49-73f86df00e72" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Display.c" Guid="366a621a-8940-4bb7-9ce1-6c1efb4377e7" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Vertical"><TabbedMdiContainer Size="1098, 512" SelectedTabbedMdiWindow="77cdf61f-9ba6-4b1a-9e78-0c52db4ef4a8"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a81e21bb-5e2e-400c-9cbf-968a63daa365" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\main.c" Guid="ceb6456f-75f3-4bcd-abef-4aa016a7762b" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\LEDcontrol.c" Guid="77cdf61f-9ba6-4b1a-9e78-0c52db4ef4a8" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\WeightSensors.c" Guid="b6b59310-9549-439c-8140-c0da9fb11984" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Hovedprogram.cydwr" Guid="238888da-9b6a-43c0-95c1-33a2fdd321a0" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\TopDesign\TopDesign.cysch" Guid="f59ef554-a412-42fb-9cbf-323a206aabf9" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\SPI_Master.h" Guid="6c5e7e70-f781-4fae-9108-846aa3ef6a90" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\SPI_Master.c" Guid="8aa91d35-b9f6-4a11-8f32-764c54794dc9" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Stopur.c" Guid="ea023663-c3d7-4bba-9d49-73f86df00e72" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Display.c" Guid="366a621a-8940-4bb7-9ce1-6c1efb4377e7" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\LEDcontrol.h" Guid="023a6ab8-0705-475b-8d23-066886121e1b" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

@@ -4,9 +4,9 @@
 
 #Version:            1.1
 
-#Build Date:         Dec  5 2017 15:35:27
+#Build Date:         Sep  9 2019 11:47:43
 
-#File Generated:     Mar 27 2020 14:56:40
+#File Generated:     May 3 2020 19:56:47
 
 #Purpose:            
 
@@ -14,16 +14,16 @@
 
 #***************************************************************************
 
-Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjplacer.exe --proj-name LED_control --netlist-vh2 LED_control_p.vh2 --arch p35_udb4x6 --arch-file C:\Users\cring\Documents\PSoC Creator\4.2\Devices\arch/udbdsi_4x6_24.cydata --ip-file C:\Users\cring\Documents\PSoC Creator\4.2\Devices\psoc5/psoc5lp/ip_blocks.cydata --rrg-file C:\Users\cring\Documents\PSoC Creator\4.2\Devices\psoc5/psoc5lp/route_arch-rrg.cydata --irq-file C:\Users\cring\Documents\PSoC Creator\4.2\Devices\psoc5/psoc5lp/irqconn.cydata --drq-file C:\Users\cring\Documents\PSoC Creator\4.2\Devices\psoc5/psoc5lp/dmaconn.cydata --dsi-conn-file C:\Users\cring\Documents\PSoC Creator\4.2\Devices\psoc5/psoc5lp/dsiconn.cydata --pins-file pins_68-QFN.xml --lib-file LED_control_p.lib --sdc-file LED_control.sdc --io-pcf LED_control.pci --outdir .
+Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\bin/sjplacer.exe --proj-name LED_control --netlist-vh2 LED_control_p.vh2 --arch p35_udb4x6 --arch-file C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\arch/udbdsi_4x6_24.cydata --ip-file C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\psoc5/psoc5lp/ip_blocks.cydata --rrg-file C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\psoc5/psoc5lp/route_arch-rrg.cydata --irq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\psoc5/psoc5lp/irqconn.cydata --drq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\psoc5/psoc5lp/dmaconn.cydata --dsi-conn-file C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\psoc5/psoc5lp/dsiconn.cydata --pins-file pins_68-QFN.xml --lib-file LED_control_p.lib --sdc-file LED_control.sdc --io-pcf LED_control.pci --outdir .
 
 		Softjin Techologies Placer, Version 1.1
 
-Build Date : Dec  5 2017	15:33:41
+Build Date : Sep  9 2019	11:45:12
 
 D2004: Option and Settings Summary
 =============================================================
 Netlist vh2 file          - LED_control_p.vh2
-Architecture file         - C:\Users\cring\Documents\PSoC Creator\4.2\Devices\arch/udbdsi_4x6_24.cydata
+Architecture file         - C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\arch/udbdsi_4x6_24.cydata
 Package                   - 
 Defparam file             - 
 SDC file                  - LED_control.sdc
@@ -34,7 +34,7 @@ IO Placement file         - LED_control.pci
 D2050: Starting reading inputs for placer
 =============================================================
 D2065: Reading netlist file : "LED_control_p.vh2"
-D2065: Reading arch file : "C:\Users\cring\Documents\PSoC Creator\4.2\Devices\arch/udbdsi_4x6_24.cydata"
+D2065: Reading arch file : "C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\dev\arch/udbdsi_4x6_24.cydata"
 D2051: Reading of inputs for placer completed successfully
 
 D2053: Starting placement of the design
@@ -79,46 +79,38 @@ analysis after routing.
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 11
-Clock: CyBUS_CLK            | Frequency: N/A       | Target:  48.0 MHz
-Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
-Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
-Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  48.0 MHz
-Clock: CyPLL_OUT            | Frequency: N/A       | Target:  48.0 MHz
-Clock: SPIM_1_IntClock      | Frequency:  64.2 MHz | Target:   4.8 MHz
-Clock: timer_clock          | Frequency:  59.7 MHz | Target:   0.0 MHz
-Clock: timer_clock_1        | Frequency:  59.7 MHz | Target:   0.0 MHz
-Clock: timer_clock_2        | Frequency:  59.7 MHz | Target:   0.0 MHz
-Clock: timer_clock_3        | Frequency:  59.7 MHz | Target:   0.0 MHz
-Clock: timer_clock_4        | Frequency:  59.7 MHz | Target:   0.0 MHz
-
-======================================================================
-                     End of Clock Summary
-######################################################################
-
-D2088: Phase 6, elapsed time : 0.1 (sec)
-
-Phase 7
-######################################################################
-                     Clock Summary 
-======================================================================
-Number of clocks: 11
+Number of clocks: 7
 Clock: CyBUS_CLK            | Frequency: N/A       | Target:  48.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  48.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  48.0 MHz
 Clock: SPIM_1_IntClock      | Frequency:  65.5 MHz | Target:   4.8 MHz
-Clock: timer_clock          | Frequency:  59.7 MHz | Target:   0.0 MHz
 Clock: timer_clock_1        | Frequency:  59.7 MHz | Target:   0.0 MHz
-Clock: timer_clock_2        | Frequency:  59.7 MHz | Target:   0.0 MHz
-Clock: timer_clock_3        | Frequency:  59.7 MHz | Target:   0.0 MHz
-Clock: timer_clock_4        | Frequency:  59.7 MHz | Target:   0.0 MHz
 
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 0.8 (sec)
+
+D2088: Phase 6, elapsed time : 0.0 (sec)
+
+Phase 7
+######################################################################
+                     Clock Summary 
+======================================================================
+Number of clocks: 7
+Clock: CyBUS_CLK            | Frequency: N/A       | Target:  48.0 MHz
+Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
+Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
+Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  48.0 MHz
+Clock: CyPLL_OUT            | Frequency: N/A       | Target:  48.0 MHz
+Clock: SPIM_1_IntClock      | Frequency:  65.5 MHz | Target:   4.8 MHz
+Clock: timer_clock_1        | Frequency:  59.7 MHz | Target:   0.0 MHz
+
+======================================================================
+                     End of Clock Summary
+######################################################################
+D2088: Phase 7, elapsed time : 0.7 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	11
@@ -148,18 +140,14 @@ analysis after routing.
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 11
+Number of clocks: 7
 Clock: CyBUS_CLK            | Frequency: N/A       | Target:  48.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  48.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  48.0 MHz
-Clock: SPIM_1_IntClock      | Frequency:  62.9 MHz | Target:   5.3 MHz
-Clock: timer_clock          | Frequency:  57.8 MHz | Target:   0.0 MHz
+Clock: SPIM_1_IntClock      | Frequency:  67.9 MHz | Target:   5.3 MHz
 Clock: timer_clock_1        | Frequency:  57.8 MHz | Target:   0.0 MHz
-Clock: timer_clock_2        | Frequency:  59.7 MHz | Target:   0.0 MHz
-Clock: timer_clock_3        | Frequency:  57.8 MHz | Target:   0.0 MHz
-Clock: timer_clock_4        | Frequency:  59.7 MHz | Target:   0.0 MHz
 
 ======================================================================
                      End of Clock Summary
@@ -170,5 +158,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 1.6 sec.
+I2076: Total run-time: 1.5 sec.
 

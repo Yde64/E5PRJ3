@@ -106,8 +106,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SPIM_1_PVT.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SPIM_1_IntClock.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SPIM_1_IntClock.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\timer_clock.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\timer_clock.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_LED_refreshrate.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_LED_refreshrate.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\timer_clock_1.c</File>
@@ -115,8 +113,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer2.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer2.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer2_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\timer_clock_2.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\timer_clock_2.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer3.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer3.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer3_PM.c</File>
@@ -130,8 +126,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SPIMOutCtrl.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SPIMOutCtrl.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SPIMOutCtrl_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\timer_clock_3.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\timer_clock_3.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer4.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer4.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer4_PM.c</File>
@@ -139,8 +133,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_BlinkLED.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_delay.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_delay.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\timer_clock_4.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\timer_clock_4.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer5.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer5.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer5_PM.c</File>
