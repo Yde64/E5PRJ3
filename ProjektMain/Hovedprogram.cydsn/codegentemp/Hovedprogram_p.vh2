@@ -1,11 +1,6 @@
 -- Project:   Hovedprogram
-<<<<<<< HEAD
--- Generated: 05/05/2020 22:54:55
--- PSoC Creator  4.2
-=======
--- Generated: 05/06/2020 00:07:29
+-- Generated: 05/06/2020 00:16:31
 -- PSoC Creator  4.3 Early Access
->>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 ENTITY Hovedprogram IS
     PORT(
