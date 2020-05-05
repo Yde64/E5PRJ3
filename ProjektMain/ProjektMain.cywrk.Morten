@@ -54,10 +54,6 @@
 <v>ProjektMain\Hovedprogram\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\EEPROM</v>
-<v>ProjektMain\Hovedprogram\Header Files</v>
-<v>ProjektMain\Hovedprogram\Header Files\cyapicallbacks.h</v>
-<v>ProjektMain\Hovedprogram\Header Files\Display.h</v>
 <v>ProjektMain\Hovedprogram\Header Files\LEDcontrol.h</v>
 <v>ProjektMain\Hovedprogram\Header Files\LiquidCrystal_I2C.h</v>
 <v>ProjektMain\Hovedprogram\Header Files\Startknap.h</v>
@@ -80,6 +76,11 @@
 <v>ProjektMain\Hovedprogram\Generated_Source</v>
 <v>ProjektMain\Hovedprogram\Generated_Source\PSoC5</v>
 <v>ProjektMain\Hovedprogram\Generated_Source\PSoC5\ADC_SAR_1</v>
+<v>ProjektMain\Hovedprogram\Generated_Source\PSoC5\ADC_SAR_1_IRQ</v>
+<v>ProjektMain\Hovedprogram\Generated_Source\PSoC5\ADC_SAR_1_theACLK</v>
+<v>ProjektMain\Hovedprogram\Generated_Source\PSoC5\cy_boot</v>
+<v>ProjektMain\Hovedprogram\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>ProjektMain\Hovedprogram\Generated_Source\PSoC5\I2C_1</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -222,7 +223,7 @@
 <v>Datasheet</v>
 </TreeKeysV2>
 <TreeStatesV2>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ProjektMain">
 <ExpandedNodeIds>
 <v>ProjektMain</v>
 <v>ProjektMain\Hovedprogram</v>
@@ -304,6 +305,8 @@
 <name v=".\Hovedprogram.cydsn\Stopur.c" />
 <name v=".\Hovedprogram.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\Hovedprogram.cydsn\Display.c" />
+<name v=".\Hovedprogram.cydsn\Hovedprogram.cydwr" />
+<name v=".\Hovedprogram.cydsn\Display.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -311,7 +314,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="888, 532" SelectedTabbedMdiWindow="d5b3a836-4204-45d1-b7ce-4cd37a456188"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="d9acdc0d-3130-4ebb-ac22-30d0e130c66d" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Stopur.h" Guid="8b9de4b4-2f69-46f8-b90b-06799dd26989" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\States.c" Guid="5adfeb0c-2b0b-4f60-8d9d-6f9ae1cc70ee" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Stopur.c" Guid="d5b3a836-4204-45d1-b7ce-4cd37a456188" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\TopDesign\TopDesign.cysch" Guid="5e7d223f-a064-4bcf-890c-4b9a09cc9cba" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Display.c" Guid="f327c09c-82e5-4e63-b93b-9af9f47fc286" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1025, 532" SelectedTabbedMdiWindow="d5b3a836-4204-45d1-b7ce-4cd37a456188"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="d9acdc0d-3130-4ebb-ac22-30d0e130c66d" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Stopur.h" Guid="8b9de4b4-2f69-46f8-b90b-06799dd26989" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\States.c" Guid="5adfeb0c-2b0b-4f60-8d9d-6f9ae1cc70ee" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Stopur.c" Guid="d5b3a836-4204-45d1-b7ce-4cd37a456188" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\TopDesign\TopDesign.cysch" Guid="5e7d223f-a064-4bcf-890c-4b9a09cc9cba" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Display.c" Guid="f327c09c-82e5-4e63-b93b-9af9f47fc286" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Hovedprogram.cydwr" Guid="fd7e804a-0648-4e70-8ccd-6686a6441747" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Display.h" Guid="c94d6d49-f941-48c2-ab58-0ac9495ac73f" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
