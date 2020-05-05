@@ -211,6 +211,56 @@
 <VisibleNodeIds>
 <v>ProjektMain</v>
 <v>ProjektMain\Hovedprogram</v>
+<v>ProjektMain\Hovedprogram\CortexM3</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_INT.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_IRQ.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_theACLK.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Display.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_BOOT.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_INT.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_MASTER.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_SLAVE.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_BlinkLED.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_button.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_delay.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_pulse.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_refreshrate.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_ring.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_refreshrate_LCD.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_timer.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_uart_rx.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDcontrol.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDdata.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDdata2.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LiquidCrystal_I2C.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\MISO.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\MOSI.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_2.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\PlayerSelect.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\rx_isr.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SAR_p1.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SAR_p2.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SCL_pin.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\SCLK.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
