@@ -29,13 +29,13 @@
 
 typedef struct WeightSensors_
 {
-    int CalibrateP1; //buffer
-    int CalibrateP2; //buffer
+    int CalibrateP1; //Kalibreringsværdi
+    int CalibrateP2; //Kalibreringsværdi
     
-    int p1; //buffer
-    int p2; //buffer
-    int p1cal; //player1 data
-    int p2cal; //player2 data
+    int p1;     //buffer
+    int p2;     //buffer
+    int p1cal;  //player1 data
+    int p2cal;  //player2 data
     int pLoser; //Loser data
 
 }WeightSensors;
