@@ -1,6 +1,6 @@
 -- Project:   C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Hovedprogram.cyprj
--- Generated: 05/06/2020 00:07:34
--- PSoC Creator  4.3 Early Access
+-- Generated: 05/03/2020 18:15:48
+-- PSoC Creator  4.3
 
 ENTITY Hovedprogram IS
     PORT(

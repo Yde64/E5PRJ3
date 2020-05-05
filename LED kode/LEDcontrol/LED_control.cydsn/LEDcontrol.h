@@ -14,7 +14,6 @@
 #include "project.h"
 #include "stdio.h"
 #include "math.h"
-#include <math.h>
 
 //struct til at holde på data for hver enkelt LED
 typedef struct LEDctrl_

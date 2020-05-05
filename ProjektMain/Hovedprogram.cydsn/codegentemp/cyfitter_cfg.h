@@ -1,7 +1,7 @@
 /*******************************************************************************
 * File Name: cyfitter_cfg.h
 * 
-* PSoC Creator  4.3 Early Access
+* PSoC Creator  4.3
 *
 * Description:
 * This file provides basic startup and mux configuration settings

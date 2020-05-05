@@ -1,7 +1,7 @@
 /*******************************************************************************
 * File Name: cyfittergnu.inc
 * 
-* PSoC Creator  4.3 Early Access
+* PSoC Creator  4.3
 *
 * Description:
 * 

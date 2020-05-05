@@ -1,7 +1,7 @@
 /*******************************************************************************
 * File Name: cymetadata.c
 * 
-* PSoC Creator  4.3 Early Access
+* PSoC Creator  4.3
 *
 * Description:
 * This file defines all extra memory spaces that need to be included.
