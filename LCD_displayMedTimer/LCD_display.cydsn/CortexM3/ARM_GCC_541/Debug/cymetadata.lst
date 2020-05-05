@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
   55 001a 01       		.byte	1
   56 001b 40       		.byte	64
   57 001c 30       		.byte	48
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 2
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 2
 
 
   58 001d 0E       		.byte	14
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  112 0053 40       		.byte	64
  113 0054 08       		.byte	8
  114 0055 4C       		.byte	76
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 3
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 3
 
 
  115 0056 01       		.byte	1
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  169 008c 66       		.byte	102
  170 008d 80       		.byte	-128
  171 008e 68       		.byte	104
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 4
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 4
 
 
  172 008f 80       		.byte	-128
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  226 00c5 01       		.byte	1
  227 00c6 E0       		.byte	-32
  228 00c7 40       		.byte	64
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 5
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 5
 
 
  229 00c8 E2       		.byte	-30
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  283 00fe D2       		.byte	-46
  284 00ff 18       		.byte	24
  285 0100 D6       		.byte	-42
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 6
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 6
 
 
  286 0101 0B       		.byte	11
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  340 0137 FF       		.byte	-1
  341 0138 CA       		.byte	-54
  342 0139 FF       		.byte	-1
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 7
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 7
 
 
  343 013a CB       		.byte	-53
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  397 0170 48       		.byte	72
  398 0171 01       		.byte	1
  399 0172 4D       		.byte	77
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 8
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 8
 
 
  400 0173 04       		.byte	4
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  454 01a9 10       		.byte	16
  455 01aa 14       		.byte	20
  456 01ab 20       		.byte	32
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 9
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 9
 
 
  457 01ac C4       		.byte	-60
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  511 01e2 30       		.byte	48
  512 01e3 00       		.byte	0
  513 01e4 30       		.byte	48
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 10
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 10
 
 
  514 01e5 00       		.byte	0
@@ -598,12 +598,12 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  565      00000000 
  565      00000000 
  566              		.text
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 11
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 11
 
 
  567              	.Letext0:
- 568              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
- 569              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 568              		.file 1 "s:\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.1\\arm-none-eabi\\inc
+ 569              		.file 2 "s:\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.1\\arm-none-eabi\\inc
  570              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
  571              		.section	.debug_info,"",%progbits
  572              	.Ldebug_info0:
@@ -614,13 +614,13 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  577 000b 01       		.uleb128 0x1
  578 000c 24000000 		.4byte	.LASF17
  579 0010 0C       		.byte	0xc
- 580 0011 BC010000 		.4byte	.LASF18
- 581 0015 E7000000 		.4byte	.LASF19
+ 580 0011 D5010000 		.4byte	.LASF18
+ 581 0015 D7000000 		.4byte	.LASF19
  582 0019 00000000 		.4byte	.Ldebug_line0
  583 001d 02       		.uleb128 0x2
  584 001e 01       		.byte	0x1
  585 001f 06       		.byte	0x6
- 586 0020 B0010000 		.4byte	.LASF0
+ 586 0020 C9010000 		.4byte	.LASF0
  587 0024 03       		.uleb128 0x3
  588 0025 00000000 		.4byte	.LASF9
  589 0029 01       		.byte	0x1
@@ -633,7 +633,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  596 0036 02       		.uleb128 0x2
  597 0037 02       		.byte	0x2
  598 0038 05       		.byte	0x5
- 599 0039 9D010000 		.4byte	.LASF2
+ 599 0039 B6010000 		.4byte	.LASF2
  600 003d 02       		.uleb128 0x2
  601 003e 02       		.byte	0x2
  602 003f 07       		.byte	0x7
@@ -641,7 +641,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  604 0044 02       		.uleb128 0x2
  605 0045 04       		.byte	0x4
  606 0046 05       		.byte	0x5
- 607 0047 A7010000 		.4byte	.LASF4
+ 607 0047 C0010000 		.4byte	.LASF4
  608 004b 02       		.uleb128 0x2
  609 004c 04       		.byte	0x4
  610 004d 07       		.byte	0x7
@@ -649,24 +649,24 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  612 0052 02       		.uleb128 0x2
  613 0053 08       		.byte	0x8
  614 0054 05       		.byte	0x5
- 615 0055 8F010000 		.4byte	.LASF6
+ 615 0055 A8010000 		.4byte	.LASF6
  616 0059 02       		.uleb128 0x2
  617 005a 08       		.byte	0x8
  618 005b 07       		.byte	0x7
- 619 005c 44010000 		.4byte	.LASF7
+ 619 005c 5D010000 		.4byte	.LASF7
  620 0060 04       		.uleb128 0x4
  621 0061 04       		.byte	0x4
  622 0062 05       		.byte	0x5
  623 0063 696E7400 		.ascii	"int\000"
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 12
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 12
 
 
  624 0067 02       		.uleb128 0x2
  625 0068 04       		.byte	0x4
  626 0069 07       		.byte	0x7
- 627 006a 37010000 		.4byte	.LASF8
+ 627 006a 50010000 		.4byte	.LASF8
  628 006e 03       		.uleb128 0x3
- 629 006f 5B010000 		.4byte	.LASF10
+ 629 006f 74010000 		.4byte	.LASF10
  630 0073 02       		.byte	0x2
  631 0074 18       		.byte	0x18
  632 0075 24000000 		.4byte	0x24
@@ -680,11 +680,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  640 008a 02       		.uleb128 0x2
  641 008b 04       		.byte	0x4
  642 008c 07       		.byte	0x7
- 643 008d 86010000 		.4byte	.LASF11
+ 643 008d 9F010000 		.4byte	.LASF11
  644 0091 07       		.uleb128 0x7
  645 0092 6E000000 		.4byte	0x6e
  646 0096 08       		.uleb128 0x8
- 647 0097 25010000 		.4byte	.LASF12
+ 647 0097 3E010000 		.4byte	.LASF12
  648 009b 03       		.byte	0x3
  649 009c 1F       		.byte	0x1f
  650 009d A7000000 		.4byte	0xa7
@@ -701,7 +701,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  661 00ba 03       		.byte	0x3
  662 00bb 00       		.byte	0
  663 00bc 08       		.uleb128 0x8
- 664 00bd D7000000 		.4byte	.LASF13
+ 664 00bd 2E010000 		.4byte	.LASF13
  665 00c1 03       		.byte	0x3
  666 00c2 6A       		.byte	0x6a
  667 00c3 CD000000 		.4byte	0xcd
@@ -711,14 +711,14 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  671 00cd 07       		.uleb128 0x7
  672 00ce AC000000 		.4byte	0xac
  673 00d2 08       		.uleb128 0x8
- 674 00d3 78010000 		.4byte	.LASF14
+ 674 00d3 91010000 		.4byte	.LASF14
  675 00d7 03       		.byte	0x3
  676 00d8 78       		.byte	0x78
  677 00d9 E3000000 		.4byte	0xe3
  678 00dd 05       		.uleb128 0x5
  679 00de 03       		.byte	0x3
  680 00df 00000000 		.4byte	cy_meta_wonvl
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 13
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 13
 
 
  681 00e3 07       		.uleb128 0x7
@@ -731,7 +731,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  688 00f6 FF       		.byte	0xff
  689 00f7 00       		.byte	0
  690 00f8 08       		.uleb128 0x8
- 691 00f9 63010000 		.4byte	.LASF15
+ 691 00f9 7C010000 		.4byte	.LASF15
  692 00fd 03       		.byte	0x3
  693 00fe 86       		.byte	0x86
  694 00ff 09010000 		.4byte	0x109
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  735 000f 02       		.uleb128 0x2
  736 0010 24       		.uleb128 0x24
  737 0011 00       		.byte	0
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 14
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 14
 
 
  738 0012 0B       		.uleb128 0xb
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  792 0048 13       		.uleb128 0x13
  793 0049 00       		.byte	0
  794 004a 00       		.byte	0
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 15
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 15
 
 
  795 004b 08       		.uleb128 0x8
@@ -880,8 +880,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  831 0014 00000000 		.4byte	0
  832              		.section	.debug_line,"",%progbits
  833              	.Ldebug_line0:
- 834 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
- 834      02003701 
+ 834 0000 15010000 		.section	.debug_str,"MS",%progbits,1
+ 834      02000F01 
  834      00000201 
  834      FB0E0D00 
  834      01010101 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  840      676E6564 
  840      20636861 
  840      7200
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 16
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 16
 
 
  841              	.LASF17:
@@ -929,78 +929,79 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 1
  848      7369676E 
  848      65642069 
  848      6E7400
- 849              	.LASF13:
- 850 00d7 63795F6D 		.ascii	"cy_meta_custnvl\000"
- 850      6574615F 
- 850      63757374 
- 850      6E766C00 
- 851              	.LASF19:
- 852 00e7 433A5C55 		.ascii	"C:\\Users\\Morten\\Desktop\\LCD_displayMedTimer\\LC"
- 852      73657273 
- 852      5C4D6F72 
- 852      74656E5C 
- 852      4465736B 
- 853 0115 445F6469 		.ascii	"D_display.cydsn\000"
- 853      73706C61 
- 853      792E6379 
- 853      64736E00 
+ 849              	.LASF19:
+ 850 00d7 433A5C55 		.ascii	"C:\\Users\\Jeppe N. Hansen\\Documents\\GitHub\\E5PR"
+ 850      73657273 
+ 850      5C4A6570 
+ 850      7065204E 
+ 850      2E204861 
+ 851 0105 4A335C4C 		.ascii	"J3\\LCD_displayMedTimer\\LCD_display.cydsn\000"
+ 851      43445F64 
+ 851      6973706C 
+ 851      61794D65 
+ 851      6454696D 
+ 852              	.LASF13:
+ 853 012e 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 853      6574615F 
+ 853      63757374 
+ 853      6E766C00 
  854              	.LASF12:
- 855 0125 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 855 013e 63795F6D 		.ascii	"cy_meta_configecc\000"
  855      6574615F 
  855      636F6E66 
  855      69676563 
  855      6300
  856              	.LASF8:
- 857 0137 756E7369 		.ascii	"unsigned int\000"
+ 857 0150 756E7369 		.ascii	"unsigned int\000"
  857      676E6564 
  857      20696E74 
  857      00
  858              	.LASF7:
- 859 0144 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 859 015d 6C6F6E67 		.ascii	"long long unsigned int\000"
+ARM GAS  C:\Users\JEPPEN~1.HAN\AppData\Local\Temp\ccJKph8G.s 			page 17
+
+
  859      206C6F6E 
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccAmdNn1.s 			page 17
-
-
  859      6720756E 
  859      7369676E 
  859      65642069 
  860              	.LASF10:
- 861 015b 75696E74 		.ascii	"uint8_t\000"
+ 861 0174 75696E74 		.ascii	"uint8_t\000"
  861      385F7400 
  862              	.LASF15:
- 863 0163 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 863 017c 63795F6D 		.ascii	"cy_meta_flashprotect\000"
  863      6574615F 
  863      666C6173 
  863      6870726F 
  863      74656374 
  864              	.LASF14:
- 865 0178 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 865 0191 63795F6D 		.ascii	"cy_meta_wonvl\000"
  865      6574615F 
  865      776F6E76 
  865      6C00
  866              	.LASF11:
- 867 0186 73697A65 		.ascii	"sizetype\000"
+ 867 019f 73697A65 		.ascii	"sizetype\000"
  867      74797065 
  867      00
  868              	.LASF6:
- 869 018f 6C6F6E67 		.ascii	"long long int\000"
+ 869 01a8 6C6F6E67 		.ascii	"long long int\000"
  869      206C6F6E 
  869      6720696E 
  869      7400
  870              	.LASF2:
- 871 019d 73686F72 		.ascii	"short int\000"
+ 871 01b6 73686F72 		.ascii	"short int\000"
  871      7420696E 
  871      7400
  872              	.LASF4:
- 873 01a7 6C6F6E67 		.ascii	"long int\000"
+ 873 01c0 6C6F6E67 		.ascii	"long int\000"
  873      20696E74 
  873      00
  874              	.LASF0:
- 875 01b0 7369676E 		.ascii	"signed char\000"
+ 875 01c9 7369676E 		.ascii	"signed char\000"
  875      65642063 
  875      68617200 
  876              	.LASF18:
- 877 01bc 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 877 01d5 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
  877      72617465 
  877      645F536F 
  877      75726365 
