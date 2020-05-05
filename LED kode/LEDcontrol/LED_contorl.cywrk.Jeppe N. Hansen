@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="LED_contorl\LED_control\Header Files\LEDcontrol.h">
+<ExpandedNodeIds>
+<v>LED_contorl</v>
+<v>LED_contorl\LED_control</v>
+<v>LED_contorl\LED_control\TopDesign</v>
+<v>LED_contorl\LED_control\LED_control.cydwr</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\Pins</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\Analog</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\Clocks</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\Interrupts</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\DMA</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\System</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\Directives</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\Flash Security</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\EEPROM</v>
+<v>LED_contorl\LED_control\Header Files</v>
+<v>LED_contorl\LED_control\Header Files\cyapicallbacks.h</v>
+<v>LED_contorl\LED_control\Header Files\LEDcontrol.h</v>
+<v>LED_contorl\LED_control\Source Files</v>
+<v>LED_contorl\LED_control\Source Files\LEDcontrol.c</v>
+<v>LED_contorl\LED_control\Source Files\main.c</v>
+<v>LED_contorl\LED_control\Generated_Source</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>LED_contorl</v>
+<v>LED_contorl\LED_control</v>
+<v>LED_contorl\LED_control\TopDesign</v>
+<v>LED_contorl\LED_control\LED_control.cydwr</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\Pins</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\Analog</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\Clocks</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\Interrupts</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\DMA</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\System</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\Directives</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\Flash Security</v>
+<v>LED_contorl\LED_control\LED_control.cydwr\EEPROM</v>
+<v>LED_contorl\LED_control\Header Files</v>
+<v>LED_contorl\LED_control\Header Files\cyapicallbacks.h</v>
+<v>LED_contorl\LED_control\Header Files\LEDcontrol.h</v>
+<v>LED_contorl\LED_control\Source Files</v>
+<v>LED_contorl\LED_control\Source Files\LEDcontrol.c</v>
+<v>LED_contorl\LED_control\Source Files\main.c</v>
+<v>LED_contorl\LED_control\Generated_Source</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5\cy_boot</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5\isr_LED_pulse</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5\isr_LED_refreshrate</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5\isr_LED_ring</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5\LEDdata</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5\LEDdata2</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5\SPIM_1</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5\SPIM_1_IntClock</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5\SPIMOutCtrl</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5\timer_clock</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5\timer_clock_1</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5\timer_clock_2</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5\Timer1</v>
+<v>LED_contorl\LED_control\Generated_Source\PSoC5\Timer2</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>LED_contorl</v>
+<v>LED_contorl\LED_control</v>
+<v>LED_contorl\LED_control\TopDesign</v>
+<v>LED_contorl\LED_control\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>LED_contorl</v>
+<v>LED_contorl\LED_control</v>
+<v>LED_contorl\LED_control\TopDesign</v>
+<v>LED_contorl\LED_control\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>LED_contorl</v>
+<v>LED_contorl\LED_control</v>
+<v>LED_contorl\LED_control\CortexM3</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_pulse.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_refreshrate.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_ring.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDcontrol.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDdata.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDdata2.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIM_1.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIM_1_INT.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIM_1_IntClock.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIM_1_PM.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIMOutCtrl.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIMOutCtrl_PM.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock_1.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock_2.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer1.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer1_PM.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer2.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer2_PM.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer3.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer3_PM.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\LED_control.elf</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\LED_control.hex</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\LED_control.map</v>
+<v>LED_contorl\LED_control\LED_control.gpdsc</v>
+<v>LED_contorl\LED_control\LED_control.rpt</v>
+<v>LED_contorl\LED_control\LED_control_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>LED_contorl</v>
+<v>LED_contorl\LED_control</v>
+<v>LED_contorl\LED_control\CortexM3</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_pulse.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_refreshrate.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_ring.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDcontrol.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDdata.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDdata2.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIM_1.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIM_1_INT.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIM_1_IntClock.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIM_1_PM.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIMOutCtrl.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\SPIMOutCtrl_PM.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock_1.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock_2.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer1.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer1_PM.lst</v>
+<v>LED_contorl\LED_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer2.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>LED_contorl</v>
+<v>LED_contorl\LED_control</v>
+<v>LED_contorl\LED_control\PSoC 5LP Architecture TRM</v>
+<v>LED_contorl\LED_control\CY8C58LP Family Datasheet</v>
+<v>LED_contorl\LED_control\System Reference Guides</v>
+<v>LED_contorl\LED_control\System Reference Guides\cy_boot_v5_70</v>
+<v>LED_contorl\LED_control\cy_clock_v2_20</v>
+<v>LED_contorl\LED_control\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>LED_contorl\LED_control\cy_constant_v1_0.pdf</v>
+<v>LED_contorl\LED_control\cy_isr_v1_70</v>
+<v>LED_contorl\LED_control\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>LED_contorl\LED_control\cy_pins_v2_20</v>
+<v>LED_contorl\LED_control\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>LED_contorl\LED_control\CyControlReg_v1_80.pdf</v>
+<v>LED_contorl\LED_control\demux_v1_10.pdf</v>
+<v>LED_contorl\LED_control\SPI_Master_v2_50.pdf</v>
+<v>LED_contorl\LED_control\Timer_v2_80</v>
+<v>LED_contorl\LED_control\Timer_v2_80\Timer_v2_80.pdf</v>
+<v>LED_contorl\LED_control\ZeroTerminal</v>
+<v>LED_contorl\LED_control\ZeroTerminal\ZeroTerminal.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>LED_contorl</v>
+<v>LED_contorl\LED_control</v>
+<v>LED_contorl\LED_control\PSoC 5LP Architecture TRM</v>
+<v>LED_contorl\LED_control\CY8C58LP Family Datasheet</v>
+<v>LED_contorl\LED_control\System Reference Guides</v>
+<v>LED_contorl\LED_control\System Reference Guides\cy_boot_v5_70</v>
+<v>LED_contorl\LED_control\cy_clock_v2_20</v>
+<v>LED_contorl\LED_control\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>LED_contorl\LED_control\cy_constant_v1_0.pdf</v>
+<v>LED_contorl\LED_control\cy_isr_v1_70</v>
+<v>LED_contorl\LED_control\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>LED_contorl\LED_control\cy_pins_v2_20</v>
+<v>LED_contorl\LED_control\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>LED_contorl\LED_control\CyControlReg_v1_80.pdf</v>
+<v>LED_contorl\LED_control\demux_v1_10.pdf</v>
+<v>LED_contorl\LED_control\SPI_Master_v2_50.pdf</v>
+<v>LED_contorl\LED_control\Timer_v2_80</v>
+<v>LED_contorl\LED_control\Timer_v2_80\Timer_v2_80.pdf</v>
+<v>LED_contorl\LED_control\ZeroTerminal</v>
+<v>LED_contorl\LED_control\ZeroTerminal\ZeroTerminal.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\LED_control.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\LED_control.cydsn\LEDcontrol.h" />
+<name v=".\LED_control.cydsn\LEDcontrol.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1229, 474" SelectedTabbedMdiWindow="44820d06-ab20-4ed5-bedf-4266d6b81df3"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="2033c61a-3e2a-46e1-90f3-4551c345cac5" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\TopDesign\TopDesign.cysch" Guid="d3738dc0-fd6b-4380-bee4-1732478ea846" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\LEDcontrol.h" Guid="44820d06-ab20-4ed5-bedf-4266d6b81df3" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Documents\GitHub\E5PRJ3\LED kode\LEDcontrol\LED_control.cydsn\LEDcontrol.c" Guid="ceb02dd3-796c-4268-b5c6-e3699383c4a4" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

@@ -1,6 +1,6 @@
 // ======================================================================
 // SPI_PSoC.v generated from TopDesign.cysch
-// 05/02/2020 at 16:44
+// 05/05/2020 at 18:06
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 

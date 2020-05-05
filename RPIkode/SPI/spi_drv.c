@@ -284,7 +284,6 @@ ssize_t my_spi_read_byte(struct file *filep, struct spi_device *spi, int *data)
   int dataSek = 0, dataMs = 0;
   int sendSek = 0x20;
   int sendMs = 0x10;
-  int modtaget = 0x1A;
 
   memset(t, 0, sizeof(t));
   spi_message_init(&m);

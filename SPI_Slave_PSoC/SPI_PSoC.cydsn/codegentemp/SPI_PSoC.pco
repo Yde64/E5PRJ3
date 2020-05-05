@@ -1,5 +1,5 @@
 # SPI_PSoC
-# 2020-05-02 14:44:03Z
+# 2020-05-05 16:06:14Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0

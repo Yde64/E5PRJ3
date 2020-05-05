@@ -1,7 +1,6 @@
-C:\Users\Morten\Desktop\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\LCD_display.cyprj|e314f9ba-e37f-4227-bf85-fb6d735d264e
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|428753c4-7cb5-4614-ad84-dd22284d8560
-C:\Users\Morten\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|80785983-b406-4b78-88ab-52b2f5f2c8a2
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|d7a670ec-4752-443f-a1ad-22e5bf43ddd5
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|cc446931-d686-4eba-8c44-89ffd73493dd
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|04fc21b3-a547-4de2-aaf5-ab31cfc4fb77
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc3\AnalogDevice\PSoC35AnalogDevice.cylib\PSoC35AnalogDevice.cyprj|8a253745-eb2b-4ba9-aff2-410f5334da6f
+C:\Users\Jeppe N. Hansen\Documents\GitHub\E5PRJ3\LCD_displayMedTimer\LCD_display.cydsn\LCD_display.cyprj|85a0ec8d-66e5-4e53-bf34-22b44f19f407
+S:\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|8a9b4e2e-d0eb-4e16-8e47-c40582334ba4
+C:\Users\Jeppe N. Hansen\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|9a4bf8e8-c485-465e-a590-db4864f4e2f6
+S:\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|2b610ae5-8800-4480-bec2-20aa1398ce3f
+S:\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|6317795e-c7be-44b4-88f1-5cce6c94b676
+S:\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|3c3a4597-9071-4e86-ab2e-87e77f78e2da
