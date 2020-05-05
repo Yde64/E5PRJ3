@@ -20,13 +20,14 @@ int main(void)
     initTimer();                         // Inititer timer_stopur
     initDisp(10);                        // sætter Hz værdien for displayet
     startTimer();                        // starter timer_stopur
-    while(1)
-    {
+   /*
+    
         if(getTime()==20000)
         {
             stopLCD(1);
         }
-    }
+    */
+    return 0;
 }
 
 /* [] END OF FILE */

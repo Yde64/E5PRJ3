@@ -51,8 +51,8 @@
   </block>
   <block name="ZeroTerminal_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="timer_clock_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Em_EEPROM_Dynamic" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Em_EEPROM_Dynamic" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="isr_refreshrate_LCD" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="isr_timer" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="SCL_pin" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />

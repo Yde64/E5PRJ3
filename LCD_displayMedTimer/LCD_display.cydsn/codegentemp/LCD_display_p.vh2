@@ -1,5 +1,5 @@
 -- Project:   LCD_display
--- Generated: 04/08/2020 10:49:21
+-- Generated: 04/22/2020 10:15:36
 -- PSoC Creator  4.2
 
 ENTITY LCD_display IS
