@@ -7,9 +7,10 @@ spiMaster::spiMaster(int data)
 
 void spiMaster::listen()
 {
-  int spi, gpio, log, sek, ms;
+  int spi, gpio, log, sek, ms, times;
   int buf[20];
   char buf2[40];
+  char buf3[40];
 
   while(1)
   {
@@ -32,12 +33,17 @@ void spiMaster::listen()
       cout << "sek: " << sek << endl;
       cout << "ms: " << ms << endl;
 
+      times = open("/www/pages/count.txt", O_RDWR | O_CREAT);
+      read(times, buf, 4);
+
 
       log = open("/www/pages/log.txt", O_WRONLY | O_APPEND | O_CREAT);
-      sprintf(buf2, "%i:  Chug tid: %is,%i0ms\n", count_, sek, ms);
+      sprintf(buf2, "%i:  Chug tid: %i,%is\n", buf[0], sek, ms);
       dprintf(log, buf2, strlen(buf2)); 
-      count_++;
       close(log);
+
+      write(times, buf, 4);
+      close(times);
 
 
       write(gpio, "0", 2);

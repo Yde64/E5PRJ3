@@ -10,7 +10,7 @@
  * ========================================
 */
 
-/* [] END OF FILE */
+
 #define MAXLEDINTENSE 0.5
 #include "LEDcontrol.h"
 
@@ -27,16 +27,16 @@ LEDctrl *rgbLED2 = NULL;
 
 CY_ISR(isr_refreshrate)
 {
-    Timer1_Stop();
+    Timer1_Stop();     //Timer stoppes, så der sendes for at sikre stabilitet
     isr_refreshrate_LCD_Disable();
     if (rgbLED1 != NULL)
     {
-    UpdateLED(rgbLED1);
+    UpdateLED(rgbLED1); //Opdater LED-strip med nye farver
     }
-    CyDelayUs(100);
+    CyDelayUs(100);     //Delay for at sikre stabilitet
     if (rgbLED2 != NULL)
     {
-    UpdateLED(rgbLED2);
+    UpdateLED(rgbLED2); //Opdater LED-strip med nye farver
     }
     CyDelayUs(100);
     isr_refreshrate_LCD_Enable();
@@ -45,15 +45,15 @@ CY_ISR(isr_refreshrate)
 
 CY_ISR(isr_LED_ring)
 {
-    if((rgbLED1->ring == 0) && (rgbLED2->ring == 0)) return;
-    if(rgbLED1->ring == 1) fillcolor(0,0,0,rgbLED1);
+    if((rgbLED1->ring == 0) && (rgbLED2->ring == 0)) return;    //Gør intet hvis ring sekvens ikke er til
+    if(rgbLED1->ring == 1) fillcolor(0,0,0,rgbLED1);            //Slukker alle LED'er på LED-strip
     if(rgbLED2->ring == 1) fillcolor(0,0,0,rgbLED2);
     
-        for(int i2 = index_; i2 < pulselength_+index_; i2++)
+        for(int i2 = index_; i2 < pulselength_+index_; i2++)    //Bestemmer hvilke LED'er der skal tændes
         {
             if(rgbLED1->ring == 1)
             {
-                int x = i2 >= rgbLED1->LEDlength ? i2 - rgbLED1->LEDlength : i2;
+                int x = i2 >= rgbLED1->LEDlength ? i2 - rgbLED1->LEDlength : i2; //Starter forfra hvis i2 er større end lEDlength
                 setcolorLED((rgbLED1 + x)->h, (rgbLED1 + x)->s, (rgbLED1 + x)->v, x, rgbLED1);
             }
             if(rgbLED2->ring == 1)
@@ -64,7 +64,7 @@ CY_ISR(isr_LED_ring)
         }
     if (rgbLED1 != NULL)
     {
-        index_ = index_ < (rgbLED1->LEDlength-1) ? index_ + 1 : 0;
+        index_ = index_ < (rgbLED1->LEDlength-1) ? index_ + 1 : 0; //Øger index_ med 1 hvis den er under LEDlength-1
         return;
     }else if (rgbLED2 != NULL){
         index_ = index_ < (rgbLED2->LEDlength-1) ? index_ + 1 : 0;
@@ -74,13 +74,13 @@ CY_ISR(isr_LED_ring)
 CY_ISR(isr_LED_pulse)
 {
     
-    if(count == 0)
+    if(count == 0) //Mindsker lysstyrke på LED-strip
     {
         if (rgbLED1->pulse == 1)fillcolor(rgbLED1->h,rgbLED1->s,index2, rgbLED1);
         if (rgbLED2->pulse == 1)fillcolor(rgbLED2->h,rgbLED2->s,index2, rgbLED2);
         index2 = index2-0.01;
         if (index2 < 0)count = 1;
-    }else if(count == 1){
+    }else if(count == 1){ //Øger lysstyrke på LED-strip
         if (rgbLED1->pulse == 1)fillcolor(rgbLED1->h,rgbLED1->s,index2, rgbLED1);
         if (rgbLED2->pulse == 1)fillcolor(rgbLED2->h,rgbLED2->s,index2, rgbLED2);
         index2 = index2+0.01;
@@ -93,14 +93,14 @@ CY_ISR(isr_BlinkLED)
 {
     switch (count3)
     {
-        case 0:
+        case 0: //Tænder LED-strip
         {
             if(rgbLED1->blink == 1) fillcolor(rgbLED1->h, rgbLED1->s,1, rgbLED1);
             if(rgbLED2->blink == 1) fillcolor(rgbLED2->h, rgbLED2->s,1, rgbLED2);
             count3++;
         }
         break;
-        case 1:
+        case 1: //Slukker LED-strip
         {
             if(rgbLED1->blink == 1)fillcolor(rgbLED1->h, rgbLED1->s,0, rgbLED1);
             if(rgbLED2->blink == 1)fillcolor(rgbLED2->h, rgbLED2->s,0, rgbLED2);
@@ -119,40 +119,43 @@ CY_ISR(isr_delay)
 
 void setrefreshrate(int Hz)
 {
-    Hz = 1/(float)Hz*1000*10;
+    Hz = 1/(float)Hz*1000*10; //Omregner HZ til en bestemt periode for timeren
     Timer1_WritePeriod(Hz);
 }
 
 void addLEDstrip(int LEDlength_, LEDctrl *rgbLED_, int strip)
 {
-    if (strip == 1)
+    if (strip == 1) //Sammen kobler den givende objekt med enten rgbLED1 eller 2
     {
         rgbLED1 = rgbLED_;
     }else{
         rgbLED2 = rgbLED_;
     }
     
-    rgbLED_->LEDlength = LEDlength_;
-    rgbLED_->pin = strip;
-    LEDOff(rgbLED_);
+    rgbLED_->LEDlength = LEDlength_; //Sammen kobler varibel LEDlength
+    rgbLED_->pin = strip; //Sammen kobler varibel strip
+    LEDOff(rgbLED_); //Slukker for alle sekvenser for objektet
     
     for(int i = 0; i < rgbLED_->LEDlength; i++)
     {
-        setcolorLED(0,0,0,i, rgbLED_);
+        setcolorLED(0,0,0,i, rgbLED_); //Slukker for alle LED'er
     }
 }
 
 void initLED(int Hz)
 {    
+    //Sætter alle interrupts op
     isr_LED_refreshrate_StartEx(isr_refreshrate);
     isr_LED_ring_StartEx(isr_LED_ring);
     isr_LED_pulse_StartEx(isr_LED_pulse);
     isr_BlinkLED_StartEx(isr_BlinkLED);
     isr_delay_StartEx(isr_delay);
     
+    //Slukker for alle sekvenser
     LEDOff(rgbLED1);
     LEDOff(rgbLED2);
     
+    //Sætter defeault værdier for globale variabler
     pulselength_ = 0;
     index_ = 0;
     index2 = MAXLEDINTENSE;
@@ -160,13 +163,14 @@ void initLED(int Hz)
     count2 = 0;
     count3 = 0;
     
-    
+    //Starter timerer og SPI-modul
     SPIM_1_Start();
     Timer1_Start();
     Timer2_Start();
     Timer3_Start();
     Timer4_Start();
     
+    //Sætter LED-strips refreshrate 
     setrefreshrate(Hz);
     
 }
@@ -174,32 +178,39 @@ void initLED(int Hz)
 
 void fillcolor(double h, double s, double v, LEDctrl *rgbLED)
 {
+    //Sætter farven på hele LED-strip'en
     for(int i = 0; i < rgbLED->LEDlength; i++)
     {
         setcolorLED(h, s, v, i, rgbLED);
     }
 }
 
-void pulseLED(double h1, double s1, double v1, LEDctrl *rgbLED)
-{
-    LEDOff(rgbLED);
-    rgbLED->pulse = 1;
-    
-    rgbLED->h = h1;
-    rgbLED->s = s1;
-    rgbLED->v = v1;
-    fillcolor(h1,s1,v1, rgbLED);
-}
-
 void setspeed(int ms_ring, int ms_pulse, int ms_blink)
 {
+    //Ændre hvor hurtigt timerne interrupt, og derved hastigheden på sekvenserne
     Timer2_WritePeriod(ms_pulse*10);
     Timer3_WritePeriod(ms_ring*10);
     Timer4_WritePeriod(ms_blink*10);
 }
 
+
+void pulseLED(double h1, double s1, double v1, LEDctrl *rgbLED)
+{
+    LEDOff(rgbLED);     //Slukker alle sekvenser for det givende objekt
+    rgbLED->pulse = 1;  //Tænder for pulse sekvens for det givende objekt
+    
+    //Gemmer farven der er givet med
+    rgbLED->h = h1;     
+    rgbLED->s = s1;
+    rgbLED->v = v1;
+    
+    //Sætter farven på hele LED-strip'en for det givende objekt
+    fillcolor(h1,s1,v1, rgbLED);
+}
+
 void ringLED(int pulselength, double h1, double s1, double v1, LEDctrl *rgbLED)
 {
+    
     pulselength_ = pulselength;
     LEDOff(rgbLED);
     rgbLED->ring = 1;
@@ -211,6 +222,20 @@ void ringLED(int pulselength, double h1, double s1, double v1, LEDctrl *rgbLED)
         (rgbLED + i)->v = v1;
     }
 }
+
+void BlinkLED(double h1, double s1, double v1, LEDctrl *rgbLED)
+{
+    LEDOff(rgbLED);
+    rgbLED->blink = 1;
+    
+    for(int i = 0; i<rgbLED->LEDlength; i++)
+    {
+        (rgbLED + i)->h = h1;
+        (rgbLED + i)->s = s1;
+        (rgbLED + i)->v = v1;
+    }
+}
+
 
 void hsv2rgb(double h, double s, double v, int LED, LEDctrl *rgbLED)
 {
@@ -226,6 +251,7 @@ void hsv2rgb(double h, double s, double v, int LED, LEDctrl *rgbLED)
         return;
     }
     
+    //HSV til RGB beregning
     hh = h;
     if(hh >= 360.0) hh = 0.0;
     hh /= 60.0;
@@ -269,14 +295,18 @@ void hsv2rgb(double h, double s, double v, int LED, LEDctrl *rgbLED)
         b = q;
         break;
     }
+    
+    //Sætter RGB værdier til at være fra 0-255 og ikke 0-1
     r = r*256.0-1;
     g = g*256.0-1;
     b = b*256.0-1;
     
+    //Sikre ingen negative værdier
     r = r < 0 ? 0 : r;
     g = g < 0 ? 0 : g;
     b = b < 0 ? 0 : b;
     
+    //Giver det givende objekt nye RGB værdier
     (rgbLED + LED)->green = g;
     (rgbLED + LED)->red = r;
     (rgbLED + LED)->blue = b;
@@ -368,25 +398,13 @@ void setcolorLED(double h, double s, double v, int LED, LEDctrl *rgbLED)
 
 void LEDOff(LEDctrl *rgbLED)
 {
+    //Slukker Timer5 og andre sekvenser
     Timer5_Stop();
     rgbLED->ring = 0;
     rgbLED->pulse = 0;
     rgbLED->blink = 0;
 }
 
-void BlinkLED(double h1, double s1, double v1, LEDctrl *rgbLED)
-{
-    LEDOff(rgbLED);
-    
-    for(int i = 0; i<rgbLED->LEDlength; i++)
-    {
-        (rgbLED + i)->h = h1;
-        (rgbLED + i)->s = s1;
-        (rgbLED + i)->v = v1;
-    }
-    
-    rgbLED->blink = 1;
-}
 
 
 //Forskellige sekvenser til LED OBS ordforklaringer er i system arkitketur
@@ -429,13 +447,17 @@ int startSeq(LEDctrl *rgbLED_1, LEDctrl *rgbLED_2) //Start sekvens
     {
         case 0:
         {
+            //Slukker alle sekvenser
             LEDOff(rgbLED_1);
             LEDOff(rgbLED_2);
+            
+            //Tænder 1sek delay timer
             Timer5_Start();
             isr_delay_Enable();
         }
         case 1:
         {            
+            //Sætter rød farve på begge LED-strip
             fillcolor(3, 1.0, 0.83, rgbLED_1);
             fillcolor(3, 1.0, 0.83, rgbLED_2);
         }
@@ -443,44 +465,35 @@ int startSeq(LEDctrl *rgbLED_1, LEDctrl *rgbLED_2) //Start sekvens
         
         case 2:
         {
+            //Sætter gul farve på begge LED-strip
             fillcolor(65, 1, 1, rgbLED_1);
             fillcolor(65, 1, 1, rgbLED_2);
-            //return 1;
         }
         break;
         
         case 3:
         {
+            //Sætter gul farve på begge LED-strip
             fillcolor(65, 1, 1, rgbLED_1);
             fillcolor(65, 1, 1, rgbLED_2);
-               
-            count2++;
-            //fillcolor(65, 1, 1, rgbLED_1);
-            //fillcolor(65, 1, 1, rgbLED_2);
-            //return 1;
-            
         }
         break;
         case 4:
         {
-            //1 sekund delay
-        }
-        break;
-        case 5:
-        {
-            LEDOff(rgbLED_1);
-            LEDOff(rgbLED_2);
-            
+            //Sætter grøn farve på begge LED-strip
             fillcolor(116, 1, 1.0, rgbLED_1);
             fillcolor(116, 1, 1.0, rgbLED_2);
+            
+            //Slukker for 1sek delay timer
             Timer5_Stop();
-            //count2 = 0;
             isr_delay_Disable();
+            
             count2++;
         }
         break;
-        case 6:
+        case 5:
         {  
+            //returner 1 for at indikere at start sekvens er færdig
             count2 = 0;
             return 1;
         }
