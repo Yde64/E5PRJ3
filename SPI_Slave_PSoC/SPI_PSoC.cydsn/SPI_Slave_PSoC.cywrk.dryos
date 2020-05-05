@@ -18,7 +18,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="SPI_Slave_PSoC">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="SPI_Slave_PSoC\SPI_PSoC\Header Files\SPI_Master.h">
 <ExpandedNodeIds>
 <v>SPI_Slave_PSoC</v>
 <v>SPI_Slave_PSoC\SPI_PSoC</v>
@@ -188,6 +188,13 @@
 <v>SPI_Slave_PSoC\SPI_PSoC\PSoC 5LP Architecture TRM</v>
 <v>SPI_Slave_PSoC\SPI_PSoC\CY8C58LP Family Datasheet</v>
 <v>SPI_Slave_PSoC\SPI_PSoC\System Reference Guides</v>
+<v>SPI_Slave_PSoC\SPI_PSoC\System Reference Guides\cy_boot_v5_80</v>
+<v>SPI_Slave_PSoC\SPI_PSoC\cy_isr_v1_70</v>
+<v>SPI_Slave_PSoC\SPI_PSoC\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>SPI_Slave_PSoC\SPI_PSoC\cy_pins_v2_20</v>
+<v>SPI_Slave_PSoC\SPI_PSoC\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>SPI_Slave_PSoC\SPI_PSoC\not_v1_0.pdf</v>
+<v>SPI_Slave_PSoC\SPI_PSoC\SPI_Slave_v2_70.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>SPI_Slave_PSoC</v>
@@ -195,6 +202,13 @@
 <v>SPI_Slave_PSoC\SPI_PSoC\PSoC 5LP Architecture TRM</v>
 <v>SPI_Slave_PSoC\SPI_PSoC\CY8C58LP Family Datasheet</v>
 <v>SPI_Slave_PSoC\SPI_PSoC\System Reference Guides</v>
+<v>SPI_Slave_PSoC\SPI_PSoC\System Reference Guides\cy_boot_v5_80</v>
+<v>SPI_Slave_PSoC\SPI_PSoC\cy_isr_v1_70</v>
+<v>SPI_Slave_PSoC\SPI_PSoC\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>SPI_Slave_PSoC\SPI_PSoC\cy_pins_v2_20</v>
+<v>SPI_Slave_PSoC\SPI_PSoC\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>SPI_Slave_PSoC\SPI_PSoC\not_v1_0.pdf</v>
+<v>SPI_Slave_PSoC\SPI_PSoC\SPI_Slave_v2_70.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -206,6 +220,8 @@
 <OpenDocs>
 <name v=".\main.c" />
 <name v=".\SPI_Master.c" />
+<name v=".\TopDesign\TopDesign.cysch" />
+<name v=".\SPI_Master.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -213,7 +229,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1098, 540" SelectedTabbedMdiWindow="0bfc52ec-9207-469c-95e7-6a75b9dafc6e"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="bcc1f810-3fe8-417a-9bc3-8627228dc3d8" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\E5PRJ3\SPI_Slave_PSoC\SPI_PSoC.cydsn\main.c" Guid="c2a8999e-706b-4996-a430-707a746e57ef" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\E5PRJ3\SPI_Slave_PSoC\SPI_PSoC.cydsn\SPI_Master.c" Guid="0bfc52ec-9207-469c-95e7-6a75b9dafc6e" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1098, 540" SelectedTabbedMdiWindow="763667ce-5f47-4ef9-a7c9-a078cebdd9b6"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="bcc1f810-3fe8-417a-9bc3-8627228dc3d8" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\E5PRJ3\SPI_Slave_PSoC\SPI_PSoC.cydsn\main.c" Guid="c2a8999e-706b-4996-a430-707a746e57ef" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\E5PRJ3\SPI_Slave_PSoC\SPI_PSoC.cydsn\SPI_Master.c" Guid="0bfc52ec-9207-469c-95e7-6a75b9dafc6e" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\E5PRJ3\SPI_Slave_PSoC\SPI_PSoC.cydsn\TopDesign\TopDesign.cysch" Guid="231a5393-8ffd-446e-8b9b-c1e36cd6adb0" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\E5PRJ3\SPI_Slave_PSoC\SPI_PSoC.cydsn\SPI_Master.h" Guid="763667ce-5f47-4ef9-a7c9-a078cebdd9b6" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

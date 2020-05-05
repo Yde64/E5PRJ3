@@ -1,6 +1,6 @@
 -- ======================================================================
 -- LCD_display.ctl generated from LCD_display
--- 04/08/2020 at 10:49
+-- 04/22/2020 at 10:15
 -- This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 -- ======================================================================
 

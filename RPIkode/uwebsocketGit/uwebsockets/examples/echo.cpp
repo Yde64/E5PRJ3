@@ -23,7 +23,11 @@ struct Data
           int fd = open("/www/pages/log.txt", O_WRONLY | O_APPEND | O_CREAT);
           spi1.setcount(0);
           close(fd);
-          
+
+          remove("/www/pages/count.txt");
+          int fd2 = open("/www/pages/count.txt", O_RDWR | O_CREAT);
+          write(fd2, 0, 2);
+          close(fd2);
 
           return;
 
