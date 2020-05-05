@@ -239,8 +239,8 @@ void BlinkLED(double h1, double s1, double v1, LEDctrl *rgbLED)
 
 void hsv2rgb(double h, double s, double v, int LED, LEDctrl *rgbLED)
 {
-    double      hh, p, q, t, ff, r, g, b;
-    long        i;
+    double  C, hh, X, m, r, g, b;
+    int i;
     
     if(v > MAXLEDINTENSE) v = MAXLEDINTENSE;
 
@@ -252,54 +252,52 @@ void hsv2rgb(double h, double s, double v, int LED, LEDctrl *rgbLED)
     }
     
     //HSV til RGB beregning
-    hh = h;
-    if(hh >= 360.0) hh = 0.0;
-    hh /= 60.0;
-    i = (long)hh;
-    ff = hh - i;
-    p = v * (1.0 - s);
-    q = v * (1.0 - (s * ff));
-    t = v * (1.0 - (s * (1.0 - ff)));
+    C = v * s;
+    hh = h / 60.0;
+    X = C * (1- fabs(fmod(hh, 2) -1));
+    m = v - C;
+    
+    i = hh;
 
     switch(i) {
     case 0:
-        r = v;
-        g = t;
-        b = p;
+        r = C;
+        g = X;
+        b = 0.0;
         break;
     case 1:
-        r = q;
-        g = v;
-        b = p;
+        r = X;
+        g = C;
+        b = 0.0;
         break;
     case 2:
-        r = p;
-        g = v;
-        b = t;
+        r = 0.0;
+        g = C;
+        b = X;
         break;
 
     case 3:
-        r = p;
-        g = q;
-        b = v;
+        r = 0.0;
+        g = X;
+        b = C;
         break;
     case 4:
-        r = t;
-        g = p;
-        b = v;
+        r = X;
+        g = 0.0;
+        b = C;
         break;
     case 5:
     default:
-        r = v;
-        g = p;
-        b = q;
+        r = C;
+        g = 0.0;
+        b = X;
         break;
     }
     
     //Sætter RGB værdier til at være fra 0-255 og ikke 0-1
-    r = r*256.0-1;
-    g = g*256.0-1;
-    b = b*256.0-1;
+    r = round((r + m)*255.0);
+    g = round((g + m)*255.0);
+    b = round((b + m)*255.0);
     
     //Sikre ingen negative værdier
     r = r < 0 ? 0 : r;

@@ -27,7 +27,7 @@ int main(void)
     setspeed(100, 20, 300);
     //weightapprovedSeq(rgbstrip1);
     checkSeq(rgbstrip1);
-    checkSeq(rgbstrip2);
+    //checkSeq(rgbstrip2);
     //zeroCalibrateSeq(rgbstrip1);
     
     
