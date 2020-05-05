@@ -1,6 +1,6 @@
 -- Project:   LED_control
--- Generated: 05/03/2020 19:56:49
--- PSoC Creator  4.3
+-- Generated: 05/06/2020 00:07:55
+-- PSoC Creator  4.3 Early Access
 
 ENTITY LED_control IS
     PORT(

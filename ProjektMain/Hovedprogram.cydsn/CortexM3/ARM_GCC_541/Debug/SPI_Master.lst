@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
   28:SPI_Master.c  ****     tx[1] = (ms%2) == 0 ? tx[1] : (tx[1] | 0b01);             //ms parity
   29:SPI_Master.c  ****     
   30:SPI_Master.c  ****     //send interrupt to SPIM
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 2
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 2
 
 
   31:SPI_Master.c  ****     SPI_int_Write(255);
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
   63              	.LVL6:
   50:SPI_Master.c  ****         }
   51:SPI_Master.c  ****         break;
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 3
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 3
 
 
   64              		.loc 1 51 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
  111              		.cfi_endproc
  112              	.LFE63:
  113              		.size	SPIS_initSPI, .-SPIS_initSPI
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 4
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 4
 
 
  114              		.section	.text.SPIS_sendData,"ax",%progbits
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
  159 002a 08BD     		pop	{r3, pc}
  160              	.L20:
  161              		.align	2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 5
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 5
 
 
  162              	.L19:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
  216 0046 02       		.byte	0x2
  217 0047 3F       		.byte	0x3f
  218 0048 4C000000 		.4byte	0x4c
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 6
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 6
 
 
  219 004c 02       		.uleb128 0x2
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
  273 00b0 06       		.uleb128 0x6
  274 00b1 36000000 		.4byte	.LASF17
  275 00b5 01       		.byte	0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 7
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 7
 
 
  276 00b6 25       		.byte	0x25
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
  330 0134 0A       		.uleb128 0xa
  331 0135 0C000000 		.4byte	.LVL10
  332 0139 F7010000 		.4byte	0x1f7
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 8
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 8
 
 
  333 013d 0C       		.uleb128 0xc
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
  387 01ac 68000000 		.4byte	0x68
  388 01b0 05       		.uleb128 0x5
  389 01b1 03       		.byte	0x3
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 9
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 9
 
 
  390 01b2 00000000 		.4byte	rxFlag
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
  444 000a 0E       		.uleb128 0xe
  445 000b 55       		.uleb128 0x55
  446 000c 17       		.uleb128 0x17
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 10
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 10
 
 
  447 000d 11       		.uleb128 0x11
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
  501 0043 06       		.uleb128 0x6
  502 0044 2E       		.uleb128 0x2e
  503 0045 01       		.byte	0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 11
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 11
 
 
  504 0046 3F       		.uleb128 0x3f
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
  558 0082 18       		.uleb128 0x18
  559 0083 00       		.byte	0
  560 0084 00       		.byte	0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 12
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 12
 
 
  561 0085 0A       		.uleb128 0xa
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
  615 00c0 00       		.byte	0
  616 00c1 00       		.byte	0
  617 00c2 0E       		.uleb128 0xe
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 13
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 13
 
 
  618 00c3 34       		.uleb128 0x34
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
  672 00f9 2F       		.uleb128 0x2f
  673 00fa 0B       		.uleb128 0xb
  674 00fb 00       		.byte	0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 14
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 14
 
 
  675 00fc 00       		.byte	0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
  729 0029 00000000 		.4byte	.LVL12
  730 002d 26000000 		.4byte	.LVL13
  731 0031 0100     		.2byte	0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 15
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 15
 
 
  732 0033 50       		.byte	0x50
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
  786 001c 00000000 		.4byte	0
  787              		.section	.debug_line,"",%progbits
  788              	.Ldebug_line0:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 16
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 16
 
 
  789 0000 D7010000 		.section	.debug_str,"MS",%progbits,1
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
  811 0087 53504953 		.ascii	"SPIS_sendData\000"
  811      5F73656E 
  811      64446174 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 17
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 17
 
 
  811      6100
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 1
  833      20726576 
  833      6973696F 
  833      6E203233 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccJknCa4.s 			page 18
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccx1ljE3.s 			page 18
 
 
  833      37373135 

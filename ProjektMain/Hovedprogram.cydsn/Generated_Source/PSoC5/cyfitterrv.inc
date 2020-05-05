@@ -1,7 +1,7 @@
 ;
 ; File Name: cyfitterrv.inc
 ; 
-; PSoC Creator  4.3
+; PSoC Creator  4.3 Early Access
 ;
 ; Description:
 ; 

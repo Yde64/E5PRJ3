@@ -1,7 +1,7 @@
 /*******************************************************************************
 * File Name: project.h
 * 
-* PSoC Creator  4.3
+* PSoC Creator  4.3 Early Access
 *
 * Description:
 * It contains references to all generated header files and should not be modified.
