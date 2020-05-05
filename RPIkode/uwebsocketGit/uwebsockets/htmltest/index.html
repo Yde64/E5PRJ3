@@ -2,15 +2,30 @@
   <meta charset="utf-8" />
   <title>CHUG CHAMP WebSocket</title>
   <iframe id="frmFile" src="log.txt" style="display: none;"></iframe>
+
+  <audio id="bit">
+    <source src="bitconnect.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="moe">
+    <source src="moe-chan.mp3" type="audio/mpeg">
+  </audio>
+
   <script language="javascript" type="text/javascript">
 
-  var wsUri = "ws://rpi:3000/";
+  var wsUri = "ws://62.107.190.223:3000/";
   var output;
   var init;
   var counter = 0;
 
+  var x = document.getElementById("bit");
+  var x2 = document.getElementById("moe");
+
   function init()
   {
+    x2.play();
+    x2.volume = 0.02;
+    x2.controls = true;
+    x2.loop = true;
     output = document.getElementById("output");
     init = document.getElementById("init");
     testWebSocket();
@@ -46,6 +61,7 @@
 
   function reconnect(evt)
   {
+    x.play();
     init.innerHTML = "";
     testWebSocket();
   }
@@ -54,6 +70,11 @@
 
   async function updatedisp()
   {
+    x2.play();
+    x2.volume = 0.02;
+    x2.controls = true;
+    x2.loop = true;
+
     output.innerHTML = "";
 
 	  let response = await fetch('log.txt');
@@ -136,12 +157,31 @@
     .button3 {background-color: #f44336;} /* Red */ 
     .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
     .button5 {background-color: #555555;} /* Black */
+    html
+      {
+      background-image: url('waifu2.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: contain;
+      }
+      audio{
+        float: right;
+        margin-top:0;
+        opacity: 0;
+      }
+    audio:hover {
+      float: right;
+      margin-top:0;
+      opacity: 0.5;
+    }
     </style>
-
-
 
   <button class="button button2" onclick="dellog()">Slet log</button>
   <button class="button button3" onclick="updatedisp()">Vis log</button>
   <button class="button button4" onclick="reconnect()">BITCONNECT</button>
   <div id="init"></div>
   <div id="output"></div>
+  <html>
+
+  </html>
