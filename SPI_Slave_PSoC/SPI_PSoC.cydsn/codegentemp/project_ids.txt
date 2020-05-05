@@ -1,7 +1,6 @@
-C:\Users\dryos\Desktop\SPI_Master\SPI_PSoC.cydsn\SPI_PSoC.cyprj|7216c870-5320-4323-9bd4-71f749495293
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|359e451b-f152-4e98-9595-4b9b9f411cac
-C:\Users\dryos\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|7b1de5b0-34b1-419a-b379-42c01c3a4496
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|3ed48e87-0484-47fd-9032-aaf12293fde6
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|4f9401b5-adbe-4ee8-a252-4286666235c9
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|7cf4a04d-0522-4f83-8507-fb6ce73203d5
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc3\AnalogDevice\PSoC35AnalogDevice.cylib\PSoC35AnalogDevice.cyprj|f28df7e9-fe95-4441-acb4-aefe4dcb19cd
+C:\Users\dryos\Documents\GitHub\E5PRJ3\SPI_Slave_PSoC\SPI_PSoC.cydsn\SPI_PSoC.cyprj|ce3d08d8-ced7-4283-9e66-6e56a0934ee8
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|b5cdd369-eca5-46ec-a61a-24f61f05955f
+C:\Users\dryos\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|e083314d-dc94-4935-9391-9fa0c1712a2d
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|d2e9705c-035f-40fa-9299-47c307e71bde
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|d967fd7f-5ddf-4823-a528-058e61c2bb63
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|ef08bd51-bbc3-4327-92c8-574d1b825158
