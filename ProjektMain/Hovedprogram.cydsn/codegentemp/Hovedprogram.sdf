@@ -1,10 +1,18 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2020-05-03T16:15:48Z")
+<<<<<<< HEAD
+ (DATE "2020-05-05T20:55:06Z")
  (DESIGN "Hovedprogram")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
- (VERSION " 4.3")
+ (VERSION " 4.2")
+=======
+ (DATE "2020-05-05T22:07:34Z")
+ (DESIGN "Hovedprogram")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.3 Early Access")
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
  (DIVIDER .)
  (TIMESCALE 1 ns)
  (CELL

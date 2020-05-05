@@ -1,4 +1,8 @@
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 1
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 1
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
   28:LiquidCrystal_I2C.c **** uint8_t _cols;
   29:LiquidCrystal_I2C.c **** uint8_t _rows;
   30:LiquidCrystal_I2C.c **** uint8_t _charsize;
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 2
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 2
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 2
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
   31:LiquidCrystal_I2C.c **** uint8_t _backlightval;
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
   70              		.cfi_endproc
   71              	.LFE63:
   72              		.size	LiquidCrystal_I2C_init, .-LiquidCrystal_I2C_init
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 3
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 3
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 3
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
   73              		.section	.text.I2C_M_write_byte,"ax",%progbits
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
   89:LiquidCrystal_I2C.c **** 	_displaycontrol = LCD_DISPLAYON | LCD_CURSOROFF | LCD_BLINKOFF;
   90:LiquidCrystal_I2C.c **** 	display();
   91:LiquidCrystal_I2C.c **** 	
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 4
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 4
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 4
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
   92:LiquidCrystal_I2C.c **** 	// clear it off
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  146:LiquidCrystal_I2C.c ****     
  147:LiquidCrystal_I2C.c ****     return;
  148:LiquidCrystal_I2C.c **** }
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 5
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 5
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 5
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  149:LiquidCrystal_I2C.c **** 
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  203:LiquidCrystal_I2C.c **** }
  204:LiquidCrystal_I2C.c **** 
  205:LiquidCrystal_I2C.c **** // This is for text that flows Right to Left
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 6
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 6
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 6
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  206:LiquidCrystal_I2C.c **** void rightToLeft(void){
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  260:LiquidCrystal_I2C.c **** }
  261:LiquidCrystal_I2C.c **** 
  262:LiquidCrystal_I2C.c **** /*********** mid level commands, for sending data/cmds */
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 7
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 7
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 7
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  263:LiquidCrystal_I2C.c **** 
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  317:LiquidCrystal_I2C.c **** void load_custom_character(uint8_t char_num, uint8_t *rows){
  318:LiquidCrystal_I2C.c **** 	
  319:LiquidCrystal_I2C.c ****     createChar(char_num, rows);
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 8
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 8
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 8
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  320:LiquidCrystal_I2C.c ****     
@@ -478,7 +510,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  103 0014 10BD     		pop	{r4, pc}
  104              		.cfi_endproc
  105              	.LFE92:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 9
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 9
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 9
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  106              		.size	I2C_M_write_byte, .-I2C_M_write_byte
@@ -538,7 +574,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  157              		.cfi_offset 14, -4
  248:LiquidCrystal_I2C.c **** 	expanderWrite(0);
  158              		.loc 1 248 0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 10
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 10
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 10
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  159 0002 0020     		movs	r0, #0
@@ -598,7 +638,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  209              		.thumb_func
  210              		.type	setBacklight, %function
  211              	setBacklight:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 11
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 11
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 11
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  212              	.LFB90:
@@ -658,7 +702,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  310:LiquidCrystal_I2C.c **** 	expanderWrite(_data & ~En);	// En low
  260              		.loc 1 310 0
  261 000c 0120     		movs	r0, #1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 12
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 12
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 12
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  262 000e FFF7FEFF 		bl	CyDelayUs
@@ -718,7 +766,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  311              	send:
  312              	.LFB85:
  282:LiquidCrystal_I2C.c ****     
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 13
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 13
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 13
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  313              		.loc 1 282 0
@@ -778,7 +830,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  266:LiquidCrystal_I2C.c ****     
  362              		.loc 1 266 0
  363 0002 0021     		movs	r1, #0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 14
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 14
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 14
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  364 0004 FFF7FEFF 		bl	send
@@ -838,7 +894,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  117:LiquidCrystal_I2C.c **** 	CyDelay(2);  // this command takes a long time!
  414              		.loc 1 117 0
  415 0002 0220     		movs	r0, #2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 15
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 15
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 15
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  416 0004 FFF7FEFF 		bl	command
@@ -898,7 +958,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  464              		.loc 1 129 0
  465 0020 04AB     		add	r3, sp, #16
  466 0022 03EB8404 		add	r4, r3, r4, lsl #2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 16
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 16
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 16
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  467              	.LVL43:
@@ -958,7 +1022,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  517              		.cfi_endproc
  518              	.LFE68:
  519              		.size	noDisplay, .-noDisplay
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 17
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 17
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 17
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  520              		.section	.text.display,"ax",%progbits
@@ -1018,7 +1086,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  569              		.loc 1 153 0
  570 0002 054B     		ldr	r3, .L50
  571 0004 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 18
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 18
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 18
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  572 0006 00F0FD00 		and	r0, r0, #253
@@ -1078,7 +1150,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  622              		.thumb
  623              		.thumb_func
  624              		.type	noBlink, %function
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 19
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 19
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 19
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  625              	noBlink:
@@ -1138,7 +1214,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  673              		.loc 1 177 0
  674 000c 40F00800 		orr	r0, r0, #8
  675 0010 FFF7FEFF 		bl	command
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 20
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 20
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 20
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  676              	.LVL50:
@@ -1198,7 +1278,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  726 0002 1C20     		movs	r0, #28
  727 0004 FFF7FEFF 		bl	command
  728              	.LVL52:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 21
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 21
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 21
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  729 0008 08BD     		pop	{r3, pc}
@@ -1258,7 +1342,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  779              		.cfi_def_cfa_offset 8
  780              		.cfi_offset 3, -8
  781              		.cfi_offset 14, -4
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 22
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 22
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 22
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  208:LiquidCrystal_I2C.c **** 	command(LCD_ENTRYMODESET | _displaymode);
@@ -1318,7 +1406,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  831              		.size	autoscroll, .-autoscroll
  832              		.section	.text.noAutoscroll,"ax",%progbits
  833              		.align	2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 23
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 23
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 23
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  834              		.global	noAutoscroll
@@ -1378,7 +1470,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  883 0002 0121     		movs	r1, #1
  884 0004 FFF7FEFF 		bl	send
  885              	.LVL58:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 24
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 24
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 24
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  886 0008 08BD     		pop	{r3, pc}
@@ -1438,7 +1534,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  933              		.loc 1 238 0 is_stmt 0 discriminator 1
  934 001e 072C     		cmp	r4, #7
  935 0020 F9D9     		bls	.L88
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 25
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 25
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 25
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  243:LiquidCrystal_I2C.c **** 
@@ -1498,7 +1598,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  337:LiquidCrystal_I2C.c ****     
  986              		.loc 1 337 0
  987 0004 FFF7FEFF 		bl	strlen
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 26
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 26
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 26
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  988              	.LVL71:
@@ -1558,7 +1662,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1034 0008 254B     		ldr	r3, .L100+4
  1035 000a 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  1036 000c 012B     		cmp	r3, #1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 27
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 27
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 27
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1037 000e 02D9     		bls	.L97
@@ -1618,7 +1726,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
   76:LiquidCrystal_I2C.c **** 
  1081              		.loc 1 76 0
  1082 0054 41F29410 		movw	r0, #4500
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 28
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 28
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 28
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1083 0058 FFF7FEFF 		bl	CyDelayUs
@@ -1678,7 +1790,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1127              	.L100:
  1128 009c 00000000 		.word	_displayfunction
  1129 00a0 00000000 		.word	_rows
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 29
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 29
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 29
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1130 00a4 00000000 		.word	_charsize
@@ -1738,7 +1854,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1172              		.set	.LANCHOR0,. + 0
  1173              	.LC0:
  1174 0000 00000000 		.word	0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 30
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 30
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 30
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1175 0004 40000000 		.word	64
@@ -1746,12 +1866,12 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1177 000c 54000000 		.word	84
  1178              		.text
  1179              	.Letext0:
- 1180              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.
- 1181              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1180              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1181              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
  1182              		.file 4 "Generated_Source\\PSoC5/core_cm3.h"
  1183              		.file 5 "Generated_Source\\PSoC5/I2C_1.h"
  1184              		.file 6 "Generated_Source\\PSoC5/CyLib.h"
- 1185              		.file 7 "c:\\program files (x86)\\cypress\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1185              		.file 7 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
  1186              		.section	.debug_info,"",%progbits
  1187              	.Ldebug_info0:
  1188 0000 45090000 		.4byte	0x945
@@ -1759,26 +1879,26 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1190 0006 00000000 		.4byte	.Ldebug_abbrev0
  1191 000a 04       		.byte	0x4
  1192 000b 01       		.uleb128 0x1
- 1193 000c DC030000 		.4byte	.LASF86
+ 1193 000c D4030000 		.4byte	.LASF86
  1194 0010 0C       		.byte	0xc
- 1195 0011 83030000 		.4byte	.LASF87
- 1196 0015 69000000 		.4byte	.LASF88
+ 1195 0011 7B030000 		.4byte	.LASF87
+ 1196 0015 10010000 		.4byte	.LASF88
  1197 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1198 001d 00000000 		.4byte	0
  1199 0021 00000000 		.4byte	.Ldebug_line0
  1200 0025 02       		.uleb128 0x2
  1201 0026 01       		.byte	0x1
  1202 0027 06       		.byte	0x6
- 1203 0028 03020000 		.4byte	.LASF0
+ 1203 0028 01020000 		.4byte	.LASF0
  1204 002c 03       		.uleb128 0x3
- 1205 002d 84010000 		.4byte	.LASF4
+ 1205 002d 82010000 		.4byte	.LASF4
  1206 0031 02       		.byte	0x2
  1207 0032 1D       		.byte	0x1d
  1208 0033 37000000 		.4byte	0x37
  1209 0037 02       		.uleb128 0x2
  1210 0038 01       		.byte	0x1
  1211 0039 08       		.byte	0x8
- 1212 003a DA010000 		.4byte	.LASF1
+ 1212 003a D8010000 		.4byte	.LASF1
  1213 003e 02       		.uleb128 0x2
  1214 003f 02       		.byte	0x2
  1215 0040 05       		.byte	0x5
@@ -1786,19 +1906,24 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1217 0045 02       		.uleb128 0x2
  1218 0046 02       		.byte	0x2
  1219 0047 07       		.byte	0x7
- 1220 0048 54020000 		.4byte	.LASF3
+ 1220 0048 52020000 		.4byte	.LASF3
  1221 004c 03       		.uleb128 0x3
- 1222 004d 52030000 		.4byte	.LASF5
+ 1222 004d 4A030000 		.4byte	.LASF5
  1223 0051 02       		.byte	0x2
  1224 0052 3F       		.byte	0x3f
  1225 0053 57000000 		.4byte	0x57
  1226 0057 02       		.uleb128 0x2
  1227 0058 04       		.byte	0x4
  1228 0059 05       		.byte	0x5
- 1229 005a 64010000 		.4byte	.LASF6
+ 1229 005a 62010000 		.4byte	.LASF6
  1230 005e 03       		.uleb128 0x3
+<<<<<<< HEAD
+ 1231 005f 09030000 		.4byte	.LASF7
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 31
+=======
  1231 005f 11030000 		.4byte	.LASF7
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 31
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 31
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1232 0063 02       		.byte	0x2
@@ -1807,15 +1932,15 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1235 0069 02       		.uleb128 0x2
  1236 006a 04       		.byte	0x4
  1237 006b 07       		.byte	0x7
- 1238 006c E0020000 		.4byte	.LASF8
+ 1238 006c DE020000 		.4byte	.LASF8
  1239 0070 02       		.uleb128 0x2
  1240 0071 08       		.byte	0x8
  1241 0072 05       		.byte	0x5
- 1242 0073 56010000 		.4byte	.LASF9
+ 1242 0073 54010000 		.4byte	.LASF9
  1243 0077 02       		.uleb128 0x2
  1244 0078 08       		.byte	0x8
  1245 0079 07       		.byte	0x7
- 1246 007a 17020000 		.4byte	.LASF10
+ 1246 007a 15020000 		.4byte	.LASF10
  1247 007e 04       		.uleb128 0x4
  1248 007f 04       		.byte	0x4
  1249 0080 05       		.byte	0x5
@@ -1823,50 +1948,54 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1251 0085 02       		.uleb128 0x2
  1252 0086 04       		.byte	0x4
  1253 0087 07       		.byte	0x7
- 1254 0088 3E020000 		.4byte	.LASF11
+ 1254 0088 3C020000 		.4byte	.LASF11
  1255 008c 03       		.uleb128 0x3
- 1256 008d 23010000 		.4byte	.LASF12
+ 1256 008d E3000000 		.4byte	.LASF12
  1257 0091 03       		.byte	0x3
  1258 0092 18       		.byte	0x18
  1259 0093 2C000000 		.4byte	0x2c
  1260 0097 03       		.uleb128 0x3
- 1261 0098 0F020000 		.4byte	.LASF13
+ 1261 0098 0D020000 		.4byte	.LASF13
  1262 009c 03       		.byte	0x3
  1263 009d 2C       		.byte	0x2c
  1264 009e 4C000000 		.4byte	0x4c
  1265 00a2 03       		.uleb128 0x3
- 1266 00a3 35020000 		.4byte	.LASF14
+ 1266 00a3 33020000 		.4byte	.LASF14
  1267 00a7 03       		.byte	0x3
  1268 00a8 30       		.byte	0x30
  1269 00a9 5E000000 		.4byte	0x5e
  1270 00ad 02       		.uleb128 0x2
  1271 00ae 04       		.byte	0x4
  1272 00af 04       		.byte	0x4
- 1273 00b0 50010000 		.4byte	.LASF15
+ 1273 00b0 4E010000 		.4byte	.LASF15
  1274 00b4 02       		.uleb128 0x2
  1275 00b5 08       		.byte	0x8
  1276 00b6 04       		.byte	0x4
- 1277 00b7 F2020000 		.4byte	.LASF16
+ 1277 00b7 F0020000 		.4byte	.LASF16
  1278 00bb 02       		.uleb128 0x2
  1279 00bc 01       		.byte	0x1
  1280 00bd 08       		.byte	0x8
- 1281 00be 88020000 		.4byte	.LASF17
+ 1281 00be 86020000 		.4byte	.LASF17
  1282 00c2 02       		.uleb128 0x2
  1283 00c3 08       		.byte	0x8
  1284 00c4 04       		.byte	0x4
- 1285 00c5 D7000000 		.4byte	.LASF18
+ 1285 00c5 97000000 		.4byte	.LASF18
  1286 00c9 02       		.uleb128 0x2
  1287 00ca 04       		.byte	0x4
  1288 00cb 07       		.byte	0x7
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 32
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 32
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 32
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
- 1289 00cc 75010000 		.4byte	.LASF19
+ 1289 00cc 73010000 		.4byte	.LASF19
  1290 00d0 05       		.uleb128 0x5
  1291 00d1 04       		.byte	0x4
  1292 00d2 BB000000 		.4byte	0xbb
  1293 00d6 06       		.uleb128 0x6
- 1294 00d7 A2030000 		.4byte	.LASF24
+ 1294 00d7 9A030000 		.4byte	.LASF24
  1295 00db 01       		.byte	0x1
  1296 00dc 21       		.byte	0x21
  1297 00dd 00000000 		.4byte	.LFB63
@@ -1875,13 +2004,13 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1300 00e6 9C       		.byte	0x9c
  1301 00e7 28010000 		.4byte	0x128
  1302 00eb 07       		.uleb128 0x7
- 1303 00ec 6F030000 		.4byte	.LASF20
+ 1303 00ec 67030000 		.4byte	.LASF20
  1304 00f0 01       		.byte	0x1
  1305 00f1 21       		.byte	0x21
  1306 00f2 8C000000 		.4byte	0x8c
  1307 00f6 00000000 		.4byte	.LLST0
  1308 00fa 07       		.uleb128 0x7
- 1309 00fb 2B010000 		.4byte	.LASF21
+ 1309 00fb EB000000 		.4byte	.LASF21
  1310 00ff 01       		.byte	0x1
  1311 0100 21       		.byte	0x21
  1312 0101 8C000000 		.4byte	0x8c
@@ -1900,7 +2029,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1325 0123 66000000 		.4byte	.LLST3
  1326 0127 00       		.byte	0
  1327 0128 08       		.uleb128 0x8
- 1328 0129 34010000 		.4byte	.LASF25
+ 1328 0129 F4000000 		.4byte	.LASF25
  1329 012d 01       		.byte	0x1
  1330 012e 5A01     		.2byte	0x15a
  1331 0130 00000000 		.4byte	.LFB92
@@ -1909,16 +2038,20 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1334 0139 9C       		.byte	0x9c
  1335 013a 8F010000 		.4byte	0x18f
  1336 013e 09       		.uleb128 0x9
- 1337 013f A0020000 		.4byte	.LASF26
+ 1337 013f 9E020000 		.4byte	.LASF26
  1338 0143 01       		.byte	0x1
  1339 0144 5A01     		.2byte	0x15a
  1340 0146 8C000000 		.4byte	0x8c
  1341 014a 88000000 		.4byte	.LLST4
  1342 014e 09       		.uleb128 0x9
- 1343 014f B9020000 		.4byte	.LASF27
+ 1343 014f B7020000 		.4byte	.LASF27
  1344 0153 01       		.byte	0x1
  1345 0154 5A01     		.2byte	0x15a
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 33
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 33
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 33
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1346 0156 8C000000 		.4byte	0x8c
@@ -1949,7 +2082,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1371 018a 1C090000 		.4byte	0x91c
  1372 018e 00       		.byte	0
  1373 018f 08       		.uleb128 0x8
- 1374 0190 8E010000 		.4byte	.LASF28
+ 1374 0190 8C010000 		.4byte	.LASF28
  1375 0194 01       		.byte	0x1
  1376 0195 2C01     		.2byte	0x12c
  1377 0197 00000000 		.4byte	.LFB87
@@ -1958,7 +2091,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1380 01a0 9C       		.byte	0x9c
  1381 01a1 BF010000 		.4byte	0x1bf
  1382 01a5 09       		.uleb128 0x9
- 1383 01a6 7E010000 		.4byte	.LASF29
+ 1383 01a6 7C010000 		.4byte	.LASF29
  1384 01aa 01       		.byte	0x1
  1385 01ab 2C01     		.2byte	0x12c
  1386 01ad 8C000000 		.4byte	0x8c
@@ -1968,7 +2101,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1390 01ba 28010000 		.4byte	0x128
  1391 01be 00       		.byte	0
  1392 01bf 06       		.uleb128 0x6
- 1393 01c0 A5020000 		.4byte	.LASF30
+ 1393 01c0 A3020000 		.4byte	.LASF30
  1394 01c4 01       		.byte	0x1
  1395 01c5 F6       		.byte	0xf6
  1396 01c6 00000000 		.4byte	.LFB81
@@ -1978,7 +2111,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1400 01d0 E4010000 		.4byte	0x1e4
  1401 01d4 0D       		.uleb128 0xd
  1402 01d5 0C000000 		.4byte	.LVL13
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 34
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 34
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 34
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1403 01d9 8F010000 		.4byte	0x18f
@@ -1990,7 +2127,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1409 01e2 00       		.byte	0
  1410 01e3 00       		.byte	0
  1411 01e4 06       		.uleb128 0x6
- 1412 01e5 65030000 		.4byte	.LASF31
+ 1412 01e5 5D030000 		.4byte	.LASF31
  1413 01e9 01       		.byte	0x1
  1414 01ea FE       		.byte	0xfe
  1415 01eb 00000000 		.4byte	.LFB82
@@ -2009,7 +2146,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1428 0207 00       		.byte	0
  1429 0208 00       		.byte	0
  1430 0209 08       		.uleb128 0x8
- 1431 020a 71020000 		.4byte	.LASF32
+ 1431 020a 6F020000 		.4byte	.LASF32
  1432 020e 01       		.byte	0x1
  1433 020f 4401     		.2byte	0x144
  1434 0211 00000000 		.4byte	.LFB90
@@ -2031,19 +2168,23 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1450 023d BF010000 		.4byte	0x1bf
  1451 0241 00       		.byte	0
  1452 0242 08       		.uleb128 0x8
- 1453 0243 94020000 		.4byte	.LASF34
+ 1453 0243 92020000 		.4byte	.LASF34
  1454 0247 01       		.byte	0x1
  1455 0248 3301     		.2byte	0x133
  1456 024a 00000000 		.4byte	.LFB88
  1457 024e 22000000 		.4byte	.LFE88-.LFB88
  1458 0252 01       		.uleb128 0x1
  1459 0253 9C       		.byte	0x9c
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 35
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 35
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 35
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1460 0254 B9020000 		.4byte	0x2b9
  1461 0258 09       		.uleb128 0x9
- 1462 0259 7E010000 		.4byte	.LASF29
+ 1462 0259 7C010000 		.4byte	.LASF29
  1463 025d 01       		.byte	0x1
  1464 025e 3301     		.2byte	0x133
  1465 0260 8C000000 		.4byte	0x8c
@@ -2097,8 +2238,13 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1513 02b7 00       		.byte	0
  1514 02b8 00       		.byte	0
  1515 02b9 08       		.uleb128 0x8
+<<<<<<< HEAD
+ 1516 02ba 70030000 		.4byte	.LASF35
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 36
+=======
  1516 02ba 78030000 		.4byte	.LASF35
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 36
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 36
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1517 02be 01       		.byte	0x1
@@ -2109,7 +2255,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1522 02ca 9C       		.byte	0x9c
  1523 02cb 04030000 		.4byte	0x304
  1524 02cf 09       		.uleb128 0x9
- 1525 02d0 0C010000 		.4byte	.LASF36
+ 1525 02d0 CC000000 		.4byte	.LASF36
  1526 02d4 01       		.byte	0x1
  1527 02d5 2401     		.2byte	0x124
  1528 02d7 8C000000 		.4byte	0x8c
@@ -2146,28 +2292,32 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1559 0315 9C       		.byte	0x9c
  1560 0316 75030000 		.4byte	0x375
  1561 031a 09       		.uleb128 0x9
- 1562 031b 0C010000 		.4byte	.LASF36
+ 1562 031b CC000000 		.4byte	.LASF36
  1563 031f 01       		.byte	0x1
  1564 0320 1A01     		.2byte	0x11a
  1565 0322 8C000000 		.4byte	0x8c
  1566 0326 67010000 		.4byte	.LLST10
  1567 032a 09       		.uleb128 0x9
- 1568 032b F1000000 		.4byte	.LASF38
+ 1568 032b B1000000 		.4byte	.LASF38
  1569 032f 01       		.byte	0x1
  1570 0330 1A01     		.2byte	0x11a
  1571 0332 8C000000 		.4byte	0x8c
  1572 0336 88010000 		.4byte	.LLST11
  1573 033a 0E       		.uleb128 0xe
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 37
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 37
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 37
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
- 1574 033b C8010000 		.4byte	.LASF39
+ 1574 033b C6010000 		.4byte	.LASF39
  1575 033f 01       		.byte	0x1
  1576 0340 1C01     		.2byte	0x11c
  1577 0342 8C000000 		.4byte	0x8c
  1578 0346 A9010000 		.4byte	.LLST12
  1579 034a 0F       		.uleb128 0xf
- 1580 034b 2E020000 		.4byte	.LASF40
+ 1580 034b 2C020000 		.4byte	.LASF40
  1581 034f 01       		.byte	0x1
  1582 0350 1D01     		.2byte	0x11d
  1583 0352 8C000000 		.4byte	0x8c
@@ -2191,7 +2341,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1601 0373 00       		.byte	0
  1602 0374 00       		.byte	0
  1603 0375 08       		.uleb128 0x8
- 1604 0376 72040000 		.4byte	.LASF41
+ 1604 0376 6A040000 		.4byte	.LASF41
  1605 037a 01       		.byte	0x1
  1606 037b 0801     		.2byte	0x108
  1607 037d 00000000 		.4byte	.LFB83
@@ -2200,7 +2350,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1610 0386 9C       		.byte	0x9c
  1611 0387 AB030000 		.4byte	0x3ab
  1612 038b 09       		.uleb128 0x9
- 1613 038c 0C010000 		.4byte	.LASF36
+ 1613 038c CC000000 		.4byte	.LASF36
  1614 0390 01       		.byte	0x1
  1615 0391 0801     		.2byte	0x108
  1616 0393 8C000000 		.4byte	0x8c
@@ -2218,7 +2368,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1628 03ab 06       		.uleb128 0x6
  1629 03ac 05000000 		.4byte	.LASF42
  1630 03b0 01       		.byte	0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 38
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 38
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 38
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1631 03b1 6B       		.byte	0x6b
@@ -2248,7 +2402,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1655 03e1 00       		.byte	0
  1656 03e2 00       		.byte	0
  1657 03e3 06       		.uleb128 0x6
- 1658 03e4 45010000 		.4byte	.LASF43
+ 1658 03e4 05010000 		.4byte	.LASF43
  1659 03e8 01       		.byte	0x1
  1660 03e9 73       		.byte	0x73
  1661 03ea 00000000 		.4byte	.LFB66
@@ -2277,8 +2431,13 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1684 0419 00       		.byte	0
  1685 041a 00       		.byte	0
  1686 041b 06       		.uleb128 0x6
+<<<<<<< HEAD
+ 1687 041c FF020000 		.4byte	.LASF44
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 39
+=======
  1687 041c 07030000 		.4byte	.LASF44
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 39
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 39
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1688 0420 01       		.byte	0x1
@@ -2301,7 +2460,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1705 0446 8C000000 		.4byte	0x8c
  1706 044a FE010000 		.4byte	.LLST15
  1707 044e 11       		.uleb128 0x11
- 1708 044f AC010000 		.4byte	.LASF45
+ 1708 044f AA010000 		.4byte	.LASF45
  1709 0453 01       		.byte	0x1
  1710 0454 7D       		.byte	0x7d
  1711 0455 74040000 		.4byte	0x474
@@ -2334,11 +2493,15 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1738 0482 03       		.byte	0x3
  1739 0483 00       		.byte	0
  1740 0484 06       		.uleb128 0x6
- 1741 0485 7E020000 		.4byte	.LASF46
+ 1741 0485 7C020000 		.4byte	.LASF46
  1742 0489 01       		.byte	0x1
  1743 048a 87       		.byte	0x87
  1744 048b 00000000 		.4byte	.LFB68
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 40
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 40
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 40
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1745 048f 1C000000 		.4byte	.LFE68-.LFB68
@@ -2350,7 +2513,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1751 049e 75030000 		.4byte	0x375
  1752 04a2 00       		.byte	0
  1753 04a3 06       		.uleb128 0x6
- 1754 04a4 FF020000 		.4byte	.LASF47
+ 1754 04a4 F7020000 		.4byte	.LASF47
  1755 04a8 01       		.byte	0x1
  1756 04a9 8E       		.byte	0x8e
  1757 04aa 00000000 		.4byte	.LFB69
@@ -2363,7 +2526,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1764 04bd 75030000 		.4byte	0x375
  1765 04c1 00       		.byte	0
  1766 04c2 06       		.uleb128 0x6
- 1767 04c3 4B020000 		.4byte	.LASF48
+ 1767 04c3 49020000 		.4byte	.LASF48
  1768 04c7 01       		.byte	0x1
  1769 04c8 97       		.byte	0x97
  1770 04c9 00000000 		.4byte	.LFB70
@@ -2376,7 +2539,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1777 04dc 75030000 		.4byte	0x375
  1778 04e0 00       		.byte	0
  1779 04e1 06       		.uleb128 0x6
- 1780 04e2 E8010000 		.4byte	.LASF49
+ 1780 04e2 E6010000 		.4byte	.LASF49
  1781 04e6 01       		.byte	0x1
  1782 04e7 9E       		.byte	0x9e
  1783 04e8 00000000 		.4byte	.LFB71
@@ -2389,7 +2552,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1790 04fb 75030000 		.4byte	0x375
  1791 04ff 00       		.byte	0
  1792 0500 06       		.uleb128 0x6
- 1793 0501 B1020000 		.4byte	.LASF50
+ 1793 0501 AF020000 		.4byte	.LASF50
  1794 0505 01       		.byte	0x1
  1795 0506 A7       		.byte	0xa7
  1796 0507 00000000 		.4byte	.LFB72
@@ -2398,7 +2561,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1799 0510 9C       		.byte	0x9c
  1800 0511 1F050000 		.4byte	0x51f
  1801 0515 0C       		.uleb128 0xc
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 41
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 41
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 41
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1802 0516 14000000 		.4byte	.LVL49
@@ -2418,7 +2585,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1816 0539 75030000 		.4byte	0x375
  1817 053d 00       		.byte	0
  1818 053e 06       		.uleb128 0x6
- 1819 053f 2A030000 		.4byte	.LASF52
+ 1819 053f 22030000 		.4byte	.LASF52
  1820 0543 01       		.byte	0x1
  1821 0544 B7       		.byte	0xb7
  1822 0545 00000000 		.4byte	.LFB74
@@ -2437,7 +2604,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1835 0561 00       		.byte	0
  1836 0562 00       		.byte	0
  1837 0563 06       		.uleb128 0x6
- 1838 0564 AF000000 		.4byte	.LASF53
+ 1838 0564 6F000000 		.4byte	.LASF53
  1839 0568 01       		.byte	0x1
  1840 0569 BD       		.byte	0xbd
  1841 056a 00000000 		.4byte	.LFB75
@@ -2456,9 +2623,13 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1854 0586 00       		.byte	0
  1855 0587 00       		.byte	0
  1856 0588 06       		.uleb128 0x6
- 1857 0589 B9030000 		.4byte	.LASF54
+ 1857 0589 B1030000 		.4byte	.LASF54
  1858 058d 01       		.byte	0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 42
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 42
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 42
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1859 058e C5       		.byte	0xc5
@@ -2472,7 +2643,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1867 05a2 75030000 		.4byte	0x375
  1868 05a6 00       		.byte	0
  1869 05a7 06       		.uleb128 0x6
- 1870 05a8 BE020000 		.4byte	.LASF55
+ 1870 05a8 BC020000 		.4byte	.LASF55
  1871 05ac 01       		.byte	0x1
  1872 05ad CE       		.byte	0xce
  1873 05ae 00000000 		.4byte	.LFB77
@@ -2485,7 +2656,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1880 05c1 75030000 		.4byte	0x375
  1881 05c5 00       		.byte	0
  1882 05c6 06       		.uleb128 0x6
- 1883 05c7 97030000 		.4byte	.LASF56
+ 1883 05c7 8F030000 		.4byte	.LASF56
  1884 05cb 01       		.byte	0x1
  1885 05cc D7       		.byte	0xd7
  1886 05cd 00000000 		.4byte	.LFB78
@@ -2518,12 +2689,16 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1913 0610 0A000000 		.4byte	.LFE84-.LFB84
  1914 0614 01       		.uleb128 0x1
  1915 0615 9C       		.byte	0x9c
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 43
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 43
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 43
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1916 0616 3A060000 		.4byte	0x63a
  1917 061a 09       		.uleb128 0x9
- 1918 061b 0C010000 		.4byte	.LASF36
+ 1918 061b CC000000 		.4byte	.LASF36
  1919 061f 01       		.byte	0x1
  1920 0620 0F01     		.2byte	0x10f
  1921 0622 8C000000 		.4byte	0x8c
@@ -2539,7 +2714,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1931 0638 00       		.byte	0
  1932 0639 00       		.byte	0
  1933 063a 06       		.uleb128 0x6
- 1934 063b F8010000 		.4byte	.LASF59
+ 1934 063b F6010000 		.4byte	.LASF59
  1935 063f 01       		.byte	0x1
  1936 0640 EA       		.byte	0xea
  1937 0641 00000000 		.4byte	.LFB80
@@ -2548,13 +2723,13 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1940 064a 9C       		.byte	0x9c
  1941 064b 8D060000 		.4byte	0x68d
  1942 064f 07       		.uleb128 0x7
- 1943 0650 5C030000 		.4byte	.LASF60
+ 1943 0650 54030000 		.4byte	.LASF60
  1944 0654 01       		.byte	0x1
  1945 0655 EA       		.byte	0xea
  1946 0656 8C000000 		.4byte	0x8c
  1947 065a 4B020000 		.4byte	.LLST17
  1948 065e 07       		.uleb128 0x7
- 1949 065f 22030000 		.4byte	.LASF61
+ 1949 065f 1A030000 		.4byte	.LASF61
  1950 0663 01       		.byte	0x1
  1951 0664 EA       		.byte	0xea
  1952 0665 8D060000 		.4byte	0x68d
@@ -2576,9 +2751,13 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1968 068e 04       		.byte	0x4
  1969 068f 8C000000 		.4byte	0x8c
  1970 0693 08       		.uleb128 0x8
- 1971 0694 CA020000 		.4byte	.LASF62
+ 1971 0694 C8020000 		.4byte	.LASF62
  1972 0698 01       		.byte	0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 44
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 44
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 44
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  1973 0699 3D01     		.2byte	0x13d
@@ -2588,7 +2767,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  1977 06a4 9C       		.byte	0x9c
  1978 06a5 DB060000 		.4byte	0x6db
  1979 06a9 09       		.uleb128 0x9
- 1980 06aa EF010000 		.4byte	.LASF63
+ 1980 06aa ED010000 		.4byte	.LASF63
  1981 06ae 01       		.byte	0x1
  1982 06af 3D01     		.2byte	0x13d
  1983 06b1 8C000000 		.4byte	0x8c
@@ -2612,7 +2791,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2001 06d9 00       		.byte	0
  2002 06da 00       		.byte	0
  2003 06db 08       		.uleb128 0x8
- 2004 06dc 67020000 		.4byte	.LASF65
+ 2004 06dc 65020000 		.4byte	.LASF65
  2005 06e0 01       		.byte	0x1
  2006 06e1 4F01     		.2byte	0x14f
  2007 06e3 00000000 		.4byte	.LFB91
@@ -2633,12 +2812,16 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2022 0707 A2000000 		.4byte	0xa2
  2023 070b 06030000 		.4byte	.LLST23
  2024 070f 0F       		.uleb128 0xf
- 2025 0710 A7010000 		.4byte	.LASF67
+ 2025 0710 A5010000 		.4byte	.LASF67
  2026 0714 01       		.byte	0x1
  2027 0715 5101     		.2byte	0x151
  2028 0717 8C000000 		.4byte	0x8c
  2029 071b 01       		.uleb128 0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 45
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 45
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 45
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2030 071c 55       		.byte	0x55
@@ -2658,7 +2841,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2044 0736 04060000 		.4byte	0x604
  2045 073a 00       		.byte	0
  2046 073b 06       		.uleb128 0x6
- 2047 073c F9020000 		.4byte	.LASF68
+ 2047 073c 69000000 		.4byte	.LASF68
  2048 0740 01       		.byte	0x1
  2049 0741 2C       		.byte	0x2c
  2050 0742 00000000 		.4byte	.LFB64
@@ -2698,7 +2881,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2084 078f 0B       		.uleb128 0xb
  2085 0790 01       		.uleb128 0x1
  2086 0791 50       		.byte	0x50
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 46
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 46
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 46
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2087 0792 02       		.uleb128 0x2
@@ -2758,7 +2945,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2141 07f7 50       		.byte	0x50
  2142 07f8 02       		.uleb128 0x2
  2143 07f9 08       		.byte	0x8
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 47
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 47
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 47
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2144 07fa 96       		.byte	0x96
@@ -2798,7 +2989,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2178 0843 E3030000 		.4byte	0x3e3
  2179 0847 00       		.byte	0
  2180 0848 08       		.uleb128 0x8
- 2181 0849 9C010000 		.4byte	.LASF69
+ 2181 0849 9A010000 		.4byte	.LASF69
  2182 084d 01       		.byte	0x1
  2183 084e 6901     		.2byte	0x169
  2184 0850 00000000 		.4byte	.LFB93
@@ -2807,7 +2998,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2187 0859 9C       		.byte	0x9c
  2188 085a 6D080000 		.4byte	0x86d
  2189 085e 16       		.uleb128 0x16
- 2190 085f 6D010000 		.4byte	.LASF70
+ 2190 085f 6B010000 		.4byte	.LASF70
  2191 0863 01       		.byte	0x1
  2192 0864 6901     		.2byte	0x169
  2193 0866 7E000000 		.4byte	0x7e
@@ -2815,10 +3006,14 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2195 086b 50       		.byte	0x50
  2196 086c 00       		.byte	0
  2197 086d 17       		.uleb128 0x17
- 2198 086e CF030000 		.4byte	.LASF71
+ 2198 086e C7030000 		.4byte	.LASF71
  2199 0872 04       		.byte	0x4
  2200 0873 1207     		.2byte	0x712
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 48
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 48
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 48
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2201 0875 79080000 		.4byte	0x879
@@ -2833,7 +3028,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2210 088a 03       		.byte	0x3
  2211 088b 00000000 		.4byte	_addr
  2212 088f 19       		.uleb128 0x19
- 2213 0890 12010000 		.4byte	.LASF73
+ 2213 0890 D2000000 		.4byte	.LASF73
  2214 0894 01       		.byte	0x1
  2215 0895 19       		.byte	0x19
  2216 0896 8C000000 		.4byte	0x8c
@@ -2841,7 +3036,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2218 089b 03       		.byte	0x3
  2219 089c 00000000 		.4byte	_displayfunction
  2220 08a0 19       		.uleb128 0x19
- 2221 08a1 B8010000 		.4byte	.LASF74
+ 2221 08a1 B6010000 		.4byte	.LASF74
  2222 08a5 01       		.byte	0x1
  2223 08a6 1A       		.byte	0x1a
  2224 08a7 8C000000 		.4byte	0x8c
@@ -2857,7 +3052,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2234 08bd 03       		.byte	0x3
  2235 08be 00000000 		.4byte	_displaymode
  2236 08c2 19       		.uleb128 0x19
- 2237 08c3 1C030000 		.4byte	.LASF76
+ 2237 08c3 14030000 		.4byte	.LASF76
  2238 08c7 01       		.byte	0x1
  2239 08c8 1C       		.byte	0x1c
  2240 08c9 8C000000 		.4byte	0x8c
@@ -2865,7 +3060,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2242 08ce 03       		.byte	0x3
  2243 08cf 00000000 		.4byte	_cols
  2244 08d3 19       		.uleb128 0x19
- 2245 08d4 4A010000 		.4byte	.LASF77
+ 2245 08d4 0A010000 		.4byte	.LASF77
  2246 08d8 01       		.byte	0x1
  2247 08d9 1D       		.byte	0x1d
  2248 08da 8C000000 		.4byte	0x8c
@@ -2873,18 +3068,22 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2250 08df 03       		.byte	0x3
  2251 08e0 00000000 		.4byte	_rows
  2252 08e4 19       		.uleb128 0x19
- 2253 08e5 C5030000 		.4byte	.LASF78
+ 2253 08e5 BD030000 		.4byte	.LASF78
  2254 08e9 01       		.byte	0x1
  2255 08ea 1E       		.byte	0x1e
  2256 08eb 8C000000 		.4byte	0x8c
  2257 08ef 05       		.uleb128 0x5
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 49
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 49
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 49
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2258 08f0 03       		.byte	0x3
  2259 08f1 00000000 		.4byte	_charsize
  2260 08f5 19       		.uleb128 0x19
- 2261 08f6 E3000000 		.4byte	.LASF79
+ 2261 08f6 A3000000 		.4byte	.LASF79
  2262 08fa 01       		.byte	0x1
  2263 08fb 1F       		.byte	0x1f
  2264 08fc 8C000000 		.4byte	0x8c
@@ -2892,33 +3091,33 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2266 0901 03       		.byte	0x3
  2267 0902 00000000 		.4byte	_backlightval
  2268 0906 1A       		.uleb128 0x1a
- 2269 0907 3C030000 		.4byte	.LASF80
- 2270 090b 3C030000 		.4byte	.LASF80
+ 2269 0907 34030000 		.4byte	.LASF80
+ 2270 090b 34030000 		.4byte	.LASF80
  2271 090f 05       		.byte	0x5
  2272 0910 B1       		.byte	0xb1
  2273 0911 1A       		.uleb128 0x1a
- 2274 0912 F6000000 		.4byte	.LASF81
- 2275 0916 F6000000 		.4byte	.LASF81
+ 2274 0912 B6000000 		.4byte	.LASF81
+ 2275 0916 B6000000 		.4byte	.LASF81
  2276 091a 05       		.byte	0x5
  2277 091b B6       		.byte	0xb6
  2278 091c 1A       		.uleb128 0x1a
- 2279 091d C2000000 		.4byte	.LASF82
- 2280 0921 C2000000 		.4byte	.LASF82
+ 2279 091d 82000000 		.4byte	.LASF82
+ 2280 0921 82000000 		.4byte	.LASF82
  2281 0925 05       		.byte	0x5
  2282 0926 B5       		.byte	0xb5
  2283 0927 1A       		.uleb128 0x1a
- 2284 0928 D0010000 		.4byte	.LASF83
- 2285 092c D0010000 		.4byte	.LASF83
+ 2284 0928 CE010000 		.4byte	.LASF83
+ 2285 092c CE010000 		.4byte	.LASF83
  2286 0930 06       		.byte	0x6
  2287 0931 77       		.byte	0x77
  2288 0932 1A       		.uleb128 0x1a
- 2289 0933 6A040000 		.4byte	.LASF84
- 2290 0937 6A040000 		.4byte	.LASF84
+ 2289 0933 62040000 		.4byte	.LASF84
+ 2290 0937 62040000 		.4byte	.LASF84
  2291 093b 06       		.byte	0x6
  2292 093c 76       		.byte	0x76
  2293 093d 1A       		.uleb128 0x1a
- 2294 093e 8D020000 		.4byte	.LASF85
- 2295 0942 8D020000 		.4byte	.LASF85
+ 2294 093e 8B020000 		.4byte	.LASF85
+ 2295 0942 8B020000 		.4byte	.LASF85
  2296 0946 07       		.byte	0x7
  2297 0947 21       		.byte	0x21
  2298 0948 00       		.byte	0
@@ -2938,7 +3137,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2312 000b 55       		.uleb128 0x55
  2313 000c 17       		.uleb128 0x17
  2314 000d 11       		.uleb128 0x11
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 50
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 50
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 50
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2315 000e 01       		.uleb128 0x1
@@ -2998,7 +3201,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2369 0044 03       		.uleb128 0x3
  2370 0045 0E       		.uleb128 0xe
  2371 0046 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 51
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 51
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 51
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2372 0047 0B       		.uleb128 0xb
@@ -3058,7 +3265,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2426 007f 13       		.uleb128 0x13
  2427 0080 00       		.byte	0
  2428 0081 00       		.byte	0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 52
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 52
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 52
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2429 0082 09       		.uleb128 0x9
@@ -3118,7 +3329,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2483 00c1 34       		.uleb128 0x34
  2484 00c2 00       		.byte	0
  2485 00c3 03       		.uleb128 0x3
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 53
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 53
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 53
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2486 00c4 0E       		.uleb128 0xe
@@ -3178,7 +3393,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2540 00fa 00       		.byte	0
  2541 00fb 00       		.byte	0
  2542 00fc 12       		.uleb128 0x12
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 54
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 54
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 54
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2543 00fd 01       		.uleb128 0x1
@@ -3238,7 +3457,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2597 0133 3B       		.uleb128 0x3b
  2598 0134 05       		.uleb128 0x5
  2599 0135 49       		.uleb128 0x49
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 55
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 55
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 55
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2600 0136 13       		.uleb128 0x13
@@ -3298,7 +3521,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2654 016c 0E       		.uleb128 0xe
  2655 016d 03       		.uleb128 0x3
  2656 016e 0E       		.uleb128 0xe
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 56
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 56
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 56
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2657 016f 3A       		.uleb128 0x3a
@@ -3358,7 +3585,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2711 007c 00000000 		.4byte	_charsize
  2712 0080 00000000 		.4byte	0
  2713 0084 00000000 		.4byte	0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 57
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 57
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 57
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2714              	.LLST4:
@@ -3418,7 +3649,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2768 0104 0A000000 		.4byte	.LVL17
  2769 0108 0D000000 		.4byte	.LVL18-1
  2770 010c 0100     		.2byte	0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 58
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 58
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 58
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2771 010e 50       		.byte	0x50
@@ -3478,7 +3713,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2825 018c 13000000 		.4byte	.LVL32-1
  2826 0190 0100     		.2byte	0x1
  2827 0192 51       		.byte	0x51
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 59
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 59
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 59
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2828 0193 13000000 		.4byte	.LVL32-1
@@ -3538,7 +3777,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2882 0215 51       		.byte	0x51
  2883 0216 9F       		.byte	0x9f
  2884 0217 20000000 		.4byte	.LVL42
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 60
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 60
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 60
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2885 021b 26000000 		.4byte	.LVL43
@@ -3598,7 +3841,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2939 02a6 00000000 		.4byte	.LVL67
  2940 02aa 05000000 		.4byte	.LVL68-1
  2941 02ae 0100     		.2byte	0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 61
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 61
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 61
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2942 02b0 50       		.byte	0x50
@@ -3658,7 +3905,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  2996 000e 0000     		.2byte	0
  2997 0010 00000000 		.4byte	.LFB63
  2998 0014 30000000 		.4byte	.LFE63-.LFB63
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 62
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 62
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 62
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  2999 0018 00000000 		.4byte	.LFB92
@@ -3718,7 +3969,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  3053 00f0 00000000 		.4byte	.LFB91
  3054 00f4 1E000000 		.4byte	.LFE91-.LFB91
  3055 00f8 00000000 		.4byte	.LFB64
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 63
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 63
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 63
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  3056 00fc B4000000 		.4byte	.LFE64-.LFB64
@@ -3778,7 +4033,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  3110 00bc 1C000000 		.4byte	.LFE78
  3111 00c0 00000000 		.4byte	.LFB79
  3112 00c4 1C000000 		.4byte	.LFE79
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 64
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 64
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 64
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  3113 00c8 00000000 		.4byte	.LFB84
@@ -3838,7 +4097,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  3149      7420696E 
  3149      7400
  3150              	.LASF64:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 65
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 65
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 65
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  3151 004e 726F7773 		.ascii	"rows\000"
@@ -3852,6 +4115,178 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  3155 0060 63686172 		.ascii	"charsize\000"
  3155      73697A65 
  3155      00
+<<<<<<< HEAD
+ 3156              	.LASF68:
+ 3157 0069 62656769 		.ascii	"begin\000"
+ 3157      6E00
+ 3158              	.LASF53:
+ 3159 006f 7363726F 		.ascii	"scrollDisplayRight\000"
+ 3159      6C6C4469 
+ 3159      73706C61 
+ 3159      79526967 
+ 3159      687400
+ 3160              	.LASF82:
+ 3161 0082 4932435F 		.ascii	"I2C_1_MasterSendStop\000"
+ 3161      315F4D61 
+ 3161      73746572 
+ 3161      53656E64 
+ 3161      53746F70 
+ 3162              	.LASF18:
+ 3163 0097 6C6F6E67 		.ascii	"long double\000"
+ 3163      20646F75 
+ 3163      626C6500 
+ 3164              	.LASF79:
+ 3165 00a3 5F626163 		.ascii	"_backlightval\000"
+ 3165      6B6C6967 
+ 3165      68747661 
+ 3165      6C00
+ 3166              	.LASF38:
+ 3167 00b1 6D6F6465 		.ascii	"mode\000"
+ 3167      00
+ 3168              	.LASF81:
+ 3169 00b6 4932435F 		.ascii	"I2C_1_MasterWriteByte\000"
+ 3169      315F4D61 
+ 3169      73746572 
+ 3169      57726974 
+ 3169      65427974 
+ 3170              	.LASF36:
+ 3171 00cc 76616C75 		.ascii	"value\000"
+ 3171      6500
+ 3172              	.LASF73:
+ 3173 00d2 5F646973 		.ascii	"_displayfunction\000"
+ 3173      706C6179 
+ 3173      66756E63 
+ 3173      74696F6E 
+ 3173      00
+ 3174              	.LASF12:
+ 3175 00e3 75696E74 		.ascii	"uint8_t\000"
+ 3175      385F7400 
+ 3176              	.LASF21:
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 66
+
+
+ 3177 00eb 6C63645F 		.ascii	"lcd_cols\000"
+ 3177      636F6C73 
+ 3177      00
+ 3178              	.LASF25:
+ 3179 00f4 4932435F 		.ascii	"I2C_M_write_byte\000"
+ 3179      4D5F7772 
+ 3179      6974655F 
+ 3179      62797465 
+ 3179      00
+ 3180              	.LASF43:
+ 3181 0105 686F6D65 		.ascii	"home\000"
+ 3181      00
+ 3182              	.LASF77:
+ 3183 010a 5F726F77 		.ascii	"_rows\000"
+ 3183      7300
+ 3184              	.LASF88:
+ 3185 0110 433A5C55 		.ascii	"C:\\Users\\Morten\\Desktop\\E5PRJ3\\ProjektMain\\Ho"
+ 3185      73657273 
+ 3185      5C4D6F72 
+ 3185      74656E5C 
+ 3185      4465736B 
+ 3186 013d 76656470 		.ascii	"vedprogram.cydsn\000"
+ 3186      726F6772 
+ 3186      616D2E63 
+ 3186      7964736E 
+ 3186      00
+ 3187              	.LASF15:
+ 3188 014e 666C6F61 		.ascii	"float\000"
+ 3188      7400
+ 3189              	.LASF9:
+ 3190 0154 6C6F6E67 		.ascii	"long long int\000"
+ 3190      206C6F6E 
+ 3190      6720696E 
+ 3190      7400
+ 3191              	.LASF6:
+ 3192 0162 6C6F6E67 		.ascii	"long int\000"
+ 3192      20696E74 
+ 3192      00
+ 3193              	.LASF70:
+ 3194 016b 61646472 		.ascii	"address\000"
+ 3194      65737300 
+ 3195              	.LASF19:
+ 3196 0173 73697A65 		.ascii	"sizetype\000"
+ 3196      74797065 
+ 3196      00
+ 3197              	.LASF29:
+ 3198 017c 5F646174 		.ascii	"_data\000"
+ 3198      6100
+ 3199              	.LASF4:
+ 3200 0182 5F5F7569 		.ascii	"__uint8_t\000"
+ 3200      6E74385F 
+ 3200      7400
+ 3201              	.LASF28:
+ 3202 018c 65787061 		.ascii	"expanderWrite\000"
+ 3202      6E646572 
+ 3202      57726974 
+ 3202      6500
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 67
+
+
+ 3203              	.LASF69:
+ 3204 019a 73657461 		.ascii	"setaddress\000"
+ 3204      64647265 
+ 3204      737300
+ 3205              	.LASF67:
+ 3206 01a5 73697A65 		.ascii	"size\000"
+ 3206      00
+ 3207              	.LASF45:
+ 3208 01aa 726F775F 		.ascii	"row_offsets\000"
+ 3208      6F666673 
+ 3208      65747300 
+ 3209              	.LASF74:
+ 3210 01b6 5F646973 		.ascii	"_displaycontrol\000"
+ 3210      706C6179 
+ 3210      636F6E74 
+ 3210      726F6C00 
+ 3211              	.LASF39:
+ 3212 01c6 68696768 		.ascii	"highnib\000"
+ 3212      6E696200 
+ 3213              	.LASF83:
+ 3214 01ce 43794465 		.ascii	"CyDelayUs\000"
+ 3214      6C617955 
+ 3214      7300
+ 3215              	.LASF1:
+ 3216 01d8 756E7369 		.ascii	"unsigned char\000"
+ 3216      676E6564 
+ 3216      20636861 
+ 3216      7200
+ 3217              	.LASF49:
+ 3218 01e6 63757273 		.ascii	"cursor\000"
+ 3218      6F7200
+ 3219              	.LASF63:
+ 3220 01ed 63686172 		.ascii	"char_num\000"
+ 3220      5F6E756D 
+ 3220      00
+ 3221              	.LASF59:
+ 3222 01f6 63726561 		.ascii	"createChar\000"
+ 3222      74654368 
+ 3222      617200
+ 3223              	.LASF0:
+ 3224 0201 7369676E 		.ascii	"signed char\000"
+ 3224      65642063 
+ 3224      68617200 
+ 3225              	.LASF13:
+ 3226 020d 696E7433 		.ascii	"int32_t\000"
+ 3226      325F7400 
+ 3227              	.LASF10:
+ 3228 0215 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 3228      206C6F6E 
+ 3228      6720756E 
+ 3228      7369676E 
+ 3228      65642069 
+ 3229              	.LASF40:
+ 3230 022c 6C6F776E 		.ascii	"lownib\000"
+ 3230      696200
+ 3231              	.LASF14:
+ 3232 0233 75696E74 		.ascii	"uint32_t\000"
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 68
+
+
+ 3232      33325F74 
+=======
  3156              	.LASF88:
  3157 0069 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\E5PRJ3\\Projek"
  3157      73657273 
@@ -3898,7 +4333,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  3172      6500
  3173              	.LASF73:
  3174 0112 5F646973 		.ascii	"_displayfunction\000"
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 66
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 66
 
 
  3174      706C6179 
@@ -3958,7 +4393,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  3201              	.LASF69:
  3202 019c 73657461 		.ascii	"setaddress\000"
  3202      64647265 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 67
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 67
 
 
  3202      737300
@@ -4018,17 +4453,89 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  3230      33325F74 
  3230      00
  3231              	.LASF11:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 68
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 68
 
 
  3232 023e 756E7369 		.ascii	"unsigned int\000"
  3232      676E6564 
  3232      20696E74 
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
  3232      00
- 3233              	.LASF48:
- 3234 024b 6E6F4375 		.ascii	"noCursor\000"
- 3234      72736F72 
+ 3233              	.LASF11:
+ 3234 023c 756E7369 		.ascii	"unsigned int\000"
+ 3234      676E6564 
+ 3234      20696E74 
  3234      00
+<<<<<<< HEAD
+ 3235              	.LASF48:
+ 3236 0249 6E6F4375 		.ascii	"noCursor\000"
+ 3236      72736F72 
+ 3236      00
+ 3237              	.LASF3:
+ 3238 0252 73686F72 		.ascii	"short unsigned int\000"
+ 3238      7420756E 
+ 3238      7369676E 
+ 3238      65642069 
+ 3238      6E7400
+ 3239              	.LASF65:
+ 3240 0265 4C43445F 		.ascii	"LCD_print\000"
+ 3240      7072696E 
+ 3240      7400
+ 3241              	.LASF32:
+ 3242 026f 73657442 		.ascii	"setBacklight\000"
+ 3242      61636B6C 
+ 3242      69676874 
+ 3242      00
+ 3243              	.LASF46:
+ 3244 027c 6E6F4469 		.ascii	"noDisplay\000"
+ 3244      73706C61 
+ 3244      7900
+ 3245              	.LASF17:
+ 3246 0286 63686172 		.ascii	"char\000"
+ 3246      00
+ 3247              	.LASF85:
+ 3248 028b 7374726C 		.ascii	"strlen\000"
+ 3248      656E00
+ 3249              	.LASF34:
+ 3250 0292 70756C73 		.ascii	"pulseEnable\000"
+ 3250      65456E61 
+ 3250      626C6500 
+ 3251              	.LASF26:
+ 3252 029e 61646472 		.ascii	"addr\000"
+ 3252      00
+ 3253              	.LASF30:
+ 3254 02a3 6E6F4261 		.ascii	"noBacklight\000"
+ 3254      636B6C69 
+ 3254      67687400 
+ 3255              	.LASF50:
+ 3256 02af 6E6F426C 		.ascii	"noBlink\000"
+ 3256      696E6B00 
+ 3257              	.LASF27:
+ 3258 02b7 64617461 		.ascii	"data\000"
+ 3258      00
+ 3259              	.LASF55:
+ 3260 02bc 72696768 		.ascii	"rightToLeft\000"
+ 3260      74546F4C 
+ 3260      65667400 
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 69
+
+
+ 3261              	.LASF62:
+ 3262 02c8 6C6F6164 		.ascii	"load_custom_character\000"
+ 3262      5F637573 
+ 3262      746F6D5F 
+ 3262      63686172 
+ 3262      61637465 
+ 3263              	.LASF8:
+ 3264 02de 6C6F6E67 		.ascii	"long unsigned int\000"
+ 3264      20756E73 
+ 3264      69676E65 
+ 3264      6420696E 
+ 3264      7400
+ 3265              	.LASF16:
+ 3266 02f0 646F7562 		.ascii	"double\000"
+ 3266      6C6500
+=======
  3235              	.LASF3:
  3236 0254 73686F72 		.ascii	"short unsigned int\000"
  3236      7420756E 
@@ -4078,7 +4585,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  3259              	.LASF62:
  3260 02ca 6C6F6164 		.ascii	"load_custom_character\000"
  3260      5F637573 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 69
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 69
 
 
  3260      746F6D5F 
@@ -4096,109 +4603,119 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 1
  3265              	.LASF68:
  3266 02f9 62656769 		.ascii	"begin\000"
  3266      6E00
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
  3267              	.LASF47:
- 3268 02ff 64697370 		.ascii	"display\000"
+ 3268 02f7 64697370 		.ascii	"display\000"
  3268      6C617900 
  3269              	.LASF44:
- 3270 0307 73657443 		.ascii	"setCursor\000"
+ 3270 02ff 73657443 		.ascii	"setCursor\000"
  3270      7572736F 
  3270      7200
  3271              	.LASF7:
- 3272 0311 5F5F7569 		.ascii	"__uint32_t\000"
+ 3272 0309 5F5F7569 		.ascii	"__uint32_t\000"
  3272      6E743332 
  3272      5F7400
  3273              	.LASF76:
- 3274 031c 5F636F6C 		.ascii	"_cols\000"
+ 3274 0314 5F636F6C 		.ascii	"_cols\000"
  3274      7300
  3275              	.LASF61:
- 3276 0322 63686172 		.ascii	"charmap\000"
+ 3276 031a 63686172 		.ascii	"charmap\000"
  3276      6D617000 
  3277              	.LASF52:
- 3278 032a 7363726F 		.ascii	"scrollDisplayLeft\000"
+ 3278 0322 7363726F 		.ascii	"scrollDisplayLeft\000"
  3278      6C6C4469 
  3278      73706C61 
  3278      794C6566 
  3278      7400
  3279              	.LASF80:
- 3280 033c 4932435F 		.ascii	"I2C_1_MasterSendStart\000"
+ 3280 0334 4932435F 		.ascii	"I2C_1_MasterSendStart\000"
  3280      315F4D61 
  3280      73746572 
  3280      53656E64 
  3280      53746172 
  3281              	.LASF5:
- 3282 0352 5F5F696E 		.ascii	"__int32_t\000"
+ 3282 034a 5F5F696E 		.ascii	"__int32_t\000"
  3282      7433325F 
  3282      7400
  3283              	.LASF60:
- 3284 035c 6C6F6361 		.ascii	"location\000"
+ 3284 0354 6C6F6361 		.ascii	"location\000"
  3284      74696F6E 
  3284      00
  3285              	.LASF31:
- 3286 0365 6261636B 		.ascii	"backlight\000"
+ 3286 035d 6261636B 		.ascii	"backlight\000"
  3286      6C696768 
  3286      7400
  3287              	.LASF20:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 70
+<<<<<<< HEAD
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 70
+=======
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 70
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
- 3288 036f 6C63645F 		.ascii	"lcd_addr\000"
+ 3288 0367 6C63645F 		.ascii	"lcd_addr\000"
  3288      61646472 
  3288      00
  3289              	.LASF35:
- 3290 0378 77726974 		.ascii	"write4bits\000"
+ 3290 0370 77726974 		.ascii	"write4bits\000"
  3290      65346269 
  3290      747300
  3291              	.LASF87:
- 3292 0383 4C697175 		.ascii	"LiquidCrystal_I2C.c\000"
+ 3292 037b 4C697175 		.ascii	"LiquidCrystal_I2C.c\000"
  3292      69644372 
  3292      79737461 
  3292      6C5F4932 
  3292      432E6300 
  3293              	.LASF56:
- 3294 0397 6175746F 		.ascii	"autoscroll\000"
+ 3294 038f 6175746F 		.ascii	"autoscroll\000"
  3294      7363726F 
  3294      6C6C00
  3295              	.LASF24:
- 3296 03a2 4C697175 		.ascii	"LiquidCrystal_I2C_init\000"
+ 3296 039a 4C697175 		.ascii	"LiquidCrystal_I2C_init\000"
  3296      69644372 
  3296      79737461 
  3296      6C5F4932 
  3296      435F696E 
  3297              	.LASF54:
- 3298 03b9 6C656674 		.ascii	"leftToRight\000"
+ 3298 03b1 6C656674 		.ascii	"leftToRight\000"
  3298      546F5269 
  3298      67687400 
  3299              	.LASF78:
- 3300 03c5 5F636861 		.ascii	"_charsize\000"
+ 3300 03bd 5F636861 		.ascii	"_charsize\000"
  3300      7273697A 
  3300      6500
  3301              	.LASF71:
- 3302 03cf 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 3302 03c7 49544D5F 		.ascii	"ITM_RxBuffer\000"
  3302      52784275 
  3302      66666572 
  3302      00
  3303              	.LASF86:
- 3304 03dc 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 3304 03d4 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
  3304      43313120 
  3304      352E342E 
  3304      31203230 
  3304      31363036 
- 3305 040f 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 3305 0407 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
  3305      20726576 
  3305      6973696F 
  3305      6E203233 
  3305      37373135 
- 3306 0442 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 3306 043a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  3306      66756E63 
  3306      74696F6E 
  3306      2D736563 
  3306      74696F6E 
  3307              	.LASF84:
- 3308 046a 43794465 		.ascii	"CyDelay\000"
+ 3308 0462 43794465 		.ascii	"CyDelay\000"
  3308      6C617900 
  3309              	.LASF41:
+<<<<<<< HEAD
+ 3310 046a 636F6D6D 		.ascii	"command\000"
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccJKdRQf.s 			page 71
+=======
  3310 0472 636F6D6D 		.ascii	"command\000"
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccUcofAv.s 			page 71
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccpHrKzc.s 			page 71
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 
  3310      616E6400 

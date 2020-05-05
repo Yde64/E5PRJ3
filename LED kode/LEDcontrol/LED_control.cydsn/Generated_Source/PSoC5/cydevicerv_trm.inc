@@ -1,7 +1,7 @@
 ;
 ; File Name: cydevicerv_trm.inc
 ; 
-; PSoC Creator  4.3
+; PSoC Creator  4.3 Early Access
 ;
 ; Description:
 ; This file provides all of the address values for the entire PSoC device.

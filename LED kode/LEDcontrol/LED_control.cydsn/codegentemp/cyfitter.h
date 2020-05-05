@@ -1,7 +1,7 @@
 /*******************************************************************************
 * File Name: cyfitter.h
 * 
-* PSoC Creator  4.3
+* PSoC Creator  4.3 Early Access
 *
 * Description:
 * 
@@ -633,7 +633,7 @@
 #define BCLK__BUS_CLK__KHZ 48000U
 #define BCLK__BUS_CLK__MHZ 48U
 #define CY_PROJECT_NAME "LED_control"
-#define CY_VERSION "PSoC Creator  4.3"
+#define CY_VERSION "PSoC Creator  4.3 Early Access"
 #define CYDEV_CHIP_DIE_LEOPARD 1u
 #define CYDEV_CHIP_DIE_PSOC4A 24u
 #define CYDEV_CHIP_DIE_PSOC5LP 2u

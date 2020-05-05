@@ -178,7 +178,7 @@ int main(void)
             {
                 UARTprint("3", "NSL - COUTNDOWN\r\n");
                 
-                clearTimer();
+                
                 int startseq = startSeq(rgbstrip1,rgbstrip2);
                 if (startseq == 1)
                 {
@@ -218,7 +218,7 @@ int main(void)
                                 NEXT_STATE = WINNER_DONE; 
                                         
                             }
-                            else if((getTime()/100) >= 1200)
+                            else if((timeout()==1))
                             {
                                 NEXT_STATE = ERR_TIMEOUT;
                             }
@@ -241,7 +241,7 @@ int main(void)
                                 glasvaegtLoser = glasvaegtp1;
                                 NEXT_STATE = WINNER_DONE;
                             }
-                            else if((getTime()/100) >= 1200)
+                            else if(timeout()==1)
                             {
                                 NEXT_STATE = ERR_TIMEOUT;
                             }
@@ -436,6 +436,7 @@ int main(void)
                     
                 case READY :
                     {
+                        startTimer();
                         cycleCountReady++;
                         if (cycleCountReady == 1)
                         {

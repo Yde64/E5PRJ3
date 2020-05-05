@@ -1,5 +1,9 @@
 # Hovedprogram
-# 2020-05-03 16:15:45Z
+<<<<<<< HEAD
+# 2020-05-05 20:55:02Z
+=======
+# 2020-05-05 22:07:32Z
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0

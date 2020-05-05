@@ -2,7 +2,11 @@
 --	Conversion of Hovedprogram.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sun May 03 18:15:39 2020
+<<<<<<< HEAD
+--	Tue May 05 22:54:52 2020
+=======
+--	Wed May 06 00:07:27 2020
+>>>>>>> 9773be614d15d90d77c8d1457ba3bca8cd61917b
 --
 
 USE cypress.cypress.all;
