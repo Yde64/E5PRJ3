@@ -1,6 +1,6 @@
 -- Project:   Hovedprogram
--- Generated: 05/06/2020 00:16:31
--- PSoC Creator  4.3 Early Access
+-- Generated: 05/15/2020 19:19:20
+-- PSoC Creator  4.3
 
 ENTITY Hovedprogram IS
     PORT(
@@ -66,13 +66,12 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     SIGNAL Net_702 : bit;
     SIGNAL Net_721 : bit;
     SIGNAL Net_722 : bit;
-    SIGNAL Net_744 : bit;
-    SIGNAL Net_747 : bit;
     SIGNAL Net_749 : bit;
     ATTRIBUTE udbclken_assigned OF Net_749 : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_749 : SIGNAL IS true;
     SIGNAL Net_749_local : bit;
     SIGNAL Net_750 : bit;
+    SIGNAL Net_759 : bit;
     SIGNAL Pin_2(0)__PA : bit;
     SIGNAL Rx_1(0)__PA : bit;
     SIGNAL SAR_p1(0)__PA : bit;
@@ -83,24 +82,28 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     SIGNAL SPI_int(0)__PA : bit;
     SIGNAL SS(0)__PA : bit;
     SIGNAL Tx_1(0)__PA : bit;
-    SIGNAL \ADC_SAR_1:Net_207_0\ : bit;
-    SIGNAL \ADC_SAR_1:Net_207_10\ : bit;
-    SIGNAL \ADC_SAR_1:Net_207_11\ : bit;
-    SIGNAL \ADC_SAR_1:Net_207_1\ : bit;
-    SIGNAL \ADC_SAR_1:Net_207_2\ : bit;
-    SIGNAL \ADC_SAR_1:Net_207_3\ : bit;
-    SIGNAL \ADC_SAR_1:Net_207_4\ : bit;
-    SIGNAL \ADC_SAR_1:Net_207_5\ : bit;
-    SIGNAL \ADC_SAR_1:Net_207_6\ : bit;
-    SIGNAL \ADC_SAR_1:Net_207_7\ : bit;
-    SIGNAL \ADC_SAR_1:Net_207_8\ : bit;
-    SIGNAL \ADC_SAR_1:Net_207_9\ : bit;
-    SIGNAL \ADC_SAR_1:Net_252\ : bit;
-    SIGNAL \ADC_SAR_1:Net_381\ : bit;
-    SIGNAL \ADC_SAR_1:Net_381_local\ : bit;
-    SIGNAL \ADC_SAR_1:Net_385\ : bit;
-    ATTRIBUTE global_signal OF \ADC_SAR_1:Net_385\ : SIGNAL IS true;
-    SIGNAL \ADC_SAR_1:Net_385_local\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_0\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_1\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_2\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_3\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_4\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_5\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_6\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_7\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_488\ : bit;
+    ATTRIBUTE global_signal OF \ADC_DelSig_1:Net_488\ : SIGNAL IS true;
+    SIGNAL \ADC_DelSig_1:Net_488_adig\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_488_adig_local\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_488_local\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_93\ : bit;
+    ATTRIBUTE global_signal OF \ADC_DelSig_1:Net_93\ : SIGNAL IS true;
+    SIGNAL \ADC_DelSig_1:Net_93_local\ : bit;
+    SIGNAL \ADC_DelSig_1:aclock\ : bit;
+    SIGNAL \ADC_DelSig_1:mod_dat_0\ : bit;
+    SIGNAL \ADC_DelSig_1:mod_dat_1\ : bit;
+    SIGNAL \ADC_DelSig_1:mod_dat_2\ : bit;
+    SIGNAL \ADC_DelSig_1:mod_dat_3\ : bit;
+    SIGNAL \ADC_DelSig_1:mod_reset\ : bit;
     SIGNAL \I2C_1:Net_1109_0\ : bit;
     SIGNAL \I2C_1:Net_1109_1\ : bit;
     SIGNAL \I2C_1:Net_643_0\ : bit;
@@ -474,6 +477,7 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE lib_model OF \SPIS:BSPIS:rx_status_4\ : LABEL IS "macrocell29";
     ATTRIBUTE lib_model OF \SPIS:BSPIS:dpcounter_one\ : LABEL IS "macrocell30";
     ATTRIBUTE lib_model OF \SPIS:BSPIS:mosi_to_dp\ : LABEL IS "macrocell31";
+    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell32";
     ATTRIBUTE lib_model OF \Timer3:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell1";
     ATTRIBUTE lib_model OF \Timer3:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell1";
     ATTRIBUTE lib_model OF \Timer3:TimerUDB:sT16:timerdp:u0\ : LABEL IS "datapathcell1";
@@ -490,7 +494,7 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE lib_model OF \SPIM_1:BSPIM:RxStsReg\ : LABEL IS "statusicell5";
     ATTRIBUTE lib_model OF \SPIM_1:BSPIM:sR16:Dp:u0\ : LABEL IS "datapathcell7";
     ATTRIBUTE lib_model OF \SPIM_1:BSPIM:sR16:Dp:u1\ : LABEL IS "datapathcell8";
-    ATTRIBUTE Location OF \ADC_SAR_1:ADC_SAR\ : LABEL IS "F(SAR,0)";
+    ATTRIBUTE Location OF \ADC_DelSig_1:DSM\ : LABEL IS "F(DSM,0)";
     ATTRIBUTE lib_model OF \UART_1:BUART:sTX:TxShifter:u0\ : LABEL IS "datapathcell9";
     ATTRIBUTE lib_model OF \UART_1:BUART:sTX:sCLOCK:TxBitClkGen\ : LABEL IS "datapathcell10";
     ATTRIBUTE lib_model OF \UART_1:BUART:sTX:TxSts\ : LABEL IS "statusicell6";
@@ -516,45 +520,45 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE lib_model OF \SPIS:BSPIS:TxStsReg\ : LABEL IS "statusicell12";
     ATTRIBUTE lib_model OF \SPIS:BSPIS:RxStsReg\ : LABEL IS "statusicell13";
     ATTRIBUTE lib_model OF \SPIS:BSPIS:sR8:Dp:u0\ : LABEL IS "datapathcell20";
-    ATTRIBUTE lib_model OF Net_628 : LABEL IS "macrocell32";
-    ATTRIBUTE lib_model OF Net_632 : LABEL IS "macrocell33";
-    ATTRIBUTE lib_model OF Net_360 : LABEL IS "macrocell34";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:load_rx_data\ : LABEL IS "macrocell35";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:state_2\ : LABEL IS "macrocell36";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:state_1\ : LABEL IS "macrocell37";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:state_0\ : LABEL IS "macrocell38";
-    ATTRIBUTE lib_model OF Net_584 : LABEL IS "macrocell39";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:mosi_hs_reg\ : LABEL IS "macrocell40";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:mosi_pre_reg\ : LABEL IS "macrocell41";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:load_cond\ : LABEL IS "macrocell42";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:mosi_from_dp_reg\ : LABEL IS "macrocell43";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:is_spi_done\ : LABEL IS "macrocell44";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:cnt_enable\ : LABEL IS "macrocell45";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:ld_ident\ : LABEL IS "macrocell46";
-    ATTRIBUTE lib_model OF Net_583 : LABEL IS "macrocell47";
-    ATTRIBUTE lib_model OF \UART_1:BUART:txn\ : LABEL IS "macrocell48";
-    ATTRIBUTE lib_model OF \UART_1:BUART:tx_state_1\ : LABEL IS "macrocell49";
-    ATTRIBUTE lib_model OF \UART_1:BUART:tx_state_0\ : LABEL IS "macrocell50";
-    ATTRIBUTE lib_model OF \UART_1:BUART:tx_state_2\ : LABEL IS "macrocell51";
-    ATTRIBUTE lib_model OF \UART_1:BUART:tx_bitclk\ : LABEL IS "macrocell52";
-    ATTRIBUTE lib_model OF \UART_1:BUART:tx_ctrl_mark_last\ : LABEL IS "macrocell53";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_0\ : LABEL IS "macrocell54";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_load_fifo\ : LABEL IS "macrocell55";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_3\ : LABEL IS "macrocell56";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_2\ : LABEL IS "macrocell57";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_bitclk_enable\ : LABEL IS "macrocell58";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_stop1_reg\ : LABEL IS "macrocell59";
-    ATTRIBUTE lib_model OF \UART_1:BUART:pollcount_1\ : LABEL IS "macrocell60";
-    ATTRIBUTE lib_model OF \UART_1:BUART:pollcount_0\ : LABEL IS "macrocell61";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_status_3\ : LABEL IS "macrocell62";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_last\ : LABEL IS "macrocell63";
-    ATTRIBUTE lib_model OF Net_23 : LABEL IS "macrocell64";
-    ATTRIBUTE lib_model OF Net_34 : LABEL IS "macrocell65";
-    ATTRIBUTE lib_model OF Net_701 : LABEL IS "macrocell66";
-    ATTRIBUTE lib_model OF Net_702 : LABEL IS "macrocell67";
-    ATTRIBUTE lib_model OF \SPIS:BSPIS:dpcounter_one_reg\ : LABEL IS "macrocell68";
-    ATTRIBUTE lib_model OF \SPIS:BSPIS:mosi_buf_overrun_fin\ : LABEL IS "macrocell69";
-    ATTRIBUTE lib_model OF \SPIS:BSPIS:mosi_tmp\ : LABEL IS "macrocell70";
+    ATTRIBUTE lib_model OF Net_628 : LABEL IS "macrocell33";
+    ATTRIBUTE lib_model OF Net_632 : LABEL IS "macrocell34";
+    ATTRIBUTE lib_model OF Net_360 : LABEL IS "macrocell35";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:load_rx_data\ : LABEL IS "macrocell36";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:state_2\ : LABEL IS "macrocell37";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:state_1\ : LABEL IS "macrocell38";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:state_0\ : LABEL IS "macrocell39";
+    ATTRIBUTE lib_model OF Net_584 : LABEL IS "macrocell40";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:mosi_hs_reg\ : LABEL IS "macrocell41";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:mosi_pre_reg\ : LABEL IS "macrocell42";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:load_cond\ : LABEL IS "macrocell43";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:mosi_from_dp_reg\ : LABEL IS "macrocell44";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:is_spi_done\ : LABEL IS "macrocell45";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:cnt_enable\ : LABEL IS "macrocell46";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:ld_ident\ : LABEL IS "macrocell47";
+    ATTRIBUTE lib_model OF Net_583 : LABEL IS "macrocell48";
+    ATTRIBUTE lib_model OF \UART_1:BUART:txn\ : LABEL IS "macrocell49";
+    ATTRIBUTE lib_model OF \UART_1:BUART:tx_state_1\ : LABEL IS "macrocell50";
+    ATTRIBUTE lib_model OF \UART_1:BUART:tx_state_0\ : LABEL IS "macrocell51";
+    ATTRIBUTE lib_model OF \UART_1:BUART:tx_state_2\ : LABEL IS "macrocell52";
+    ATTRIBUTE lib_model OF \UART_1:BUART:tx_bitclk\ : LABEL IS "macrocell53";
+    ATTRIBUTE lib_model OF \UART_1:BUART:tx_ctrl_mark_last\ : LABEL IS "macrocell54";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_0\ : LABEL IS "macrocell55";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_load_fifo\ : LABEL IS "macrocell56";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_3\ : LABEL IS "macrocell57";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_2\ : LABEL IS "macrocell58";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_bitclk_enable\ : LABEL IS "macrocell59";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_stop1_reg\ : LABEL IS "macrocell60";
+    ATTRIBUTE lib_model OF \UART_1:BUART:pollcount_1\ : LABEL IS "macrocell61";
+    ATTRIBUTE lib_model OF \UART_1:BUART:pollcount_0\ : LABEL IS "macrocell62";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_status_3\ : LABEL IS "macrocell63";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_last\ : LABEL IS "macrocell64";
+    ATTRIBUTE lib_model OF Net_23 : LABEL IS "macrocell65";
+    ATTRIBUTE lib_model OF Net_34 : LABEL IS "macrocell66";
+    ATTRIBUTE lib_model OF Net_701 : LABEL IS "macrocell67";
+    ATTRIBUTE lib_model OF Net_702 : LABEL IS "macrocell68";
+    ATTRIBUTE lib_model OF \SPIS:BSPIS:dpcounter_one_reg\ : LABEL IS "macrocell69";
+    ATTRIBUTE lib_model OF \SPIS:BSPIS:mosi_buf_overrun_fin\ : LABEL IS "macrocell70";
+    ATTRIBUTE lib_model OF \SPIS:BSPIS:mosi_tmp\ : LABEL IS "macrocell71";
     COMPONENT clockblockcell
         PORT (
             dclk_0 : OUT std_ulogic;
@@ -775,6 +779,39 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE udb_chain OF datapathcell : COMPONENT IS "ce0i,ce0,cl0i,cl0,z0i,z0,ff0i,ff0,ce1i,ce1,cl1i,cl1,z1i,z1,ff1i,ff1,cap0i,cap0,cap1i,cap1,ci,co_msb,sir,sol_msb,cfbi,cfbo,sil,sor,cmsbi,cmsbo";
     ATTRIBUTE chain_lsb OF datapathcell : COMPONENT IS "ce0i,cl0i,z0i,ff0i,ce1i,cl1i,z1i,ff1i,cap0i,cap1i,ci,sir,cfbi,sor,cmsbo";
     ATTRIBUTE chain_msb OF datapathcell : COMPONENT IS "ce0,cl0,z0,ff0,ce1,cl1,z1,ff1,cap0,cap1,co_msb,sol_msb,cfbo,sil,cmsbi";
+    COMPONENT decimatorcell
+        PORT (
+            aclock : IN std_ulogic;
+            mod_dat_0 : IN std_ulogic;
+            mod_dat_1 : IN std_ulogic;
+            mod_dat_2 : IN std_ulogic;
+            mod_dat_3 : IN std_ulogic;
+            ext_start : IN std_ulogic;
+            modrst : OUT std_ulogic;
+            interrupt : OUT std_ulogic);
+    END COMPONENT;
+    COMPONENT dsmodcell
+        PORT (
+            aclock : IN std_ulogic;
+            modbitin_udb : IN std_ulogic;
+            reset_udb : IN std_ulogic;
+            reset_dec : IN std_ulogic;
+            dec_clock : OUT std_ulogic;
+            mod_dat_0 : OUT std_ulogic;
+            mod_dat_1 : OUT std_ulogic;
+            mod_dat_2 : OUT std_ulogic;
+            mod_dat_3 : OUT std_ulogic;
+            dout_udb_0 : OUT std_ulogic;
+            dout_udb_1 : OUT std_ulogic;
+            dout_udb_2 : OUT std_ulogic;
+            dout_udb_3 : OUT std_ulogic;
+            dout_udb_4 : OUT std_ulogic;
+            dout_udb_5 : OUT std_ulogic;
+            dout_udb_6 : OUT std_ulogic;
+            dout_udb_7 : OUT std_ulogic;
+            extclk_cp_udb : IN std_ulogic;
+            clk_udb : IN std_ulogic);
+    END COMPONENT;
     COMPONENT i2ccell
         PORT (
             clock : IN std_ulogic;
@@ -871,36 +908,6 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     ATTRIBUTE udb_chain OF macrocell : COMPONENT IS "cin,cout";
     ATTRIBUTE chain_lsb OF macrocell : COMPONENT IS "cin";
     ATTRIBUTE chain_msb OF macrocell : COMPONENT IS "cout";
-    COMPONENT sarcell
-        PORT (
-            clock : IN std_ulogic;
-            pump_clock : IN std_ulogic;
-            clk_udb : IN std_ulogic;
-            sof_udb : IN std_ulogic;
-            vp_ctl_udb_0 : IN std_ulogic;
-            vp_ctl_udb_1 : IN std_ulogic;
-            vp_ctl_udb_2 : IN std_ulogic;
-            vp_ctl_udb_3 : IN std_ulogic;
-            vn_ctl_udb_0 : IN std_ulogic;
-            vn_ctl_udb_1 : IN std_ulogic;
-            vn_ctl_udb_2 : IN std_ulogic;
-            vn_ctl_udb_3 : IN std_ulogic;
-            data_out_udb_0 : OUT std_ulogic;
-            data_out_udb_1 : OUT std_ulogic;
-            data_out_udb_2 : OUT std_ulogic;
-            data_out_udb_3 : OUT std_ulogic;
-            data_out_udb_4 : OUT std_ulogic;
-            data_out_udb_5 : OUT std_ulogic;
-            data_out_udb_6 : OUT std_ulogic;
-            data_out_udb_7 : OUT std_ulogic;
-            data_out_udb_8 : OUT std_ulogic;
-            data_out_udb_9 : OUT std_ulogic;
-            data_out_udb_10 : OUT std_ulogic;
-            data_out_udb_11 : OUT std_ulogic;
-            eof_udb : OUT std_ulogic;
-            irq : OUT std_ulogic;
-            next : OUT std_ulogic);
-    END COMPONENT;
     COMPONENT statusicell
         PORT (
             status_0 : IN std_ulogic;
@@ -947,18 +954,20 @@ BEGIN
             clk_bus => ClockBlock_BUS_CLK_local,
             dsi_clkin_div => open,
             dsi_glb_div => open,
-            dclk_glb_0 => \SPIM_1:Net_276\,
-            dclk_0 => \SPIM_1:Net_276_local\,
-            aclk_glb_0 => \ADC_SAR_1:Net_385\,
-            aclk_0 => \ADC_SAR_1:Net_385_local\,
-            clk_a_dig_glb_0 => \ADC_SAR_1:Net_381\,
-            clk_a_dig_0 => \ADC_SAR_1:Net_381_local\,
-            dclk_glb_1 => \UART_1:Net_9\,
-            dclk_1 => \UART_1:Net_9_local\,
-            dclk_glb_2 => \SPIS:Net_81\,
-            dclk_2 => \SPIS:Net_81_local\,
-            dclk_glb_3 => Net_749,
-            dclk_3 => Net_749_local,
+            dclk_glb_0 => \ADC_DelSig_1:Net_93\,
+            dclk_0 => \ADC_DelSig_1:Net_93_local\,
+            dclk_glb_1 => \SPIM_1:Net_276\,
+            dclk_1 => \SPIM_1:Net_276_local\,
+            aclk_glb_0 => \ADC_DelSig_1:Net_488\,
+            aclk_0 => \ADC_DelSig_1:Net_488_local\,
+            clk_a_dig_glb_0 => \ADC_DelSig_1:Net_488_adig\,
+            clk_a_dig_0 => \ADC_DelSig_1:Net_488_adig_local\,
+            dclk_glb_2 => \UART_1:Net_9\,
+            dclk_2 => \UART_1:Net_9_local\,
+            dclk_glb_3 => \SPIS:Net_81\,
+            dclk_3 => \SPIS:Net_81_local\,
+            dclk_glb_4 => Net_749,
+            dclk_4 => Net_749_local,
             clk_bus_glb_ff => \ClockBlock.clk_bus_glb_ff__sig\,
             aclk_glb_ff_0 => \ClockBlock.aclk_glb_ff_0__sig\);
 
@@ -2585,6 +2594,14 @@ BEGIN
             interrupt => Net_628,
             clock => ClockBlock_BUS_CLK);
 
+    __ONE__:macrocell
+        GENERIC MAP(
+            eqn_main => "1'b0",
+            regmode => 0,
+            clken_mode => 1)
+        PORT MAP(
+            q => __ONE__);
+
     \Timer3:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\:controlcell
         GENERIC MAP(
             cy_ctrl_mode_0 => "11111111",
@@ -3157,44 +3174,50 @@ BEGIN
             sor => \SPIM_1:BSPIM:sR16:Dp:u1.sor__sig\,
             cmsbo => \SPIM_1:BSPIM:sR16:Dp:u1.cmsbo__sig\);
 
-    \ADC_SAR_1:IRQ\:interrupt
+    \ADC_DelSig_1:DSM\:dsmodcell
+        GENERIC MAP(
+            cy_registers => "",
+            resolution => 16)
+        PORT MAP(
+            aclock => \ClockBlock.aclk_glb_ff_0__sig\,
+            modbitin_udb => open,
+            reset_udb => open,
+            reset_dec => \ADC_DelSig_1:mod_reset\,
+            extclk_cp_udb => \ADC_DelSig_1:Net_93_local\,
+            dec_clock => \ADC_DelSig_1:aclock\,
+            mod_dat_3 => \ADC_DelSig_1:mod_dat_3\,
+            mod_dat_2 => \ADC_DelSig_1:mod_dat_2\,
+            mod_dat_1 => \ADC_DelSig_1:mod_dat_1\,
+            mod_dat_0 => \ADC_DelSig_1:mod_dat_0\,
+            dout_udb_7 => \ADC_DelSig_1:Net_245_7\,
+            dout_udb_6 => \ADC_DelSig_1:Net_245_6\,
+            dout_udb_5 => \ADC_DelSig_1:Net_245_5\,
+            dout_udb_4 => \ADC_DelSig_1:Net_245_4\,
+            dout_udb_3 => \ADC_DelSig_1:Net_245_3\,
+            dout_udb_2 => \ADC_DelSig_1:Net_245_2\,
+            dout_udb_1 => \ADC_DelSig_1:Net_245_1\,
+            dout_udb_0 => \ADC_DelSig_1:Net_245_0\);
+
+    \ADC_DelSig_1:IRQ\:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => Net_744,
+            interrupt => Net_759,
             clock => ClockBlock_BUS_CLK);
 
-    \ADC_SAR_1:ADC_SAR\:sarcell
+    \ADC_DelSig_1:DEC\:decimatorcell
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            clock => \ClockBlock.aclk_glb_ff_0__sig\,
-            pump_clock => \ClockBlock.aclk_glb_ff_0__sig\,
-            sof_udb => open,
-            vp_ctl_udb_3 => open,
-            vp_ctl_udb_2 => open,
-            vp_ctl_udb_1 => open,
-            vp_ctl_udb_0 => open,
-            vn_ctl_udb_3 => open,
-            vn_ctl_udb_2 => open,
-            vn_ctl_udb_1 => open,
-            vn_ctl_udb_0 => open,
-            irq => \ADC_SAR_1:Net_252\,
-            next => Net_747,
-            data_out_udb_11 => \ADC_SAR_1:Net_207_11\,
-            data_out_udb_10 => \ADC_SAR_1:Net_207_10\,
-            data_out_udb_9 => \ADC_SAR_1:Net_207_9\,
-            data_out_udb_8 => \ADC_SAR_1:Net_207_8\,
-            data_out_udb_7 => \ADC_SAR_1:Net_207_7\,
-            data_out_udb_6 => \ADC_SAR_1:Net_207_6\,
-            data_out_udb_5 => \ADC_SAR_1:Net_207_5\,
-            data_out_udb_4 => \ADC_SAR_1:Net_207_4\,
-            data_out_udb_3 => \ADC_SAR_1:Net_207_3\,
-            data_out_udb_2 => \ADC_SAR_1:Net_207_2\,
-            data_out_udb_1 => \ADC_SAR_1:Net_207_1\,
-            data_out_udb_0 => \ADC_SAR_1:Net_207_0\,
-            eof_udb => Net_744);
+            aclock => \ADC_DelSig_1:aclock\,
+            mod_dat_3 => \ADC_DelSig_1:mod_dat_3\,
+            mod_dat_2 => \ADC_DelSig_1:mod_dat_2\,
+            mod_dat_1 => \ADC_DelSig_1:mod_dat_1\,
+            mod_dat_0 => \ADC_DelSig_1:mod_dat_0\,
+            ext_start => __ONE__,
+            modrst => \ADC_DelSig_1:mod_reset\,
+            interrupt => Net_759);
 
     \UART_1:BUART:sTX:TxShifter:u0\:datapathcell
         GENERIC MAP(

@@ -141,18 +141,18 @@ ssize_t spi_drv_read(struct file *filep, char __user *ubuf,
   int resultBuf[MAXLEN];
   s16 result=1234;
 
-  minor = iminor(filep->f_inode);
+  minor = iminor(filep->f_inode);       // get minor number
 
-  if(gpio_devs[minor].enable == 1)
+  if(gpio_devs[minor].enable == 1)      // check gpio enable
   {
-    return gpio_drv_read(filep, ubuf, count, f_pos);
+    return gpio_drv_read(filep, ubuf, count, f_pos);        // call gpio read-function
   }
 
-  my_spi_read_byte(filep, spi_devs[minor].spi, &(spi_devs[minor].datain));
+  my_spi_read_byte(filep, spi_devs[minor].spi, &(spi_devs[minor].datain));      // call SPI read-function
   result = spi_devs[minor].datain;
-
-  resultBuf[0] = (result >> 8);
-  resultBuf[1] = (result & 255);
+  
+  resultBuf[0] = (result >> 8);             // Rightshift 8 to remove everything but seconds.
+  resultBuf[1] = (result & 255);            // AND with 255 to remove everything but milliseconds.
 
   printk("resultbuf0: %i", resultBuf[0]);
   printk("resultbuf1: %i", resultBuf[1]);

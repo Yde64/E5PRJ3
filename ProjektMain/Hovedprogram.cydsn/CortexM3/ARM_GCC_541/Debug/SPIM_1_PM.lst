@@ -1,4 +1,8 @@
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 1
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
   28:Generated_Source\PSoC5/SPIM_1_PM.c **** * Function Name: SPIM_1_SaveConfig
   29:Generated_Source\PSoC5/SPIM_1_PM.c **** ********************************************************************************
   30:Generated_Source\PSoC5/SPIM_1_PM.c **** *
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 2
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 2
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 2
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   31:Generated_Source\PSoC5/SPIM_1_PM.c **** * Summary:
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
   50 0000 7047     		bx	lr
   51              		.cfi_endproc
   52              	.LFE1:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 3
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 3
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 3
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   53              		.size	SPIM_1_RestoreConfig, .-SPIM_1_RestoreConfig
@@ -178,14 +190,18 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
   77              		.loc 1 92 0
   78 000e FFF7FEFF 		bl	SPIM_1_Stop
   79              	.LVL0:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 4
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 4
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 4
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   80 0012 08BD     		pop	{r3, pc}
   81              	.L6:
   82              		.align	2
   83              	.L5:
-  84 0014 9C640040 		.word	1073767580
+  84 0014 96640040 		.word	1073767574
   85 0018 00000000 		.word	.LANCHOR0
   86              		.cfi_endproc
   87              	.LFE2:
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
  101 0000 08B5     		push	{r3, lr}
  102              		.cfi_def_cfa_offset 8
  103              		.cfi_offset 3, -8
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 5
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 5
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 5
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  104              		.cfi_offset 14, -4
@@ -298,49 +318,53 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
  139 0004 0400     		.2byte	0x4
  140 0006 00000000 		.4byte	.Ldebug_abbrev0
  141 000a 04       		.byte	0x4
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 6
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 6
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 6
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  142 000b 01       		.uleb128 0x1
- 143 000c 8D000000 		.4byte	.LASF26
+ 143 000c CB000000 		.4byte	.LASF26
  144 0010 0C       		.byte	0xc
- 145 0011 23000000 		.4byte	.LASF27
- 146 0015 5E010000 		.4byte	.LASF28
+ 145 0011 61000000 		.4byte	.LASF27
+ 146 0015 00000000 		.4byte	.LASF28
  147 0019 00000000 		.4byte	.Ldebug_ranges0+0
  148 001d 00000000 		.4byte	0
  149 0021 00000000 		.4byte	.Ldebug_line0
  150 0025 02       		.uleb128 0x2
  151 0026 01       		.byte	0x1
  152 0027 06       		.byte	0x6
- 153 0028 48020000 		.4byte	.LASF0
+ 153 0028 40020000 		.4byte	.LASF0
  154 002c 02       		.uleb128 0x2
  155 002d 01       		.byte	0x1
  156 002e 08       		.byte	0x8
- 157 002f 7F000000 		.4byte	.LASF1
+ 157 002f BD000000 		.4byte	.LASF1
  158 0033 02       		.uleb128 0x2
  159 0034 02       		.byte	0x2
  160 0035 05       		.byte	0x5
- 161 0036 10020000 		.4byte	.LASF2
+ 161 0036 08020000 		.4byte	.LASF2
  162 003a 02       		.uleb128 0x2
  163 003b 02       		.byte	0x2
  164 003c 07       		.byte	0x7
- 165 003d 46000000 		.4byte	.LASF3
+ 165 003d 84000000 		.4byte	.LASF3
  166 0041 02       		.uleb128 0x2
  167 0042 04       		.byte	0x4
  168 0043 05       		.byte	0x5
- 169 0044 27020000 		.4byte	.LASF4
+ 169 0044 1F020000 		.4byte	.LASF4
  170 0048 02       		.uleb128 0x2
  171 0049 04       		.byte	0x4
  172 004a 07       		.byte	0x7
- 173 004b 2E010000 		.4byte	.LASF5
+ 173 004b 6C010000 		.4byte	.LASF5
  174 004f 02       		.uleb128 0x2
  175 0050 08       		.byte	0x8
  176 0051 05       		.byte	0x5
- 177 0052 F1010000 		.4byte	.LASF6
+ 177 0052 E9010000 		.4byte	.LASF6
  178 0056 02       		.uleb128 0x2
  179 0057 08       		.byte	0x8
  180 0058 07       		.byte	0x7
- 181 0059 D1010000 		.4byte	.LASF7
+ 181 0059 C9010000 		.4byte	.LASF7
  182 005d 03       		.uleb128 0x3
  183 005e 04       		.byte	0x4
  184 005f 05       		.byte	0x5
@@ -348,29 +372,34 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
  186 0064 02       		.uleb128 0x2
  187 0065 04       		.byte	0x4
  188 0066 07       		.byte	0x7
- 189 0067 AF010000 		.4byte	.LASF8
+ 189 0067 A7010000 		.4byte	.LASF8
  190 006b 04       		.uleb128 0x4
- 191 006c 40010000 		.4byte	.LASF12
+ 191 006c 7E010000 		.4byte	.LASF12
  192 0070 02       		.byte	0x2
  193 0071 E401     		.2byte	0x1e4
  194 0073 2C000000 		.4byte	0x2c
  195 0077 02       		.uleb128 0x2
  196 0078 04       		.byte	0x4
  197 0079 04       		.byte	0x4
+<<<<<<< HEAD
  198 007a 79000000 		.4byte	.LASF9
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 7
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 7
+=======
+ 198 007a B7000000 		.4byte	.LASF9
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 7
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  199 007e 02       		.uleb128 0x2
  200 007f 08       		.byte	0x8
  201 0080 04       		.byte	0x4
- 202 0081 46010000 		.4byte	.LASF10
+ 202 0081 84010000 		.4byte	.LASF10
  203 0085 02       		.uleb128 0x2
  204 0086 01       		.byte	0x1
  205 0087 08       		.byte	0x8
- 206 0088 FF010000 		.4byte	.LASF11
+ 206 0088 F7010000 		.4byte	.LASF11
  207 008c 04       		.uleb128 0x4
- 208 008d 29010000 		.4byte	.LASF13
+ 208 008d 67010000 		.4byte	.LASF13
  209 0091 02       		.byte	0x2
  210 0092 8E02     		.2byte	0x28e
  211 0094 98000000 		.4byte	0x98
@@ -379,36 +408,36 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
  214 009d 02       		.uleb128 0x2
  215 009e 08       		.byte	0x8
  216 009f 04       		.byte	0x4
- 217 00a0 3C020000 		.4byte	.LASF14
+ 217 00a0 34020000 		.4byte	.LASF14
  218 00a4 02       		.uleb128 0x2
  219 00a5 04       		.byte	0x4
  220 00a6 07       		.byte	0x7
- 221 00a7 E8010000 		.4byte	.LASF15
+ 221 00a7 E0010000 		.4byte	.LASF15
  222 00ab 06       		.uleb128 0x6
  223 00ac 02       		.byte	0x2
  224 00ad 03       		.byte	0x3
  225 00ae 40       		.byte	0x40
  226 00af CC000000 		.4byte	0xcc
  227 00b3 07       		.uleb128 0x7
- 228 00b4 30020000 		.4byte	.LASF16
+ 228 00b4 28020000 		.4byte	.LASF16
  229 00b8 03       		.byte	0x3
  230 00b9 42       		.byte	0x42
  231 00ba 6B000000 		.4byte	0x6b
  232 00be 00       		.byte	0
  233 00bf 07       		.uleb128 0x7
- 234 00c0 A4010000 		.4byte	.LASF17
+ 234 00c0 9C010000 		.4byte	.LASF17
  235 00c4 03       		.byte	0x3
  236 00c5 43       		.byte	0x43
  237 00c6 6B000000 		.4byte	0x6b
  238 00ca 01       		.byte	0x1
  239 00cb 00       		.byte	0
  240 00cc 08       		.uleb128 0x8
- 241 00cd BC010000 		.4byte	.LASF18
+ 241 00cd B4010000 		.4byte	.LASF18
  242 00d1 03       		.byte	0x3
  243 00d2 44       		.byte	0x44
  244 00d3 AB000000 		.4byte	0xab
  245 00d7 09       		.uleb128 0x9
- 246 00d8 59000000 		.4byte	.LASF19
+ 246 00d8 97000000 		.4byte	.LASF19
  247 00dc 01       		.byte	0x1
  248 00dd 29       		.byte	0x29
  249 00de 00000000 		.4byte	.LFB0
@@ -416,9 +445,13 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
  251 00e6 01       		.uleb128 0x1
  252 00e7 9C       		.byte	0x9c
  253 00e8 09       		.uleb128 0x9
- 254 00e9 00000000 		.4byte	.LASF20
+ 254 00e9 3E000000 		.4byte	.LASF20
  255 00ed 01       		.byte	0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 8
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 8
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 8
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  256 00ee 3D       		.byte	0x3d
@@ -427,7 +460,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
  259 00f7 01       		.uleb128 0x1
  260 00f8 9C       		.byte	0x9c
  261 00f9 0A       		.uleb128 0xa
- 262 00fa 1A020000 		.4byte	.LASF21
+ 262 00fa 12020000 		.4byte	.LASF21
  263 00fe 01       		.byte	0x1
  264 00ff 57       		.byte	0x57
  265 0100 00000000 		.4byte	.LFB2
@@ -440,7 +473,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
  272 0113 51010000 		.4byte	0x151
  273 0117 00       		.byte	0
  274 0118 0A       		.uleb128 0xa
- 275 0119 1B010000 		.4byte	.LASF22
+ 275 0119 59010000 		.4byte	.LASF22
  276 011d 01       		.byte	0x1
  277 011e 7C       		.byte	0x7c
  278 011f 00000000 		.4byte	.LFB3
@@ -456,7 +489,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
  288 013b 67010000 		.4byte	0x167
  289 013f 00       		.byte	0
  290 0140 0C       		.uleb128 0xc
- 291 0141 6B000000 		.4byte	.LASF29
+ 291 0141 A9000000 		.4byte	.LASF29
  292 0145 01       		.byte	0x1
  293 0146 14       		.byte	0x14
  294 0147 CC000000 		.4byte	0xcc
@@ -464,21 +497,25 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
  296 014c 03       		.byte	0x3
  297 014d 00000000 		.4byte	SPIM_1_backup
  298 0151 0D       		.uleb128 0xd
- 299 0152 04020000 		.4byte	.LASF23
- 300 0156 04020000 		.4byte	.LASF23
+ 299 0152 FC010000 		.4byte	.LASF23
+ 300 0156 FC010000 		.4byte	.LASF23
  301 015a 03       		.byte	0x3
  302 015b 4E       		.byte	0x4e
  303 015c 0D       		.uleb128 0xd
- 304 015d 4D010000 		.4byte	.LASF24
- 305 0161 4D010000 		.4byte	.LASF24
+ 304 015d 8B010000 		.4byte	.LASF24
+ 305 0161 8B010000 		.4byte	.LASF24
  306 0165 03       		.byte	0x3
  307 0166 66       		.byte	0x66
  308 0167 0D       		.uleb128 0xd
- 309 0168 15000000 		.4byte	.LASF25
- 310 016c 15000000 		.4byte	.LASF25
+ 309 0168 53000000 		.4byte	.LASF25
+ 310 016c 53000000 		.4byte	.LASF25
  311 0170 03       		.byte	0x3
  312 0171 4C       		.byte	0x4c
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 9
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 9
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 9
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  313 0172 00       		.byte	0
@@ -538,7 +575,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
  367 0033 13       		.uleb128 0x13
  368 0034 00       		.byte	0
  369 0035 00       		.byte	0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 10
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 10
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 10
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  370 0036 05       		.uleb128 0x5
@@ -598,7 +639,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
  424 006c 0E       		.uleb128 0xe
  425 006d 3A       		.uleb128 0x3a
  426 006e 0B       		.uleb128 0xb
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 11
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 11
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 11
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  427 006f 3B       		.uleb128 0x3b
@@ -658,7 +703,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
  481 00a9 0B       		.uleb128 0xb
  482 00aa 3B       		.uleb128 0x3b
  483 00ab 0B       		.uleb128 0xb
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 12
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 12
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 12
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  484 00ac 49       		.uleb128 0x49
@@ -718,13 +767,18 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
  538              		.section	.debug_line,"",%progbits
  539              	.Ldebug_line0:
  540 0000 9E000000 		.section	.debug_str,"MS",%progbits,1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 13
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 13
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 13
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  540      02005200 
  540      00000201 
  540      FB0E0D00 
  540      01010101 
+<<<<<<< HEAD
  541              	.LASF20:
  542 0000 5350494D 		.ascii	"SPIM_1_RestoreConfig\000"
  542      5F315F52 
@@ -778,114 +832,174 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 1
  559      6973696F 
  559      6E203233 
  559      37373135 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 14
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 14
+=======
+ 541              	.LASF28:
+ 542 0000 433A5C55 		.ascii	"C:\\Users\\Morten\\Desktop\\E5PRJ3\\ProjektMain\\Ho"
+ 542      73657273 
+ 542      5C4D6F72 
+ 542      74656E5C 
+ 542      4465736B 
+ 543 002d 76656470 		.ascii	"vedprogram.cydsn\000"
+ 543      726F6772 
+ 543      616D2E63 
+ 543      7964736E 
+ 543      00
+ 544              	.LASF20:
+ 545 003e 5350494D 		.ascii	"SPIM_1_RestoreConfig\000"
+ 545      5F315F52 
+ 545      6573746F 
+ 545      7265436F 
+ 545      6E666967 
+ 546              	.LASF25:
+ 547 0053 5350494D 		.ascii	"SPIM_1_Enable\000"
+ 547      5F315F45 
+ 547      6E61626C 
+ 547      6500
+ 548              	.LASF27:
+ 549 0061 47656E65 		.ascii	"Generated_Source\\PSoC5\\SPIM_1_PM.c\000"
+ 549      72617465 
+ 549      645F536F 
+ 549      75726365 
+ 549      5C50536F 
+ 550              	.LASF3:
+ 551 0084 73686F72 		.ascii	"short unsigned int\000"
+ 551      7420756E 
+ 551      7369676E 
+ 551      65642069 
+ 551      6E7400
+ 552              	.LASF19:
+ 553 0097 5350494D 		.ascii	"SPIM_1_SaveConfig\000"
+ 553      5F315F53 
+ 553      61766543 
+ 553      6F6E6669 
+ 553      6700
+ 554              	.LASF29:
+ 555 00a9 5350494D 		.ascii	"SPIM_1_backup\000"
+ 555      5F315F62 
+ 555      61636B75 
+ 555      7000
+ 556              	.LASF9:
+ 557 00b7 666C6F61 		.ascii	"float\000"
+ 557      7400
+ 558              	.LASF1:
+ 559 00bd 756E7369 		.ascii	"unsigned char\000"
+ 559      676E6564 
+ 559      20636861 
+ 559      7200
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 14
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
- 560 00f3 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 560      66756E63 
- 560      74696F6E 
- 560      2D736563 
- 560      74696F6E 
- 561              	.LASF22:
- 562 011b 5350494D 		.ascii	"SPIM_1_Wakeup\000"
- 562      5F315F57 
- 562      616B6575 
- 562      7000
- 563              	.LASF13:
- 564 0129 72656738 		.ascii	"reg8\000"
- 564      00
- 565              	.LASF5:
- 566 012e 6C6F6E67 		.ascii	"long unsigned int\000"
- 566      20756E73 
- 566      69676E65 
- 566      6420696E 
- 566      7400
- 567              	.LASF12:
- 568 0140 75696E74 		.ascii	"uint8\000"
- 568      3800
- 569              	.LASF10:
- 570 0146 646F7562 		.ascii	"double\000"
- 570      6C6500
- 571              	.LASF24:
- 572 014d 5350494D 		.ascii	"SPIM_1_ClearFIFO\000"
- 572      5F315F43 
- 572      6C656172 
- 572      4649464F 
- 572      00
- 573              	.LASF28:
- 574 015e 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\E5PRJ3\\Projek"
- 574      73657273 
- 574      5C637269 
- 574      6E675C44 
- 574      6F63756D 
- 575 018b 744D6169 		.ascii	"tMain\\Hovedprogram.cydsn\000"
- 575      6E5C486F 
- 575      76656470 
- 575      726F6772 
- 575      616D2E63 
+ 560              	.LASF26:
+ 561 00cb 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 561      43313120 
+ 561      352E342E 
+ 561      31203230 
+ 561      31363036 
+ 562 00fe 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 562      20726576 
+ 562      6973696F 
+ 562      6E203233 
+ 562      37373135 
+ 563 0131 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 563      66756E63 
+ 563      74696F6E 
+ 563      2D736563 
+ 563      74696F6E 
+ 564              	.LASF22:
+ 565 0159 5350494D 		.ascii	"SPIM_1_Wakeup\000"
+ 565      5F315F57 
+ 565      616B6575 
+ 565      7000
+ 566              	.LASF13:
+ 567 0167 72656738 		.ascii	"reg8\000"
+ 567      00
+ 568              	.LASF5:
+ 569 016c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 569      20756E73 
+ 569      69676E65 
+ 569      6420696E 
+ 569      7400
+ 570              	.LASF12:
+ 571 017e 75696E74 		.ascii	"uint8\000"
+ 571      3800
+ 572              	.LASF10:
+ 573 0184 646F7562 		.ascii	"double\000"
+ 573      6C6500
+ 574              	.LASF24:
+ 575 018b 5350494D 		.ascii	"SPIM_1_ClearFIFO\000"
+ 575      5F315F43 
+ 575      6C656172 
+ 575      4649464F 
+ 575      00
  576              	.LASF17:
- 577 01a4 636E7472 		.ascii	"cntrPeriod\000"
+ 577 019c 636E7472 		.ascii	"cntrPeriod\000"
  577      50657269 
  577      6F6400
  578              	.LASF8:
- 579 01af 756E7369 		.ascii	"unsigned int\000"
+ 579 01a7 756E7369 		.ascii	"unsigned int\000"
  579      676E6564 
  579      20696E74 
  579      00
  580              	.LASF18:
- 581 01bc 5350494D 		.ascii	"SPIM_1_BACKUP_STRUCT\000"
+ 581 01b4 5350494D 		.ascii	"SPIM_1_BACKUP_STRUCT\000"
  581      5F315F42 
  581      41434B55 
  581      505F5354 
  581      52554354 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cctrwhce.s 			page 15
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 15
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 15
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  582              	.LASF7:
- 583 01d1 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 583 01c9 6C6F6E67 		.ascii	"long long unsigned int\000"
  583      206C6F6E 
  583      6720756E 
  583      7369676E 
  583      65642069 
  584              	.LASF15:
- 585 01e8 73697A65 		.ascii	"sizetype\000"
+ 585 01e0 73697A65 		.ascii	"sizetype\000"
  585      74797065 
  585      00
  586              	.LASF6:
- 587 01f1 6C6F6E67 		.ascii	"long long int\000"
+ 587 01e9 6C6F6E67 		.ascii	"long long int\000"
  587      206C6F6E 
  587      6720696E 
  587      7400
  588              	.LASF11:
- 589 01ff 63686172 		.ascii	"char\000"
+ 589 01f7 63686172 		.ascii	"char\000"
  589      00
  590              	.LASF23:
- 591 0204 5350494D 		.ascii	"SPIM_1_Stop\000"
+ 591 01fc 5350494D 		.ascii	"SPIM_1_Stop\000"
  591      5F315F53 
  591      746F7000 
  592              	.LASF2:
- 593 0210 73686F72 		.ascii	"short int\000"
+ 593 0208 73686F72 		.ascii	"short int\000"
  593      7420696E 
  593      7400
  594              	.LASF21:
- 595 021a 5350494D 		.ascii	"SPIM_1_Sleep\000"
+ 595 0212 5350494D 		.ascii	"SPIM_1_Sleep\000"
  595      5F315F53 
  595      6C656570 
  595      00
  596              	.LASF4:
- 597 0227 6C6F6E67 		.ascii	"long int\000"
+ 597 021f 6C6F6E67 		.ascii	"long int\000"
  597      20696E74 
  597      00
  598              	.LASF16:
- 599 0230 656E6162 		.ascii	"enableState\000"
+ 599 0228 656E6162 		.ascii	"enableState\000"
  599      6C655374 
  599      61746500 
  600              	.LASF14:
- 601 023c 6C6F6E67 		.ascii	"long double\000"
+ 601 0234 6C6F6E67 		.ascii	"long double\000"
  601      20646F75 
  601      626C6500 
  602              	.LASF0:
- 603 0248 7369676E 		.ascii	"signed char\000"
+ 603 0240 7369676E 		.ascii	"signed char\000"
  603      65642063 
  603      68617200 
  604              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
