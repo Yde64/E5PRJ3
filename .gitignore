@@ -4,3 +4,6 @@
 *.db-wal
 *.o
 *.Ist
+*.P
+*.o
+*.lst

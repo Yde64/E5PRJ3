@@ -32,12 +32,18 @@ WeightSensors  _WSptr = {.p1 = 0, .p2 = 0}; //WeightSensor Pointer
 
 
 // STATES.C
+<<<<<<< HEAD
 #define glasvaegtp1 450 //eksempel (i gram)
 #define glasvaegtp2 440 //eksempel - skal testes (i gram)
 
 #define afvigelse 40   // maksimum mængde væske, der må være i glas efter spil (i gram) -  skal testes yderligere
 #define afvigelse2 50 //afvigelse for sikring af tyvstart (ERR_FALSE_START)
 
+=======
+
+#define afvigelse 40   // maksimum mængde væske, der må være i glas efter spil (i gram) 
+#define afvigelse2 50 //afvigelse for sikring af tyvstart (ERR_FALSE_START)
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 #define delay 100
 #define nulvaegt -200
 
@@ -52,6 +58,11 @@ int cycleCountCountdown = 0;
 
 int pErr = 0;
 
+<<<<<<< HEAD
+=======
+char uart_out[50];
+// STATES.C
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 //CHUG-state
 int chugp1 = 0;
@@ -210,6 +221,10 @@ int main(void)
                             if((afvigelse) >= getCalWeight(1)) //Her skal det erklæres hvilken af de to spillere der vinder --> sæt pLoser til enten 1(p1) eller 2(p2)
                             {
                                 pLoser = 2; //player2 taber
+<<<<<<< HEAD
+=======
+                               
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
                                 NEXT_STATE = WINNER_DONE; 
                                         
                             }
@@ -233,6 +248,10 @@ int main(void)
                             if ((afvigelse) >= getCalWeight(2)) //hvis spiller2 vinder, sættes p1-data til Loser-data
                             {
                                 pLoser = 1; //player 1 taber
+<<<<<<< HEAD
+=======
+                         
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
                                 NEXT_STATE = WINNER_DONE;
                             }
                             else if(timeout()==1)
