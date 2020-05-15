@@ -1,7 +1,7 @@
 /*******************************************************************************
 * File Name: project.h
 * 
-* PSoC Creator  4.3 Early Access
+* PSoC Creator  4.3
 *
 * Description:
 * It contains references to all generated header files and should not be modified.
@@ -32,7 +32,7 @@
 #include "SPIM_1_PVT.h"
 #include "LEDdata_aliases.h"
 #include "LEDdata.h"
-#include "ADC_SAR_1.h"
+#include "ADC_DelSig_1.h"
 #include "PlayerSelect.h"
 #include "UART_1.h"
 #include "isr_uart_rx.h"
@@ -72,8 +72,10 @@
 #include "SS.h"
 #include "rx_isr.h"
 #include "SPIM_1_IntClock.h"
-#include "ADC_SAR_1_IRQ.h"
-#include "ADC_SAR_1_theACLK.h"
+#include "ADC_DelSig_1_AMux.h"
+#include "ADC_DelSig_1_Ext_CP_Clk.h"
+#include "ADC_DelSig_1_IRQ.h"
+#include "ADC_DelSig_1_theACLK.h"
 #include "UART_1_IntClock.h"
 #include "SPIS_IntClock.h"
 #include "core_cm3_psoc5.h"
