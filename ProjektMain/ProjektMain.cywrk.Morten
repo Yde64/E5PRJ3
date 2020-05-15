@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ProjektMain\Hovedprogram">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ProjektMain\Hovedprogram\Hovedprogram.cydwr\Pins">
 <ExpandedNodeIds>
 <v>ProjektMain</v>
 <v>ProjektMain\Hovedprogram</v>
@@ -53,9 +53,6 @@
 <v>ProjektMain\Hovedprogram\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>ProjektMain</v>
-<v>ProjektMain\Hovedprogram</v>
-<v>ProjektMain\Hovedprogram\TopDesign</v>
 <v>ProjektMain\Hovedprogram\Hovedprogram.cydwr</v>
 <v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\Pins</v>
 <v>ProjektMain\Hovedprogram\Hovedprogram.cydwr\Analog</v>
@@ -79,6 +76,9 @@
 <v>ProjektMain\Hovedprogram\Header Files\VT100Terminal.h</v>
 <v>ProjektMain\Hovedprogram\Header Files\WeightSensors_.h</v>
 <v>ProjektMain\Hovedprogram\Source Files</v>
+<v>ProjektMain\Hovedprogram\Source Files\Display.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\LEDcontrol.c</v>
+<v>ProjektMain\Hovedprogram\Source Files\LiquidCrystal_I2C.c</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -199,6 +199,30 @@
 <VisibleNodeIds>
 <v>ProjektMain</v>
 <v>ProjektMain\Hovedprogram</v>
+<v>ProjektMain\Hovedprogram\CortexM3</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_INT.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_IRQ.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_PM.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_theACLK.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Display.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_BOOT.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_1_INT.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -304,7 +328,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="928, 532" SelectedTabbedMdiWindow="128f514c-560b-46a3-9a74-7294c37cdd84"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="d9acdc0d-3130-4ebb-ac22-30d0e130c66d" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Stopur.h" Guid="8b9de4b4-2f69-46f8-b90b-06799dd26989" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Stopur.c" Guid="d5b3a836-4204-45d1-b7ce-4cd37a456188" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\TopDesign\TopDesign.cysch" Guid="5e7d223f-a064-4bcf-890c-4b9a09cc9cba" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Display.c" Guid="f327c09c-82e5-4e63-b93b-9af9f47fc286" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Hovedprogram.cydwr" Guid="fd7e804a-0648-4e70-8ccd-6686a6441747" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Display.h" Guid="c94d6d49-f941-48c2-ab58-0ac9495ac73f" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\main.c" Guid="128f514c-560b-46a3-9a74-7294c37cdd84" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\UART.c" Guid="7ff71283-6074-4e00-95c5-2fd0921221e1" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\LEDcontrol.c" Guid="b4671c6b-c53b-4be8-a907-cc9b0e0c8849" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\LEDcontrol.h" Guid="98f49fd6-c5f3-4e5c-a85b-9653fc0e2bae" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Generated_Source\PSoC5\cyfitter.h" Guid="d7ef5fba-f07f-4ce0-889c-7b502a18616c" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Generated_Source\PSoC5\cytypes.h" Guid="10ad65a4-9e91-4875-93cc-3bf3b3bfa719" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1057, 532" SelectedTabbedMdiWindow="fd7e804a-0648-4e70-8ccd-6686a6441747"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="d9acdc0d-3130-4ebb-ac22-30d0e130c66d" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Stopur.h" Guid="8b9de4b4-2f69-46f8-b90b-06799dd26989" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Stopur.c" Guid="d5b3a836-4204-45d1-b7ce-4cd37a456188" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\TopDesign\TopDesign.cysch" Guid="5e7d223f-a064-4bcf-890c-4b9a09cc9cba" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Display.c" Guid="f327c09c-82e5-4e63-b93b-9af9f47fc286" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Hovedprogram.cydwr" Guid="fd7e804a-0648-4e70-8ccd-6686a6441747" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Display.h" Guid="c94d6d49-f941-48c2-ab58-0ac9495ac73f" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\main.c" Guid="128f514c-560b-46a3-9a74-7294c37cdd84" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\UART.c" Guid="7ff71283-6074-4e00-95c5-2fd0921221e1" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\LEDcontrol.c" Guid="b4671c6b-c53b-4be8-a907-cc9b0e0c8849" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\LEDcontrol.h" Guid="98f49fd6-c5f3-4e5c-a85b-9653fc0e2bae" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Generated_Source\PSoC5\cyfitter.h" Guid="d7ef5fba-f07f-4ce0-889c-7b502a18616c" /><DocumentWindow Key="C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Generated_Source\PSoC5\cytypes.h" Guid="10ad65a4-9e91-4875-93cc-3bf3b3bfa719" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
