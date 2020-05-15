@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:/Users/cring/Documents/GitHub/E5PRJ3/ProjektMain/Hovedprogram.cydsn/CortexM3/ARM_GCC_541/Debug/CyBootAsmGnu.o : C:/Users/cring/Documents/GitHub/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_Source/PSoC5/CyBootAsmGnu.s C:/Users/cring/Documents/GitHub/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_Source/PSoC5/cydevicegnu.inc C:/Users/cring/Documents/GitHub/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_Source/PSoC5/cydevicegnu_trm.inc C:/Users/cring/Documents/GitHub/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_Source/PSoC5/cyfittergnu.inc 
 
 C:/Users/cring/Documents/GitHub/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_Source/PSoC5/CyBootAsmGnu.s : 
@@ -7,4 +8,15 @@ C:/Users/cring/Documents/GitHub/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_
 C:/Users/cring/Documents/GitHub/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_Source/PSoC5/cydevicegnu_trm.inc : 
 
 C:/Users/cring/Documents/GitHub/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_Source/PSoC5/cyfittergnu.inc : 
+=======
+C:/Users/Morten/Desktop/E5PRJ3/ProjektMain/Hovedprogram.cydsn/CortexM3/ARM_GCC_541/Debug/CyBootAsmGnu.o : C:/Users/Morten/Desktop/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_Source/PSoC5/CyBootAsmGnu.s C:/Users/Morten/Desktop/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_Source/PSoC5/cydevicegnu.inc C:/Users/Morten/Desktop/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_Source/PSoC5/cydevicegnu_trm.inc C:/Users/Morten/Desktop/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_Source/PSoC5/cyfittergnu.inc 
+
+C:/Users/Morten/Desktop/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_Source/PSoC5/CyBootAsmGnu.s : 
+
+C:/Users/Morten/Desktop/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_Source/PSoC5/cydevicegnu.inc : 
+
+C:/Users/Morten/Desktop/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_Source/PSoC5/cydevicegnu_trm.inc : 
+
+C:/Users/Morten/Desktop/E5PRJ3/ProjektMain/Hovedprogram.cydsn/Generated_Source/PSoC5/cyfittergnu.inc : 
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 

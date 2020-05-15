@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 1
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
   28:Generated_Source\PSoC5/PlayerSelect.c **** *
   29:Generated_Source\PSoC5/PlayerSelect.c **** * Parameters:
   30:Generated_Source\PSoC5/PlayerSelect.c **** *  void
+<<<<<<< HEAD
 ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 2
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 2
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   31:Generated_Source\PSoC5/PlayerSelect.c **** *
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
   60              	.LVL5:
   61              	.L6:
   62              		.align	2
+<<<<<<< HEAD
 ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 3
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 3
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   63              	.L5:
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
   92:Generated_Source\PSoC5/PlayerSelect.c **** *
   93:Generated_Source\PSoC5/PlayerSelect.c **** *******************************************************************************/
   94:Generated_Source\PSoC5/PlayerSelect.c **** void PlayerSelect_FastSelect(uint8 channel) 
+<<<<<<< HEAD
 ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 4
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 4
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   95:Generated_Source\PSoC5/PlayerSelect.c **** {
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  113              		.global	PlayerSelect_DisconnectAll
  114              		.thumb
  115              		.thumb_func
+<<<<<<< HEAD
 ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 5
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 5
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  116              		.type	PlayerSelect_DisconnectAll, %function
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  163:Generated_Source\PSoC5/PlayerSelect.c **** *  This function disconnects all channels.
  164:Generated_Source\PSoC5/PlayerSelect.c **** *
  165:Generated_Source\PSoC5/PlayerSelect.c **** * Parameters:
+<<<<<<< HEAD
 ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 6
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 6
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  166:Generated_Source\PSoC5/PlayerSelect.c **** *  void
@@ -358,49 +382,53 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  161 0004 0400     		.2byte	0x4
  162 0006 00000000 		.4byte	.Ldebug_abbrev0
  163 000a 04       		.byte	0x4
+<<<<<<< HEAD
 ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 7
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 7
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  164 000b 01       		.uleb128 0x1
- 165 000c 1C000000 		.4byte	.LASF19
+ 165 000c 5A000000 		.4byte	.LASF19
  166 0010 0C       		.byte	0xc
- 167 0011 E1010000 		.4byte	.LASF20
- 168 0015 02010000 		.4byte	.LASF21
+ 167 0011 D9010000 		.4byte	.LASF20
+ 168 0015 08000000 		.4byte	.LASF21
  169 0019 00000000 		.4byte	.Ldebug_ranges0+0
  170 001d 00000000 		.4byte	0
  171 0021 00000000 		.4byte	.Ldebug_line0
  172 0025 02       		.uleb128 0x2
  173 0026 01       		.byte	0x1
  174 0027 06       		.byte	0x6
- 175 0028 07020000 		.4byte	.LASF0
+ 175 0028 FF010000 		.4byte	.LASF0
  176 002c 02       		.uleb128 0x2
  177 002d 01       		.byte	0x1
  178 002e 08       		.byte	0x8
- 179 002f 0E000000 		.4byte	.LASF1
+ 179 002f 4C000000 		.4byte	.LASF1
  180 0033 02       		.uleb128 0x2
  181 0034 02       		.byte	0x2
  182 0035 05       		.byte	0x5
- 183 0036 C8010000 		.4byte	.LASF2
+ 183 0036 C0010000 		.4byte	.LASF2
  184 003a 02       		.uleb128 0x2
  185 003b 02       		.byte	0x2
  186 003c 07       		.byte	0x7
- 187 003d BC000000 		.4byte	.LASF3
+ 187 003d FA000000 		.4byte	.LASF3
  188 0041 02       		.uleb128 0x2
  189 0042 04       		.byte	0x4
  190 0043 05       		.byte	0x5
- 191 0044 D8010000 		.4byte	.LASF4
+ 191 0044 D0010000 		.4byte	.LASF4
  192 0048 02       		.uleb128 0x2
  193 0049 04       		.byte	0x4
  194 004a 07       		.byte	0x7
- 195 004b AA000000 		.4byte	.LASF5
+ 195 004b E8000000 		.4byte	.LASF5
  196 004f 02       		.uleb128 0x2
  197 0050 08       		.byte	0x8
  198 0051 05       		.byte	0x5
- 199 0052 A4010000 		.4byte	.LASF6
+ 199 0052 9C010000 		.4byte	.LASF6
  200 0056 02       		.uleb128 0x2
  201 0057 08       		.byte	0x8
  202 0058 07       		.byte	0x7
- 203 0059 88010000 		.4byte	.LASF7
+ 203 0059 80010000 		.4byte	.LASF7
  204 005d 03       		.uleb128 0x3
  205 005e 04       		.byte	0x4
  206 005f 05       		.byte	0x5
@@ -408,29 +436,34 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  208 0064 02       		.uleb128 0x2
  209 0065 04       		.byte	0x4
  210 0066 07       		.byte	0x7
- 211 0067 60010000 		.4byte	.LASF8
+ 211 0067 58010000 		.4byte	.LASF8
  212 006b 04       		.uleb128 0x4
- 213 006c D2010000 		.4byte	.LASF22
+ 213 006c CA010000 		.4byte	.LASF22
  214 0070 03       		.byte	0x3
  215 0071 E401     		.2byte	0x1e4
  216 0073 2C000000 		.4byte	0x2c
  217 0077 02       		.uleb128 0x2
  218 0078 04       		.byte	0x4
  219 0079 04       		.byte	0x4
+<<<<<<< HEAD
  220 007a 08000000 		.4byte	.LASF9
 ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 8
+=======
+ 220 007a 46000000 		.4byte	.LASF9
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 8
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  221 007e 02       		.uleb128 0x2
  222 007f 08       		.byte	0x8
  223 0080 04       		.byte	0x4
- 224 0081 CF000000 		.4byte	.LASF10
+ 224 0081 0D010000 		.4byte	.LASF10
  225 0085 02       		.uleb128 0x2
  226 0086 01       		.byte	0x1
  227 0087 08       		.byte	0x8
- 228 0088 B2010000 		.4byte	.LASF11
+ 228 0088 AA010000 		.4byte	.LASF11
  229 008c 05       		.uleb128 0x5
- 230 008d EF000000 		.4byte	.LASF12
+ 230 008d 2D010000 		.4byte	.LASF12
  231 0091 01       		.byte	0x1
  232 0092 24       		.byte	0x24
  233 0093 00000000 		.4byte	.LFB0
@@ -439,7 +472,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  236 009c 9C       		.byte	0x9c
  237 009d C1000000 		.4byte	0xc1
  238 00a1 06       		.uleb128 0x6
- 239 00a2 9F010000 		.4byte	.LASF15
+ 239 00a2 97010000 		.4byte	.LASF15
  240 00a6 01       		.byte	0x1
  241 00a7 26       		.byte	0x26
  242 00a8 6B000000 		.4byte	0x6b
@@ -456,7 +489,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  253 00bf 00       		.byte	0
  254 00c0 00       		.byte	0
  255 00c1 05       		.uleb128 0x5
- 256 00c2 48010000 		.4byte	.LASF13
+ 256 00c2 40010000 		.4byte	.LASF13
  257 00c6 01       		.byte	0x1
  258 00c7 5E       		.byte	0x5e
  259 00c8 00000000 		.4byte	.LFB1
@@ -478,7 +511,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  275 00f3 3A010000 		.4byte	0x13a
  276 00f7 08       		.uleb128 0x8
  277 00f8 01       		.uleb128 0x1
+<<<<<<< HEAD
 ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 9
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 9
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  278 00f9 50       		.byte	0x50
@@ -488,7 +525,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  282 00fd 00       		.byte	0
  283 00fe 00       		.byte	0
  284 00ff 05       		.uleb128 0x5
- 285 0100 6D010000 		.4byte	.LASF14
+ 285 0100 65010000 		.4byte	.LASF14
  286 0104 01       		.byte	0x1
  287 0105 AC       		.byte	0xac
  288 0106 00000000 		.4byte	.LFB2
@@ -501,7 +538,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  295 0119 2F010000 		.4byte	0x12f
  296 011d 00       		.byte	0
  297 011e 0B       		.uleb128 0xb
- 298 011f D6000000 		.4byte	.LASF16
+ 298 011f 14010000 		.4byte	.LASF16
  299 0123 01       		.byte	0x1
  300 0124 14       		.byte	0x14
  301 0125 6B000000 		.4byte	0x6b
@@ -509,13 +546,13 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  303 012a 03       		.byte	0x3
  304 012b 00000000 		.4byte	PlayerSelect_lastChannel
  305 012f 0C       		.uleb128 0xc
- 306 0130 13020000 		.4byte	.LASF17
- 307 0134 13020000 		.4byte	.LASF17
+ 306 0130 0B020000 		.4byte	.LASF17
+ 307 0134 0B020000 		.4byte	.LASF17
  308 0138 02       		.byte	0x2
  309 0139 1B       		.byte	0x1b
  310 013a 0C       		.uleb128 0xc
- 311 013b B7010000 		.4byte	.LASF18
- 312 013f B7010000 		.4byte	.LASF18
+ 311 013b AF010000 		.4byte	.LASF18
+ 312 013f AF010000 		.4byte	.LASF18
  313 0143 02       		.byte	0x2
  314 0144 1A       		.byte	0x1a
  315 0145 00       		.byte	0
@@ -538,7 +575,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  332 000e 01       		.uleb128 0x1
  333 000f 10       		.uleb128 0x10
  334 0010 17       		.uleb128 0x17
+<<<<<<< HEAD
 ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 10
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 10
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  335 0011 00       		.byte	0
@@ -598,7 +639,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  389 0047 40       		.uleb128 0x40
  390 0048 18       		.uleb128 0x18
  391 0049 9742     		.uleb128 0x2117
+<<<<<<< HEAD
 ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 11
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 11
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  392 004b 19       		.uleb128 0x19
@@ -658,7 +703,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  446 0086 898201   		.uleb128 0x4109
  447 0089 00       		.byte	0
  448 008a 11       		.uleb128 0x11
+<<<<<<< HEAD
 ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 12
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 12
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  449 008b 01       		.uleb128 0x1
@@ -718,7 +767,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  503 0022 00000000 		.4byte	0
  504 0026 00000000 		.4byte	0
  505              	.LLST1:
+<<<<<<< HEAD
 ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 13
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 13
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  506 002a 00000000 		.4byte	.LVL6
@@ -770,6 +823,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  548              	.LASF23:
  549 0000 6368616E 		.ascii	"channel\000"
  549      6E656C00 
+<<<<<<< HEAD
  550              	.LASF9:
  551 0008 666C6F61 		.ascii	"float\000"
  551      7400
@@ -835,75 +889,150 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 1
  570      76656470 
  570      726F6772 
  570      616D2E63 
+=======
+ 550              	.LASF21:
+ 551 0008 433A5C55 		.ascii	"C:\\Users\\Morten\\Desktop\\E5PRJ3\\ProjektMain\\Ho"
+ 551      73657273 
+ 551      5C4D6F72 
+ 551      74656E5C 
+ 551      4465736B 
+ 552 0035 76656470 		.ascii	"vedprogram.cydsn\000"
+ 552      726F6772 
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 14
+
+
+ 552      616D2E63 
+ 552      7964736E 
+ 552      00
+ 553              	.LASF9:
+ 554 0046 666C6F61 		.ascii	"float\000"
+ 554      7400
+ 555              	.LASF1:
+ 556 004c 756E7369 		.ascii	"unsigned char\000"
+ 556      676E6564 
+ 556      20636861 
+ 556      7200
+ 557              	.LASF19:
+ 558 005a 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 558      43313120 
+ 558      352E342E 
+ 558      31203230 
+ 558      31363036 
+ 559 008d 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 559      20726576 
+ 559      6973696F 
+ 559      6E203233 
+ 559      37373135 
+ 560 00c0 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 560      66756E63 
+ 560      74696F6E 
+ 560      2D736563 
+ 560      74696F6E 
+ 561              	.LASF5:
+ 562 00e8 6C6F6E67 		.ascii	"long unsigned int\000"
+ 562      20756E73 
+ 562      69676E65 
+ 562      6420696E 
+ 562      7400
+ 563              	.LASF3:
+ 564 00fa 73686F72 		.ascii	"short unsigned int\000"
+ 564      7420756E 
+ 564      7369676E 
+ 564      65642069 
+ 564      6E7400
+ 565              	.LASF10:
+ 566 010d 646F7562 		.ascii	"double\000"
+ 566      6C6500
+ 567              	.LASF16:
+ 568 0114 506C6179 		.ascii	"PlayerSelect_lastChannel\000"
+ 568      65725365 
+ 568      6C656374 
+ 568      5F6C6173 
+ 568      74436861 
+ 569              	.LASF12:
+ 570 012d 506C6179 		.ascii	"PlayerSelect_Start\000"
+ 570      65725365 
+ 570      6C656374 
+ 570      5F537461 
+ 570      727400
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  571              	.LASF13:
- 572 0148 506C6179 		.ascii	"PlayerSelect_FastSelect\000"
+ 572 0140 506C6179 		.ascii	"PlayerSelect_FastSelect\000"
  572      65725365 
+<<<<<<< HEAD
 ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 15
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 15
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  572      6C656374 
  572      5F466173 
  572      7453656C 
  573              	.LASF8:
- 574 0160 756E7369 		.ascii	"unsigned int\000"
+ 574 0158 756E7369 		.ascii	"unsigned int\000"
  574      676E6564 
  574      20696E74 
  574      00
  575              	.LASF14:
- 576 016d 506C6179 		.ascii	"PlayerSelect_DisconnectAll\000"
+ 576 0165 506C6179 		.ascii	"PlayerSelect_DisconnectAll\000"
  576      65725365 
  576      6C656374 
  576      5F446973 
  576      636F6E6E 
  577              	.LASF7:
- 578 0188 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 578 0180 6C6F6E67 		.ascii	"long long unsigned int\000"
  578      206C6F6E 
  578      6720756E 
  578      7369676E 
  578      65642069 
  579              	.LASF15:
- 580 019f 6368616E 		.ascii	"chan\000"
+ 580 0197 6368616E 		.ascii	"chan\000"
  580      00
  581              	.LASF6:
- 582 01a4 6C6F6E67 		.ascii	"long long int\000"
+ 582 019c 6C6F6E67 		.ascii	"long long int\000"
  582      206C6F6E 
  582      6720696E 
  582      7400
  583              	.LASF11:
- 584 01b2 63686172 		.ascii	"char\000"
+ 584 01aa 63686172 		.ascii	"char\000"
  584      00
  585              	.LASF18:
- 586 01b7 506C6179 		.ascii	"PlayerSelect_Set\000"
+ 586 01af 506C6179 		.ascii	"PlayerSelect_Set\000"
  586      65725365 
  586      6C656374 
  586      5F536574 
  586      00
  587              	.LASF2:
- 588 01c8 73686F72 		.ascii	"short int\000"
+ 588 01c0 73686F72 		.ascii	"short int\000"
  588      7420696E 
  588      7400
  589              	.LASF22:
- 590 01d2 75696E74 		.ascii	"uint8\000"
+ 590 01ca 75696E74 		.ascii	"uint8\000"
  590      3800
  591              	.LASF4:
- 592 01d8 6C6F6E67 		.ascii	"long int\000"
+ 592 01d0 6C6F6E67 		.ascii	"long int\000"
  592      20696E74 
  592      00
  593              	.LASF20:
- 594 01e1 47656E65 		.ascii	"Generated_Source\\PSoC5\\PlayerSelect.c\000"
+ 594 01d9 47656E65 		.ascii	"Generated_Source\\PSoC5\\PlayerSelect.c\000"
  594      72617465 
  594      645F536F 
  594      75726365 
  594      5C50536F 
  595              	.LASF0:
- 596 0207 7369676E 		.ascii	"signed char\000"
+ 596 01ff 7369676E 		.ascii	"signed char\000"
  596      65642063 
+<<<<<<< HEAD
 ARM GAS  C:\Users\cring\AppData\Local\Temp\cccTQ8wb.s 			page 16
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXLMddJ.s 			page 16
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  596      68617200 
  597              	.LASF17:
- 598 0213 506C6179 		.ascii	"PlayerSelect_Unset\000"
+ 598 020b 506C6179 		.ascii	"PlayerSelect_Unset\000"
  598      65725365 
  598      6C656374 
  598      5F556E73 
