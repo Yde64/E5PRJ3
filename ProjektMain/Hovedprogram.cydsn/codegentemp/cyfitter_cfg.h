@@ -33,6 +33,16 @@ extern uint8 CYXDATA * const CYCODE PlayerSelect__addrTable[2];
    Code that depends on it may be incompatible with other versions
    of PSoC Creator. */
 extern const uint8 CYCODE PlayerSelect__maskTable[2];
+extern void ADC_DelSig_1_AMux_Set(uint8 channel);
+extern void ADC_DelSig_1_AMux_Unset(uint8 channel);
+/* ADC_DelSig_1_AMux__addrTable is an implementation detail of the AMux.
+   Code that depends on it may be incompatible with other versions
+   of PSoC Creator. */
+extern uint8 CYXDATA * const CYCODE ADC_DelSig_1_AMux__addrTable[2];
+/* ADC_DelSig_1_AMux__maskTable is an implementation detail of the AMux.
+   Code that depends on it may be incompatible with other versions
+   of PSoC Creator. */
+extern const uint8 CYCODE ADC_DelSig_1_AMux__maskTable[2];
 
 
 #endif /* CYFITTER_CFG_H */

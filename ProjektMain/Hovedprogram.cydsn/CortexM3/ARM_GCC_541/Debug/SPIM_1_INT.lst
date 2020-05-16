@@ -1,4 +1,8 @@
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 1
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccMN9hL6.s 			page 1
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXkpU9G.s 			page 1
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 1
   28:Generated_Source\PSoC5/SPIM_1_INT.c **** /*******************************************************************************
   29:Generated_Source\PSoC5/SPIM_1_INT.c **** * Function Name: SPIM_1_TX_ISR
   30:Generated_Source\PSoC5/SPIM_1_INT.c **** ********************************************************************************
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 2
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccMN9hL6.s 			page 2
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXkpU9G.s 			page 2
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   31:Generated_Source\PSoC5/SPIM_1_INT.c **** *
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 1
   68:Generated_Source\PSoC5/SPIM_1_INT.c ****         /* Check if TX data buffer is not empty and there is space in TX FIFO */
   69:Generated_Source\PSoC5/SPIM_1_INT.c ****         while(SPIM_1_txBufferRead != SPIM_1_txBufferWrite)
   70:Generated_Source\PSoC5/SPIM_1_INT.c ****         {
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 3
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccMN9hL6.s 			page 3
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXkpU9G.s 			page 3
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   71:Generated_Source\PSoC5/SPIM_1_INT.c ****             tmpStatus = SPIM_1_GET_STATUS_TX(SPIM_1_swStatusTx);
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 1
  125:Generated_Source\PSoC5/SPIM_1_INT.c **** *
  126:Generated_Source\PSoC5/SPIM_1_INT.c **** * Parameters:
  127:Generated_Source\PSoC5/SPIM_1_INT.c **** *  None.
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 4
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccMN9hL6.s 			page 4
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXkpU9G.s 			page 4
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  128:Generated_Source\PSoC5/SPIM_1_INT.c **** *
@@ -216,40 +232,44 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 1
   60 0006 00000000 		.4byte	.Ldebug_abbrev0
   61 000a 04       		.byte	0x4
   62 000b 01       		.uleb128 0x1
-  63 000c 37000000 		.4byte	.LASF16
+  63 000c 75000000 		.4byte	.LASF16
   64 0010 0C       		.byte	0xc
-  65 0011 9B010000 		.4byte	.LASF17
-  66 0015 36010000 		.4byte	.LASF18
+  65 0011 93010000 		.4byte	.LASF17
+  66 0015 37000000 		.4byte	.LASF18
   67 0019 00000000 		.4byte	.Ldebug_ranges0+0
   68 001d 00000000 		.4byte	0
   69 0021 00000000 		.4byte	.Ldebug_line0
   70 0025 02       		.uleb128 0x2
   71 0026 01       		.byte	0x1
   72 0027 06       		.byte	0x6
-  73 0028 2A010000 		.4byte	.LASF0
+  73 0028 68010000 		.4byte	.LASF0
   74 002c 02       		.uleb128 0x2
   75 002d 01       		.byte	0x1
   76 002e 08       		.byte	0x8
-  77 002f F4000000 		.4byte	.LASF1
+  77 002f 32010000 		.4byte	.LASF1
   78 0033 02       		.uleb128 0x2
   79 0034 02       		.byte	0x2
   80 0035 05       		.byte	0x5
-  81 0036 88010000 		.4byte	.LASF2
+  81 0036 80010000 		.4byte	.LASF2
   82 003a 02       		.uleb128 0x2
   83 003b 02       		.byte	0x2
   84 003c 07       		.byte	0x7
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 5
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccMN9hL6.s 			page 5
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXkpU9G.s 			page 5
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
-  85 003d 17010000 		.4byte	.LASF3
+  85 003d 55010000 		.4byte	.LASF3
   86 0041 02       		.uleb128 0x2
   87 0042 04       		.byte	0x4
   88 0043 05       		.byte	0x5
-  89 0044 07010000 		.4byte	.LASF4
+  89 0044 45010000 		.4byte	.LASF4
   90 0048 02       		.uleb128 0x2
   91 0049 04       		.byte	0x4
   92 004a 07       		.byte	0x7
-  93 004b C5000000 		.4byte	.LASF5
+  93 004b 03010000 		.4byte	.LASF5
   94 004f 02       		.uleb128 0x2
   95 0050 08       		.byte	0x8
   96 0051 05       		.byte	0x5
@@ -257,7 +277,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 1
   98 0056 02       		.uleb128 0x2
   99 0057 08       		.byte	0x8
  100 0058 07       		.byte	0x7
- 101 0059 D7000000 		.4byte	.LASF7
+ 101 0059 15010000 		.4byte	.LASF7
  102 005d 03       		.uleb128 0x3
  103 005e 04       		.byte	0x4
  104 005f 05       		.byte	0x5
@@ -269,23 +289,23 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 1
  110 006b 02       		.uleb128 0x2
  111 006c 04       		.byte	0x4
  112 006d 04       		.byte	0x4
- 113 006e EE000000 		.4byte	.LASF9
+ 113 006e 2C010000 		.4byte	.LASF9
  114 0072 02       		.uleb128 0x2
  115 0073 08       		.byte	0x8
  116 0074 04       		.byte	0x4
- 117 0075 10010000 		.4byte	.LASF10
+ 117 0075 4E010000 		.4byte	.LASF10
  118 0079 02       		.uleb128 0x2
  119 007a 01       		.byte	0x1
  120 007b 08       		.byte	0x8
- 121 007c 02010000 		.4byte	.LASF11
+ 121 007c 40010000 		.4byte	.LASF11
  122 0080 02       		.uleb128 0x2
  123 0081 08       		.byte	0x8
  124 0082 04       		.byte	0x4
- 125 0083 7C010000 		.4byte	.LASF12
+ 125 0083 74010000 		.4byte	.LASF12
  126 0087 02       		.uleb128 0x2
  127 0088 04       		.byte	0x4
  128 0089 07       		.byte	0x7
- 129 008a 92010000 		.4byte	.LASF13
+ 129 008a 8A010000 		.4byte	.LASF13
  130 008e 04       		.uleb128 0x4
  131 008f 1B000000 		.4byte	.LASF14
  132 0093 01       		.byte	0x1
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 1
  139 00a0 29000000 		.4byte	.LASF15
  140 00a4 01       		.byte	0x1
  141 00a5 8F       		.byte	0x8f
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 6
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccMN9hL6.s 			page 6
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXkpU9G.s 			page 6
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  142 00a6 00000000 		.4byte	.LFB1
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 1
  196 002f 0E       		.uleb128 0xe
  197 0030 3A       		.uleb128 0x3a
  198 0031 0B       		.uleb128 0xb
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 7
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccMN9hL6.s 			page 7
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXkpU9G.s 			page 7
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  199 0032 3B       		.uleb128 0x3b
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 1
  243              	.LASF14:
  244 001b 5350494D 		.ascii	"SPIM_1_TX_ISR\000"
  244      5F315F54 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 8
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccMN9hL6.s 			page 8
+=======
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXkpU9G.s 			page 8
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  244      585F4953 
@@ -428,6 +460,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 1
  246      5F315F52 
  246      585F4953 
  246      5200
+<<<<<<< HEAD
  247              	.LASF16:
  248 0037 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
  248      43313120 
@@ -478,40 +511,93 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 1
  266 0117 73686F72 		.ascii	"short unsigned int\000"
  266      7420756E 
  266      7369676E 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccYjriNF.s 			page 9
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccMN9hL6.s 			page 9
+=======
+ 247              	.LASF18:
+ 248 0037 433A5C55 		.ascii	"C:\\Users\\Morten\\Desktop\\E5PRJ3\\ProjektMain\\Ho"
+ 248      73657273 
+ 248      5C4D6F72 
+ 248      74656E5C 
+ 248      4465736B 
+ 249 0064 76656470 		.ascii	"vedprogram.cydsn\000"
+ 249      726F6772 
+ 249      616D2E63 
+ 249      7964736E 
+ 249      00
+ 250              	.LASF16:
+ 251 0075 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 251      43313120 
+ 251      352E342E 
+ 251      31203230 
+ 251      31363036 
+ 252 00a8 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 252      20726576 
+ 252      6973696F 
+ 252      6E203233 
+ 252      37373135 
+ 253 00db 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 253      66756E63 
+ 253      74696F6E 
+ 253      2D736563 
+ 253      74696F6E 
+ 254              	.LASF5:
+ 255 0103 6C6F6E67 		.ascii	"long unsigned int\000"
+ 255      20756E73 
+ 255      69676E65 
+ 255      6420696E 
+ 255      7400
+ 256              	.LASF7:
+ 257 0115 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 257      206C6F6E 
+ 257      6720756E 
+ 257      7369676E 
+ 257      65642069 
+ 258              	.LASF9:
+ 259 012c 666C6F61 		.ascii	"float\000"
+ 259      7400
+ 260              	.LASF1:
+ 261 0132 756E7369 		.ascii	"unsigned char\000"
+ 261      676E6564 
+ 261      20636861 
+ 261      7200
+ 262              	.LASF11:
+ 263 0140 63686172 		.ascii	"char\000"
+ 263      00
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccXkpU9G.s 			page 9
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
- 266      65642069 
- 266      6E7400
- 267              	.LASF0:
- 268 012a 7369676E 		.ascii	"signed char\000"
- 268      65642063 
- 268      68617200 
- 269              	.LASF18:
- 270 0136 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\E5PRJ3\\Projek"
- 270      73657273 
- 270      5C637269 
- 270      6E675C44 
- 270      6F63756D 
- 271 0163 744D6169 		.ascii	"tMain\\Hovedprogram.cydsn\000"
- 271      6E5C486F 
- 271      76656470 
- 271      726F6772 
- 271      616D2E63 
+ 264              	.LASF4:
+ 265 0145 6C6F6E67 		.ascii	"long int\000"
+ 265      20696E74 
+ 265      00
+ 266              	.LASF10:
+ 267 014e 646F7562 		.ascii	"double\000"
+ 267      6C6500
+ 268              	.LASF3:
+ 269 0155 73686F72 		.ascii	"short unsigned int\000"
+ 269      7420756E 
+ 269      7369676E 
+ 269      65642069 
+ 269      6E7400
+ 270              	.LASF0:
+ 271 0168 7369676E 		.ascii	"signed char\000"
+ 271      65642063 
+ 271      68617200 
  272              	.LASF12:
- 273 017c 6C6F6E67 		.ascii	"long double\000"
+ 273 0174 6C6F6E67 		.ascii	"long double\000"
  273      20646F75 
  273      626C6500 
  274              	.LASF2:
- 275 0188 73686F72 		.ascii	"short int\000"
+ 275 0180 73686F72 		.ascii	"short int\000"
  275      7420696E 
  275      7400
  276              	.LASF13:
- 277 0192 73697A65 		.ascii	"sizetype\000"
+ 277 018a 73697A65 		.ascii	"sizetype\000"
  277      74797065 
  277      00
  278              	.LASF17:
- 279 019b 47656E65 		.ascii	"Generated_Source\\PSoC5\\SPIM_1_INT.c\000"
+ 279 0193 47656E65 		.ascii	"Generated_Source\\PSoC5\\SPIM_1_INT.c\000"
  279      72617465 
  279      645F536F 
  279      75726365 

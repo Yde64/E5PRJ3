@@ -21,18 +21,18 @@
  * ========================================
 */
 #include "WeightSensors_.h"
-#define afvigelse 25                //Bestemmer fejlmargin for compareWeight.
-#define mVtoG 0.252
-#define samples 1000
-#define calSamples 200
-#define delay 1
+#define afvigelse 15                //Bestemmer fejlmargin for compareWeight.
+#define hysmid 100
+#define mVtoG1 3.2
+#define mVtoG2 3.66
+#define samples 500
 
 char uart_string[50];
 int weighthys = 0;
 
 WeightSensors  WSptr = {.p1 = 0, .p2 = 0}; //WeightSensor Pointer
 
-int getWeight(int player)
+long getWeight(int player)
 {
     
     switch(player){
@@ -43,12 +43,12 @@ int getWeight(int player)
             
             for(int i = 0; i < samples; i++)
             {
-                ADC_SAR_1_StartConvert();
-                CyDelayUs(delay); //delay indsat, så måling ikke trailer med 1 måling
+                ADC_DelSig_1_StartConvert();
+                //CyDelayUs(delay); //delay indsat, så måling ikke trailer med 1 måling
                 
-                if (ADC_SAR_1_IsEndConversion(ADC_SAR_1_WAIT_FOR_RESULT)!=0)
+                if (ADC_DelSig_1_IsEndConversion(ADC_DelSig_1_WAIT_FOR_RESULT)!=0)
                 {
-                    WSptr.p1 += ADC_SAR_1_GetResult16();
+                    WSptr.p1 += ADC_DelSig_1_GetResult16();
                 }
             }
         return (WSptr.p1/samples);
@@ -61,12 +61,11 @@ int getWeight(int player)
             PlayerSelect_Select(1);//vælg player2
             for(int i = 0; i < samples; i++)
             {
-                ADC_SAR_1_StartConvert();
-                CyDelayUs(delay); //delay indsat, så måling ikke trailer med 1 måling
+                ADC_DelSig_1_StartConvert();
                 
-                if (ADC_SAR_1_IsEndConversion(ADC_SAR_1_WAIT_FOR_RESULT)!=0)
+                if (ADC_DelSig_1_IsEndConversion(ADC_DelSig_1_WAIT_FOR_RESULT)!=0)
                 {
-                    WSptr.p2 += ADC_SAR_1_GetResult16();
+                    WSptr.p2 += ADC_DelSig_1_GetResult16();
                 }
             }    
         return (WSptr.p2/samples);
@@ -88,11 +87,11 @@ int getCalWeight(int player)
         
 
             WSptr.p1cal -= (WSptr.CalibrateP1);
-            WSptr.p1cal = ADC_SAR_1_CountsTo_mVolts(WSptr.p1cal);    
-            WSptr.p1cal /= mVtoG;
+            WSptr.p1cal = ADC_DelSig_1_CountsTo_mVolts(WSptr.p1cal);    
+            WSptr.p1cal *= mVtoG1;
             
            //Debugging-----------------------------
-            sprintf(uart_string, "Calibrated Weight from player 1: %i \r\n", WSptr.p1cal);     // convert to string
+            sprintf(uart_string, "Calibrated Weight from player 1: %li \r\n", WSptr.p1cal);     // convert to string
             UARTprint("5", uart_string);                                         // output string
             //--------------------------------------
             return WSptr.p1cal;
@@ -107,11 +106,11 @@ int getCalWeight(int player)
             WSptr.p2cal = getWeight(2);
             
             WSptr.p2cal -= (WSptr.CalibrateP2);
-            WSptr.p2cal = ADC_SAR_1_CountsTo_mVolts(WSptr.p2cal);
-            WSptr.p2cal /= mVtoG;
+            WSptr.p2cal = ADC_DelSig_1_CountsTo_mVolts(WSptr.p2cal);
+            WSptr.p2cal *= mVtoG2;
             
             //Debugging-----------------------------
-            sprintf(uart_string, "Calibrated Weight from player 2: %i \r\n", WSptr.p2cal);     // convert to string
+            sprintf(uart_string, "Calibrated Weight from player 2: %li \r\n", WSptr.p2cal);     // convert to string
             UARTprint("6", uart_string);                                         // output string
             //--------------------------------------
             return WSptr.p2cal;
@@ -148,7 +147,7 @@ return 0;
 
 void WeightSensorsInit()
 {
-    ADC_SAR_1_Start();
+    ADC_DelSig_1_Start();
     PlayerSelect_Init();
 }
 
@@ -158,12 +157,12 @@ int CompareWeight()
     int Weight1 = getCalWeight(1), Weight2 = getCalWeight(2);
     if (((Weight2 >= (Weight1 - afvigelse)) && (Weight2 <= Weight1 + afvigelse)) || ((Weight1 >= (Weight2 - afvigelse)) && (Weight1 <= Weight2 + afvigelse)))
     {
-        if((Weight2 < 100) || (Weight1 < 100)) return 4;
+        if((Weight2 < hysmid) || (Weight1 < hysmid)) return 4;
         return 1;
     }
     else if (Weight2 > Weight1)//spiller 1 fejl
     { 
-        if(((Weight2 < 100 + afvigelse) && (Weight1 < 100 + afvigelse) && (weighthys == 0)) || ((Weight2 < 100 - afvigelse) && (Weight1 < 100 - afvigelse) && (weighthys == 1))){
+        if(((Weight2 < hysmid + afvigelse) && (Weight1 < hysmid + afvigelse) && (weighthys == 0)) || ((Weight2 < hysmid - afvigelse) && (Weight1 < hysmid - afvigelse) && (weighthys == 1))){
             weighthys = 0;
             return 4;
         }
@@ -172,7 +171,7 @@ int CompareWeight()
     }
     else if(Weight2 < Weight1) //spiller 2 fejl
     {
-        if(((Weight2 < 100 + afvigelse) && (Weight1 < 100 + afvigelse) && (weighthys == 0)) || ((Weight2 < 100 - afvigelse) && (Weight1 < 100 - afvigelse) && (weighthys == 1))){
+        if(((Weight2 < hysmid + afvigelse) && (Weight1 < hysmid + afvigelse) && (weighthys == 0)) || ((Weight2 < hysmid - afvigelse) && (Weight1 < hysmid - afvigelse) && (weighthys == 1))){
             weighthys = 0;
             return 4;
         }

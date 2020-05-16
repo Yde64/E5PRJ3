@@ -1,6 +1,6 @@
 /***************************************************************************//**
 * \file CySpc.c
-* \version 5.90
+* \version 5.80
 *
 * \brief Provides an API for the System Performance Component.
 * The SPC functions are not meant to be called directly by the user
