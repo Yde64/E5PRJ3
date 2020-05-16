@@ -15,8 +15,9 @@ static int flag = 0;
 static DECLARE_WAIT_QUEUE_HEAD(wq);
 
 int gpios_len;
-static struct platform_driver led_drv;
+static struct platform_driver gpio_drv;
 
+/* Definition of GPIO devices */
 struct gpio_dev {
   int no;   // GPIO number
   int dir; // 0: in, 1: out
@@ -58,7 +59,7 @@ ssize_t gpio_drv_read(struct file *filep, char __user *ubuf, size_t count, loff_
 
 irqreturn_t handle_gpio_irq(int irq, void *dev_id)
 {
-  printk(KERN_ALERT "Haha, would you look at that. Morten is fucking a big ass cow again today. It's like the fifth time that has happened this week! That's why we call him the cow fucker! What a man!\n");
+  printk(KERN_ALERT "Interrupt from Slave!\n");
   flag = 1;
   wake_up_interruptible(&wq);
   return IRQ_HANDLED;
@@ -95,7 +96,7 @@ static int __init spi_drv_init(void)
   if(err)
     ERRGOTO(err_cleanup_class, "Failed SPI Registration\n");
 
-  err = platform_driver_register(&led_drv);
+  err = platform_driver_register(&gpio_drv);
   if(err)
     ERRGOTO(err_cleanup_class, "Failed GPIO Registration\n");
 
@@ -123,55 +124,11 @@ static void __exit spi_drv_exit(void)
 {
   printk("spi_drv driver Exit\n");
 
-  platform_driver_unregister(&led_drv);
+  platform_driver_unregister(&gpio_drv);
   spi_unregister_driver(&spi_drv_spi_driver);
   class_destroy(spi_drv_class);
   cdev_del(&spi_drv_cdev);
   unregister_chrdev_region(devno, 255);
-}
-
-/*
- * Character Driver Write File Operations Method
- */
-ssize_t spi_drv_write(struct file *filep, const char __user *ubuf,
-                      size_t count, loff_t *f_pos)
-{
-  int minor, len, value;
-  char kbuf[MAXLEN];
-
-  minor = iminor(filep->f_inode);
-
-  if(gpio_devs[minor].enable == 1)
-  {
-    return count;
-  }
-
-  printk(KERN_ALERT "Writing to spi_drv [Minor] %i \n", minor);
-
-  /* Limit copy length to MAXLEN allocated andCopy from user */
-  len = count < MAXLEN ? count : MAXLEN;
-  if(copy_from_user(kbuf, ubuf, len))
-    return -EFAULT;
-
-  /* Pad null termination to string */
-  kbuf[len] = '\0';
-
-  if(MODULE_DEBUG)
-    printk("string from user: %s\n", kbuf);
-
-  /* Convert sting to int */
-  sscanf(kbuf,"%i", &value);
-  if(MODULE_DEBUG)
-    printk("value %i\n", value);
-
-  /* Legacy file ptr f_pos. Used to support
-   * random access but in char drv we dont!
-   * Move it the length actually  written
-   * for compability */
-  *f_pos += len;
-
-  /* return length actually written */
-  return len;
 }
 
 /*
@@ -273,19 +230,13 @@ ssize_t gpio_drv_read(struct file *filep, char __user *ubuf, size_t count, loff_
 
 ssize_t my_spi_read_byte(struct file *filep, struct spi_device *spi, int *data)
 {
-  /*protokol: 2 buffere, en til sekunder (120 i alt) en til millisek (9 i alt)
-  0111 1000 er 120 i bin. 
-  fejlhåndtering. Overvej måske at der altid sendes et start bit på 1?
-
-  */ 
-
   struct spi_transfer t[3];
   struct spi_message m;
   int dataSek = 0, dataMs = 0;
   int sendSek = 0x20;
   int sendMs = 0x10;
 
-  memset(t, 0, sizeof(t));
+  memset(t, 0, sizeof(t));    //fylder t med 0
   spi_message_init(&m);
   m.spi = spi;
 
@@ -343,7 +294,6 @@ ssize_t my_spi_read_byte(struct file *filep, struct spi_device *spi, int *data)
 struct file_operations spi_drv_fops =
   {
     .owner   = THIS_MODULE,
-    .write   = spi_drv_write,
     .read    = spi_drv_read,
     .release = mygpio_release,
     .open    = mygpio_open,
@@ -415,7 +365,7 @@ static int spi_drv_remove(struct spi_device *sdev)
   return 0;
 }
 
-static int my_led_probe(struct platform_device *pdev)
+static int my_gpio_probe(struct platform_device *pdev)
 {
     int err = 0;
     struct device *dev = &pdev->dev; // Device ptr derived from current platform_device
@@ -433,7 +383,7 @@ static int my_led_probe(struct platform_device *pdev)
       gpio_devs[spi_devs_cnt].enable = 1;
       
       int err = 0;
-      err = gpio_request(gpio_devs[spi_devs_cnt].no, "LED");
+      err = gpio_request(gpio_devs[spi_devs_cnt].no, "gpio");
       if(err < 0)
       {
           goto gpio_err;
@@ -471,7 +421,7 @@ static int my_led_probe(struct platform_device *pdev)
         return err;
 }
 
-static int my_led_remove(struct platform_device *pdev)
+static int my_gpio_remove(struct platform_device *pdev)
 {  
     for(int i = 0; i < (spi_devs_cnt+1); i++)
     {
@@ -508,18 +458,18 @@ static struct spi_driver spi_drv_spi_driver = {
   },
 };
 
-static const struct of_device_id led_drv_device_match[] = 
+static const struct of_device_id gpio_drv_device_match[] = 
 {
     { .compatible = "ase, plat_drv",}, {},
 };
 
-static struct platform_driver led_drv =
+static struct platform_driver gpio_drv =
 	{
-		.probe = my_led_probe,
-		.remove = my_led_remove,
+		.probe = my_gpio_probe,
+		.remove = my_gpio_remove,
 		.driver = {
 			.name = "my_gpio_platdev",
-			.of_match_table = led_drv_device_match,
+			.of_match_table = gpio_drv_device_match,
 			.owner = THIS_MODULE,
 		    }
 };
@@ -537,5 +487,5 @@ module_exit(spi_drv_exit);
 /*
  * Assignment of author and license
  */
-MODULE_AUTHOR("Peter Hoegh Mikkelsen <phm@ase.au.dk>");
+MODULE_AUTHOR("Projekt gruppe 5 F2020");
 MODULE_LICENSE("GPL");

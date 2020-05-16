@@ -11,12 +11,11 @@
 */
 #include "SPI_Master.h"
 
-int rxFlag = 0;
 int tx[2];
 
-void SPIS_initSPI(){         //make spi ready to work...
-    SPI_int_Write(0);
-    SPIS_Start();
+void SPIS_initSPI(){            //initialize SPI
+    SPI_int_Write(0);           //drive interrupt pin low.
+    SPIS_Start();               
     SPIS_ClearTxBuffer();
     SPIS_ClearFIFO();
     rx_isr_StartEx(isr_spi_rx);
@@ -30,8 +29,8 @@ void SPIS_sendData(int sek, int ms){
     SPI_int_Write(255);
 }
 
-void SPIS_checkData(int SPIDATA){
-    switch(SPIDATA){
+void SPIS_checkData(int rxData){
+    switch(rxData){
         case 0x20 :
         {
             SPIS_WriteTxData(tx[0]);    //sek
@@ -44,7 +43,7 @@ void SPIS_checkData(int SPIDATA){
         break;
         default :
         {
-            SPIS_WriteTxData(SPIDATA);     //echo
+            SPIS_WriteTxData(rxData);     //echo
         }
     }
 }
