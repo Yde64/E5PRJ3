@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 1
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
   28:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** 
   29:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** 
   30:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** /*******************************************************************************
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 2
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 2
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   31:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** * Function Name: ADC_SAR_1_theACLK_Start
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
   54:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** * Function Name: ADC_SAR_1_theACLK_Stop
   55:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** ********************************************************************************
   56:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** *
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 3
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 3
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   57:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** * Summary:
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
   80:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** 
   81:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** 
   82:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** /*******************************************************************************
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 4
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 4
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   83:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** * Function Name: ADC_SAR_1_theACLK_StopBlock
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  115:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c ****         CLK_DIST_AMASK = 0x00u;
  116:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** #endif /* ADC_SAR_1_theACLK__CFG3 */
  117:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** 
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 5
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 5
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  118:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c ****         /* Clear mask of bus clock. */
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  136:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c ****         CY_SET_REG16(ADC_SAR_1_theACLK_DIV_PTR, oldDivider);
  148              		.loc 1 136 0
  149 0056 FF33     		adds	r3, r3, #255
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 6
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 6
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  150 0058 1A80     		strh	r2, [r3]	@ movhi
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  160:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c ****     {
  161:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c ****         ADC_SAR_1_theACLK_CLKSTBY &= (uint8)(~ADC_SAR_1_theACLK_CLKSTBY_MASK);
  181              		.loc 1 161 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 7
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 7
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  182 0002 064A     		ldr	r2, .L15
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  189:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** * Returns:
  190:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** *  None
  191:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** *
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 8
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 8
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  192:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** *******************************************************************************/
@@ -478,7 +510,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  246:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c ****                     CY_SET_REG16(CYREG_CLKDIST_WRK0, oldDivider);
  247:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c ****                     CLK_DIST_LD = CYCLK_LD_DISABLE|CYCLK_LD_SYNC_EN|CYCLK_LD_LOAD;
  248:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** 
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 9
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 9
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  249:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c ****                     /* Wait for clock to be disabled */
@@ -538,7 +574,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  213              		@ link register save eliminated.
  299:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c ****     return CY_GET_REG16(ADC_SAR_1_theACLK_DIV_PTR);
  214              		.loc 1 299 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 10
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 10
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  215 0000 014B     		ldr	r3, .L18
@@ -598,7 +638,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  235              		.loc 1 333 0
  236              		.cfi_startproc
  237              		@ args = 0, pretend = 0, frame = 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 11
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 11
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  238              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -658,7 +702,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  362:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** *
  363:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** * Returns:
  364:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** *  None
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 12
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 12
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  365:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** *
@@ -718,7 +766,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  388:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** uint8 ADC_SAR_1_theACLK_GetModeRegister(void) 
  389:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** {
  295              		.loc 1 389 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 13
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 13
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  296              		.cfi_startproc
@@ -778,7 +830,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  419:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** void ADC_SAR_1_theACLK_SetSourceRegister(uint8 clkSource) 
  420:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** {
  421:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c ****     uint16 currDiv = ADC_SAR_1_theACLK_GetDividerRegister();
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 14
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 14
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  422:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c ****     uint8 oldSrc = ADC_SAR_1_theACLK_GetSourceRegister();
@@ -838,7 +894,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  329              		.loc 1 467 0
  330 0004 00F00700 		and	r0, r0, #7
  331 0008 7047     		bx	lr
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 15
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 15
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  332              	.L31:
@@ -898,7 +958,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  379 001e 00B1     		cbz	r0, .L35
  205:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c ****         {
  380              		.loc 1 205 0 discriminator 2
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 16
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 16
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  381 0020 85B9     		cbnz	r5, .L34
@@ -958,7 +1022,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  425 0056 0839     		subs	r1, r1, #8
  426 0058 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
  427 005a 03F07F03 		and	r3, r3, #127
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 17
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 17
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  428 005e 0B70     		strb	r3, [r1]
@@ -1018,7 +1086,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  472 00a2 00E0     		b	.L41
  473              	.LVL19:
  474              	.L43:
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 18
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 18
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  475 00a4 0122     		movs	r2, #1
@@ -1078,7 +1150,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  524              	.LVL23:
  525 0000 38B5     		push	{r3, r4, r5, lr}
  526              		.cfi_def_cfa_offset 16
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 19
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 19
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  527              		.cfi_offset 3, -16
@@ -1138,7 +1214,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  569 0034 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
  438:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c ****             (ADC_SAR_1_theACLK_MOD_SRC & (uint8)(~ADC_SAR_1_theACLK_SRC_SEL_MSK)) | clkSource;
  570              		.loc 1 438 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 20
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 20
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  571 0036 03F0F803 		and	r3, r3, #248
@@ -1198,7 +1278,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  485:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** *   disable the clock. clkPhase = 1 produces a 0ns delay and clkPhase = 11 
  486:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** *   produces a 10ns delay.
  487:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** *
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 21
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 21
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  488:Generated_Source\PSoC5/ADC_SAR_1_theACLK.c **** * Returns:
@@ -1258,7 +1342,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  632              		.loc 1 514 0
  633              		.cfi_startproc
  634              		@ args = 0, pretend = 0, frame = 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 22
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 22
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  635              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1318,7 +1406,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  687 0048 02       		.uleb128 0x2
  688 0049 04       		.byte	0x4
  689 004a 07       		.byte	0x7
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 23
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 23
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  690 004b 97020000 		.4byte	.LASF5
@@ -1378,7 +1470,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  744 00bb 7A020000 		.4byte	.LASF16
  745 00bf 01       		.byte	0x1
  746 00c0 2D       		.byte	0x2d
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 24
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 24
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  747 00c1 00000000 		.4byte	.LFB0
@@ -1438,7 +1534,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  801 013a 00000000 		.4byte	.LFB5
  802 013e 0C000000 		.4byte	.LFE5-.LFB5
  803 0142 01       		.uleb128 0x1
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 25
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 25
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  804 0143 9C       		.byte	0x9c
@@ -1498,7 +1598,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  858 01c4 C1       		.byte	0xc1
  859 01c5 00000000 		.4byte	.LFB4
  860 01c9 D8000000 		.4byte	.LFE4-.LFB4
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 26
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 26
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  861 01cd 01       		.uleb128 0x1
@@ -1558,7 +1662,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  915 024d 6B000000 		.4byte	0x6b
  916 0251 F8000000 		.4byte	.LLST7
  917 0255 11       		.uleb128 0x11
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 27
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 27
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  918 0256 53000000 		.4byte	.LASF35
@@ -1618,7 +1726,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  972 0007 03       		.uleb128 0x3
  973 0008 0E       		.uleb128 0xe
  974 0009 1B       		.uleb128 0x1b
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 28
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 28
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  975 000a 0E       		.uleb128 0xe
@@ -1678,7 +1790,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  1029 0040 3F       		.uleb128 0x3f
  1030 0041 19       		.uleb128 0x19
  1031 0042 03       		.uleb128 0x3
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 29
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 29
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1032 0043 0E       		.uleb128 0xe
@@ -1738,7 +1854,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  1086 007b 03       		.uleb128 0x3
  1087 007c 0E       		.uleb128 0xe
  1088 007d 3A       		.uleb128 0x3a
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 30
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 30
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1089 007e 0B       		.uleb128 0xb
@@ -1798,7 +1918,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  1143 00b5 03       		.uleb128 0x3
  1144 00b6 0E       		.uleb128 0xe
  1145 00b7 3A       		.uleb128 0x3a
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 31
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 31
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1146 00b8 0B       		.uleb128 0xb
@@ -1858,7 +1982,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  1200 00ef 3B       		.uleb128 0x3b
  1201 00f0 0B       		.uleb128 0xb
  1202 00f1 49       		.uleb128 0x49
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 32
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 32
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1203 00f2 13       		.uleb128 0x13
@@ -1918,7 +2046,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  1257              	.LLST1:
  1258 0013 00000000 		.4byte	.LVL3
  1259 0017 08000000 		.4byte	.LVL4
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 33
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 33
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1260 001b 0100     		.2byte	0x1
@@ -1978,7 +2110,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  1314 0097 1C000000 		.4byte	.LVL11
  1315 009b 2A000000 		.4byte	.LVL12
  1316 009f 0100     		.2byte	0x1
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 34
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 34
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1317 00a1 52       		.byte	0x52
@@ -2038,7 +2174,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  1371 0128 00000000 		.4byte	0
  1372              	.LLST9:
  1373 012c 00000000 		.4byte	.LVL30
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 35
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 35
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1374 0130 04000000 		.4byte	.LVL31
@@ -2098,7 +2238,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  1428 0010 00000000 		.4byte	.LFB2
  1429 0014 6C000000 		.4byte	.LFE2
  1430 0018 00000000 		.4byte	.LFB3
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 36
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 36
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1431 001c 20000000 		.4byte	.LFE3
@@ -2151,6 +2295,56 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  1463              	.LASF35:
  1464 0053 63757272 		.ascii	"currDiv\000"
  1464      44697600 
+<<<<<<< HEAD
+ 1465              	.LASF42:
+ 1466 005b 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\E5PRJ3\\Projek"
+ 1466      73657273 
+ 1466      5C637269 
+ 1466      6E675C44 
+ 1466      6F63756D 
+ 1467 0088 744D6169 		.ascii	"tMain\\Hovedprogram.cydsn\000"
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 37
+
+
+ 1467      6E5C486F 
+ 1467      76656470 
+ 1467      726F6772 
+ 1467      616D2E63 
+ 1468              	.LASF27:
+ 1469 00a1 4144435F 		.ascii	"ADC_SAR_1_theACLK_SetDividerRegister\000"
+ 1469      5341525F 
+ 1469      315F7468 
+ 1469      6541434C 
+ 1469      4B5F5365 
+ 1470              	.LASF25:
+ 1471 00c6 4144435F 		.ascii	"ADC_SAR_1_theACLK_GetModeRegister\000"
+ 1471      5341525F 
+ 1471      315F7468 
+ 1471      6541434C 
+ 1471      4B5F4765 
+ 1472              	.LASF10:
+ 1473 00e8 75696E74 		.ascii	"uint16\000"
+ 1473      313600
+ 1474              	.LASF29:
+ 1475 00ef 72657374 		.ascii	"restart\000"
+ 1475      61727400 
+ 1476              	.LASF36:
+ 1477 00f7 6F6C6453 		.ascii	"oldSrc\000"
+ 1477      726300
+ 1478              	.LASF9:
+ 1479 00fe 75696E74 		.ascii	"uint8\000"
+ 1479      3800
+ 1480              	.LASF28:
+ 1481 0104 636C6B44 		.ascii	"clkDivider\000"
+ 1481      69766964 
+ 1481      657200
+ 1482              	.LASF39:
+ 1483 010f 4144435F 		.ascii	"ADC_SAR_1_theACLK_GetPhaseRegister\000"
+ 1483      5341525F 
+ 1483      315F7468 
+ 1483      6541434C 
+ 1483      4B5F4765 
+=======
  1465              	.LASF27:
  1466 005b 4144435F 		.ascii	"ADC_SAR_1_theACLK_SetDividerRegister\000"
  1466      5341525F 
@@ -2199,6 +2393,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  1483      616D2E63 
  1483      7964736E 
  1483      00
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  1484              	.LASF11:
  1485 012a 666C6F61 		.ascii	"float\000"
  1485      7400
@@ -2218,7 +2413,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  1491      20696E74 
  1491      00
  1492              	.LASF21:
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 38
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 38
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1493 016b 73746174 		.ascii	"state\000"
@@ -2277,8 +2476,13 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  1515      6F757263 
  1515      6500
  1516              	.LASF32:
+<<<<<<< HEAD
+ 1517 022d 63757272 		.ascii	"currSrc\000"
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 39
+=======
  1517 0225 63757272 		.ascii	"currSrc\000"
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 39
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1517      53726300 
@@ -2338,7 +2542,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 1
  1539 031b 656E6162 		.ascii	"enabled\000"
  1539      6C656400 
  1540              	.LASF40:
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHxL6Y3.s 			page 40
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccCpCbcT.s 			page 40
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1541 0323 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"

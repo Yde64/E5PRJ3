@@ -2,3 +2,10 @@
 *.db
 *.db-shm
 *.db-wal
+*.o
+*.Ist
+*.P
+*.o
+*.lst
+*.lst
+*.P

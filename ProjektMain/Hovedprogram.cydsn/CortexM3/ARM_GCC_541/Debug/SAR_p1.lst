@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccIh8Etr.s 			page 1
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 1
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 1
   28:Generated_Source\PSoC5/SAR_p1.c **** *
   29:Generated_Source\PSoC5/SAR_p1.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/SAR_p1.c **** *  and shifting the bits appropriately. 
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccIh8Etr.s 			page 2
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 2
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   31:Generated_Source\PSoC5/SAR_p1.c **** *
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 1
   52              		.size	SAR_p1_Write, .-SAR_p1_Write
   53              		.section	.text.SAR_p1_SetDriveMode,"ax",%progbits
   54              		.align	2
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccIh8Etr.s 			page 3
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 3
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   55              		.global	SAR_p1_SetDriveMode
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 1
   77 0012 00BF     		.align	2
   78              	.L5:
   79 0014 02500040 		.word	1073762306
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccIh8Etr.s 			page 4
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 4
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   80              		.cfi_endproc
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 1
  110              		.align	2
  111              		.global	SAR_p1_ReadDataReg
  112              		.thumb
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccIh8Etr.s 			page 5
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 5
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  113              		.thumb_func
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 1
  139              	.Ldebug_info0:
  140 0000 1B010000 		.4byte	0x11b
  141 0004 0400     		.2byte	0x4
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccIh8Etr.s 			page 6
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 6
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  142 0006 00000000 		.4byte	.Ldebug_abbrev0
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 1
  196 0073 2C000000 		.4byte	0x2c
  197 0077 02       		.uleb128 0x2
  198 0078 04       		.byte	0x4
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccIh8Etr.s 			page 7
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 7
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  199 0079 04       		.byte	0x4
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 1
  253 00ef 21000000 		.4byte	.LLST1
  254 00f3 00       		.byte	0
  255 00f4 09       		.uleb128 0x9
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccIh8Etr.s 			page 8
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 8
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  256 00f5 3B010000 		.4byte	.LASF18
@@ -478,7 +510,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 1
  310 0022 0B       		.uleb128 0xb
  311 0023 3E       		.uleb128 0x3e
  312 0024 0B       		.uleb128 0xb
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccIh8Etr.s 			page 9
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 9
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  313 0025 03       		.uleb128 0x3
@@ -538,7 +574,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 1
  367 005c 3A       		.uleb128 0x3a
  368 005d 0B       		.uleb128 0xb
  369 005e 3B       		.uleb128 0x3b
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccIh8Etr.s 			page 10
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 10
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  370 005f 0B       		.uleb128 0xb
@@ -598,7 +638,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 1
  424 000a 50       		.byte	0x50
  425 000b 0A000000 		.4byte	.LVL2
  426 000f 18000000 		.4byte	.LFE0
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccIh8Etr.s 			page 11
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 11
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  427 0013 0400     		.2byte	0x4
@@ -658,6 +702,69 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 1
  480      02004300 
  480      00000201 
  480      FB0E0D00 
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccIh8Etr.s 			page 12
+
+
+ 480      01010101 
+ 481              	.LASF16:
+ 482 0000 76616C75 		.ascii	"value\000"
+ 482      6500
+ 483              	.LASF23:
+ 484 0006 73746174 		.ascii	"staticBits\000"
+ 484      69634269 
+ 484      747300
+ 485              	.LASF21:
+ 486 0011 47656E65 		.ascii	"Generated_Source\\PSoC5\\SAR_p1.c\000"
+ 486      72617465 
+ 486      645F536F 
+ 486      75726365 
+ 486      5C50536F 
+ 487              	.LASF9:
+ 488 0031 666C6F61 		.ascii	"float\000"
+ 488      7400
+ 489              	.LASF1:
+ 490 0037 756E7369 		.ascii	"unsigned char\000"
+ 490      676E6564 
+ 490      20636861 
+ 490      7200
+ 491              	.LASF20:
+ 492 0045 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 492      43313120 
+ 492      352E342E 
+ 492      31203230 
+ 492      31363036 
+ 493 0078 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 493      20726576 
+ 493      6973696F 
+ 493      6E203233 
+ 493      37373135 
+ 494 00ab 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 494      66756E63 
+ 494      74696F6E 
+ 494      2D736563 
+ 494      74696F6E 
+ 495              	.LASF13:
+ 496 00d3 72656738 		.ascii	"reg8\000"
+ 496      00
+ 497              	.LASF5:
+ 498 00d8 6C6F6E67 		.ascii	"long unsigned int\000"
+ 498      20756E73 
+ 498      69676E65 
+ 498      6420696E 
+ 498      7400
+ 499              	.LASF3:
+ 500 00ea 73686F72 		.ascii	"short unsigned int\000"
+ 500      7420756E 
+ 500      7369676E 
+ 500      65642069 
+ 500      6E7400
+ 501              	.LASF18:
+ 502 00fd 5341525F 		.ascii	"SAR_p1_Read\000"
+ 502      70315F52 
+ 502      65616400 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccIh8Etr.s 			page 13
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 12
 
 
@@ -719,6 +826,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 1
  501      69676E65 
  501      6420696E 
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 13
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  501      7400
@@ -777,8 +885,13 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 1
  525      6976654D 
  525      6F646500 
  526              	.LASF4:
+<<<<<<< HEAD
+ 527 01c9 6C6F6E67 		.ascii	"long int\000"
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccIh8Etr.s 			page 14
+=======
  527 01c1 6C6F6E67 		.ascii	"long int\000"
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccnGwyzp.s 			page 14
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  527      20696E74 

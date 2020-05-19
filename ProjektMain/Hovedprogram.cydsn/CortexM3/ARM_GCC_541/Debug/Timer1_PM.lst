@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 1
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
   28:Generated_Source\PSoC5/Timer1_PM.c **** * Summary:
   29:Generated_Source\PSoC5/Timer1_PM.c **** *     Save the current user configuration
   30:Generated_Source\PSoC5/Timer1_PM.c **** *
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 2
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 2
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   31:Generated_Source\PSoC5/Timer1_PM.c **** * Parameters:
@@ -110,7 +118,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
   51              		.align	2
   52              	.L3:
   53 0018 00000000 		.word	.LANCHOR0
-  54 001c 84650040 		.word	1073767812
+  54 001c 82640040 		.word	1073767554
   55              		.cfi_endproc
   56              	.LFE0:
   57              		.size	Timer1_SaveConfig, .-Timer1_SaveConfig
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
   59              		.align	2
   60              		.global	Timer1_RestoreConfig
   61              		.thumb
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 3
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 3
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   62              		.thumb_func
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
   87:Generated_Source\PSoC5/Timer1_PM.c ****         #if(!Timer1_UDB_CONTROL_REG_REMOVED)
   88:Generated_Source\PSoC5/Timer1_PM.c ****             Timer1_WriteControlRegister(Timer1_backup.TimerControlRegister);
   83              		.loc 1 88 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 4
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 4
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   84 0010 6079     		ldrb	r0, [r4, #5]	@ zero_extendqisi2
@@ -189,7 +205,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
   89              		.align	2
   90              	.L7:
   91 0018 00000000 		.word	.LANCHOR0
-  92 001c 84650040 		.word	1073767812
+  92 001c 82640040 		.word	1073767554
   93              		.cfi_endproc
   94              	.LFE1:
   95              		.size	Timer1_RestoreConfig, .-Timer1_RestoreConfig
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
  115:Generated_Source\PSoC5/Timer1_PM.c ****         /* Save Counter's enable state */
  116:Generated_Source\PSoC5/Timer1_PM.c ****         if(Timer1_CTRL_ENABLE == (Timer1_CONTROL & Timer1_CTRL_ENABLE))
  112              		.loc 1 116 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 5
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 5
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  113 0002 084B     		ldr	r3, .L13
@@ -278,7 +298,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
  135              	.L14:
  136              		.align	2
  137              	.L13:
- 138 0024 74650040 		.word	1073767796
+ 138 0024 72640040 		.word	1073767538
  139 0028 00000000 		.word	.LANCHOR0
  140              		.cfi_endproc
  141              	.LFE2:
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
  133:Generated_Source\PSoC5/Timer1_PM.c **** * Function Name: Timer1_Wakeup
  134:Generated_Source\PSoC5/Timer1_PM.c **** ********************************************************************************
  135:Generated_Source\PSoC5/Timer1_PM.c **** *
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 6
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 6
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  136:Generated_Source\PSoC5/Timer1_PM.c **** * Summary:
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
  184              	Timer1_backup:
  185 0000 00000000 		.space	6
  185      0000
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 7
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 7
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  186              		.text
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
  240 0064 02       		.uleb128 0x2
  241 0065 04       		.byte	0x4
  242 0066 07       		.byte	0x7
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 8
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 8
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  243 0067 BB010000 		.4byte	.LASF8
@@ -477,8 +509,13 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
  296 00d2 77000000 		.4byte	0x77
  297 00d6 02       		.byte	0x2
  298 00d7 07       		.uleb128 0x7
+<<<<<<< HEAD
+ 299 00d8 AA020000 		.4byte	.LASF19
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 9
+=======
  299 00d8 A2020000 		.4byte	.LASF19
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 9
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  300 00dc 03       		.byte	0x3
@@ -538,7 +575,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
  354 015a 01       		.uleb128 0x1
  355 015b 9C       		.byte	0x9c
  356 015c 73010000 		.4byte	0x173
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 10
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 10
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  357 0160 0A       		.uleb128 0xa
@@ -598,7 +639,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
  411 01e1 03       		.byte	0x3
  412 01e2 5B       		.byte	0x5b
  413 01e3 0C       		.uleb128 0xc
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 11
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 11
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  414 01e4 DF010000 		.4byte	.LASF31
@@ -658,7 +703,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
  468 002f 0B       		.uleb128 0xb
  469 0030 3B       		.uleb128 0x3b
  470 0031 05       		.uleb128 0x5
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 12
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 12
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  471 0032 49       		.uleb128 0x49
@@ -718,7 +767,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
  525 0068 01       		.byte	0x1
  526 0069 3F       		.uleb128 0x3f
  527 006a 19       		.uleb128 0x19
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 13
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 13
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  528 006b 03       		.uleb128 0x3
@@ -778,7 +831,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
  582 00a4 0E       		.uleb128 0xe
  583 00a5 3A       		.uleb128 0x3a
  584 00a6 0B       		.uleb128 0xb
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 14
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 14
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  585 00a7 3B       		.uleb128 0x3b
@@ -828,6 +885,79 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
  624      72315F62 
  624      61636B75 
  624      7000
+<<<<<<< HEAD
+ 625              	.LASF23:
+ 626 000e 54696D65 		.ascii	"Timer1_RestoreConfig\000"
+ 626      72315F52 
+ 626      6573746F 
+ 626      7265436F 
+ 626      6E666967 
+ 627              	.LASF21:
+ 628 0023 54696D65 		.ascii	"Timer1_backupStruct\000"
+ 628      72315F62 
+ 628      61636B75 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 15
+
+
+ 628      70537472 
+ 628      75637400 
+ 629              	.LASF25:
+ 630 0037 54696D65 		.ascii	"Timer1_Wakeup\000"
+ 630      72315F57 
+ 630      616B6575 
+ 630      7000
+ 631              	.LASF3:
+ 632 0045 73686F72 		.ascii	"short unsigned int\000"
+ 632      7420756E 
+ 632      7369676E 
+ 632      65642069 
+ 632      6E7400
+ 633              	.LASF18:
+ 634 0058 54696D65 		.ascii	"TimerUdb\000"
+ 634      72556462 
+ 634      00
+ 635              	.LASF11:
+ 636 0061 666C6F61 		.ascii	"float\000"
+ 636      7400
+ 637              	.LASF24:
+ 638 0067 54696D65 		.ascii	"Timer1_Sleep\000"
+ 638      72315F53 
+ 638      6C656570 
+ 638      00
+ 639              	.LASF26:
+ 640 0074 54696D65 		.ascii	"Timer1_ReadCounter\000"
+ 640      72315F52 
+ 640      65616443 
+ 640      6F756E74 
+ 640      657200
+ 641              	.LASF30:
+ 642 0087 54696D65 		.ascii	"Timer1_Stop\000"
+ 642      72315F53 
+ 642      746F7000 
+ 643              	.LASF1:
+ 644 0093 756E7369 		.ascii	"unsigned char\000"
+ 644      676E6564 
+ 644      20636861 
+ 644      7200
+ 645              	.LASF32:
+ 646 00a1 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 646      43313120 
+ 646      352E342E 
+ 646      31203230 
+ 646      31363036 
+ 647 00d4 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 647      20726576 
+ 647      6973696F 
+ 647      6E203233 
+ 647      37373135 
+ 648 0107 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 648      66756E63 
+ 648      74696F6E 
+ 648      2D736563 
+ 648      74696F6E 
+ 649              	.LASF14:
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 16
+=======
  625              	.LASF34:
  626 000e 433A5C55 		.ascii	"C:\\Users\\Morten\\Desktop\\E5PRJ3\\ProjektMain\\Ho"
  626      73657273 
@@ -899,6 +1029,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
  649      31203230 
  649      31363036 
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 16
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  650 0112 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
@@ -958,7 +1089,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
  671      436F756E 
  671      74657200 
  672              	.LASF16:
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 17
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 17
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  673 0201 73697A65 		.ascii	"sizetype\000"
@@ -1018,7 +1153,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 1
  695      744D6173 
  695      6B56616C 
  695      756500
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc9wHSTl.s 			page 18
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccIMUlZT.s 			page 18
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  696              	.LASF20:

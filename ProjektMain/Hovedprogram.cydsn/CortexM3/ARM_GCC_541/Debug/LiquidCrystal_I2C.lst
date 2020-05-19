@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 1
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
   28:LiquidCrystal_I2C.c **** uint8_t _cols;
   29:LiquidCrystal_I2C.c **** uint8_t _rows;
   30:LiquidCrystal_I2C.c **** uint8_t _charsize;
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 2
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 2
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   31:LiquidCrystal_I2C.c **** uint8_t _backlightval;
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
   70              		.cfi_endproc
   71              	.LFE63:
   72              		.size	LiquidCrystal_I2C_init, .-LiquidCrystal_I2C_init
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 3
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 3
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   73              		.section	.text.I2C_M_write_byte,"ax",%progbits
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
   89:LiquidCrystal_I2C.c **** 	_displaycontrol = LCD_DISPLAYON | LCD_CURSOROFF | LCD_BLINKOFF;
   90:LiquidCrystal_I2C.c **** 	display();
   91:LiquidCrystal_I2C.c **** 	
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 4
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 4
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
   92:LiquidCrystal_I2C.c **** 	// clear it off
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  146:LiquidCrystal_I2C.c ****     
  147:LiquidCrystal_I2C.c ****     return;
  148:LiquidCrystal_I2C.c **** }
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 5
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 5
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  149:LiquidCrystal_I2C.c **** 
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  203:LiquidCrystal_I2C.c **** }
  204:LiquidCrystal_I2C.c **** 
  205:LiquidCrystal_I2C.c **** // This is for text that flows Right to Left
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 6
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 6
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  206:LiquidCrystal_I2C.c **** void rightToLeft(void){
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  260:LiquidCrystal_I2C.c **** }
  261:LiquidCrystal_I2C.c **** 
  262:LiquidCrystal_I2C.c **** /*********** mid level commands, for sending data/cmds */
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 7
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 7
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  263:LiquidCrystal_I2C.c **** 
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  317:LiquidCrystal_I2C.c **** void load_custom_character(uint8_t char_num, uint8_t *rows){
  318:LiquidCrystal_I2C.c **** 	
  319:LiquidCrystal_I2C.c ****     createChar(char_num, rows);
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 8
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 8
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  320:LiquidCrystal_I2C.c ****     
@@ -478,7 +510,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  103 0014 10BD     		pop	{r4, pc}
  104              		.cfi_endproc
  105              	.LFE92:
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 9
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 9
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  106              		.size	I2C_M_write_byte, .-I2C_M_write_byte
@@ -538,7 +574,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  157              		.cfi_offset 14, -4
  248:LiquidCrystal_I2C.c **** 	expanderWrite(0);
  158              		.loc 1 248 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 10
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 10
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  159 0002 0020     		movs	r0, #0
@@ -598,7 +638,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  209              		.thumb_func
  210              		.type	setBacklight, %function
  211              	setBacklight:
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 11
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 11
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  212              	.LFB90:
@@ -658,7 +702,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  310:LiquidCrystal_I2C.c **** 	expanderWrite(_data & ~En);	// En low
  260              		.loc 1 310 0
  261 000c 0120     		movs	r0, #1
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 12
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 12
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  262 000e FFF7FEFF 		bl	CyDelayUs
@@ -718,7 +766,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  311              	send:
  312              	.LFB85:
  282:LiquidCrystal_I2C.c ****     
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 13
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 13
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  313              		.loc 1 282 0
@@ -778,7 +830,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  266:LiquidCrystal_I2C.c ****     
  362              		.loc 1 266 0
  363 0002 0021     		movs	r1, #0
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 14
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 14
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  364 0004 FFF7FEFF 		bl	send
@@ -838,7 +894,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  117:LiquidCrystal_I2C.c **** 	CyDelay(2);  // this command takes a long time!
  414              		.loc 1 117 0
  415 0002 0220     		movs	r0, #2
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 15
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 15
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  416 0004 FFF7FEFF 		bl	command
@@ -898,7 +958,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  464              		.loc 1 129 0
  465 0020 04AB     		add	r3, sp, #16
  466 0022 03EB8404 		add	r4, r3, r4, lsl #2
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 16
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 16
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  467              	.LVL43:
@@ -958,7 +1022,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  517              		.cfi_endproc
  518              	.LFE68:
  519              		.size	noDisplay, .-noDisplay
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 17
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 17
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  520              		.section	.text.display,"ax",%progbits
@@ -1018,7 +1086,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  569              		.loc 1 153 0
  570 0002 054B     		ldr	r3, .L50
  571 0004 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 18
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 18
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  572 0006 00F0FD00 		and	r0, r0, #253
@@ -1078,7 +1150,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  622              		.thumb
  623              		.thumb_func
  624              		.type	noBlink, %function
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 19
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 19
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  625              	noBlink:
@@ -1138,7 +1214,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  673              		.loc 1 177 0
  674 000c 40F00800 		orr	r0, r0, #8
  675 0010 FFF7FEFF 		bl	command
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 20
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 20
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  676              	.LVL50:
@@ -1198,7 +1278,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  726 0002 1C20     		movs	r0, #28
  727 0004 FFF7FEFF 		bl	command
  728              	.LVL52:
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 21
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 21
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  729 0008 08BD     		pop	{r3, pc}
@@ -1258,7 +1342,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  779              		.cfi_def_cfa_offset 8
  780              		.cfi_offset 3, -8
  781              		.cfi_offset 14, -4
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 22
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 22
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  208:LiquidCrystal_I2C.c **** 	command(LCD_ENTRYMODESET | _displaymode);
@@ -1318,7 +1406,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  831              		.size	autoscroll, .-autoscroll
  832              		.section	.text.noAutoscroll,"ax",%progbits
  833              		.align	2
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 23
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 23
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  834              		.global	noAutoscroll
@@ -1378,7 +1470,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  883 0002 0121     		movs	r1, #1
  884 0004 FFF7FEFF 		bl	send
  885              	.LVL58:
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 24
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 24
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  886 0008 08BD     		pop	{r3, pc}
@@ -1438,7 +1534,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  933              		.loc 1 238 0 is_stmt 0 discriminator 1
  934 001e 072C     		cmp	r4, #7
  935 0020 F9D9     		bls	.L88
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 25
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 25
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  243:LiquidCrystal_I2C.c **** 
@@ -1498,7 +1598,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  337:LiquidCrystal_I2C.c ****     
  986              		.loc 1 337 0
  987 0004 FFF7FEFF 		bl	strlen
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 26
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 26
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  988              	.LVL71:
@@ -1558,7 +1662,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1034 0008 254B     		ldr	r3, .L100+4
  1035 000a 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  1036 000c 012B     		cmp	r3, #1
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 27
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 27
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1037 000e 02D9     		bls	.L97
@@ -1618,7 +1726,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
   76:LiquidCrystal_I2C.c **** 
  1081              		.loc 1 76 0
  1082 0054 41F29410 		movw	r0, #4500
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 28
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 28
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1083 0058 FFF7FEFF 		bl	CyDelayUs
@@ -1678,7 +1790,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1127              	.L100:
  1128 009c 00000000 		.word	_displayfunction
  1129 00a0 00000000 		.word	_rows
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 29
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 29
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1130 00a4 00000000 		.word	_charsize
@@ -1738,7 +1854,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1172              		.set	.LANCHOR0,. + 0
  1173              	.LC0:
  1174 0000 00000000 		.word	0
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 30
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 30
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1175 0004 40000000 		.word	64
@@ -1797,8 +1917,13 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1228 0059 05       		.byte	0x5
  1229 005a 62010000 		.4byte	.LASF6
  1230 005e 03       		.uleb128 0x3
+<<<<<<< HEAD
+ 1231 005f 11030000 		.4byte	.LASF7
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 31
+=======
  1231 005f 09030000 		.4byte	.LASF7
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 31
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1232 0063 02       		.byte	0x2
@@ -1858,7 +1983,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1286 00c9 02       		.uleb128 0x2
  1287 00ca 04       		.byte	0x4
  1288 00cb 07       		.byte	0x7
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 32
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 32
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1289 00cc 73010000 		.4byte	.LASF19
@@ -1918,7 +2047,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1343 014f B7020000 		.4byte	.LASF27
  1344 0153 01       		.byte	0x1
  1345 0154 5A01     		.2byte	0x15a
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 33
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 33
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1346 0156 8C000000 		.4byte	0x8c
@@ -1978,7 +2111,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1400 01d0 E4010000 		.4byte	0x1e4
  1401 01d4 0D       		.uleb128 0xd
  1402 01d5 0C000000 		.4byte	.LVL13
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 34
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 34
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1403 01d9 8F010000 		.4byte	0x18f
@@ -2038,7 +2175,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1457 024e 22000000 		.4byte	.LFE88-.LFB88
  1458 0252 01       		.uleb128 0x1
  1459 0253 9C       		.byte	0x9c
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 35
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 35
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1460 0254 B9020000 		.4byte	0x2b9
@@ -2097,8 +2238,13 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1513 02b7 00       		.byte	0
  1514 02b8 00       		.byte	0
  1515 02b9 08       		.uleb128 0x8
+<<<<<<< HEAD
+ 1516 02ba 78030000 		.4byte	.LASF35
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 36
+=======
  1516 02ba 70030000 		.4byte	.LASF35
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 36
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1517 02be 01       		.byte	0x1
@@ -2158,7 +2304,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1571 0332 8C000000 		.4byte	0x8c
  1572 0336 88010000 		.4byte	.LLST11
  1573 033a 0E       		.uleb128 0xe
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 37
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 37
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1574 033b C6010000 		.4byte	.LASF39
@@ -2218,7 +2368,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1628 03ab 06       		.uleb128 0x6
  1629 03ac 05000000 		.4byte	.LASF42
  1630 03b0 01       		.byte	0x1
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 38
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 38
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1631 03b1 6B       		.byte	0x6b
@@ -2277,8 +2431,13 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1684 0419 00       		.byte	0
  1685 041a 00       		.byte	0
  1686 041b 06       		.uleb128 0x6
+<<<<<<< HEAD
+ 1687 041c 07030000 		.4byte	.LASF44
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 39
+=======
  1687 041c FF020000 		.4byte	.LASF44
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 39
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1688 0420 01       		.byte	0x1
@@ -2338,7 +2497,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1742 0489 01       		.byte	0x1
  1743 048a 87       		.byte	0x87
  1744 048b 00000000 		.4byte	.LFB68
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 40
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 40
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1745 048f 1C000000 		.4byte	.LFE68-.LFB68
@@ -2398,7 +2561,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1799 0510 9C       		.byte	0x9c
  1800 0511 1F050000 		.4byte	0x51f
  1801 0515 0C       		.uleb128 0xc
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 41
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 41
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1802 0516 14000000 		.4byte	.LVL49
@@ -2458,7 +2625,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1856 0588 06       		.uleb128 0x6
  1857 0589 B1030000 		.4byte	.LASF54
  1858 058d 01       		.byte	0x1
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 42
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 42
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1859 058e C5       		.byte	0xc5
@@ -2518,7 +2689,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1913 0610 0A000000 		.4byte	.LFE84-.LFB84
  1914 0614 01       		.uleb128 0x1
  1915 0615 9C       		.byte	0x9c
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 43
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 43
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1916 0616 3A060000 		.4byte	0x63a
@@ -2578,7 +2753,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  1970 0693 08       		.uleb128 0x8
  1971 0694 C8020000 		.4byte	.LASF62
  1972 0698 01       		.byte	0x1
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 44
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 44
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  1973 0699 3D01     		.2byte	0x13d
@@ -2638,7 +2817,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2027 0715 5101     		.2byte	0x151
  2028 0717 8C000000 		.4byte	0x8c
  2029 071b 01       		.uleb128 0x1
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 45
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 45
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2030 071c 55       		.byte	0x55
@@ -2698,7 +2881,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2084 078f 0B       		.uleb128 0xb
  2085 0790 01       		.uleb128 0x1
  2086 0791 50       		.byte	0x50
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 46
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 46
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2087 0792 02       		.uleb128 0x2
@@ -2758,7 +2945,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2141 07f7 50       		.byte	0x50
  2142 07f8 02       		.uleb128 0x2
  2143 07f9 08       		.byte	0x8
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 47
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 47
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2144 07fa 96       		.byte	0x96
@@ -2818,7 +3009,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2198 086e C7030000 		.4byte	.LASF71
  2199 0872 04       		.byte	0x4
  2200 0873 1207     		.2byte	0x712
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 48
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 48
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2201 0875 79080000 		.4byte	0x879
@@ -2878,7 +3073,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2255 08ea 1E       		.byte	0x1e
  2256 08eb 8C000000 		.4byte	0x8c
  2257 08ef 05       		.uleb128 0x5
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 49
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 49
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2258 08f0 03       		.byte	0x3
@@ -2938,7 +3137,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2312 000b 55       		.uleb128 0x55
  2313 000c 17       		.uleb128 0x17
  2314 000d 11       		.uleb128 0x11
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 50
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 50
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2315 000e 01       		.uleb128 0x1
@@ -2998,7 +3201,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2369 0044 03       		.uleb128 0x3
  2370 0045 0E       		.uleb128 0xe
  2371 0046 3A       		.uleb128 0x3a
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 51
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 51
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2372 0047 0B       		.uleb128 0xb
@@ -3058,7 +3265,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2426 007f 13       		.uleb128 0x13
  2427 0080 00       		.byte	0
  2428 0081 00       		.byte	0
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 52
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 52
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2429 0082 09       		.uleb128 0x9
@@ -3118,7 +3329,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2483 00c1 34       		.uleb128 0x34
  2484 00c2 00       		.byte	0
  2485 00c3 03       		.uleb128 0x3
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 53
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 53
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2486 00c4 0E       		.uleb128 0xe
@@ -3178,7 +3393,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2540 00fa 00       		.byte	0
  2541 00fb 00       		.byte	0
  2542 00fc 12       		.uleb128 0x12
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 54
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 54
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2543 00fd 01       		.uleb128 0x1
@@ -3238,7 +3457,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2597 0133 3B       		.uleb128 0x3b
  2598 0134 05       		.uleb128 0x5
  2599 0135 49       		.uleb128 0x49
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 55
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 55
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2600 0136 13       		.uleb128 0x13
@@ -3298,7 +3521,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2654 016c 0E       		.uleb128 0xe
  2655 016d 03       		.uleb128 0x3
  2656 016e 0E       		.uleb128 0xe
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 56
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 56
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2657 016f 3A       		.uleb128 0x3a
@@ -3358,7 +3585,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2711 007c 00000000 		.4byte	_charsize
  2712 0080 00000000 		.4byte	0
  2713 0084 00000000 		.4byte	0
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 57
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 57
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2714              	.LLST4:
@@ -3418,7 +3649,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2768 0104 0A000000 		.4byte	.LVL17
  2769 0108 0D000000 		.4byte	.LVL18-1
  2770 010c 0100     		.2byte	0x1
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 58
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 58
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2771 010e 50       		.byte	0x50
@@ -3478,7 +3713,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2825 018c 13000000 		.4byte	.LVL32-1
  2826 0190 0100     		.2byte	0x1
  2827 0192 51       		.byte	0x51
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 59
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 59
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2828 0193 13000000 		.4byte	.LVL32-1
@@ -3538,7 +3777,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2882 0215 51       		.byte	0x51
  2883 0216 9F       		.byte	0x9f
  2884 0217 20000000 		.4byte	.LVL42
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 60
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 60
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2885 021b 26000000 		.4byte	.LVL43
@@ -3598,7 +3841,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2939 02a6 00000000 		.4byte	.LVL67
  2940 02aa 05000000 		.4byte	.LVL68-1
  2941 02ae 0100     		.2byte	0x1
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 61
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 61
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2942 02b0 50       		.byte	0x50
@@ -3658,7 +3905,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  2996 000e 0000     		.2byte	0
  2997 0010 00000000 		.4byte	.LFB63
  2998 0014 30000000 		.4byte	.LFE63-.LFB63
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 62
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 62
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  2999 0018 00000000 		.4byte	.LFB92
@@ -3718,7 +3969,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  3053 00f0 00000000 		.4byte	.LFB91
  3054 00f4 1E000000 		.4byte	.LFE91-.LFB91
  3055 00f8 00000000 		.4byte	.LFB64
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 63
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 63
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  3056 00fc B4000000 		.4byte	.LFE64-.LFB64
@@ -3778,7 +4033,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  3110 00bc 1C000000 		.4byte	.LFE78
  3111 00c0 00000000 		.4byte	.LFB79
  3112 00c4 1C000000 		.4byte	.LFE79
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 64
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 64
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  3113 00c8 00000000 		.4byte	.LFB84
@@ -3838,7 +4097,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  3149      7420696E 
  3149      7400
  3150              	.LASF64:
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 65
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 65
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  3151 004e 726F7773 		.ascii	"rows\000"
@@ -3852,6 +4115,180 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  3155 0060 63686172 		.ascii	"charsize\000"
  3155      73697A65 
  3155      00
+<<<<<<< HEAD
+ 3156              	.LASF88:
+ 3157 0069 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\E5PRJ3\\Projek"
+ 3157      73657273 
+ 3157      5C637269 
+ 3157      6E675C44 
+ 3157      6F63756D 
+ 3158 0096 744D6169 		.ascii	"tMain\\Hovedprogram.cydsn\000"
+ 3158      6E5C486F 
+ 3158      76656470 
+ 3158      726F6772 
+ 3158      616D2E63 
+ 3159              	.LASF53:
+ 3160 00af 7363726F 		.ascii	"scrollDisplayRight\000"
+ 3160      6C6C4469 
+ 3160      73706C61 
+ 3160      79526967 
+ 3160      687400
+ 3161              	.LASF82:
+ 3162 00c2 4932435F 		.ascii	"I2C_1_MasterSendStop\000"
+ 3162      315F4D61 
+ 3162      73746572 
+ 3162      53656E64 
+ 3162      53746F70 
+ 3163              	.LASF18:
+ 3164 00d7 6C6F6E67 		.ascii	"long double\000"
+ 3164      20646F75 
+ 3164      626C6500 
+ 3165              	.LASF79:
+ 3166 00e3 5F626163 		.ascii	"_backlightval\000"
+ 3166      6B6C6967 
+ 3166      68747661 
+ 3166      6C00
+ 3167              	.LASF38:
+ 3168 00f1 6D6F6465 		.ascii	"mode\000"
+ 3168      00
+ 3169              	.LASF81:
+ 3170 00f6 4932435F 		.ascii	"I2C_1_MasterWriteByte\000"
+ 3170      315F4D61 
+ 3170      73746572 
+ 3170      57726974 
+ 3170      65427974 
+ 3171              	.LASF36:
+ 3172 010c 76616C75 		.ascii	"value\000"
+ 3172      6500
+ 3173              	.LASF73:
+ 3174 0112 5F646973 		.ascii	"_displayfunction\000"
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 66
+
+
+ 3174      706C6179 
+ 3174      66756E63 
+ 3174      74696F6E 
+ 3174      00
+ 3175              	.LASF12:
+ 3176 0123 75696E74 		.ascii	"uint8_t\000"
+ 3176      385F7400 
+ 3177              	.LASF21:
+ 3178 012b 6C63645F 		.ascii	"lcd_cols\000"
+ 3178      636F6C73 
+ 3178      00
+ 3179              	.LASF25:
+ 3180 0134 4932435F 		.ascii	"I2C_M_write_byte\000"
+ 3180      4D5F7772 
+ 3180      6974655F 
+ 3180      62797465 
+ 3180      00
+ 3181              	.LASF43:
+ 3182 0145 686F6D65 		.ascii	"home\000"
+ 3182      00
+ 3183              	.LASF77:
+ 3184 014a 5F726F77 		.ascii	"_rows\000"
+ 3184      7300
+ 3185              	.LASF15:
+ 3186 0150 666C6F61 		.ascii	"float\000"
+ 3186      7400
+ 3187              	.LASF9:
+ 3188 0156 6C6F6E67 		.ascii	"long long int\000"
+ 3188      206C6F6E 
+ 3188      6720696E 
+ 3188      7400
+ 3189              	.LASF6:
+ 3190 0164 6C6F6E67 		.ascii	"long int\000"
+ 3190      20696E74 
+ 3190      00
+ 3191              	.LASF70:
+ 3192 016d 61646472 		.ascii	"address\000"
+ 3192      65737300 
+ 3193              	.LASF19:
+ 3194 0175 73697A65 		.ascii	"sizetype\000"
+ 3194      74797065 
+ 3194      00
+ 3195              	.LASF29:
+ 3196 017e 5F646174 		.ascii	"_data\000"
+ 3196      6100
+ 3197              	.LASF4:
+ 3198 0184 5F5F7569 		.ascii	"__uint8_t\000"
+ 3198      6E74385F 
+ 3198      7400
+ 3199              	.LASF28:
+ 3200 018e 65787061 		.ascii	"expanderWrite\000"
+ 3200      6E646572 
+ 3200      57726974 
+ 3200      6500
+ 3201              	.LASF69:
+ 3202 019c 73657461 		.ascii	"setaddress\000"
+ 3202      64647265 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 67
+
+
+ 3202      737300
+ 3203              	.LASF67:
+ 3204 01a7 73697A65 		.ascii	"size\000"
+ 3204      00
+ 3205              	.LASF45:
+ 3206 01ac 726F775F 		.ascii	"row_offsets\000"
+ 3206      6F666673 
+ 3206      65747300 
+ 3207              	.LASF74:
+ 3208 01b8 5F646973 		.ascii	"_displaycontrol\000"
+ 3208      706C6179 
+ 3208      636F6E74 
+ 3208      726F6C00 
+ 3209              	.LASF39:
+ 3210 01c8 68696768 		.ascii	"highnib\000"
+ 3210      6E696200 
+ 3211              	.LASF83:
+ 3212 01d0 43794465 		.ascii	"CyDelayUs\000"
+ 3212      6C617955 
+ 3212      7300
+ 3213              	.LASF1:
+ 3214 01da 756E7369 		.ascii	"unsigned char\000"
+ 3214      676E6564 
+ 3214      20636861 
+ 3214      7200
+ 3215              	.LASF49:
+ 3216 01e8 63757273 		.ascii	"cursor\000"
+ 3216      6F7200
+ 3217              	.LASF63:
+ 3218 01ef 63686172 		.ascii	"char_num\000"
+ 3218      5F6E756D 
+ 3218      00
+ 3219              	.LASF59:
+ 3220 01f8 63726561 		.ascii	"createChar\000"
+ 3220      74654368 
+ 3220      617200
+ 3221              	.LASF0:
+ 3222 0203 7369676E 		.ascii	"signed char\000"
+ 3222      65642063 
+ 3222      68617200 
+ 3223              	.LASF13:
+ 3224 020f 696E7433 		.ascii	"int32_t\000"
+ 3224      325F7400 
+ 3225              	.LASF10:
+ 3226 0217 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 3226      206C6F6E 
+ 3226      6720756E 
+ 3226      7369676E 
+ 3226      65642069 
+ 3227              	.LASF40:
+ 3228 022e 6C6F776E 		.ascii	"lownib\000"
+ 3228      696200
+ 3229              	.LASF14:
+ 3230 0235 75696E74 		.ascii	"uint32_t\000"
+ 3230      33325F74 
+ 3230      00
+ 3231              	.LASF11:
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 68
+
+
+ 3232 023e 756E7369 		.ascii	"unsigned int\000"
+ 3232      676E6564 
+ 3232      20696E74 
+=======
  3156              	.LASF68:
  3157 0069 62656769 		.ascii	"begin\000"
  3157      6E00
@@ -4022,12 +4459,82 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
 
 
  3232      33325F74 
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  3232      00
  3233              	.LASF11:
  3234 023c 756E7369 		.ascii	"unsigned int\000"
  3234      676E6564 
  3234      20696E74 
  3234      00
+<<<<<<< HEAD
+ 3235              	.LASF3:
+ 3236 0254 73686F72 		.ascii	"short unsigned int\000"
+ 3236      7420756E 
+ 3236      7369676E 
+ 3236      65642069 
+ 3236      6E7400
+ 3237              	.LASF65:
+ 3238 0267 4C43445F 		.ascii	"LCD_print\000"
+ 3238      7072696E 
+ 3238      7400
+ 3239              	.LASF32:
+ 3240 0271 73657442 		.ascii	"setBacklight\000"
+ 3240      61636B6C 
+ 3240      69676874 
+ 3240      00
+ 3241              	.LASF46:
+ 3242 027e 6E6F4469 		.ascii	"noDisplay\000"
+ 3242      73706C61 
+ 3242      7900
+ 3243              	.LASF17:
+ 3244 0288 63686172 		.ascii	"char\000"
+ 3244      00
+ 3245              	.LASF85:
+ 3246 028d 7374726C 		.ascii	"strlen\000"
+ 3246      656E00
+ 3247              	.LASF34:
+ 3248 0294 70756C73 		.ascii	"pulseEnable\000"
+ 3248      65456E61 
+ 3248      626C6500 
+ 3249              	.LASF26:
+ 3250 02a0 61646472 		.ascii	"addr\000"
+ 3250      00
+ 3251              	.LASF30:
+ 3252 02a5 6E6F4261 		.ascii	"noBacklight\000"
+ 3252      636B6C69 
+ 3252      67687400 
+ 3253              	.LASF50:
+ 3254 02b1 6E6F426C 		.ascii	"noBlink\000"
+ 3254      696E6B00 
+ 3255              	.LASF27:
+ 3256 02b9 64617461 		.ascii	"data\000"
+ 3256      00
+ 3257              	.LASF55:
+ 3258 02be 72696768 		.ascii	"rightToLeft\000"
+ 3258      74546F4C 
+ 3258      65667400 
+ 3259              	.LASF62:
+ 3260 02ca 6C6F6164 		.ascii	"load_custom_character\000"
+ 3260      5F637573 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 69
+
+
+ 3260      746F6D5F 
+ 3260      63686172 
+ 3260      61637465 
+ 3261              	.LASF8:
+ 3262 02e0 6C6F6E67 		.ascii	"long unsigned int\000"
+ 3262      20756E73 
+ 3262      69676E65 
+ 3262      6420696E 
+ 3262      7400
+ 3263              	.LASF16:
+ 3264 02f2 646F7562 		.ascii	"double\000"
+ 3264      6C6500
+ 3265              	.LASF68:
+ 3266 02f9 62656769 		.ascii	"begin\000"
+ 3266      6E00
+=======
  3235              	.LASF48:
  3236 0249 6E6F4375 		.ascii	"noCursor\000"
  3236      72736F72 
@@ -4096,6 +4603,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  3265              	.LASF16:
  3266 02f0 646F7562 		.ascii	"double\000"
  3266      6C6500
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  3267              	.LASF47:
  3268 02f7 64697370 		.ascii	"display\000"
  3268      6C617900 
@@ -4138,7 +4646,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  3286      6C696768 
  3286      7400
  3287              	.LASF20:
+<<<<<<< HEAD
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 70
+=======
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 70
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  3288 0367 6C63645F 		.ascii	"lcd_addr\000"
@@ -4197,8 +4709,13 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 1
  3308 0462 43794465 		.ascii	"CyDelay\000"
  3308      6C617900 
  3309              	.LASF41:
+<<<<<<< HEAD
+ 3310 0472 636F6D6D 		.ascii	"command\000"
+ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4NtCxo.s 			page 71
+=======
  3310 046a 636F6D6D 		.ascii	"command\000"
 ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccihd7Ta.s 			page 71
+>>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
 
 
  3310      616E6400 
