@@ -1,6 +1,6 @@
 -- Project:   Hovedprogram
--- Generated: 05/15/2020 19:19:25
--- PSoC Creator  4.3
+-- Generated: 05/19/2020 12:02:29
+-- PSoC Creator  4.2
 
 ENTITY Hovedprogram IS
     PORT(

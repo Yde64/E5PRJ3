@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccP5trcy.s 			page 1
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 1
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchsya2a.s 			page 1
 
 
    1              		.syntax unified
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 1
   28:Generated_Source\PSoC5/SCL_pin.c **** *
   29:Generated_Source\PSoC5/SCL_pin.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/SCL_pin.c **** *  and shifting the bits appropriately. 
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccP5trcy.s 			page 2
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 2
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchsya2a.s 			page 2
 
 
   31:Generated_Source\PSoC5/SCL_pin.c **** *
@@ -126,11 +118,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 1
   52              		.size	SCL_pin_Write, .-SCL_pin_Write
   53              		.section	.text.SCL_pin_SetDriveMode,"ax",%progbits
   54              		.align	2
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccP5trcy.s 			page 3
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 3
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchsya2a.s 			page 3
 
 
   55              		.global	SCL_pin_SetDriveMode
@@ -190,11 +178,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 1
   77 0012 00BF     		.align	2
   78              	.L5:
   79 0014 64500040 		.word	1073762404
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccP5trcy.s 			page 4
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 4
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchsya2a.s 			page 4
 
 
   80              		.cfi_endproc
@@ -254,11 +238,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 1
  110              		.align	2
  111              		.global	SCL_pin_ReadDataReg
  112              		.thumb
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccP5trcy.s 			page 5
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 5
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchsya2a.s 			page 5
 
 
  113              		.thumb_func
@@ -318,11 +298,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 1
  139              	.Ldebug_info0:
  140 0000 1B010000 		.4byte	0x11b
  141 0004 0400     		.2byte	0x4
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccP5trcy.s 			page 6
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 6
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchsya2a.s 			page 6
 
 
  142 0006 00000000 		.4byte	.Ldebug_abbrev0
@@ -382,11 +358,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 1
  196 0073 2C000000 		.4byte	0x2c
  197 0077 02       		.uleb128 0x2
  198 0078 04       		.byte	0x4
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccP5trcy.s 			page 7
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 7
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchsya2a.s 			page 7
 
 
  199 0079 04       		.byte	0x4
@@ -446,11 +418,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 1
  253 00ef 21000000 		.4byte	.LLST1
  254 00f3 00       		.byte	0
  255 00f4 09       		.uleb128 0x9
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccP5trcy.s 			page 8
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 8
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchsya2a.s 			page 8
 
 
  256 00f5 CD010000 		.4byte	.LASF18
@@ -510,11 +478,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 1
  310 0022 0B       		.uleb128 0xb
  311 0023 3E       		.uleb128 0x3e
  312 0024 0B       		.uleb128 0xb
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccP5trcy.s 			page 9
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 9
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchsya2a.s 			page 9
 
 
  313 0025 03       		.uleb128 0x3
@@ -574,11 +538,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 1
  367 005c 3A       		.uleb128 0x3a
  368 005d 0B       		.uleb128 0xb
  369 005e 3B       		.uleb128 0x3b
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccP5trcy.s 			page 10
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 10
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchsya2a.s 			page 10
 
 
  370 005f 0B       		.uleb128 0xb
@@ -638,11 +598,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 1
  424 000a 50       		.byte	0x50
  425 000b 0A000000 		.4byte	.LVL2
  426 000f 18000000 		.4byte	.LFE0
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccP5trcy.s 			page 11
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 11
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchsya2a.s 			page 11
 
 
  427 0013 0400     		.2byte	0x4
@@ -702,70 +658,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 1
  480      02004400 
  480      00000201 
  480      FB0E0D00 
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccP5trcy.s 			page 12
-
-
- 480      01010101 
- 481              	.LASF16:
- 482 0000 76616C75 		.ascii	"value\000"
- 482      6500
- 483              	.LASF23:
- 484 0006 73746174 		.ascii	"staticBits\000"
- 484      69634269 
- 484      747300
- 485              	.LASF9:
- 486 0011 666C6F61 		.ascii	"float\000"
- 486      7400
- 487              	.LASF1:
- 488 0017 756E7369 		.ascii	"unsigned char\000"
- 488      676E6564 
- 488      20636861 
- 488      7200
- 489              	.LASF20:
- 490 0025 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 490      43313120 
- 490      352E342E 
- 490      31203230 
- 490      31363036 
- 491 0058 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 491      20726576 
- 491      6973696F 
- 491      6E203233 
- 491      37373135 
- 492 008b 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 492      66756E63 
- 492      74696F6E 
- 492      2D736563 
- 492      74696F6E 
- 493              	.LASF13:
- 494 00b3 72656738 		.ascii	"reg8\000"
- 494      00
- 495              	.LASF5:
- 496 00b8 6C6F6E67 		.ascii	"long unsigned int\000"
- 496      20756E73 
- 496      69676E65 
- 496      6420696E 
- 496      7400
- 497              	.LASF3:
- 498 00ca 73686F72 		.ascii	"short unsigned int\000"
- 498      7420756E 
- 498      7369676E 
- 498      65642069 
- 498      6E7400
- 499              	.LASF10:
- 500 00dd 646F7562 		.ascii	"double\000"
- 500      6C6500
- 501              	.LASF22:
- 502 00e4 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\E5PRJ3\\Projek"
- 502      73657273 
- 502      5C637269 
- 502      6E675C44 
- 502      6F63756D 
- 503 0111 744D6169 		.ascii	"tMain\\Hovedprogram.cydsn\000"
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccP5trcy.s 			page 13
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 12
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchsya2a.s 			page 12
 
 
  480      01010101 
@@ -825,8 +718,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 1
  501      7420756E 
  501      7369676E 
  501      65642069 
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 13
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchsya2a.s 			page 13
 
 
  501      6E7400
@@ -885,13 +777,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 1
  525      20696E74 
  525      00
  526              	.LASF0:
-<<<<<<< HEAD
- 527 01c9 7369676E 		.ascii	"signed char\000"
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccP5trcy.s 			page 14
-=======
  527 01c1 7369676E 		.ascii	"signed char\000"
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccu7KCWI.s 			page 14
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchsya2a.s 			page 14
 
 
  527      65642063 

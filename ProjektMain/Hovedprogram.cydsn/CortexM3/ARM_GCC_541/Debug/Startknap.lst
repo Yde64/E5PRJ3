@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc7VpteZ.s 			page 1
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 1
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgRuL69.s 			page 1
 
 
    1              		.syntax unified
@@ -61,13 +57,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 1
   46              		.comm	BPptr,4,4
   47              		.text
   48              	.Letext0:
-<<<<<<< HEAD
-  49              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc7VpteZ.s 			page 2
-=======
   49              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 2
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgRuL69.s 			page 2
 
 
   50              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
@@ -127,11 +118,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 1
  104 0068 04       		.uleb128 0x4
  105 0069 04       		.byte	0x4
  106 006a 05       		.byte	0x5
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc7VpteZ.s 			page 3
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 3
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgRuL69.s 			page 3
 
 
  107 006b 696E7400 		.ascii	"int\000"
@@ -191,11 +178,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 1
  161 00d7 01       		.uleb128 0x1
  162 00d8 9C       		.byte	0x9c
  163 00d9 08       		.uleb128 0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc7VpteZ.s 			page 4
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 4
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgRuL69.s 			page 4
 
 
  164 00da 79010000 		.4byte	.LASF17
@@ -255,11 +238,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 1
  218 0016 0B       		.uleb128 0xb
  219 0017 0B       		.uleb128 0xb
  220 0018 3E       		.uleb128 0x3e
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc7VpteZ.s 			page 5
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 5
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgRuL69.s 			page 5
 
 
  221 0019 0B       		.uleb128 0xb
@@ -319,11 +298,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 1
  275 004f 13       		.uleb128 0x13
  276 0050 38       		.uleb128 0x38
  277 0051 0B       		.uleb128 0xb
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc7VpteZ.s 			page 6
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 6
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgRuL69.s 			page 6
 
 
  278 0052 00       		.byte	0
@@ -383,11 +358,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 1
  332 0089 3A       		.uleb128 0x3a
  333 008a 0B       		.uleb128 0xb
  334 008b 3B       		.uleb128 0x3b
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc7VpteZ.s 			page 7
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 7
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgRuL69.s 			page 7
 
 
  335 008c 0B       		.uleb128 0xb
@@ -447,11 +418,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 1
  385 0000 6C6F6E67 		.ascii	"long long int\000"
  385      206C6F6E 
  385      6720696E 
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc7VpteZ.s 			page 8
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 8
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgRuL69.s 			page 8
 
 
  385      7400
@@ -466,54 +433,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 1
  389      676E6564 
  389      20696E74 
  389      00
-<<<<<<< HEAD
- 390              	.LASF24:
- 391 002e 6973725F 		.ascii	"isr_button_handler\000"
- 391      62757474 
- 391      6F6E5F68 
- 391      616E646C 
- 391      657200
- 392              	.LASF20:
- 393 0041 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 393      43313120 
- 393      352E342E 
- 393      31203230 
- 393      31363036 
- 394 0074 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 394      20726576 
- 394      6973696F 
- 394      6E203233 
- 394      37373135 
- 395 00a7 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 395      66756E63 
- 395      74696F6E 
- 395      2D736563 
- 395      74696F6E 
- 396              	.LASF18:
- 397 00cf 42507074 		.ascii	"BPptr\000"
- 397      7200
- 398              	.LASF5:
- 399 00d5 6C6F6E67 		.ascii	"long unsigned int\000"
- 399      20756E73 
- 399      69676E65 
- 399      6420696E 
- 399      7400
- 400              	.LASF7:
- 401 00e7 6C6F6E67 		.ascii	"long long unsigned int\000"
- 401      206C6F6E 
- 401      6720756E 
- 401      7369676E 
- 401      65642069 
- 402              	.LASF23:
- 403 00fe 42757474 		.ascii	"ButtonPushed\000"
- 403      6F6E5075 
- 403      73686564 
- 403      00
- 404              	.LASF1:
- 405 010b 756E7369 		.ascii	"unsigned char\000"
- 405      676E6564 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc7VpteZ.s 			page 9
-=======
  390              	.LASF22:
  391 002e 433A5C55 		.ascii	"C:\\Users\\Morten\\Desktop\\E5PRJ3\\ProjektMain\\Ho"
  391      73657273 
@@ -559,8 +478,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 1
  403              	.LASF7:
  404 0125 6C6F6E67 		.ascii	"long long unsigned int\000"
  404      206C6F6E 
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 9
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgRuL69.s 			page 9
 
 
  404      6720756E 
@@ -619,13 +537,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 1
  430      746B6E61 
  430      702E6300 
  431              	.LASF2:
-<<<<<<< HEAD
- 432 01c9 73686F72 		.ascii	"short int\000"
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc7VpteZ.s 			page 10
-=======
  432 01c1 73686F72 		.ascii	"short int\000"
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccBJX7Kb.s 			page 10
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgRuL69.s 			page 10
 
 
  432      7420696E 

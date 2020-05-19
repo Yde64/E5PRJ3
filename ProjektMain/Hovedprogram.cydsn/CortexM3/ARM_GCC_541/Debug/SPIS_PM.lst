@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 1
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 1
 
 
    1              		.syntax unified
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
   28:Generated_Source\PSoC5/SPIS_PM.c **** * Function Name: SPIS_SaveConfig
   29:Generated_Source\PSoC5/SPIS_PM.c **** ********************************************************************************
   30:Generated_Source\PSoC5/SPIS_PM.c **** *
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 2
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 2
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 2
 
 
   31:Generated_Source\PSoC5/SPIS_PM.c **** * Summary:
@@ -126,11 +118,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
   50 0000 7047     		bx	lr
   51              		.cfi_endproc
   52              	.LFE1:
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 3
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 3
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 3
 
 
   53              		.size	SPIS_RestoreConfig, .-SPIS_RestoreConfig
@@ -190,11 +178,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
   77 000c 0122     		movs	r2, #1
   78 000e 054B     		ldr	r3, .L7+4
   79 0010 1A70     		strb	r2, [r3]
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 4
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 4
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 4
 
 
   80 0012 02E0     		b	.L5
@@ -254,11 +238,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
  120:Generated_Source\PSoC5/SPIS_PM.c **** *  zero.
  121:Generated_Source\PSoC5/SPIS_PM.c **** *  SPIS_txBufferRead - modified every function call - resets to
  122:Generated_Source\PSoC5/SPIS_PM.c **** *  zero.
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 5
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 5
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 5
 
 
  123:Generated_Source\PSoC5/SPIS_PM.c **** *  SPIS_rxBufferWrite - modified every function call - resets to
@@ -318,11 +298,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
  131              		.cfi_endproc
  132              	.LFE3:
  133              		.size	SPIS_Wakeup, .-SPIS_Wakeup
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 6
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 6
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 6
 
 
  134              		.data
@@ -382,11 +358,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
  188 0056 02       		.uleb128 0x2
  189 0057 08       		.byte	0x8
  190 0058 07       		.byte	0x7
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 7
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 7
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 7
 
 
  191 0059 9E010000 		.4byte	.LASF7
@@ -446,11 +418,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
  245 00c4 03       		.byte	0x3
  246 00c5 3C       		.byte	0x3c
  247 00c6 6B000000 		.4byte	0x6b
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 8
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 8
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 8
 
 
  248 00ca 01       		.byte	0x1
@@ -510,11 +478,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
  302 0145 01       		.byte	0x1
  303 0146 14       		.byte	0x14
  304 0147 CC000000 		.4byte	0xcc
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 9
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 9
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 9
 
 
  305 014b 05       		.uleb128 0x5
@@ -574,11 +538,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
  359 0021 0B       		.uleb128 0xb
  360 0022 0B       		.uleb128 0xb
  361 0023 3E       		.uleb128 0x3e
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 10
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 10
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 10
 
 
  362 0024 0B       		.uleb128 0xb
@@ -638,11 +598,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
  416 005a 16       		.uleb128 0x16
  417 005b 00       		.byte	0
  418 005c 03       		.uleb128 0x3
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 11
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 11
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 11
 
 
  419 005d 0E       		.uleb128 0xe
@@ -702,11 +658,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
  473 0095 13       		.uleb128 0x13
  474 0096 00       		.byte	0
  475 0097 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 12
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 12
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 12
 
 
  476 0098 0B       		.uleb128 0xb
@@ -766,11 +718,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
  530 0020 00000000 		.4byte	.LFB2
  531 0024 28000000 		.4byte	.LFE2-.LFB2
  532 0028 00000000 		.4byte	.LFB3
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 13
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 13
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 13
 
 
  533 002c 18000000 		.4byte	.LFE3-.LFB3
@@ -801,83 +749,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
  552      4B55505F 
  552      53545255 
  552      435400
-<<<<<<< HEAD
- 553              	.LASF22:
- 554 0013 53504953 		.ascii	"SPIS_Wakeup\000"
- 554      5F57616B 
- 554      65757000 
- 555              	.LASF3:
- 556 001f 73686F72 		.ascii	"short unsigned int\000"
- 556      7420756E 
- 556      7369676E 
- 556      65642069 
- 556      6E7400
- 557              	.LASF20:
- 558 0032 53504953 		.ascii	"SPIS_RestoreConfig\000"
- 558      5F526573 
- 558      746F7265 
- 558      436F6E66 
- 558      696700
- 559              	.LASF27:
- 560 0045 47656E65 		.ascii	"Generated_Source\\PSoC5\\SPIS_PM.c\000"
- 560      72617465 
- 560      645F536F 
- 560      75726365 
- 560      5C50536F 
- 561              	.LASF9:
- 562 0066 666C6F61 		.ascii	"float\000"
- 562      7400
- 563              	.LASF1:
- 564 006c 756E7369 		.ascii	"unsigned char\000"
- 564      676E6564 
- 564      20636861 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 14
-
-
- 564      7200
- 565              	.LASF26:
- 566 007a 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 566      43313120 
- 566      352E342E 
- 566      31203230 
- 566      31363036 
- 567 00ad 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 567      20726576 
- 567      6973696F 
- 567      6E203233 
- 567      37373135 
- 568 00e0 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 568      66756E63 
- 568      74696F6E 
- 568      2D736563 
- 568      74696F6E 
- 569              	.LASF13:
- 570 0108 72656738 		.ascii	"reg8\000"
- 570      00
- 571              	.LASF5:
- 572 010d 6C6F6E67 		.ascii	"long unsigned int\000"
- 572      20756E73 
- 572      69676E65 
- 572      6420696E 
- 572      7400
- 573              	.LASF12:
- 574 011f 75696E74 		.ascii	"uint8\000"
- 574      3800
- 575              	.LASF10:
- 576 0125 646F7562 		.ascii	"double\000"
- 576      6C6500
- 577              	.LASF28:
- 578 012c 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\E5PRJ3\\Projek"
- 578      73657273 
- 578      5C637269 
- 578      6E675C44 
- 578      6F63756D 
- 579 0159 744D6169 		.ascii	"tMain\\Hovedprogram.cydsn\000"
- 579      6E5C486F 
- 579      76656470 
- 579      726F6772 
- 579      616D2E63 
-=======
  553              	.LASF28:
  554 0013 433A5C55 		.ascii	"C:\\Users\\Morten\\Desktop\\E5PRJ3\\ProjektMain\\Ho"
  554      73657273 
@@ -907,7 +778,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
  561      696700
  562              	.LASF27:
  563 0083 47656E65 		.ascii	"Generated_Source\\PSoC5\\SPIS_PM.c\000"
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 14
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 14
 
 
  563      72617465 
@@ -953,7 +824,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
  578              	.LASF10:
  579 0163 646F7562 		.ascii	"double\000"
  579      6C6500
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  580              	.LASF25:
  581 016a 53504953 		.ascii	"SPIS_Enable\000"
  581      5F456E61 
@@ -968,11 +838,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
  585      20696E74 
  585      00
  586              	.LASF19:
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 15
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 15
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 15
 
 
  587 018e 53504953 		.ascii	"SPIS_SaveConfig\000"
@@ -1031,13 +897,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 1
  611      5F53746F 
  611      7000
  612              	.LASF29:
-<<<<<<< HEAD
- 613 0234 53504953 		.ascii	"SPIS_backup\000"
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc98EFIF.s 			page 16
-=======
  613 022c 53504953 		.ascii	"SPIS_backup\000"
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3PhavG.s 			page 16
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccgBBoBE.s 			page 16
 
 
  613      5F626163 
