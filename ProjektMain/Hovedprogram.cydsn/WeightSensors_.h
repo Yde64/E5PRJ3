@@ -29,8 +29,8 @@
 
 typedef struct WeightSensors_
 {
-    int CalibrateP1; //buffer
-    int CalibrateP2; //buffer
+    int CalibrateP1; //Kalibreringsværdi
+    int CalibrateP2; //Kalibreringsværdi
     
     long p1; //buffer
     long p2; //buffer

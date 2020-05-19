@@ -29,7 +29,7 @@
 
 char uart_string[50];
 int weighthys = 0;
-///*
+
 WeightSensors  WSptr = {.p1 = 0, .p2 = 0}; //WeightSensor Pointer
 
 long getWeight(int player)
@@ -51,11 +51,7 @@ long getWeight(int player)
                     WSptr.p1 += ADC_DelSig_1_GetResult16();
                 }
             }
-                //Debugging-----------------------------
-                //sprintf(uart_string, "\r\ndata read from player 1: %li", WSptr.p1);     // convert to string
-                //UART_1_PutString(uart_string);                                         // output string
-                //--------------------------------------
-                return (WSptr.p1/samples);
+        return (WSptr.p1/samples);
         }
         break;
         
@@ -72,11 +68,7 @@ long getWeight(int player)
                     WSptr.p2 += ADC_DelSig_1_GetResult16();
                 }
             }    
-                //Debugging-----------------------------
-                //sprintf(uart_string, "\r\ndata read from player 2: %li", WSptr.p2);     // convert to string
-                //UART_1_PutString(uart_string);                                         // output string
-                //--------------------------------------
-                return (WSptr.p2/samples);
+        return (WSptr.p2/samples);
         }
         break;
     }
@@ -131,6 +123,27 @@ int getCalWeight(int player)
 return 0;
 }
 
+int getWeightLoser(int x)
+{
+    WSptr.pLoser = getWeight(x);
+        
+        if(x == 1)
+        {
+            WSptr.pLoser -= (WSptr.CalibrateP1);
+        }
+        else if(x == 2)
+        {
+            WSptr.pLoser -= (WSptr.CalibrateP2);
+        }
+        
+        
+        WSptr.pLoser = ADC_SAR_1_CountsTo_mVolts(WSptr.pLoser);
+        WSptr.pLoser /= mVtoG;
+
+        return WSptr.pLoser;
+        
+return 0;    
+}
 
 void WeightSensorsInit()
 {
@@ -167,7 +180,7 @@ int CompareWeight()
     }
     
     return 0;   //for error handling
-}
+}   
 
 void CalibrateSensors()
 {
@@ -177,5 +190,5 @@ void CalibrateSensors()
     WSptr.CalibrateP2 = getWeight(2);
 }
 
-    //*/
+
 /* [] END OF FILE */
