@@ -50,7 +50,7 @@ void spiMaster::listen()
       
     }
   close(gpio);
-  sleep(0.1);
+  sleep(1);
 
   }
 }
