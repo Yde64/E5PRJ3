@@ -66,3 +66,4 @@ void weightapprovedSeq(LEDctrl *rgbLED); //Vægt godkendt sekvens
 int startSeq(LEDctrl *rgbLED_1, LEDctrl *rgbLED_2); //Start sekvens
 void errorSeq(LEDctrl *rgbLED); //Fejl sekvens
 void winnerSeq(LEDctrl *rgbLED);   //Vindersekvens
+void cheatseq(LEDctrl *rgbLED)  //Snyde sekvens

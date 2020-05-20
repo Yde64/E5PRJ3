@@ -517,4 +517,9 @@ void winnerSeq(LEDctrl *rgbLED)   //Vindersekvens
     fillcolor(116, 1, 1.0, rgbLED);
 }
 
+void cheatseq(LEDctrl *rgbLED) //cheatseq
+{
+    BlinkLED(65, 1, 1, rgbLED);
+}
+
 

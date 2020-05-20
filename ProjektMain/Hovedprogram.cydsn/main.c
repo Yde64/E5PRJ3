@@ -46,12 +46,6 @@ int cycleCountCountdown = 0;
 
 int pErr = 0;
 
-<<<<<<< HEAD
-=======
-char uart_out[50];
-// STATES.C
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
-
 //CHUG-state
 int chugp1 = 0;
 int chugp2 = 0;

@@ -46,12 +46,6 @@ int cycleCountCountdown = 0;
 
 int pErr = 0;
 
-<<<<<<< HEAD
-=======
-char uart_out[50];
-// STATES.C
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
-
 //CHUG-state
 int chugp1 = 0;
 int chugp2 = 0;
@@ -215,7 +209,11 @@ int main(void)
                             else if((timeout()==1))
                             {
                                 NEXT_STATE = ERR_TIMEOUT;
+                            }else{
+                                cheatseq(rgbstrip1);
                             }
+                            
+                            chugp1 = 0;
                         }
                     }
                     
@@ -237,7 +235,11 @@ int main(void)
                             else if(timeout()==1)
                             {
                                 NEXT_STATE = ERR_TIMEOUT;
+                            }else{
+                                cheatseq(rgbstrip2);
                             }
+                            
+                            chugp2 = 0;
                         }      
                     }
             }
@@ -255,7 +257,7 @@ int main(void)
             {
                 UARTprint("3", "NSL - EVALUATING_NEW_WEIGHT\r\n");
                 
-                if (getCalWeight(2) < nulvaegt) //hvis spiller 2 glas er løftet
+                if (getCalWeight(ploser) < nulvaegt) //hvis spiller 2 glas er løftet
                 { 
                     chugp2 = 1;   
                 }
@@ -270,8 +272,15 @@ int main(void)
                             }
                              else
                             {
+                                if(pLoser == 1){
+                                    cheatseq(rgbstrip1);
+                                }else{
+                                    cheatseq(rgbstrip2);
+                                }
+                                    
                                 NEXT_STATE = ERR_NOCHUG;
                             }
+                            chugp2 = 0; 
                         }
                         else
                         {
@@ -362,6 +371,14 @@ int main(void)
                 UARTprint("3", "NSL - ERR_NOCHUG\r\n");
                 
                 NEXT_STATE = WINNER_DONE;
+            }    
+            break;
+        
+        case ERR_CHEATSEQ:
+            {
+                UARTprint("3", "NSL - ERR_CHEATSEQ\r\n");
+                
+                NEXT_STATE = CHUG;
             }    
             break;
             
@@ -609,6 +626,12 @@ int main(void)
                         {
                             errorSeq(rgbstrip2);
                         }
+                    }    
+                    break;
+                    
+                    case ERR_CHEATSEQ:
+                    {
+                        UARTprint("4", "OL - ERR_ERR_CHEATSEQ\r\n");
                     }    
                     break;
                     
