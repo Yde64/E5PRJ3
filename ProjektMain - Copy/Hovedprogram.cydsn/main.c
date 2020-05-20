@@ -196,52 +196,52 @@ int main(void)
                     chugp1 = 1;
                     CyDelay(delay);
                 }
-                    if(chugp1 == 1)
-                    {
-                        if(getCalWeight(1) > nulvaegt ){
-                    
-                            if((afvigelse) >= getCalWeight(1)) //Her skal det erklæres hvilken af de to spillere der vinder --> sæt pLoser til enten 1(p1) eller 2(p2)
-                            {
-                                pLoser = 2; //player2 taber
-                                NEXT_STATE = WINNER_DONE; 
-                                        
-                            }
-                            else if((timeout()==1))
-                            {
-                                NEXT_STATE = ERR_TIMEOUT;
-                            }else{
-                                cheatseq(rgbstrip1);
-                            }
-                            
-                            chugp1 = 0;
+                if(chugp1 == 1)
+                {
+                    if(getCalWeight(1) > nulvaegt ){
+                
+                        if((afvigelse) >= getCalWeight(1)) //Her skal det erklæres hvilken af de to spillere der vinder --> sæt pLoser til enten 1(p1) eller 2(p2)
+                        {
+                            pLoser = 2; //player2 taber
+                            NEXT_STATE = WINNER_DONE; 
+                                    
                         }
+                        else if((timeout()==1))
+                        {
+                            NEXT_STATE = ERR_TIMEOUT;
+                        }else{
+                            cheatseq(rgbstrip1);
+                        }
+                        
+                        chugp1 = 0;
                     }
+                }
                     
                 if (getCalWeight(2) < nulvaegt) //hvis spiller 2 glas er løftet
                 { 
                     chugp2 = 1;  
                     CyDelay(delay);
                 }
-                    if(chugp2 == 1)
+                if(chugp2 == 1)
+                {
+                    if(getCalWeight(2) > nulvaegt)
                     {
-                        if(getCalWeight(2) > nulvaegt)
+                    
+                        if ((afvigelse) >= getCalWeight(2)) //hvis spiller2 vinder, sættes p1-data til Loser-data
                         {
+                            pLoser = 1; //player 1 taber
+                            NEXT_STATE = WINNER_DONE;
+                        }
+                        else if(timeout()==1)
+                        {
+                            NEXT_STATE = ERR_TIMEOUT;
+                        }else{
+                            cheatseq(rgbstrip2);
+                        }
                         
-                            if ((afvigelse) >= getCalWeight(2)) //hvis spiller2 vinder, sættes p1-data til Loser-data
-                            {
-                                pLoser = 1; //player 1 taber
-                                NEXT_STATE = WINNER_DONE;
-                            }
-                            else if(timeout()==1)
-                            {
-                                NEXT_STATE = ERR_TIMEOUT;
-                            }else{
-                                cheatseq(rgbstrip2);
-                            }
-                            
-                            chugp2 = 0;
-                        }      
-                    }
+                        chugp2 = 0;
+                    }      
+                }
             }
             break;    
             
@@ -261,32 +261,32 @@ int main(void)
                 { 
                     chugp2 = 1;   
                 }
-                    if(chugp2 == 1)
+                if(chugp2 == 1)
+                {
+                    if((getCalWeight(pLoser) > nulvaegt))
                     {
-                        if((getCalWeight(pLoser) > nulvaegt))
+                        CyDelay(delay); //vent med at læse til efter inital impact
+                        if (getCalWeight(pLoser) <= afvigelse)
                         {
-                            CyDelay(delay); //vent med at læse til efter inital impact
-                            if (getCalWeight(pLoser) <= afvigelse)
-                            {
-                                NEXT_STATE = LOSER_DONE;
-                            }
-                             else
-                            {
-                                if(pLoser == 1){
-                                    cheatseq(rgbstrip1);
-                                }else{
-                                    cheatseq(rgbstrip2);
-                                }
-                                    
-                                NEXT_STATE = ERR_NOCHUG;
-                            }
-                            chugp2 = 0; 
+                            NEXT_STATE = LOSER_DONE;
                         }
-                        else
+                         else
                         {
-                            NEXT_STATE = EVALUATING_NEW_WEIGHT;
+                            if(pLoser == 1){
+                                cheatseq(rgbstrip1);
+                            }else{
+                                cheatseq(rgbstrip2);
+                            }
+                                
+                            NEXT_STATE = ERR_NOCHUG;
                         }
+                        chugp2 = 0; 
                     }
+                    else
+                    {
+                        NEXT_STATE = EVALUATING_NEW_WEIGHT;
+                    }
+                }
                
             }   
             break;
