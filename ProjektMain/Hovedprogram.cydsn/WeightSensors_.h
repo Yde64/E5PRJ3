@@ -29,8 +29,8 @@
 
 typedef struct WeightSensors_
 {
-    int CalibrateP1; //Kalibreringsværdi
-    int CalibrateP2; //Kalibreringsværdi
+    int CalibrateP1; //buffer
+    int CalibrateP2; //buffer
     
     long p1; //buffer
     long p2; //buffer
@@ -47,6 +47,7 @@ void CalibrateSensors();
 
 void WeightSensorsInit();
 int CompareWeight();
+long int getCalWeightDebug(int player);
 
 
 /* [] END OF FILE */

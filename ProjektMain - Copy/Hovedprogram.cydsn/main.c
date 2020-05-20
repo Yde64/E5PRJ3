@@ -46,12 +46,6 @@ int cycleCountCountdown = 0;
 
 int pErr = 0;
 
-<<<<<<< HEAD
-=======
-char uart_out[50];
-// STATES.C
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
-
 //CHUG-state
 int chugp1 = 0;
 int chugp2 = 0;
@@ -202,44 +196,52 @@ int main(void)
                     chugp1 = 1;
                     CyDelay(delay);
                 }
-                    if(chugp1 == 1)
-                    {
-                        if(getCalWeight(1) > nulvaegt ){
-                    
-                            if((afvigelse) >= getCalWeight(1)) //Her skal det erklæres hvilken af de to spillere der vinder --> sæt pLoser til enten 1(p1) eller 2(p2)
-                            {
-                                pLoser = 2; //player2 taber
-                                NEXT_STATE = WINNER_DONE; 
-                                        
-                            }
-                            else if((timeout()==1))
-                            {
-                                NEXT_STATE = ERR_TIMEOUT;
-                            }
+                if(chugp1 == 1)
+                {
+                    if(getCalWeight(1) > nulvaegt ){
+                
+                        if((afvigelse) >= getCalWeight(1)) //Her skal det erklæres hvilken af de to spillere der vinder --> sæt pLoser til enten 1(p1) eller 2(p2)
+                        {
+                            pLoser = 2; //player2 taber
+                            NEXT_STATE = WINNER_DONE; 
+                                    
                         }
+                        else if((timeout()==1))
+                        {
+                            NEXT_STATE = ERR_TIMEOUT;
+                        }else{
+                            cheatseq(rgbstrip1);
+                        }
+                        
+                        chugp1 = 0;
                     }
+                }
                     
                 if (getCalWeight(2) < nulvaegt) //hvis spiller 2 glas er løftet
                 { 
                     chugp2 = 1;  
                     CyDelay(delay);
                 }
-                    if(chugp2 == 1)
+                if(chugp2 == 1)
+                {
+                    if(getCalWeight(2) > nulvaegt)
                     {
-                        if(getCalWeight(2) > nulvaegt)
+                    
+                        if ((afvigelse) >= getCalWeight(2)) //hvis spiller2 vinder, sættes p1-data til Loser-data
                         {
+                            pLoser = 1; //player 1 taber
+                            NEXT_STATE = WINNER_DONE;
+                        }
+                        else if(timeout()==1)
+                        {
+                            NEXT_STATE = ERR_TIMEOUT;
+                        }else{
+                            cheatseq(rgbstrip2);
+                        }
                         
-                            if ((afvigelse) >= getCalWeight(2)) //hvis spiller2 vinder, sættes p1-data til Loser-data
-                            {
-                                pLoser = 1; //player 1 taber
-                                NEXT_STATE = WINNER_DONE;
-                            }
-                            else if(timeout()==1)
-                            {
-                                NEXT_STATE = ERR_TIMEOUT;
-                            }
-                        }      
-                    }
+                        chugp2 = 0;
+                    }      
+                }
             }
             break;    
             
@@ -255,29 +257,36 @@ int main(void)
             {
                 UARTprint("3", "NSL - EVALUATING_NEW_WEIGHT\r\n");
                 
-                if (getCalWeight(2) < nulvaegt) //hvis spiller 2 glas er løftet
+                if (getCalWeight(ploser) < nulvaegt) //hvis spiller 2 glas er løftet
                 { 
                     chugp2 = 1;   
                 }
-                    if(chugp2 == 1)
+                if(chugp2 == 1)
+                {
+                    if((getCalWeight(pLoser) > nulvaegt))
                     {
-                        if((getCalWeight(pLoser) > nulvaegt))
+                        CyDelay(delay); //vent med at læse til efter inital impact
+                        if (getCalWeight(pLoser) <= afvigelse)
                         {
-                            CyDelay(delay); //vent med at læse til efter inital impact
-                            if (getCalWeight(pLoser) <= afvigelse)
-                            {
-                                NEXT_STATE = LOSER_DONE;
-                            }
-                             else
-                            {
-                                NEXT_STATE = ERR_NOCHUG;
-                            }
+                            NEXT_STATE = LOSER_DONE;
                         }
-                        else
+                         else
                         {
-                            NEXT_STATE = EVALUATING_NEW_WEIGHT;
+                            if(pLoser == 1){
+                                cheatseq(rgbstrip1);
+                            }else{
+                                cheatseq(rgbstrip2);
+                            }
+                                
+                            NEXT_STATE = ERR_NOCHUG;
                         }
+                        chugp2 = 0; 
                     }
+                    else
+                    {
+                        NEXT_STATE = EVALUATING_NEW_WEIGHT;
+                    }
+                }
                
             }   
             break;
@@ -362,6 +371,14 @@ int main(void)
                 UARTprint("3", "NSL - ERR_NOCHUG\r\n");
                 
                 NEXT_STATE = WINNER_DONE;
+            }    
+            break;
+        
+        case ERR_CHEATSEQ:
+            {
+                UARTprint("3", "NSL - ERR_CHEATSEQ\r\n");
+                
+                NEXT_STATE = CHUG;
             }    
             break;
             
@@ -609,6 +626,12 @@ int main(void)
                         {
                             errorSeq(rgbstrip2);
                         }
+                    }    
+                    break;
+                    
+                    case ERR_CHEATSEQ:
+                    {
+                        UARTprint("4", "OL - ERR_ERR_CHEATSEQ\r\n");
                     }    
                     break;
                     

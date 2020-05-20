@@ -6,7 +6,19 @@
 /plugin/;
 
 / {
+    compatible = "brcm,bcm2835", "brcm,bcm2708";
+
     fragment@0 {
+        target = <&spi0>;
+        __overlay__ {
+            status = "okay";
+            spidev@0{
+                status = "disabled";
+            };
+        };
+    };
+
+    fragment@1 {
         target = <&spi0>;
         __overlay__ {
 
@@ -21,7 +33,7 @@
             };
         };
     };
-    fragment@1 {
+    fragment@2 {
 
         target-path = "/";
         __overlay__ {
