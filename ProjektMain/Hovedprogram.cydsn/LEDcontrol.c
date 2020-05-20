@@ -78,12 +78,18 @@ CY_ISR(isr_LED_pulse)
     {
         if (rgbLED1->pulse == 1)fillcolor(rgbLED1->h,rgbLED1->s,index2, rgbLED1);
         if (rgbLED2->pulse == 1)fillcolor(rgbLED2->h,rgbLED2->s,index2, rgbLED2);
+        
+        //Lavere lysstyrke
         index2 = index2-0.01;
         if (index2 < 0)count = 1;
+    
     }else if(count == 1){ //Øger lysstyrke på LED-strip
         if (rgbLED1->pulse == 1)fillcolor(rgbLED1->h,rgbLED1->s,index2, rgbLED1);
         if (rgbLED2->pulse == 1)fillcolor(rgbLED2->h,rgbLED2->s,index2, rgbLED2);
+    
+        //Højere lysstyrke
         index2 = index2+0.01;
+        
         if (index2 == MAXLEDINTENSE)count = 0;
     }
     
@@ -256,7 +262,7 @@ void hsv2rgb(double h, double s, double v, int LED, LEDctrl *rgbLED)
     hh = h / 60.0;
     X = C * (1- fabs(fmod(hh, 2) -1));
     m = v - C;
-    
+   
     i = hh;
 
     switch(i) {

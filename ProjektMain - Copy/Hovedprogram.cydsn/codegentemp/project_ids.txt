@@ -1,0 +1,6 @@
+C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Hovedprogram.cyprj|d88fff01-50e1-44ae-a621-873402768c6e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|fe8c03e7-22e0-426d-93a9-15ad2433c192
+C:\Users\cring\Documents\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|488f94fa-a2ad-4ac8-a955-259ecf30748c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|f9a1e2ac-628b-46ab-be4d-19fc579ee013
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|971d293e-1489-47b4-b611-e017e55ebbfe
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|13f8f46b-7f81-4329-92cd-506a5469dd0b
