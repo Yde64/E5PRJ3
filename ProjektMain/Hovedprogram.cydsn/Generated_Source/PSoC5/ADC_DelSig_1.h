@@ -98,7 +98,7 @@ CY_ISR_PROTO(ADC_DelSig_1_ISR4);
 /* Default configuration values from user parameters */
 #define ADC_DelSig_1_CFG1_RESOLUTION         (16u )
 #define ADC_DelSig_1_CFG1_INPUT_RANGE        (0u)
-#define ADC_DelSig_1_CFG1_SRATE              (10000u)
+#define ADC_DelSig_1_CFG1_SRATE              (5485u)
 #define ADC_DelSig_1_CFG1_REFERENCE          (0u)
 #define ADC_DelSig_1_CFG1_BUFFER_GAIN        (1u)
 #define ADC_DelSig_1_CFG1_CONV_MODE          (0u)
@@ -1337,13 +1337,13 @@ extern volatile int32 ADC_DelSig_1_CountsPerVolt;
 
 /* Default register settings for the Config 1 */
 /* Default Config
-* ADC_DelSig_1_CFG1 Sample Rate: 10000 Samples per Second
+* ADC_DelSig_1_CFG1 Sample Rate: 5485 Samples per Second
 * ADC_DelSig_1_CFG1 Conversion Mode: 0
 * ADC_DelSig_1_CFG1 Input Buffer Gain: 1
 * ADC_DelSig_1_CFG1 Reference: 0
 * ADC_DelSig_1_CFG1 Input Range: 0
 * ADC_DelSig_1_CFG1 Resolution: 16 bits
-* ADC_DelSig_1_CFG1 Clock: 2800000 Hz
+* ADC_DelSig_1_CFG1 Clock: 1535800 Hz
 */
 
 #define ADC_DelSig_1_CFG1_DEC_CR             (0x30u)
@@ -1395,16 +1395,16 @@ extern volatile int32 ADC_DelSig_1_CountsPerVolt;
 #define ADC_DelSig_1_CFG1_DSM_OUT1           (0x00u)
 #define ADC_DelSig_1_CFG1_DSM_SW3            (0x40u)
 #define ADC_DelSig_1_CFG1_CLOCKS_PER_SAMPLE  (0x0118u)
-#define ADC_DelSig_1_CFG1_CLOCK_FREQ         (2800000u)
-#define ADC_DelSig_1_CFG1_CP_CLOCK_FREQ      (11200000u)
+#define ADC_DelSig_1_CFG1_CLOCK_FREQ         (1535800u)
+#define ADC_DelSig_1_CFG1_CP_CLOCK_FREQ      (6143200u)
 #define ADC_DelSig_1_CFG1_REFERENCE_VOLTAGE  (1.0240)
 #define ADC_DelSig_1_CFG1_COUNTS_PER_VOLT    (64000)
 #define ADC_DelSig_1_CFG1_IDEAL_DEC_GAIN     (0x90DAu)
 #define ADC_DelSig_1_CFG1_IDEAL_ODDDEC_GAIN  (0x8000u)
 
 #define ADC_DelSig_1_CFG1_ALIGNMENT          (0u)
-#define ADC_DelSig_1_CFG1_ADC_CLK_DIVIDER    (8u)
-#define ADC_DelSig_1_CFG1_CP_CLK_DIVIDER     (1u)
+#define ADC_DelSig_1_CFG1_ADC_CLK_DIVIDER    (15u)
+#define ADC_DelSig_1_CFG1_CP_CLK_DIVIDER     (3u)
 
 /* Input and DAC Cap values in pF */
 #define ADC_DelSig_1_CFG1_IPCAP1VALUE        (0x0F30u)

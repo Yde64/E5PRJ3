@@ -21,6 +21,8 @@
 #include "VT100Terminal.h"
 #include "SPI_Master.h"
 
+#define debug 1
+
 #define Display1 0x26
 #define Display2 0x27
 #define LEDlength 15
@@ -32,14 +34,6 @@ WeightSensors  _WSptr = {.p1 = 0, .p2 = 0}; //WeightSensor Pointer
 
 
 // STATES.C
-
-#define glasvaegtp1 450 //eksempel (i gram)
-#define glasvaegtp2 440 //eksempel - skal testes (i gram)
-
-#define afvigelse 40   // maksimum mængde væske, der må være i glas efter spil (i gram) -  skal testes yderligere
-#define afvigelse2 50 //afvigelse for sikring af tyvstart (ERR_FALSE_START)
-
-
 
 #define afvigelse 40   // maksimum mængde væske, der må være i glas efter spil (i gram) 
 #define afvigelse2 50 //afvigelse for sikring af tyvstart (ERR_FALSE_START)
@@ -57,6 +51,7 @@ int cycleCountReady = 0;
 int cycleCountCountdown = 0;
 
 int pErr = 0;
+
 
 //CHUG-state
 int chugp1 = 0;
@@ -91,6 +86,12 @@ int main(void)
     
     UARTprint("1", "MAIN START\r\n");
     CalibrateSensors();
+    
+    if(debug)
+    {
+        stopLCD(1);
+        stopLCD(2);
+    }
     
     
     for(;;)
@@ -132,8 +133,21 @@ int main(void)
             {
                 //CyDelay(100);
                 UARTprint("3", "NSL - EVALUATING_WEIGHT\r\n");
-               
+                
+                
+                
                 int Weight = CompareWeight();
+                
+                if(debug)
+                {
+                    char buf[50];
+                    sprintf(buf, "Weight: %li     ", getCalWeightDebug(1));
+                    printDisp(1, buf, 1);
+                    
+                    sprintf(buf, "Weight: %li     ", getCalWeightDebug(2));
+                    printDisp(1, buf, 2);
+                    
+                }
                 if (Weight == 1)       //hvis vægten passer
                 {
                     NEXT_STATE = READY;
@@ -208,15 +222,13 @@ int main(void)
                     chugp1 = 1;
                     CyDelay(delay);
                 }
-                if(chugp1 == 1)
-                {
+                    if(chugp1 == 1)
+                    {
                         if(getCalWeight(1) > nulvaegt ){
                     
                             if((afvigelse) >= getCalWeight(1)) //Her skal det erklæres hvilken af de to spillere der vinder --> sæt pLoser til enten 1(p1) eller 2(p2)
                             {
                                 pLoser = 2; //player2 taber
-
-                               
                                 NEXT_STATE = WINNER_DONE; 
                                         
                             }
@@ -225,7 +237,7 @@ int main(void)
                                 NEXT_STATE = ERR_TIMEOUT;
                             }
                         }
-                }
+                    }
                     
                 if (getCalWeight(2) < nulvaegt) //hvis spiller 2 glas er løftet
                 { 
@@ -240,8 +252,6 @@ int main(void)
                             if ((afvigelse) >= getCalWeight(2)) //hvis spiller2 vinder, sættes p1-data til Loser-data
                             {
                                 pLoser = 1; //player 1 taber
-
-                        
                                 NEXT_STATE = WINNER_DONE;
                             }
                             else if(timeout()==1)
@@ -288,6 +298,7 @@ int main(void)
                             NEXT_STATE = EVALUATING_NEW_WEIGHT;
                         }
                     }
+               
             }   
             break;
             
