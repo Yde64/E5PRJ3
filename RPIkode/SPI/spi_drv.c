@@ -80,7 +80,7 @@ static int __init spi_drv_init(void)
     ERRGOTO(err_no_cleanup, "Failed to register chardev\n");
   printk("Assigned major no: %i\n", MAJOR(devno));
 
-  cdev_init(&spi_drv_cdev, &spi_drv_fops);
+  cdev_init(&spi_drv_cdev, &spi_drv_fops);      //init char-device
   err = cdev_add(&spi_drv_cdev, devno, 255);
   if (err)
     ERRGOTO(err_cleanup_chrdev, "Failed to create class");
@@ -91,15 +91,14 @@ static int __init spi_drv_init(void)
     ERRGOTO(err_cleanup_cdev, "Failed to create class");
 
   /* Register SPI Driver */
-  /* THIS WILL INVOKE PROBE, IF DEVICE IS PRESENT!!! */
   err = spi_register_driver(&spi_drv_spi_driver);
   if(err)
     ERRGOTO(err_cleanup_class, "Failed SPI Registration\n");
-
+  /* Register gpio Driver */
   err = platform_driver_register(&gpio_drv);
   if(err)
     ERRGOTO(err_cleanup_class, "Failed GPIO Registration\n");
-
+    
   /* Success */
   return 0;
 
@@ -124,11 +123,11 @@ static void __exit spi_drv_exit(void)
 {
   printk("spi_drv driver Exit\n");
 
-  platform_driver_unregister(&gpio_drv);
-  spi_unregister_driver(&spi_drv_spi_driver);
-  class_destroy(spi_drv_class);
-  cdev_del(&spi_drv_cdev);
-  unregister_chrdev_region(devno, 255);
+  platform_driver_unregister(&gpio_drv);        //unregister gpio driver
+  spi_unregister_driver(&spi_drv_spi_driver);   //unregister spi driver
+  class_destroy(spi_drv_class);                 //destroy class
+  cdev_del(&spi_drv_cdev);                      //delete character-device
+  unregister_chrdev_region(devno, 255);         //unregister character-device region
 }
 
 /*
@@ -430,6 +429,7 @@ static int gpio_remove(struct platform_device *pdev)
           // Free GPIO
           gpio_free(gpio_devs[i].no);
           printk(KERN_ALERT "Removing Platform device\n");
+          // Destroy device
           device_destroy(spi_drv_class, MKDEV(MAJOR(devno), i));
         }
 
