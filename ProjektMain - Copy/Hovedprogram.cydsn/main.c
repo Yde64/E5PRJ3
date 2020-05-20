@@ -30,6 +30,9 @@
 
 WeightSensors  _WSptr = {.p1 = 0, .p2 = 0}; //WeightSensor Pointer
 
+#define afvigelse 40   // maksimum mængde væske, der må være i glas efter spil (i gram) 
+#define afvigelse2 50 //afvigelse for sikring af tyvstart (ERR_FALSE_START)
+
 
 // STATES.C
 #define delay 100
@@ -257,7 +260,7 @@ int main(void)
             {
                 UARTprint("3", "NSL - EVALUATING_NEW_WEIGHT\r\n");
                 
-                if (getCalWeight(ploser) < nulvaegt) //hvis spiller 2 glas er løftet
+                if (getCalWeight(pLoser) < nulvaegt) //hvis spiller 2 glas er løftet
                 { 
                     chugp2 = 1;   
                 }
@@ -634,7 +637,6 @@ int main(void)
                         UARTprint("4", "OL - ERR_ERR_CHEATSEQ\r\n");
                     }    
                     break;
-                    
                     
                 default :
                     {
