@@ -9,17 +9,6 @@
  *
  * ========================================
 */
-/* ========================================
- *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
- *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
- *
- * ========================================
-*/
 #include "WeightSensors_.h"
 #define afvigelse 15                //Bestemmer fejlmargin for compareWeight.
 #define hysmid 100

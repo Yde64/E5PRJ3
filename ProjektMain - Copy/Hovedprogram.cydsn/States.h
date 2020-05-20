@@ -40,6 +40,7 @@ typedef enum {
     ERR_FALSE_START,
     ERR_TIMEOUT,
     ERR_NOCHUG,
+    ERR_CHEATSEQ,
 } states;
 
 
