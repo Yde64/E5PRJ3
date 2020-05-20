@@ -4,10 +4,13 @@
   <iframe id="frmFile" src="log.txt" style="display: none;"></iframe>
 
   <audio id="bit">
-    <source src="bitconnect.mp3" type="audio/mpeg">
+    <source src="bitconnect2.mp4" type="audio/mpeg">
   </audio>
   <audio id="moe">
-    <source src="moe-chan.mp3" type="audio/mpeg">
+    <source src="moe-chan2.mp4" type="audio/mpeg">
+  </audio>
+  <audio id="moebass">
+    <source src="moe-chan-bass.wav" type="audio/wav">
   </audio>
 
   <script language="javascript" type="text/javascript">
@@ -19,11 +22,12 @@
 
   var x = document.getElementById("bit");
   var x2 = document.getElementById("moe");
+  var x3 = document.getElementById("moebass");
 
   function init()
   {
     x2.play();
-    x2.volume = 0.02;
+    x2.volume = 0.5;
     x2.controls = true;
     x2.loop = true;
     output = document.getElementById("output");
@@ -66,12 +70,19 @@
     testWebSocket();
   }
 
+  function bass()
+  {
+    x3.volume = 0.02;
+    x3.play();
+    x3.controls =true;
+  }
+
   window.addEventListener("load", init, false);
 
   async function updatedisp()
   {
     x2.play();
-    x2.volume = 0.02;
+    x2.volume = 0.5;
     x2.controls = true;
     x2.loop = true;
 
@@ -156,21 +167,38 @@
     .button2 {background-color: #008CBA;} /* Blue */
     .button3 {background-color: #f44336;} /* Red */ 
     .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
-    .button5 {background-color: #555555;} /* Black */
+    .button5 
+    {
+      background-color: #555555;/* Black */
+      margin-top: 0;
+      opacity: 0;
+      float: right;
+    }
+    .button5:hover 
+    {
+      background-color: #555555;/* Black */
+      margin-top: 0;
+      opacity: 0.5;
+      float: right;
+    }
+    
     html
-      {
-      background-image: url('waifu2.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-      background-size: contain;
-      }
-      audio{
-        float: right;
-        margin-top:0;
-        opacity: 0;
-      }
-    audio:hover {
+    {
+    background-image: url('waifu2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    }
+    audio
+    {
+      float: right;
+      bottom: 8px;
+      margin-top:0;
+      opacity: 0;
+    }
+    audio:hover 
+    {
       float: right;
       margin-top:0;
       opacity: 0.5;
@@ -181,6 +209,7 @@
   <button class="button button3" onclick="updatedisp()">Vis log</button>
   <button class="button button4" onclick="reconnect()">BITCONNECT</button>
   <div id="init"></div>
+  <button class="button button5" onclick="bass()">BIGBASS</button>
   <div id="output"></div>
   <html>
 
