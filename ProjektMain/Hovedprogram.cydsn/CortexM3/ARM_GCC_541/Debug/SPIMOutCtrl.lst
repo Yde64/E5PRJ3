@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccrUpzSS.s 			page 1
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 1
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc8XHaRk.s 			page 1
 
 
    1              		.syntax unified
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 1
   28:Generated_Source\PSoC5/SPIMOutCtrl.c **** *  Write a byte to the Control Register.
   29:Generated_Source\PSoC5/SPIMOutCtrl.c **** *
   30:Generated_Source\PSoC5/SPIMOutCtrl.c **** * Parameters:
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccrUpzSS.s 			page 2
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 2
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc8XHaRk.s 			page 2
 
 
   31:Generated_Source\PSoC5/SPIMOutCtrl.c **** *  control:  The value to be assigned to the Control Register.
@@ -126,11 +118,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 1
   54              		.cfi_startproc
   55              		@ args = 0, pretend = 0, frame = 0
   56              		@ frame_needed = 0, uses_anonymous_args = 0
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccrUpzSS.s 			page 3
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 3
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc8XHaRk.s 			page 3
 
 
   57              		@ link register save eliminated.
@@ -190,11 +178,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 1
  109 004a 07       		.byte	0x7
  110 004b 0A010000 		.4byte	.LASF5
  111 004f 02       		.uleb128 0x2
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccrUpzSS.s 			page 4
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 4
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc8XHaRk.s 			page 4
 
 
  112 0050 08       		.byte	0x8
@@ -254,11 +238,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 1
  166 00be 50       		.byte	0x50
  167 00bf 00       		.byte	0
  168 00c0 08       		.uleb128 0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccrUpzSS.s 			page 5
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 5
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc8XHaRk.s 			page 5
 
 
  169 00c1 87010000 		.4byte	.LASF19
@@ -318,11 +298,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 1
  223 002b 00       		.byte	0
  224 002c 03       		.uleb128 0x3
  225 002d 0E       		.uleb128 0xe
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccrUpzSS.s 			page 6
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 6
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc8XHaRk.s 			page 6
 
 
  226 002e 3A       		.uleb128 0x3a
@@ -382,11 +358,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 1
  280 0065 00       		.byte	0
  281 0066 08       		.uleb128 0x8
  282 0067 2E       		.uleb128 0x2e
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccrUpzSS.s 			page 7
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 7
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc8XHaRk.s 			page 7
 
 
  283 0068 00       		.byte	0
@@ -442,78 +414,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 1
  331      00000201 
  331      FB0E0D00 
  331      01010101 
-<<<<<<< HEAD
- 332              	.LASF15:
- 333 0000 47656E65 		.ascii	"Generated_Source\\PSoC5\\SPIMOutCtrl.c\000"
- 333      72617465 
- 333      645F536F 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccrUpzSS.s 			page 8
-
-
- 333      75726365 
- 333      5C50536F 
- 334              	.LASF9:
- 335 0025 666C6F61 		.ascii	"float\000"
- 335      7400
- 336              	.LASF1:
- 337 002b 756E7369 		.ascii	"unsigned char\000"
- 337      676E6564 
- 337      20636861 
- 337      7200
- 338              	.LASF14:
- 339 0039 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 339      43313120 
- 339      352E342E 
- 339      31203230 
- 339      31363036 
- 340 006c 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 340      20726576 
- 340      6973696F 
- 340      6E203233 
- 340      37373135 
- 341 009f 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 341      66756E63 
- 341      74696F6E 
- 341      2D736563 
- 341      74696F6E 
- 342              	.LASF13:
- 343 00c7 72656738 		.ascii	"reg8\000"
- 343      00
- 344              	.LASF5:
- 345 00cc 6C6F6E67 		.ascii	"long unsigned int\000"
- 345      20756E73 
- 345      69676E65 
- 345      6420696E 
- 345      7400
- 346              	.LASF3:
- 347 00de 73686F72 		.ascii	"short unsigned int\000"
- 347      7420756E 
- 347      7369676E 
- 347      65642069 
- 347      6E7400
- 348              	.LASF18:
- 349 00f1 636F6E74 		.ascii	"control\000"
- 349      726F6C00 
- 350              	.LASF10:
- 351 00f9 646F7562 		.ascii	"double\000"
- 351      6C6500
- 352              	.LASF17:
- 353 0100 5350494D 		.ascii	"SPIMOutCtrl_Write\000"
- 353      4F757443 
- 353      74726C5F 
- 353      57726974 
- 353      6500
- 354              	.LASF16:
- 355 0112 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\E5PRJ3\\Projek"
- 355      73657273 
- 355      5C637269 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccrUpzSS.s 			page 9
-=======
  332              	.LASF16:
  333 0000 433A5C55 		.ascii	"C:\\Users\\Morten\\Desktop\\E5PRJ3\\ProjektMain\\Ho"
  333      73657273 
  333      5C4D6F72 
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 8
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc8XHaRk.s 			page 8
 
 
  333      74656E5C 
@@ -573,8 +478,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 1
  352      726F6C00 
  353              	.LASF10:
  354 0137 646F7562 		.ascii	"double\000"
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc56TT8L.s 			page 9
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc8XHaRk.s 			page 9
 
 
  354      6C6500

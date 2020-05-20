@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 1
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 1
 
 
    1              		.syntax unified
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
   28:Generated_Source\PSoC5/SPIS.c **** 
   29:Generated_Source\PSoC5/SPIS.c **** #if (SPIS_RX_SOFTWARE_BUF_ENABLED)
   30:Generated_Source\PSoC5/SPIS.c **** 
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 2
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 2
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 2
 
 
   31:Generated_Source\PSoC5/SPIS.c ****     volatile uint8 SPIS_rxBuffer[SPIS_RX_BUFFER_SIZE];
@@ -126,11 +118,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
   85:Generated_Source\PSoC5/SPIS.c ****     #if(SPIS_INTERNAL_RX_INT_ENABLED)
   86:Generated_Source\PSoC5/SPIS.c **** 
   87:Generated_Source\PSoC5/SPIS.c ****         CyIntDisable(SPIS_RX_ISR_NUMBER);
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 3
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 3
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 3
 
 
   88:Generated_Source\PSoC5/SPIS.c **** 
@@ -190,11 +178,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  142:Generated_Source\PSoC5/SPIS.c **** void SPIS_Enable(void) 
  143:Generated_Source\PSoC5/SPIS.c **** {
   28              		.loc 1 143 0
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 4
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 4
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 4
 
 
   29              		.cfi_startproc
@@ -254,11 +238,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
   68              	.LFE1:
   69              		.size	SPIS_Enable, .-SPIS_Enable
   70              		.section	.text.SPIS_Stop,"ax",%progbits
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 5
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 5
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 5
 
 
   71              		.align	2
@@ -318,11 +298,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  206:Generated_Source\PSoC5/SPIS.c **** * Parameters:
  207:Generated_Source\PSoC5/SPIS.c **** *  None.
  208:Generated_Source\PSoC5/SPIS.c **** *
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 6
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 6
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 6
 
 
  209:Generated_Source\PSoC5/SPIS.c **** * Return:
@@ -382,11 +358,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  109              	.L7:
  110 0028 9D640040 		.word	1073767581
  111 002c 80E100E0 		.word	-536813184
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 7
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 7
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 7
 
 
  112              		.cfi_endproc
@@ -446,11 +418,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  258:Generated_Source\PSoC5/SPIS.c **** }
  259:Generated_Source\PSoC5/SPIS.c **** 
  260:Generated_Source\PSoC5/SPIS.c **** 
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 8
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 8
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 8
 
 
  261:Generated_Source\PSoC5/SPIS.c **** /*******************************************************************************
@@ -510,11 +478,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  290:Generated_Source\PSoC5/SPIS.c **** * Summary:
  291:Generated_Source\PSoC5/SPIS.c **** *  Disable internal Tx interrupt generation.
  292:Generated_Source\PSoC5/SPIS.c **** *
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 9
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 9
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 9
 
 
  293:Generated_Source\PSoC5/SPIS.c **** * Parameters:
@@ -574,11 +538,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  182              		.loc 1 329 0
  183              		.cfi_startproc
  184              		@ args = 0, pretend = 0, frame = 0
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 10
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 10
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 10
 
 
  185              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -638,11 +598,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  356:Generated_Source\PSoC5/SPIS.c ****     SPIS_TX_STATUS_MASK_REG  = intSrc;
  213              		.loc 1 356 0
  214 0000 014B     		ldr	r3, .L18
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 11
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 11
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 11
 
 
  215 0002 1870     		strb	r0, [r3]
@@ -702,11 +658,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  245 0008 83640040 		.word	1073767555
  246              		.cfi_endproc
  247              	.LFE9:
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 12
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 12
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 12
 
 
  248              		.size	SPIS_SetRxInterruptMode, .-SPIS_SetRxInterruptMode
@@ -766,11 +718,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  421:Generated_Source\PSoC5/SPIS.c **** 
  422:Generated_Source\PSoC5/SPIS.c ****         SPIS_swStatusTx = 0u;
  423:Generated_Source\PSoC5/SPIS.c **** 
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 13
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 13
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 13
 
 
  424:Generated_Source\PSoC5/SPIS.c ****         /* Enable Interrupts */
@@ -830,11 +778,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  457:Generated_Source\PSoC5/SPIS.c **** *
  458:Generated_Source\PSoC5/SPIS.c **** * Side Effects:
  459:Generated_Source\PSoC5/SPIS.c **** *  Clear Rx status register of the component.
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 14
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 14
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 14
 
 
  460:Generated_Source\PSoC5/SPIS.c **** *
@@ -894,11 +838,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  488:Generated_Source\PSoC5/SPIS.c **** 
  489:Generated_Source\PSoC5/SPIS.c **** 
  490:Generated_Source\PSoC5/SPIS.c **** /*******************************************************************************
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 15
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 15
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 15
 
 
  491:Generated_Source\PSoC5/SPIS.c **** * Function Name: SPIS_WriteTxData
@@ -958,11 +898,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  538:Generated_Source\PSoC5/SPIS.c ****             }
  539:Generated_Source\PSoC5/SPIS.c ****             else
  540:Generated_Source\PSoC5/SPIS.c ****             {
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 16
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 16
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 16
 
 
  541:Generated_Source\PSoC5/SPIS.c ****                 tmpTxBufferRead--;
@@ -1022,11 +958,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  590:Generated_Source\PSoC5/SPIS.c ****         }
  591:Generated_Source\PSoC5/SPIS.c **** 
  592:Generated_Source\PSoC5/SPIS.c ****         /* Put data element into the TX FIFO */
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 17
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 17
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 17
 
 
  593:Generated_Source\PSoC5/SPIS.c ****         CY_SET_REG8(SPIS_TXDATA_PTR, txData);
@@ -1086,11 +1018,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  627:Generated_Source\PSoC5/SPIS.c **** 
  628:Generated_Source\PSoC5/SPIS.c **** /*******************************************************************************
  629:Generated_Source\PSoC5/SPIS.c **** * Function Name: SPIS_ReadRxData
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 18
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 18
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 18
 
 
  630:Generated_Source\PSoC5/SPIS.c **** ********************************************************************************
@@ -1150,11 +1078,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  679:Generated_Source\PSoC5/SPIS.c ****             }
  680:Generated_Source\PSoC5/SPIS.c ****             else
  681:Generated_Source\PSoC5/SPIS.c ****             {
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 19
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 19
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 19
 
 
  682:Generated_Source\PSoC5/SPIS.c ****                 SPIS_rxBufferFull = 0u;
@@ -1214,11 +1138,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  715:Generated_Source\PSoC5/SPIS.c **** *  Integer count of the number of bytes/words in the RX buffer.
  716:Generated_Source\PSoC5/SPIS.c **** *
  717:Generated_Source\PSoC5/SPIS.c **** * Global variables:
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 20
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 20
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 20
 
 
  718:Generated_Source\PSoC5/SPIS.c **** *  SPIS_rxBufferWrite - used for the account of the bytes which
@@ -1278,11 +1198,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  757:Generated_Source\PSoC5/SPIS.c ****     #endif /* SPIS_RX_SOFTWARE_BUF_ENABLED */
  758:Generated_Source\PSoC5/SPIS.c **** 
  759:Generated_Source\PSoC5/SPIS.c ****     return (size);
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 21
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 21
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 21
 
 
  760:Generated_Source\PSoC5/SPIS.c **** }
@@ -1342,11 +1258,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  402              		@ frame_needed = 0, uses_anonymous_args = 0
  403              		@ link register save eliminated.
  794:Generated_Source\PSoC5/SPIS.c ****     uint8 size;
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 22
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 22
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 22
 
 
  795:Generated_Source\PSoC5/SPIS.c **** 
@@ -1406,11 +1318,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  829:Generated_Source\PSoC5/SPIS.c ****         }
  830:Generated_Source\PSoC5/SPIS.c ****         else
  831:Generated_Source\PSoC5/SPIS.c ****         {
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 23
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 23
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 23
 
 
  832:Generated_Source\PSoC5/SPIS.c ****             size = 4u;
@@ -1470,11 +1378,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  866:Generated_Source\PSoC5/SPIS.c **** *
  867:Generated_Source\PSoC5/SPIS.c **** * Side Effects:
  868:Generated_Source\PSoC5/SPIS.c **** *  Any received data not read from the RAM buffer will be lost when overwritten.
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 24
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 24
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 24
 
 
  869:Generated_Source\PSoC5/SPIS.c **** *
@@ -1534,11 +1438,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  470              		.section	.text.SPIS_ClearTxBuffer,"ax",%progbits
  471              		.align	2
  472              		.global	SPIS_ClearTxBuffer
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 25
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 25
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 25
 
 
  473              		.thumb
@@ -1598,11 +1498,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  936:Generated_Source\PSoC5/SPIS.c ****     enableInterrupts = CyEnterCriticalSection();
  486              		.loc 1 936 0
  487 0002 FFF7FEFF 		bl	CyEnterCriticalSection
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 26
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 26
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 26
 
 
  488              	.LVL13:
@@ -1662,11 +1558,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  962:Generated_Source\PSoC5/SPIS.c ****         SPIS_txBufferWrite = 0u;
  963:Generated_Source\PSoC5/SPIS.c **** 		SPIS_txBufferFull  = 0u;
  964:Generated_Source\PSoC5/SPIS.c **** 		
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 27
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 27
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 27
 
 
  965:Generated_Source\PSoC5/SPIS.c ****         /* If Buffer is empty then disable TX FIFO status interrupt */
@@ -1726,11 +1618,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
 1019:Generated_Source\PSoC5/SPIS.c **** 
 1020:Generated_Source\PSoC5/SPIS.c **** 
 1021:Generated_Source\PSoC5/SPIS.c **** /*******************************************************************************
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 28
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 28
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 28
 
 
 1022:Generated_Source\PSoC5/SPIS.c **** * Function Name: SPIS_PutArray
@@ -1790,11 +1678,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  537              		.loc 1 1055 0
  538 000a 705D     		ldrb	r0, [r6, r5]	@ zero_extendqisi2
  539 000c FFF7FEFF 		bl	SPIS_WriteTxData
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 29
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 29
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 29
 
 
  540              	.LVL18:
@@ -1854,11 +1738,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  568              		.loc 1 1080 0
  569              		.cfi_startproc
  570              		@ args = 0, pretend = 0, frame = 0
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 30
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 30
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 30
 
 
  571              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1918,11 +1798,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
 1105:Generated_Source\PSoC5/SPIS.c **** 
 1106:Generated_Source\PSoC5/SPIS.c ****     CyExitCriticalSection(enableInterrupts);
  600              		.loc 1 1106 0
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 31
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 31
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 31
 
 
  601 0028 FFF7FEFF 		bl	CyExitCriticalSection
@@ -1982,11 +1858,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  649              	.LVL27:
  112:Generated_Source\PSoC5/SPIS.c ****     (void) SPIS_ReadRxStatus(); /* Clear any pending status bits */
  650              		.loc 1 112 0
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 32
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 32
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 32
 
 
  651 0022 FFF7FEFF 		bl	SPIS_ReadTxStatus
@@ -2046,11 +1918,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  698              		.loc 1 192 0
  699 000c 0122     		movs	r2, #1
  700 000e 024B     		ldr	r3, .L73
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 33
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 33
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 33
 
 
  701 0010 1A70     		strb	r2, [r3]
@@ -2110,11 +1978,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
 1134:Generated_Source\PSoC5/SPIS.c ****     #if(SPIS_INTERNAL_TX_INT_ENABLED)
 1135:Generated_Source\PSoC5/SPIS.c ****         CyIntEnable(SPIS_TX_ISR_NUMBER);
 1136:Generated_Source\PSoC5/SPIS.c ****     #endif /* SPIS_INTERNAL_TX_INT_ENABLED */
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 34
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 34
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 34
 
 
 1137:Generated_Source\PSoC5/SPIS.c **** 
@@ -2174,11 +2038,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
 1166:Generated_Source\PSoC5/SPIS.c **** 
 1167:Generated_Source\PSoC5/SPIS.c ****     #if(SPIS_INTERNAL_RX_INT_ENABLED)
 1168:Generated_Source\PSoC5/SPIS.c ****         CyIntDisable(SPIS_RX_ISR_NUMBER);
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 35
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 35
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 35
 
 
  752              		.loc 1 1168 0
@@ -2237,13 +2097,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  780 0002 1870     		strb	r0, [r3]
 1194:Generated_Source\PSoC5/SPIS.c ****     SPIS_RX_STATUS_MASK_REG  = intSrc;
  781              		.loc 1 1194 0
-<<<<<<< HEAD
  782 0004 0A3B     		subs	r3, r3, #10
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 36
-=======
- 782 0004 03F20113 		addw	r3, r3, #257
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 36
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 36
 
 
  783 0006 1870     		strb	r0, [r3]
@@ -2303,11 +2158,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  804              		@ link register save eliminated.
 1228:Generated_Source\PSoC5/SPIS.c ****     uint8 tmpStatus;
 1229:Generated_Source\PSoC5/SPIS.c **** 
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 37
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 37
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 37
 
 
 1230:Generated_Source\PSoC5/SPIS.c ****     #if ((SPIS_TX_SOFTWARE_BUF_ENABLED) || (SPIS_RX_SOFTWARE_BUF_ENABLED))
@@ -2367,11 +2218,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  837              	.Ldebug_info0:
  838 0000 EF040000 		.4byte	0x4ef
  839 0004 0400     		.2byte	0x4
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 38
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 38
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 38
 
 
  840 0006 00000000 		.4byte	.Ldebug_abbrev0
@@ -2430,13 +2277,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  893 0071 E401     		.2byte	0x1e4
  894 0073 2C000000 		.4byte	0x2c
  895 0077 04       		.uleb128 0x4
-<<<<<<< HEAD
- 896 0078 95020000 		.4byte	.LASF10
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 39
-=======
  896 0078 8D020000 		.4byte	.LASF10
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 39
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 39
 
 
  897 007c 02       		.byte	0x2
@@ -2495,13 +2337,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  950 00ed 06000000 		.4byte	.LVL0
  951 00f1 C6040000 		.4byte	0x4c6
  952 00f5 08       		.uleb128 0x8
-<<<<<<< HEAD
  953 00f6 28000000 		.4byte	.LVL1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 40
-=======
- 953 00f6 2A000000 		.4byte	.LVL1
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 40
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 40
 
 
  954 00fa D1040000 		.4byte	0x4d1
@@ -2561,11 +2398,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1008 017b 01       		.uleb128 0x1
  1009 017c 9C       		.byte	0x9c
  1010 017d 0B       		.uleb128 0xb
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 41
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 41
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 41
 
 
  1011 017e DE030000 		.4byte	.LASF25
@@ -2625,11 +2458,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1065 01f6 D101     		.2byte	0x1d1
  1066 01f8 6B000000 		.4byte	0x6b
  1067 01fc 00000000 		.4byte	.LFB11
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 42
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 42
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 42
 
 
  1068 0200 0C000000 		.4byte	.LFE11-.LFB11
@@ -2689,11 +2518,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1122 027b 01       		.uleb128 0x1
  1123 027c 9C       		.byte	0x9c
  1124 027d 90020000 		.4byte	0x290
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 43
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 43
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 43
 
 
  1125 0281 0E       		.uleb128 0xe
@@ -2752,13 +2577,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1178 0301 D1040000 		.4byte	0x4d1
  1179 0305 00       		.byte	0
  1180 0306 0B       		.uleb128 0xb
-<<<<<<< HEAD
- 1181 0307 5D020000 		.4byte	.LASF40
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 44
-=======
  1181 0307 55020000 		.4byte	.LASF40
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 44
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 44
 
 
  1182 030b 01       		.byte	0x1
@@ -2818,11 +2638,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1236 0395 D1040000 		.4byte	0x4d1
  1237 0399 00       		.byte	0
  1238 039a 06       		.uleb128 0x6
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 45
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 45
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 45
 
 
  1239 039b ED020000 		.4byte	.LASF45
@@ -2882,11 +2698,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1293 040d 0C000000 		.4byte	.LVL30
  1294 0411 9A030000 		.4byte	0x39a
  1295 0415 08       		.uleb128 0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 46
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 46
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 46
 
 
  1296 0416 16000000 		.4byte	.LVL31
@@ -2946,11 +2758,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1350 0494 29020000 		.4byte	.LASF51
  1351 0498 01       		.byte	0x1
  1352 0499 26       		.byte	0x26
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 47
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 47
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 47
 
 
  1353 049a 6B000000 		.4byte	0x6b
@@ -3010,11 +2818,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1407 000b 55       		.uleb128 0x55
  1408 000c 17       		.uleb128 0x17
  1409 000d 11       		.uleb128 0x11
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 48
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 48
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 48
 
 
  1410 000e 01       		.uleb128 0x1
@@ -3074,11 +2878,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1464 0044 3A       		.uleb128 0x3a
  1465 0045 0B       		.uleb128 0xb
  1466 0046 3B       		.uleb128 0x3b
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 49
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 49
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 49
 
 
  1467 0047 0B       		.uleb128 0xb
@@ -3138,11 +2938,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1521 0080 12       		.uleb128 0x12
  1522 0081 06       		.uleb128 0x6
  1523 0082 40       		.uleb128 0x40
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 50
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 50
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 50
 
 
  1524 0083 18       		.uleb128 0x18
@@ -3202,11 +2998,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1578 00bc 05       		.uleb128 0x5
  1579 00bd 00       		.byte	0
  1580 00be 03       		.uleb128 0x3
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 51
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 51
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 51
 
 
  1581 00bf 0E       		.uleb128 0xe
@@ -3266,11 +3058,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1635 00f6 34       		.uleb128 0x34
  1636 00f7 00       		.byte	0
  1637 00f8 03       		.uleb128 0x3
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 52
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 52
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 52
 
 
  1638 00f9 0E       		.uleb128 0xe
@@ -3330,11 +3118,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1692 0131 8A8201   		.uleb128 0x410a
  1693 0134 00       		.byte	0
  1694 0135 02       		.uleb128 0x2
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 53
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 53
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 53
 
 
  1695 0136 18       		.uleb128 0x18
@@ -3394,11 +3178,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1749 001e 00000000 		.4byte	0
  1750 0022 00000000 		.4byte	0
  1751              	.LLST2:
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 54
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 54
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 54
 
 
  1752 0026 06000000 		.4byte	.LVL11
@@ -3458,11 +3238,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1806 00b9 1E000000 		.4byte	.LFE18
  1807 00bd 0100     		.2byte	0x1
  1808 00bf 55       		.byte	0x55
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 55
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 55
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 55
 
 
  1809 00c0 00000000 		.4byte	0
@@ -3522,11 +3298,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1863 0074 18000000 		.4byte	.LFE14-.LFB14
  1864 0078 00000000 		.4byte	.LFB15
  1865 007c 24000000 		.4byte	.LFE15-.LFB15
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 56
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 56
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 56
 
 
  1866 0080 00000000 		.4byte	.LFB16
@@ -3586,11 +3358,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1920 0078 00000000 		.4byte	.LFB17
  1921 007c 24000000 		.4byte	.LFE17
  1922 0080 00000000 		.4byte	.LFB18
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 57
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 57
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 57
 
 
  1923 0084 1E000000 		.4byte	.LFE18
@@ -3620,176 +3388,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1943              	.LASF15:
  1944 0000 72656733 		.ascii	"reg32\000"
  1944      3200
-<<<<<<< HEAD
- 1945              	.LASF46:
- 1946 0006 53504953 		.ascii	"SPIS_Start\000"
- 1946      5F537461 
- 1946      727400
- 1947              	.LASF49:
- 1948 0011 53504953 		.ascii	"SPIS_SetInterruptMode\000"
- 1948      5F536574 
- 1948      496E7465 
- 1948      72727570 
- 1948      744D6F64 
- 1949              	.LASF56:
- 1950 0027 4379496E 		.ascii	"CyIntSetVector\000"
- 1950      74536574 
- 1950      56656374 
- 1950      6F7200
- 1951              	.LASF53:
- 1952 0036 53504953 		.ascii	"SPIS_swStatusRx\000"
- 1952      5F737753 
- 1952      74617475 
- 1952      73527800 
- 1953              	.LASF31:
- 1954 0046 53504953 		.ascii	"SPIS_WriteTxData\000"
- 1954      5F577269 
- 1954      74655478 
- 1954      44617461 
- 1954      00
- 1955              	.LASF24:
- 1956 0057 53504953 		.ascii	"SPIS_DisableRxInt\000"
- 1956      5F446973 
- 1956      61626C65 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 58
-
-
- 1956      5278496E 
- 1956      7400
- 1957              	.LASF52:
- 1958 0069 53504953 		.ascii	"SPIS_swStatusTx\000"
- 1958      5F737753 
- 1958      74617475 
- 1958      73547800 
- 1959              	.LASF33:
- 1960 0079 53504953 		.ascii	"SPIS_ReadRxData\000"
- 1960      5F526561 
- 1960      64527844 
- 1960      61746100 
- 1961              	.LASF39:
- 1962 0089 53504953 		.ascii	"SPIS_ClearTxBuffer\000"
- 1962      5F436C65 
- 1962      61725478 
- 1962      42756666 
- 1962      657200
- 1963              	.LASF29:
- 1964 009c 53504953 		.ascii	"SPIS_ReadTxStatus\000"
- 1964      5F526561 
- 1964      64547853 
- 1964      74617475 
- 1964      7300
- 1965              	.LASF38:
- 1966 00ae 53504953 		.ascii	"SPIS_ClearRxBuffer\000"
- 1966      5F436C65 
- 1966      61725278 
- 1966      42756666 
- 1966      657200
- 1967              	.LASF34:
- 1968 00c1 72784461 		.ascii	"rxData\000"
- 1968      746100
- 1969              	.LASF37:
- 1970 00c8 53504953 		.ascii	"SPIS_GetTxBufferSize\000"
- 1970      5F476574 
- 1970      54784275 
- 1970      66666572 
- 1970      53697A65 
- 1971              	.LASF11:
- 1972 00dd 666C6F61 		.ascii	"float\000"
- 1972      7400
- 1973              	.LASF7:
- 1974 00e3 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1974      206C6F6E 
- 1974      6720756E 
- 1974      7369676E 
- 1974      65642069 
- 1975              	.LASF36:
- 1976 00fa 73697A65 		.ascii	"size\000"
- 1976      00
- 1977              	.LASF58:
- 1978 00ff 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1978      43313120 
- 1978      352E342E 
- 1978      31203230 
- 1978      31363036 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 59
-
-
- 1979 0132 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 1979      20726576 
- 1979      6973696F 
- 1979      6E203233 
- 1979      37373135 
- 1980 0165 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1980      66756E63 
- 1980      74696F6E 
- 1980      2D736563 
- 1980      74696F6E 
- 1981              	.LASF14:
- 1982 018d 72656738 		.ascii	"reg8\000"
- 1982      00
- 1983              	.LASF5:
- 1984 0192 6C6F6E67 		.ascii	"long unsigned int\000"
- 1984      20756E73 
- 1984      69676E65 
- 1984      6420696E 
- 1984      7400
- 1985              	.LASF9:
- 1986 01a4 75696E74 		.ascii	"uint8\000"
- 1986      3800
- 1987              	.LASF22:
- 1988 01aa 53504953 		.ascii	"SPIS_EnableRxInt\000"
- 1988      5F456E61 
- 1988      626C6552 
- 1988      78496E74 
- 1988      00
- 1989              	.LASF42:
- 1990 01bb 62797465 		.ascii	"byteCount\000"
- 1990      436F756E 
- 1990      7400
- 1991              	.LASF20:
- 1992 01c5 656E6162 		.ascii	"enableInterrupts\000"
- 1992      6C65496E 
- 1992      74657272 
- 1992      75707473 
- 1992      00
- 1993              	.LASF35:
- 1994 01d6 53504953 		.ascii	"SPIS_GetRxBufferSize\000"
- 1994      5F476574 
- 1994      52784275 
- 1994      66666572 
- 1994      53697A65 
- 1995              	.LASF51:
- 1996 01eb 53504953 		.ascii	"SPIS_initVar\000"
- 1996      5F696E69 
- 1996      74566172 
- 1996      00
- 1997              	.LASF21:
- 1998 01f8 53504953 		.ascii	"SPIS_EnableTxInt\000"
- 1998      5F456E61 
- 1998      626C6554 
- 1998      78496E74 
- 1998      00
- 1999              	.LASF12:
- 2000 0209 646F7562 		.ascii	"double\000"
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 60
-
-
- 2000      6C6500
- 2001              	.LASF27:
- 2002 0210 696E7453 		.ascii	"intSrc\000"
- 2002      726300
- 2003              	.LASF60:
- 2004 0217 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\E5PRJ3\\Projek"
- 2004      73657273 
- 2004      5C637269 
- 2004      6E675C44 
- 2004      6F63756D 
- 2005 0244 744D6169 		.ascii	"tMain\\Hovedprogram.cydsn\000"
- 2005      6E5C486F 
- 2005      76656470 
- 2005      726F6772 
- 2005      616D2E63 
-=======
  1945              	.LASF60:
  1946 0006 433A5C55 		.ascii	"C:\\Users\\Morten\\Desktop\\E5PRJ3\\ProjektMain\\Ho"
  1946      73657273 
@@ -3820,7 +3418,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1955 0074 53504953 		.ascii	"SPIS_swStatusRx\000"
  1955      5F737753 
  1955      74617475 
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 58
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 58
 
 
  1955      73527800 
@@ -3880,7 +3478,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1977 0121 6C6F6E67 		.ascii	"long long unsigned int\000"
  1977      206C6F6E 
  1977      6720756E 
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 59
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 59
 
 
  1977      7369676E 
@@ -3940,7 +3538,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  1997      53697A65 
  1998              	.LASF51:
  1999 0229 53504953 		.ascii	"SPIS_initVar\000"
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 60
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 60
 
 
  1999      5F696E69 
@@ -3958,7 +3556,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  2004              	.LASF27:
  2005 024e 696E7453 		.ascii	"intSrc\000"
  2005      726300
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  2006              	.LASF40:
  2007 0255 53504953 		.ascii	"SPIS_PutArray\000"
  2007      5F507574 
@@ -4000,13 +3597,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  2021      616C5365 
  2021      6374696F 
  2022              	.LASF57:
-<<<<<<< HEAD
- 2023 02e4 4379496E 		.ascii	"CyIntSetPriority\000"
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 61
-=======
  2023 02dc 4379496E 		.ascii	"CyIntSetPriority\000"
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 61
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 61
 
 
  2023      74536574 
@@ -4066,11 +3658,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 1
  2047 0370 62756666 		.ascii	"buffer\000"
  2047      657200
  2048              	.LASF50:
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc1U2Lao.s 			page 62
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\ccOcqWfY.s 			page 62
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc9FYa7n.s 			page 62
 
 
  2049 0377 53504953 		.ascii	"SPIS_ReadStatus\000"

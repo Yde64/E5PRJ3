@@ -44,7 +44,7 @@ struct Myspi {
 struct Myspi spi_devs[4];
 const int spi_devs_len = 4;  // Max nbr of devices
 static int spi_devs_cnt = 0; // Nbr devices present
-int my_spi_read_byte(struct file *filep, struct spi_device *spi, int *data);
+int spi_drv_read_byte(struct file *filep, struct spi_device *spi, int *data);
 ssize_t gpio_drv_read(struct file *filep, char __user *ubuf, size_t count, loff_t *f_pos);
 /* Macro to handle Errors */
 #define ERRGOTO(label, ...)                     \
@@ -148,7 +148,7 @@ ssize_t spi_drv_read(struct file *filep, char __user *ubuf,
     return gpio_drv_read(filep, ubuf, count, f_pos);        // call gpio read-function
   }
 
-  my_spi_read_byte(filep, spi_devs[minor].spi, &(spi_devs[minor].datain));      // call SPI read-function
+  spi_drv_read_byte(filep, spi_devs[minor].spi, &(spi_devs[minor].datain));      // call SPI read-function
   result = spi_devs[minor].datain;
   
   resultBuf[0] = (result >> 8);             // Rightshift 8 to remove everything but seconds.
@@ -170,7 +170,7 @@ ssize_t spi_drv_read(struct file *filep, char __user *ubuf,
   return 3;
 }
 
-int mygpio_open(struct inode *inode, struct file *filep)
+int gpio_open(struct inode *inode, struct file *filep)
 {
     int major, minor, err = 0, irq = -1;
     major = MAJOR(inode->i_rdev);
@@ -186,7 +186,7 @@ int mygpio_open(struct inode *inode, struct file *filep)
           err = request_irq(irq, handle_gpio_irq, IRQF_TRIGGER_RISING, "my_irq", NULL);
           if (err < 0)
               {
-                  printk(KERN_ALERT "request_irg failed with %d\n", err);
+                  printk(KERN_ALERT "request_irq failed with %d\n", err);
                   goto errhandler;
               }
 
@@ -198,7 +198,7 @@ int mygpio_open(struct inode *inode, struct file *filep)
     return err;
 }
 
-int mygpio_release(struct inode *inode, struct file *filep)
+int gpio_release(struct inode *inode, struct file *filep)
 {
    int minor, major;
    
@@ -228,7 +228,7 @@ ssize_t gpio_drv_read(struct file *filep, char __user *ubuf, size_t count, loff_
   return 2;
 }
 
-ssize_t my_spi_read_byte(struct file *filep, struct spi_device *spi, int *data)
+ssize_t spi_drv_read_byte(struct file *filep, struct spi_device *spi, int *data)
 {
   struct spi_transfer t[3];
   struct spi_message m;
@@ -295,8 +295,8 @@ struct file_operations spi_drv_fops =
   {
     .owner   = THIS_MODULE,
     .read    = spi_drv_read,
-    .release = mygpio_release,
-    .open    = mygpio_open,
+    .release = gpio_release,
+    .open    = gpio_open,
   };
 
 /**********************************************************
@@ -310,7 +310,6 @@ struct file_operations spi_drv_fops =
  */
 static int spi_drv_probe(struct spi_device *sdev)
 {
-  int err = 0;
   struct device *spi_drv_device;
 
   printk(KERN_DEBUG "New SPI device: %s using chip select: %i\n",
@@ -345,7 +344,7 @@ static int spi_drv_probe(struct spi_device *sdev)
   spi_devs[spi_devs_cnt].channel = 0x00; // channel address
   ++spi_devs_cnt;
 
-  return err;
+  return 0;
 }
 
 /*
@@ -365,7 +364,7 @@ static int spi_drv_remove(struct spi_device *sdev)
   return 0;
 }
 
-static int my_gpio_probe(struct platform_device *pdev)
+static int gpio_probe(struct platform_device *pdev)
 {
     int err = 0;
     struct device *dev = &pdev->dev; // Device ptr derived from current platform_device
@@ -421,7 +420,7 @@ static int my_gpio_probe(struct platform_device *pdev)
         return err;
 }
 
-static int my_gpio_remove(struct platform_device *pdev)
+static int gpio_remove(struct platform_device *pdev)
 {  
     for(int i = 0; i < (spi_devs_cnt+1); i++)
     {
@@ -465,8 +464,8 @@ static const struct of_device_id gpio_drv_device_match[] =
 
 static struct platform_driver gpio_drv =
 	{
-		.probe = my_gpio_probe,
-		.remove = my_gpio_remove,
+		.probe = gpio_probe,
+		.remove = gpio_remove,
 		.driver = {
 			.name = "my_gpio_platdev",
 			.of_match_table = gpio_drv_device_match,

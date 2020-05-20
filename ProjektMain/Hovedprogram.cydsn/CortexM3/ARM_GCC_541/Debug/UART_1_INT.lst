@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccRufX9X.s 			page 1
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cct0aLdh.s 			page 1
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cckXd7fK.s 			page 1
 
 
    1              		.syntax unified
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cct0aLdh.s 			page 1
   55 0043 E7000000 		.4byte	.LASF5
   56 0047 02       		.uleb128 0x2
   57 0048 08       		.byte	0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccRufX9X.s 			page 2
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cct0aLdh.s 			page 2
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cckXd7fK.s 			page 2
 
 
   58 0049 05       		.byte	0x5
@@ -126,11 +118,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cct0aLdh.s 			page 1
  112 0011 00       		.byte	0
  113 0012 0B       		.uleb128 0xb
  114 0013 0B       		.uleb128 0xb
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccRufX9X.s 			page 3
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cct0aLdh.s 			page 3
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cckXd7fK.s 			page 3
 
 
  115 0014 3E       		.uleb128 0x3e
@@ -178,81 +166,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cct0aLdh.s 			page 1
  149      676E6564 
  149      20696E74 
  149      00
-<<<<<<< HEAD
- 150              	.LASF14:
- 151 001b 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 151      43313120 
- 151      352E342E 
- 151      31203230 
- 151      31363036 
- 152 004e 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 152      20726576 
- 152      6973696F 
- 152      6E203233 
- 152      37373135 
- 153 0081 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccRufX9X.s 			page 4
-
-
- 153      66756E63 
- 153      74696F6E 
- 153      2D736563 
- 153      74696F6E 
- 154              	.LASF5:
- 155 00a9 6C6F6E67 		.ascii	"long unsigned int\000"
- 155      20756E73 
- 155      69676E65 
- 155      6420696E 
- 155      7400
- 156              	.LASF7:
- 157 00bb 6C6F6E67 		.ascii	"long long unsigned int\000"
- 157      206C6F6E 
- 157      6720756E 
- 157      7369676E 
- 157      65642069 
- 158              	.LASF9:
- 159 00d2 666C6F61 		.ascii	"float\000"
- 159      7400
- 160              	.LASF1:
- 161 00d8 756E7369 		.ascii	"unsigned char\000"
- 161      676E6564 
- 161      20636861 
- 161      7200
- 162              	.LASF11:
- 163 00e6 63686172 		.ascii	"char\000"
- 163      00
- 164              	.LASF4:
- 165 00eb 6C6F6E67 		.ascii	"long int\000"
- 165      20696E74 
- 165      00
- 166              	.LASF15:
- 167 00f4 47656E65 		.ascii	"Generated_Source\\PSoC5\\UART_1_INT.c\000"
- 167      72617465 
- 167      645F536F 
- 167      75726365 
- 167      5C50536F 
- 168              	.LASF10:
- 169 0118 646F7562 		.ascii	"double\000"
- 169      6C6500
- 170              	.LASF3:
- 171 011f 73686F72 		.ascii	"short unsigned int\000"
- 171      7420756E 
- 171      7369676E 
- 171      65642069 
- 171      6E7400
- 172              	.LASF0:
- 173 0132 7369676E 		.ascii	"signed char\000"
- 173      65642063 
- 173      68617200 
- 174              	.LASF16:
- 175 013e 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\E5PRJ3\\Projek"
- 175      73657273 
- 175      5C637269 
- 175      6E675C44 
- 175      6F63756D 
- 176 016b 744D6169 		.ascii	"tMain\\Hovedprogram.cydsn\000"
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccRufX9X.s 			page 5
-=======
  150              	.LASF16:
  151 001b 433A5C55 		.ascii	"C:\\Users\\Morten\\Desktop\\E5PRJ3\\ProjektMain\\Ho"
  151      73657273 
@@ -265,7 +178,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cct0aLdh.s 			page 1
  152      7964736E 
  152      00
  153              	.LASF14:
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cct0aLdh.s 			page 4
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cckXd7fK.s 			page 4
 
 
  154 0059 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
@@ -325,8 +238,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cct0aLdh.s 			page 1
  174      7369676E 
  174      65642069 
  174      6E7400
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cct0aLdh.s 			page 5
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cckXd7fK.s 			page 5
 
 
  175              	.LASF0:

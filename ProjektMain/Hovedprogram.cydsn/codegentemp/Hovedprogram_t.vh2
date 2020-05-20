@@ -1,6 +1,6 @@
--- Project:   C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Hovedprogram.cyprj
--- Generated: 05/15/2020 19:19:29
--- PSoC Creator  4.3
+-- Project:   C:\Users\Morten\Desktop\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Hovedprogram.cyprj
+-- Generated: 05/19/2020 12:02:35
+-- PSoC Creator  4.2
 
 ENTITY Hovedprogram IS
     PORT(

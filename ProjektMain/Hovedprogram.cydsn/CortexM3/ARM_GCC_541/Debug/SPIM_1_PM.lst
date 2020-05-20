@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 1
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchgOaFN.s 			page 1
 
 
    1              		.syntax unified
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
   28:Generated_Source\PSoC5/SPIM_1_PM.c **** * Function Name: SPIM_1_SaveConfig
   29:Generated_Source\PSoC5/SPIM_1_PM.c **** ********************************************************************************
   30:Generated_Source\PSoC5/SPIM_1_PM.c **** *
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 2
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 2
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchgOaFN.s 			page 2
 
 
   31:Generated_Source\PSoC5/SPIM_1_PM.c **** * Summary:
@@ -126,11 +118,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
   50 0000 7047     		bx	lr
   51              		.cfi_endproc
   52              	.LFE1:
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 3
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 3
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchgOaFN.s 			page 3
 
 
   53              		.size	SPIM_1_RestoreConfig, .-SPIM_1_RestoreConfig
@@ -190,11 +178,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
   77              		.loc 1 92 0
   78 000e FFF7FEFF 		bl	SPIM_1_Stop
   79              	.LVL0:
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 4
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 4
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchgOaFN.s 			page 4
 
 
   80 0012 08BD     		pop	{r3, pc}
@@ -254,11 +238,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
  101 0000 08B5     		push	{r3, lr}
  102              		.cfi_def_cfa_offset 8
  103              		.cfi_offset 3, -8
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 5
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 5
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchgOaFN.s 			page 5
 
 
  104              		.cfi_offset 14, -4
@@ -318,11 +298,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
  139 0004 0400     		.2byte	0x4
  140 0006 00000000 		.4byte	.Ldebug_abbrev0
  141 000a 04       		.byte	0x4
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 6
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 6
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchgOaFN.s 			page 6
 
 
  142 000b 01       		.uleb128 0x1
@@ -381,13 +357,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
  195 0077 02       		.uleb128 0x2
  196 0078 04       		.byte	0x4
  197 0079 04       		.byte	0x4
-<<<<<<< HEAD
- 198 007a 79000000 		.4byte	.LASF9
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 7
-=======
  198 007a B7000000 		.4byte	.LASF9
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 7
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchgOaFN.s 			page 7
 
 
  199 007e 02       		.uleb128 0x2
@@ -447,11 +418,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
  253 00e8 09       		.uleb128 0x9
  254 00e9 3E000000 		.4byte	.LASF20
  255 00ed 01       		.byte	0x1
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 8
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 8
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchgOaFN.s 			page 8
 
 
  256 00ee 3D       		.byte	0x3d
@@ -511,11 +478,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
  310 016c 53000000 		.4byte	.LASF25
  311 0170 03       		.byte	0x3
  312 0171 4C       		.byte	0x4c
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 9
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 9
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchgOaFN.s 			page 9
 
 
  313 0172 00       		.byte	0
@@ -575,11 +538,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
  367 0033 13       		.uleb128 0x13
  368 0034 00       		.byte	0
  369 0035 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 10
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 10
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchgOaFN.s 			page 10
 
 
  370 0036 05       		.uleb128 0x5
@@ -639,11 +598,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
  424 006c 0E       		.uleb128 0xe
  425 006d 3A       		.uleb128 0x3a
  426 006e 0B       		.uleb128 0xb
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 11
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 11
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchgOaFN.s 			page 11
 
 
  427 006f 3B       		.uleb128 0x3b
@@ -703,11 +658,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
  481 00a9 0B       		.uleb128 0xb
  482 00aa 3B       		.uleb128 0x3b
  483 00ab 0B       		.uleb128 0xb
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 12
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 12
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchgOaFN.s 			page 12
 
 
  484 00ac 49       		.uleb128 0x49
@@ -767,73 +718,13 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
  538              		.section	.debug_line,"",%progbits
  539              	.Ldebug_line0:
  540 0000 9E000000 		.section	.debug_str,"MS",%progbits,1
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 13
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 13
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchgOaFN.s 			page 13
 
 
  540      02005200 
  540      00000201 
  540      FB0E0D00 
  540      01010101 
-<<<<<<< HEAD
- 541              	.LASF20:
- 542 0000 5350494D 		.ascii	"SPIM_1_RestoreConfig\000"
- 542      5F315F52 
- 542      6573746F 
- 542      7265436F 
- 542      6E666967 
- 543              	.LASF25:
- 544 0015 5350494D 		.ascii	"SPIM_1_Enable\000"
- 544      5F315F45 
- 544      6E61626C 
- 544      6500
- 545              	.LASF27:
- 546 0023 47656E65 		.ascii	"Generated_Source\\PSoC5\\SPIM_1_PM.c\000"
- 546      72617465 
- 546      645F536F 
- 546      75726365 
- 546      5C50536F 
- 547              	.LASF3:
- 548 0046 73686F72 		.ascii	"short unsigned int\000"
- 548      7420756E 
- 548      7369676E 
- 548      65642069 
- 548      6E7400
- 549              	.LASF19:
- 550 0059 5350494D 		.ascii	"SPIM_1_SaveConfig\000"
- 550      5F315F53 
- 550      61766543 
- 550      6F6E6669 
- 550      6700
- 551              	.LASF29:
- 552 006b 5350494D 		.ascii	"SPIM_1_backup\000"
- 552      5F315F62 
- 552      61636B75 
- 552      7000
- 553              	.LASF9:
- 554 0079 666C6F61 		.ascii	"float\000"
- 554      7400
- 555              	.LASF1:
- 556 007f 756E7369 		.ascii	"unsigned char\000"
- 556      676E6564 
- 556      20636861 
- 556      7200
- 557              	.LASF26:
- 558 008d 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 558      43313120 
- 558      352E342E 
- 558      31203230 
- 558      31363036 
- 559 00c0 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 559      20726576 
- 559      6973696F 
- 559      6E203233 
- 559      37373135 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 14
-=======
  541              	.LASF28:
  542 0000 433A5C55 		.ascii	"C:\\Users\\Morten\\Desktop\\E5PRJ3\\ProjektMain\\Ho"
  542      73657273 
@@ -887,8 +778,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
  559      676E6564 
  559      20636861 
  559      7200
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 14
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchgOaFN.s 			page 14
 
 
  560              	.LASF26:
@@ -948,11 +838,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 1
  581      41434B55 
  581      505F5354 
  581      52554354 
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc8Wy7mQ.s 			page 15
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchHihjf.s 			page 15
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\Morten\AppData\Local\Temp\cchgOaFN.s 			page 15
 
 
  582              	.LASF7:
