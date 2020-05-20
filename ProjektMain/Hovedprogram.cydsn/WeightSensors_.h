@@ -47,6 +47,7 @@ void CalibrateSensors();
 
 void WeightSensorsInit();
 int CompareWeight();
+long int getCalWeightDebug(int player);
 
 
 /* [] END OF FILE */

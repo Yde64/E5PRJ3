@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 1
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 1
 
 
    1              		.syntax unified
@@ -61,13 +57,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
   54 0019 03       		.byte	3
   55 001a 01       		.byte	1
   56 001b 40       		.byte	64
-<<<<<<< HEAD
   57 001c 63       		.byte	99
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 2
-=======
-  57 001c 5E       		.byte	94
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 2
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 2
 
 
   58 001d 04       		.byte	4
@@ -127,11 +118,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  112 0053 40       		.byte	64
  113 0054 5E       		.byte	94
  114 0055 16       		.byte	22
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 3
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 3
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 3
 
 
  115 0056 01       		.byte	1
@@ -191,11 +178,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  169 008c 0E       		.byte	14
  170 008d 48       		.byte	72
  171 008e 01       		.byte	1
-<<<<<<< HEAD
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 4
-=======
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 4
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 4
 
 
  172 008f 40       		.byte	64
@@ -246,7 +229,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  217 00bc 87       		.byte	-121
  218 00bd 0D       		.byte	13
  219 00be 89       		.byte	-119
-<<<<<<< HEAD
  220 00bf 72       		.byte	114
  221 00c0 8B       		.byte	-117
  222 00c1 0D       		.byte	13
@@ -256,7 +238,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  226 00c5 07       		.byte	7
  227 00c6 06       		.byte	6
  228 00c7 08       		.byte	8
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 5
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 5
 
 
  229 00c8 08       		.byte	8
@@ -266,27 +248,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  233 00cc 0E       		.byte	14
  234 00cd 04       		.byte	4
  235 00ce 0F       		.byte	15
-=======
- 220 00bf 0D       		.byte	13
- 221 00c0 8A       		.byte	-118
- 222 00c1 72       		.byte	114
- 223 00c2 02       		.byte	2
- 224 00c3 01       		.byte	1
- 225 00c4 03       		.byte	3
- 226 00c5 01       		.byte	1
- 227 00c6 04       		.byte	4
- 228 00c7 01       		.byte	1
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 5
-
-
- 229 00c8 05       		.byte	5
- 230 00c9 01       		.byte	1
- 231 00ca 09       		.byte	9
- 232 00cb 01       		.byte	1
- 233 00cc 14       		.byte	20
- 234 00cd 01       		.byte	1
- 235 00ce 15       		.byte	21
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  236 00cf 01       		.byte	1
  237 00d0 12       		.byte	18
  238 00d1 04       		.byte	4
@@ -332,27 +293,17 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  278 00f9 04       		.byte	4
  279 00fa 5A       		.byte	90
  280 00fb 04       		.byte	4
-<<<<<<< HEAD
  281 00fc 5B       		.byte	91
  282 00fd 04       		.byte	4
  283 00fe 5C       		.byte	92
  284 00ff 41       		.byte	65
  285 0100 5D       		.byte	93
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 6
-=======
- 281 00fc 5F       		.byte	95
- 282 00fd 01       		.byte	1
- 283 00fe 62       		.byte	98
- 284 00ff C0       		.byte	-64
- 285 0100 64       		.byte	100
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 6
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 6
 
 
  286 0101 14       		.byte	20
  287 0102 5F       		.byte	95
  288 0103 01       		.byte	1
-<<<<<<< HEAD
  289 0104 60       		.byte	96
  290 0105 40       		.byte	64
  291 0106 62       		.byte	98
@@ -407,7 +358,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  340 0137 08       		.byte	8
  341 0138 BE       		.byte	-66
  342 0139 01       		.byte	1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 7
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 7
 
 
  343 013a BF       		.byte	-65
@@ -453,114 +404,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  383 0162 DF       		.byte	-33
  384 0163 01       		.byte	1
  385 0164 E0       		.byte	-32
-=======
- 289 0104 66       		.byte	102
- 290 0105 10       		.byte	16
- 291 0106 67       		.byte	103
- 292 0107 11       		.byte	17
- 293 0108 68       		.byte	104
- 294 0109 C0       		.byte	-64
- 295 010a 69       		.byte	105
- 296 010b 01       		.byte	1
- 297 010c 6B       		.byte	107
- 298 010d 11       		.byte	17
- 299 010e 6C       		.byte	108
- 300 010f 40       		.byte	64
- 301 0110 6D       		.byte	109
- 302 0111 01       		.byte	1
- 303 0112 6E       		.byte	110
- 304 0113 40       		.byte	64
- 305 0114 6F       		.byte	111
- 306 0115 01       		.byte	1
- 307 0116 84       		.byte	-124
- 308 0117 2C       		.byte	44
- 309 0118 86       		.byte	-122
- 310 0119 13       		.byte	19
- 311 011a 8B       		.byte	-117
- 312 011b 01       		.byte	1
- 313 011c 8C       		.byte	-116
- 314 011d 07       		.byte	7
- 315 011e 8E       		.byte	-114
- 316 011f 18       		.byte	24
- 317 0120 92       		.byte	-110
- 318 0121 34       		.byte	52
- 319 0122 9A       		.byte	-102
- 320 0123 09       		.byte	9
- 321 0124 9C       		.byte	-100
- 322 0125 21       		.byte	33
- 323 0126 9E       		.byte	-98
- 324 0127 0A       		.byte	10
- 325 0128 AA       		.byte	-86
- 326 0129 02       		.byte	2
- 327 012a B0       		.byte	-80
- 328 012b 3F       		.byte	63
- 329 012c B2       		.byte	-78
- 330 012d 3F       		.byte	63
- 331 012e B3       		.byte	-77
- 332 012f 01       		.byte	1
- 333 0130 C0       		.byte	-64
- 334 0131 43       		.byte	67
- 335 0132 C1       		.byte	-63
- 336 0133 05       		.byte	5
- 337 0134 C2       		.byte	-62
- 338 0135 60       		.byte	96
- 339 0136 C5       		.byte	-59
- 340 0137 CD       		.byte	-51
- 341 0138 C6       		.byte	-58
- 342 0139 B0       		.byte	-80
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 7
-
-
- 343 013a C7       		.byte	-57
- 344 013b EF       		.byte	-17
- 345 013c C8       		.byte	-56
- 346 013d 3B       		.byte	59
- 347 013e C9       		.byte	-55
- 348 013f 0F       		.byte	15
- 349 0140 CA       		.byte	-54
- 350 0141 FF       		.byte	-1
- 351 0142 CB       		.byte	-53
- 352 0143 FF       		.byte	-1
- 353 0144 CC       		.byte	-52
- 354 0145 23       		.byte	35
- 355 0146 CE       		.byte	-50
- 356 0147 B0       		.byte	-80
- 357 0148 CF       		.byte	-49
- 358 0149 0C       		.byte	12
- 359 014a D0       		.byte	-48
- 360 014b 04       		.byte	4
- 361 014c D8       		.byte	-40
- 362 014d 04       		.byte	4
- 363 014e D9       		.byte	-39
- 364 014f 04       		.byte	4
- 365 0150 DA       		.byte	-38
- 366 0151 04       		.byte	4
- 367 0152 DF       		.byte	-33
- 368 0153 01       		.byte	1
- 369 0154 E2       		.byte	-30
- 370 0155 C0       		.byte	-64
- 371 0156 E4       		.byte	-28
- 372 0157 40       		.byte	64
- 373 0158 E5       		.byte	-27
- 374 0159 01       		.byte	1
- 375 015a E6       		.byte	-26
- 376 015b 10       		.byte	16
- 377 015c E7       		.byte	-25
- 378 015d 11       		.byte	17
- 379 015e E8       		.byte	-24
- 380 015f C0       		.byte	-64
- 381 0160 E9       		.byte	-23
- 382 0161 01       		.byte	1
- 383 0162 EB       		.byte	-21
- 384 0163 11       		.byte	17
- 385 0164 EC       		.byte	-20
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  386 0165 40       		.byte	64
  387 0166 E2       		.byte	-30
  388 0167 40       		.byte	64
  389 0168 E4       		.byte	-28
  390 0169 40       		.byte	64
-<<<<<<< HEAD
  391 016a E5       		.byte	-27
  392 016b 40       		.byte	64
  393 016c E6       		.byte	-26
@@ -570,7 +418,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  397 0170 EA       		.byte	-22
  398 0171 80       		.byte	-128
  399 0172 EC       		.byte	-20
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 8
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 8
 
 
  400 0173 80       		.byte	-128
@@ -630,85 +478,10 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  454 01a9 01       		.byte	1
  455 01aa 4D       		.byte	77
  456 01ab 02       		.byte	2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 9
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 9
 
 
  457 01ac 4F       		.byte	79
-=======
- 391 016a EF       		.byte	-17
- 392 016b 01       		.byte	1
- 393 016c 00       		.byte	0
- 394 016d 04       		.byte	4
- 395 016e 01       		.byte	1
- 396 016f 01       		.byte	1
- 397 0170 05       		.byte	5
- 398 0171 88       		.byte	-120
- 399 0172 09       		.byte	9
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 8
-
-
- 400 0173 88       		.byte	-120
- 401 0174 0C       		.byte	12
- 402 0175 40       		.byte	64
- 403 0176 0D       		.byte	13
- 404 0177 20       		.byte	32
- 405 0178 0E       		.byte	14
- 406 0179 80       		.byte	-128
- 407 017a 11       		.byte	17
- 408 017b 10       		.byte	16
- 409 017c 17       		.byte	23
- 410 017d 20       		.byte	32
- 411 017e 19       		.byte	25
- 412 017f 20       		.byte	32
- 413 0180 1B       		.byte	27
- 414 0181 10       		.byte	16
- 415 0182 1E       		.byte	30
- 416 0183 A0       		.byte	-96
- 417 0184 20       		.byte	32
- 418 0185 10       		.byte	16
- 419 0186 27       		.byte	39
- 420 0187 20       		.byte	32
- 421 0188 30       		.byte	48
- 422 0189 80       		.byte	-128
- 423 018a 31       		.byte	49
- 424 018b 88       		.byte	-120
- 425 018c 32       		.byte	50
- 426 018d 10       		.byte	16
- 427 018e 38       		.byte	56
- 428 018f 04       		.byte	4
- 429 0190 39       		.byte	57
- 430 0191 11       		.byte	17
- 431 0192 3C       		.byte	60
- 432 0193 20       		.byte	32
- 433 0194 40       		.byte	64
- 434 0195 20       		.byte	32
- 435 0196 43       		.byte	67
- 436 0197 20       		.byte	32
- 437 0198 44       		.byte	68
- 438 0199 60       		.byte	96
- 439 019a 48       		.byte	72
- 440 019b 01       		.byte	1
- 441 019c 49       		.byte	73
- 442 019d A0       		.byte	-96
- 443 019e 4B       		.byte	75
- 444 019f 40       		.byte	64
- 445 01a0 4D       		.byte	77
- 446 01a1 02       		.byte	2
- 447 01a2 4E       		.byte	78
- 448 01a3 30       		.byte	48
- 449 01a4 4F       		.byte	79
- 450 01a5 60       		.byte	96
- 451 01a6 54       		.byte	84
- 452 01a7 10       		.byte	16
- 453 01a8 55       		.byte	85
- 454 01a9 20       		.byte	32
- 455 01aa 56       		.byte	86
- 456 01ab 01       		.byte	1
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 9
-
-
- 457 01ac 57       		.byte	87
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  458 01ad 04       		.byte	4
  459 01ae 56       		.byte	86
  460 01af 04       		.byte	4
@@ -758,7 +531,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  504 01db 02       		.byte	2
  505 01dc E2       		.byte	-30
  506 01dd 01       		.byte	1
-<<<<<<< HEAD
  507 01de 01       		.byte	1
  508 01df 02       		.byte	2
  509 01e0 0F       		.byte	15
@@ -766,17 +538,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  511 01e2 12       		.byte	18
  512 01e3 01       		.byte	1
  513 01e4 17       		.byte	23
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 10
-=======
- 507 01de 1A       		.byte	26
- 508 01df 01       		.byte	1
- 509 01e0 1B       		.byte	27
- 510 01e1 05       		.byte	5
- 511 01e2 1D       		.byte	29
- 512 01e3 2D       		.byte	45
- 513 01e4 1E       		.byte	30
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 10
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 10
 
 
  514 01e5 01       		.byte	1
@@ -794,7 +556,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  526 01f1 02       		.byte	2
  527 01f2 34       		.byte	52
  528 01f3 01       		.byte	1
-<<<<<<< HEAD
  529 01f4 3E       		.byte	62
  530 01f5 10       		.byte	16
  531 01f6 3F       		.byte	63
@@ -837,7 +598,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  568 021b 40       		.byte	64
  569 021c 66       		.byte	102
  570 021d 80       		.byte	-128
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 11
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 11
 
 
  571 021e 68       		.byte	104
@@ -897,7 +658,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  625 0254 C7       		.byte	-57
  626 0255 02       		.byte	2
  627 0256 C8       		.byte	-56
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 12
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 12
 
 
  628 0257 13       		.byte	19
@@ -912,125 +673,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  637 0260 CE       		.byte	-50
  638 0261 03       		.byte	3
  639 0262 CF       		.byte	-49
-=======
- 529 01f4 31       		.byte	49
- 530 01f5 38       		.byte	56
- 531 01f6 33       		.byte	51
- 532 01f7 04       		.byte	4
- 533 01f8 35       		.byte	53
- 534 01f9 02       		.byte	2
- 535 01fa 37       		.byte	55
- 536 01fb 01       		.byte	1
- 537 01fc 3B       		.byte	59
- 538 01fd 02       		.byte	2
- 539 01fe 3E       		.byte	62
- 540 01ff 01       		.byte	1
- 541 0200 3F       		.byte	63
- 542 0201 54       		.byte	84
- 543 0202 40       		.byte	64
- 544 0203 12       		.byte	18
- 545 0204 41       		.byte	65
- 546 0205 06       		.byte	6
- 547 0206 45       		.byte	69
- 548 0207 0C       		.byte	12
- 549 0208 47       		.byte	71
- 550 0209 BE       		.byte	-66
- 551 020a 48       		.byte	72
- 552 020b 31       		.byte	49
- 553 020c 49       		.byte	73
- 554 020d FF       		.byte	-1
- 555 020e 4A       		.byte	74
- 556 020f FF       		.byte	-1
- 557 0210 4B       		.byte	75
- 558 0211 FF       		.byte	-1
- 559 0212 4E       		.byte	78
- 560 0213 F0       		.byte	-16
- 561 0214 4F       		.byte	79
- 562 0215 44       		.byte	68
- 563 0216 50       		.byte	80
- 564 0217 0C       		.byte	12
- 565 0218 54       		.byte	84
- 566 0219 01       		.byte	1
- 567 021a 58       		.byte	88
- 568 021b 04       		.byte	4
- 569 021c 59       		.byte	89
- 570 021d 04       		.byte	4
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 11
-
-
- 571 021e 5A       		.byte	90
- 572 021f 04       		.byte	4
- 573 0220 5B       		.byte	91
- 574 0221 04       		.byte	4
- 575 0222 5D       		.byte	93
- 576 0223 11       		.byte	17
- 577 0224 5F       		.byte	95
- 578 0225 01       		.byte	1
- 579 0226 66       		.byte	102
- 580 0227 C0       		.byte	-64
- 581 0228 6A       		.byte	106
- 582 0229 40       		.byte	64
- 583 022a 6B       		.byte	107
- 584 022b 02       		.byte	2
- 585 022c 80       		.byte	-128
- 586 022d 0D       		.byte	13
- 587 022e 84       		.byte	-124
- 588 022f 01       		.byte	1
- 589 0230 86       		.byte	-122
- 590 0231 02       		.byte	2
- 591 0232 8C       		.byte	-116
- 592 0233 02       		.byte	2
- 593 0234 8E       		.byte	-114
- 594 0235 0D       		.byte	13
- 595 0236 90       		.byte	-112
- 596 0237 0D       		.byte	13
- 597 0238 94       		.byte	-108
- 598 0239 0D       		.byte	13
- 599 023a 98       		.byte	-104
- 600 023b 02       		.byte	2
- 601 023c 9A       		.byte	-102
- 602 023d 08       		.byte	8
- 603 023e 9C       		.byte	-100
- 604 023f 02       		.byte	2
- 605 0240 9E       		.byte	-98
- 606 0241 04       		.byte	4
- 607 0242 A0       		.byte	-96
- 608 0243 0D       		.byte	13
- 609 0244 A8       		.byte	-88
- 610 0245 0D       		.byte	13
- 611 0246 B0       		.byte	-80
- 612 0247 0F       		.byte	15
- 613 0248 BA       		.byte	-70
- 614 0249 02       		.byte	2
- 615 024a C0       		.byte	-64
- 616 024b 02       		.byte	2
- 617 024c C6       		.byte	-58
- 618 024d 04       		.byte	4
- 619 024e C9       		.byte	-55
- 620 024f FF       		.byte	-1
- 621 0250 CA       		.byte	-54
- 622 0251 07       		.byte	7
- 623 0252 CB       		.byte	-53
- 624 0253 FF       		.byte	-1
- 625 0254 CC       		.byte	-52
- 626 0255 40       		.byte	64
- 627 0256 CD       		.byte	-51
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 12
-
-
- 628 0257 20       		.byte	32
- 629 0258 CE       		.byte	-50
- 630 0259 F0       		.byte	-16
- 631 025a CF       		.byte	-49
- 632 025b 05       		.byte	5
- 633 025c D0       		.byte	-48
- 634 025d 08       		.byte	8
- 635 025e D8       		.byte	-40
- 636 025f 04       		.byte	4
- 637 0260 DA       		.byte	-38
- 638 0261 04       		.byte	4
- 639 0262 DD       		.byte	-35
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  640 0263 01       		.byte	1
  641 0264 D0       		.byte	-48
  642 0265 18       		.byte	24
@@ -1070,14 +712,13 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  676 0287 80       		.byte	-128
  677 0288 EE       		.byte	-18
  678 0289 80       		.byte	-128
-<<<<<<< HEAD
  679 028a 03       		.byte	3
  680 028b 02       		.byte	2
  681 028c 0E       		.byte	14
  682 028d 40       		.byte	64
  683 028e 12       		.byte	18
  684 028f 08       		.byte	8
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 13
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 13
 
 
  685 0290 15       		.byte	21
@@ -1099,36 +740,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  701 02a0 2A       		.byte	42
  702 02a1 14       		.byte	20
  703 02a2 2B       		.byte	43
-=======
- 679 028a 24       		.byte	36
- 680 028b 01       		.byte	1
- 681 028c 26       		.byte	38
- 682 028d 04       		.byte	4
- 683 028e 27       		.byte	39
- 684 028f 48       		.byte	72
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 13
-
-
- 685 0290 2C       		.byte	44
- 686 0291 08       		.byte	8
- 687 0292 2D       		.byte	45
- 688 0293 40       		.byte	64
- 689 0294 2F       		.byte	47
- 690 0295 20       		.byte	32
- 691 0296 36       		.byte	54
- 692 0297 10       		.byte	16
- 693 0298 37       		.byte	55
- 694 0299 40       		.byte	64
- 695 029a 3C       		.byte	60
- 696 029b 02       		.byte	2
- 697 029c 3D       		.byte	61
- 698 029d 20       		.byte	32
- 699 029e 40       		.byte	64
- 700 029f 04       		.byte	4
- 701 02a0 45       		.byte	69
- 702 02a1 20       		.byte	32
- 703 02a2 46       		.byte	70
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  704 02a3 01       		.byte	1
  705 02a4 2E       		.byte	46
  706 02a5 40       		.byte	64
@@ -1164,11 +775,10 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  736 02c3 05       		.byte	5
  737 02c4 4C       		.byte	76
  738 02c5 04       		.byte	4
-<<<<<<< HEAD
  739 02c6 50       		.byte	80
  740 02c7 04       		.byte	4
  741 02c8 52       		.byte	82
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 14
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 14
 
 
  742 02c9 08       		.byte	8
@@ -1189,32 +799,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  757 02d8 63       		.byte	99
  758 02d9 80       		.byte	-128
  759 02da 68       		.byte	104
-=======
- 739 02c6 91       		.byte	-111
- 740 02c7 11       		.byte	17
- 741 02c8 92       		.byte	-110
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 14
-
-
- 742 02c9 40       		.byte	64
- 743 02ca 98       		.byte	-104
- 744 02cb 20       		.byte	32
- 745 02cc 9C       		.byte	-100
- 746 02cd 40       		.byte	64
- 747 02ce A0       		.byte	-96
- 748 02cf 80       		.byte	-128
- 749 02d0 A1       		.byte	-95
- 750 02d1 08       		.byte	8
- 751 02d2 A2       		.byte	-94
- 752 02d3 10       		.byte	16
- 753 02d4 A4       		.byte	-92
- 754 02d5 01       		.byte	1
- 755 02d6 A6       		.byte	-90
- 756 02d7 02       		.byte	2
- 757 02d8 A7       		.byte	-89
- 758 02d9 20       		.byte	32
- 759 02da AA       		.byte	-86
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  760 02db 01       		.byte	1
  761 02dc 69       		.byte	105
  762 02dd 40       		.byte	64
@@ -1226,7 +810,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  768 02e3 40       		.byte	64
  769 02e4 89       		.byte	-119
  770 02e5 02       		.byte	2
-<<<<<<< HEAD
  771 02e6 8B       		.byte	-117
  772 02e7 01       		.byte	1
  773 02e8 8E       		.byte	-114
@@ -1255,7 +838,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  796 02ff 02       		.byte	2
  797 0300 C0       		.byte	-64
  798 0301 01       		.byte	1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 15
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 15
 
 
  799 0302 C2       		.byte	-62
@@ -1315,7 +898,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  853 0338 3E       		.byte	62
  854 0339 10       		.byte	16
  855 033a 40       		.byte	64
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 16
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 16
 
 
  856 033b 32       		.byte	50
@@ -1368,163 +951,14 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  903 036a 6C       		.byte	108
  904 036b 40       		.byte	64
  905 036c 6D       		.byte	109
-=======
- 771 02e6 C0       		.byte	-64
- 772 02e7 ED       		.byte	-19
- 773 02e8 C2       		.byte	-62
- 774 02e9 CF       		.byte	-49
- 775 02ea C4       		.byte	-60
- 776 02eb 0A       		.byte	10
- 777 02ec CA       		.byte	-54
- 778 02ed 70       		.byte	112
- 779 02ee CC       		.byte	-52
- 780 02ef 30       		.byte	48
- 781 02f0 CE       		.byte	-50
- 782 02f1 A0       		.byte	-96
- 783 02f2 D0       		.byte	-48
- 784 02f3 34       		.byte	52
- 785 02f4 D2       		.byte	-46
- 786 02f5 20       		.byte	32
- 787 02f6 D6       		.byte	-42
- 788 02f7 F0       		.byte	-16
- 789 02f8 E2       		.byte	-30
- 790 02f9 40       		.byte	64
- 791 02fa E6       		.byte	-26
- 792 02fb 08       		.byte	8
- 793 02fc E8       		.byte	-24
- 794 02fd 04       		.byte	4
- 795 02fe EE       		.byte	-18
- 796 02ff 28       		.byte	40
- 797 0300 05       		.byte	5
- 798 0301 0C       		.byte	12
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 15
-
-
- 799 0302 07       		.byte	7
- 800 0303 11       		.byte	17
- 801 0304 0A       		.byte	10
- 802 0305 03       		.byte	3
- 803 0306 0D       		.byte	13
- 804 0307 1C       		.byte	28
- 805 0308 0E       		.byte	14
- 806 0309 05       		.byte	5
- 807 030a 0F       		.byte	15
- 808 030b 02       		.byte	2
- 809 030c 10       		.byte	16
- 810 030d 06       		.byte	6
- 811 030e 12       		.byte	18
- 812 030f 01       		.byte	1
- 813 0310 16       		.byte	22
- 814 0311 06       		.byte	6
- 815 0312 17       		.byte	23
- 816 0313 03       		.byte	3
- 817 0314 1A       		.byte	26
- 818 0315 01       		.byte	1
- 819 0316 1D       		.byte	29
- 820 0317 10       		.byte	16
- 821 0318 1F       		.byte	31
- 822 0319 0C       		.byte	12
- 823 031a 21       		.byte	33
- 824 031b 14       		.byte	20
- 825 031c 22       		.byte	34
- 826 031d 02       		.byte	2
- 827 031e 29       		.byte	41
- 828 031f 09       		.byte	9
- 829 0320 2B       		.byte	43
- 830 0321 10       		.byte	16
- 831 0322 2D       		.byte	45
- 832 0323 10       		.byte	16
- 833 0324 33       		.byte	51
- 834 0325 1F       		.byte	31
- 835 0326 34       		.byte	52
- 836 0327 07       		.byte	7
- 837 0328 3A       		.byte	58
- 838 0329 20       		.byte	32
- 839 032a 40       		.byte	64
- 840 032b 53       		.byte	83
- 841 032c 49       		.byte	73
- 842 032d FF       		.byte	-1
- 843 032e 4A       		.byte	74
- 844 032f FF       		.byte	-1
- 845 0330 4B       		.byte	75
- 846 0331 FF       		.byte	-1
- 847 0332 4F       		.byte	79
- 848 0333 01       		.byte	1
- 849 0334 50       		.byte	80
- 850 0335 18       		.byte	24
- 851 0336 56       		.byte	86
- 852 0337 08       		.byte	8
- 853 0338 58       		.byte	88
- 854 0339 04       		.byte	4
- 855 033a 59       		.byte	89
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 16
-
-
- 856 033b 04       		.byte	4
- 857 033c 5A       		.byte	90
- 858 033d 04       		.byte	4
- 859 033e 5B       		.byte	91
- 860 033f 04       		.byte	4
- 861 0340 5C       		.byte	92
- 862 0341 11       		.byte	17
- 863 0342 5D       		.byte	93
- 864 0343 23       		.byte	35
- 865 0344 5F       		.byte	95
- 866 0345 01       		.byte	1
- 867 0346 60       		.byte	96
- 868 0347 40       		.byte	64
- 869 0348 62       		.byte	98
- 870 0349 40       		.byte	64
- 871 034a 64       		.byte	100
- 872 034b 40       		.byte	64
- 873 034c 65       		.byte	101
- 874 034d 40       		.byte	64
- 875 034e 66       		.byte	102
- 876 034f 80       		.byte	-128
- 877 0350 68       		.byte	104
- 878 0351 80       		.byte	-128
- 879 0352 6A       		.byte	106
- 880 0353 80       		.byte	-128
- 881 0354 6C       		.byte	108
- 882 0355 80       		.byte	-128
- 883 0356 6E       		.byte	110
- 884 0357 80       		.byte	-128
- 885 0358 87       		.byte	-121
- 886 0359 02       		.byte	2
- 887 035a 8A       		.byte	-118
- 888 035b 06       		.byte	6
- 889 035c 8E       		.byte	-114
- 890 035d 01       		.byte	1
- 891 035e 8F       		.byte	-113
- 892 035f 02       		.byte	2
- 893 0360 90       		.byte	-112
- 894 0361 18       		.byte	24
- 895 0362 92       		.byte	-110
- 896 0363 06       		.byte	6
- 897 0364 94       		.byte	-108
- 898 0365 02       		.byte	2
- 899 0366 96       		.byte	-106
- 900 0367 1C       		.byte	28
- 901 0368 9A       		.byte	-102
- 902 0369 01       		.byte	1
- 903 036a 9E       		.byte	-98
- 904 036b 10       		.byte	16
- 905 036c 9F       		.byte	-97
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  906 036d 01       		.byte	1
  907 036e 6E       		.byte	110
  908 036f 40       		.byte	64
  909 0370 6F       		.byte	111
  910 0371 01       		.byte	1
-<<<<<<< HEAD
  911 0372 80       		.byte	-128
  912 0373 01       		.byte	1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 17
-=======
- 911 0372 AC       		.byte	-84
- 912 0373 02       		.byte	2
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 17
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 17
 
 
  913 0374 83       		.byte	-125
@@ -1561,7 +995,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  944 0393 7E       		.byte	126
  945 0394 B3       		.byte	-77
  946 0395 01       		.byte	1
-<<<<<<< HEAD
  947 0396 B4       		.byte	-76
  948 0397 01       		.byte	1
  949 0398 BE       		.byte	-66
@@ -1585,7 +1018,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  967 03aa CA       		.byte	-54
  968 03ab FF       		.byte	-1
  969 03ac CB       		.byte	-53
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 18
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 18
 
 
  970 03ad FF       		.byte	-1
@@ -1645,7 +1078,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1024 03e3 08       		.byte	8
  1025 03e4 07       		.byte	7
  1026 03e5 51       		.byte	81
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 19
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 19
 
 
  1027 03e6 0C       		.byte	12
@@ -1653,99 +1086,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1029 03e8 0E       		.byte	14
  1030 03e9 48       		.byte	72
  1031 03ea 0F       		.byte	15
-=======
- 947 0396 D0       		.byte	-48
- 948 0397 18       		.byte	24
- 949 0398 D2       		.byte	-46
- 950 0399 80       		.byte	-128
- 951 039a D4       		.byte	-44
- 952 039b 01       		.byte	1
- 953 039c D8       		.byte	-40
- 954 039d 04       		.byte	4
- 955 039e D9       		.byte	-39
- 956 039f 04       		.byte	4
- 957 03a0 DA       		.byte	-38
- 958 03a1 04       		.byte	4
- 959 03a2 DB       		.byte	-37
- 960 03a3 04       		.byte	4
- 961 03a4 DC       		.byte	-36
- 962 03a5 31       		.byte	49
- 963 03a6 DD       		.byte	-35
- 964 03a7 33       		.byte	51
- 965 03a8 DF       		.byte	-33
- 966 03a9 01       		.byte	1
- 967 03aa E0       		.byte	-32
- 968 03ab 40       		.byte	64
- 969 03ac E2       		.byte	-30
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 18
-
-
- 970 03ad 40       		.byte	64
- 971 03ae E4       		.byte	-28
- 972 03af 40       		.byte	64
- 973 03b0 E5       		.byte	-27
- 974 03b1 40       		.byte	64
- 975 03b2 E6       		.byte	-26
- 976 03b3 80       		.byte	-128
- 977 03b4 E8       		.byte	-24
- 978 03b5 80       		.byte	-128
- 979 03b6 EA       		.byte	-22
- 980 03b7 80       		.byte	-128
- 981 03b8 EC       		.byte	-20
- 982 03b9 80       		.byte	-128
- 983 03ba EE       		.byte	-18
- 984 03bb 80       		.byte	-128
- 985 03bc 01       		.byte	1
- 986 03bd 20       		.byte	32
- 987 03be 02       		.byte	2
- 988 03bf 01       		.byte	1
- 989 03c0 04       		.byte	4
- 990 03c1 20       		.byte	32
- 991 03c2 05       		.byte	5
- 992 03c3 80       		.byte	-128
- 993 03c4 08       		.byte	8
- 994 03c5 08       		.byte	8
- 995 03c6 09       		.byte	9
- 996 03c7 20       		.byte	32
- 997 03c8 0A       		.byte	10
- 998 03c9 50       		.byte	80
- 999 03ca 0B       		.byte	11
- 1000 03cb 80       		.byte	-128
- 1001 03cc 0C       		.byte	12
- 1002 03cd 80       		.byte	-128
- 1003 03ce 0E       		.byte	14
- 1004 03cf 40       		.byte	64
- 1005 03d0 0F       		.byte	15
- 1006 03d1 28       		.byte	40
- 1007 03d2 10       		.byte	16
- 1008 03d3 80       		.byte	-128
- 1009 03d4 12       		.byte	18
- 1010 03d5 40       		.byte	64
- 1011 03d6 14       		.byte	20
- 1012 03d7 08       		.byte	8
- 1013 03d8 16       		.byte	22
- 1014 03d9 01       		.byte	1
- 1015 03da 18       		.byte	24
- 1016 03db 08       		.byte	8
- 1017 03dc 19       		.byte	25
- 1018 03dd 20       		.byte	32
- 1019 03de 1B       		.byte	27
- 1020 03df 10       		.byte	16
- 1021 03e0 1C       		.byte	28
- 1022 03e1 40       		.byte	64
- 1023 03e2 1E       		.byte	30
- 1024 03e3 02       		.byte	2
- 1025 03e4 1F       		.byte	31
- 1026 03e5 40       		.byte	64
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 19
-
-
- 1027 03e6 21       		.byte	33
- 1028 03e7 08       		.byte	8
- 1029 03e8 26       		.byte	38
- 1030 03e9 02       		.byte	2
- 1031 03ea 27       		.byte	39
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  1032 03eb 02       		.byte	2
  1033 03ec 15       		.byte	21
  1034 03ed 10       		.byte	16
@@ -1793,13 +1133,12 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1076 0417 08       		.byte	8
  1077 0418 48       		.byte	72
  1078 0419 0C       		.byte	12
-<<<<<<< HEAD
  1079 041a 4D       		.byte	77
  1080 041b 08       		.byte	8
  1081 041c 4F       		.byte	79
  1082 041d 20       		.byte	32
  1083 041e 56       		.byte	86
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 20
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 20
 
 
  1084 041f 51       		.byte	81
@@ -1836,54 +1175,9 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1115 043e A0       		.byte	-96
  1116 043f 24       		.byte	36
  1117 0440 A4       		.byte	-92
-=======
- 1079 041a 9A       		.byte	-102
- 1080 041b 43       		.byte	67
- 1081 041c 9D       		.byte	-99
- 1082 041d 40       		.byte	64
- 1083 041e A1       		.byte	-95
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 20
-
-
- 1084 041f 20       		.byte	32
- 1085 0420 A2       		.byte	-94
- 1086 0421 20       		.byte	32
- 1087 0422 A6       		.byte	-90
- 1088 0423 03       		.byte	3
- 1089 0424 A8       		.byte	-88
- 1090 0425 01       		.byte	1
- 1091 0426 AC       		.byte	-84
- 1092 0427 40       		.byte	64
- 1093 0428 AF       		.byte	-81
- 1094 0429 20       		.byte	32
- 1095 042a B4       		.byte	-76
- 1096 042b 08       		.byte	8
- 1097 042c B7       		.byte	-73
- 1098 042d 01       		.byte	1
- 1099 042e C0       		.byte	-64
- 1100 042f C3       		.byte	-61
- 1101 0430 C2       		.byte	-62
- 1102 0431 FE       		.byte	-2
- 1103 0432 C4       		.byte	-60
- 1104 0433 C8       		.byte	-56
- 1105 0434 CA       		.byte	-54
- 1106 0435 2D       		.byte	45
- 1107 0436 CC       		.byte	-52
- 1108 0437 1A       		.byte	26
- 1109 0438 CE       		.byte	-50
- 1110 0439 5A       		.byte	90
- 1111 043a D0       		.byte	-48
- 1112 043b 22       		.byte	34
- 1113 043c D2       		.byte	-46
- 1114 043d 18       		.byte	24
- 1115 043e D6       		.byte	-42
- 1116 043f D8       		.byte	-40
- 1117 0440 D8       		.byte	-40
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  1118 0441 08       		.byte	8
  1119 0442 A6       		.byte	-90
  1120 0443 02       		.byte	2
-<<<<<<< HEAD
  1121 0444 A7       		.byte	-89
  1122 0445 10       		.byte	16
  1123 0446 AC       		.byte	-84
@@ -1904,7 +1198,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1138 0455 0F       		.byte	15
  1139 0456 CE       		.byte	-50
  1140 0457 8E       		.byte	-114
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 21
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 21
 
 
  1141 0458 D0       		.byte	-48
@@ -1914,38 +1208,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1145 045c D8       		.byte	-40
  1146 045d 70       		.byte	112
  1147 045e E0       		.byte	-32
-=======
- 1121 0444 EE       		.byte	-18
- 1122 0445 08       		.byte	8
- 1123 0446 03       		.byte	3
- 1124 0447 01       		.byte	1
- 1125 0448 05       		.byte	5
- 1126 0449 06       		.byte	6
- 1127 044a 07       		.byte	7
- 1128 044b 08       		.byte	8
- 1129 044c 0B       		.byte	11
- 1130 044d 10       		.byte	16
- 1131 044e 10       		.byte	16
- 1132 044f 01       		.byte	1
- 1133 0450 11       		.byte	17
- 1134 0451 14       		.byte	20
- 1135 0452 13       		.byte	19
- 1136 0453 08       		.byte	8
- 1137 0454 19       		.byte	25
- 1138 0455 06       		.byte	6
- 1139 0456 1B       		.byte	27
- 1140 0457 08       		.byte	8
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 21
-
-
- 1141 0458 1D       		.byte	29
- 1142 0459 06       		.byte	6
- 1143 045a 1E       		.byte	30
- 1144 045b 03       		.byte	3
- 1145 045c 1F       		.byte	31
- 1146 045d 18       		.byte	24
- 1147 045e 21       		.byte	33
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  1148 045f 01       		.byte	1
  1149 0460 E4       		.byte	-28
  1150 0461 08       		.byte	8
@@ -1995,9 +1257,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1194 048d 30       		.byte	48
  1195 048e 3F       		.byte	63
  1196 048f 01       		.byte	1
-<<<<<<< HEAD
  1197 0490 40       		.byte	64
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 22
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 22
 
 
  1198 0491 54       		.byte	84
@@ -2057,7 +1318,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1252 04c7 08       		.byte	8
  1253 04c8 8C       		.byte	-116
  1254 04c9 08       		.byte	8
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 23
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 23
 
 
  1255 04ca 8E       		.byte	-114
@@ -2117,7 +1378,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1309 0500 DD       		.byte	-35
  1310 0501 44       		.byte	68
  1311 0502 DF       		.byte	-33
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 24
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 24
 
 
  1312 0503 01       		.byte	1
@@ -2130,142 +1391,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1319 050a E5       		.byte	-27
  1320 050b 40       		.byte	64
  1321 050c E6       		.byte	-26
-=======
- 1197 0490 60       		.byte	96
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 22
-
-
- 1198 0491 40       		.byte	64
- 1199 0492 62       		.byte	98
- 1200 0493 40       		.byte	64
- 1201 0494 64       		.byte	100
- 1202 0495 40       		.byte	64
- 1203 0496 65       		.byte	101
- 1204 0497 40       		.byte	64
- 1205 0498 66       		.byte	102
- 1206 0499 80       		.byte	-128
- 1207 049a 68       		.byte	104
- 1208 049b 80       		.byte	-128
- 1209 049c 6A       		.byte	106
- 1210 049d 80       		.byte	-128
- 1211 049e 6C       		.byte	108
- 1212 049f 80       		.byte	-128
- 1213 04a0 6E       		.byte	110
- 1214 04a1 80       		.byte	-128
- 1215 04a2 82       		.byte	-126
- 1216 04a3 01       		.byte	1
- 1217 04a4 85       		.byte	-123
- 1218 04a5 03       		.byte	3
- 1219 04a6 8B       		.byte	-117
- 1220 04a7 01       		.byte	1
- 1221 04a8 8D       		.byte	-115
- 1222 04a9 02       		.byte	2
- 1223 04aa 92       		.byte	-110
- 1224 04ab 02       		.byte	2
- 1225 04ac 96       		.byte	-106
- 1226 04ad 01       		.byte	1
- 1227 04ae 9D       		.byte	-99
- 1228 04af 03       		.byte	3
- 1229 04b0 A0       		.byte	-96
- 1230 04b1 02       		.byte	2
- 1231 04b2 A4       		.byte	-92
- 1232 04b3 04       		.byte	4
- 1233 04b4 A8       		.byte	-88
- 1234 04b5 02       		.byte	2
- 1235 04b6 B0       		.byte	-80
- 1236 04b7 01       		.byte	1
- 1237 04b8 B2       		.byte	-78
- 1238 04b9 06       		.byte	6
- 1239 04ba B5       		.byte	-75
- 1240 04bb 03       		.byte	3
- 1241 04bc B8       		.byte	-72
- 1242 04bd 08       		.byte	8
- 1243 04be B9       		.byte	-71
- 1244 04bf 20       		.byte	32
- 1245 04c0 BE       		.byte	-66
- 1246 04c1 01       		.byte	1
- 1247 04c2 BF       		.byte	-65
- 1248 04c3 10       		.byte	16
- 1249 04c4 C0       		.byte	-64
- 1250 04c5 13       		.byte	19
- 1251 04c6 C5       		.byte	-59
- 1252 04c7 EC       		.byte	-20
- 1253 04c8 C7       		.byte	-57
- 1254 04c9 02       		.byte	2
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 23
-
-
- 1255 04ca C8       		.byte	-56
- 1256 04cb 13       		.byte	19
- 1257 04cc C9       		.byte	-55
- 1258 04cd FF       		.byte	-1
- 1259 04ce CA       		.byte	-54
- 1260 04cf FF       		.byte	-1
- 1261 04d0 CB       		.byte	-53
- 1262 04d1 FF       		.byte	-1
- 1263 04d2 CD       		.byte	-51
- 1264 04d3 83       		.byte	-125
- 1265 04d4 CE       		.byte	-50
- 1266 04d5 03       		.byte	3
- 1267 04d6 CF       		.byte	-49
- 1268 04d7 01       		.byte	1
- 1269 04d8 D0       		.byte	-48
- 1270 04d9 18       		.byte	24
- 1271 04da D2       		.byte	-46
- 1272 04db 80       		.byte	-128
- 1273 04dc D4       		.byte	-44
- 1274 04dd 01       		.byte	1
- 1275 04de D8       		.byte	-40
- 1276 04df 04       		.byte	4
- 1277 04e0 D9       		.byte	-39
- 1278 04e1 04       		.byte	4
- 1279 04e2 DA       		.byte	-38
- 1280 04e3 04       		.byte	4
- 1281 04e4 DB       		.byte	-37
- 1282 04e5 04       		.byte	4
- 1283 04e6 DC       		.byte	-36
- 1284 04e7 01       		.byte	1
- 1285 04e8 DD       		.byte	-35
- 1286 04e9 33       		.byte	51
- 1287 04ea DF       		.byte	-33
- 1288 04eb 01       		.byte	1
- 1289 04ec E0       		.byte	-32
- 1290 04ed 40       		.byte	64
- 1291 04ee E2       		.byte	-30
- 1292 04ef 40       		.byte	64
- 1293 04f0 E4       		.byte	-28
- 1294 04f1 40       		.byte	64
- 1295 04f2 E5       		.byte	-27
- 1296 04f3 40       		.byte	64
- 1297 04f4 E6       		.byte	-26
- 1298 04f5 80       		.byte	-128
- 1299 04f6 E8       		.byte	-24
- 1300 04f7 80       		.byte	-128
- 1301 04f8 EA       		.byte	-22
- 1302 04f9 80       		.byte	-128
- 1303 04fa EC       		.byte	-20
- 1304 04fb 80       		.byte	-128
- 1305 04fc EE       		.byte	-18
- 1306 04fd 80       		.byte	-128
- 1307 04fe 03       		.byte	3
- 1308 04ff 40       		.byte	64
- 1309 0500 09       		.byte	9
- 1310 0501 08       		.byte	8
- 1311 0502 0B       		.byte	11
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 24
-
-
- 1312 0503 80       		.byte	-128
- 1313 0504 0E       		.byte	14
- 1314 0505 80       		.byte	-128
- 1315 0506 0F       		.byte	15
- 1316 0507 02       		.byte	2
- 1317 0508 12       		.byte	18
- 1318 0509 94       		.byte	-108
- 1319 050a 1A       		.byte	26
- 1320 050b 50       		.byte	80
- 1321 050c 1E       		.byte	30
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  1322 050d 80       		.byte	-128
  1323 050e E8       		.byte	-24
  1324 050f 80       		.byte	-128
@@ -2275,7 +1400,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1328 0513 80       		.byte	-128
  1329 0514 EE       		.byte	-18
  1330 0515 80       		.byte	-128
-<<<<<<< HEAD
  1331 0516 00       		.byte	0
  1332 0517 08       		.byte	8
  1333 0518 01       		.byte	1
@@ -2314,7 +1438,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1366 0539 20       		.byte	32
  1367 053a 1B       		.byte	27
  1368 053b 10       		.byte	16
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 25
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 25
 
 
  1369 053c 1C       		.byte	28
@@ -2374,7 +1498,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1423 0572 91       		.byte	-111
  1424 0573 10       		.byte	16
  1425 0574 92       		.byte	-110
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 26
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 26
 
 
  1426 0575 84       		.byte	-124
@@ -2434,7 +1558,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1480 05ab 02       		.byte	2
  1481 05ac 0E       		.byte	14
  1482 05ad 01       		.byte	1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 27
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 27
 
 
  1483 05ae 15       		.byte	21
@@ -2494,7 +1618,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1537 05e4 58       		.byte	88
  1538 05e5 04       		.byte	4
  1539 05e6 59       		.byte	89
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 28
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 28
 
 
  1540 05e7 04       		.byte	4
@@ -2525,261 +1649,9 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1565 0600 6C       		.byte	108
  1566 0601 80       		.byte	-128
  1567 0602 6E       		.byte	110
-=======
- 1331 0516 2D       		.byte	45
- 1332 0517 04       		.byte	4
- 1333 0518 2E       		.byte	46
- 1334 0519 28       		.byte	40
- 1335 051a 2F       		.byte	47
- 1336 051b 80       		.byte	-128
- 1337 051c 31       		.byte	49
- 1338 051d 40       		.byte	64
- 1339 051e 32       		.byte	50
- 1340 051f 80       		.byte	-128
- 1341 0520 36       		.byte	54
- 1342 0521 A1       		.byte	-95
- 1343 0522 38       		.byte	56
- 1344 0523 28       		.byte	40
- 1345 0524 3A       		.byte	58
- 1346 0525 34       		.byte	52
- 1347 0526 3B       		.byte	59
- 1348 0527 84       		.byte	-124
- 1349 0528 3E       		.byte	62
- 1350 0529 10       		.byte	16
- 1351 052a 3F       		.byte	63
- 1352 052b 06       		.byte	6
- 1353 052c 41       		.byte	65
- 1354 052d 08       		.byte	8
- 1355 052e 43       		.byte	67
- 1356 052f 40       		.byte	64
- 1357 0530 45       		.byte	69
- 1358 0531 08       		.byte	8
- 1359 0532 47       		.byte	71
- 1360 0533 40       		.byte	64
- 1361 0534 49       		.byte	73
- 1362 0535 06       		.byte	6
- 1363 0536 51       		.byte	81
- 1364 0537 08       		.byte	8
- 1365 0538 53       		.byte	83
- 1366 0539 04       		.byte	4
- 1367 053a 59       		.byte	89
- 1368 053b 06       		.byte	6
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 25
-
-
- 1369 053c 5A       		.byte	90
- 1370 053d 40       		.byte	64
- 1371 053e 5C       		.byte	92
- 1372 053f 40       		.byte	64
- 1373 0540 5D       		.byte	93
- 1374 0541 14       		.byte	20
- 1375 0542 67       		.byte	103
- 1376 0543 20       		.byte	32
- 1377 0544 73       		.byte	115
- 1378 0545 40       		.byte	64
- 1379 0546 90       		.byte	-112
- 1380 0547 28       		.byte	40
- 1381 0548 93       		.byte	-109
- 1382 0549 80       		.byte	-128
- 1383 054a 94       		.byte	-108
- 1384 054b 04       		.byte	4
- 1385 054c 96       		.byte	-106
- 1386 054d 90       		.byte	-112
- 1387 054e 97       		.byte	-105
- 1388 054f 48       		.byte	72
- 1389 0550 9B       		.byte	-101
- 1390 0551 40       		.byte	64
- 1391 0552 9D       		.byte	-99
- 1392 0553 40       		.byte	64
- 1393 0554 A2       		.byte	-94
- 1394 0555 21       		.byte	33
- 1395 0556 A3       		.byte	-93
- 1396 0557 01       		.byte	1
- 1397 0558 AB       		.byte	-85
- 1398 0559 02       		.byte	2
- 1399 055a B5       		.byte	-75
- 1400 055b 08       		.byte	8
- 1401 055c C0       		.byte	-64
- 1402 055d 08       		.byte	8
- 1403 055e C2       		.byte	-62
- 1404 055f 9C       		.byte	-100
- 1405 0560 C4       		.byte	-60
- 1406 0561 0E       		.byte	14
- 1407 0562 CA       		.byte	-54
- 1408 0563 E0       		.byte	-32
- 1409 0564 CC       		.byte	-52
- 1410 0565 B8       		.byte	-72
- 1411 0566 CE       		.byte	-50
- 1412 0567 EE       		.byte	-18
- 1413 0568 D0       		.byte	-48
- 1414 0569 5A       		.byte	90
- 1415 056a D6       		.byte	-42
- 1416 056b 7B       		.byte	123
- 1417 056c D8       		.byte	-40
- 1418 056d 40       		.byte	64
- 1419 056e EA       		.byte	-22
- 1420 056f 08       		.byte	8
- 1421 0570 EE       		.byte	-18
- 1422 0571 0C       		.byte	12
- 1423 0572 02       		.byte	2
- 1424 0573 01       		.byte	1
- 1425 0574 03       		.byte	3
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 26
-
-
- 1426 0575 01       		.byte	1
- 1427 0576 05       		.byte	5
- 1428 0577 06       		.byte	6
- 1429 0578 07       		.byte	7
- 1430 0579 01       		.byte	1
- 1431 057a 09       		.byte	9
- 1432 057b 01       		.byte	1
- 1433 057c 0B       		.byte	11
- 1434 057d 06       		.byte	6
- 1435 057e 15       		.byte	21
- 1436 057f 02       		.byte	2
- 1437 0580 1D       		.byte	29
- 1438 0581 06       		.byte	6
- 1439 0582 1E       		.byte	30
- 1440 0583 01       		.byte	1
- 1441 0584 1F       		.byte	31
- 1442 0585 01       		.byte	1
- 1443 0586 21       		.byte	33
- 1444 0587 04       		.byte	4
- 1445 0588 25       		.byte	37
- 1446 0589 07       		.byte	7
- 1447 058a 29       		.byte	41
- 1448 058b 06       		.byte	6
- 1449 058c 36       		.byte	54
- 1450 058d 01       		.byte	1
- 1451 058e 37       		.byte	55
- 1452 058f 07       		.byte	7
- 1453 0590 3B       		.byte	59
- 1454 0591 80       		.byte	-128
- 1455 0592 40       		.byte	64
- 1456 0593 41       		.byte	65
- 1457 0594 49       		.byte	73
- 1458 0595 FF       		.byte	-1
- 1459 0596 4A       		.byte	74
- 1460 0597 FF       		.byte	-1
- 1461 0598 4B       		.byte	75
- 1462 0599 FF       		.byte	-1
- 1463 059a 4F       		.byte	79
- 1464 059b 01       		.byte	1
- 1465 059c 50       		.byte	80
- 1466 059d 18       		.byte	24
- 1467 059e 52       		.byte	82
- 1468 059f 80       		.byte	-128
- 1469 05a0 58       		.byte	88
- 1470 05a1 04       		.byte	4
- 1471 05a2 59       		.byte	89
- 1472 05a3 04       		.byte	4
- 1473 05a4 5A       		.byte	90
- 1474 05a5 04       		.byte	4
- 1475 05a6 5B       		.byte	91
- 1476 05a7 04       		.byte	4
- 1477 05a8 5C       		.byte	92
- 1478 05a9 13       		.byte	19
- 1479 05aa 5D       		.byte	93
- 1480 05ab 33       		.byte	51
- 1481 05ac 5F       		.byte	95
- 1482 05ad 01       		.byte	1
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 27
-
-
- 1483 05ae 60       		.byte	96
- 1484 05af 40       		.byte	64
- 1485 05b0 62       		.byte	98
- 1486 05b1 40       		.byte	64
- 1487 05b2 64       		.byte	100
- 1488 05b3 40       		.byte	64
- 1489 05b4 65       		.byte	101
- 1490 05b5 40       		.byte	64
- 1491 05b6 66       		.byte	102
- 1492 05b7 80       		.byte	-128
- 1493 05b8 68       		.byte	104
- 1494 05b9 80       		.byte	-128
- 1495 05ba 6A       		.byte	106
- 1496 05bb 80       		.byte	-128
- 1497 05bc 6C       		.byte	108
- 1498 05bd 80       		.byte	-128
- 1499 05be 6E       		.byte	110
- 1500 05bf 80       		.byte	-128
- 1501 05c0 81       		.byte	-127
- 1502 05c1 38       		.byte	56
- 1503 05c2 83       		.byte	-125
- 1504 05c3 02       		.byte	2
- 1505 05c4 85       		.byte	-123
- 1506 05c5 3E       		.byte	62
- 1507 05c6 89       		.byte	-119
- 1508 05c7 0E       		.byte	14
- 1509 05c8 8B       		.byte	-117
- 1510 05c9 30       		.byte	48
- 1511 05ca 8E       		.byte	-114
- 1512 05cb 01       		.byte	1
- 1513 05cc 8F       		.byte	-113
- 1514 05cd 01       		.byte	1
- 1515 05ce 92       		.byte	-110
- 1516 05cf 01       		.byte	1
- 1517 05d0 93       		.byte	-109
- 1518 05d1 08       		.byte	8
- 1519 05d2 95       		.byte	-107
- 1520 05d3 30       		.byte	48
- 1521 05d4 99       		.byte	-103
- 1522 05d5 38       		.byte	56
- 1523 05d6 9B       		.byte	-101
- 1524 05d7 04       		.byte	4
- 1525 05d8 9D       		.byte	-99
- 1526 05d9 20       		.byte	32
- 1527 05da A1       		.byte	-95
- 1528 05db 08       		.byte	8
- 1529 05dc A7       		.byte	-89
- 1530 05dd 06       		.byte	6
- 1531 05de A9       		.byte	-87
- 1532 05df 10       		.byte	16
- 1533 05e0 AF       		.byte	-81
- 1534 05e1 01       		.byte	1
- 1535 05e2 B4       		.byte	-76
- 1536 05e3 01       		.byte	1
- 1537 05e4 B5       		.byte	-75
- 1538 05e5 3E       		.byte	62
- 1539 05e6 B7       		.byte	-73
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 28
-
-
- 1540 05e7 01       		.byte	1
- 1541 05e8 BB       		.byte	-69
- 1542 05e9 20       		.byte	32
- 1543 05ea BF       		.byte	-65
- 1544 05eb 40       		.byte	64
- 1545 05ec C0       		.byte	-64
- 1546 05ed 54       		.byte	84
- 1547 05ee C5       		.byte	-59
- 1548 05ef EC       		.byte	-20
- 1549 05f0 C7       		.byte	-57
- 1550 05f1 20       		.byte	32
- 1551 05f2 C8       		.byte	-56
- 1552 05f3 23       		.byte	35
- 1553 05f4 C9       		.byte	-55
- 1554 05f5 FF       		.byte	-1
- 1555 05f6 CA       		.byte	-54
- 1556 05f7 FF       		.byte	-1
- 1557 05f8 CB       		.byte	-53
- 1558 05f9 FF       		.byte	-1
- 1559 05fa CD       		.byte	-51
- 1560 05fb 83       		.byte	-125
- 1561 05fc CE       		.byte	-50
- 1562 05fd 03       		.byte	3
- 1563 05fe CF       		.byte	-49
- 1564 05ff 01       		.byte	1
- 1565 0600 D0       		.byte	-48
- 1566 0601 18       		.byte	24
- 1567 0602 D2       		.byte	-46
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  1568 0603 80       		.byte	-128
  1569 0604 85       		.byte	-123
  1570 0605 01       		.byte	1
-<<<<<<< HEAD
  1571 0606 92       		.byte	-110
  1572 0607 01       		.byte	1
  1573 0608 95       		.byte	-107
@@ -2806,7 +1678,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1594 061d 01       		.byte	1
  1595 061e BF       		.byte	-65
  1596 061f 40       		.byte	64
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 29
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 29
 
 
  1597 0620 C0       		.byte	-64
@@ -2866,7 +1738,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1651 0656 EC       		.byte	-20
  1652 0657 80       		.byte	-128
  1653 0658 EE       		.byte	-18
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 30
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 30
 
 
  1654 0659 80       		.byte	-128
@@ -2883,111 +1755,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1665 0664 0F       		.byte	15
  1666 0665 04       		.byte	4
  1667 0666 14       		.byte	20
-=======
- 1571 0606 D8       		.byte	-40
- 1572 0607 04       		.byte	4
- 1573 0608 D9       		.byte	-39
- 1574 0609 04       		.byte	4
- 1575 060a DA       		.byte	-38
- 1576 060b 04       		.byte	4
- 1577 060c DB       		.byte	-37
- 1578 060d 04       		.byte	4
- 1579 060e DC       		.byte	-36
- 1580 060f 13       		.byte	19
- 1581 0610 DD       		.byte	-35
- 1582 0611 33       		.byte	51
- 1583 0612 DF       		.byte	-33
- 1584 0613 01       		.byte	1
- 1585 0614 E0       		.byte	-32
- 1586 0615 40       		.byte	64
- 1587 0616 E2       		.byte	-30
- 1588 0617 40       		.byte	64
- 1589 0618 E4       		.byte	-28
- 1590 0619 40       		.byte	64
- 1591 061a E5       		.byte	-27
- 1592 061b 40       		.byte	64
- 1593 061c E6       		.byte	-26
- 1594 061d 80       		.byte	-128
- 1595 061e E8       		.byte	-24
- 1596 061f 80       		.byte	-128
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 29
-
-
- 1597 0620 EA       		.byte	-22
- 1598 0621 80       		.byte	-128
- 1599 0622 EC       		.byte	-20
- 1600 0623 80       		.byte	-128
- 1601 0624 EE       		.byte	-18
- 1602 0625 80       		.byte	-128
- 1603 0626 02       		.byte	2
- 1604 0627 01       		.byte	1
- 1605 0628 06       		.byte	6
- 1606 0629 80       		.byte	-128
- 1607 062a 09       		.byte	9
- 1608 062b 02       		.byte	2
- 1609 062c 0D       		.byte	13
- 1610 062d 80       		.byte	-128
- 1611 062e 1A       		.byte	26
- 1612 062f 04       		.byte	4
- 1613 0630 1F       		.byte	31
- 1614 0631 40       		.byte	64
- 1615 0632 20       		.byte	32
- 1616 0633 08       		.byte	8
- 1617 0634 22       		.byte	34
- 1618 0635 50       		.byte	80
- 1619 0636 24       		.byte	36
- 1620 0637 01       		.byte	1
- 1621 0638 26       		.byte	38
- 1622 0639 80       		.byte	-128
- 1623 063a 28       		.byte	40
- 1624 063b 08       		.byte	8
- 1625 063c 29       		.byte	41
- 1626 063d 08       		.byte	8
- 1627 063e 2B       		.byte	43
- 1628 063f 42       		.byte	66
- 1629 0640 2C       		.byte	44
- 1630 0641 88       		.byte	-120
- 1631 0642 2D       		.byte	45
- 1632 0643 04       		.byte	4
- 1633 0644 2F       		.byte	47
- 1634 0645 10       		.byte	16
- 1635 0646 30       		.byte	48
- 1636 0647 88       		.byte	-120
- 1637 0648 32       		.byte	50
- 1638 0649 11       		.byte	17
- 1639 064a 34       		.byte	52
- 1640 064b 08       		.byte	8
- 1641 064c 36       		.byte	54
- 1642 064d 80       		.byte	-128
- 1643 064e 37       		.byte	55
- 1644 064f 08       		.byte	8
- 1645 0650 38       		.byte	56
- 1646 0651 01       		.byte	1
- 1647 0652 39       		.byte	57
- 1648 0653 04       		.byte	4
- 1649 0654 3A       		.byte	58
- 1650 0655 20       		.byte	32
- 1651 0656 3B       		.byte	59
- 1652 0657 40       		.byte	64
- 1653 0658 3C       		.byte	60
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 30
-
-
- 1654 0659 28       		.byte	40
- 1655 065a 3D       		.byte	61
- 1656 065b 01       		.byte	1
- 1657 065c 3E       		.byte	62
- 1658 065d 20       		.byte	32
- 1659 065e 43       		.byte	67
- 1660 065f 02       		.byte	2
- 1661 0660 45       		.byte	69
- 1662 0661 02       		.byte	2
- 1663 0662 46       		.byte	70
- 1664 0663 01       		.byte	1
- 1665 0664 49       		.byte	73
- 1666 0665 05       		.byte	5
- 1667 0666 4B       		.byte	75
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  1668 0667 40       		.byte	64
  1669 0668 15       		.byte	21
  1670 0669 28       		.byte	40
@@ -3027,12 +1794,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1704 068b 04       		.byte	4
  1705 068c 3E       		.byte	62
  1706 068d 10       		.byte	16
-<<<<<<< HEAD
  1707 068e 3F       		.byte	63
  1708 068f 04       		.byte	4
  1709 0690 41       		.byte	65
  1710 0691 0A       		.byte	10
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 31
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 31
 
 
  1711 0692 45       		.byte	69
@@ -3066,50 +1832,9 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1739 06ae 99       		.byte	-103
  1740 06af 18       		.byte	24
  1741 06b0 9A       		.byte	-102
-=======
- 1707 068e EE       		.byte	-18
- 1708 068f 0C       		.byte	12
- 1709 0690 02       		.byte	2
- 1710 0691 02       		.byte	2
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 31
-
-
- 1711 0692 04       		.byte	4
- 1712 0693 04       		.byte	4
- 1713 0694 0A       		.byte	10
- 1714 0695 02       		.byte	2
- 1715 0696 0E       		.byte	14
- 1716 0697 01       		.byte	1
- 1717 0698 12       		.byte	18
- 1718 0699 01       		.byte	1
- 1719 069a 15       		.byte	21
- 1720 069b 02       		.byte	2
- 1721 069c 19       		.byte	25
- 1722 069d 03       		.byte	3
- 1723 069e 1B       		.byte	27
- 1724 069f 04       		.byte	4
- 1725 06a0 1C       		.byte	28
- 1726 06a1 04       		.byte	4
- 1727 06a2 1D       		.byte	29
- 1728 06a3 04       		.byte	4
- 1729 06a4 1F       		.byte	31
- 1730 06a5 03       		.byte	3
- 1731 06a6 20       		.byte	32
- 1732 06a7 04       		.byte	4
- 1733 06a8 27       		.byte	39
- 1734 06a9 05       		.byte	5
- 1735 06aa 30       		.byte	48
- 1736 06ab 02       		.byte	2
- 1737 06ac 33       		.byte	51
- 1738 06ad 07       		.byte	7
- 1739 06ae 34       		.byte	52
- 1740 06af 01       		.byte	1
- 1741 06b0 36       		.byte	54
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  1742 06b1 04       		.byte	4
  1743 06b2 A0       		.byte	-96
  1744 06b3 08       		.byte	8
-<<<<<<< HEAD
  1745 06b4 A7       		.byte	-89
  1746 06b5 20       		.byte	32
  1747 06b6 C0       		.byte	-64
@@ -3133,7 +1858,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1765 06c8 E6       		.byte	-26
  1766 06c9 40       		.byte	64
  1767 06ca EE       		.byte	-18
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 32
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 32
 
 
  1768 06cb 08       		.byte	8
@@ -3193,7 +1918,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1822 0701 04       		.byte	4
  1823 0702 59       		.byte	89
  1824 0703 04       		.byte	4
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 33
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 33
 
 
  1825 0704 5A       		.byte	90
@@ -3253,7 +1978,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1879 073a A8       		.byte	-88
  1880 073b 01       		.byte	1
  1881 073c A9       		.byte	-87
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 34
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 34
 
 
  1882 073d 10       		.byte	16
@@ -3313,7 +2038,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1936 0773 01       		.byte	1
  1937 0774 E6       		.byte	-26
  1938 0775 C0       		.byte	-64
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 35
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 35
 
 
  1939 0776 EA       		.byte	-22
@@ -3327,225 +2052,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1947 077e 04       		.byte	4
  1948 077f 10       		.byte	16
  1949 0780 05       		.byte	5
-=======
- 1745 06b4 3E       		.byte	62
- 1746 06b5 40       		.byte	64
- 1747 06b6 40       		.byte	64
- 1748 06b7 13       		.byte	19
- 1749 06b8 49       		.byte	73
- 1750 06b9 FF       		.byte	-1
- 1751 06ba 4A       		.byte	74
- 1752 06bb FF       		.byte	-1
- 1753 06bc 4B       		.byte	75
- 1754 06bd FF       		.byte	-1
- 1755 06be 4F       		.byte	79
- 1756 06bf 01       		.byte	1
- 1757 06c0 50       		.byte	80
- 1758 06c1 18       		.byte	24
- 1759 06c2 52       		.byte	82
- 1760 06c3 80       		.byte	-128
- 1761 06c4 58       		.byte	88
- 1762 06c5 04       		.byte	4
- 1763 06c6 59       		.byte	89
- 1764 06c7 04       		.byte	4
- 1765 06c8 5A       		.byte	90
- 1766 06c9 04       		.byte	4
- 1767 06ca 5B       		.byte	91
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 32
-
-
- 1768 06cb 04       		.byte	4
- 1769 06cc 5C       		.byte	92
- 1770 06cd 03       		.byte	3
- 1771 06ce 5D       		.byte	93
- 1772 06cf 33       		.byte	51
- 1773 06d0 5F       		.byte	95
- 1774 06d1 01       		.byte	1
- 1775 06d2 60       		.byte	96
- 1776 06d3 40       		.byte	64
- 1777 06d4 62       		.byte	98
- 1778 06d5 40       		.byte	64
- 1779 06d6 64       		.byte	100
- 1780 06d7 40       		.byte	64
- 1781 06d8 65       		.byte	101
- 1782 06d9 40       		.byte	64
- 1783 06da 66       		.byte	102
- 1784 06db 80       		.byte	-128
- 1785 06dc 68       		.byte	104
- 1786 06dd 80       		.byte	-128
- 1787 06de 6A       		.byte	106
- 1788 06df 80       		.byte	-128
- 1789 06e0 6C       		.byte	108
- 1790 06e1 80       		.byte	-128
- 1791 06e2 6E       		.byte	110
- 1792 06e3 80       		.byte	-128
- 1793 06e4 82       		.byte	-126
- 1794 06e5 04       		.byte	4
- 1795 06e6 84       		.byte	-124
- 1796 06e7 01       		.byte	1
- 1797 06e8 86       		.byte	-122
- 1798 06e9 02       		.byte	2
- 1799 06ea 88       		.byte	-120
- 1800 06eb 01       		.byte	1
- 1801 06ec 8A       		.byte	-118
- 1802 06ed 02       		.byte	2
- 1803 06ee 95       		.byte	-107
- 1804 06ef 02       		.byte	2
- 1805 06f0 96       		.byte	-106
- 1806 06f1 04       		.byte	4
- 1807 06f2 99       		.byte	-103
- 1808 06f3 01       		.byte	1
- 1809 06f4 9E       		.byte	-98
- 1810 06f5 03       		.byte	3
- 1811 06f6 9F       		.byte	-97
- 1812 06f7 02       		.byte	2
- 1813 06f8 A0       		.byte	-96
- 1814 06f9 01       		.byte	1
- 1815 06fa A2       		.byte	-94
- 1816 06fb 02       		.byte	2
- 1817 06fc A7       		.byte	-89
- 1818 06fd 02       		.byte	2
- 1819 06fe B0       		.byte	-80
- 1820 06ff 04       		.byte	4
- 1821 0700 B1       		.byte	-79
- 1822 0701 02       		.byte	2
- 1823 0702 B3       		.byte	-77
- 1824 0703 01       		.byte	1
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 33
-
-
- 1825 0704 B4       		.byte	-76
- 1826 0705 03       		.byte	3
- 1827 0706 BA       		.byte	-70
- 1828 0707 20       		.byte	32
- 1829 0708 BE       		.byte	-66
- 1830 0709 01       		.byte	1
- 1831 070a BF       		.byte	-65
- 1832 070b 05       		.byte	5
- 1833 070c C0       		.byte	-64
- 1834 070d 12       		.byte	18
- 1835 070e C5       		.byte	-59
- 1836 070f EC       		.byte	-20
- 1837 0710 C7       		.byte	-57
- 1838 0711 02       		.byte	2
- 1839 0712 C8       		.byte	-56
- 1840 0713 13       		.byte	19
- 1841 0714 C9       		.byte	-55
- 1842 0715 FF       		.byte	-1
- 1843 0716 CA       		.byte	-54
- 1844 0717 FF       		.byte	-1
- 1845 0718 CB       		.byte	-53
- 1846 0719 FF       		.byte	-1
- 1847 071a CD       		.byte	-51
- 1848 071b 83       		.byte	-125
- 1849 071c CE       		.byte	-50
- 1850 071d 03       		.byte	3
- 1851 071e CF       		.byte	-49
- 1852 071f 01       		.byte	1
- 1853 0720 D0       		.byte	-48
- 1854 0721 18       		.byte	24
- 1855 0722 D2       		.byte	-46
- 1856 0723 80       		.byte	-128
- 1857 0724 D4       		.byte	-44
- 1858 0725 01       		.byte	1
- 1859 0726 D8       		.byte	-40
- 1860 0727 04       		.byte	4
- 1861 0728 D9       		.byte	-39
- 1862 0729 04       		.byte	4
- 1863 072a DA       		.byte	-38
- 1864 072b 04       		.byte	4
- 1865 072c DB       		.byte	-37
- 1866 072d 04       		.byte	4
- 1867 072e DD       		.byte	-35
- 1868 072f 33       		.byte	51
- 1869 0730 DF       		.byte	-33
- 1870 0731 01       		.byte	1
- 1871 0732 E0       		.byte	-32
- 1872 0733 40       		.byte	64
- 1873 0734 E2       		.byte	-30
- 1874 0735 40       		.byte	64
- 1875 0736 E4       		.byte	-28
- 1876 0737 40       		.byte	64
- 1877 0738 E5       		.byte	-27
- 1878 0739 40       		.byte	64
- 1879 073a E6       		.byte	-26
- 1880 073b 80       		.byte	-128
- 1881 073c E8       		.byte	-24
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 34
-
-
- 1882 073d 80       		.byte	-128
- 1883 073e EA       		.byte	-22
- 1884 073f 80       		.byte	-128
- 1885 0740 EC       		.byte	-20
- 1886 0741 80       		.byte	-128
- 1887 0742 EE       		.byte	-18
- 1888 0743 80       		.byte	-128
- 1889 0744 01       		.byte	1
- 1890 0745 88       		.byte	-120
- 1891 0746 03       		.byte	3
- 1892 0747 48       		.byte	72
- 1893 0748 05       		.byte	5
- 1894 0749 18       		.byte	24
- 1895 074a 07       		.byte	7
- 1896 074b 40       		.byte	64
- 1897 074c 08       		.byte	8
- 1898 074d 40       		.byte	64
- 1899 074e 0B       		.byte	11
- 1900 074f 40       		.byte	64
- 1901 0750 0C       		.byte	12
- 1902 0751 48       		.byte	72
- 1903 0752 12       		.byte	18
- 1904 0753 80       		.byte	-128
- 1905 0754 14       		.byte	20
- 1906 0755 80       		.byte	-128
- 1907 0756 17       		.byte	23
- 1908 0757 01       		.byte	1
- 1909 0758 19       		.byte	25
- 1910 0759 60       		.byte	96
- 1911 075a 1B       		.byte	27
- 1912 075b 02       		.byte	2
- 1913 075c 1D       		.byte	29
- 1914 075d 10       		.byte	16
- 1915 075e 1E       		.byte	30
- 1916 075f 40       		.byte	64
- 1917 0760 21       		.byte	33
- 1918 0761 08       		.byte	8
- 1919 0762 24       		.byte	36
- 1920 0763 60       		.byte	96
- 1921 0764 29       		.byte	41
- 1922 0765 08       		.byte	8
- 1923 0766 2F       		.byte	47
- 1924 0767 20       		.byte	32
- 1925 0768 31       		.byte	49
- 1926 0769 08       		.byte	8
- 1927 076a 32       		.byte	50
- 1928 076b 80       		.byte	-128
- 1929 076c 33       		.byte	51
- 1930 076d 20       		.byte	32
- 1931 076e 34       		.byte	52
- 1932 076f 80       		.byte	-128
- 1933 0770 35       		.byte	53
- 1934 0771 08       		.byte	8
- 1935 0772 36       		.byte	54
- 1936 0773 80       		.byte	-128
- 1937 0774 37       		.byte	55
- 1938 0775 20       		.byte	32
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 35
-
-
- 1939 0776 43       		.byte	67
- 1940 0777 48       		.byte	72
- 1941 0778 46       		.byte	70
- 1942 0779 04       		.byte	4
- 1943 077a 47       		.byte	71
- 1944 077b 40       		.byte	64
- 1945 077c 4D       		.byte	77
- 1946 077d 05       		.byte	5
- 1947 077e 54       		.byte	84
- 1948 077f 08       		.byte	8
- 1949 0780 56       		.byte	86
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  1950 0781 04       		.byte	4
  1951 0782 06       		.byte	6
  1952 0783 40       		.byte	64
@@ -3585,7 +2091,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1986 07a5 08       		.byte	8
  1987 07a6 37       		.byte	55
  1988 07a7 42       		.byte	66
-<<<<<<< HEAD
  1989 07a8 38       		.byte	56
  1990 07a9 08       		.byte	8
  1991 07aa 3A       		.byte	58
@@ -3593,7 +2098,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  1993 07ac 3B       		.byte	59
  1994 07ad 80       		.byte	-128
  1995 07ae 3C       		.byte	60
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 36
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 36
 
 
  1996 07af 10       		.byte	16
@@ -3653,7 +2158,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2050 07e5 46       		.byte	70
  2051 07e6 CA       		.byte	-54
  2052 07e7 62       		.byte	98
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 37
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 37
 
 
  2053 07e8 CC       		.byte	-52
@@ -3713,7 +2218,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2107 081e 58       		.byte	88
  2108 081f 04       		.byte	4
  2109 0820 59       		.byte	89
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 38
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 38
 
 
  2110 0821 04       		.byte	4
@@ -3724,146 +2229,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2115 0826 5D       		.byte	93
  2116 0827 30       		.byte	48
  2117 0828 5F       		.byte	95
-=======
- 1989 07a8 CC       		.byte	-52
- 1990 07a9 7E       		.byte	126
- 1991 07aa D0       		.byte	-48
- 1992 07ab 3A       		.byte	58
- 1993 07ac D6       		.byte	-42
- 1994 07ad D0       		.byte	-48
- 1995 07ae 04       		.byte	4
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 36
-
-
- 1996 07af 01       		.byte	1
- 1997 07b0 05       		.byte	5
- 1998 07b1 01       		.byte	1
- 1999 07b2 06       		.byte	6
- 2000 07b3 02       		.byte	2
- 2001 07b4 09       		.byte	9
- 2002 07b5 01       		.byte	1
- 2003 07b6 0A       		.byte	10
- 2004 07b7 02       		.byte	2
- 2005 07b8 0C       		.byte	12
- 2006 07b9 02       		.byte	2
- 2007 07ba 0E       		.byte	14
- 2008 07bb 05       		.byte	5
- 2009 07bc 0F       		.byte	15
- 2010 07bd 01       		.byte	1
- 2011 07be 10       		.byte	16
- 2012 07bf 06       		.byte	6
- 2013 07c0 11       		.byte	17
- 2014 07c1 01       		.byte	1
- 2015 07c2 14       		.byte	20
- 2016 07c3 06       		.byte	6
- 2017 07c4 19       		.byte	25
- 2018 07c5 01       		.byte	1
- 2019 07c6 1C       		.byte	28
- 2020 07c7 07       		.byte	7
- 2021 07c8 20       		.byte	32
- 2022 07c9 04       		.byte	4
- 2023 07ca 22       		.byte	34
- 2024 07cb 02       		.byte	2
- 2025 07cc 24       		.byte	36
- 2026 07cd 02       		.byte	2
- 2027 07ce 26       		.byte	38
- 2028 07cf 04       		.byte	4
- 2029 07d0 28       		.byte	40
- 2030 07d1 06       		.byte	6
- 2031 07d2 2C       		.byte	44
- 2032 07d3 04       		.byte	4
- 2033 07d4 34       		.byte	52
- 2034 07d5 07       		.byte	7
- 2035 07d6 37       		.byte	55
- 2036 07d7 01       		.byte	1
- 2037 07d8 3F       		.byte	63
- 2038 07d9 40       		.byte	64
- 2039 07da 40       		.byte	64
- 2040 07db 54       		.byte	84
- 2041 07dc 49       		.byte	73
- 2042 07dd FF       		.byte	-1
- 2043 07de 4A       		.byte	74
- 2044 07df FF       		.byte	-1
- 2045 07e0 4B       		.byte	75
- 2046 07e1 FF       		.byte	-1
- 2047 07e2 4F       		.byte	79
- 2048 07e3 01       		.byte	1
- 2049 07e4 50       		.byte	80
- 2050 07e5 18       		.byte	24
- 2051 07e6 54       		.byte	84
- 2052 07e7 09       		.byte	9
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 37
-
-
- 2053 07e8 58       		.byte	88
- 2054 07e9 04       		.byte	4
- 2055 07ea 59       		.byte	89
- 2056 07eb 04       		.byte	4
- 2057 07ec 5A       		.byte	90
- 2058 07ed 04       		.byte	4
- 2059 07ee 5B       		.byte	91
- 2060 07ef 04       		.byte	4
- 2061 07f0 5D       		.byte	93
- 2062 07f1 03       		.byte	3
- 2063 07f2 5F       		.byte	95
- 2064 07f3 01       		.byte	1
- 2065 07f4 60       		.byte	96
- 2066 07f5 40       		.byte	64
- 2067 07f6 62       		.byte	98
- 2068 07f7 40       		.byte	64
- 2069 07f8 64       		.byte	100
- 2070 07f9 40       		.byte	64
- 2071 07fa 65       		.byte	101
- 2072 07fb 40       		.byte	64
- 2073 07fc 66       		.byte	102
- 2074 07fd 80       		.byte	-128
- 2075 07fe 68       		.byte	104
- 2076 07ff 80       		.byte	-128
- 2077 0800 6A       		.byte	106
- 2078 0801 80       		.byte	-128
- 2079 0802 6C       		.byte	108
- 2080 0803 80       		.byte	-128
- 2081 0804 6E       		.byte	110
- 2082 0805 80       		.byte	-128
- 2083 0806 84       		.byte	-124
- 2084 0807 01       		.byte	1
- 2085 0808 86       		.byte	-122
- 2086 0809 08       		.byte	8
- 2087 080a 8A       		.byte	-118
- 2088 080b 02       		.byte	2
- 2089 080c 8C       		.byte	-116
- 2090 080d 03       		.byte	3
- 2091 080e 8E       		.byte	-114
- 2092 080f 0C       		.byte	12
- 2093 0810 8F       		.byte	-113
- 2094 0811 01       		.byte	1
- 2095 0812 90       		.byte	-112
- 2096 0813 0A       		.byte	10
- 2097 0814 98       		.byte	-104
- 2098 0815 0A       		.byte	10
- 2099 0816 9C       		.byte	-100
- 2100 0817 08       		.byte	8
- 2101 0818 9E       		.byte	-98
- 2102 0819 02       		.byte	2
- 2103 081a A0       		.byte	-96
- 2104 081b 03       		.byte	3
- 2105 081c A2       		.byte	-94
- 2106 081d 04       		.byte	4
- 2107 081e A4       		.byte	-92
- 2108 081f 02       		.byte	2
- 2109 0820 A6       		.byte	-90
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 38
-
-
- 2110 0821 08       		.byte	8
- 2111 0822 A8       		.byte	-88
- 2112 0823 0A       		.byte	10
- 2113 0824 AC       		.byte	-84
- 2114 0825 08       		.byte	8
- 2115 0826 AF       		.byte	-81
- 2116 0827 01       		.byte	1
- 2117 0828 B1       		.byte	-79
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  2118 0829 01       		.byte	1
  2119 082a 82       		.byte	-126
  2120 082b 01       		.byte	1
@@ -3911,10 +2276,9 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2162 0855 04       		.byte	4
  2163 0856 19       		.byte	25
  2164 0857 40       		.byte	64
-<<<<<<< HEAD
  2165 0858 1E       		.byte	30
  2166 0859 80       		.byte	-128
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 39
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 39
 
 
  2167 085a 1F       		.byte	31
@@ -3938,34 +2302,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2185 086c 34       		.byte	52
  2186 086d 10       		.byte	16
  2187 086e 37       		.byte	55
-=======
- 2165 0858 E4       		.byte	-28
- 2166 0859 40       		.byte	64
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 39
-
-
- 2167 085a E5       		.byte	-27
- 2168 085b 40       		.byte	64
- 2169 085c E6       		.byte	-26
- 2170 085d 80       		.byte	-128
- 2171 085e E8       		.byte	-24
- 2172 085f 80       		.byte	-128
- 2173 0860 EA       		.byte	-22
- 2174 0861 80       		.byte	-128
- 2175 0862 EC       		.byte	-20
- 2176 0863 80       		.byte	-128
- 2177 0864 EE       		.byte	-18
- 2178 0865 80       		.byte	-128
- 2179 0866 01       		.byte	1
- 2180 0867 28       		.byte	40
- 2181 0868 03       		.byte	3
- 2182 0869 01       		.byte	1
- 2183 086a 04       		.byte	4
- 2184 086b 20       		.byte	32
- 2185 086c 05       		.byte	5
- 2186 086d 28       		.byte	40
- 2187 086e 07       		.byte	7
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  2188 086f 01       		.byte	1
  2189 0870 3B       		.byte	59
  2190 0871 02       		.byte	2
@@ -3995,7 +2331,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2214 0889 10       		.byte	16
  2215 088a 8A       		.byte	-118
  2216 088b 02       		.byte	2
-<<<<<<< HEAD
  2217 088c 92       		.byte	-110
  2218 088d 35       		.byte	53
  2219 088e 94       		.byte	-108
@@ -4003,7 +2338,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2221 0890 9A       		.byte	-102
  2222 0891 02       		.byte	2
  2223 0892 9B       		.byte	-101
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 40
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 40
 
 
  2224 0893 05       		.byte	5
@@ -4063,7 +2398,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2278 08c9 08       		.byte	8
  2279 08ca 9C       		.byte	-100
  2280 08cb 02       		.byte	2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 41
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 41
 
 
  2281 08cc 9E       		.byte	-98
@@ -4095,113 +2430,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2307 08e6 C0       		.byte	-64
  2308 08e7 04       		.byte	4
  2309 08e8 C1       		.byte	-63
-=======
- 2217 088c 29       		.byte	41
- 2218 088d 80       		.byte	-128
- 2219 088e 2A       		.byte	42
- 2220 088f 40       		.byte	64
- 2221 0890 34       		.byte	52
- 2222 0891 11       		.byte	17
- 2223 0892 36       		.byte	54
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 40
-
-
- 2224 0893 11       		.byte	17
- 2225 0894 3B       		.byte	59
- 2226 0895 40       		.byte	64
- 2227 0896 3D       		.byte	61
- 2228 0897 98       		.byte	-104
- 2229 0898 3F       		.byte	63
- 2230 0899 20       		.byte	32
- 2231 089a 41       		.byte	65
- 2232 089b 40       		.byte	64
- 2233 089c 46       		.byte	70
- 2234 089d 40       		.byte	64
- 2235 089e 49       		.byte	73
- 2236 089f 05       		.byte	5
- 2237 08a0 4B       		.byte	75
- 2238 08a1 40       		.byte	64
- 2239 08a2 4F       		.byte	79
- 2240 08a3 40       		.byte	64
- 2241 08a4 51       		.byte	81
- 2242 08a5 40       		.byte	64
- 2243 08a6 52       		.byte	82
- 2244 08a7 40       		.byte	64
- 2245 08a8 59       		.byte	89
- 2246 08a9 05       		.byte	5
- 2247 08aa 5B       		.byte	91
- 2248 08ab 80       		.byte	-128
- 2249 08ac 5C       		.byte	92
- 2250 08ad 64       		.byte	100
- 2251 08ae 5F       		.byte	95
- 2252 08af 02       		.byte	2
- 2253 08b0 65       		.byte	101
- 2254 08b1 40       		.byte	64
- 2255 08b2 84       		.byte	-124
- 2256 08b3 40       		.byte	64
- 2257 08b4 87       		.byte	-121
- 2258 08b5 20       		.byte	32
- 2259 08b6 90       		.byte	-112
- 2260 08b7 24       		.byte	36
- 2261 08b8 91       		.byte	-111
- 2262 08b9 40       		.byte	64
- 2263 08ba 98       		.byte	-104
- 2264 08bb 20       		.byte	32
- 2265 08bc 9C       		.byte	-100
- 2266 08bd 40       		.byte	64
- 2267 08be 9D       		.byte	-99
- 2268 08bf 18       		.byte	24
- 2269 08c0 A1       		.byte	-95
- 2270 08c1 44       		.byte	68
- 2271 08c2 A2       		.byte	-94
- 2272 08c3 91       		.byte	-111
- 2273 08c4 A3       		.byte	-93
- 2274 08c5 10       		.byte	16
- 2275 08c6 A7       		.byte	-89
- 2276 08c7 20       		.byte	32
- 2277 08c8 A8       		.byte	-88
- 2278 08c9 04       		.byte	4
- 2279 08ca AD       		.byte	-83
- 2280 08cb 02       		.byte	2
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 41
-
-
- 2281 08cc AE       		.byte	-82
- 2282 08cd 80       		.byte	-128
- 2283 08ce B4       		.byte	-76
- 2284 08cf 20       		.byte	32
- 2285 08d0 B5       		.byte	-75
- 2286 08d1 40       		.byte	64
- 2287 08d2 C0       		.byte	-64
- 2288 08d3 E7       		.byte	-25
- 2289 08d4 C2       		.byte	-62
- 2290 08d5 BB       		.byte	-69
- 2291 08d6 C4       		.byte	-60
- 2292 08d7 FF       		.byte	-1
- 2293 08d8 CA       		.byte	-54
- 2294 08d9 08       		.byte	8
- 2295 08da CC       		.byte	-52
- 2296 08db A0       		.byte	-96
- 2297 08dc CE       		.byte	-50
- 2298 08dd 78       		.byte	120
- 2299 08de D0       		.byte	-48
- 2300 08df 88       		.byte	-120
- 2301 08e0 D2       		.byte	-46
- 2302 08e1 18       		.byte	24
- 2303 08e2 D6       		.byte	-42
- 2304 08e3 FB       		.byte	-5
- 2305 08e4 D8       		.byte	-40
- 2306 08e5 10       		.byte	16
- 2307 08e6 E8       		.byte	-24
- 2308 08e7 40       		.byte	64
- 2309 08e8 04       		.byte	4
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  2310 08e9 02       		.byte	2
  2311 08ea C2       		.byte	-62
  2312 08eb 40       		.byte	64
  2313 08ec C4       		.byte	-60
  2314 08ed 01       		.byte	1
-<<<<<<< HEAD
  2315 08ee C5       		.byte	-59
  2316 08ef CE       		.byte	-50
  2317 08f0 C6       		.byte	-58
@@ -4225,7 +2458,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2335 0902 D0       		.byte	-48
  2336 0903 8C       		.byte	-116
  2337 0904 D1       		.byte	-47
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 42
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 42
 
 
  2338 0905 10       		.byte	16
@@ -4285,7 +2518,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2392 093b A0       		.byte	-96
  2393 093c 47       		.byte	71
  2394 093d 02       		.byte	2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 43
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 43
 
 
  2395 093e 4E       		.byte	78
@@ -4345,7 +2578,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2449 0974 15       		.byte	21
  2450 0975 04       		.byte	4
  2451 0976 17       		.byte	23
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 44
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 44
 
 
  2452 0977 03       		.byte	3
@@ -4370,176 +2603,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2471 098a 52       		.byte	82
  2472 098b 80       		.byte	-128
  2473 098c 58       		.byte	88
-=======
- 2315 08ee 0A       		.byte	10
- 2316 08ef 02       		.byte	2
- 2317 08f0 0E       		.byte	14
- 2318 08f1 01       		.byte	1
- 2319 08f2 0F       		.byte	15
- 2320 08f3 01       		.byte	1
- 2321 08f4 10       		.byte	16
- 2322 08f5 01       		.byte	1
- 2323 08f6 18       		.byte	24
- 2324 08f7 01       		.byte	1
- 2325 08f8 1A       		.byte	26
- 2326 08f9 02       		.byte	2
- 2327 08fa 1D       		.byte	29
- 2328 08fb 03       		.byte	3
- 2329 08fc 1E       		.byte	30
- 2330 08fd 03       		.byte	3
- 2331 08fe 20       		.byte	32
- 2332 08ff 01       		.byte	1
- 2333 0900 21       		.byte	33
- 2334 0901 01       		.byte	1
- 2335 0902 23       		.byte	35
- 2336 0903 02       		.byte	2
- 2337 0904 25       		.byte	37
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 42
-
-
- 2338 0905 01       		.byte	1
- 2339 0906 26       		.byte	38
- 2340 0907 01       		.byte	1
- 2341 0908 27       		.byte	39
- 2342 0909 02       		.byte	2
- 2343 090a 28       		.byte	40
- 2344 090b 01       		.byte	1
- 2345 090c 2C       		.byte	44
- 2346 090d 01       		.byte	1
- 2347 090e 32       		.byte	50
- 2348 090f 03       		.byte	3
- 2349 0910 37       		.byte	55
- 2350 0911 03       		.byte	3
- 2351 0912 3A       		.byte	58
- 2352 0913 08       		.byte	8
- 2353 0914 3B       		.byte	59
- 2354 0915 C0       		.byte	-64
- 2355 0916 58       		.byte	88
- 2356 0917 04       		.byte	4
- 2357 0918 59       		.byte	89
- 2358 0919 04       		.byte	4
- 2359 091a 5F       		.byte	95
- 2360 091b 01       		.byte	1
- 2361 091c 80       		.byte	-128
- 2362 091d 04       		.byte	4
- 2363 091e 81       		.byte	-127
- 2364 091f 80       		.byte	-128
- 2365 0920 83       		.byte	-125
- 2366 0921 20       		.byte	32
- 2367 0922 84       		.byte	-124
- 2368 0923 03       		.byte	3
- 2369 0924 85       		.byte	-123
- 2370 0925 05       		.byte	5
- 2371 0926 89       		.byte	-119
- 2372 0927 05       		.byte	5
- 2373 0928 8D       		.byte	-115
- 2374 0929 D4       		.byte	-44
- 2375 092a 8E       		.byte	-114
- 2376 092b 04       		.byte	4
- 2377 092c 8F       		.byte	-113
- 2378 092d 20       		.byte	32
- 2379 092e 90       		.byte	-112
- 2380 092f 02       		.byte	2
- 2381 0930 91       		.byte	-111
- 2382 0931 05       		.byte	5
- 2383 0932 92       		.byte	-110
- 2384 0933 0D       		.byte	13
- 2385 0934 94       		.byte	-108
- 2386 0935 04       		.byte	4
- 2387 0936 95       		.byte	-107
- 2388 0937 18       		.byte	24
- 2389 0938 97       		.byte	-105
- 2390 0939 21       		.byte	33
- 2391 093a 9A       		.byte	-102
- 2392 093b 04       		.byte	4
- 2393 093c 9B       		.byte	-101
- 2394 093d 05       		.byte	5
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 43
-
-
- 2395 093e 9C       		.byte	-100
- 2396 093f 05       		.byte	5
- 2397 0940 9E       		.byte	-98
- 2398 0941 0A       		.byte	10
- 2399 0942 A0       		.byte	-96
- 2400 0943 07       		.byte	7
- 2401 0944 A1       		.byte	-95
- 2402 0945 28       		.byte	40
- 2403 0946 A2       		.byte	-94
- 2404 0947 08       		.byte	8
- 2405 0948 A3       		.byte	-93
- 2406 0949 42       		.byte	66
- 2407 094a A4       		.byte	-92
- 2408 094b 04       		.byte	4
- 2409 094c A5       		.byte	-91
- 2410 094d 07       		.byte	7
- 2411 094e A7       		.byte	-89
- 2412 094f 08       		.byte	8
- 2413 0950 A8       		.byte	-88
- 2414 0951 04       		.byte	4
- 2415 0952 AB       		.byte	-85
- 2416 0953 05       		.byte	5
- 2417 0954 AD       		.byte	-83
- 2418 0955 05       		.byte	5
- 2419 0956 B1       		.byte	-79
- 2420 0957 FF       		.byte	-1
- 2421 0958 B6       		.byte	-74
- 2422 0959 0F       		.byte	15
- 2423 095a BA       		.byte	-70
- 2424 095b 80       		.byte	-128
- 2425 095c BB       		.byte	-69
- 2426 095d 03       		.byte	3
- 2427 095e D6       		.byte	-42
- 2428 095f 02       		.byte	2
- 2429 0960 D7       		.byte	-41
- 2430 0961 2C       		.byte	44
- 2431 0962 D8       		.byte	-40
- 2432 0963 04       		.byte	4
- 2433 0964 D9       		.byte	-39
- 2434 0965 04       		.byte	4
- 2435 0966 DB       		.byte	-37
- 2436 0967 04       		.byte	4
- 2437 0968 DF       		.byte	-33
- 2438 0969 01       		.byte	1
- 2439 096a 00       		.byte	0
- 2440 096b 10       		.byte	16
- 2441 096c 01       		.byte	1
- 2442 096d 48       		.byte	72
- 2443 096e 05       		.byte	5
- 2444 096f 08       		.byte	8
- 2445 0970 06       		.byte	6
- 2446 0971 01       		.byte	1
- 2447 0972 07       		.byte	7
- 2448 0973 40       		.byte	64
- 2449 0974 08       		.byte	8
- 2450 0975 10       		.byte	16
- 2451 0976 09       		.byte	9
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 44
-
-
- 2452 0977 81       		.byte	-127
- 2453 0978 0A       		.byte	10
- 2454 0979 40       		.byte	64
- 2455 097a 0D       		.byte	13
- 2456 097b 80       		.byte	-128
- 2457 097c 0F       		.byte	15
- 2458 097d 68       		.byte	104
- 2459 097e 10       		.byte	16
- 2460 097f 02       		.byte	2
- 2461 0980 11       		.byte	17
- 2462 0981 18       		.byte	24
- 2463 0982 12       		.byte	18
- 2464 0983 01       		.byte	1
- 2465 0984 13       		.byte	19
- 2466 0985 02       		.byte	2
- 2467 0986 14       		.byte	20
- 2468 0987 40       		.byte	64
- 2469 0988 17       		.byte	23
- 2470 0989 14       		.byte	20
- 2471 098a 18       		.byte	24
- 2472 098b 30       		.byte	48
- 2473 098c 1B       		.byte	27
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  2474 098d 04       		.byte	4
  2475 098e 59       		.byte	89
  2476 098f 04       		.byte	4
@@ -4563,7 +2626,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2494 09a1 40       		.byte	64
  2495 09a2 66       		.byte	102
  2496 09a3 80       		.byte	-128
-<<<<<<< HEAD
  2497 09a4 68       		.byte	104
  2498 09a5 80       		.byte	-128
  2499 09a6 6A       		.byte	106
@@ -4576,7 +2638,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2506 09ad 04       		.byte	4
  2507 09ae 88       		.byte	-120
  2508 09af 01       		.byte	1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 45
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 45
 
 
  2509 09b0 89       		.byte	-119
@@ -4636,94 +2698,13 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2563 09e6 CF       		.byte	-49
  2564 09e7 01       		.byte	1
  2565 09e8 D0       		.byte	-48
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 46
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 46
 
 
  2566 09e9 18       		.byte	24
  2567 09ea D2       		.byte	-46
  2568 09eb 80       		.byte	-128
  2569 09ec D4       		.byte	-44
-=======
- 2497 09a4 35       		.byte	53
- 2498 09a5 18       		.byte	24
- 2499 09a6 37       		.byte	55
- 2500 09a7 02       		.byte	2
- 2501 09a8 39       		.byte	57
- 2502 09a9 40       		.byte	64
- 2503 09aa 3C       		.byte	60
- 2504 09ab 40       		.byte	64
- 2505 09ac 3D       		.byte	61
- 2506 09ad 19       		.byte	25
- 2507 09ae 67       		.byte	103
- 2508 09af C0       		.byte	-64
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 45
-
-
- 2509 09b0 6C       		.byte	108
- 2510 09b1 42       		.byte	66
- 2511 09b2 6D       		.byte	109
- 2512 09b3 9A       		.byte	-102
- 2513 09b4 6E       		.byte	110
- 2514 09b5 22       		.byte	34
- 2515 09b6 6F       		.byte	111
- 2516 09b7 54       		.byte	84
- 2517 09b8 77       		.byte	119
- 2518 09b9 02       		.byte	2
- 2519 09ba 80       		.byte	-128
- 2520 09bb 40       		.byte	64
- 2521 09bc 81       		.byte	-127
- 2522 09bd 04       		.byte	4
- 2523 09be 83       		.byte	-125
- 2524 09bf 12       		.byte	18
- 2525 09c0 84       		.byte	-124
- 2526 09c1 02       		.byte	2
- 2527 09c2 86       		.byte	-122
- 2528 09c3 30       		.byte	48
- 2529 09c4 89       		.byte	-119
- 2530 09c5 01       		.byte	1
- 2531 09c6 C0       		.byte	-64
- 2532 09c7 B7       		.byte	-73
- 2533 09c8 C2       		.byte	-62
- 2534 09c9 FB       		.byte	-5
- 2535 09ca C4       		.byte	-60
- 2536 09cb 7F       		.byte	127
- 2537 09cc CA       		.byte	-54
- 2538 09cd F3       		.byte	-13
- 2539 09ce CC       		.byte	-52
- 2540 09cf E8       		.byte	-24
- 2541 09d0 CE       		.byte	-50
- 2542 09d1 F8       		.byte	-8
- 2543 09d2 D8       		.byte	-40
- 2544 09d3 80       		.byte	-128
- 2545 09d4 E4       		.byte	-28
- 2546 09d5 80       		.byte	-128
- 2547 09d6 02       		.byte	2
- 2548 09d7 01       		.byte	1
- 2549 09d8 13       		.byte	19
- 2550 09d9 01       		.byte	1
- 2551 09da 2E       		.byte	46
- 2552 09db 01       		.byte	1
- 2553 09dc 2F       		.byte	47
- 2554 09dd 01       		.byte	1
- 2555 09de 36       		.byte	54
- 2556 09df 01       		.byte	1
- 2557 09e0 37       		.byte	55
- 2558 09e1 01       		.byte	1
- 2559 09e2 3E       		.byte	62
- 2560 09e3 40       		.byte	64
- 2561 09e4 40       		.byte	64
- 2562 09e5 54       		.byte	84
- 2563 09e6 49       		.byte	73
- 2564 09e7 FF       		.byte	-1
- 2565 09e8 4A       		.byte	74
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 46
-
-
- 2566 09e9 FF       		.byte	-1
- 2567 09ea 4B       		.byte	75
- 2568 09eb FF       		.byte	-1
- 2569 09ec 4F       		.byte	79
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  2570 09ed 01       		.byte	1
  2571 09ee D8       		.byte	-40
  2572 09ef 04       		.byte	4
@@ -4771,14 +2752,13 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2614 0a19 20       		.byte	32
  2615 0a1a 15       		.byte	21
  2616 0a1b 04       		.byte	4
-<<<<<<< HEAD
  2617 0a1c 18       		.byte	24
  2618 0a1d 20       		.byte	32
  2619 0a1e 1E       		.byte	30
  2620 0a1f 04       		.byte	4
  2621 0a20 20       		.byte	32
  2622 0a21 40       		.byte	64
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 47
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 47
 
 
  2623 0a22 25       		.byte	37
@@ -4838,76 +2818,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2677 0a58 9F       		.byte	-97
  2678 0a59 08       		.byte	8
  2679 0a5a A0       		.byte	-96
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 48
-=======
- 2617 0a1c 88       		.byte	-120
- 2618 0a1d 01       		.byte	1
- 2619 0a1e 8A       		.byte	-118
- 2620 0a1f 08       		.byte	8
- 2621 0a20 8E       		.byte	-114
- 2622 0a21 01       		.byte	1
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 47
-
-
- 2623 0a22 8F       		.byte	-113
- 2624 0a23 01       		.byte	1
- 2625 0a24 90       		.byte	-112
- 2626 0a25 01       		.byte	1
- 2627 0a26 92       		.byte	-110
- 2628 0a27 10       		.byte	16
- 2629 0a28 96       		.byte	-106
- 2630 0a29 1E       		.byte	30
- 2631 0a2a 99       		.byte	-103
- 2632 0a2b 02       		.byte	2
- 2633 0a2c 9A       		.byte	-102
- 2634 0a2d 20       		.byte	32
- 2635 0a2e A4       		.byte	-92
- 2636 0a2f 20       		.byte	32
- 2637 0a30 B4       		.byte	-76
- 2638 0a31 20       		.byte	32
- 2639 0a32 B5       		.byte	-75
- 2640 0a33 01       		.byte	1
- 2641 0a34 B6       		.byte	-74
- 2642 0a35 1F       		.byte	31
- 2643 0a36 B7       		.byte	-73
- 2644 0a37 02       		.byte	2
- 2645 0a38 BE       		.byte	-66
- 2646 0a39 50       		.byte	80
- 2647 0a3a BF       		.byte	-65
- 2648 0a3b 40       		.byte	64
- 2649 0a3c C0       		.byte	-64
- 2650 0a3d 54       		.byte	84
- 2651 0a3e C5       		.byte	-59
- 2652 0a3f EC       		.byte	-20
- 2653 0a40 C6       		.byte	-58
- 2654 0a41 02       		.byte	2
- 2655 0a42 C8       		.byte	-56
- 2656 0a43 07       		.byte	7
- 2657 0a44 C9       		.byte	-55
- 2658 0a45 FF       		.byte	-1
- 2659 0a46 CA       		.byte	-54
- 2660 0a47 FF       		.byte	-1
- 2661 0a48 CB       		.byte	-53
- 2662 0a49 FF       		.byte	-1
- 2663 0a4a CD       		.byte	-51
- 2664 0a4b 83       		.byte	-125
- 2665 0a4c CE       		.byte	-50
- 2666 0a4d 03       		.byte	3
- 2667 0a4e CF       		.byte	-49
- 2668 0a4f 01       		.byte	1
- 2669 0a50 D0       		.byte	-48
- 2670 0a51 18       		.byte	24
- 2671 0a52 D6       		.byte	-42
- 2672 0a53 02       		.byte	2
- 2673 0a54 D7       		.byte	-41
- 2674 0a55 2C       		.byte	44
- 2675 0a56 D8       		.byte	-40
- 2676 0a57 04       		.byte	4
- 2677 0a58 D9       		.byte	-39
- 2678 0a59 04       		.byte	4
- 2679 0a5a DA       		.byte	-38
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 48
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 48
 
 
  2680 0a5b 04       		.byte	4
@@ -4944,7 +2855,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2711 0a7a 05       		.byte	5
  2712 0a7b 01       		.byte	1
  2713 0a7c 07       		.byte	7
-<<<<<<< HEAD
  2714 0a7d 02       		.byte	2
  2715 0a7e 08       		.byte	8
  2716 0a7f 18       		.byte	24
@@ -4968,7 +2878,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2734 0a91 08       		.byte	8
  2735 0a92 19       		.byte	25
  2736 0a93 0D       		.byte	13
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 49
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 49
 
 
  2737 0a94 1A       		.byte	26
@@ -5028,7 +2938,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2791 0aca 5B       		.byte	91
  2792 0acb 04       		.byte	4
  2793 0acc 5C       		.byte	92
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 50
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 50
 
 
  2794 0acd 11       		.byte	17
@@ -5047,110 +2957,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2807 0ada 66       		.byte	102
  2808 0adb 80       		.byte	-128
  2809 0adc 68       		.byte	104
-=======
- 2714 0a7d 54       		.byte	84
- 2715 0a7e 0E       		.byte	14
- 2716 0a7f A0       		.byte	-96
- 2717 0a80 0F       		.byte	15
- 2718 0a81 08       		.byte	8
- 2719 0a82 10       		.byte	16
- 2720 0a83 02       		.byte	2
- 2721 0a84 14       		.byte	20
- 2722 0a85 60       		.byte	96
- 2723 0a86 17       		.byte	23
- 2724 0a87 01       		.byte	1
- 2725 0a88 19       		.byte	25
- 2726 0a89 40       		.byte	64
- 2727 0a8a 1D       		.byte	29
- 2728 0a8b A0       		.byte	-96
- 2729 0a8c 22       		.byte	34
- 2730 0a8d 80       		.byte	-128
- 2731 0a8e 26       		.byte	38
- 2732 0a8f 10       		.byte	16
- 2733 0a90 27       		.byte	39
- 2734 0a91 01       		.byte	1
- 2735 0a92 2A       		.byte	42
- 2736 0a93 40       		.byte	64
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 49
-
-
- 2737 0a94 30       		.byte	48
- 2738 0a95 02       		.byte	2
- 2739 0a96 34       		.byte	52
- 2740 0a97 20       		.byte	32
- 2741 0a98 3C       		.byte	60
- 2742 0a99 40       		.byte	64
- 2743 0a9a 42       		.byte	66
- 2744 0a9b 80       		.byte	-128
- 2745 0a9c 46       		.byte	70
- 2746 0a9d 80       		.byte	-128
- 2747 0a9e 48       		.byte	72
- 2748 0a9f 02       		.byte	2
- 2749 0aa0 4C       		.byte	76
- 2750 0aa1 02       		.byte	2
- 2751 0aa2 4D       		.byte	77
- 2752 0aa3 0A       		.byte	10
- 2753 0aa4 56       		.byte	86
- 2754 0aa5 C0       		.byte	-64
- 2755 0aa6 59       		.byte	89
- 2756 0aa7 4A       		.byte	74
- 2757 0aa8 64       		.byte	100
- 2758 0aa9 40       		.byte	64
- 2759 0aaa 6E       		.byte	110
- 2760 0aab 80       		.byte	-128
- 2761 0aac 6F       		.byte	111
- 2762 0aad 7E       		.byte	126
- 2763 0aae 70       		.byte	112
- 2764 0aaf 02       		.byte	2
- 2765 0ab0 7C       		.byte	124
- 2766 0ab1 A0       		.byte	-96
- 2767 0ab2 80       		.byte	-128
- 2768 0ab3 A0       		.byte	-96
- 2769 0ab4 8C       		.byte	-116
- 2770 0ab5 40       		.byte	64
- 2771 0ab6 8D       		.byte	-115
- 2772 0ab7 20       		.byte	32
- 2773 0ab8 9C       		.byte	-100
- 2774 0ab9 C0       		.byte	-64
- 2775 0aba 9F       		.byte	-97
- 2776 0abb 54       		.byte	84
- 2777 0abc A3       		.byte	-93
- 2778 0abd 04       		.byte	4
- 2779 0abe A5       		.byte	-91
- 2780 0abf 80       		.byte	-128
- 2781 0ac0 A6       		.byte	-90
- 2782 0ac1 80       		.byte	-128
- 2783 0ac2 A7       		.byte	-89
- 2784 0ac3 2A       		.byte	42
- 2785 0ac4 A8       		.byte	-88
- 2786 0ac5 20       		.byte	32
- 2787 0ac6 AA       		.byte	-86
- 2788 0ac7 02       		.byte	2
- 2789 0ac8 AB       		.byte	-85
- 2790 0ac9 48       		.byte	72
- 2791 0aca C0       		.byte	-64
- 2792 0acb F8       		.byte	-8
- 2793 0acc C2       		.byte	-62
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 50
-
-
- 2794 0acd 70       		.byte	112
- 2795 0ace C4       		.byte	-60
- 2796 0acf 21       		.byte	33
- 2797 0ad0 CA       		.byte	-54
- 2798 0ad1 08       		.byte	8
- 2799 0ad2 CC       		.byte	-52
- 2800 0ad3 21       		.byte	33
- 2801 0ad4 CE       		.byte	-50
- 2802 0ad5 10       		.byte	16
- 2803 0ad6 D0       		.byte	-48
- 2804 0ad7 81       		.byte	-127
- 2805 0ad8 D2       		.byte	-46
- 2806 0ad9 18       		.byte	24
- 2807 0ada D6       		.byte	-42
- 2808 0adb 0B       		.byte	11
- 2809 0adc D8       		.byte	-40
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  2810 0add 80       		.byte	-128
  2811 0ade 6A       		.byte	106
  2812 0adf 80       		.byte	-128
@@ -5174,7 +2980,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2830 0af1 01       		.byte	1
  2831 0af2 B1       		.byte	-79
  2832 0af3 01       		.byte	1
-<<<<<<< HEAD
  2833 0af4 B6       		.byte	-74
  2834 0af5 02       		.byte	2
  2835 0af6 BE       		.byte	-66
@@ -5193,7 +2998,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2848 0b03 FF       		.byte	-1
  2849 0b04 CB       		.byte	-53
  2850 0b05 FF       		.byte	-1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 51
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 51
 
 
  2851 0b06 CD       		.byte	-51
@@ -5253,7 +3058,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2905 0b3c 0B       		.byte	11
  2906 0b3d 40       		.byte	64
  2907 0b3e 0C       		.byte	12
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 52
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 52
 
 
  2908 0b3f 44       		.byte	68
@@ -5262,95 +3067,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2911 0b42 15       		.byte	21
  2912 0b43 15       		.byte	21
  2913 0b44 16       		.byte	22
-=======
- 2833 0af4 25       		.byte	37
- 2834 0af5 01       		.byte	1
- 2835 0af6 28       		.byte	40
- 2836 0af7 01       		.byte	1
- 2837 0af8 29       		.byte	41
- 2838 0af9 01       		.byte	1
- 2839 0afa 2D       		.byte	45
- 2840 0afb 01       		.byte	1
- 2841 0afc 2E       		.byte	46
- 2842 0afd 01       		.byte	1
- 2843 0afe 30       		.byte	48
- 2844 0aff 01       		.byte	1
- 2845 0b00 33       		.byte	51
- 2846 0b01 01       		.byte	1
- 2847 0b02 34       		.byte	52
- 2848 0b03 02       		.byte	2
- 2849 0b04 37       		.byte	55
- 2850 0b05 02       		.byte	2
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 51
-
-
- 2851 0b06 3E       		.byte	62
- 2852 0b07 11       		.byte	17
- 2853 0b08 3F       		.byte	63
- 2854 0b09 04       		.byte	4
- 2855 0b0a 40       		.byte	64
- 2856 0b0b 02       		.byte	2
- 2857 0b0c 41       		.byte	65
- 2858 0b0d 04       		.byte	4
- 2859 0b0e 42       		.byte	66
- 2860 0b0f 20       		.byte	32
- 2861 0b10 44       		.byte	68
- 2862 0b11 01       		.byte	1
- 2863 0b12 45       		.byte	69
- 2864 0b13 F0       		.byte	-16
- 2865 0b14 46       		.byte	70
- 2866 0b15 EC       		.byte	-20
- 2867 0b16 47       		.byte	71
- 2868 0b17 DB       		.byte	-37
- 2869 0b18 48       		.byte	72
- 2870 0b19 3E       		.byte	62
- 2871 0b1a 49       		.byte	73
- 2872 0b1b FF       		.byte	-1
- 2873 0b1c 4A       		.byte	74
- 2874 0b1d FF       		.byte	-1
- 2875 0b1e 4B       		.byte	75
- 2876 0b1f FF       		.byte	-1
- 2877 0b20 4C       		.byte	76
- 2878 0b21 22       		.byte	34
- 2879 0b22 4E       		.byte	78
- 2880 0b23 F0       		.byte	-16
- 2881 0b24 4F       		.byte	79
- 2882 0b25 0C       		.byte	12
- 2883 0b26 50       		.byte	80
- 2884 0b27 8C       		.byte	-116
- 2885 0b28 51       		.byte	81
- 2886 0b29 10       		.byte	16
- 2887 0b2a 56       		.byte	86
- 2888 0b2b 08       		.byte	8
- 2889 0b2c 58       		.byte	88
- 2890 0b2d 04       		.byte	4
- 2891 0b2e 59       		.byte	89
- 2892 0b2f 04       		.byte	4
- 2893 0b30 5A       		.byte	90
- 2894 0b31 24       		.byte	36
- 2895 0b32 5B       		.byte	91
- 2896 0b33 04       		.byte	4
- 2897 0b34 5C       		.byte	92
- 2898 0b35 20       		.byte	32
- 2899 0b36 5D       		.byte	93
- 2900 0b37 28       		.byte	40
- 2901 0b38 5F       		.byte	95
- 2902 0b39 01       		.byte	1
- 2903 0b3a 68       		.byte	104
- 2904 0b3b 40       		.byte	64
- 2905 0b3c 69       		.byte	105
- 2906 0b3d 01       		.byte	1
- 2907 0b3e 6A       		.byte	106
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 52
-
-
- 2908 0b3f C0       		.byte	-64
- 2909 0b40 6B       		.byte	107
- 2910 0b41 01       		.byte	1
- 2911 0b42 80       		.byte	-128
- 2912 0b43 01       		.byte	1
- 2913 0b44 84       		.byte	-124
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  2914 0b45 01       		.byte	1
  2915 0b46 19       		.byte	25
  2916 0b47 80       		.byte	-128
@@ -5392,7 +3108,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2952 0b6b 80       		.byte	-128
  2953 0b6c 47       		.byte	71
  2954 0b6d 01       		.byte	1
-<<<<<<< HEAD
  2955 0b6e 49       		.byte	73
  2956 0b6f 05       		.byte	5
  2957 0b70 51       		.byte	81
@@ -5403,30 +3118,12 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2962 0b75 80       		.byte	-128
  2963 0b76 91       		.byte	-111
  2964 0b77 11       		.byte	17
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 53
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 53
 
 
  2965 0b78 96       		.byte	-106
  2966 0b79 40       		.byte	64
  2967 0b7a 97       		.byte	-105
-=======
- 2955 0b6e 1A       		.byte	26
- 2956 0b6f 80       		.byte	-128
- 2957 0b70 1C       		.byte	28
- 2958 0b71 04       		.byte	4
- 2959 0b72 1E       		.byte	30
- 2960 0b73 80       		.byte	-128
- 2961 0b74 27       		.byte	39
- 2962 0b75 21       		.byte	33
- 2963 0b76 2E       		.byte	46
- 2964 0b77 40       		.byte	64
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 53
-
-
- 2965 0b78 2F       		.byte	47
- 2966 0b79 2A       		.byte	42
- 2967 0b7a 37       		.byte	55
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  2968 0b7b 40       		.byte	64
  2969 0b7c 98       		.byte	-104
  2970 0b7d 40       		.byte	64
@@ -5438,7 +3135,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  2976 0b83 10       		.byte	16
  2977 0b84 9C       		.byte	-100
  2978 0b85 80       		.byte	-128
-<<<<<<< HEAD
  2979 0b86 9F       		.byte	-97
  2980 0b87 08       		.byte	8
  2981 0b88 A0       		.byte	-96
@@ -5482,7 +3178,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3019 0bae 1B       		.byte	27
  3020 0baf 01       		.byte	1
  3021 0bb0 1D       		.byte	29
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 54
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 54
 
 
  3022 0bb1 01       		.byte	1
@@ -5542,7 +3238,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3076 0be7 07       		.byte	7
  3077 0be8 9C       		.byte	-100
  3078 0be9 01       		.byte	1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 55
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 55
 
 
  3079 0bea 9E       		.byte	-98
@@ -5602,7 +3298,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3133 0c20 D0       		.byte	-48
  3134 0c21 0C       		.byte	12
  3135 0c22 D6       		.byte	-42
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 56
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 56
 
 
  3136 0c23 02       		.byte	2
@@ -5662,7 +3358,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3190 0c59 80       		.byte	-128
  3191 0c5a 11       		.byte	17
  3192 0c5b 54       		.byte	84
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 57
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 57
 
 
  3193 0c5c 17       		.byte	23
@@ -5690,259 +3386,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3215 0c72 28       		.byte	40
  3216 0c73 20       		.byte	32
  3217 0c74 2D       		.byte	45
-=======
- 2979 0b86 47       		.byte	71
- 2980 0b87 20       		.byte	32
- 2981 0b88 4C       		.byte	76
- 2982 0b89 80       		.byte	-128
- 2983 0b8a 4D       		.byte	77
- 2984 0b8b 02       		.byte	2
- 2985 0b8c 56       		.byte	86
- 2986 0b8d 23       		.byte	35
- 2987 0b8e 57       		.byte	87
- 2988 0b8f 44       		.byte	68
- 2989 0b90 59       		.byte	89
- 2990 0b91 02       		.byte	2
- 2991 0b92 5C       		.byte	92
- 2992 0b93 20       		.byte	32
- 2993 0b94 5E       		.byte	94
- 2994 0b95 80       		.byte	-128
- 2995 0b96 5F       		.byte	95
- 2996 0b97 08       		.byte	8
- 2997 0b98 60       		.byte	96
- 2998 0b99 15       		.byte	21
- 2999 0b9a 63       		.byte	99
- 3000 0b9b 40       		.byte	64
- 3001 0b9c 66       		.byte	102
- 3002 0b9d 08       		.byte	8
- 3003 0b9e 67       		.byte	103
- 3004 0b9f 09       		.byte	9
- 3005 0ba0 7C       		.byte	124
- 3006 0ba1 90       		.byte	-112
- 3007 0ba2 7F       		.byte	127
- 3008 0ba3 04       		.byte	4
- 3009 0ba4 82       		.byte	-126
- 3010 0ba5 80       		.byte	-128
- 3011 0ba6 87       		.byte	-121
- 3012 0ba7 40       		.byte	64
- 3013 0ba8 95       		.byte	-107
- 3014 0ba9 10       		.byte	16
- 3015 0baa 96       		.byte	-106
- 3016 0bab 80       		.byte	-128
- 3017 0bac 9E       		.byte	-98
- 3018 0bad 08       		.byte	8
- 3019 0bae C0       		.byte	-64
- 3020 0baf 1F       		.byte	31
- 3021 0bb0 C2       		.byte	-62
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 54
-
-
- 3022 0bb1 90       		.byte	-112
- 3023 0bb2 C4       		.byte	-60
- 3024 0bb3 F8       		.byte	-8
- 3025 0bb4 CA       		.byte	-54
- 3026 0bb5 70       		.byte	112
- 3027 0bb6 CC       		.byte	-52
- 3028 0bb7 10       		.byte	16
- 3029 0bb8 CE       		.byte	-50
- 3030 0bb9 80       		.byte	-128
- 3031 0bba D0       		.byte	-48
- 3032 0bbb B0       		.byte	-80
- 3033 0bbc D6       		.byte	-42
- 3034 0bbd 71       		.byte	113
- 3035 0bbe D8       		.byte	-40
- 3036 0bbf 7F       		.byte	127
- 3037 0bc0 DE       		.byte	-34
- 3038 0bc1 10       		.byte	16
- 3039 0bc2 E6       		.byte	-26
- 3040 0bc3 08       		.byte	8
- 3041 0bc4 EA       		.byte	-22
- 3042 0bc5 0A       		.byte	10
- 3043 0bc6 04       		.byte	4
- 3044 0bc7 01       		.byte	1
- 3045 0bc8 0B       		.byte	11
- 3046 0bc9 01       		.byte	1
- 3047 0bca 22       		.byte	34
- 3048 0bcb 01       		.byte	1
- 3049 0bcc 24       		.byte	36
- 3050 0bcd 01       		.byte	1
- 3051 0bce 2A       		.byte	42
- 3052 0bcf 01       		.byte	1
- 3053 0bd0 2B       		.byte	43
- 3054 0bd1 01       		.byte	1
- 3055 0bd2 32       		.byte	50
- 3056 0bd3 01       		.byte	1
- 3057 0bd4 33       		.byte	51
- 3058 0bd5 01       		.byte	1
- 3059 0bd6 38       		.byte	56
- 3060 0bd7 08       		.byte	8
- 3061 0bd8 3A       		.byte	58
- 3062 0bd9 20       		.byte	32
- 3063 0bda 3F       		.byte	63
- 3064 0bdb 04       		.byte	4
- 3065 0bdc 40       		.byte	64
- 3066 0bdd 41       		.byte	65
- 3067 0bde 49       		.byte	73
- 3068 0bdf FF       		.byte	-1
- 3069 0be0 4A       		.byte	74
- 3070 0be1 FF       		.byte	-1
- 3071 0be2 4B       		.byte	75
- 3072 0be3 FF       		.byte	-1
- 3073 0be4 4F       		.byte	79
- 3074 0be5 01       		.byte	1
- 3075 0be6 50       		.byte	80
- 3076 0be7 18       		.byte	24
- 3077 0be8 54       		.byte	84
- 3078 0be9 18       		.byte	24
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 55
-
-
- 3079 0bea 56       		.byte	86
- 3080 0beb 04       		.byte	4
- 3081 0bec 58       		.byte	88
- 3082 0bed 04       		.byte	4
- 3083 0bee 59       		.byte	89
- 3084 0bef 04       		.byte	4
- 3085 0bf0 5A       		.byte	90
- 3086 0bf1 04       		.byte	4
- 3087 0bf2 5B       		.byte	91
- 3088 0bf3 04       		.byte	4
- 3089 0bf4 5C       		.byte	92
- 3090 0bf5 01       		.byte	1
- 3091 0bf6 5D       		.byte	93
- 3092 0bf7 13       		.byte	19
- 3093 0bf8 5F       		.byte	95
- 3094 0bf9 01       		.byte	1
- 3095 0bfa 60       		.byte	96
- 3096 0bfb 40       		.byte	64
- 3097 0bfc 62       		.byte	98
- 3098 0bfd 40       		.byte	64
- 3099 0bfe 64       		.byte	100
- 3100 0bff 40       		.byte	64
- 3101 0c00 65       		.byte	101
- 3102 0c01 40       		.byte	64
- 3103 0c02 66       		.byte	102
- 3104 0c03 80       		.byte	-128
- 3105 0c04 68       		.byte	104
- 3106 0c05 80       		.byte	-128
- 3107 0c06 6A       		.byte	106
- 3108 0c07 80       		.byte	-128
- 3109 0c08 6C       		.byte	108
- 3110 0c09 80       		.byte	-128
- 3111 0c0a 6E       		.byte	110
- 3112 0c0b 80       		.byte	-128
- 3113 0c0c 83       		.byte	-125
- 3114 0c0d 03       		.byte	3
- 3115 0c0e 84       		.byte	-124
- 3116 0c0f 08       		.byte	8
- 3117 0c10 85       		.byte	-123
- 3118 0c11 0F       		.byte	15
- 3119 0c12 86       		.byte	-122
- 3120 0c13 02       		.byte	2
- 3121 0c14 88       		.byte	-120
- 3122 0c15 0E       		.byte	14
- 3123 0c16 89       		.byte	-119
- 3124 0c17 03       		.byte	3
- 3125 0c18 8B       		.byte	-117
- 3126 0c19 0C       		.byte	12
- 3127 0c1a 8D       		.byte	-115
- 3128 0c1b 04       		.byte	4
- 3129 0c1c 8E       		.byte	-114
- 3130 0c1d 01       		.byte	1
- 3131 0c1e 91       		.byte	-111
- 3132 0c1f 01       		.byte	1
- 3133 0c20 92       		.byte	-110
- 3134 0c21 01       		.byte	1
- 3135 0c22 95       		.byte	-107
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 56
-
-
- 3136 0c23 0C       		.byte	12
- 3137 0c24 98       		.byte	-104
- 3138 0c25 02       		.byte	2
- 3139 0c26 9A       		.byte	-102
- 3140 0c27 0C       		.byte	12
- 3141 0c28 9D       		.byte	-99
- 3142 0c29 08       		.byte	8
- 3143 0c2a A1       		.byte	-95
- 3144 0c2b 0F       		.byte	15
- 3145 0c2c A5       		.byte	-91
- 3146 0c2d 02       		.byte	2
- 3147 0c2e A8       		.byte	-88
- 3148 0c2f 0E       		.byte	14
- 3149 0c30 A9       		.byte	-87
- 3150 0c31 03       		.byte	3
- 3151 0c32 AC       		.byte	-84
- 3152 0c33 04       		.byte	4
- 3153 0c34 AD       		.byte	-83
- 3154 0c35 0C       		.byte	12
- 3155 0c36 AE       		.byte	-82
- 3156 0c37 02       		.byte	2
- 3157 0c38 AF       		.byte	-81
- 3158 0c39 03       		.byte	3
- 3159 0c3a B0       		.byte	-80
- 3160 0c3b 01       		.byte	1
- 3161 0c3c B3       		.byte	-77
- 3162 0c3d 0F       		.byte	15
- 3163 0c3e B4       		.byte	-76
- 3164 0c3f 0E       		.byte	14
- 3165 0c40 BB       		.byte	-69
- 3166 0c41 08       		.byte	8
- 3167 0c42 BE       		.byte	-66
- 3168 0c43 01       		.byte	1
- 3169 0c44 C0       		.byte	-64
- 3170 0c45 41       		.byte	65
- 3171 0c46 C5       		.byte	-59
- 3172 0c47 EC       		.byte	-20
- 3173 0c48 C6       		.byte	-58
- 3174 0c49 02       		.byte	2
- 3175 0c4a C8       		.byte	-56
- 3176 0c4b 07       		.byte	7
- 3177 0c4c C9       		.byte	-55
- 3178 0c4d FF       		.byte	-1
- 3179 0c4e CA       		.byte	-54
- 3180 0c4f FF       		.byte	-1
- 3181 0c50 CB       		.byte	-53
- 3182 0c51 FF       		.byte	-1
- 3183 0c52 CD       		.byte	-51
- 3184 0c53 83       		.byte	-125
- 3185 0c54 CE       		.byte	-50
- 3186 0c55 03       		.byte	3
- 3187 0c56 CF       		.byte	-49
- 3188 0c57 01       		.byte	1
- 3189 0c58 D0       		.byte	-48
- 3190 0c59 18       		.byte	24
- 3191 0c5a D4       		.byte	-44
- 3192 0c5b 01       		.byte	1
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 57
-
-
- 3193 0c5c D8       		.byte	-40
- 3194 0c5d 04       		.byte	4
- 3195 0c5e D9       		.byte	-39
- 3196 0c5f 04       		.byte	4
- 3197 0c60 DA       		.byte	-38
- 3198 0c61 04       		.byte	4
- 3199 0c62 DB       		.byte	-37
- 3200 0c63 04       		.byte	4
- 3201 0c64 DC       		.byte	-36
- 3202 0c65 11       		.byte	17
- 3203 0c66 DD       		.byte	-35
- 3204 0c67 33       		.byte	51
- 3205 0c68 DF       		.byte	-33
- 3206 0c69 01       		.byte	1
- 3207 0c6a E0       		.byte	-32
- 3208 0c6b 40       		.byte	64
- 3209 0c6c E2       		.byte	-30
- 3210 0c6d 40       		.byte	64
- 3211 0c6e E4       		.byte	-28
- 3212 0c6f 40       		.byte	64
- 3213 0c70 E5       		.byte	-27
- 3214 0c71 40       		.byte	64
- 3215 0c72 E6       		.byte	-26
- 3216 0c73 80       		.byte	-128
- 3217 0c74 E8       		.byte	-24
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  3218 0c75 80       		.byte	-128
  3219 0c76 2F       		.byte	47
  3220 0c77 01       		.byte	1
@@ -5974,9 +3417,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3246 0c91 40       		.byte	64
  3247 0c92 5A       		.byte	90
  3248 0c93 04       		.byte	4
-<<<<<<< HEAD
  3249 0c94 65       		.byte	101
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 58
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 58
 
 
  3250 0c95 08       		.byte	8
@@ -6036,7 +3478,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3304 0ccb 0F       		.byte	15
  3305 0ccc 09       		.byte	9
  3306 0ccd 08       		.byte	8
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 59
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 59
 
 
  3307 0cce 0A       		.byte	10
@@ -6096,7 +3538,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3361 0d04 3B       		.byte	59
  3362 0d05 20       		.byte	32
  3363 0d06 40       		.byte	64
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 60
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 60
 
 
  3364 0d07 42       		.byte	66
@@ -6156,7 +3598,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3418 0d3d 01       		.byte	1
  3419 0d3e 8E       		.byte	-114
  3420 0d3f 06       		.byte	6
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 61
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 61
 
 
  3421 0d40 92       		.byte	-110
@@ -6174,207 +3616,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3433 0d4c AF       		.byte	-81
  3434 0d4d 01       		.byte	1
  3435 0d4e B0       		.byte	-80
-=======
- 3249 0c94 1F       		.byte	31
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 58
-
-
- 3250 0c95 18       		.byte	24
- 3251 0c96 20       		.byte	32
- 3252 0c97 20       		.byte	32
- 3253 0c98 21       		.byte	33
- 3254 0c99 04       		.byte	4
- 3255 0c9a 23       		.byte	35
- 3256 0c9b 10       		.byte	16
- 3257 0c9c 25       		.byte	37
- 3258 0c9d 08       		.byte	8
- 3259 0c9e 28       		.byte	40
- 3260 0c9f 80       		.byte	-128
- 3261 0ca0 29       		.byte	41
- 3262 0ca1 20       		.byte	32
- 3263 0ca2 2B       		.byte	43
- 3264 0ca3 22       		.byte	34
- 3265 0ca4 2F       		.byte	47
- 3266 0ca5 08       		.byte	8
- 3267 0ca6 30       		.byte	48
- 3268 0ca7 8A       		.byte	-118
- 3269 0ca8 34       		.byte	52
- 3270 0ca9 80       		.byte	-128
- 3271 0caa 36       		.byte	54
- 3272 0cab 80       		.byte	-128
- 3273 0cac 38       		.byte	56
- 3274 0cad 06       		.byte	6
- 3275 0cae 39       		.byte	57
- 3276 0caf 01       		.byte	1
- 3277 0cb0 3B       		.byte	59
- 3278 0cb1 90       		.byte	-112
- 3279 0cb2 3D       		.byte	61
- 3280 0cb3 20       		.byte	32
- 3281 0cb4 41       		.byte	65
- 3282 0cb5 80       		.byte	-128
- 3283 0cb6 42       		.byte	66
- 3284 0cb7 80       		.byte	-128
- 3285 0cb8 44       		.byte	68
- 3286 0cb9 01       		.byte	1
- 3287 0cba 45       		.byte	69
- 3288 0cbb 88       		.byte	-120
- 3289 0cbc 46       		.byte	70
- 3290 0cbd A0       		.byte	-96
- 3291 0cbe 47       		.byte	71
- 3292 0cbf 01       		.byte	1
- 3293 0cc0 49       		.byte	73
- 3294 0cc1 05       		.byte	5
- 3295 0cc2 51       		.byte	81
- 3296 0cc3 80       		.byte	-128
- 3297 0cc4 59       		.byte	89
- 3298 0cc5 05       		.byte	5
- 3299 0cc6 5A       		.byte	90
- 3300 0cc7 80       		.byte	-128
- 3301 0cc8 5F       		.byte	95
- 3302 0cc9 01       		.byte	1
- 3303 0cca 66       		.byte	102
- 3304 0ccb 22       		.byte	34
- 3305 0ccc 67       		.byte	103
- 3306 0ccd 02       		.byte	2
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 59
-
-
- 3307 0cce 86       		.byte	-122
- 3308 0ccf 02       		.byte	2
- 3309 0cd0 95       		.byte	-107
- 3310 0cd1 01       		.byte	1
- 3311 0cd2 96       		.byte	-106
- 3312 0cd3 02       		.byte	2
- 3313 0cd4 97       		.byte	-105
- 3314 0cd5 20       		.byte	32
- 3315 0cd6 9A       		.byte	-102
- 3316 0cd7 80       		.byte	-128
- 3317 0cd8 9D       		.byte	-99
- 3318 0cd9 08       		.byte	8
- 3319 0cda 9F       		.byte	-97
- 3320 0cdb 08       		.byte	8
- 3321 0cdc A0       		.byte	-96
- 3322 0cdd 04       		.byte	4
- 3323 0cde A2       		.byte	-94
- 3324 0cdf 80       		.byte	-128
- 3325 0ce0 A4       		.byte	-92
- 3326 0ce1 98       		.byte	-104
- 3327 0ce2 A5       		.byte	-91
- 3328 0ce3 80       		.byte	-128
- 3329 0ce4 A7       		.byte	-89
- 3330 0ce5 40       		.byte	64
- 3331 0ce6 AE       		.byte	-82
- 3332 0ce7 04       		.byte	4
- 3333 0ce8 AF       		.byte	-81
- 3334 0ce9 40       		.byte	64
- 3335 0cea C0       		.byte	-64
- 3336 0ceb 27       		.byte	39
- 3337 0cec C2       		.byte	-62
- 3338 0ced 0A       		.byte	10
- 3339 0cee C4       		.byte	-60
- 3340 0cef 73       		.byte	115
- 3341 0cf0 CA       		.byte	-54
- 3342 0cf1 2F       		.byte	47
- 3343 0cf2 CC       		.byte	-52
- 3344 0cf3 0B       		.byte	11
- 3345 0cf4 CE       		.byte	-50
- 3346 0cf5 2F       		.byte	47
- 3347 0cf6 D0       		.byte	-48
- 3348 0cf7 99       		.byte	-103
- 3349 0cf8 D6       		.byte	-42
- 3350 0cf9 8B       		.byte	-117
- 3351 0cfa D8       		.byte	-40
- 3352 0cfb B0       		.byte	-80
- 3353 0cfc 00       		.byte	0
- 3354 0cfd 01       		.byte	1
- 3355 0cfe 04       		.byte	4
- 3356 0cff 02       		.byte	2
- 3357 0d00 05       		.byte	5
- 3358 0d01 18       		.byte	24
- 3359 0d02 08       		.byte	8
- 3360 0d03 02       		.byte	2
- 3361 0d04 09       		.byte	9
- 3362 0d05 18       		.byte	24
- 3363 0d06 11       		.byte	17
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 60
-
-
- 3364 0d07 28       		.byte	40
- 3365 0d08 13       		.byte	19
- 3366 0d09 15       		.byte	21
- 3367 0d0a 14       		.byte	20
- 3368 0d0b 02       		.byte	2
- 3369 0d0c 15       		.byte	21
- 3370 0d0d 60       		.byte	96
- 3371 0d0e 17       		.byte	23
- 3372 0d0f 02       		.byte	2
- 3373 0d10 19       		.byte	25
- 3374 0d11 50       		.byte	80
- 3375 0d12 1B       		.byte	27
- 3376 0d13 0C       		.byte	12
- 3377 0d14 1F       		.byte	31
- 3378 0d15 60       		.byte	96
- 3379 0d16 20       		.byte	32
- 3380 0d17 02       		.byte	2
- 3381 0d18 21       		.byte	33
- 3382 0d19 60       		.byte	96
- 3383 0d1a 24       		.byte	36
- 3384 0d1b 01       		.byte	1
- 3385 0d1c 27       		.byte	39
- 3386 0d1d 60       		.byte	96
- 3387 0d1e 28       		.byte	40
- 3388 0d1f 01       		.byte	1
- 3389 0d20 29       		.byte	41
- 3390 0d21 60       		.byte	96
- 3391 0d22 2F       		.byte	47
- 3392 0d23 60       		.byte	96
- 3393 0d24 30       		.byte	48
- 3394 0d25 02       		.byte	2
- 3395 0d26 31       		.byte	49
- 3396 0d27 01       		.byte	1
- 3397 0d28 33       		.byte	51
- 3398 0d29 06       		.byte	6
- 3399 0d2a 35       		.byte	53
- 3400 0d2b 18       		.byte	24
- 3401 0d2c 36       		.byte	54
- 3402 0d2d 01       		.byte	1
- 3403 0d2e 37       		.byte	55
- 3404 0d2f 60       		.byte	96
- 3405 0d30 3E       		.byte	62
- 3406 0d31 01       		.byte	1
- 3407 0d32 3F       		.byte	63
- 3408 0d33 04       		.byte	4
- 3409 0d34 56       		.byte	86
- 3410 0d35 02       		.byte	2
- 3411 0d36 57       		.byte	87
- 3412 0d37 13       		.byte	19
- 3413 0d38 58       		.byte	88
- 3414 0d39 04       		.byte	4
- 3415 0d3a 59       		.byte	89
- 3416 0d3b 04       		.byte	4
- 3417 0d3c 5B       		.byte	91
- 3418 0d3d 04       		.byte	4
- 3419 0d3e 5C       		.byte	92
- 3420 0d3f 11       		.byte	17
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 61
-
-
- 3421 0d40 5D       		.byte	93
- 3422 0d41 10       		.byte	16
- 3423 0d42 5F       		.byte	95
- 3424 0d43 01       		.byte	1
- 3425 0d44 80       		.byte	-128
- 3426 0d45 07       		.byte	7
- 3427 0d46 84       		.byte	-124
- 3428 0d47 07       		.byte	7
- 3429 0d48 88       		.byte	-120
- 3430 0d49 01       		.byte	1
- 3431 0d4a 8A       		.byte	-118
- 3432 0d4b 06       		.byte	6
- 3433 0d4c 8C       		.byte	-116
- 3434 0d4d 04       		.byte	4
- 3435 0d4e 92       		.byte	-110
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  3436 0d4f 08       		.byte	8
  3437 0d50 B1       		.byte	-79
  3438 0d51 01       		.byte	1
@@ -6402,7 +3643,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3460 0d67 83       		.byte	-125
  3461 0d68 CE       		.byte	-50
  3462 0d69 03       		.byte	3
-<<<<<<< HEAD
  3463 0d6a CF       		.byte	-49
  3464 0d6b 01       		.byte	1
  3465 0d6c D0       		.byte	-48
@@ -6418,7 +3658,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3475 0d76 DB       		.byte	-37
  3476 0d77 04       		.byte	4
  3477 0d78 DC       		.byte	-36
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 62
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 62
 
 
  3478 0d79 42       		.byte	66
@@ -6478,7 +3718,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3532 0daf 08       		.byte	8
  3533 0db0 17       		.byte	23
  3534 0db1 09       		.byte	9
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 63
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 63
 
 
  3535 0db2 19       		.byte	25
@@ -6488,93 +3728,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3539 0db6 1E       		.byte	30
  3540 0db7 10       		.byte	16
  3541 0db8 1F       		.byte	31
-=======
- 3463 0d6a C6       		.byte	-58
- 3464 0d6b E0       		.byte	-32
- 3465 0d6c C7       		.byte	-57
- 3466 0d6d 0C       		.byte	12
- 3467 0d6e C8       		.byte	-56
- 3468 0d6f 18       		.byte	24
- 3469 0d70 C9       		.byte	-55
- 3470 0d71 FF       		.byte	-1
- 3471 0d72 CA       		.byte	-54
- 3472 0d73 FF       		.byte	-1
- 3473 0d74 CB       		.byte	-53
- 3474 0d75 FF       		.byte	-1
- 3475 0d76 CC       		.byte	-52
- 3476 0d77 62       		.byte	98
- 3477 0d78 CD       		.byte	-51
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 62
-
-
- 3478 0d79 A0       		.byte	-96
- 3479 0d7a CE       		.byte	-50
- 3480 0d7b F0       		.byte	-16
- 3481 0d7c CF       		.byte	-49
- 3482 0d7d 41       		.byte	65
- 3483 0d7e D0       		.byte	-48
- 3484 0d7f 0C       		.byte	12
- 3485 0d80 D8       		.byte	-40
- 3486 0d81 04       		.byte	4
- 3487 0d82 DA       		.byte	-38
- 3488 0d83 04       		.byte	4
- 3489 0d84 DC       		.byte	-36
- 3490 0d85 01       		.byte	1
- 3491 0d86 DD       		.byte	-35
- 3492 0d87 01       		.byte	1
- 3493 0d88 DF       		.byte	-33
- 3494 0d89 01       		.byte	1
- 3495 0d8a E6       		.byte	-26
- 3496 0d8b 40       		.byte	64
- 3497 0d8c E7       		.byte	-25
- 3498 0d8d 02       		.byte	2
- 3499 0d8e E9       		.byte	-23
- 3500 0d8f 10       		.byte	16
- 3501 0d90 EA       		.byte	-22
- 3502 0d91 30       		.byte	48
- 3503 0d92 EB       		.byte	-21
- 3504 0d93 10       		.byte	16
- 3505 0d94 ED       		.byte	-19
- 3506 0d95 10       		.byte	16
- 3507 0d96 EE       		.byte	-18
- 3508 0d97 10       		.byte	16
- 3509 0d98 EF       		.byte	-17
- 3510 0d99 12       		.byte	18
- 3511 0d9a 00       		.byte	0
- 3512 0d9b 2A       		.byte	42
- 3513 0d9c 01       		.byte	1
- 3514 0d9d 20       		.byte	32
- 3515 0d9e 02       		.byte	2
- 3516 0d9f 04       		.byte	4
- 3517 0da0 03       		.byte	3
- 3518 0da1 10       		.byte	16
- 3519 0da2 05       		.byte	5
- 3520 0da3 02       		.byte	2
- 3521 0da4 06       		.byte	6
- 3522 0da5 06       		.byte	6
- 3523 0da6 07       		.byte	7
- 3524 0da7 10       		.byte	16
- 3525 0da8 0B       		.byte	11
- 3526 0da9 20       		.byte	32
- 3527 0daa 0C       		.byte	12
- 3528 0dab 49       		.byte	73
- 3529 0dac 0E       		.byte	14
- 3530 0dad 80       		.byte	-128
- 3531 0dae 10       		.byte	16
- 3532 0daf 40       		.byte	64
- 3533 0db0 11       		.byte	17
- 3534 0db1 14       		.byte	20
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 63
-
-
- 3535 0db2 12       		.byte	18
- 3536 0db3 80       		.byte	-128
- 3537 0db4 15       		.byte	21
- 3538 0db5 40       		.byte	64
- 3539 0db6 16       		.byte	22
- 3540 0db7 08       		.byte	8
- 3541 0db8 17       		.byte	23
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  3542 0db9 08       		.byte	8
  3543 0dba 20       		.byte	32
  3544 0dbb 04       		.byte	4
@@ -6612,7 +3765,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3576 0ddb 08       		.byte	8
  3577 0ddc 5C       		.byte	92
  3578 0ddd 40       		.byte	64
-<<<<<<< HEAD
  3579 0dde 5D       		.byte	93
  3580 0ddf 04       		.byte	4
  3581 0de0 5F       		.byte	95
@@ -6626,7 +3778,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3589 0de8 88       		.byte	-120
  3590 0de9 21       		.byte	33
  3591 0dea 92       		.byte	-110
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 64
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 64
 
 
  3592 0deb 02       		.byte	2
@@ -6686,7 +3838,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3646 0e21 40       		.byte	64
  3647 0e22 82       		.byte	-126
  3648 0e23 04       		.byte	4
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 65
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 65
 
 
  3649 0e24 CC       		.byte	-52
@@ -6702,97 +3854,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3659 0e2e 37       		.byte	55
  3660 0e2f 04       		.byte	4
  3661 0e30 38       		.byte	56
-=======
- 3579 0dde 55       		.byte	85
- 3580 0ddf 10       		.byte	16
- 3581 0de0 56       		.byte	86
- 3582 0de1 08       		.byte	8
- 3583 0de2 59       		.byte	89
- 3584 0de3 01       		.byte	1
- 3585 0de4 68       		.byte	104
- 3586 0de5 01       		.byte	1
- 3587 0de6 69       		.byte	105
- 3588 0de7 14       		.byte	20
- 3589 0de8 6B       		.byte	107
- 3590 0de9 24       		.byte	36
- 3591 0dea 70       		.byte	112
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 64
-
-
- 3592 0deb 88       		.byte	-120
- 3593 0dec 72       		.byte	114
- 3594 0ded 02       		.byte	2
- 3595 0dee 73       		.byte	115
- 3596 0def 08       		.byte	8
- 3597 0df0 82       		.byte	-126
- 3598 0df1 04       		.byte	4
- 3599 0df2 83       		.byte	-125
- 3600 0df3 13       		.byte	19
- 3601 0df4 88       		.byte	-120
- 3602 0df5 82       		.byte	-126
- 3603 0df6 8B       		.byte	-117
- 3604 0df7 10       		.byte	16
- 3605 0df8 8C       		.byte	-116
- 3606 0df9 02       		.byte	2
- 3607 0dfa 8F       		.byte	-113
- 3608 0dfb 40       		.byte	64
- 3609 0dfc 92       		.byte	-110
- 3610 0dfd 08       		.byte	8
- 3611 0dfe 93       		.byte	-109
- 3612 0dff 20       		.byte	32
- 3613 0e00 94       		.byte	-108
- 3614 0e01 02       		.byte	2
- 3615 0e02 96       		.byte	-106
- 3616 0e03 02       		.byte	2
- 3617 0e04 97       		.byte	-105
- 3618 0e05 03       		.byte	3
- 3619 0e06 99       		.byte	-103
- 3620 0e07 08       		.byte	8
- 3621 0e08 9F       		.byte	-97
- 3622 0e09 3C       		.byte	60
- 3623 0e0a A0       		.byte	-96
- 3624 0e0b 14       		.byte	20
- 3625 0e0c A2       		.byte	-94
- 3626 0e0d 80       		.byte	-128
- 3627 0e0e A4       		.byte	-92
- 3628 0e0f 8A       		.byte	-118
- 3629 0e10 A5       		.byte	-91
- 3630 0e11 10       		.byte	16
- 3631 0e12 A7       		.byte	-89
- 3632 0e13 62       		.byte	98
- 3633 0e14 B3       		.byte	-77
- 3634 0e15 48       		.byte	72
- 3635 0e16 B4       		.byte	-76
- 3636 0e17 01       		.byte	1
- 3637 0e18 B5       		.byte	-75
- 3638 0e19 08       		.byte	8
- 3639 0e1a C0       		.byte	-64
- 3640 0e1b FE       		.byte	-2
- 3641 0e1c C2       		.byte	-62
- 3642 0e1d B4       		.byte	-76
- 3643 0e1e C4       		.byte	-60
- 3644 0e1f EE       		.byte	-18
- 3645 0e20 CA       		.byte	-54
- 3646 0e21 0F       		.byte	15
- 3647 0e22 CC       		.byte	-52
- 3648 0e23 0F       		.byte	15
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 65
-
-
- 3649 0e24 CE       		.byte	-50
- 3650 0e25 06       		.byte	6
- 3651 0e26 D0       		.byte	-48
- 3652 0e27 F0       		.byte	-16
- 3653 0e28 D2       		.byte	-46
- 3654 0e29 10       		.byte	16
- 3655 0e2a D6       		.byte	-42
- 3656 0e2b 01       		.byte	1
- 3657 0e2c EA       		.byte	-22
- 3658 0e2d 01       		.byte	1
- 3659 0e2e 30       		.byte	48
- 3660 0e2f 02       		.byte	2
- 3661 0e30 33       		.byte	51
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  3662 0e31 20       		.byte	32
  3663 0e32 59       		.byte	89
  3664 0e33 08       		.byte	8
@@ -6830,7 +3891,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3696 0e53 80       		.byte	-128
  3697 0e54 33       		.byte	51
  3698 0e55 10       		.byte	16
-<<<<<<< HEAD
  3699 0e56 3E       		.byte	62
  3700 0e57 10       		.byte	16
  3701 0e58 80       		.byte	-128
@@ -6838,25 +3898,11 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3703 0e5a 94       		.byte	-108
  3704 0e5b 20       		.byte	32
  3705 0e5c 9A       		.byte	-102
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 66
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 66
 
 
  3706 0e5d 04       		.byte	4
  3707 0e5e 9B       		.byte	-101
-=======
- 3699 0e56 D6       		.byte	-42
- 3700 0e57 40       		.byte	64
- 3701 0e58 D8       		.byte	-40
- 3702 0e59 80       		.byte	-128
- 3703 0e5a 33       		.byte	51
- 3704 0e5b 80       		.byte	-128
- 3705 0e5c 36       		.byte	54
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 66
-
-
- 3706 0e5d 40       		.byte	64
- 3707 0e5e 3E       		.byte	62
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  3708 0e5f 10       		.byte	16
  3709 0e60 9D       		.byte	-99
  3710 0e61 20       		.byte	32
@@ -6906,14 +3952,13 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3754 0e8d 02       		.byte	2
  3755 0e8e AF       		.byte	-81
  3756 0e8f 20       		.byte	32
-<<<<<<< HEAD
  3757 0e90 E2       		.byte	-30
  3758 0e91 10       		.byte	16
  3759 0e92 EE       		.byte	-18
  3760 0e93 10       		.byte	16
  3761 0e94 10       		.byte	16
  3762 0e95 10       		.byte	16
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 67
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 67
 
 
  3763 0e96 14       		.byte	20
@@ -6927,28 +3972,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3771 0e9e DC       		.byte	-36
  3772 0e9f 01       		.byte	1
  3773 0ea0 DE       		.byte	-34
-=======
- 3757 0e90 71       		.byte	113
- 3758 0e91 01       		.byte	1
- 3759 0e92 C4       		.byte	-60
- 3760 0e93 0C       		.byte	12
- 3761 0e94 DC       		.byte	-36
- 3762 0e95 01       		.byte	1
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 67
-
-
- 3763 0e96 98       		.byte	-104
- 3764 0e97 30       		.byte	48
- 3765 0e98 9D       		.byte	-99
- 3766 0e99 01       		.byte	1
- 3767 0e9a 03       		.byte	3
- 3768 0e9b 80       		.byte	-128
- 3769 0e9c 1B       		.byte	27
- 3770 0e9d 04       		.byte	4
- 3771 0e9e 98       		.byte	-104
- 3772 0e9f 30       		.byte	48
- 3773 0ea0 9D       		.byte	-99
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  3774 0ea1 01       		.byte	1
  3775 0ea2 98       		.byte	-104
  3776 0ea3 30       		.byte	48
@@ -6994,9 +4017,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3816 0ecb 04       		.byte	4
  3817 0ecc 9D       		.byte	-99
  3818 0ecd 20       		.byte	32
-<<<<<<< HEAD
  3819 0ece 9F       		.byte	-97
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 68
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 68
 
 
  3820 0ecf 04       		.byte	4
@@ -7025,38 +4047,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3843 0ee6 83       		.byte	-125
  3844 0ee7 02       		.byte	2
  3845 0ee8 87       		.byte	-121
-=======
- 3819 0ece 80       		.byte	-128
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 68
-
-
- 3820 0ecf 08       		.byte	8
- 3821 0ed0 82       		.byte	-126
- 3822 0ed1 20       		.byte	32
- 3823 0ed2 8E       		.byte	-114
- 3824 0ed3 22       		.byte	34
- 3825 0ed4 AA       		.byte	-86
- 3826 0ed5 10       		.byte	16
- 3827 0ed6 C0       		.byte	-64
- 3828 0ed7 90       		.byte	-112
- 3829 0ed8 C2       		.byte	-62
- 3830 0ed9 10       		.byte	16
- 3831 0eda D4       		.byte	-44
- 3832 0edb 40       		.byte	64
- 3833 0edc E4       		.byte	-28
- 3834 0edd A0       		.byte	-96
- 3835 0ede EA       		.byte	-22
- 3836 0edf 80       		.byte	-128
- 3837 0ee0 10       		.byte	16
- 3838 0ee1 40       		.byte	64
- 3839 0ee2 13       		.byte	19
- 3840 0ee3 20       		.byte	32
- 3841 0ee4 14       		.byte	20
- 3842 0ee5 80       		.byte	-128
- 3843 0ee6 78       		.byte	120
- 3844 0ee7 10       		.byte	16
- 3845 0ee8 7C       		.byte	124
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  3846 0ee9 20       		.byte	32
  3847 0eea 94       		.byte	-108
  3848 0eeb 80       		.byte	-128
@@ -7076,7 +4066,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3862 0ef9 40       		.byte	64
  3863 0efa E2       		.byte	-30
  3864 0efb 20       		.byte	32
-<<<<<<< HEAD
  3865 0efc E4       		.byte	-28
  3866 0efd 10       		.byte	16
  3867 0efe EA       		.byte	-22
@@ -7089,7 +4078,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3874 0f05 80       		.byte	-128
  3875 0f06 78       		.byte	120
  3876 0f07 10       		.byte	16
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 69
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 69
 
 
  3877 0f08 7C       		.byte	124
@@ -7099,30 +4088,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3881 0f0c B5       		.byte	-75
  3882 0f0d 02       		.byte	2
  3883 0f0e C4       		.byte	-60
-=======
- 3865 0efc C4       		.byte	-60
- 3866 0efd 08       		.byte	8
- 3867 0efe DC       		.byte	-36
- 3868 0eff 01       		.byte	1
- 3869 0f00 DE       		.byte	-34
- 3870 0f01 04       		.byte	4
- 3871 0f02 E6       		.byte	-26
- 3872 0f03 01       		.byte	1
- 3873 0f04 00       		.byte	0
- 3874 0f05 0F       		.byte	15
- 3875 0f06 08       		.byte	8
- 3876 0f07 03       		.byte	3
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 69
-
-
- 3877 0f08 0A       		.byte	10
- 3878 0f09 0E       		.byte	14
- 3879 0f0a 0C       		.byte	12
- 3880 0f0b 0B       		.byte	11
- 3881 0f0c 0E       		.byte	14
- 3882 0f0d 09       		.byte	9
- 3883 0f0e 10       		.byte	16
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
  3884 0f0f 0E       		.byte	14
  3885 0f10 DE       		.byte	-34
  3886 0f11 03       		.byte	3
@@ -7172,13 +4137,8 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3930 0f3d 00       		.byte	0
  3931 0f3e 00       		.byte	0
  3932 0f3f 00       		.byte	0
-<<<<<<< HEAD
  3933 0f40 FF       		.byte	-1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 70
-=======
- 3933 0f40 00       		.byte	0
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 70
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 70
 
 
  3934 0f41 FF       		.byte	-1
@@ -7198,7 +4158,6 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3948 0f4f 00       		.byte	0
  3949 0f50 80       		.byte	-128
  3950 0f51 00       		.byte	0
-<<<<<<< HEAD
  3951 0f52 40       		.byte	64
  3952 0f53 80       		.byte	-128
  3953 0f54 B0       		.byte	-80
@@ -7233,13 +4192,13 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  3982 0f71 00       		.byte	0
  3983 0f72 00       		.byte	0
  3984 0f73 00       		.byte	0
- 3985 0f74 08       		.byte	8
+ 3985 0f74 0F       		.byte	15
  3986 0f75 00       		.byte	0
  3987 0f76 18       		.byte	24
  3988 0f77 01       		.byte	1
  3989              		.section	.cywolatch,"a",%progbits
  3990              		.align	2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 71
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 71
 
 
  3991              		.type	cy_meta_wonvl, %object
@@ -7299,7 +4258,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  4041 000b 01       		.uleb128 0x1
  4042 000c 24000000 		.4byte	.LASF17
  4043 0010 0C       		.byte	0xc
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 72
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 72
 
 
  4044 0011 C4010000 		.4byte	.LASF18
@@ -7359,7 +4318,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  4098 007a 91000000 		.4byte	0x91
  4099 007e 8A000000 		.4byte	0x8a
  4100 0082 06       		.uleb128 0x6
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 73
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 73
 
 
  4101 0083 8A000000 		.4byte	0x8a
@@ -7419,7 +4378,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  4155 00fb 6B010000 		.4byte	.LASF15
  4156 00ff 03       		.byte	0x3
  4157 0100 3702     		.2byte	0x237
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 74
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 74
 
 
  4158 0102 0C010000 		.4byte	0x10c
@@ -7479,7 +4438,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  4212 001c 00       		.byte	0
  4213 001d 03       		.uleb128 0x3
  4214 001e 0E       		.uleb128 0xe
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 75
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 75
 
 
  4215 001f 3A       		.uleb128 0x3a
@@ -7539,7 +4498,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  4269 0055 13       		.uleb128 0x13
  4270 0056 3F       		.uleb128 0x3f
  4271 0057 19       		.uleb128 0x19
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 76
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 76
 
 
  4272 0058 02       		.uleb128 0x2
@@ -7599,7 +4558,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  4319      65746164 
  4319      61746100 
  4320              	.LASF1:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 77
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 77
 
 
  4321 0016 756E7369 		.ascii	"unsigned char\000"
@@ -7659,7 +4618,7 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  4337              	.LASF8:
  4338 013f 756E7369 		.ascii	"unsigned int\000"
  4338      676E6564 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccBkY78g.s 			page 78
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccnQ0i8G.s 			page 78
 
 
  4338      20696E74 
@@ -7712,482 +4671,3 @@ ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 1
  4358      75726365 
  4358      5C50536F 
  4359              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
-=======
- 3951 0f52 18       		.byte	24
- 3952 0f53 01       		.byte	1
- 3953              		.section	.cywolatch,"a",%progbits
- 3954              		.align	2
- 3955              		.type	cy_meta_wonvl, %object
- 3956              		.size	cy_meta_wonvl, 4
- 3957              	cy_meta_wonvl:
- 3958 0000 BC       		.byte	-68
- 3959 0001 90       		.byte	-112
- 3960 0002 AC       		.byte	-84
- 3961 0003 AF       		.byte	-81
- 3962              		.section	.cycustnvl,"a",%progbits
- 3963              		.align	2
- 3964              		.type	cy_meta_custnvl, %object
- 3965              		.size	cy_meta_custnvl, 4
- 3966              	cy_meta_custnvl:
- 3967 0000 00       		.byte	0
- 3968 0001 00       		.byte	0
- 3969 0002 40       		.byte	64
- 3970 0003 05       		.byte	5
- 3971              		.section	.cymeta,"a",%progbits
- 3972              		.align	2
- 3973              		.type	cy_metadata, %object
- 3974              		.size	cy_metadata, 12
- 3975              	cy_metadata:
- 3976 0000 00       		.byte	0
- 3977 0001 01       		.byte	1
- 3978 0002 2E       		.byte	46
- 3979 0003 16       		.byte	22
- 3980 0004 10       		.byte	16
- 3981 0005 69       		.byte	105
- 3982 0006 00       		.byte	0
- 3983 0007 01       		.byte	1
- 3984 0008 00       		.byte	0
- 3985 0009 00       		.byte	0
- 3986 000a 00       		.byte	0
- 3987 000b 00       		.byte	0
- 3988              		.section	.cyflashprotect,"a",%progbits
- 3989              		.align	2
- 3990              		.type	cy_meta_flashprotect, %object
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 71
-
-
- 3991              		.size	cy_meta_flashprotect, 256
- 3992              	cy_meta_flashprotect:
- 3993 0000 00000000 		.space	256
- 3993      00000000 
- 3993      00000000 
- 3993      00000000 
- 3993      00000000 
- 3994              		.text
- 3995              	.Letext0:
- 3996              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
- 3997              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
- 3998              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
- 3999              		.section	.debug_info,"",%progbits
- 4000              	.Ldebug_info0:
- 4001 0000 35010000 		.4byte	0x135
- 4002 0004 0400     		.2byte	0x4
- 4003 0006 00000000 		.4byte	.Ldebug_abbrev0
- 4004 000a 04       		.byte	0x4
- 4005 000b 01       		.uleb128 0x1
- 4006 000c 62000000 		.4byte	.LASF17
- 4007 0010 0C       		.byte	0xc
- 4008 0011 BC010000 		.4byte	.LASF18
- 4009 0015 0A000000 		.4byte	.LASF19
- 4010 0019 00000000 		.4byte	.Ldebug_line0
- 4011 001d 02       		.uleb128 0x2
- 4012 001e 01       		.byte	0x1
- 4013 001f 06       		.byte	0x6
- 4014 0020 B0010000 		.4byte	.LASF0
- 4015 0024 03       		.uleb128 0x3
- 4016 0025 00000000 		.4byte	.LASF9
- 4017 0029 01       		.byte	0x1
- 4018 002a 1D       		.byte	0x1d
- 4019 002b 2F000000 		.4byte	0x2f
- 4020 002f 02       		.uleb128 0x2
- 4021 0030 01       		.byte	0x1
- 4022 0031 08       		.byte	0x8
- 4023 0032 54000000 		.4byte	.LASF1
- 4024 0036 02       		.uleb128 0x2
- 4025 0037 02       		.byte	0x2
- 4026 0038 05       		.byte	0x5
- 4027 0039 9D010000 		.4byte	.LASF2
- 4028 003d 02       		.uleb128 0x2
- 4029 003e 02       		.byte	0x2
- 4030 003f 07       		.byte	0x7
- 4031 0040 02010000 		.4byte	.LASF3
- 4032 0044 02       		.uleb128 0x2
- 4033 0045 04       		.byte	0x4
- 4034 0046 05       		.byte	0x5
- 4035 0047 A7010000 		.4byte	.LASF4
- 4036 004b 02       		.uleb128 0x2
- 4037 004c 04       		.byte	0x4
- 4038 004d 07       		.byte	0x7
- 4039 004e F0000000 		.4byte	.LASF5
- 4040 0052 02       		.uleb128 0x2
- 4041 0053 08       		.byte	0x8
- 4042 0054 05       		.byte	0x5
- 4043 0055 8F010000 		.4byte	.LASF6
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 72
-
-
- 4044 0059 02       		.uleb128 0x2
- 4045 005a 08       		.byte	0x8
- 4046 005b 07       		.byte	0x7
- 4047 005c 44010000 		.4byte	.LASF7
- 4048 0060 04       		.uleb128 0x4
- 4049 0061 04       		.byte	0x4
- 4050 0062 05       		.byte	0x5
- 4051 0063 696E7400 		.ascii	"int\000"
- 4052 0067 02       		.uleb128 0x2
- 4053 0068 04       		.byte	0x4
- 4054 0069 07       		.byte	0x7
- 4055 006a 37010000 		.4byte	.LASF8
- 4056 006e 03       		.uleb128 0x3
- 4057 006f 5B010000 		.4byte	.LASF10
- 4058 0073 02       		.byte	0x2
- 4059 0074 18       		.byte	0x18
- 4060 0075 24000000 		.4byte	0x24
- 4061 0079 05       		.uleb128 0x5
- 4062 007a 91000000 		.4byte	0x91
- 4063 007e 8A000000 		.4byte	0x8a
- 4064 0082 06       		.uleb128 0x6
- 4065 0083 8A000000 		.4byte	0x8a
- 4066 0087 530F     		.2byte	0xf53
- 4067 0089 00       		.byte	0
- 4068 008a 02       		.uleb128 0x2
- 4069 008b 04       		.byte	0x4
- 4070 008c 07       		.byte	0x7
- 4071 008d 86010000 		.4byte	.LASF11
- 4072 0091 07       		.uleb128 0x7
- 4073 0092 6E000000 		.4byte	0x6e
- 4074 0096 08       		.uleb128 0x8
- 4075 0097 25010000 		.4byte	.LASF12
- 4076 009b 03       		.byte	0x3
- 4077 009c 1F       		.byte	0x1f
- 4078 009d A7000000 		.4byte	0xa7
- 4079 00a1 05       		.uleb128 0x5
- 4080 00a2 03       		.byte	0x3
- 4081 00a3 00000000 		.4byte	cy_meta_configecc
- 4082 00a7 07       		.uleb128 0x7
- 4083 00a8 79000000 		.4byte	0x79
- 4084 00ac 05       		.uleb128 0x5
- 4085 00ad 91000000 		.4byte	0x91
- 4086 00b1 BC000000 		.4byte	0xbc
- 4087 00b5 09       		.uleb128 0x9
- 4088 00b6 8A000000 		.4byte	0x8a
- 4089 00ba 03       		.byte	0x3
- 4090 00bb 00       		.byte	0
- 4091 00bc 0A       		.uleb128 0xa
- 4092 00bd 15010000 		.4byte	.LASF13
- 4093 00c1 03       		.byte	0x3
- 4094 00c2 1702     		.2byte	0x217
- 4095 00c4 CE000000 		.4byte	0xce
- 4096 00c8 05       		.uleb128 0x5
- 4097 00c9 03       		.byte	0x3
- 4098 00ca 00000000 		.4byte	cy_meta_custnvl
- 4099 00ce 07       		.uleb128 0x7
- 4100 00cf AC000000 		.4byte	0xac
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 73
-
-
- 4101 00d3 0A       		.uleb128 0xa
- 4102 00d4 78010000 		.4byte	.LASF14
- 4103 00d8 03       		.byte	0x3
- 4104 00d9 2502     		.2byte	0x225
- 4105 00db E5000000 		.4byte	0xe5
- 4106 00df 05       		.uleb128 0x5
- 4107 00e0 03       		.byte	0x3
- 4108 00e1 00000000 		.4byte	cy_meta_wonvl
- 4109 00e5 07       		.uleb128 0x7
- 4110 00e6 AC000000 		.4byte	0xac
- 4111 00ea 05       		.uleb128 0x5
- 4112 00eb 91000000 		.4byte	0x91
- 4113 00ef FA000000 		.4byte	0xfa
- 4114 00f3 09       		.uleb128 0x9
- 4115 00f4 8A000000 		.4byte	0x8a
- 4116 00f8 FF       		.byte	0xff
- 4117 00f9 00       		.byte	0
- 4118 00fa 0A       		.uleb128 0xa
- 4119 00fb 63010000 		.4byte	.LASF15
- 4120 00ff 03       		.byte	0x3
- 4121 0100 3302     		.2byte	0x233
- 4122 0102 0C010000 		.4byte	0x10c
- 4123 0106 05       		.uleb128 0x5
- 4124 0107 03       		.byte	0x3
- 4125 0108 00000000 		.4byte	cy_meta_flashprotect
- 4126 010c 07       		.uleb128 0x7
- 4127 010d EA000000 		.4byte	0xea
- 4128 0111 05       		.uleb128 0x5
- 4129 0112 91000000 		.4byte	0x91
- 4130 0116 21010000 		.4byte	0x121
- 4131 011a 09       		.uleb128 0x9
- 4132 011b 8A000000 		.4byte	0x8a
- 4133 011f 0B       		.byte	0xb
- 4134 0120 00       		.byte	0
- 4135 0121 0A       		.uleb128 0xa
- 4136 0122 48000000 		.4byte	.LASF16
- 4137 0126 03       		.byte	0x3
- 4138 0127 6002     		.2byte	0x260
- 4139 0129 33010000 		.4byte	0x133
- 4140 012d 05       		.uleb128 0x5
- 4141 012e 03       		.byte	0x3
- 4142 012f 00000000 		.4byte	cy_metadata
- 4143 0133 07       		.uleb128 0x7
- 4144 0134 11010000 		.4byte	0x111
- 4145 0138 00       		.byte	0
- 4146              		.section	.debug_abbrev,"",%progbits
- 4147              	.Ldebug_abbrev0:
- 4148 0000 01       		.uleb128 0x1
- 4149 0001 11       		.uleb128 0x11
- 4150 0002 01       		.byte	0x1
- 4151 0003 25       		.uleb128 0x25
- 4152 0004 0E       		.uleb128 0xe
- 4153 0005 13       		.uleb128 0x13
- 4154 0006 0B       		.uleb128 0xb
- 4155 0007 03       		.uleb128 0x3
- 4156 0008 0E       		.uleb128 0xe
- 4157 0009 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 74
-
-
- 4158 000a 0E       		.uleb128 0xe
- 4159 000b 10       		.uleb128 0x10
- 4160 000c 17       		.uleb128 0x17
- 4161 000d 00       		.byte	0
- 4162 000e 00       		.byte	0
- 4163 000f 02       		.uleb128 0x2
- 4164 0010 24       		.uleb128 0x24
- 4165 0011 00       		.byte	0
- 4166 0012 0B       		.uleb128 0xb
- 4167 0013 0B       		.uleb128 0xb
- 4168 0014 3E       		.uleb128 0x3e
- 4169 0015 0B       		.uleb128 0xb
- 4170 0016 03       		.uleb128 0x3
- 4171 0017 0E       		.uleb128 0xe
- 4172 0018 00       		.byte	0
- 4173 0019 00       		.byte	0
- 4174 001a 03       		.uleb128 0x3
- 4175 001b 16       		.uleb128 0x16
- 4176 001c 00       		.byte	0
- 4177 001d 03       		.uleb128 0x3
- 4178 001e 0E       		.uleb128 0xe
- 4179 001f 3A       		.uleb128 0x3a
- 4180 0020 0B       		.uleb128 0xb
- 4181 0021 3B       		.uleb128 0x3b
- 4182 0022 0B       		.uleb128 0xb
- 4183 0023 49       		.uleb128 0x49
- 4184 0024 13       		.uleb128 0x13
- 4185 0025 00       		.byte	0
- 4186 0026 00       		.byte	0
- 4187 0027 04       		.uleb128 0x4
- 4188 0028 24       		.uleb128 0x24
- 4189 0029 00       		.byte	0
- 4190 002a 0B       		.uleb128 0xb
- 4191 002b 0B       		.uleb128 0xb
- 4192 002c 3E       		.uleb128 0x3e
- 4193 002d 0B       		.uleb128 0xb
- 4194 002e 03       		.uleb128 0x3
- 4195 002f 08       		.uleb128 0x8
- 4196 0030 00       		.byte	0
- 4197 0031 00       		.byte	0
- 4198 0032 05       		.uleb128 0x5
- 4199 0033 01       		.uleb128 0x1
- 4200 0034 01       		.byte	0x1
- 4201 0035 49       		.uleb128 0x49
- 4202 0036 13       		.uleb128 0x13
- 4203 0037 01       		.uleb128 0x1
- 4204 0038 13       		.uleb128 0x13
- 4205 0039 00       		.byte	0
- 4206 003a 00       		.byte	0
- 4207 003b 06       		.uleb128 0x6
- 4208 003c 21       		.uleb128 0x21
- 4209 003d 00       		.byte	0
- 4210 003e 49       		.uleb128 0x49
- 4211 003f 13       		.uleb128 0x13
- 4212 0040 2F       		.uleb128 0x2f
- 4213 0041 05       		.uleb128 0x5
- 4214 0042 00       		.byte	0
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 75
-
-
- 4215 0043 00       		.byte	0
- 4216 0044 07       		.uleb128 0x7
- 4217 0045 26       		.uleb128 0x26
- 4218 0046 00       		.byte	0
- 4219 0047 49       		.uleb128 0x49
- 4220 0048 13       		.uleb128 0x13
- 4221 0049 00       		.byte	0
- 4222 004a 00       		.byte	0
- 4223 004b 08       		.uleb128 0x8
- 4224 004c 34       		.uleb128 0x34
- 4225 004d 00       		.byte	0
- 4226 004e 03       		.uleb128 0x3
- 4227 004f 0E       		.uleb128 0xe
- 4228 0050 3A       		.uleb128 0x3a
- 4229 0051 0B       		.uleb128 0xb
- 4230 0052 3B       		.uleb128 0x3b
- 4231 0053 0B       		.uleb128 0xb
- 4232 0054 49       		.uleb128 0x49
- 4233 0055 13       		.uleb128 0x13
- 4234 0056 3F       		.uleb128 0x3f
- 4235 0057 19       		.uleb128 0x19
- 4236 0058 02       		.uleb128 0x2
- 4237 0059 18       		.uleb128 0x18
- 4238 005a 00       		.byte	0
- 4239 005b 00       		.byte	0
- 4240 005c 09       		.uleb128 0x9
- 4241 005d 21       		.uleb128 0x21
- 4242 005e 00       		.byte	0
- 4243 005f 49       		.uleb128 0x49
- 4244 0060 13       		.uleb128 0x13
- 4245 0061 2F       		.uleb128 0x2f
- 4246 0062 0B       		.uleb128 0xb
- 4247 0063 00       		.byte	0
- 4248 0064 00       		.byte	0
- 4249 0065 0A       		.uleb128 0xa
- 4250 0066 34       		.uleb128 0x34
- 4251 0067 00       		.byte	0
- 4252 0068 03       		.uleb128 0x3
- 4253 0069 0E       		.uleb128 0xe
- 4254 006a 3A       		.uleb128 0x3a
- 4255 006b 0B       		.uleb128 0xb
- 4256 006c 3B       		.uleb128 0x3b
- 4257 006d 05       		.uleb128 0x5
- 4258 006e 49       		.uleb128 0x49
- 4259 006f 13       		.uleb128 0x13
- 4260 0070 3F       		.uleb128 0x3f
- 4261 0071 19       		.uleb128 0x19
- 4262 0072 02       		.uleb128 0x2
- 4263 0073 18       		.uleb128 0x18
- 4264 0074 00       		.byte	0
- 4265 0075 00       		.byte	0
- 4266 0076 00       		.byte	0
- 4267              		.section	.debug_aranges,"",%progbits
- 4268 0000 14000000 		.4byte	0x14
- 4269 0004 0200     		.2byte	0x2
- 4270 0006 00000000 		.4byte	.Ldebug_info0
- 4271 000a 04       		.byte	0x4
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 76
-
-
- 4272 000b 00       		.byte	0
- 4273 000c 0000     		.2byte	0
- 4274 000e 0000     		.2byte	0
- 4275 0010 00000000 		.4byte	0
- 4276 0014 00000000 		.4byte	0
- 4277              		.section	.debug_line,"",%progbits
- 4278              	.Ldebug_line0:
- 4279 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
- 4279      02003701 
- 4279      00000201 
- 4279      FB0E0D00 
- 4279      01010101 
- 4280              	.LASF9:
- 4281 0000 5F5F7569 		.ascii	"__uint8_t\000"
- 4281      6E74385F 
- 4281      7400
- 4282              	.LASF19:
- 4283 000a 433A5C55 		.ascii	"C:\\Users\\Morten\\Desktop\\E5PRJ3\\ProjektMain\\Ho"
- 4283      73657273 
- 4283      5C4D6F72 
- 4283      74656E5C 
- 4283      4465736B 
- 4284 0037 76656470 		.ascii	"vedprogram.cydsn\000"
- 4284      726F6772 
- 4284      616D2E63 
- 4284      7964736E 
- 4284      00
- 4285              	.LASF16:
- 4286 0048 63795F6D 		.ascii	"cy_metadata\000"
- 4286      65746164 
- 4286      61746100 
- 4287              	.LASF1:
- 4288 0054 756E7369 		.ascii	"unsigned char\000"
- 4288      676E6564 
- 4288      20636861 
- 4288      7200
- 4289              	.LASF17:
- 4290 0062 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 4290      43313120 
- 4290      352E342E 
- 4290      31203230 
- 4290      31363036 
- 4291 0095 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 4291      20726576 
- 4291      6973696F 
- 4291      6E203233 
- 4291      37373135 
- 4292 00c8 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 4292      66756E63 
- 4292      74696F6E 
- 4292      2D736563 
- 4292      74696F6E 
- 4293              	.LASF5:
- 4294 00f0 6C6F6E67 		.ascii	"long unsigned int\000"
- 4294      20756E73 
- 4294      69676E65 
- 4294      6420696E 
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 77
-
-
- 4294      7400
- 4295              	.LASF3:
- 4296 0102 73686F72 		.ascii	"short unsigned int\000"
- 4296      7420756E 
- 4296      7369676E 
- 4296      65642069 
- 4296      6E7400
- 4297              	.LASF13:
- 4298 0115 63795F6D 		.ascii	"cy_meta_custnvl\000"
- 4298      6574615F 
- 4298      63757374 
- 4298      6E766C00 
- 4299              	.LASF12:
- 4300 0125 63795F6D 		.ascii	"cy_meta_configecc\000"
- 4300      6574615F 
- 4300      636F6E66 
- 4300      69676563 
- 4300      6300
- 4301              	.LASF8:
- 4302 0137 756E7369 		.ascii	"unsigned int\000"
- 4302      676E6564 
- 4302      20696E74 
- 4302      00
- 4303              	.LASF7:
- 4304 0144 6C6F6E67 		.ascii	"long long unsigned int\000"
- 4304      206C6F6E 
- 4304      6720756E 
- 4304      7369676E 
- 4304      65642069 
- 4305              	.LASF10:
- 4306 015b 75696E74 		.ascii	"uint8_t\000"
- 4306      385F7400 
- 4307              	.LASF15:
- 4308 0163 63795F6D 		.ascii	"cy_meta_flashprotect\000"
- 4308      6574615F 
- 4308      666C6173 
- 4308      6870726F 
- 4308      74656374 
- 4309              	.LASF14:
- 4310 0178 63795F6D 		.ascii	"cy_meta_wonvl\000"
- 4310      6574615F 
- 4310      776F6E76 
- 4310      6C00
- 4311              	.LASF11:
- 4312 0186 73697A65 		.ascii	"sizetype\000"
- 4312      74797065 
- 4312      00
- 4313              	.LASF6:
- 4314 018f 6C6F6E67 		.ascii	"long long int\000"
- 4314      206C6F6E 
- 4314      6720696E 
- 4314      7400
- 4315              	.LASF2:
- 4316 019d 73686F72 		.ascii	"short int\000"
- 4316      7420696E 
- 4316      7400
- 4317              	.LASF4:
-ARM GAS  C:\Users\Morten\AppData\Local\Temp\cc3ksdkA.s 			page 78
-
-
- 4318 01a7 6C6F6E67 		.ascii	"long int\000"
- 4318      20696E74 
- 4318      00
- 4319              	.LASF0:
- 4320 01b0 7369676E 		.ascii	"signed char\000"
- 4320      65642063 
- 4320      68617200 
- 4321              	.LASF18:
- 4322 01bc 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
- 4322      72617465 
- 4322      645F536F 
- 4322      75726365 
- 4322      5C50536F 
- 4323              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
->>>>>>> 0d4c442a104c45a5de1d7b7d8fff96419a9537dc

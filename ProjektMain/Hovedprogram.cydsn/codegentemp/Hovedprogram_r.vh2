@@ -1,5 +1,5 @@
 -- Project:   Hovedprogram
--- Generated: 05/15/2020 19:19:25
+-- Generated: 05/16/2020 17:00:39
 -- PSoC Creator  4.3
 
 ENTITY Hovedprogram IS
@@ -84,7 +84,7 @@ ARCHITECTURE __DEFAULT__ OF Hovedprogram IS
     SIGNAL Net_749_local : bit;
     SIGNAL Net_750 : bit;
     ATTRIBUTE placement_force OF Net_750 : SIGNAL IS "U(1,5,B)2";
-    SIGNAL Net_759 : bit;
+    SIGNAL Net_789 : bit;
     SIGNAL Pin_2(0)__PA : bit;
     SIGNAL Rx_1(0)__PA : bit;
     SIGNAL SAR_p1(0)__PA : bit;
@@ -3385,7 +3385,7 @@ BEGIN
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => Net_759,
+            interrupt => Net_789,
             clock => ClockBlock_BUS_CLK);
 
     \ADC_DelSig_1:DEC\:decimatorcell
@@ -3399,7 +3399,7 @@ BEGIN
             mod_dat_0 => \ADC_DelSig_1:mod_dat_0\,
             ext_start => __ONE__,
             modrst => \ADC_DelSig_1:mod_reset\,
-            interrupt => Net_759);
+            interrupt => Net_789);
 
     \UART_1:BUART:sTX:TxShifter:u0\:datapathcell
         GENERIC MAP(
