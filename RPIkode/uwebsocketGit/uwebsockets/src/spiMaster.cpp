@@ -8,11 +8,10 @@ spiMaster::spiMaster(int data)
 
 void spiMaster::listen()
 {
-  int spi, gpio, log, sek, ms, times, count = 0;
+  int spi, gpio, log, sek, ms;
   int buf[20];
   char buf2[200];
   char buf3[200];
-  char buf4[200];
 
   while(1)
   {
@@ -35,16 +34,17 @@ void spiMaster::listen()
       cout << "sek: " << sek << endl;
       cout << "ms: " << ms << endl;
 
-      times = open("/www/pages/count.txt", O_RDWR | O_CREAT);
-      read(times, buf4, 4);
-
-      cout << "buf4 start: " << buf4 << endl;
-
+      //buf4[0] = '1';
+      //times = open("/www/pages/count.txt", O_RDWR | O_CREAT);
+      //read(times, buf4, 0);
 
       log = open("/www/pages/log.txt", O_WRONLY | O_APPEND | O_CREAT);
-      sprintf(buf2, "%s: Chug tid: %i:%is\n", buf4, sek, ms);
+      sprintf(buf2, "%i: Chug tid: %i:%is\n", count_, sek, ms);
       dprintf(log, buf2, strlen(buf2)); 
       close(log);
+
+      /*
+      count = 0;
 
       for(int i = 0; i < 4; i++)
       {
@@ -53,18 +53,14 @@ void spiMaster::listen()
           count = (buf4[i] - '0') * pow(10, -i);
         }
       }
-      cout << "count: " << count << endl;
+
       count++;
-      cout << "count++: " << count << endl;
 
       sprintf(buf4, "%i", count);
 
-      cout << "buf4: " << buf4 << endl;
-
-      write(times, buf4, 1);
-      close(times);
-
-
+      dprintf(times, buf4, 0);
+      close(times);*/
+      count_++;
       write(gpio, "0", 2);
       
     }

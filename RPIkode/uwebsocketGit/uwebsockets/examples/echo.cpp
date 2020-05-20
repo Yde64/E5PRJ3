@@ -23,17 +23,18 @@ struct Data
           int fd = open("/www/pages/log.txt", O_WRONLY | O_APPEND | O_CREAT);
           close(fd);
 
-          remove("/www/pages/count.txt");
-          int fd2 = open("/www/pages/count.txt", O_RDWR | O_CREAT);
-          write(fd2, "0", 2);
-          close(fd2);
+          //remove("/www/pages/count.txt");
+          //int fd2 = open("/www/pages/count.txt", O_RDWR | O_CREAT);
+          //write(fd2, "1", 1);
+          //close(fd2);
+          spi1.setcount(1);
           return;
+
 
         }
         //std::cout << "Data: " << std::string(message, length) << std::endl;
         //ws->send(message, length, opCode);
   }
-
 
 };
 
@@ -67,9 +68,8 @@ int main()
   gpio = open("/dev/mygpio22", O_RDWR);
   write(gpio, "0", 2);
   close(gpio);
+  spi1.setcount(1);
   
-
-
 
   Data d { hub };
   hub.onMessage(d);
@@ -77,6 +77,7 @@ int main()
     std::thread th(async, &hub);
     std::thread th2 (&spiMaster::listen, &spi1);
     hub.run();
+    
     
 
   }
