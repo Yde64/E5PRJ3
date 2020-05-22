@@ -110,14 +110,8 @@
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_INT.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_IRQ.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_PM.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_theACLK.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
@@ -210,14 +204,8 @@
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_INT.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_IRQ.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_PM.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_1_theACLK.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
@@ -240,6 +228,12 @@
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_refreshrate.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_LED_ring.lst</v>
 <v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_refreshrate_LCD.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_timer.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_uart_rx.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDcontrol.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDdata.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDdata2.lst</v>
+<v>ProjektMain\Hovedprogram\CortexM3\ARM_GCC_541\Debug\Listing Files\LiquidCrystal_I2C.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -254,8 +248,8 @@
 <v>ProjektMain\Hovedprogram\PSoC 5LP Architecture TRM</v>
 <v>ProjektMain\Hovedprogram\CY8C58LP Family Datasheet</v>
 <v>ProjektMain\Hovedprogram\System Reference Guides</v>
-<v>ProjektMain\Hovedprogram\System Reference Guides\cy_boot_v5_90</v>
-<v>ProjektMain\Hovedprogram\ADC_SAR_v3_10.pdf</v>
+<v>ProjektMain\Hovedprogram\System Reference Guides\cy_boot_v5_80</v>
+<v>ProjektMain\Hovedprogram\ADC_DelSig_v3_30.pdf</v>
 <v>ProjektMain\Hovedprogram\AMux_v1_80.pdf</v>
 <v>ProjektMain\Hovedprogram\cy_clock_v2_20.pdf</v>
 <v>ProjektMain\Hovedprogram\cy_constant_v1_0.pdf</v>
@@ -280,8 +274,8 @@
 <v>ProjektMain\Hovedprogram\PSoC 5LP Architecture TRM</v>
 <v>ProjektMain\Hovedprogram\CY8C58LP Family Datasheet</v>
 <v>ProjektMain\Hovedprogram\System Reference Guides</v>
-<v>ProjektMain\Hovedprogram\System Reference Guides\cy_boot_v5_90</v>
-<v>ProjektMain\Hovedprogram\ADC_SAR_v3_10.pdf</v>
+<v>ProjektMain\Hovedprogram\System Reference Guides\cy_boot_v5_80</v>
+<v>ProjektMain\Hovedprogram\ADC_DelSig_v3_30.pdf</v>
 <v>ProjektMain\Hovedprogram\AMux_v1_80.pdf</v>
 <v>ProjektMain\Hovedprogram\cy_clock_v2_20.pdf</v>
 <v>ProjektMain\Hovedprogram\cy_constant_v1_0.pdf</v>
@@ -312,12 +306,10 @@
 <name v=".\Hovedprogram.cydsn\main.c" />
 <name v=".\Hovedprogram.cydsn\LEDcontrol.c" />
 <name v=".\Hovedprogram.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\Hovedprogram.cydsn\Stopur.h" />
-<name v=".\Hovedprogram.cydsn\Stopur.c" />
-<name v=".\Hovedprogram.cydsn\Display.c" />
-<name v=".\Hovedprogram.cydsn\LiquidCrystal_I2C.c" />
-<name v=".\Hovedprogram.cydsn\Display.h" />
-<name v=".\Hovedprogram.cydsn\Hovedprogram.cydwr" />
+<name v=".\Hovedprogram.cydsn\UART.h" />
+<name v=".\Hovedprogram.cydsn\VT100Terminal.h" />
+<name v=".\Hovedprogram.cydsn\States.h" />
+<name v=".\Hovedprogram.cydsn\LEDcontrol.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -325,7 +317,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1061, 548" SelectedTabbedMdiWindow="536685d4-b69b-4bd3-a259-d4ca05819c2e"><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Aarhus universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\WeightSensors.c" Guid="2cb5e8af-56db-44af-98dc-8d83f3683966" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Aarhus universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\main.c" Guid="555aaaef-8802-4abc-bb98-ddce37cdabf7" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Aarhus universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\LEDcontrol.c" Guid="6255b049-b7eb-44f9-b228-4d15635597e3" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Aarhus universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\TopDesign\TopDesign.cysch" Guid="536685d4-b69b-4bd3-a259-d4ca05819c2e" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Aarhus universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Stopur.h" Guid="3a7fb27e-9c4d-413f-aaba-a39ad4337d67" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Aarhus universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Stopur.c" Guid="c5544638-cdcb-4680-8297-5bfec9693641" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Aarhus universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Display.c" Guid="615d0d61-5414-43b8-a805-ee7c0bc6b07a" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Aarhus universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\LiquidCrystal_I2C.c" Guid="0fa4309d-0ddd-40a1-a6ce-38785790c944" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="2033c61a-3e2a-46e1-90f3-4551c345cac5" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Aarhus universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Display.h" Guid="528cef3c-2c85-47f5-97a9-f5834c25b01b" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Aarhus universitet\Christoffer Ringtved - PRJ3\KODE\ProjektMain\Hovedprogram.cydsn\Hovedprogram.cydwr" Guid="14741f4f-b4a6-463b-b6ab-2d091b59b5ed" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="938, 550" SelectedTabbedMdiWindow="6cac23c5-9a02-45f8-a005-cf18fd14d956"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="2033c61a-3e2a-46e1-90f3-4551c345cac5" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\WeightSensors.c" Guid="d30cd89f-337a-46b7-b9d5-924047369496" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\LEDcontrol.c" Guid="0ac311f1-7f26-4e56-b126-7ad911788af5" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\WeightSensors_.h" Guid="a9587fa4-1d7b-4ca9-b83a-c929cf9ef648" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\main.c" Guid="6cac23c5-9a02-45f8-a005-cf18fd14d956" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Startknap.h" Guid="12f5e8e6-184d-472c-b8fd-807a798d4254" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Startknap.c" Guid="dffaa6c0-78a6-47d5-b849-28183ff6620b" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\TopDesign\TopDesign.cysch" Guid="a062edca-8964-43d5-beed-348d10633f79" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\UART.h" Guid="1f5babc5-6dc4-46ff-84dc-1ccd4a0cc67c" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\VT100Terminal.h" Guid="e6b0dbbc-18bf-420f-9e22-f74e4511a745" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\States.h" Guid="5e9f9824-72b5-47e7-a86c-ef4846d829c6" /><DocumentWindow Key="C:\Users\Jeppe N. Hansen\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\LEDcontrol.h" Guid="3ed2a0af-f709-47bc-9016-8e3165e402d3" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

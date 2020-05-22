@@ -262,8 +262,8 @@ ssize_t my_spi_read_byte(struct file *filep, struct spi_device *spi, int *data)
     return -EFAULT;
   }
 
-  printk("SEK: %i", dataSek);
-  printk("MS: %i", dataMs);
+  printk("SEK: %i", dataSek);           // Modultest: Udskrivning af Sekunder i Kernel
+  printk("MS: %i", dataMs);             // Modultest: Udskrivning af millisekunder i Kernel
 
   int Msparity = (dataMs >> 2) % 2;
   int Sekparity = dataSek % 2;
