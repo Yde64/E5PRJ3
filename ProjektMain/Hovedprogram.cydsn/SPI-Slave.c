@@ -9,7 +9,7 @@
  *
  * ========================================
 */
-#include "SPI_Master.h"
+#include "SPI-Slave.h"
 
 int rxFlag = 0;
 int tx[2];

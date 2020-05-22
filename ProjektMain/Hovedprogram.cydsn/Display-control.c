@@ -1,6 +1,6 @@
 
-#include "Display.h"
-#include "Stopur.h"
+#include "Display-control.h"
+#include "Timer.h"
 
 #define Display1 0x26                                  // Definere adressen på display 1
 #define Display2 0x27                                  // Definere adressen på display 2
@@ -81,7 +81,7 @@ void dispTime(int disp, int ms)                           // positionerer og uds
     Timer_LCD_Start();                                    // starter timeren for displays 
 }
 
-void stopLCD(int disp)                                    // stopper displays enkeltvis 
+void stopDisp(int disp)                                    // stopper displays enkeltvis 
 {
     if (disp == 1)
     {

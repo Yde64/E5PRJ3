@@ -11,15 +11,15 @@
  * ========================================
 */
 //#include "project.h"
-#include "WeightSensors_.h"
+#include "Sensor-control.h"
 #include "UART.h"
-#include "Display.h"
-#include "Startknap.h"
+#include "Display-control.h"
+#include "Start.h"
 #include "States.h"
-#include "LEDcontrol.h"
-#include "Stopur.h"
+#include "LED-control.h"
+#include "Timer.h"
 #include "VT100Terminal.h"
-#include "SPI_Master.h"
+#include "SPI-Slave.h"
 
 #define debug 1
 
@@ -89,8 +89,8 @@ int main(void)
     
     if(debug)
     {
-        stopLCD(1);
-        stopLCD(2);
+        stopDisp(1);
+        stopDisp(2);
     }
     
     
@@ -487,7 +487,7 @@ int main(void)
                         if (pLoser == 1)
                         {
                             tidp2 = getTime()/100; 
-                            stopLCD(2); //hvis spiller 2 taber, stoppes LCD ved spiller 1
+                            stopDisp(2); //hvis spiller 2 taber, stoppes LCD ved spiller 1
                             dispTime(2, tidp2);
                             
                             winnerSeq(rgbstrip1); // afspiller vinder sekvens
@@ -495,7 +495,7 @@ int main(void)
                         else if (pLoser == 2)
                         {
                             tidp1 = getTime()/100;
-                            stopLCD(1);
+                            stopDisp(1);
                             dispTime(1, tidp1);
                             winnerSeq(rgbstrip2); // afspiller vinder sekvens
                         }
@@ -518,7 +518,7 @@ int main(void)
                             
                             loserSeq(rgbstrip2); // afspiller taber sekvens
                             tidp2 = getTime()/100;
-                            stopLCD(2);
+                            stopDisp(2);
                             dispTime(2, tidp2);
                         }
                         else if (pLoser == 1)
@@ -526,7 +526,7 @@ int main(void)
                             
                             loserSeq(rgbstrip1); // afspiller taber sekvens
                             tidp1 = getTime()/100;
-                            stopLCD(1);
+                            stopDisp(1);
                             dispTime(1, tidp1);
                         }
                         

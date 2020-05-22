@@ -13,7 +13,7 @@
 
 //    U A R T    E R    U D E L U K K E N D E    F O R    D E B U G G I N G  
 #include "UART.h"
-#include "WeightSensors_.h"
+#include "Sensor-control.h"
 
 
 CY_ISR(ISR_UART_rx_handler)

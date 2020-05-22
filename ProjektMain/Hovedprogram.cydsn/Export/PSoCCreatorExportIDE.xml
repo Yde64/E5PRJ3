@@ -25,7 +25,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="Hovedprogram" Path="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn" Version="5.80" Type="Normal">
+  <Project Name="Hovedprogram" Path="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn" Version="5.80" Type="Normal">
     <CMSIS_SVD_File>Hovedprogram.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
@@ -34,33 +34,33 @@
       <LinkerFile Toolchain="ARM IAR Generic">.\Generated_Source\PSoC5\Cm3Iar.icf</LinkerFile>
     </LinkerFiles>
     <Folders>
-      <Folder BuildType="STRICT" Path="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn">
-        <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn">
+      <Folder BuildType="STRICT" Path="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn">
+        <Files Root="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
-          <File BuildType="BUILD" Toolchain="">WeightSensors.c</File>
+          <File BuildType="BUILD" Toolchain="">Sensor-control.c</File>
           <File BuildType="BUILD" Toolchain="">UART.c</File>
-          <File BuildType="BUILD" Toolchain="">Startknap.c</File>
-          <File BuildType="BUILD" Toolchain="">Display.c</File>
+          <File BuildType="BUILD" Toolchain="">Start.c</File>
+          <File BuildType="BUILD" Toolchain="">Display-control.c</File>
           <File BuildType="BUILD" Toolchain="">LiquidCrystal_I2C.c</File>
-          <File BuildType="BUILD" Toolchain="">Stopur.c</File>
-          <File BuildType="BUILD" Toolchain="">LEDcontrol.c</File>
+          <File BuildType="BUILD" Toolchain="">Timer.c</File>
+          <File BuildType="BUILD" Toolchain="">LED-control.c</File>
           <File BuildType="BUILD" Toolchain="">VT100Terminal.c</File>
-          <File BuildType="BUILD" Toolchain="">SPI_Master.c</File>
+          <File BuildType="BUILD" Toolchain="">SPI-Slave.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
-          <File BuildType="BUILD" Toolchain="">WeightSensors_.h</File>
+          <File BuildType="BUILD" Toolchain="">Sensor-control.h</File>
           <File BuildType="BUILD" Toolchain="">UART.h</File>
           <File BuildType="BUILD" Toolchain="">States.h</File>
-          <File BuildType="BUILD" Toolchain="">Startknap.h</File>
-          <File BuildType="BUILD" Toolchain="">Display.h</File>
+          <File BuildType="BUILD" Toolchain="">Start.h</File>
+          <File BuildType="BUILD" Toolchain="">Display-control.h</File>
           <File BuildType="BUILD" Toolchain="">LiquidCrystal_I2C.h</File>
-          <File BuildType="BUILD" Toolchain="">Stopur.h</File>
-          <File BuildType="BUILD" Toolchain="">LEDcontrol.h</File>
+          <File BuildType="BUILD" Toolchain="">Timer.h</File>
+          <File BuildType="BUILD" Toolchain="">LED-control.h</File>
           <File BuildType="BUILD" Toolchain="">VT100Terminal.h</File>
-          <File BuildType="BUILD" Toolchain="">SPI_Master.h</File>
+          <File BuildType="BUILD" Toolchain="">SPI-Slave.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Generated_Source\PSoC5">
-        <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn">
+      <Folder BuildType="STRICT" Path="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Generated_Source\PSoC5">
+        <Files Root="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn">
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter_cfg.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter_cfg.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cymetadata.c</File>
@@ -238,50 +238,50 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SPIS_IntClock.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Export\ARM_GCC_Generic">
-        <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn">
+      <Folder BuildType="STRICT" Path="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Export\ARM_GCC_Generic">
+        <Files Root="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn">
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">.\Export\ARM_GCC_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Export\ARM_MDK_Generic">
-        <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn">
+      <Folder BuildType="STRICT" Path="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Export\ARM_MDK_Generic">
+        <Files Root="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn">
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">.\Export\ARM_MDK_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Export\ARM_IAR_Generic">
-        <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn">
+      <Folder BuildType="STRICT" Path="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn\Export\ARM_IAR_Generic">
+        <Files Root="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn">
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Export\ARM_IAR_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
-        <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
+        <Files Root="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_441">
-        <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
+        <Files Root="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_473">
-        <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
+        <Files Root="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051_Keil_952">
-        <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
+        <Files Root="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051">
-        <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
+        <Files Root="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0">
-        <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
+        <Files Root="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0p">
-        <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
+        <Files Root="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM3">
-        <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
+        <Files Root="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM4">
-        <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
+        <Files Root="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM7">
-        <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
+        <Files Root="D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn" />
       </Folder>
     </Folders>
   </Project>
