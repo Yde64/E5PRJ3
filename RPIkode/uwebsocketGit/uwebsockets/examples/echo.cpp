@@ -22,11 +22,6 @@ struct Data
           remove("/www/pages/log.txt");
           int fd = open("/www/pages/log.txt", O_WRONLY | O_APPEND | O_CREAT);
           close(fd);
-
-          //remove("/www/pages/count.txt");
-          //int fd2 = open("/www/pages/count.txt", O_RDWR | O_CREAT);
-          //write(fd2, "1", 1);
-          //close(fd2);
           spi1.setcount(1);
           return;
 

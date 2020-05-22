@@ -23,6 +23,7 @@ void spiMaster::listen()
 
     if (buf3[0] == 1)
     {
+      //Starter SPI kommunikation
       spi = open("/dev/SPI_0", O_RDONLY);
       sleep(0.1);
       read(spi, buf, 3);
@@ -31,36 +32,19 @@ void spiMaster::listen()
       sek = buf[0];
       ms = buf[1];
 
-      cout << "sek: " << sek << endl;
-      cout << "ms: " << ms << endl;
+     //cout << "sek: " << sek << endl; //DEBUG
+     //cout << "ms: " << ms << endl; //DEBUG
 
-      //buf4[0] = '1';
-      //times = open("/www/pages/count.txt", O_RDWR | O_CREAT);
-      //read(times, buf4, 0);
-
+      //Tider skrives til log
       log = open("/www/pages/log.txt", O_WRONLY | O_APPEND | O_CREAT);
       sprintf(buf2, "%i: Chug tid: %i:%is\n", count_, sek, ms);
       dprintf(log, buf2, strlen(buf2)); 
       close(log);
 
-      /*
-      count = 0;
-
-      for(int i = 0; i < 4; i++)
-      {
-        if((buf4[i] >= '0') && (buf4[i] <= '9'))
-        {
-          count = (buf4[i] - '0') * pow(10, -i);
-        }
-      }
-
-      count++;
-
-      sprintf(buf4, "%i", count);
-
-      dprintf(times, buf4, 0);
-      close(times);*/
+      //Tid counter tælles op
       count_++;
+      
+      //Interrupt nulstilles
       write(gpio, "0", 2);
       
     }
