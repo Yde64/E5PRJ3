@@ -6,7 +6,7 @@
 
 #Build Date:         Sep  9 2019 11:47:43
 
-#File Generated:     May 15 2020 19:19:21
+#File Generated:     May 16 2020 17:00:31
 
 #Purpose:            
 
@@ -82,8 +82,8 @@ analysis after routing.
 Number of clocks: 16
 Clock: ADC_DelSig_1_Ext_CP_Clk | Frequency: N/A       | Target:  24.0 MHz
 Clock: ADC_DelSig_1_Ext_CP_Clk(routed) | Frequency: N/A       | Target:  24.0 MHz
-Clock: ADC_DelSig_1_theACLK | Frequency: N/A       | Target:   2.7 MHz
-Clock: ADC_DelSig_1_theACLK(fixed-function) | Frequency: N/A       | Target:   2.7 MHz
+Clock: ADC_DelSig_1_theACLK | Frequency: N/A       | Target:   1.5 MHz
+Clock: ADC_DelSig_1_theACLK(fixed-function) | Frequency: N/A       | Target:   1.5 MHz
 Clock: CyBUS_CLK            | Frequency:  49.5 MHz | Target:  24.0 MHz
 Clock: CyBUS_CLK(fixed-function) | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
@@ -101,7 +101,7 @@ Clock: timer_clock_1        | Frequency:  59.7 MHz | Target:   0.0 MHz
                      End of Clock Summary
 ######################################################################
 
-D2088: Phase 6, elapsed time : 0.1 (sec)
+D2088: Phase 6, elapsed time : 0.2 (sec)
 
 Phase 7
 ######################################################################
@@ -110,8 +110,8 @@ Phase 7
 Number of clocks: 16
 Clock: ADC_DelSig_1_Ext_CP_Clk | Frequency: N/A       | Target:  24.0 MHz
 Clock: ADC_DelSig_1_Ext_CP_Clk(routed) | Frequency: N/A       | Target:  24.0 MHz
-Clock: ADC_DelSig_1_theACLK | Frequency: N/A       | Target:   2.7 MHz
-Clock: ADC_DelSig_1_theACLK(fixed-function) | Frequency: N/A       | Target:   2.7 MHz
+Clock: ADC_DelSig_1_theACLK | Frequency: N/A       | Target:   1.5 MHz
+Clock: ADC_DelSig_1_theACLK(fixed-function) | Frequency: N/A       | Target:   1.5 MHz
 Clock: CyBUS_CLK            | Frequency:   2.5 MHz | Target:  24.0 MHz
 Clock: CyBUS_CLK(fixed-function) | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
@@ -128,7 +128,7 @@ Clock: timer_clock_1        | Frequency:  53.1 MHz | Target:   0.0 MHz
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 2.2 (sec)
+D2088: Phase 7, elapsed time : 4.4 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	32
@@ -161,8 +161,8 @@ analysis after routing.
 Number of clocks: 16
 Clock: ADC_DelSig_1_Ext_CP_Clk | Frequency: N/A       | Target:  24.0 MHz
 Clock: ADC_DelSig_1_Ext_CP_Clk(routed) | Frequency: N/A       | Target:  24.0 MHz
-Clock: ADC_DelSig_1_theACLK | Frequency: N/A       | Target:   2.7 MHz
-Clock: ADC_DelSig_1_theACLK(fixed-function) | Frequency: N/A       | Target:   2.7 MHz
+Clock: ADC_DelSig_1_theACLK | Frequency: N/A       | Target:   1.5 MHz
+Clock: ADC_DelSig_1_theACLK(fixed-function) | Frequency: N/A       | Target:   1.5 MHz
 Clock: CyBUS_CLK            | Frequency:   2.9 MHz | Target:  24.0 MHz
 Clock: CyBUS_CLK(fixed-function) | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
@@ -185,5 +185,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 3.4 sec.
+I2076: Total run-time: 6.8 sec.
 

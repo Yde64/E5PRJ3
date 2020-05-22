@@ -1,0 +1,75 @@
+--------------- Rebuild Started: 05/20/2020 12:08:58 Project: Hovedprogram, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\Hovedprogram.hex"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\Hovedprogram.elf"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\Hovedprogram.map"
+Deleting file ".\Hovedprogram.cycdx"
+Deleting file ".\Hovedprogram.svd"
+Deleting file ".\Hovedprogram.rpt"
+Deleting file ".\Hovedprogram_timing.html"
+cydsfit.exe -.appdatapath "C:\Users\cring\AppData\Local\Cypress Semiconductor\PSoC Creator\4.3" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p "C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\Hovedprogram.cyprj" -d CY8C5888LTI-LP097 -s "C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\Generated_Source\PSoC5" -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+Elaborating Design...
+HDL Generation...
+Synthesis...
+Tech Mapping...
+Analog Placement...
+Info: apr.M0002: Analog signal "\ADC_DelSig_1:Net_35\" is connected to one terminal only. (App=cydsfit)
+Analog Routing...
+Analog Code Generation...
+Digital Placement...
+Digital Routing...
+Bitstream Generation...
+Bitstream Verification...
+Static timing analysis...
+API Generation...
+Dependency Generation...
+Cleanup...
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/main.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c main.c -o .\CortexM3\ARM_GCC_541\Debug\main.o
+main.c: In function 'cheatseq':
+main.c:31:1: error: parameter '_WSptr' is initialized
+ WeightSensors  _WSptr = {.p1 = 0, .p2 = 0}; //WeightSensor Pointer
+ ^
+main.c:41:1: error: parameter 'pLoser' is initialized
+ int pLoser = 0;
+ ^
+main.c:42:1: error: parameter 'tidp1' is initialized
+ int tidp1 = 0;
+ ^
+main.c:43:1: error: parameter 'tidp2' is initialized
+ int tidp2 = 0;
+ ^
+main.c:45:1: error: parameter 'cycleCountIdle' is initialized
+ int cycleCountIdle = 0;
+ ^
+main.c:46:1: error: parameter 'cycleCountEvaluatingWeight' is initialized
+ int cycleCountEvaluatingWeight = 0;
+ ^
+main.c:47:1: error: parameter 'cycleCountReady' is initialized
+ int cycleCountReady = 0;
+ ^
+main.c:48:1: error: parameter 'cycleCountCountdown' is initialized
+ int cycleCountCountdown = 0;
+ ^
+main.c:50:1: error: parameter 'pErr' is initialized
+ int pErr = 0;
+ ^
+main.c:53:1: error: parameter 'chugp1' is initialized
+ int chugp1 = 0;
+ ^
+main.c:54:1: error: parameter 'chugp2' is initialized
+ int chugp2 = 0;
+ ^
+main.c:55:1: error: parameter 'chugstart' is initialized
+ int chugstart = 0;
+ ^
+main.c:59:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+In file included from main.c:19:0:
+The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
+LEDcontrol.h:69:6: error: old-style parameter declarations in prototyped function definition
+ void cheatseq(LEDctrl *rgbLED)  //Snyde sekvens
+      ^
+main.c:651:1: error: expected '{' at end of input
+ }
+ ^
+--------------- Rebuild Failed: 05/20/2020 12:09:15 ---------------

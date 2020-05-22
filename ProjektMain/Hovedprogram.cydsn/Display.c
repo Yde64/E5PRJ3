@@ -53,6 +53,15 @@ void StartDisp()
     Timer_LCD_Start();                                   // starter timeren for display
 }
 
+void printDisp(int line, char *string, int disp)
+{
+    disp = disp == 1 ? 0x26 : 0x27;
+    setaddress(disp);
+    
+    setCursor(0, line);
+    LCD_print(string);
+}
+
 
 void dispTime(int disp, int ms)                           // positionerer og udskriver på displays
 {
@@ -81,5 +90,17 @@ void stopLCD(int disp)                                    // stopper displays en
     else if (disp == 2)
     {
     display2On = 0;
+    }
+}
+
+void startLCD(int disp)
+{
+    if (disp == 1)
+    {
+    display1On = 1;
+    }
+    else if (disp == 2)
+    {
+    display2On = 1;
     }
 }

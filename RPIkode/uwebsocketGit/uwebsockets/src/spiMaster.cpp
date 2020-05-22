@@ -1,4 +1,5 @@
 #include "spiMaster.h"
+#include <math.h>
 
 spiMaster::spiMaster(int data)
 {
@@ -7,20 +8,20 @@ spiMaster::spiMaster(int data)
 
 void spiMaster::listen()
 {
-  int spi, gpio, log, sek, ms, times;
+  int spi, gpio, log, sek, ms;
   int buf[20];
-  char buf2[40];
-  char buf3[40];
+  char buf2[200];
+  char buf3[200];
 
   while(1)
   {
     
     gpio = open("/dev/mygpio22", O_RDWR);
-    read(gpio, buf, 2);
+    read(gpio, buf3, 2);
 
-    cout << "mygpio[0]: " << buf[0] << endl;
+    cout << "mygpio[0]: " << buf3[0] << endl;
 
-    if (buf[0] == 1)
+    if (buf3[0] == 1)
     {
       spi = open("/dev/SPI_0", O_RDONLY);
       sleep(0.1);
@@ -33,19 +34,33 @@ void spiMaster::listen()
       cout << "sek: " << sek << endl;
       cout << "ms: " << ms << endl;
 
-      times = open("/www/pages/count.txt", O_RDWR | O_CREAT);
-      read(times, buf, 4);
-
+      //buf4[0] = '1';
+      //times = open("/www/pages/count.txt", O_RDWR | O_CREAT);
+      //read(times, buf4, 0);
 
       log = open("/www/pages/log.txt", O_WRONLY | O_APPEND | O_CREAT);
-      sprintf(buf2, "%i:  Chug tid: %i,%is\n", buf[0], sek, ms);
+      sprintf(buf2, "%i: Chug tid: %i:%is\n", count_, sek, ms);
       dprintf(log, buf2, strlen(buf2)); 
       close(log);
 
-      write(times, buf, 4);
-      close(times);
+      /*
+      count = 0;
 
+      for(int i = 0; i < 4; i++)
+      {
+        if((buf4[i] >= '0') && (buf4[i] <= '9'))
+        {
+          count = (buf4[i] - '0') * pow(10, -i);
+        }
+      }
 
+      count++;
+
+      sprintf(buf4, "%i", count);
+
+      dprintf(times, buf4, 0);
+      close(times);*/
+      count_++;
       write(gpio, "0", 2);
       
     }
@@ -59,6 +74,7 @@ int spiMaster::getdata()
 {
 return 0;
 }
+
 void spiMaster::setcount(int count)
 {
   count_ = count;

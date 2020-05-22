@@ -1,0 +1,159 @@
+# Hovedprogram
+# 2020-05-20 10:09:08Z
+
+# IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 0
+# IO_1@[IOP=(1)][IoId=(1)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 1
+# IO_3@[IOP=(1)][IoId=(3)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 3
+set_location "ClockBlock" clockblockcell -1 -1 0
+set_io "LEDdata2(0)" iocell 0 6
+set_io "LEDdata(0)" iocell 0 5
+set_io "Rx_1(0)" iocell 12 6
+set_io "Tx_1(0)" iocell 12 7
+set_io "SAR_p2(0)" iocell 0 7
+set_io "Pin_2(0)" iocell 15 4
+set_io "SAR_p1(0)" iocell 0 2
+set_io "MOSI(0)" iocell 3 3
+set_io "MISO(0)" iocell 3 1
+set_io "SCLK(0)" iocell 3 0
+set_io "SDA_pin(0)" iocell 12 5
+set_io "SCL_pin(0)" iocell 12 4
+set_io "SPI_int(0)" iocell 3 5
+set_io "SS(0)" iocell 3 4
+set_location "\Timer3:TimerUDB:status_tc\" 2 1 0 0
+set_location "\Timer2:TimerUDB:status_tc\" 3 0 1 0
+set_location "\Timer1:TimerUDB:status_tc\" 3 4 1 0
+set_location "\SPIM_1:BSPIM:dpcounter_one\" 3 2 1 1
+set_location "\SPIM_1:BSPIM:tx_status_0\" 3 0 1 3
+set_location "\SPIM_1:BSPIM:tx_status_4\" 3 5 0 1
+set_location "\SPIM_1:BSPIM:rx_status_6\" 3 3 0 0
+set_location "Net_389" 1 3 0 2
+set_location "\UART_1:BUART:counter_load_not\" 0 3 1 2
+set_location "\UART_1:BUART:tx_status_0\" 1 2 1 0
+set_location "\UART_1:BUART:tx_status_2\" 1 3 1 3
+set_location "\UART_1:BUART:rx_counter_load\" 1 1 0 2
+set_location "\UART_1:BUART:rx_postpoll\" 0 1 1 0
+set_location "\UART_1:BUART:rx_status_4\" 0 2 1 2
+set_location "\UART_1:BUART:rx_status_5\" 1 2 0 2
+set_location "Net_721" 3 4 1 3
+set_location "Net_722" 3 4 0 2
+set_location "\Timer_Stopur:TimerUDB:status_tc\" 3 5 1 1
+set_location "\Timer_LCD:TimerUDB:status_tc\" 0 2 0 0
+set_location "\Timer4:TimerUDB:status_tc\" 2 1 0 1
+set_location "\Timer5:TimerUDB:status_tc\" 1 0 0 2
+set_location "\SPIS:BSPIS:inv_ss\" 1 5 0 0
+set_location "\SPIS:BSPIS:tx_load\" 1 5 1 0
+set_location "\SPIS:BSPIS:byte_complete\" 0 4 1 1
+set_location "\SPIS:BSPIS:rx_buf_overrun\" 1 4 0 1
+set_location "Net_750" 1 5 1 2
+set_location "\SPIS:BSPIS:mosi_buf_overrun\" 1 4 1 1
+set_location "\SPIS:BSPIS:tx_status_0\" 0 4 0 3
+set_location "\SPIS:BSPIS:rx_status_4\" 2 4 1 2
+set_location "\SPIS:BSPIS:dpcounter_one\" 1 4 0 2
+set_location "\SPIS:BSPIS:mosi_to_dp\" 1 5 0 1
+set_location "isr_LED_ring" interrupt -1 -1 4
+set_location "__ONE__" 2 3 0 0
+set_location "\Timer3:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 2 0 6
+set_location "\Timer3:TimerUDB:rstSts:stsreg\" 2 2 4
+set_location "\Timer3:TimerUDB:sT16:timerdp:u0\" 3 2 2
+set_location "\Timer3:TimerUDB:sT16:timerdp:u1\" 2 2 2
+set_location "isr_LED_pulse" interrupt -1 -1 2
+set_location "\Timer2:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 3 0 6
+set_location "\Timer2:TimerUDB:rstSts:stsreg\" 3 0 4
+set_location "\Timer2:TimerUDB:sT16:timerdp:u0\" 2 0 2
+set_location "\Timer2:TimerUDB:sT16:timerdp:u1\" 3 0 2
+set_location "isr_LED_refreshrate" interrupt -1 -1 3
+set_location "\Timer1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 3 4 6
+set_location "\Timer1:TimerUDB:rstSts:stsreg\" 3 4 4
+set_location "\Timer1:TimerUDB:sT16:timerdp:u0\" 3 4 2
+set_location "\Timer1:TimerUDB:sT16:timerdp:u1\" 2 4 2
+set_location "\SPIM_1:BSPIM:BitCounter\" 2 5 7
+set_location "\SPIM_1:BSPIM:TxStsReg\" 3 2 4
+set_location "\SPIM_1:BSPIM:RxStsReg\" 3 3 4
+set_location "\SPIM_1:BSPIM:sR16:Dp:u0\" 2 3 2
+set_location "\SPIM_1:BSPIM:sR16:Dp:u1\" 3 3 2
+set_location "\ADC_DelSig_1:DSM\" dsmodcell -1 -1 0
+set_location "\ADC_DelSig_1:IRQ\" interrupt -1 -1 29
+set_location "\ADC_DelSig_1:DEC\" decimatorcell -1 -1 0
+set_location "\UART_1:BUART:sTX:TxShifter:u0\" 1 3 2
+set_location "\UART_1:BUART:sTX:sCLOCK:TxBitClkGen\" 0 3 2
+set_location "\UART_1:BUART:sTX:TxSts\" 1 3 4
+set_location "\UART_1:BUART:sRX:RxShifter:u0\" 0 1 2
+set_location "\UART_1:BUART:sRX:RxBitCounter\" 0 1 7
+set_location "\UART_1:BUART:sRX:RxSts\" 1 2 4
+set_location "isr_uart_rx" interrupt -1 -1 9
+set_location "isr_button" interrupt -1 -1 5
+set_location "\SPIMOutCtrl:Sync:ctrl_reg\" 2 4 6
+set_location "\I2C_1:I2C_IRQ\" interrupt -1 -1 15
+set_location "\I2C_1:I2C_FF\" i2ccell -1 -1 0
+set_location "\Timer_Stopur:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 3 5 6
+set_location "\Timer_Stopur:TimerUDB:rstSts:stsreg\" 3 5 4
+set_location "\Timer_Stopur:TimerUDB:sT16:timerdp:u0\" 2 5 2
+set_location "\Timer_Stopur:TimerUDB:sT16:timerdp:u1\" 3 5 2
+set_location "isr_timer" interrupt -1 -1 8
+set_location "\Timer_LCD:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 0 2 6
+set_location "\Timer_LCD:TimerUDB:rstSts:stsreg\" 0 2 4
+set_location "\Timer_LCD:TimerUDB:sT16:timerdp:u0\" 1 2 2
+set_location "\Timer_LCD:TimerUDB:sT16:timerdp:u1\" 0 2 2
+set_location "isr_refreshrate_LCD" interrupt -1 -1 7
+set_location "\Timer4:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 3 1 6
+set_location "\Timer4:TimerUDB:rstSts:stsreg\" 2 1 4
+set_location "\Timer4:TimerUDB:sT16:timerdp:u0\" 3 1 2
+set_location "\Timer4:TimerUDB:sT16:timerdp:u1\" 2 1 2
+set_location "isr_BlinkLED" interrupt -1 -1 1
+set_location "isr_delay" interrupt -1 -1 6
+set_location "\Timer5:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 1 1 6
+set_location "\Timer5:TimerUDB:rstSts:stsreg\" 1 0 4
+set_location "\Timer5:TimerUDB:sT16:timerdp:u0\" 0 0 2
+set_location "\Timer5:TimerUDB:sT16:timerdp:u1\" 1 0 2
+set_location "\SPIS:BSPIS:sync_1\" 1 4 5 0
+set_location "\SPIS:BSPIS:sync_2\" 0 5 5 0
+set_location "\SPIS:BSPIS:sync_3\" 1 4 5 2
+set_location "\SPIS:BSPIS:sync_4\" 1 4 5 1
+set_location "\SPIS:BSPIS:BitCounter\" 1 5 7
+set_location "\SPIS:BSPIS:TxStsReg\" 0 4 4
+set_location "\SPIS:BSPIS:RxStsReg\" 2 4 4
+set_location "\SPIS:BSPIS:sR8:Dp:u0\" 1 5 2
+set_location "\SPIS:RxInternalInterrupt\" interrupt -1 -1 0
+set_location "rx_isr" interrupt -1 -1 10
+set_location "Net_628" 3 0 1 2
+set_location "Net_632" 2 0 0 0
+set_location "Net_360" 2 4 0 2
+set_location "\SPIM_1:BSPIM:load_rx_data\" 3 2 0 0
+set_location "\SPIM_1:BSPIM:state_2\" 2 4 1 0
+set_location "\SPIM_1:BSPIM:state_1\" 2 2 0 2
+set_location "\SPIM_1:BSPIM:state_0\" 3 2 0 1
+set_location "Net_584" 3 5 1 0
+set_location "\SPIM_1:BSPIM:mosi_hs_reg\" 3 3 0 2
+set_location "\SPIM_1:BSPIM:mosi_pre_reg\" 3 1 0 1
+set_location "\SPIM_1:BSPIM:load_cond\" 3 1 1 2
+set_location "\SPIM_1:BSPIM:mosi_from_dp_reg\" 3 3 1 2
+set_location "\SPIM_1:BSPIM:is_spi_done\" 2 3 1 2
+set_location "\SPIM_1:BSPIM:cnt_enable\" 2 5 0 3
+set_location "\SPIM_1:BSPIM:ld_ident\" 3 0 0 0
+set_location "Net_583" 2 0 1 0
+set_location "\UART_1:BUART:txn\" 1 3 1 2
+set_location "\UART_1:BUART:tx_state_1\" 0 3 0 0
+set_location "\UART_1:BUART:tx_state_0\" 1 2 0 3
+set_location "\UART_1:BUART:tx_state_2\" 1 3 0 0
+set_location "\UART_1:BUART:tx_bitclk\" 0 2 1 1
+set_location "\UART_1:BUART:tx_ctrl_mark_last\" 1 1 1 3
+set_location "\UART_1:BUART:rx_state_0\" 0 0 0 0
+set_location "\UART_1:BUART:rx_load_fifo\" 0 1 0 1
+set_location "\UART_1:BUART:rx_state_3\" 1 0 0 1
+set_location "\UART_1:BUART:rx_state_2\" 0 0 1 0
+set_location "\UART_1:BUART:rx_bitclk_enable\" 0 1 0 2
+set_location "\UART_1:BUART:rx_state_stop1_reg\" 1 1 1 0
+set_location "\UART_1:BUART:pollcount_1\" 0 1 1 2
+set_location "\UART_1:BUART:pollcount_0\" 0 1 1 3
+set_location "\UART_1:BUART:rx_status_3\" 0 0 0 1
+set_location "\UART_1:BUART:rx_last\" 0 1 1 1
+set_location "Net_23" 2 5 1 1
+set_location "Net_34" 1 2 1 1
+set_location "Net_701" 2 1 1 1
+set_location "Net_702" 1 0 1 2
+set_location "\SPIS:BSPIS:dpcounter_one_reg\" 1 4 1 0
+set_location "\SPIS:BSPIS:mosi_buf_overrun_fin\" 1 4 1 2
+set_location "\SPIS:BSPIS:mosi_tmp\" 1 5 1 1
