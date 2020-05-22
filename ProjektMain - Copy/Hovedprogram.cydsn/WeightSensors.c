@@ -16,14 +16,13 @@
 #define mVtoG2 0.005492139213069
 #define samples 500
 
-char uart_string[50];
+char uart_string[50];       //Anvendes i debug
 int weighthys = 0;
-///*
+
 WeightSensors  WSptr = {.p1 = 0, .p2 = 0}; //WeightSensor Pointer
 
 long getWeight(int player)
 {
-    
     switch(player){
         case 1: 
         {
@@ -33,21 +32,15 @@ long getWeight(int player)
             for(int i = 0; i < samples; i++)
             {
                 ADC_DelSig_1_StartConvert();
-                //CyDelayUs(delay); //delay indsat, så måling ikke trailer med 1 måling
                 
                 if (ADC_DelSig_1_IsEndConversion(ADC_DelSig_1_WAIT_FOR_RESULT)!=0)
                 {
                     WSptr.p1 += ADC_DelSig_1_GetResult32();
                 }
             }
-                //Debugging-----------------------------
-                //sprintf(uart_string, "\r\ndata read from player 1: %li", WSptr.p1);     // convert to string
-                //UART_1_PutString(uart_string);                                         // output string
-                //--------------------------------------
-                return (WSptr.p1/samples);
+            return (WSptr.p1/samples);
         }
         break;
-        
         case 2: 
         {
             WSptr.p2 = 0;
@@ -61,15 +54,10 @@ long getWeight(int player)
                     WSptr.p2 += ADC_DelSig_1_GetResult32();
                 }
             }    
-                //Debugging-----------------------------
-                //sprintf(uart_string, "\r\ndata read from player 2: %li", WSptr.p2);     // convert to string
-                //UART_1_PutString(uart_string);                                         // output string
-                //--------------------------------------
-                return (WSptr.p2/samples);
+            return (WSptr.p2/samples);
         }
         break;
     }
-    
 return 0;
 }
 
@@ -87,10 +75,6 @@ int getCalWeight(int player)
             WSptr.p1cal = ADC_DelSig_1_CountsTo_uVolts(WSptr.p1cal);    
             WSptr.p1cal *= mVtoG1;
             
-           //Debugging-----------------------------
-            //sprintf(uart_string, "Calibrated Weight from player 1: %li \r\n", WSptr.p1cal);     // convert to string
-            //UARTprint("5", uart_string);                                         // output string
-            //--------------------------------------
             return WSptr.p1cal;
             
         }
@@ -106,10 +90,6 @@ int getCalWeight(int player)
             WSptr.p2cal = ADC_DelSig_1_CountsTo_uVolts(WSptr.p2cal);
             WSptr.p2cal *= mVtoG2;
             
-            //Debugging-----------------------------
-            //sprintf(uart_string, "Calibrated Weight from player 2: %li \r\n", WSptr.p2cal);     // convert to string
-            //UARTprint("6", uart_string);                                         // output string
-            //--------------------------------------
             return WSptr.p2cal;
               
         }

@@ -73,6 +73,8 @@ int main(void)
     initLED(LEDrefreshrate);
     initDisp(LCDrefreshrate);
     setspeed(100, 20, 500);
+    LEDinitSeq(rgbstrip1);
+    LEDinitSeq(rgbstrip2);
     
     clearTerm(40);
     
