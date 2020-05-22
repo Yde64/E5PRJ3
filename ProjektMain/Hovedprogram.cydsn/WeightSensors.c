@@ -44,7 +44,6 @@ long getWeight(int player)
             for(int i = 0; i < samples; i++)
             {
                 ADC_DelSig_1_StartConvert();
-                //CyDelayUs(delay); //delay indsat, så måling ikke trailer med 1 måling
                 
                 if (ADC_DelSig_1_IsEndConversion(ADC_DelSig_1_WAIT_FOR_RESULT)!=0)
                 {
@@ -144,6 +143,14 @@ int getWeightLoser(int x)
         
 return 0;    
 }
+
+
+
+
+
+
+
+
 
 void WeightSensorsInit()
 {
