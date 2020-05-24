@@ -11,15 +11,15 @@
  * ========================================
 */
 //#include "project.h"
-#include "WeightSensors_.h"
+#include "Sensor-control.h"
 #include "UART.h"
-#include "Display.h"
-#include "Startknap.h"
+#include "Display-control.h"
+#include "Start.h"
 #include "States.h"
-#include "LEDcontrol.h"
-#include "Stopur.h"
+#include "LED-control.h"
+#include "Timer.h"
 #include "VT100Terminal.h"
-#include "SPI_Master.h"
+#include "SPI-Slave.h"
 
 #define Display1 0x26
 #define Display2 0x27
@@ -30,13 +30,13 @@
 
 WeightSensors  _WSptr = {.p1 = 0, .p2 = 0}; //WeightSensor Pointer
 
-#define afvigelse 40   // maksimum mængde væske, der må være i glas efter spil (i gram) 
+#define afvigelse 50   // maksimum mængde væske, der må være i glas efter spil (i gram) 
 #define afvigelse2 50 //afvigelse for sikring af tyvstart (ERR_FALSE_START)
 
 
 // STATES.C
 #define delay 100
-#define nulvaegt -200
+#define nulvaegt -100
 
 int pLoser = 0;
 int tidp1 = 0;
@@ -63,7 +63,7 @@ int main(void)
     isr_uart_rx_StartEx(ISR_UART_rx_handler);
     isr_timer_StartEx(isr_timer);
     UART_1_Start();
-    SPIS_initSPI();
+    initSPI();
     
     WeightSensorsInit();
     
@@ -73,8 +73,10 @@ int main(void)
     initLED(LEDrefreshrate);
     initDisp(LCDrefreshrate);
     setspeed(100, 20, 500);
+    
     LEDinitSeq(rgbstrip1);
     LEDinitSeq(rgbstrip2);
+    CyDelay(1000);
     
     clearTerm(40);
     
@@ -102,7 +104,6 @@ int main(void)
                 {                               
                     NEXT_STATE =  EVALUATING_WEIGHT; //state -> Evaluating Weight  
                     BPptr.ButtonPushed = 0;
-                    CalibrateSensors();
                     CyDelay(100);
                 }
             
@@ -205,7 +206,7 @@ int main(void)
                 {
                     if(getCalWeight(1) > nulvaegt ){
                 
-                        if((afvigelse) >= getCalWeight(1)) //Her skal det erklæres hvilken af de to spillere der vinder --> sæt pLoser til enten 1(p1) eller 2(p2)
+                        if(getCalWeight(1) <= afvigelse) //Her skal det erklæres hvilken af de to spillere der vinder --> sæt pLoser til enten 1(p1) eller 2(p2)
                         {
                             pLoser = 2; //player2 taber
                             NEXT_STATE = WINNER_DONE; 
@@ -244,7 +245,6 @@ int main(void)
                             cheatseq(rgbstrip2);
                         }
                         
-                        chugp2 = 0;
                     }      
                 }
             }
@@ -254,7 +254,7 @@ int main(void)
             {
                 UARTprint("3", "NSL - WINNER_DONE\r\n");
                 
-                NEXT_STATE = EVALUATING_NEW_WEIGHT;       
+                NEXT_STATE = EVALUATING_NEW_WEIGHT;    
             }
             break;
             
@@ -343,6 +343,7 @@ int main(void)
                 if (BPptr.ButtonPushed == 1)
                 {
                     NEXT_STATE = GOING_IDLE;
+                    BPptr.ButtonPushed = 0;
                 }
                 
             }    
@@ -489,7 +490,7 @@ int main(void)
                         if (pLoser == 1)
                         {
                             tidp2 = getTime()/100; 
-                            stopLCD(2); //hvis spiller 2 taber, stoppes LCD ved spiller 1
+                            stopDisp(2); //hvis spiller 2 taber, stoppes LCD ved spiller 1
                             dispTime(2, tidp2);
                             
                             winnerSeq(rgbstrip1); // afspiller vinder sekvens
@@ -497,7 +498,7 @@ int main(void)
                         else if (pLoser == 2)
                         {
                             tidp1 = getTime()/100;
-                            stopLCD(1);
+                            stopDisp(1);
                             dispTime(1, tidp1);
                             winnerSeq(rgbstrip2); // afspiller vinder sekvens
                         }
@@ -520,7 +521,7 @@ int main(void)
                             
                             loserSeq(rgbstrip2); // afspiller taber sekvens
                             tidp2 = getTime()/100;
-                            stopLCD(2);
+                            stopDisp(2);
                             dispTime(2, tidp2);
                         }
                         else if (pLoser == 1)
@@ -528,7 +529,7 @@ int main(void)
                             
                             loserSeq(rgbstrip1); // afspiller taber sekvens
                             tidp1 = getTime()/100;
-                            stopLCD(1);
+                            stopDisp(1);
                             dispTime(1, tidp1);
                         }
                         
@@ -536,12 +537,12 @@ int main(void)
                         int ms;
                         sek = tidp1/10;
                         ms = tidp1%10;
-                        SPIS_sendData(sek, ms);
+                        sendData(sek, ms);
                         CyDelay(1500);
                         
                         sek = tidp2/10;
                         ms = tidp2%10;
-                        SPIS_sendData(sek, ms);
+                        sendData(sek, ms);
                         
                         
                     }  

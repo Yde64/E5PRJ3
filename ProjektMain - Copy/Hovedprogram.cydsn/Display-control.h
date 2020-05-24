@@ -18,8 +18,8 @@
 
 
 void initDisp(int refreshrate);                    // Initiere display                              // 
-void dispTime(int display, int tid);               // positionere og udskriver på displays
-void stopLCD(int display);                         // stopper opdateringen af displayet
+void dispTime(int display, int time);               // positionere og udskriver på displays
+void stopDisp(int display);                         // stopper opdateringen af displayet
 void StartDisp();
 
 

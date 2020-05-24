@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: SAR_p1.c  
+* File Name: ADC_p2.c  
 * Version 2.20
 *
 * Description:
@@ -15,15 +15,15 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "SAR_p1.h"
+#include "ADC_p2.h"
 
 /* APIs are not generated for P15[7:6] on PSoC 5 */
 #if !(CY_PSOC5A &&\
-	 SAR_p1__PORT == 15 && ((SAR_p1__MASK & 0xC0) != 0))
+	 ADC_p2__PORT == 15 && ((ADC_p2__MASK & 0xC0) != 0))
 
 
 /*******************************************************************************
-* Function Name: SAR_p1_Write
+* Function Name: ADC_p2_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -52,17 +52,17 @@
 *  this function.
 *
 * \funcusage
-*  \snippet SAR_p1_SUT.c usage_SAR_p1_Write
+*  \snippet ADC_p2_SUT.c usage_ADC_p2_Write
 *******************************************************************************/
-void SAR_p1_Write(uint8 value)
+void ADC_p2_Write(uint8 value)
 {
-    uint8 staticBits = (SAR_p1_DR & (uint8)(~SAR_p1_MASK));
-    SAR_p1_DR = staticBits | ((uint8)(value << SAR_p1_SHIFT) & SAR_p1_MASK);
+    uint8 staticBits = (ADC_p2_DR & (uint8)(~ADC_p2_MASK));
+    ADC_p2_DR = staticBits | ((uint8)(value << ADC_p2_SHIFT) & ADC_p2_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: SAR_p1_SetDriveMode
+* Function Name: ADC_p2_SetDriveMode
 ****************************************************************************//**
 *
 * \brief Sets the drive mode for each of the Pins component's pins.
@@ -85,16 +85,16 @@ void SAR_p1_Write(uint8 value)
 *  APIs (primary method) or disable interrupts around this function.
 *
 * \funcusage
-*  \snippet SAR_p1_SUT.c usage_SAR_p1_SetDriveMode
+*  \snippet ADC_p2_SUT.c usage_ADC_p2_SetDriveMode
 *******************************************************************************/
-void SAR_p1_SetDriveMode(uint8 mode)
+void ADC_p2_SetDriveMode(uint8 mode)
 {
-	CyPins_SetPinDriveMode(SAR_p1_0, mode);
+	CyPins_SetPinDriveMode(ADC_p2_0, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: SAR_p1_Read
+* Function Name: ADC_p2_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -108,16 +108,16 @@ void SAR_p1_SetDriveMode(uint8 mode)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet SAR_p1_SUT.c usage_SAR_p1_Read  
+*  \snippet ADC_p2_SUT.c usage_ADC_p2_Read  
 *******************************************************************************/
-uint8 SAR_p1_Read(void)
+uint8 ADC_p2_Read(void)
 {
-    return (SAR_p1_PS & SAR_p1_MASK) >> SAR_p1_SHIFT;
+    return (ADC_p2_PS & ADC_p2_MASK) >> ADC_p2_SHIFT;
 }
 
 
 /*******************************************************************************
-* Function Name: SAR_p1_ReadDataReg
+* Function Name: ADC_p2_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -126,8 +126,8 @@ uint8 SAR_p1_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred SAR_p1_Read() API because the 
-* SAR_p1_ReadDataReg() reads the data register instead of the status 
+* preferred ADC_p2_Read() API because the 
+* ADC_p2_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -136,19 +136,19 @@ uint8 SAR_p1_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet SAR_p1_SUT.c usage_SAR_p1_ReadDataReg 
+*  \snippet ADC_p2_SUT.c usage_ADC_p2_ReadDataReg 
 *******************************************************************************/
-uint8 SAR_p1_ReadDataReg(void)
+uint8 ADC_p2_ReadDataReg(void)
 {
-    return (SAR_p1_DR & SAR_p1_MASK) >> SAR_p1_SHIFT;
+    return (ADC_p2_DR & ADC_p2_MASK) >> ADC_p2_SHIFT;
 }
 
 
 /* If interrupt is connected for this Pins component */ 
-#if defined(SAR_p1_INTSTAT) 
+#if defined(ADC_p2_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: SAR_p1_SetInterruptMode
+    * Function Name: ADC_p2_SetInterruptMode
     ****************************************************************************//**
     *
     * \brief Configures the interrupt mode for each of the Pins component's
@@ -161,12 +161,12 @@ uint8 SAR_p1_ReadDataReg(void)
     * \param position
     *  The pin position as listed in the Pins component. You may OR these to be 
     *  able to configure the interrupt mode of multiple pins within a Pins 
-    *  component. Or you may use SAR_p1_INTR_ALL to configure the
+    *  component. Or you may use ADC_p2_INTR_ALL to configure the
     *  interrupt mode of all the pins in the Pins component.       
-    *  - SAR_p1_0_INTR       (First pin in the list)
-    *  - SAR_p1_1_INTR       (Second pin in the list)
+    *  - ADC_p2_0_INTR       (First pin in the list)
+    *  - ADC_p2_1_INTR       (Second pin in the list)
     *  - ...
-    *  - SAR_p1_INTR_ALL     (All pins in Pins component)
+    *  - ADC_p2_INTR_ALL     (All pins in Pins component)
     *
     * \param mode
     *  Interrupt mode for the selected pins. Valid options are documented in
@@ -182,19 +182,19 @@ uint8 SAR_p1_ReadDataReg(void)
     *  port.
     *
     * \funcusage
-    *  \snippet SAR_p1_SUT.c usage_SAR_p1_SetInterruptMode
+    *  \snippet ADC_p2_SUT.c usage_ADC_p2_SetInterruptMode
     *******************************************************************************/
-    void SAR_p1_SetInterruptMode(uint16 position, uint16 mode)
+    void ADC_p2_SetInterruptMode(uint16 position, uint16 mode)
     {
-		if((position & SAR_p1_0_INTR) != 0u) 
+		if((position & ADC_p2_0_INTR) != 0u) 
 		{ 
-			 SAR_p1_0_INTTYPE_REG = (uint8)mode; 
+			 ADC_p2_0_INTTYPE_REG = (uint8)mode; 
 		}
     }
     
     
     /*******************************************************************************
-    * Function Name: SAR_p1_ClearInterrupt
+    * Function Name: ADC_p2_ClearInterrupt
     ****************************************************************************//**
     *
     * \brief Clears any active interrupts attached with the component and returns 
@@ -211,11 +211,11 @@ uint8 SAR_p1_ReadDataReg(void)
     *  those associated with the Pins component.
     *
     * \funcusage
-    *  \snippet SAR_p1_SUT.c usage_SAR_p1_ClearInterrupt
+    *  \snippet ADC_p2_SUT.c usage_ADC_p2_ClearInterrupt
     *******************************************************************************/
-    uint8 SAR_p1_ClearInterrupt(void)
+    uint8 ADC_p2_ClearInterrupt(void)
     {
-        return (SAR_p1_INTSTAT & SAR_p1_MASK) >> SAR_p1_SHIFT;
+        return (ADC_p2_INTSTAT & ADC_p2_MASK) >> ADC_p2_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

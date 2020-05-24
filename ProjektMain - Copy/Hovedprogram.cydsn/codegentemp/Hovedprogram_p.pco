@@ -148,8 +148,8 @@ set_location "\Timer_Stopur:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" controlcell 3 5 
 set_location "\Timer_LCD:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" controlcell 0 2 6 
 set_location "\Timer4:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" controlcell 3 1 6 
 set_location "\Timer5:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" controlcell 1 1 6 
-set_io "SAR_p1(0)" iocell 0 2
-set_io "SAR_p2(0)" iocell 0 7
+set_io "ADC_p1(0)" iocell 0 2
+set_io "ADC_p2(0)" iocell 0 7
 set_io "SPI_int(0)" iocell 3 5
 set_location "isr_button" interrupt -1 -1 5
 set_location "\ADC_DelSig_1:DEC\" decimatorcell -1 -1 0

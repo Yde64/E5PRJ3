@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: SAR_p1.h  
+* File Name: ADC_p2.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_SAR_p1_ALIASES_H) /* Pins SAR_p1_ALIASES_H */
-#define CY_PINS_SAR_p1_ALIASES_H
+#if !defined(CY_PINS_ADC_p2_ALIASES_H) /* Pins ADC_p2_ALIASES_H */
+#define CY_PINS_ADC_p2_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,12 +25,12 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define SAR_p1_0			(SAR_p1__0__PC)
-#define SAR_p1_0_INTR	((uint16)((uint16)0x0001u << SAR_p1__0__SHIFT))
+#define ADC_p2_0			(ADC_p2__0__PC)
+#define ADC_p2_0_INTR	((uint16)((uint16)0x0001u << ADC_p2__0__SHIFT))
 
-#define SAR_p1_INTR_ALL	 ((uint16)(SAR_p1_0_INTR))
+#define ADC_p2_INTR_ALL	 ((uint16)(ADC_p2_0_INTR))
 
-#endif /* End Pins SAR_p1_ALIASES_H */
+#endif /* End Pins ADC_p2_ALIASES_H */
 
 
 /* [] END OF FILE */

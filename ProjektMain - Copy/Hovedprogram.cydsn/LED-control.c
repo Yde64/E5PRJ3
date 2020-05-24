@@ -12,7 +12,7 @@
 
 
 #define MAXLEDINTENSE 0.5
-#include "LEDcontrol.h"
+#include "LED-control.h"
 
 static int pulselength_ = 0;
 static int index_ = 0;
@@ -123,7 +123,7 @@ CY_ISR(isr_delay)
     startSeq(rgbLED1, rgbLED2);
 }
 
-void setrefreshrate(int Hz)
+void setRefreshrate(int Hz)
 {
     Hz = 1/(float)Hz*1000*10; //Omregner HZ til en bestemt periode for timeren
     Timer1_WritePeriod(Hz);

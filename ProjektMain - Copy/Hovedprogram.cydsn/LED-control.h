@@ -42,10 +42,10 @@ typedef struct LEDctrl_
 }LEDctrl;
 
 
-void UpdateLED(LEDctrl *rgbLEd_); //Opdater alle LED, ny farve, i ønsket LED strip
-void hsv2rgb(double H, double S, double L, int LED, LEDctrl *rgbLEd_); //Konverter HSV til RGB
+void UpdateLED(LEDctrl *rgbLED_); //Opdater alle LED, ny farve, i ønsket LED strip
+void hsv2rgb(double h, double s, double v, int LED, LEDctrl *rgbLEd_); //Konverter HSV til RGB
 
-void setrefreshrate(int Hz); //Ændre hvor hurtigt LED opdateres
+void setRefreshrate(int Hz); //Ændre hvor hurtigt LED opdateres
 void setspeed(int ms_ring, int ms_pulse, int ms_blink); //Bestemmer hvor hurtigt, pulse ændre lysniveau og hvor hurtigt ring flytter sig en plads
 void setcolorLED(double h, double s, double v, int LED, LEDctrl *rgbLEd_); //Ændre farven på 1 LED
 void fillcolor(double h, double s, double v, LEDctrl *rgbLEd_); //Ændre farven på alle LED'er

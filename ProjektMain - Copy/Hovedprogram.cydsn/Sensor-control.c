@@ -9,7 +9,7 @@
  *
  * ========================================
 */
-#include "WeightSensors_.h"
+#include "Sensor-control.h"
 #define afvigelse 15                //Bestemmer fejlmargin for compareWeight.
 #define hysmid 100
 #define mVtoG1 0.004798911134528

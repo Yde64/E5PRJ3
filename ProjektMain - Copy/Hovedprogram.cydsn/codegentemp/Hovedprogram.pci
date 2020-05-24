@@ -1,5 +1,5 @@
 # Hovedprogram
-# 2020-05-20 10:09:05Z
+# 2020-05-23 10:01:11Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -11,9 +11,9 @@ set_io "LEDdata2(0)" iocell 0 6
 set_io "LEDdata(0)" iocell 0 5
 set_io "Rx_1(0)" iocell 12 6
 set_io "Tx_1(0)" iocell 12 7
-set_io "SAR_p2(0)" iocell 0 7
+set_io "ADC_p2(0)" iocell 0 7
 set_io "Pin_2(0)" iocell 15 4
-set_io "SAR_p1(0)" iocell 0 2
+set_io "ADC_p1(0)" iocell 0 2
 set_io "MOSI(0)" iocell 3 3
 set_io "MISO(0)" iocell 3 1
 set_io "SCLK(0)" iocell 3 0

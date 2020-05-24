@@ -59,17 +59,17 @@
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\UART_1_BOOT.c" value="SOURCE_C;CortexM3;;;;UART_1" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\isr_uart_rx.c" value="SOURCE_C;CortexM3;;;;isr_uart_rx" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\isr_uart_rx.h" value="HEADER;;;;;isr_uart_rx" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\SAR_p2_aliases.h" value="HEADER;;;;;SAR_p2" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\SAR_p2.c" value="SOURCE_C;CortexM3;;;;SAR_p2" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\SAR_p2.h" value="HEADER;;;;;SAR_p2" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\ADC_p2_aliases.h" value="HEADER;;;;;ADC_p2" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\ADC_p2.c" value="SOURCE_C;CortexM3;;;;ADC_p2" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\ADC_p2.h" value="HEADER;;;;;ADC_p2" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\isr_button.c" value="SOURCE_C;CortexM3;;;;isr_button" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\isr_button.h" value="HEADER;;;;;isr_button" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\Pin_2_aliases.h" value="HEADER;;;;;Pin_2" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\Pin_2.c" value="SOURCE_C;CortexM3;;;;Pin_2" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\Pin_2.h" value="HEADER;;;;;Pin_2" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\SAR_p1_aliases.h" value="HEADER;;;;;SAR_p1" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\SAR_p1.c" value="SOURCE_C;CortexM3;;;;SAR_p1" />
-  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\SAR_p1.h" value="HEADER;;;;;SAR_p1" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\ADC_p1_aliases.h" value="HEADER;;;;;ADC_p1" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\ADC_p1.c" value="SOURCE_C;CortexM3;;;;ADC_p1" />
+  <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\ADC_p1.h" value="HEADER;;;;;ADC_p1" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\MOSI_aliases.h" value="HEADER;;;;;MOSI" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\MOSI.c" value="SOURCE_C;CortexM3;;;;MOSI" />
   <file name="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\codegentemp\MOSI.h" value="HEADER;;;;;MOSI" />

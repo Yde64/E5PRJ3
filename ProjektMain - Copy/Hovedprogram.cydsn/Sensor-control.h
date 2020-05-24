@@ -42,7 +42,7 @@ typedef struct WeightSensors_
 
 long getWeight(int Player);
 int getCalWeight(int Player);
-int getWeightLoser(int x);
+int getWeightLoser(int Player);
 void CalibrateSensors();
 
 void WeightSensorsInit();

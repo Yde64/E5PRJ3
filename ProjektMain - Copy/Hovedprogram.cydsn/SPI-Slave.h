@@ -15,8 +15,7 @@ CY_ISR_PROTO(isr_spi_rx);
 
 //void SPIS_setTxFlag(int);
 //int SPIS_getTxFlag();
-void SPIS_initSPI();
-void SPIS_sendData(int sek,int ms);
-int SPIS_checkData();
+void initSPI();
+void sendData(int sek, int ms);
 
 /* [] END OF FILE */

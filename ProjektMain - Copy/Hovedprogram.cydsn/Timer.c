@@ -1,6 +1,6 @@
 
-#include "Stopur.h"
-#include "Display.h"
+#include "Timer.h"
+#include "Display-control.h"
 
 int count = 0;
 

@@ -1368,8 +1368,9 @@ END GROUP
  .text.isr_refreshrate_LCD
                 0x00000c34       0x3c .\CortexM3\ARM_GCC_541\Debug\Display-control.o
                 0x00000c34                isr_refreshrate_LCD
- .text.stopLCD  0x00000c70       0x1c .\CortexM3\ARM_GCC_541\Debug\Display-control.o
-                0x00000c70                stopLCD
+ .text.stopDisp
+                0x00000c70       0x1c .\CortexM3\ARM_GCC_541\Debug\Display-control.o
+                0x00000c70                stopDisp
  .text.LiquidCrystal_I2C_init
                 0x00000c8c       0x30 .\CortexM3\ARM_GCC_541\Debug\LiquidCrystal_I2C.o
                 0x00000c8c                LiquidCrystal_I2C_init
@@ -2701,7 +2702,7 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0xdacb
+.debug_info     0x00000000     0xdada
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000     0x10dd .\CortexM3\ARM_GCC_541\Debug\main.o
  .debug_info    0x000010dd      0x466 .\CortexM3\ARM_GCC_541\Debug\Sensor-control.o
@@ -2753,9 +2754,9 @@ END GROUP
  .debug_info    0x0000c633      0x4f3 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(SPIS.o)
  .debug_info    0x0000cb26       0xb1 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(SPIS_INT.o)
  .debug_info    0x0000cbd7      0x2d2 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(rx_isr.o)
- .debug_info    0x0000cea9       0x85 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(CyBootAsmGnu.o)
- .debug_info    0x0000cf2e      0x64d .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(CyFlash.o)
- .debug_info    0x0000d57b      0x550 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(CySpc.o)
+ .debug_info    0x0000cea9       0x94 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(CyBootAsmGnu.o)
+ .debug_info    0x0000cf3d      0x64d .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(CyFlash.o)
+ .debug_info    0x0000d58a      0x550 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(CySpc.o)
 
 .debug_abbrev   0x00000000     0x40e0
  *(.debug_abbrev)
@@ -2945,112 +2946,112 @@ END GROUP
  .debug_frame   0x00004084       0x20 c:/program files (x86)/cypress/psoc creator/4.3/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
  .debug_frame   0x000040a4       0x5c c:/program files (x86)/cypress/psoc creator/4.3/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
 
-.debug_str      0x00000000     0x4b5e
+.debug_str      0x00000000     0x4ba5
  *(.debug_str)
- .debug_str     0x00000000      0x533 .\CortexM3\ARM_GCC_541\Debug\main.o
-                                0x59d (size before relaxing)
- .debug_str     0x00000533       0xf3 .\CortexM3\ARM_GCC_541\Debug\Sensor-control.o
-                                0x332 (size before relaxing)
- .debug_str     0x00000626       0xa7 .\CortexM3\ARM_GCC_541\Debug\UART.o
-                                0x271 (size before relaxing)
- .debug_str     0x000006cd       0x20 .\CortexM3\ARM_GCC_541\Debug\Start.o
-                                0x1d1 (size before relaxing)
- .debug_str     0x000006ed       0xed .\CortexM3\ARM_GCC_541\Debug\Display-control.o
-                                0x2ce (size before relaxing)
- .debug_str     0x000007da      0x22a .\CortexM3\ARM_GCC_541\Debug\LiquidCrystal_I2C.o
-                                0x46b (size before relaxing)
- .debug_str     0x00000a04       0x4d .\CortexM3\ARM_GCC_541\Debug\Timer.o
-                                0x21e (size before relaxing)
- .debug_str     0x00000a51      0x2fb .\CortexM3\ARM_GCC_541\Debug\LED-control.o
-                                0x569 (size before relaxing)
- .debug_str     0x00000d4c       0x27 .\CortexM3\ARM_GCC_541\Debug\VT100Terminal.o
+ .debug_str     0x00000000      0x543 .\CortexM3\ARM_GCC_541\Debug\main.o
+                                0x5ad (size before relaxing)
+ .debug_str     0x00000543       0xf3 .\CortexM3\ARM_GCC_541\Debug\Sensor-control.o
+                                0x341 (size before relaxing)
+ .debug_str     0x00000636       0xa7 .\CortexM3\ARM_GCC_541\Debug\UART.o
+                                0x280 (size before relaxing)
+ .debug_str     0x000006dd       0x20 .\CortexM3\ARM_GCC_541\Debug\Start.o
                                 0x1e0 (size before relaxing)
- .debug_str     0x00000d73       0x75 .\CortexM3\ARM_GCC_541\Debug\SPI-Slave.o
-                                0x21f (size before relaxing)
- .debug_str     0x00000de8      0x26c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                                0x403 (size before relaxing)
- .debug_str     0x00001054       0x75 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_str     0x000006fd       0xed .\CortexM3\ARM_GCC_541\Debug\Display-control.o
+                                0x2de (size before relaxing)
+ .debug_str     0x000007ea      0x22a .\CortexM3\ARM_GCC_541\Debug\LiquidCrystal_I2C.o
+                                0x47a (size before relaxing)
+ .debug_str     0x00000a14       0x4d .\CortexM3\ARM_GCC_541\Debug\Timer.o
+                                0x22d (size before relaxing)
+ .debug_str     0x00000a61      0x2fb .\CortexM3\ARM_GCC_541\Debug\LED-control.o
+                                0x578 (size before relaxing)
+ .debug_str     0x00000d5c       0x27 .\CortexM3\ARM_GCC_541\Debug\VT100Terminal.o
+                                0x1ef (size before relaxing)
+ .debug_str     0x00000d83       0x75 .\CortexM3\ARM_GCC_541\Debug\SPI-Slave.o
+                                0x22e (size before relaxing)
+ .debug_str     0x00000df8      0x26c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                                0x412 (size before relaxing)
+ .debug_str     0x00001064       0xac .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
                                 0x1d9 (size before relaxing)
- .debug_str     0x000010c9      0x139 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                                0x2ff (size before relaxing)
- .debug_str     0x00001202      0x29d .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(SPIM_1.o)
-                                0x44a (size before relaxing)
- .debug_str     0x0000149f      0x159 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(Timer1.o)
-                                0x342 (size before relaxing)
- .debug_str     0x000015f8      0x1a6 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_LED_refreshrate.o)
-                                0x35f (size before relaxing)
- .debug_str     0x0000179e      0x148 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(Timer2.o)
-                                0x342 (size before relaxing)
- .debug_str     0x000018e6      0x140 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_LED_pulse.o)
-                                0x30b (size before relaxing)
- .debug_str     0x00001a26      0x148 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(Timer3.o)
-                                0x342 (size before relaxing)
- .debug_str     0x00001b6e      0x133 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_LED_ring.o)
+ .debug_str     0x00001110      0x139 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                                0x30e (size before relaxing)
+ .debug_str     0x00001249      0x29d .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(SPIM_1.o)
+                                0x459 (size before relaxing)
+ .debug_str     0x000014e6      0x159 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(Timer1.o)
+                                0x351 (size before relaxing)
+ .debug_str     0x0000163f      0x1a6 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_LED_refreshrate.o)
+                                0x36e (size before relaxing)
+ .debug_str     0x000017e5      0x148 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(Timer2.o)
+                                0x351 (size before relaxing)
+ .debug_str     0x0000192d      0x140 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_LED_pulse.o)
+                                0x31a (size before relaxing)
+ .debug_str     0x00001a6d      0x148 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(Timer3.o)
+                                0x351 (size before relaxing)
+ .debug_str     0x00001bb5      0x133 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_LED_ring.o)
+                                0x30c (size before relaxing)
+ .debug_str     0x00001ce8      0x25d .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(UART_1.o)
+                                0x4b7 (size before relaxing)
+ .debug_str     0x00001f45      0x126 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_uart_rx.o)
+                                0x2fe (size before relaxing)
+ .debug_str     0x0000206b      0x197 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(SPIM_1_IntClock.o)
+                                0x352 (size before relaxing)
+ .debug_str     0x00002202      0x14c .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(UART_1_IntClock.o)
+                                0x352 (size before relaxing)
+ .debug_str     0x0000234e      0x7d0 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(CyLib.o)
+                                0xa4b (size before relaxing)
+ .debug_str     0x00002b1e      0x365 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(cyPm.o)
+                                0x737 (size before relaxing)
+ .debug_str     0x00002e83       0x5f .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(PlayerSelect.o)
+                                0x226 (size before relaxing)
+ .debug_str     0x00002ee2      0x119 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_button.o)
+                                0x2f0 (size before relaxing)
+ .debug_str     0x00002ffb       0x36 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(SPIMOutCtrl.o)
+                                0x1c5 (size before relaxing)
+ .debug_str     0x00003031       0xea .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(I2C_1.o)
                                 0x2fd (size before relaxing)
- .debug_str     0x00001ca1      0x25d .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(UART_1.o)
-                                0x4a8 (size before relaxing)
- .debug_str     0x00001efe      0x126 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_uart_rx.o)
-                                0x2ef (size before relaxing)
- .debug_str     0x00002024      0x197 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(SPIM_1_IntClock.o)
-                                0x343 (size before relaxing)
- .debug_str     0x000021bb      0x14c .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(UART_1_IntClock.o)
-                                0x343 (size before relaxing)
- .debug_str     0x00002307      0x7d0 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(CyLib.o)
-                                0xa3c (size before relaxing)
- .debug_str     0x00002ad7      0x365 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(cyPm.o)
-                                0x728 (size before relaxing)
- .debug_str     0x00002e3c       0x5f .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(PlayerSelect.o)
-                                0x217 (size before relaxing)
- .debug_str     0x00002e9b      0x119 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_button.o)
-                                0x2e1 (size before relaxing)
- .debug_str     0x00002fb4       0x36 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(SPIMOutCtrl.o)
-                                0x1b6 (size before relaxing)
- .debug_str     0x00002fea       0xea .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(I2C_1.o)
-                                0x2ee (size before relaxing)
- .debug_str     0x000030d4       0x94 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(I2C_1_INT.o)
-                                0x26a (size before relaxing)
- .debug_str     0x00003168       0x60 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(I2C_1_PM.o)
-                                0x284 (size before relaxing)
- .debug_str     0x000031c8      0x14b .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(I2C_1_MASTER.o)
-                                0x3c7 (size before relaxing)
- .debug_str     0x00003313      0x1af .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(Timer_Stopur.o)
-                                0x3ae (size before relaxing)
- .debug_str     0x000034c2      0x10c .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_timer.o)
-                                0x2d3 (size before relaxing)
- .debug_str     0x000035ce      0x169 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(Timer_LCD.o)
-                                0x378 (size before relaxing)
- .debug_str     0x00003737      0x157 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_refreshrate_LCD.o)
-                                0x35f (size before relaxing)
- .debug_str     0x0000388e      0x148 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(Timer4.o)
-                                0x342 (size before relaxing)
- .debug_str     0x000039d6      0x133 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_BlinkLED.o)
-                                0x2fd (size before relaxing)
- .debug_str     0x00003b09       0xe9 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_delay.o)
-                                0x2d3 (size before relaxing)
- .debug_str     0x00003bf2      0x14f .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(Timer5.o)
-                                0x342 (size before relaxing)
- .debug_str     0x00003d41      0x456 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(ADC_DelSig_1.o)
-                                0x72f (size before relaxing)
- .debug_str     0x00004197       0x72 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(ADC_DelSig_1_INT.o)
-                                0x1e2 (size before relaxing)
- .debug_str     0x00004209       0x7e .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(ADC_DelSig_1_AMux.o)
-                                0x233 (size before relaxing)
- .debug_str     0x00004287      0x184 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(ADC_DelSig_1_Ext_CP_Clk.o)
-                                0x3a3 (size before relaxing)
- .debug_str     0x0000440b      0x1bb .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(ADC_DelSig_1_theACLK.o)
-                                0x3d4 (size before relaxing)
- .debug_str     0x000045c6       0x62 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(SPI_int.o)
-                                0x1e1 (size before relaxing)
- .debug_str     0x00004628      0x1b7 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(SPIS.o)
-                                0x407 (size before relaxing)
- .debug_str     0x000047df       0x3a .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(SPIS_INT.o)
-                                0x1aa (size before relaxing)
- .debug_str     0x00004819       0xe5 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(rx_isr.o)
-                                0x2a9 (size before relaxing)
- .debug_str     0x000048fe      0x1b4 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(CyFlash.o)
-                                0x3b5 (size before relaxing)
- .debug_str     0x00004ab2       0xac .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(CySpc.o)
-                                0x32d (size before relaxing)
+ .debug_str     0x0000311b       0x94 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(I2C_1_INT.o)
+                                0x279 (size before relaxing)
+ .debug_str     0x000031af       0x60 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(I2C_1_PM.o)
+                                0x293 (size before relaxing)
+ .debug_str     0x0000320f      0x14b .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(I2C_1_MASTER.o)
+                                0x3d6 (size before relaxing)
+ .debug_str     0x0000335a      0x1af .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(Timer_Stopur.o)
+                                0x3bd (size before relaxing)
+ .debug_str     0x00003509      0x10c .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_timer.o)
+                                0x2e2 (size before relaxing)
+ .debug_str     0x00003615      0x169 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(Timer_LCD.o)
+                                0x387 (size before relaxing)
+ .debug_str     0x0000377e      0x157 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_refreshrate_LCD.o)
+                                0x36e (size before relaxing)
+ .debug_str     0x000038d5      0x148 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(Timer4.o)
+                                0x351 (size before relaxing)
+ .debug_str     0x00003a1d      0x133 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_BlinkLED.o)
+                                0x30c (size before relaxing)
+ .debug_str     0x00003b50       0xe9 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(isr_delay.o)
+                                0x2e2 (size before relaxing)
+ .debug_str     0x00003c39      0x14f .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(Timer5.o)
+                                0x351 (size before relaxing)
+ .debug_str     0x00003d88      0x456 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(ADC_DelSig_1.o)
+                                0x73e (size before relaxing)
+ .debug_str     0x000041de       0x72 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(ADC_DelSig_1_INT.o)
+                                0x1f1 (size before relaxing)
+ .debug_str     0x00004250       0x7e .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(ADC_DelSig_1_AMux.o)
+                                0x242 (size before relaxing)
+ .debug_str     0x000042ce      0x184 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(ADC_DelSig_1_Ext_CP_Clk.o)
+                                0x3b2 (size before relaxing)
+ .debug_str     0x00004452      0x1bb .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(ADC_DelSig_1_theACLK.o)
+                                0x3e3 (size before relaxing)
+ .debug_str     0x0000460d       0x62 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(SPI_int.o)
+                                0x1f0 (size before relaxing)
+ .debug_str     0x0000466f      0x1b7 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(SPIS.o)
+                                0x416 (size before relaxing)
+ .debug_str     0x00004826       0x3a .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(SPIS_INT.o)
+                                0x1b9 (size before relaxing)
+ .debug_str     0x00004860       0xe5 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(rx_isr.o)
+                                0x2b8 (size before relaxing)
+ .debug_str     0x00004945      0x1b4 .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(CyFlash.o)
+                                0x3c4 (size before relaxing)
+ .debug_str     0x00004af9       0xac .\CortexM3\ARM_GCC_541\Debug\Hovedprogram.a(CySpc.o)
+                                0x33c (size before relaxing)
 
 .debug_loc      0x00000000     0x4bd9
  *(.debug_loc)
@@ -3422,4 +3423,4 @@ END GROUP
 
 /DISCARD/
  *(.note.GNU-stack)
-OUTPUT(D:\Git downloads\E5PRJ3\ProjektMain\Hovedprogram.cydsn\CortexM3\ARM_GCC_541\Debug\Hovedprogram.elf elf32-littlearm)
+OUTPUT(C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain\Hovedprogram.cydsn\CortexM3\ARM_GCC_541\Debug\Hovedprogram.elf elf32-littlearm)

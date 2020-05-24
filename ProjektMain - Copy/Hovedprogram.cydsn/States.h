@@ -11,8 +11,8 @@
 */
 #pragma once
 #include "project.h" 
-#include "Startknap.h"
-#include "WeightSensors_.h"
+#include "Start.h"
+#include "Sensor-control.h"
 //#include "LEDcontrol.h"
 
 
