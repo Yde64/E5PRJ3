@@ -1,17 +1,18 @@
-#include "spiMaster.h"
+#include "spiMasterTest.h"
 #include <math.h>
 
-spiMaster::spiMaster(int data)
+spiMasterTest::spiMasterTest(int data)
 {
   data_ = data;
 }
 
-void spiMaster::listen()
+void spiMasterTest::listen()
 {
   int spi, gpio, log, sek, ms;
   int buf[20];
   char buf2[200];
   char buf3[200];
+  cout << "test" << endl;
 
   
 
@@ -19,6 +20,7 @@ void spiMaster::listen()
   {
     
     sleep(1);
+    cout << "test" << endl;
 
     buf3[0] = 1;
 
@@ -57,17 +59,19 @@ void spiMaster::listen()
       
     }
   
+
   sleep(1);
 
   }
 }
 
-int spiMaster::getdata()
+int spiMasterTest::getdata()
 {
 return 0;
 }
 
-void spiMaster::setcount(int count)
+void spiMasterTest::setcount(int count)
 {
+  cout << "test23" << endl;
   count_ = count;
 }

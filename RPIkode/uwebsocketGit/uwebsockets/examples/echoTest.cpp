@@ -4,10 +4,10 @@
 #include <thread>
 #include <stdio.h>
 #include <sstream>
-#include </mnt/c/Users/cring/Documents/GitHub/E5PRJ3/RPIkode/uwebsocketGit/uwebsockets/src/spiMaster.h>
+#include </mnt/c/Users/cring/Documents/GitHub/E5PRJ3/RPIkode/uwebsocketGit/uwebsockets/src/spiMasterTest.h>
 
 using namespace std;
-spiMaster spi1;
+spiMasterTest spi1;
 
 struct Data
 {
@@ -57,20 +57,24 @@ void async(uWS::Hub* h)
 int main()
 {
   uWS::Hub hub;
-
+  cout << "Test main" << endl;
   //int gpio;
+
 
   //gpio = open("/dev/mygpio22", O_RDWR);
   //write(gpio, "0", 2);
   //close(gpio);
+  
   spi1.setcount(1);
   
+
 
   Data d { hub };
   hub.onMessage(d);
   if (hub.listen(3000)) {
     std::thread th(async, &hub);
-    std::thread th2 (&spiMaster::listen, &spi1);
+    std::thread th2 (&spiMasterTest::listen, &spi1);
+    cout << "Test main2" << endl;
     hub.run();
     
   }
