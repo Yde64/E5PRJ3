@@ -11,7 +11,7 @@
 */
 #pragma once
 #include "project.h"
-#include "WeightSensors_.h"
+#include "Sensor-control.h"
 #include "VT100Terminal.h"
 
 CY_ISR_PROTO(ISR_UART_rx_handler);             // UART Interrupt Service Rutine Handler

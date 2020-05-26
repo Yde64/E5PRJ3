@@ -37,26 +37,26 @@
       <Folder BuildType="STRICT" Path="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn">
         <Files Root="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
-          <File BuildType="BUILD" Toolchain="">WeightSensors.c</File>
+          <File BuildType="BUILD" Toolchain="">Sensor-control.c</File>
           <File BuildType="BUILD" Toolchain="">UART.c</File>
-          <File BuildType="BUILD" Toolchain="">Startknap.c</File>
-          <File BuildType="BUILD" Toolchain="">Display.c</File>
+          <File BuildType="BUILD" Toolchain="">Start.c</File>
+          <File BuildType="BUILD" Toolchain="">Display-control.c</File>
           <File BuildType="BUILD" Toolchain="">LiquidCrystal_I2C.c</File>
-          <File BuildType="BUILD" Toolchain="">Stopur.c</File>
-          <File BuildType="BUILD" Toolchain="">LEDcontrol.c</File>
+          <File BuildType="BUILD" Toolchain="">Timer.c</File>
+          <File BuildType="BUILD" Toolchain="">LED-control.c</File>
           <File BuildType="BUILD" Toolchain="">VT100Terminal.c</File>
-          <File BuildType="BUILD" Toolchain="">SPI_Master.c</File>
+          <File BuildType="BUILD" Toolchain="">SPI-Slave.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
-          <File BuildType="BUILD" Toolchain="">WeightSensors_.h</File>
+          <File BuildType="BUILD" Toolchain="">Sensor-control.h</File>
           <File BuildType="BUILD" Toolchain="">UART.h</File>
           <File BuildType="BUILD" Toolchain="">States.h</File>
-          <File BuildType="BUILD" Toolchain="">Startknap.h</File>
-          <File BuildType="BUILD" Toolchain="">Display.h</File>
+          <File BuildType="BUILD" Toolchain="">Start.h</File>
+          <File BuildType="BUILD" Toolchain="">Display-control.h</File>
           <File BuildType="BUILD" Toolchain="">LiquidCrystal_I2C.h</File>
-          <File BuildType="BUILD" Toolchain="">Stopur.h</File>
-          <File BuildType="BUILD" Toolchain="">LEDcontrol.h</File>
+          <File BuildType="BUILD" Toolchain="">Timer.h</File>
+          <File BuildType="BUILD" Toolchain="">LED-control.h</File>
           <File BuildType="BUILD" Toolchain="">VT100Terminal.h</File>
-          <File BuildType="BUILD" Toolchain="">SPI_Master.h</File>
+          <File BuildType="BUILD" Toolchain="">SPI-Slave.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\Generated_Source\PSoC5">
@@ -118,17 +118,11 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_1_BOOT.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_uart_rx.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_uart_rx.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SAR_p2_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SAR_p2.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SAR_p2.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_button.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_button.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_2_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_2.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_2.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SAR_p1_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SAR_p1.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SAR_p1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\MOSI_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\MOSI.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\MOSI.h</File>
@@ -236,6 +230,12 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareimport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareexport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareimport.scat</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_p2_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_p2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_p2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_p1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_p1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_p1.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\cring\Documents\GitHub\E5PRJ3\ProjektMain - Copy\Hovedprogram.cydsn\Export\ARM_GCC_Generic">

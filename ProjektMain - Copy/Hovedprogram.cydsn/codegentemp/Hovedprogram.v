@@ -1,6 +1,6 @@
 // ======================================================================
 // Hovedprogram.v generated from TopDesign.cysch
-// 05/20/2020 at 12:09
+// 05/23/2020 at 12:01
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -2040,11 +2040,11 @@ module top ;
 		 (.int_signal(Net_22));
 
 
-	wire [0:0] tmpOE__SAR_p2_net;
-	wire [0:0] tmpFB_0__SAR_p2_net;
-	wire [0:0] tmpIO_0__SAR_p2_net;
-	wire [0:0] tmpINTERRUPT_0__SAR_p2_net;
-	electrical [0:0] tmpSIOVREF__SAR_p2_net;
+	wire [0:0] tmpOE__ADC_p2_net;
+	wire [0:0] tmpFB_0__ADC_p2_net;
+	wire [0:0] tmpIO_0__ADC_p2_net;
+	wire [0:0] tmpINTERRUPT_0__ADC_p2_net;
+	electrical [0:0] tmpSIOVREF__ADC_p2_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("f2cb00e7-19df-4206-aa5c-d597ec6d4632"),
@@ -2099,14 +2099,14 @@ module top ;
 		  .ovt_needed(1'b0),
 		  .ovt_slew_control(2'b00),
 		  .input_buffer_sel(2'b00))
-		SAR_p2
-		 (.oe(tmpOE__SAR_p2_net),
+		ADC_p2
+		 (.oe(tmpOE__ADC_p2_net),
 		  .y({1'b0}),
-		  .fb({tmpFB_0__SAR_p2_net[0:0]}),
+		  .fb({tmpFB_0__ADC_p2_net[0:0]}),
 		  .analog({Net_764}),
-		  .io({tmpIO_0__SAR_p2_net[0:0]}),
-		  .siovref(tmpSIOVREF__SAR_p2_net),
-		  .interrupt({tmpINTERRUPT_0__SAR_p2_net[0:0]}),
+		  .io({tmpIO_0__ADC_p2_net[0:0]}),
+		  .siovref(tmpSIOVREF__ADC_p2_net),
+		  .interrupt({tmpINTERRUPT_0__ADC_p2_net[0:0]}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -2114,7 +2114,7 @@ module top ;
 		  .out_clock_en({1'b1}),
 		  .out_reset({1'b0}));
 
-	assign tmpOE__SAR_p2_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+	assign tmpOE__ADC_p2_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 
 	cy_isr_v1_0
@@ -2197,11 +2197,11 @@ module top ;
 
 	assign tmpOE__Pin_2_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
-	wire [0:0] tmpOE__SAR_p1_net;
-	wire [0:0] tmpFB_0__SAR_p1_net;
-	wire [0:0] tmpIO_0__SAR_p1_net;
-	wire [0:0] tmpINTERRUPT_0__SAR_p1_net;
-	electrical [0:0] tmpSIOVREF__SAR_p1_net;
+	wire [0:0] tmpOE__ADC_p1_net;
+	wire [0:0] tmpFB_0__ADC_p1_net;
+	wire [0:0] tmpIO_0__ADC_p1_net;
+	wire [0:0] tmpINTERRUPT_0__ADC_p1_net;
+	electrical [0:0] tmpSIOVREF__ADC_p1_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("77715107-f8d5-47e5-a629-0fb83101ac6b"),
@@ -2256,14 +2256,14 @@ module top ;
 		  .ovt_needed(1'b0),
 		  .ovt_slew_control(2'b00),
 		  .input_buffer_sel(2'b00))
-		SAR_p1
-		 (.oe(tmpOE__SAR_p1_net),
+		ADC_p1
+		 (.oe(tmpOE__ADC_p1_net),
 		  .y({1'b0}),
-		  .fb({tmpFB_0__SAR_p1_net[0:0]}),
+		  .fb({tmpFB_0__ADC_p1_net[0:0]}),
 		  .analog({Net_763}),
-		  .io({tmpIO_0__SAR_p1_net[0:0]}),
-		  .siovref(tmpSIOVREF__SAR_p1_net),
-		  .interrupt({tmpINTERRUPT_0__SAR_p1_net[0:0]}),
+		  .io({tmpIO_0__ADC_p1_net[0:0]}),
+		  .siovref(tmpSIOVREF__ADC_p1_net),
+		  .interrupt({tmpINTERRUPT_0__ADC_p1_net[0:0]}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -2271,7 +2271,7 @@ module top ;
 		  .out_clock_en({1'b1}),
 		  .out_reset({1'b0}));
 
-	assign tmpOE__SAR_p1_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+	assign tmpOE__ADC_p1_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 	wire [0:0] tmpOE__MOSI_net;
 	wire [0:0] tmpIO_0__MOSI_net;

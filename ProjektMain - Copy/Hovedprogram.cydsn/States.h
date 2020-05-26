@@ -1,19 +1,7 @@
-/* ========================================
- *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
- *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
- *
- * ========================================
-*/
 #pragma once
 #include "project.h" 
-#include "Startknap.h"
-#include "WeightSensors_.h"
-//#include "LEDcontrol.h"
+#include "Start.h"
+#include "Sensor-control.h"
 
 
 typedef enum {
@@ -46,5 +34,3 @@ typedef enum {
 
 void Next_state_Logic();
 void Output_logic();
-
-/* [] END OF FILE */

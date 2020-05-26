@@ -15,7 +15,6 @@ void spiMaster::listen()
 
   while(1)
   {
-    
     gpio = open("/dev/mygpio22", O_RDWR);
     read(gpio, buf3, 2);
 
@@ -36,7 +35,7 @@ void spiMaster::listen()
      //cout << "ms: " << ms << endl; //DEBUG
 
       //Tider skrives til log
-      log = open("/www/pages/log.txt", O_WRONLY | O_APPEND | O_CREAT);
+      log = open("/www/pages/log.txt", O_CREAT | O_WRONLY | O_APPEND);
       sprintf(buf2, "%i: Chug tid: %i:%is\n", count_, sek, ms);
       dprintf(log, buf2, strlen(buf2)); 
       close(log);

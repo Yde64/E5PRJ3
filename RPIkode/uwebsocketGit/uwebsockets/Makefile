@@ -1,5 +1,5 @@
 # Quick and ok!
-SRC=src/Extensions.cpp src/Group.cpp src/Networking.cpp src/Hub.cpp src/Node.cpp src/WebSocket.cpp src/HTTPSocket.cpp src/Socket.cpp src/Epoll.cpp src/spiMaster.cpp
+SRC=src/Extensions.cpp src/Group.cpp src/Networking.cpp src/Hub.cpp src/Node.cpp src/WebSocket.cpp src/HTTPSocket.cpp src/Socket.cpp src/Epoll.cpp src/spiMaster.cpp src/spiMasterTest.cpp
 OBJS=$(addprefix ${OBJ_DEST_DIR}/,$(notdir ${SRC:%.cpp=%.o}))
 DEPS=$(addprefix ${OBJ_DEST_DIR}/,$(notdir ${SRC:%.cpp=%.d}))
 
@@ -39,8 +39,8 @@ connect: all
 
 all: info ${DEST_DIR}/${LIB_NAME}
 	cd examples && $(MAKE) TARGET=$(TARGET) MODE=$(MODE)
-	scp examples/bin/rpi/release/main root@rpi:
-	scp htmltest/index.html root@rpi:/www/pages/
+	scp examples/bin/rpi/release/main root@rpi.local:
+	scp htmltest/index.html root@rpi.local:/www/pages/
 
 info:
 	@echo "Compiling for '${TARGET}' in '${MODE}' mode..."
