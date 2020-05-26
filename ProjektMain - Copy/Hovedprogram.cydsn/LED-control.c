@@ -1,16 +1,3 @@
-/* ========================================
- *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
- *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
- *
- * ========================================
-*/
-
-
 #define MAXLEDINTENSE 0.5
 #include "LED-control.h"
 
@@ -177,7 +164,7 @@ void initLED(int Hz)
     Timer4_Start();
     
     //Sætter LED-strips refreshrate 
-    setrefreshrate(Hz);
+    setRefreshrate(Hz);
     
 }
 

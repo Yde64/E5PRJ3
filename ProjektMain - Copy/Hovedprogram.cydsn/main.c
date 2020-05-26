@@ -1,16 +1,3 @@
-
-/* ========================================
- *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
- *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
- *
- * ========================================
-*/
-//#include "project.h"
 #include "Sensor-control.h"
 #include "UART.h"
 #include "Display-control.h"
@@ -443,7 +430,6 @@ int main(void)
                             checkSeq(rgbstrip1);
                             checkSeq(rgbstrip2);
                         }
-                        //CalibrateSensors();
                         
                         UARTprint("4", "OL - EVALUATING_WEIGHT\r\n");
                         
@@ -547,10 +533,6 @@ int main(void)
                         
                     }  
                     break;
-        //        case WEIGHT_CONFIRMED:
-        //            {
-        //            
-        //            }    
                 case GAME_OVER:
                     {
                         UARTprint("4", "OL - GAME_OVER\r\n");
@@ -652,8 +634,3 @@ int main(void)
                 
         }
 }
-    
-
-
-
-/* [] END OF FILE */
